@@ -1,0 +1,54 @@
+---
+permalink: config-linux/iscsi-verify-ip-network-connections-task.html 
+sidebar: sidebar 
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: インターネットプロトコル（ IP ）ネットワーク接続を確認するには、 ping テストを使用してホストとアレイが通信できることを確認します。 
+---
+= IP ネットワーク接続を確認します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+インターネットプロトコル（ IP ）ネットワーク接続を確認するには、 ping テストを使用してホストとアレイが通信できることを確認します。
+
+.手順
+. ジャンボフレームが有効かどうかに応じて、ホストから次のいずれかのコマンドを実行します。
++
+** ジャンボフレームが有効になっていない場合は、次のコマンドを実行します。
++
+[listing]
+----
+ping -I <hostIP\> <targetIP\>
+----
+** ジャンボフレームが有効な場合は、ペイロードサイズに 8 、 972 バイトを指定して ping コマンドを実行します。IP と ICMP を組み合わせたヘッダーは 28 バイトで、これがペイロードに追加されて 9 、 000 バイトになります。-s スイッチは 'packet size ビットを設定しますd オプションはデバッグオプションを設定します。これらのオプションにより、 iSCSI イニシエータとターゲットの間で 9 、 000 バイトのジャンボフレームを正常に送信できます。
++
+[listing]
+----
+ping -I <hostIP\> -s 8972 -d <targetIP\>
+----
++
+この例では、 iSCSI ターゲットの IP アドレスは「 192.0.2.8 」です。
+
++
+[listing]
+----
+#ping -I 192.0.2.100 -s 8972 -d 192.0.2.8
+Pinging 192.0.2.8 with 8972 bytes of data:
+Reply from 192.0.2.8: bytes=8972 time=2ms TTL=64
+Reply from 192.0.2.8: bytes=8972 time=2ms TTL=64
+Reply from 192.0.2.8: bytes=8972 time=2ms TTL=64
+Reply from 192.0.2.8: bytes=8972 time=2ms TTL=64
+Ping statistics for 192.0.2.8:
+  Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+  Minimum = 2ms, Maximum = 2ms, Average = 2ms
+----
+
+
+. 各ホストのイニシエータ・アドレス（ iSCSI に使用されるホスト・イーサネット・ポートの IP アドレス）から各コントローラの iSCSI ポートへの ping コマンド問題構成内の各ホストサーバから、必要に応じて IP アドレスを変更してこの操作を実行します。
++
+
+NOTE: コマンドが失敗した場合（たとえば、「 Packet needs to be fragmented but DF set 」が返された場合）は、ホストサーバ、ストレージコントローラ、およびスイッチポートのイーサネットインターフェイスの MTU サイズ（ジャンボフレームのサポート状況）を確認します。
+
+

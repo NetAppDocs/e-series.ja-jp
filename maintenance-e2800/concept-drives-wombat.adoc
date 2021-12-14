@@ -1,0 +1,13 @@
+---
+permalink: maintenance-e2800/concept-drives-wombat.html 
+sidebar: sidebar 
+keywords: drive, electromagnetic, mechanical, device, physical, storage, media, data 
+summary: ドライブは、データの物理ストレージメディアとして使用される電磁的な機械デバイスです。 
+---
+= ドライブ
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ドライブは、データの物理ストレージメディアとして使用される電磁的な機械デバイスです。

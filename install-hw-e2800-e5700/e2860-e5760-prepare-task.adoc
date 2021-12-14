@@ -1,0 +1,140 @@
+---
+permalink: install-hw-e2800-e5700/e2860-e5760-prepare-task.html 
+sidebar: sidebar 
+keywords: E2860, E5760, DE460, installation 
+summary: E2860 、 E5760 、または DE460 をインストールするには、アカウントを作成してハードウェアを登録します。 
+---
+= 設置を準備
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+E2860 、 E5760 、または DE460 シリーズのストレージシステムをインストールするための準備方法について説明します。
+
+.手順
+. アカウントを作成し、でハードウェアを登録します http://mysupport.netapp.com/["mysupport.netapp.com"^]。
+. 次のものが同梱されていることを確認してください。
++
+|===
+
+
+ a| 
+image:../media/trafford_overview.png[""]
+ a| 
+シェルフ、ベゼル、およびラックマウントハードウェア
+
+
+
+ a| 
+image:../media/handles_counted.png[""]
+ a| 
+シェルフハンドル × 4
+
+|===
++
+次の表に、同梱されているケーブルの種類を示します。表に記載されていないケーブルがある場合は、を参照してください https://hwu.netapp.com/["Hardware Universe"^] ケーブルの場所を確認し、用途を特定します。
+
++
+|===
+| コネクタのタイプ | ケーブルのタイプ | 使用 
+
+
+ a| 
+image:../media/cable_ethernet_inst-hw-e2800-e5700.png[""]
+ a| 
+イーサネットケーブル
+
+（発注した場合）
+ a| 
+管理接続
+
+
+
+ a| 
+image:../media/cable_io_inst-hw-e2800-e5700.png[""]
+ a| 
+I/O ケーブル
+
+（発注した場合）
+ a| 
+データホストのケーブル接続
+
+
+
+ a| 
+image:../media/cable_power_inst-hw-e2800-e5700.png[""]
+ a| 
+電源ケーブル
+
+X2 （シェルフあたり）
+
+（発注した場合）
+ a| 
+ストレージシステムの電源
+
+
+
+ a| 
+image:../media/sas_cable.png[""]
+ a| 
+SAS ケーブル（ドライブシェルフにのみ付属）
+ a| 
+シェルフのケーブル接続
+
+|===
+. 次のものを用意します。
++
+|===
+
+
+ a| 
+image:../media/screwdriver_inst-hw-e2800-e5700.png[""]
+ a| 
+No.2 プラスドライバ
+
+
+
+ a| 
+image:../media/flashlight_inst-hw-e2800-e5700.png[""]
+ a| 
+懐中電灯
+
+
+
+ a| 
+image:../media/wrist_strap_inst-hw-e2800-e5700.png[""]
+ a| 
+静電気防止用ストラップ
+
+
+
+ a| 
+image:../media/4u_dummy.png[""]
+ a| 
+4U のラックスペース：標準の 48.3cm48.30cm （ 48.30cm ）ラック
+
+* 深さ *:38.25 インチ（ 97.16 cm ）
+
+* 幅 * ： 17.66 インチ（ 44.86 cm ）
+
+* 高さ *:6.87 インチ（ 17.46 cm ）
+
+* 最大重量 * ： 113 kg （ 250 ポンド）
+
+
+
+ a| 
+image:../media/management_station_inst-hw-e2800-e5700_g60b3.png[""]
+ a| 
+管理ソフトウェアでサポートされているブラウザ：
+
+** Google Chrome （バージョン 47 以降）
+** Microsoft Internet Explorer （バージョン 11 以降）
+** Microsoft Edge （ EdgeHTML 12 以降）
+** Mozilla Firefox （バージョン 31 以降）
+** Safari （バージョン 9 以降）
+
+
+|===
+

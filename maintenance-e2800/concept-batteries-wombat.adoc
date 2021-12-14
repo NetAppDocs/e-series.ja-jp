@@ -1,0 +1,13 @@
+---
+permalink: maintenance-e2800/concept-batteries-wombat.html 
+sidebar: sidebar 
+keywords: controller, canister, battery, preserve, cache, data, ac, power, fail, recovery, guru, santricity, system, manager, replacement, require, affect, batteries 
+summary: 各コントローラキャニスターには、 AC 電源で障害が発生した場合にキャッシュデータを保持するバッテリが搭載されています。SANtricity System Manager の Recovery Guru から「バッテリで障害が発生しました」または「バッテリの交換が必要です」のいずれかのステータスが報告された場合は、該当するバッテリを交換する必要があります。 
+---
+= 電池
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+各コントローラキャニスターには、 AC 電源で障害が発生した場合にキャッシュデータを保持するバッテリが搭載されています。SANtricity System Manager の Recovery Guru から「バッテリで障害が発生しました」または「バッテリの交換が必要です」のいずれかのステータスが報告された場合は、該当するバッテリを交換する必要があります。

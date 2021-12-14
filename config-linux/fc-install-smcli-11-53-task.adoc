@@ -1,0 +1,54 @@
+---
+permalink: config-linux/fc-install-smcli-11-53-task.html 
+sidebar: sidebar 
+keywords: install Storage Manager Linux, install CLI Windows, install command line interface, install Host Context Agent, install HCA, express linux configuration, software configuration, linux host, 
+summary: CLI および HCA 用の Storage Manager を Linux の簡単な方法でインストールします。 
+---
+= SMcli を使用するための SANtricity Storage Manager のインストール（ SANtricity ソフトウェアバージョン 11.53 以前）
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SANtricity ソフトウェア 11.53 以前を使用している場合は、管理ステーションに SANtricity Storage Manager ソフトウェアをインストールして、アレイの管理に役立てることができます。
+
+SANtricity Storage Manager には、管理タスクを実行するためのコマンドラインインターフェイス（ CLI ）と、 I/O パスを介してストレージアレイコントローラにホスト構成情報をプッシュするためのホストコンテキストエージェントがあります。
+
+
+NOTE: SANtricity ソフトウェア 11.60 以降を使用している場合は、次の手順は実行する必要はありません。SANtricity Secure CLI （ SMcli ）は SANtricity OS に含まれており、 SANtricity System Manager からダウンロードできます。SANtricity システムマネージャを使用して SMcli をダウンロードする方法の詳細については、 SANtricity システムマネージャオンラインヘルプの「ダウンロードコマンドラインインターフェイス（ CLI ） _ topic 」を参照してください。
+
+.必要なもの
+* SANtricity ソフトウェア 11.53 以前。
+* 適切な管理者権限またはスーパーユーザ権限
+* SANtricity Storage Manager クライアント用のシステム。次の最小要件があります。
++
+** *RAM*: Java Runtime Engine 用に 2GB
+** * ディスク容量 * ： 5GB
+** * OS / アーキテクチャ * ：サポートされているオペレーティング・システムのバージョンとアーキテクチャーを判断するためのガイダンスについては、を参照してください http://mysupport.netapp.com["ネットアップサポート"^]。Downloads * タブで、ダウンロード [E-Series SANtricity Storage Manager] に移動します。
+
+
+
+
+このタスクでは、 Windows と Linux の両方の OS プラットフォームに SANtricity Storage Manager をインストールする方法について説明します。データホストに Linux を使用する場合の管理ステーションプラットフォームは Windows と Linux の両方で共通です。
+
+.手順
+. SANtricity ソフトウェアリリースは、からダウンロードします http://mysupport.netapp.com["ネットアップサポート"^]。Downloads * タブで、ダウンロード [E-Series SANtricity Storage Manager] に移動します。
+. SANtricity インストーラを実行します。
++
+|===
+| Windows の場合 | Linux の場合 
+
+
+ a| 
+SMIA*.exe インストールパッケージをダブルクリックして、インストールを開始します。
+ a| 
+.. SMIA * 。 bin インストールパッケージが格納されているディレクトリに移動します。
+.. 一時マウントポイントに実行権限がない場合は 'IATEMPDIR' 変数を設定します例： 'IATEMPDIR=/root./SMIA-LINUXX64-11.25.0A0002.bin
+.. chmod +x SMIA*.bin コマンドを実行して、ファイルに実行権限を付与します。
+.. 「 ./SMIA *.bin」 コマンドを実行してインストーラを起動します。
+
+
+|===
+. インストールウィザードを使用して、管理ステーションにソフトウェアをインストールします。
+

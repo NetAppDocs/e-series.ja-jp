@@ -1,0 +1,256 @@
+---
+permalink: cloud-connector/install-intro-concept.html 
+sidebar: sidebar 
+keywords: Cloud Connector installation, install Cloud Connector 
+summary: SANtricity Cloud Connector Packaged 解決策（ .bin ファイル）は、 RedHat および SUSE Linux プラットフォームでのみ使用できます。 
+---
+= SANtricity Cloud Connector をインストール
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SANtricity Cloud Connector Packaged 解決策（ .bin ファイル）は、 RedHat および SUSE Linux プラットフォームでのみ使用できます。
+
+SANtricity Cloud Connector アプリケーションは、互換性がある Linux オペレーティングシステムにグラフィカルモードまたはコンソールモードを使用してインストールできます。インストール時に、 SANtricity Cloud Connector の非 SSL と SSL のポート番号を指定する必要があります。インストールが完了すると、 SANtricity Cloud Connector はデーモンプロセスとして実行されます。
+
+次の注意事項を確認してください。
+
+* SANtricity Web Services Proxy が SANtricity Cloud Connector と同じサーバにすでにインストールされている場合は、非 SSL のポート番号と SSL のポート番号に競合が発生します。この場合は、 SANtricity Cloud Connector のインストール時に、非 SSL のポートと SSL のポートに適切な番号を選択してください。
+* ホストのハードウェアに何らかの変更があった場合は、 SANtricity Cloud Connector アプリケーションを再インストールして暗号化の整合性を確保します。
+* SANtricity Cloud Connector 3.1 で作成されたバックアップは、 SANtricity Cloud Connector バージョン 4.0 とは互換性がありません。これらのバックアップを維持する場合は、以前のバージョンの SANtricity Cloud Connector を引き続き使用する必要があります。SANtricity Cloud Connector の 3.1 と 4.0 のリリースを別々にインストールする場合は、アプリケーションのバージョンごとに一意のポート番号を割り当てる必要があります。
+
+
+
+
+== Device Mapper Multipath （ DM-MP ）のインストール
+
+SANtricity Cloud Connector を実行するホストは Linux Device Mapper Multipath （ DM-MP ）も実行する必要があり、マルチパスツールパッケージがインストールされている必要があります。
+
+SANtricity Cloud Connector の検出プロセスでは、バックアップまたはリストアの対象となるボリュームやファイルの検出と認識にマルチパスツールパッケージを使用します。Device Mapper をセットアップおよび設定する方法の詳細については、で使用している SANtricity のリリースに対応した『 SANtricity ストレージマネージャマルチパスドライバガイド』を参照してください https://mysupport.netapp.com/info/web/ECMP1658252.html["E シリーズおよび SANtricity のドキュメントリソース"^]。
+
+
+
+== Cloud Connector をインストール
+
+SANtricity Cloud Connector は、 Linux オペレーティングシステムにグラフィカルモードまたはコンソールモードでインストールできます。
+
+
+
+=== グラフィカルモード
+
+Linux オペレーティングシステムでグラフィカルモードを使用して SANtricity Cloud Connector をインストールできます。
+
+SANtricity Cloud Connector をインストールするホストの場所を指定します。
+
+.手順
+. SANtricity Cloud Connector インストールファイルを目的のホストの場所にダウンロードします。
+. ターミナルウィンドウを開きます。
+. SANtricity Cloud Connector インストールファイルが格納されているディレクトリに移動します。
+. SANtricity Cloud Connector のインストールプロセスを開始します。
++
+[listing]
+----
+./cloudconnector-xxxx.bin –i gui
+----
++
+このコマンドでは 'xxxx' はアプリケーションのバージョン番号を示します
+
++
+インストーラウィンドウが表示されます。
+
+. Introduction 文を確認し、 * Next * をクリックします。
++
+ソフトウェアのライセンス契約がインストーラウィンドウに表示されます。
+
+. ライセンス契約の条項に同意し、 [ 次へ ] をクリックします。
++
+以前のリリースの SANtricity Cloud Connector で作成されたバックアップページが表示されます。
+
+. 以前のリリースの SANtricity Cloud Connector で作成されたバックアップを確認するには、「 * Next * 」をクリックします。
++
+
+NOTE: 以前のバージョンを維持したまま SANtricity Cloud Connector バージョン 4.0 をインストールするには、アプリケーションの各バージョンに一意のポート番号を割り当てる必要があります。
+
++
+インストーラウィンドウにインストールの選択ページが表示されます。Where would you like to Install フィールドには、デフォルトのインストールフォルダ「 /opt/netapp/santricity_cloud_connector4/ 」が表示されます
+
+. 次のいずれかのオプションを選択します。
++
+** デフォルトの場所を使用するには、 [ 次へ ] をクリックします。
+** デフォルトの場所を変更するには、新しいフォルダの場所を入力します。Enter the Non SSL Jetty Port Number ページが表示されます。非 SSL ポートにはデフォルト値の 8080 が割り当てられています。
+
+
+. 次のいずれかのオプションを選択します。
++
+** デフォルトの SSL ポート番号を受け入れるには、 * Next * をクリックします。
+** デフォルトの SSL ポート番号を変更するには、新しいポート番号を入力します。
+
+
+. 次のいずれかのオプションを選択します。
++
+** デフォルトの非 SSL ポート番号を受け入れるには、 * Next * をクリックします。
+** デフォルトの非 SSL ポート番号を変更するには、新しいポート番号を入力します。Pre-Installation Summary ページが表示されます。
+
+
+. 表示されたインストール前の概要を確認し、 * Install * をクリックします。
++
+SANtricity Cloud Connector のインストールが開始され、 Webserver Daemon Setup プロンプトが表示されます。
+
+. [OK] をクリックして Webserver Daemon Setup プロンプトを確認します。
++
+「 Installation Complete 」というメッセージが表示されます。
+
+. 「 * Done * 」をクリックして、 SANtricity Cloud Connecter インストーラを終了します。
+
+
+
+
+=== コンソールモード
+
+Linux オペレーティングシステムでコンソールモードを使用して SANtricity Cloud Connector をインストールできます。
+
+SANtricity Cloud Connector をインストールするホストの場所を指定します。
+
+.手順
+. SANtricity Cloud Connector インストールファイルを目的の IO ホストの場所にダウンロードします。
+. ターミナルウィンドウを開きます。
+. SANtricity Cloud Connector インストールファイルが格納されているディレクトリに移動します。
+. SANtricity Cloud Connector のインストールプロセスを開始します。
++
+[listing]
+----
+./cloudconnector-xxxx.bin –i console
+----
++
+このコマンドでは 'xxxx' はアプリケーションのバージョン番号を示します
+
++
+SANtricity Cloud Connector のインストールプロセスが開始されます。
+
+. Enter キーを押してインストール処理を続行します。
++
+ネットアップソフトウェアのエンドユーザライセンス契約がインストーラウィンドウに表示されます。
+
++
+
+NOTE: インストールプロセスをいつでもキャンセルするには、インストーラウィンドウで「 quit 」と入力します。
+
+. Enter キーを押して、エンドユーザライセンス契約の各部分を進めます。
++
+ライセンス契約への同意を求めるメッセージがインストーラウィンドウに表示されます。
+
+. エンドユーザライセンス契約の条項に同意し、 SANtricity Cloud Connector のインストールを続行するには、「 Y 」と入力して、インストーラウィンドウの下に *Enter* キーを押します。
++
+以前のリリースの SANtricity Cloud Connector で作成されたバックアップページが表示されます。
+
++
+
+NOTE: エンドユーザ契約の条項に同意しない場合は、「 N 」と入力してから Enter キーを押し、 SANtricity Cloud Connector のインストールプロセスを終了します。
+
+. 以前のリリースの SANtricity Cloud Connector で作成されたバックアップを確認するには、「 * Enter * 」キーを押します。
++
+
+NOTE: 以前のバージョンを維持したまま SANtricity Cloud Connector バージョン 4.0 をインストールするには、アプリケーションの各バージョンに一意のポート番号を割り当てる必要があります。
+
++
+「 Choose Install Folder 」というメッセージが表示され、 SANtricity Cloud Connector のデフォルトのインストールフォルダ「 /opt/netapp/santricity_cloud_connector4/ 」が表示されます。
+
+. 次のいずれかのオプションを選択します。
++
+** デフォルトのインストール場所を使用するには、 *Enter* キーを押します。
+** デフォルトのインストール場所を変更するには、新しいフォルダの場所を入力します。「 Enter the Non SSL Jetty Port Number 」というメッセージが表示されます。非 SSL ポートにはデフォルト値の 8080 が割り当てられています。
+
+
+. 次のいずれかのオプションを選択します。
++
+** デフォルトの SSL ポート番号を受け入れるには、 * Next * を押します。
+** デフォルトの SSL ポート番号を変更するには、新しいポート番号を入力します。
+
+
+. 次のいずれかのオプションを選択します。
++
+** デフォルトの非 SSL ポート番号を使用する場合は、 *Enter* キーを押します。
+** デフォルトの非 SSL ポート番号を変更するには、新しいポート番号の値を入力します。SANtricity Cloud Connector のインストール前の概要が表示されます。
+
+
+. 表示されたインストール前の概要を確認し、 *Enter* キーを押します。
+. Enter キーを押して Webserver Daemon Setup プロンプトを確認します。
++
+「 Installation Complete 」というメッセージが表示されます。
+
+. Enter キーを押して SANtricity Cloud Connecter インストーラを終了します。
+
+
+
+
+== キーストアにサーバ証明書と CA 証明書を追加します
+
+ブラウザから SANtricity Cloud Connector ホストへのセキュアな https 接続を使用するには、 SANtricity Cloud Connector ホストからの自己署名証明書を受け入れるか、ブラウザと SANtricity Cloud Connector アプリケーションの両方で認識される証明書と信頼チェーンを追加します。
+
+SANtricity Cloud Connector アプリケーションをホストにインストールする必要があります。
+
+.手順
+. 「 systemctl 」コマンドを使用してサービスを停止します。
+. デフォルトのインストール場所から、作業ディレクトリにアクセスします。
++
+
+NOTE: SANtricity Cloud Connector のデフォルトのインストール場所は、 /opt/netapp/santricity_cloud_connector4` です。
+
+. keytool コマンドを使用して ' サーバ証明書と証明書署名要求 (CSR) を作成します
++
+* 例 *
+
++
+[listing]
+----
+keytool -genkey -dname "CN=host.example.com, OU=Engineering, O=Company, L=<CITY>, S=<STATE>, C=<COUNTRY>" -alias cloudconnect -keyalg "RSA" -sigalg SHA256withRSA -keysize 2048 -validity 365 -keystore keystore_cloudconnect.jks -storepass changeit
+keytool -certreq -alias cloudconnect -keystore keystore_cloudconnect.jks -storepass changeit -file cloudconnect.csr
+----
+. 生成された CSR を任意の認証局（ CA ）に送信します。
++
+認証局によって署名された署名済みの証明書が返送されます。さらに、 CA 自体から証明書を受け取ります。この CA 証明書をキーストアにインポートする必要があります。
+
+. 証明書と CA 証明書チェーンをアプリケーションキーストアにインポートします :`/<install Path>/working/keystore`
++
+* 例 *
+
++
+[listing]
+----
+keytool -import -alias ca-root -file root-ca.cer -keystore keystore_cloudconnect.jks -storepass <password> -noprompt
+keytool -import -alias ca-issuing-1 -file issuing-ca-1.cer -keystore keystore_cloudconnect.jks -storepass <password> -noprompt
+keytool -import -trustcacerts -alias cloudconnect -file certnew.cer -keystore keystore_cloudconnect.jks -storepass <password>
+----
+. サービスを再起動します。
+
+
+
+
+== キーストアに StorageGRID 証明書を追加します
+
+SANtricity を StorageGRID Cloud Connector アプリケーションのターゲットタイプとして設定する場合は、まず SANtricity Cloud Connector キーストアに StorageGRID 証明書を追加する必要があります。
+
+.作業を開始する前に
+* 署名済みの StorageGRID 証明書が必要です。
+* SANtricity Cloud Connector アプリケーションをホストにインストールしておきます。
+
+
+.手順
+. 「 systemctl 」コマンドを使用してサービスを停止します。
+. デフォルトのインストール場所から、作業ディレクトリにアクセスします。
++
+
+NOTE: SANtricity Cloud Connector のデフォルトのインストール場所は、 /opt/netapp/santricity_cloud_connector4` です。
+
+. StorageGRID 証明書をアプリケーションキーストアにインポートします :`/<install Path>/working/keystore
++
+* 例 *
+
++
+[listing]
+----
+opt/netapp/santricity_cloud_connector4/jre/bin/keytool -import -trustcacerts -storepass changeit -noprompt -alias StorageGrid_SSL -file /home/ictlabsg01.cer -keystore /opt/netapp/santricity_cloud_connector/jre/lib/security/cacerts
+----
+. サービスを再起動します。
+

@@ -1,0 +1,13 @@
+---
+permalink: maintenance-ef600/concept-controllers-wombat.html 
+sidebar: sidebar 
+keywords: controller, board, firmware, software, control, drive, implement, system, manager, function, ef300, ef600, shelf 
+summary: コントローラは、ボード、ファームウェア、ソフトウェアで構成されます。ドライブを制御し、 System Manager の機能を実装します。このセクションでは、 EF300 または EF600 コントローラシェルフ内の 1 台または両方のコントローラを交換する方法について説明します。 
+---
+= コントローラ
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+コントローラは、ボード、ファームウェア、ソフトウェアで構成されます。ドライブを制御し、 System Manager の機能を実装します。このセクションでは、 EF300 または EF600 コントローラシェルフ内の 1 台または両方のコントローラを交換する方法について説明します。

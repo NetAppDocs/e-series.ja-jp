@@ -1,0 +1,25 @@
+---
+permalink: config-linux/iscsi-install-configure-host-utilities-task.html 
+sidebar: sidebar 
+keywords: Linux Unified Host Utilities, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: iSCSI を使用する場合は、 Linux Unified Host Utilities をインストールします。 
+---
+= Linux Unified Host Utilities をインストールして設定します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Linux Unified Host Utilities ツールを使用して、フェイルオーバーポリシーや物理パスなど、ネットアップストレージを管理できます。
+
+.手順
+. を使用します https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] をクリックして、インストールする Unified Host Utilities の適切なバージョンを確認します。
++
+サポートされる構成ごとに対応するバージョンが表示されます。
+
+. から Unified Host Utilities をダウンロードします https://mysupport.netapp.com/site/["ネットアップサポート"^]。
++
+
+NOTE: または、 SANtricity SMdevices ユーティリティを使用して Unified Host Utility ツールと同じ機能を実行することもできます。SMdevices ユーティリティは SMutils パッケージに含まれています。SMutils パッケージは、ホストがストレージアレイから認識する内容を確認するためのユーティリティをまとめたパッケージです。SANtricity ソフトウェアのインストールに含まれています。
+
+

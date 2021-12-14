@@ -1,0 +1,1168 @@
+---
+permalink: maintenance-e5700/hpp-change-host-protocol-task.html 
+sidebar: sidebar 
+keywords: E5700 change host protocol, E5700 baseboard ports, convert E5700 protocol, IB protocol, Infiniband protocol, Fibre Channel protocol, FC protocol, iSCSI protocol, iSER, RoCE, NVMe, converting host port protocol, 
+summary: E5700 のホストポートプロトコルの変更 
+---
+= E5700 ホストプロトコルの変更
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+E5700 ストレージアレイでは、ベースボードホストポートを次のように変換できます。
+
+* Fibre Channel （ FC ；ファイバチャネル）から iSCSI へ
+* iSCSI から FC へ
+* iSER から InfiniBand （ IB ）
+* SRP から IB
+* NVMe から IB への移動
+* NVMe から RoCE
+
+
+
+
+== 手順 1 ：デュアルプロトコル SFP があるかどうかを確認します
+
+SANtricity System Manager を使用して、搭載されている SFP トランシーバのタイプを確認します。これらの SFP は FC と iSCSI の両方のプロトコルで使用できるため、デュアルプロトコル SFP または統合 SFP と呼ばれます。
+
+現在の SFP で 16Gbps と 10Gbps のデータ速度がサポートされていれば、ホストポートプロトコルの変更後も引き続き使用できます。
+
+.手順
+. SANtricity システムマネージャで、 * サポート * を選択します。
+. [ サポートセンター * （ Support Center * ） ] タイルを選択します。
+. [ サポートリソース ] タブで、 [* ストレージアレイプロファイル * ] リンクを探して選択します。
+. テキストボックスに「 * SFP * 」と入力し、「 * 検索」をクリックします。
+. ストレージアレイプロファイルにリストされている各 SFP について、サポートされているデータ速度 * のエントリを探します。
++
+image::../media/sam1130_ss_e2800_unified_spf_maint-e5700.gif[sam1130 ss e2800 Unified spf maint e5700]
+
+. 次の表を参照して、 SFP を再利用できるかどうかを確認します。
++
+|===
+| サポートされるデータ速度 | SFP タイプ | サポートされるプロトコル 
+
+
+ a| 
+16Gbps 、 10Gbps 、 4Gbps 、 4Gbps
+ a| 
+デュアルプロトコル
+ a| 
+** * FC ： * 16Gbps 、 4Gbps
+** ** iSCSI ： ** 10 Gbps
+
+
+
+
+ a| 
+10 Gbps
+ a| 
+10 Gbps
+ a| 
+iSCSI のみ
+
+
+
+ a| 
+16Gbps 、 8Gbps 、 4Gbps
+ a| 
+16Gbps です
+ a| 
+FC のみ
+
+|===
++
+** SFP がデュアルプロトコルの場合は、プロトコルの変更後も引き続き使用できます。
++
+
+NOTE: デュアルプロトコル SFP では、 1Gb の iSCSI はサポートされません。ホストポートを iSCSI に変更する場合、デュアルプロトコル SFP でサポートされる接続されたポートへのリンクは 10Gb のみになることに注意してください。
+
+** SFP が 16Gbps で、ホストポートを iSCSI に変更する場合は、プロトコルの変更後に SFP を取り外し、デュアルプロトコルまたは 10Gbps の SFP に交換する必要があります。必要に応じて、専用のツインアキシャルケーブルを使用して、 SFP で 10Gbps の iSCSI カッパーを使用することもできます。
++
+
+NOTE: E28xx コントローラまたは E57xx コントローラでは、 8Gbps の FC SFP はサポートされません。16Gbps および 32Gbps の FC SFP のみがサポートされます。
+
+** SFP が 10Gbps で、ホストポートを FC に変更する場合は、プロトコルの変更後にそれらのポートから SFP を取り外し、デュアルプロトコルまたは 16Gbps の SFP に交換する必要があります。
+
+
+
+
+
+
+== 手順 2 ：機能パックを入手する
+
+機能パックを入手するには、コントローラシェルフのシリアル番号、 Feature Activation Code 、およびストレージアレイの機能有効識別子が必要です。
+
+.手順
+. シリアル番号を確認します。
++
+.. SANtricity システムマネージャで、メニューサポート [ サポートセンター ] を選択します。
+.. Support Resources * タブを選択した状態で、 * View top storage array properties * セクションまでスクロールします。
+.. シャーシのシリアル番号 * を探し、この値をテキストファイルにコピーします。
++
+image::../media/sam1130_ss_e2800_storage_array_profile_sn_smid_copy_maint-e5700.gif[sam1130 ss e2800 storage array profile snsmid copy maint e5700 という名前のストレージアレイプロファイル]
+
+
+
+. 機能パックサブモデル ID * を確認します。
++
+.. SANtricity システムマネージャで、 * サポート * を選択します。
+.. [ サポートセンター * （ Support Center * ） ] タイルを選択します。
+.. [ サポートリソース ] タブで、 [* ストレージアレイプロファイル * ] リンクを探して選択します。
+.. テキストボックスに * feature pack サブモデル ID* と入力し、 * 検索 * をクリックします。
+.. 変更前の構成の機能パックサブモデル ID を確認します。
++
+image::../media/storage_array_profile2_maint-e5700.gif[ストレージアレイ profile2 maint e5700]
+
+
+
+. 機能パックサブモデル ID を使用して、変更前の構成の対応するコントローラサブモデル ID を確認し、以下の表から変更後の構成の Feature Activation Code を探します。次に、その Feature Activation Code をテキストファイルにコピーします。
++
+
+NOTE: ベースボードポートは、 HIC で NVMe プロトコルを実行している場合は無効になります。
+
++
+
+NOTE: IB HIC を使用していない場合は、次の表の _HIC ports_column を無視してください。
+
++
+|===
+5+| 暗号化対応の Feature Activation Code （ベースボードポートのみの変換） 
+
+
+2+| 設定を開始しています 3+| 構成の終了 
+
+
+| コントローラサブモデル ID | 変換するポート | コントローラサブモデル ID | ポートがに変換されました | Feature Activation Code （機能アクティベーションコード） 
+
+
+ a| 
+360 °
+ a| 
+FC ベースボードポート
+ a| 
+362
+ a| 
+iSCSI ベースボードポート
+ a| 
+SGL-2SB-ZEX13
+
+
+
+ a| 
+362
+ a| 
+iSCSI ベースボードポート
+ a| 
+360 °
+ a| 
+FC ベースボードポート
+ a| 
+5GI-34TB - ZW3HL
+
+|===
++
+|===
+7+| 暗号化対応の Feature Activation Code 
+
+
+3+| 変更前の構成 4+| 変更後の構成 
+
+
+| コントローラサブモデル ID | ベースボードポート | HIC ポート | コントローラサブモデル ID | ベースボードポート | HIC ポート | Feature Activation Code （機能アクティベーションコード） 
+
+
+ a| 
+360 °
+ a| 
+FC
+ a| 
+iSER
+ a| 
+361
+ a| 
+FC
+ a| 
+SRP （ SRP ）
+ a| 
+Ugg-XSB-ZCZKU
+
+
+
+ a| 
+362
+ a| 
+iSCSI
+ a| 
+iSER
+ a| 
+SGL-2SB-ZEX13
+
+
+
+ a| 
+363
+ a| 
+iSCSI
+ a| 
+SRP （ SRP ）
+ a| 
+VGN-LTB-ZGFCT
+
+
+
+ a| 
+382
+ a| 
+使用できません
+ a| 
+NVMe/IB
+ a| 
+KGI- ISB-ZDHQF
+
+
+
+ a| 
+403
+ a| 
+使用できません
+ a| 
+NVMe/RoCE または NVMe/FC
+ a| 
+YGH-BHK-Z8EKB
+
+
+
+ a| 
+361
+ a| 
+FC
+ a| 
+SRP （ SRP ）
+ a| 
+360 °
+ a| 
+FC
+ a| 
+iSER
+ a| 
+JGS-0TB-ZID1V
+
+
+
+ a| 
+362
+ a| 
+iSCSI
+ a| 
+iSER
+ a| 
+UGX-RTB-ZLBPV （ UGX-RTB-ZLBPV ）
+
+
+
+ a| 
+363
+ a| 
+iSCSI
+ a| 
+SRP （ SRP ）
+ a| 
+2G1 - BTB - ZMRYN
+
+
+
+ a| 
+382
+ a| 
+使用できません
+ a| 
+NVMe/IB
+ a| 
+TGV - 8TB - ZKTH6
+
+
+
+ a| 
+403
+ a| 
+使用できません
+ a| 
+NVMe/RoCE または NVMe/FC
+ a| 
+JGM-EIK-ZAC6Q
+
+
+
+ a| 
+362
+ a| 
+iSCSI
+ a| 
+iSER
+ a| 
+360 °
+ a| 
+FC
+ a| 
+iSER
+ a| 
+5GI-34TB - ZW3HL
+
+
+
+ a| 
+361
+ a| 
+FC
+ a| 
+SRP （ SRP ）
+ a| 
+EGL-NTB-ZXKQ4
+
+
+
+ a| 
+363
+ a| 
+iSCSI
+ a| 
+SRP （ SRP ）
+ a| 
+HGP-QUB-Z1ICJ
+
+
+
+ a| 
+383
+ a| 
+使用できません
+ a| 
+NVMe/IB
+ a| 
+BGS-AUB-Z2YNG
+
+
+
+ a| 
+403
+ a| 
+使用できません
+ a| 
+NVMe/RoCE または NVMe/FC
+ a| 
+1GW-LiK- ZG9HN
+
+
+
+ a| 
+363
+ a| 
+iSCSI
+ a| 
+SRP （ SRP ）
+ a| 
+360 °
+ a| 
+FC
+ a| 
+iSER
+ a| 
+SGU バスタブ - Z3G2U
+
+
+
+ a| 
+361
+ a| 
+FC
+ a| 
+SRP （ SRP ）
+ a| 
+FGX-Dub-Z5WF7
+
+
+
+ a| 
+362
+ a| 
+iSCSI
+ a| 
+SRP （ SRP ）
+ a| 
+LG3 - GUB-Z7V17
+
+
+
+ a| 
+383
+ a| 
+使用できません
+ a| 
+NVMe/IB
+ a| 
+NG5-ZUB-Z8C8J
+
+
+
+ a| 
+403
+ a| 
+使用できません
+ a| 
+NVMe/RoCE または NVMe/FC
+ a| 
+WG2-0ik-ZI75U
+
+
+
+ a| 
+382
+ a| 
+使用できません
+ a| 
+NVMe/IB
+ a| 
+360 °
+ a| 
+FC
+ a| 
+iSER
+ a| 
+QG6 - ETB - ZPPPT
+
+
+
+ a| 
+361
+ a| 
+FC
+ a| 
+SRP （ SRP ）
+ a| 
+Xg8-XTB-ZQ7XS
+
+
+
+ a| 
+362
+ a| 
+iSCSI
+ a| 
+iSER
+ a| 
+SGB-HTB-ZS0AH
+
+
+
+ a| 
+363
+ a| 
+iSCSI
+ a| 
+SRP （ SRP ）
+ a| 
+TGD-1TB-ZT5TL
+
+
+
+ a| 
+403
+ a| 
+使用できません
+ a| 
+NVMe/RoCE または NVMe/FC
+ a| 
+IGR-IIK-ZDBRB
+
+
+
+ a| 
+383
+ a| 
+使用できません
+ a| 
+NVMe/IB
+ a| 
+360 °
+ a| 
+FC
+ a| 
+iSER
+ a| 
+LG8 - JUB-ZATLD
+
+
+
+ a| 
+361
+ a| 
+FC
+ a| 
+SRP （ SRP ）
+ a| 
+LG-3UB-ZBAX1
+
+
+
+ a| 
+362
+ a| 
+iSCSI
+ a| 
+iSER
+ a| 
+NGF-7UB-ZE8KX
+
+
+
+ a| 
+363
+ a| 
+iSCSI
+ a| 
+SRP （ SRP ）
+ a| 
+3GI- QUB-ZFP1Y
+
+
+
+ a| 
+403
+ a| 
+使用できません
+ a| 
+NVMe/RoCE または NVMe/FC
+ a| 
+5G7 - RIK - ZL5PE
+
+
+
+ a| 
+403
+ a| 
+使用できません
+ a| 
+NVMe/RoCE または NVMe/FC
+ a| 
+360 °
+ a| 
+FC
+ a| 
+iSER
+ a| 
+BGC-UIK-Z03GR
+
+
+
+ a| 
+361
+ a| 
+FC
+ a| 
+SRP （ SRP ）
+ a| 
+LGF - EIK - ZPJRX
+
+
+
+ a| 
+362
+ a| 
+iSCSI
+ a| 
+iSER
+ a| 
+PGJ-HIK-ZSIDZ
+
+
+
+ a| 
+363
+ a| 
+iSCSI
+ a| 
+SRP （ SRP ）
+ a| 
+1GM-1JK-ZTYQX
+
+
+
+ a| 
+382
+ a| 
+使用できません
+ a| 
+NVMe/IB
+ a| 
+JGH-Xik-ZQ142.
+
+|===
++
+|===
+5+| 暗号化非対応の Feature Activation Code （ベースボードポートのみの変換） 
+
+
+2+| 変更前の構成 3+| 構成の終了 
+
+
+| コントローラサブモデル ID | 変換するポート | コントローラサブモデル ID | ポートがに変換されました | Feature Activation Code （機能アクティベーションコード） 
+
+
+ a| 
+365
+ a| 
+FC ベースボードポート
+ a| 
+367.
+ a| 
+iSCSI ベースボードポート
+ a| 
+BGU-GVB-ZM3KW
+
+
+
+ a| 
+367.
+ a| 
+iSCSI ベースボードポート
+ a| 
+366
+ a| 
+FC ベースボードポート
+ a| 
+9GU-2WB-Z503D
+
+|===
++
+|===
+7+| 暗号化非対応の Feature Activation Code 
+
+
+3+| 変更前の構成 4+| 変更後の構成 
+
+
+| コントローラサブモデル ID | ベースボードポート | HIC ポート | コントローラサブモデル ID | ベースボードポート | HIC ポート | Feature Activation Code （機能アクティベーションコード） 
+
+
+ a| 
+365
+ a| 
+FC
+ a| 
+iSER
+ a| 
+366
+ a| 
+FC
+ a| 
+SRP （ SRP ）
+ a| 
+BGP-DVB-ZJ4YC
+
+
+
+ a| 
+367.
+ a| 
+iSCSI
+ a| 
+iSER
+ a| 
+BGU-GVB-ZM3KW
+
+
+
+ a| 
+368
+ a| 
+iSCSI
+ a| 
+SRP （ SRP ）
+ a| 
+4GX-ZVB-ZNJVD
+
+
+
+ a| 
+384
+ a| 
+使用できません
+ a| 
+NVMe/IB
+ a| 
+TGS-WVB-ZKL9T
+
+
+
+ a| 
+405
+ a| 
+使用できません
+ a| 
+NVMe/RoCE または NVMe/FC
+ a| 
+WGC - GJK - Z7PU2
+
+
+
+ a| 
+366
+ a| 
+FC
+ a| 
+SRP （ SRP ）
+ a| 
+365
+ a| 
+FC
+ a| 
+iSER
+ a| 
+WG2-3 VB-ZQHLF
+
+
+
+ a| 
+367.
+ a| 
+iSCSI
+ a| 
+iSER
+ a| 
+QG7 - 6VB - ZSF8M
+
+
+
+ a| 
+368
+ a| 
+iSCSI
+ a| 
+SRP （ SRP ）
+ a| 
+PGA-PVB-ZUWMX
+
+
+
+ a| 
+384
+ a| 
+使用できません
+ a| 
+NVMe/IB
+ a| 
+CG5-MVB-ZRYW1
+
+
+
+ a| 
+405
+ a| 
+使用できません
+ a| 
+NVMe/RoCE または NVMe/FC
+ a| 
+3GH - JK - ZANJQ
+
+
+
+ a| 
+367.
+ a| 
+iSCSI
+ a| 
+iSER
+ a| 
+365
+ a| 
+FC
+ a| 
+iSER
+ a| 
+PGR - IWB - Z48PC
+
+
+
+ a| 
+366
+ a| 
+FC
+ a| 
+SRP （ SRP ）
+ a| 
+9GU-2WB-Z503D
+
+
+
+ a| 
+368
+ a| 
+iSCSI
+ a| 
+SRP （ SRP ）
+ a| 
+SGJ-IWB - ZJFE4
+
+
+
+ a| 
+385
+ a| 
+使用できません
+ a| 
+NVMe/IB
+ a| 
+UGM-2XB-ZKV0B
+
+
+
+ a| 
+405
+ a| 
+使用できません
+ a| 
+NVMe/RoCE または NVMe/FC
+ a| 
+8GR-QKK-ZFJTP
+
+
+
+ a| 
+368
+ a| 
+iSCSI
+ a| 
+SRP （ SRP ）
+ a| 
+365
+ a| 
+FC
+ a| 
+iSER
+ a| 
+YG0-LXB-ZLD26
+
+
+
+ a| 
+366
+ a| 
+FC
+ a| 
+SRP （ SRP ）
+ a| 
+SGR-5XB-ZNTFB
+
+
+
+ a| 
+367.
+ a| 
+iSCSI
+ a| 
+SRP （ SRP ）
+ a| 
+PGZ-5WB-Z8M0N
+
+
+
+ a| 
+385
+ a| 
+使用できません
+ a| 
+NVMe/IB
+ a| 
+KG2-0WB-Z9477
+
+
+
+ a| 
+405
+ a| 
+使用できません
+ a| 
+NVMe/RoCE または NVMe/FC
+ a| 
+2GV-TK-ZIHI6
+
+
+
+ a| 
+384
+ a| 
+使用できません
+ a| 
+NVMe/IB
+ a| 
+365
+ a| 
+FC
+ a| 
+iSER
+ a| 
+SGF-SVB-ZWU9M
+
+
+
+ a| 
+366
+ a| 
+FC
+ a| 
+SRP （ SRP ）
+ a| 
+7GH-CVB-ZYBGV
+
+
+
+ a| 
+367.
+ a| 
+iSCSI
+ a| 
+iSER
+ a| 
+6GK-VVB-ZZSRN
+
+
+
+ a| 
+368
+ a| 
+iSCSI
+ a| 
+SRP （ SRP ）
+ a| 
+RGM - FWB-Z195H
+
+
+
+ a| 
+405
+ a| 
+使用できません
+ a| 
+NVMe/RoCE または NVMe/FC
+ a| 
+VGM - NKK-ZDLDK
+
+
+
+ a| 
+385
+ a| 
+使用できません
+ a| 
+NVMe/IB
+ a| 
+365
+ a| 
+FC
+ a| 
+iSER
+ a| 
+GG5-8WB - ZBKEM
+
+
+
+ a| 
+366
+ a| 
+FC
+ a| 
+SRP （ SRP ）
+ a| 
+KG7 - RWB - ZC2RZ
+
+
+
+ a| 
+367.
+ a| 
+iSCSI
+ a| 
+iSER
+ a| 
+NGC - VWB - ZFZEN
+
+
+
+ a| 
+368
+ a| 
+iSCSI
+ a| 
+SRP （ SRP ）
+ a| 
+4GE-FWB-ZGGQJ
+
+
+
+ a| 
+405
+ a| 
+使用できません
+ a| 
+NVMe/RoCE または NVMe/FC
+ a| 
+NG1-WKK-ZLFAI
+
+
+
+ a| 
+405
+ a| 
+使用できません
+ a| 
+NVMe/RoCE または NVMe/FC
+ a| 
+365
+ a| 
+FC
+ a| 
+iSER
+ a| 
+MG6-ZKK-ZNDVC
+
+
+
+ a| 
+366
+ a| 
+FC
+ a| 
+SRP （ SRP ）
+ a| 
+WG9-JKK-ZPUAR
+
+
+
+ a| 
+367.
+ a| 
+iSCSI
+ a| 
+iSER
+ a| 
+Nge - MKK - ZRSW9.
+
+
+
+ a| 
+368
+ a| 
+iSCSI
+ a| 
+SRP （ SRP ）
+ a| 
+TGG-6KK-ZT9BU
+
+
+
+ a| 
+384
+ a| 
+使用できません
+ a| 
+NVMe/IB
+ a| 
+AGB-3KK-ZQBLR
+
+|===
++
+
+NOTE: この表にコントローラサブモデル ID が記載されていない場合は、にお問い合わせください http://mysupport.netapp.com["ネットアップサポート"^]。
+
+. System Manager で、機能有効識別子を確認します。
++
+.. メニュー「 Settings （設定）」 [ System （システム） ] に移動します。
+.. 下にスクロールして * アドオン * を表示します。
+.. * 機能パックの変更 * で、 * 機能有効識別子 * を探します。
+.. この 32 桁の番号をコピーしてテキストファイルに貼り付けます。
++
+image::../media/sam1130_ss_e2800_change_feature_pack_feature_enable_identifier_copy_maint-e5700.gif[sam1130 ss e2800 変更機能パックのイネーブル ID コピー maint e5700 機能]
+
+
+
+. に進みます http://partnerspfk.netapp.com["ネットアップライセンスのアクティブ化：ストレージアレイプレミアム機能のアクティブ化"^]をクリックし、機能パックの入手に必要な情報を入力します。
++
+** シャーシのシリアル番号
+** Feature Activation Code （機能アクティベーションコード）
+** 機能有効識別子
++
+
+NOTE: プレミアム機能ライセンス認証 Web サイトには、「プレミアム機能ライセンス認証手順」へのリンクがあります。 この手順では、この手順を使用しないでください。
+
+
+
+. 機能パックのキーファイルを E メールで受け取るかサイトから直接ダウンロードするかを選択します。
+
+
+
+
+== 手順 3 ：ホスト I/O を停止します
+
+ホストポートのプロトコルを変更する前に、ホストからの I/O 処理をすべて停止します。変更が完了するまではストレージアレイのデータにアクセスできません。
+
+このタスクは、すでに使用中のストレージアレイを変換する場合にのみ適用されます。
+
+.手順
+. ストレージアレイと接続されているすべてのホストの間で I/O 処理が発生しないようにします。たとえば、次の手順を実行します。
++
+** ストレージからホストにマッピングされた LUN に関連するすべてのプロセスを停止します。
+** ストレージからホストにマッピングされた LUN にアプリケーションがデータを書き込んでいないことを確認します。
+** アレイのボリュームに関連付けられているファイルシステムをすべてアンマウントします。
++
+
+NOTE: ホスト I/O 処理を停止する具体的な手順はホストオペレーティングシステムや構成によって異なり、ここでは説明していません。環境内でホスト I/O 処理を停止する方法がわからない場合は、ホストをシャットダウンすることを検討してください。
+
++
+
+CAUTION: * データ損失の可能性 * - I/O 処理の実行中にこの手順を続行すると、ストレージアレイにアクセスできないため、ホストアプリケーションがデータを失う可能性があります。
+
+
+
+. ストレージアレイでミラー関係が確立されている場合は、セカンダリストレージアレイのすべてのホスト I/O 処理を停止します。
+. キャッシュメモリ内のデータがドライブに書き込まれるまで待ちます。
++
+キャッシュされたデータをドライブに書き込む必要がある場合は、各コントローラの背面にある緑のキャッシュアクティブ LED * （ 1 ） * が点灯します。この LED が消灯するまで待つ必要があります。image:../media/e5700_ib_hic_w_cache_led_callouts_maint-e5700.gif[""]
+
+. SANtricity システムマネージャのホームページで、「 * 進行中の操作を表示」を選択します。
+. すべての処理が完了するまで待ってから、次の手順に進みます。
+
+
+
+
+== 手順 4 ：機能パックを変更する
+
+機能パックを変更して、ベースボードホストポート、 IB HIC ポート、または両方のタイプのポートのホストプロトコルを変更します。
+
+.手順
+. SANtricity システムマネージャで、 [MENU: Settings （メニュー：設定） ] [System] （システム）を選択します。
+. [ * アドオン * ] で、 [ * 機能パックの変更 * ] を選択します。
++
+image::../media/sam1130_ss_system_change_feature_pack_maint-e5700.gif[sam1130 ss system change feature pack maint e5700]
+
+. [ * 参照 ] をクリックし、適用する機能パックを選択します。
+. フィールドに「 * CHANGE * 」と入力します。
+. [ 変更（ Change ） ] をクリックします。
++
+機能パックの移行が開始されます。両方のコントローラが自動的に 2 回リブートし、新しい機能パックが有効になります。リブートが完了すると、ストレージアレイは応答可能な状態に戻ります。
+
+. ホストポートのプロトコルが想定したプロトコルになっていることを確認します。
++
+.. SANtricity システムマネージャで、 * ハードウェア * を選択します。
+.. Show back of shelf* （シェルフの背面を表示）をクリックします。
+.. コントローラ A またはコントローラ B の図を選択します
+.. コンテキストメニューから * 表示設定 * （ * View settings * ）を選択します。
+.. [ * ホスト・インターフェイス * ] タブを選択します。
+.. [ 詳細設定を表示する *] をクリックします。
+.. ベースボードポートと HIC ポート（「 'sot 1' 」というラベルが付いたポート）の詳細を確認し、各タイプのポートのプロトコルが想定したプロトコルになっていることを確認します。
+
+
+
+
+に進みます link:hpp-complete-protocol-conversion-task.html["ホストプロトコル変更後の処理"]。

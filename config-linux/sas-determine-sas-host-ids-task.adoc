@@ -1,0 +1,28 @@
+---
+permalink: config-linux/sas-determine-sas-host-ids-task.html 
+sidebar: sidebar 
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: SAS プロトコルを使用する場合は、 HBA ユーティリティを使用して SAS アドレスを確認し、 HBA BIOS を使用して適切な設定を行います。 
+---
+= SAS ホスト識別子の特定 - Linux
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SAS プロトコルを使用する場合は、 HBA ユーティリティを使用して SAS アドレスを確認し、 HBA BIOS を使用して適切な設定を行います。
+
+この手順を開始する前に、 HBA ユーティリティに関する次のガイドラインを確認してください。
+
+* ほとんどの HBA ベンダーは HBA ユーティリティを提供しています。使用するホストオペレーティングシステムと CPU に応じて、 LSI-sas2flash （ 6G ）または sas3flash （ 12G ）のいずれかのユーティリティを使用します。
+* Host Context Agent がインストールされている場合、ホストの I/O ポートは自動的に登録されることがあります。
+
+
+.手順
+. HBA ユーティリティを HBA ベンダーの Web サイトからダウンロードします。
+. ユーティリティをインストールします。
+. HBA BIOS を使用して構成に適した設定を選択します。
++
+の「メモ」列を参照してください https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] を参照してください。
+
+

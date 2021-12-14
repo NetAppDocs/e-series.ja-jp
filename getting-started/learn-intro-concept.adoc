@@ -1,0 +1,13 @@
+---
+permalink: getting-started/learn-intro-concept.html 
+sidebar: sidebar 
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600 
+summary: 組織のデータストレージニーズに対応するハードウェアとソフトウェアを統合した E シリーズシステムについて説明します。 
+---
+= E シリーズシステムの詳細をご確認ください
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+組織のデータストレージニーズに対応するハードウェアとソフトウェアを統合した E シリーズシステムについて説明します。

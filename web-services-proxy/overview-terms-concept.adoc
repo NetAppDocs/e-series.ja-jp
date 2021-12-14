@@ -1,0 +1,87 @@
+---
+permalink: web-services-proxy/overview-terms-concept.html 
+sidebar: sidebar 
+keywords: Web Services terms, WSP concepts 
+summary: Web Services API について説明します 
+---
+= 用語と概念
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Web Services Proxy に関連する用語を以下に記載します。
+
+|===
+| 期間 | 定義（ Definition ） 
+
+
+ a| 
+API
+ a| 
+アプリケーションプログラミングインターフェイス（ API ）は、開発者がデバイスとの通信に使用する一連のプロトコルとメソッドです。Web Services API は、 E シリーズストレージシステムとの通信に使用されます。
+
+
+
+ a| 
+ASUP
+ a| 
+AutoSupport （ ASUP ）は、データを収集してカスタマーサポートバンドルとして保存し、リモートでのトラブルシューティングや問題分析用にメッセージファイルをテクニカルサポートに自動的に送信する機能です。
+
+
+
+ a| 
+エンドポイント
+ a| 
+エンドポイントは API で使用できる関数です。エンドポイントには、 HTTP 動詞と URI パスが含まれます。Web Services では、エンドポイントを使用してストレージシステムの検出やボリュームの作成などのタスクを実行できます。
+
+
+
+ a| 
+HTTP 動詞
+ a| 
+HTTP 動詞は、データの取得や作成など、エンドポイントで実行するアクションです。Web Services では、 POST 、 GET 、および DELETE の HTTP 動詞がサポートされます。
+
+
+
+ a| 
+JSON
+ a| 
+JavaScript Object Notation （ JSON ）は XML とほぼ同じ構造化データ形式で、最小限の判読可能な形式を使用します。Web Services 内のデータは JSON でエンコードされています。
+
+
+
+ a| 
+REST / RESTful
+ a| 
+Representational State Transfer （ REST ）は、 API のアーキテクチャスタイルを定義する大まかな仕様です。ほとんどの REST API は仕様に完全には準拠していないため、「フル」または「 ST に似た」と記述されています。 一般に、「フル」 API はプログラミング言語に依存せず、次のような特徴があります。
+
+* HTTP ベース。プロトコルの一般的なセマンティクスに従います
+* 構造化データ（ JSON 、 XML など）のプロデューサとコンシューマ
+* オブジェクト指向（処理指向ではない）
+
+
+Web Services は、実質的にすべての SANtricity 管理機能へのアクセスを提供する RESTful API です。
+
+
+
+ a| 
+ストレージシステム
+ a| 
+ストレージシステムは、シェルフ、コントローラ、ドライブ、ソフトウェア、 ファームウェアを追加できます。
+
+
+
+ a| 
+SYMbol API
+ a| 
+SYMbol は、 E シリーズストレージシステムを管理するためのレガシー API です。Web Services API の基盤となる実装で使用されています。
+
+
+
+ a| 
+Web サービス
+ a| 
+Web Services は、 E シリーズストレージシステムの管理用に開発者向けに設計されたネットアップ独自の API です。Web Services には 2 つの実装があります。 1 つはコントローラに組み込まれており、もう 1 つはプロキシとして Linux または Windows に別途インストールできます。
+
+|===

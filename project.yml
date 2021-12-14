@@ -1,0 +1,834 @@
+---
+settings:
+  name: E-Series
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: true
+    langs: ja-jp,us-en,zh-cn
+sidebar:
+  entries:
+  - title: E シリーズのドキュメント
+    url: "/index.html"
+  - title: リリースノート
+    entries:
+    - title: 新機能
+      url: "/whats-new.html"
+    - title: リリースノート
+      url: "/known-issues.html"
+  - title: はじめに
+    entries:
+    - title: このサイトに含まれている情報
+      url: "/getting-started/index.html"
+    - title: E シリーズシステムの詳細をご確認ください
+      entries:
+      - title: E シリーズの用語
+        url: "/getting-started/learn-terms-concept.html"
+      - title: E シリーズハードウェアの概要
+        url: "/getting-started/learn-hardware-concept.html"
+      - title: E シリーズシェルフのタイプ
+        url: "/getting-started/learn-shelf-concept.html"
+      - title: SANtricity ソフトウェアの概要
+        url: "/getting-started/learn-software-concept.html"
+      - title: E シリーズのビデオ
+        url: "/getting-started/learn-video-concept.html"
+    - title: E シリーズの運用を開始
+      url: "/getting-started/getup-run-concept.html"
+  - title: ハードウェアを設置
+    entries:
+    - title: EF300 および EF600
+      entries:
+      - title: 概要
+        url: "/install-hw-ef600/index.html"
+      - title: インストールプロセス
+        url: "/install-hw-ef600/overview-concept.html"
+      - title: インストールを準備
+        url: "/install-hw-ef600/prepare-for-install-task.html"
+      - title: ハードウェアを設置
+        url: "/install-hw-ef600/install-hardware-task.html"
+      - title: コントローラシェルフの電源をオンにします
+        url: "/install-hw-ef600/power-controller-shelves-task.html"
+      - title: ストレージシステムのセットアップを完了
+        url: "/install-hw-ef600/complete-setup-task.html"
+    - title: E2800 および E5700
+      entries:
+      - title: 概要
+        url: "/install-hw-e2800-e5700/index.html"
+      - title: インストールプロセス
+        url: "/install-hw-e2800-e5700/install-setup-overview-concept.html"
+      - title: 60 ドライブを設置してセットアップ
+        entries:
+        - title: インストールを準備
+          url: "/install-hw-e2800-e5700/e2860-e5760-prepare-task.html"
+        - title: ハードウェアを設置
+          url: "/install-hw-e2800-e5700/e2860-e5760-install-hardware-task.html"
+        - title: シェルフをケーブル接続
+          url: "/install-hw-e2800-e5700/e2860-e5760-connect-cables-task.html"
+        - title: ストレージシステムのセットアップを完了
+          url: "/install-hw-e2800-e5700/e2860-e5760-complete-setup-task.html"
+      - title: 12 本と 24 本のドライブを設置してセットアップします
+        entries:
+        - title: インストールを準備
+          url: "/install-hw-e2800-e5700/e2824-e5724-prepare-task.html"
+        - title: ハードウェアを設置
+          url: "/install-hw-e2800-e5700/e2824-e5724-install-hardware-task.html"
+        - title: ケーブルを接続します
+          url: "/install-hw-e2800-e5700/e2824-e5724-connect-cables-task.html"
+        - title: ストレージシステムのセットアップを完了
+          url: "/install-hw-e2800-e5700/e2824-e5724-complete-setup-task.html"
+    - title: 3040 40U キャビネット
+      entries:
+      - title: 概要
+        url: "/install-hw-cabinet/index.html"
+      - title: 仕様
+        url: "/install-hw-cabinet/overview-cabinet-specs-concept.html"
+      - title: 必要な工具と機器を用意する
+        url: "/install-hw-cabinet/cabinet-gather-tools-equipment-task.html"
+      - title: キャビネットを移動する準備をします
+        url: "/install-hw-cabinet/prepare-move-cabinet-task.html"
+      - title: 最終設置先へのキャビネットの移動
+        url: "/install-hw-cabinet/move-cabinet-task.html"
+      - title: キャビネットの設置を完了
+        url: "/install-hw-cabinet/complete-cabinet-install-task.html"
+    - title: ラックマウントハードウェア
+      url: "/rackmount-hardware.html"
+    - title: ケーブル配線
+      entries:
+      - title: 概要
+        url: "/install-hw-cabling/index.html"
+      - title: 要件
+        url: "/install-hw-cabling/cable-overview-requirements-concept.html"
+      - title: ホストのケーブル接続
+        url: "/install-hw-cabling/host-cable-task.html"
+      - title: ドライブシェルフのケーブル接続
+        url: "/install-hw-cabling/driveshelf-cable-task.html"
+      - title: 電源のケーブル接続
+        url: "/install-hw-cabling/power-cable-task.html"
+      - title: ドライブシェルフをホットアドします
+        url: "/install-hw-cabling/hotadd-drive-shelf-task.html"
+      - title: イーサネットケーブル接続
+        url: "/install-hw-cabling/ethernet-cable-task.html"
+  - title: ソフトウェアを導入
+    entries:
+    - title: Linux の簡単な設定
+      entries:
+      - title: 概要
+        url: "/config-linux/index.html"
+      - title: 前提条件
+        url: "/config-linux/overview-concept.html"
+      - title: Fibre Channel のクイックセットアップ
+        entries:
+        - title: Linux 構成を確認
+          url: "/config-linux/fc-verify-linux-config-support-task.html"
+        - title: DHCP を使用して IP アドレスを設定する
+          url: "/config-linux/fc-configure-ip-address-dhcp-task.html"
+        - title: Host Utilities をインストールして設定する
+          url: "/config-linux/fc-install-configure-host-utilities-task.html"
+        - title: SANtricity Storage Manager をインストールします
+          url: "/config-linux/fc-install-smcli-11-53-task.html"
+        - title: SANtricity システムマネージャにアクセスします
+          url: "/config-linux/fc-access-sam-setup-wizard-task.html"
+        - title: マルチパスソフトウェアを設定する
+          url: "/config-linux/fc-configure-multipath-software-task.html"
+        - title: multipath.conf ファイルをセットアップします
+          url: "/config-linux/fc-setup-multipath-conf-file-concept.html"
+        - title: FC スイッチを設定
+          url: "/config-linux/fc-configure-switches-task.html"
+        - title: ホストの WWPN を確認する
+          url: "/config-linux/fc-determine-host-port-wwpns-task.html"
+        - title: パーティションとファイルシステムを作成します
+          url: "/config-linux/fc-create-partition-file-task.html"
+        - title: ホストでストレージアクセスを確認
+          url: "/config-linux/fc-verify-storage-access-host-task.html"
+        - title: FC ワークシート - Linux
+          url: "/config-linux/fc-worksheet-concept.html"
+      - title: SAS のセットアップ
+        entries:
+        - title: Linux 構成を確認
+          url: "/config-linux/sas-verify-linux-config-support-task.html"
+        - title: DHCP を使用して IP アドレスを設定する
+          url: "/config-linux/sas-configure-ip-address-dhcp-task.html"
+        - title: Host Utilities をインストールして設定する
+          url: "/config-linux/sas-install-configure-host-utilities-task.html"
+        - title: SANtricity Storage Manager をインストールします
+          url: "/config-linux/sas-install-smcli-11-53-task.html"
+        - title: SANtricity システムマネージャにアクセスします
+          url: "/config-linux/sas-access-sam-setup-wizard-task.html"
+        - title: マルチパスソフトウェアを設定する
+          url: "/config-linux/sas-configure-multipath-software-task.html"
+        - title: multipath.conf ファイルをセットアップします
+          url: "/config-linux/sas-setup-multipath-conf-file-concept.html"
+        - title: SAS ホスト識別子を特定する
+          url: "/config-linux/sas-determine-sas-host-ids-task.html"
+        - title: パーティションとファイルシステムを作成します
+          url: "/config-linux/sas-create-partitions-filesystems-task.html"
+        - title: ホストでストレージアクセスを確認
+          url: "/config-linux/sas-verify-storage-access-host-task.html"
+        - title: Linux 用の SAS ワークシートです
+          url: "/config-linux/sas-worksheet-concept.html"
+      - title: iSCSI セットアップ
+        entries:
+        - title: Linux 構成を確認
+          url: "/config-linux/iscsi-verify-linux-config-support-task.html"
+        - title: DHCP を使用して IP アドレスを設定する
+          url: "/config-linux/iscsi-configure-ip-address-dhcp-task.html"
+        - title: Host Utilities をインストールして設定する
+          url: "/config-linux/iscsi-install-configure-host-utilities-task.html"
+        - title: SANtricity Storage Manager をインストールします
+          url: "/config-linux/iscsi-install-smcli-11-53-task.html"
+        - title: SANtricity システムマネージャにアクセスします
+          url: "/config-linux/iscsi-access-sam-setup-wizard-task.html"
+        - title: マルチパスソフトウェアを設定する
+          url: "/config-linux/iscsi-configure-multipath-software-task.html"
+        - title: multipath.conf ファイルをセットアップします
+          url: "/config-linux/iscsi-setup-multipath-conf-file-concept.html"
+        - title: スイッチを設定します
+          url: "/config-linux/iscsi-configure-switches-concept.html"
+        - title: ネットワークを設定します
+          url: "/config-linux/iscsi-configure-network-concept.html"
+        - title: アレイ側のネットワークを設定
+          url: "/config-linux/iscsi-configure-array-side-network-task.html"
+        - title: ホスト側のネットワークを設定
+          url: "/config-linux/iscsi-configure-host-side-network-task.html"
+        - title: IP ネットワーク接続を確認します
+          url: "/config-linux/iscsi-verify-ip-network-connections-task.html"
+        - title: パーティションとファイルシステムを作成します
+          url: "/config-linux/iscsi-create-partition-file-task.html"
+        - title: ホストでストレージアクセスを確認
+          url: "/config-linux/iscsi-verify-storage-access-host-task.html"
+        - title: Linux 用の iSCSI ワークシート
+          url: "/config-linux/iscsi-worksheet-concept.html"
+      - title: iSER over InfiniBand のセットアップ
+        entries:
+        - title: Linux 構成を確認
+          url: "/config-linux/iser-ib-verify-linux-config-support-task.html"
+        - title: DHCP を使用して IP アドレスを設定する
+          url: "/config-linux/iser-ib-configure-ip-address-dhcp-task.html"
+        - title: サブネットマネージャを設定します
+          url: "/config-linux/iser-ib-configure-subnet-manager-task.html"
+        - title: Host Utilities をインストールして設定する
+          url: "/config-linux/iser-ib-install-configure-host-utilities-task.html"
+        - title: SANtricity Storage Manager をインストールします
+          url: "/config-linux/iser-ib-install-smcli-11-53-task.html"
+        - title: SANtricity システムマネージャにアクセスします
+          url: "/config-linux/iser-ib-access-sam-setup-wizard-task.html"
+        - title: マルチパスソフトウェアを設定する
+          url: "/config-linux/iser-ib-configure-multipath-software-task.html"
+        - title: multipath.conf ファイルをセットアップします
+          url: "/config-linux/iser-ib-setup-multipath-conf-file-concept.html"
+        - title: ネットワーク接続を設定します
+          url: "/config-linux/iser-ib-configure-network-connections-task.html"
+        - title: ネットワークを設定します
+          url: "/config-linux/iser-ib-configure-network-attached-hosts-task.html"
+        - title: パーティションとファイルシステムを作成します
+          url: "/config-linux/iser-ib-create-partition-files-task.html"
+        - title: ホストでストレージアクセスを確認
+          url: "/config-linux/iser-ib-verify-storage-access-host-task.html"
+        - title: iSER over InfiniBand ワークシート
+          url: "/config-linux/iser-ib-worksheet-concept.html"
+      - title: SRP over InfiniBand のセットアップ
+        entries:
+        - title: Linux 構成を確認
+          url: "/config-linux/srp-ib-verify-linux-config-support-task.html"
+        - title: DHCP を使用して IP アドレスを設定する
+          url: "/config-linux/srp-ib-configure-ip-address-dhcp-task.html"
+        - title: サブネットマネージャを設定します
+          url: "/config-linux/srp-ib-configure-subnet-manager-task.html"
+        - title: Host Utilities をインストールして設定する
+          url: "/config-linux/srp-ib-install-configure-host-utilities-task.html"
+        - title: SANtricity Storage Manager をインストールします
+          url: "/config-linux/srp-ib-install-smcli-11-53-task.html"
+        - title: SANtricity システムマネージャにアクセスします
+          url: "/config-linux/srp-ib-access-sam-setup-wizard-task.html"
+        - title: マルチパスソフトウェアを設定する
+          url: "/config-linux/srp-ib-configure-multipath-software-task.html"
+        - title: multipath.conf ファイルをセットアップします
+          url: "/config-linux/srp-ib-setup-multipath-conf-file-concept.html"
+        - title: ホストポートの GUID を特定します
+          url: "/config-linux/srp-ib-determine-host-port-guids-task.html"
+        - title: ネットワーク接続の設定： SRP over InfiniBand
+          url: "/config-linux/srp-ib-configure-network-connections-task.html"
+        - title: パーティションとファイルシステムを作成します
+          url: "/config-linux/srp-ib-create-partitions-filesystems-task.html"
+        - title: ホストでストレージアクセスを確認
+          url: "/config-linux/srp-ib-verify-storage-access-host-task.html"
+        - title: SRP over InfiniBand ワークシート
+          url: "/config-linux/srp-ib-worksheet-concept.html"
+      - title: NVMe over InfiniBand のセットアップ
+        entries:
+        - title: Linux 構成を確認
+          url: "/config-linux/nvme-ib-verify-linux-config-support-task.html"
+        - title: DHCP を使用して IP アドレスを設定する
+          url: "/config-linux/nvme-ib-configure-ip-address-dhcp-task.html"
+        - title: SMcli を使用するには、 SANtricity Storage Manager をインストールします
+          url: "/config-linux/nvme-ib-install-smcli-11-53-task.html"
+        - title: SANtricity System Manager にアクセスし、セットアップウィザードを使用します
+          url: "/config-linux/nvme-ib-access-sam-setup-wizard-task.html"
+        - title: サブネットマネージャを設定します
+          url: "/config-linux/nvme-ib-configure-subnet-manager-task.html"
+        - title: ホスト側で NVMe over InfiniBand を設定します
+          url: "/config-linux/nvme-ib-setup-host-side-task.html"
+        - title: ストレージアレイの NVMe over InfiniBand 接続を設定します
+          url: "/config-linux/nvme-ib-configure-storage-connections-task.html"
+        - title: ホストからストレージを検出して接続します
+          url: "/config-linux/nvme-ib-discover-connect-storage-host-task.html"
+        - title: ホストを定義します
+          url: "/config-linux/nvme-ib-define-host-task.html"
+        - title: ボリュームを割り当てます
+          url: "/config-linux/ib-assign-volume-nvme-task.html"
+        - title: ホストが認識できるボリュームを表示する
+          url: "/config-linux/nvme-ib-display-devices-visible-host-task.html"
+        - title: フェイルオーバーを設定
+          url: "/config-linux/nvme-ib-set-up-failover-task.html"
+        - title: 仮想デバイスターゲットの NVMe ボリュームにアクセスします
+          url: "/config-linux/nvme-ib-access-virtual-targets-concept.html"
+        - title: 物理デバイスターゲットの NVMe ボリュームにアクセスします
+          url: "/config-linux/nvme-ib-access-physical-targets-concept.html"
+        - title: ファイルシステムの作成（ RHEL 7 および SLES 12 ）
+          url: "/config-linux/nvme-ib-create-filesystems-sles-12-task.html"
+        - title: ファイルシステムの作成（ RHEL 8 および SLES 15 ）
+          url: "/config-linux/nvme-ib-create-filesystems-sles-15-task.html"
+        - title: ホストでストレージアクセスを確認
+          url: "/config-linux/nvme-ib-verify-storage-access-host-task.html"
+        - title: NVMe over InfiniBand ワークシート
+          url: "/config-linux/nvme-ib-worksheet-concept.html"
+      - title: NVMe over RoCE のセットアップ
+        entries:
+        - title: Linux 構成を確認
+          url: "/config-linux/nvme-roce-verify-linux-config-support-task.html"
+        - title: DHCP を使用して IP アドレスを設定する
+          url: "/config-linux/nvme-roce-configure-ip-address-dhcp-task.html"
+        - title: SANtricity Storage Manager をインストールします
+          url: "/config-linux/nvme-roce-install-smcli-11-53-task.html"
+        - title: SANtricity システムマネージャにアクセスします
+          url: "/config-linux/nvme-roce-access-sam-setup-wizard-task.html"
+        - title: スイッチを設定します
+          url: "/config-linux/nvme-roce-configure-switch-task.html"
+        - title: ホストで NVMe over RoCE を設定します
+          url: "/config-linux/nvme-roce-setup-host-side-task.html"
+        - title: NVMe ポートを設定します
+          url: "/config-linux/nvme-roce-configure-storage-connections-task.html"
+        - title: ホストからストレージに接続します
+          url: "/config-linux/nvme-roce-discover-connect-storage-host-task.html"
+        - title: ホストを定義する
+          url: "/config-linux/nvme-roce-define-host-task.html"
+        - title: ボリュームを割り当てます
+          url: "/config-linux/nvme-roce-assign-volume-task.html"
+        - title: ホストが認識できるボリュームを表示します
+          url: "/config-linux/nvme-roce-display-volumes-visible-host-task.html"
+        - title: ホストでフェイルオーバーを設定します
+          url: "/config-linux/nvme-roce-setup-failover-host-task.html"
+        - title: 仮想デバイスターゲットの NVMe ボリュームにアクセスします
+          url: "/config-linux/nvme-roce-access-virtual-targets-concept.html"
+        - title: 物理デバイスターゲットの NVMe ボリュームにアクセスします
+          url: "/config-linux/nvme-roce-access-physical-targets-concept.html"
+        - title: ファイルシステムの作成（ RHEL 7 および SLES 12 ）
+          url: "/config-linux/nvme-roce-create-filesystems-sles-12-task.html"
+        - title: ファイルシステムの作成（ RHEL 8 および SLES 15 ）
+          url: "/config-linux/nvme-roce-create-filesystems-sles-15-task.html"
+        - title: ホストでストレージアクセスを確認
+          url: "/config-linux/nvme-roce-verify-storage-access-host-task.html"
+        - title: NVMe over RoCE ワークシート - Linux
+          url: "/config-linux/nvme-roce-worksheet-for-concept.html"
+      - title: NVMe over Fibre Channel のセットアップ
+        entries:
+        - title: Linux 構成を確認
+          url: "/config-linux/nvme-fc-verify-linux-config-support-task.html"
+        - title: DHCP を使用して IP アドレスを設定する
+          url: "/config-linux/nvme-fc-configure-ip-address-dhcp-task.html"
+        - title: SANtricity Storage Manager をインストールします
+          url: "/config-linux/nvme-fc-install-smcli-11-53-task.html"
+        - title: SANtricity システムマネージャにアクセスします
+          url: "/config-linux/nvme-fc-access-sam-setup-wizard-task.html"
+        - title: FC スイッチを設定
+          url: "/config-linux/nvme-fc-configure-fc-switches-task.html"
+        - title: ホスト側で NVMe over Fibre Channel を設定します
+          url: "/config-linux/nvme-fc-setup-host-side-task.html"
+        - title: ホストを定義する
+          url: "/config-linux/nvme-fc-define-host-task.html"
+        - title: ボリュームを割り当てます
+          url: "/config-linux/fc-assign-volume-nvme-task.html"
+        - title: ホストが認識できるボリュームを表示する
+          url: "/config-linux/nvme-fc-display-volumes-visible-host-task.html"
+        - title: ホストでフェイルオーバーを設定します
+          url: "/config-linux/nvme-fc-setup-failover-host-task.html"
+        - title: 仮想デバイスターゲットの NVMe ボリュームにアクセスします
+          url: "/config-linux/nvme-fc-access-virtual-targets-concept.html"
+        - title: 物理デバイスターゲットの NVMe ボリュームにアクセスします
+          url: "/config-linux/nvme-fc-access-physical-targets-concept.html"
+        - title: パーティションとファイルシステムを作成します
+          url: "/config-linux/nvme-fc-create-partition-files-task.html"
+        - title: ホストでストレージアクセスを確認
+          url: "/config-linux/nvme-fc-verify-storage-access-host-task.html"
+        - title: NVMe over Fibre Channel ワークシート - Linux
+          url: "/config-linux/nvme-fc-worksheet-concept.html"
+    - title: VMware の簡単な設定
+      entries:
+      - title: 概要
+        url: "/config-vmware/index.html"
+      - title: 前提条件
+        url: "/config-vmware/overview-concept.html"
+      - title: ワークフローを理解する
+        url: "/config-vmware/understand-vmware-workflow-concept.html"
+      - title: VMware 構成を確認
+        url: "/config-vmware/verify-vmware-config-support-task.html"
+      - title: DHCP を使用して IP アドレスを設定する
+        url: "/config-vmware/configure-ip-address-using-dhcp-task.html"
+      - title: マルチパスソフトウェアを設定します
+        url: "/config-vmware/configure-multipath-software-concept.html"
+      - title: SANtricity システムマネージャにアクセスします
+        url: "/config-vmware/access-sam-setup-wizard-task.html"
+      - title: FC 固有のタスクを実行
+        url: "/config-vmware/fc-perform-specific-task.html"
+      - title: FC 固有のタスクを使用して NMVe を実行します
+        url: "/config-vmware/nmve-fc-perform-specific-task.html"
+      - title: iSCSI 固有のタスクを実行
+        url: "/config-vmware/iscsi-perform-specific-task.html"
+      - title: SAS 固有のタスクを実行
+        url: "/config-vmware/sas-perform-specific-task.html"
+      - title: ホストでストレージを検出します
+        url: "/config-vmware/discover-storage-host-task.html"
+      - title: ホストでストレージを設定する
+        url: "/config-vmware/configure-storage-host-task.html"
+      - title: ホストでストレージアクセスを確認
+        url: "/config-vmware/verify-storage-access-host-task.html"
+    - title: Windows の簡単な設定
+      entries:
+      - title: 概要
+        url: "/config-windows/index.html"
+      - title: 前提条件
+        url: "/config-windows/overview-concept.html"
+      - title: ワークフローを理解する
+        url: "/config-windows/understand-windows-concept.html"
+      - title: Windows 設定を確認します
+        url: "/config-windows/verify-windows-config-support-task.html"
+      - title: DHCP を使用して IP アドレスを設定する
+        url: "/config-windows/configure-ip-address-dhcp-task.html"
+      - title: マルチパスソフトウェアを設定する
+        url: "/config-windows/configure-multipath-software-task.html"
+      - title: Unified Host Utilities をインストールして設定する
+        url: "/config-windows/install-configure-host-utilities-task.html"
+      - title: SANtricity Storage Manager をインストールします
+        url: "/config-windows/install-storage-manager-for-smcli-task.html"
+      - title: SANtricity システムマネージャにアクセスします
+        url: "/config-windows/access-sam-setup-wizard-task.html"
+      - title: FC 固有のタスクを実行
+        url: "/config-windows/fc-perform-specific-task.html"
+      - title: iSCSI 固有のタスクを実行
+        url: "/config-windows/iscsi-perform-specific-task.html"
+      - title: SAS 固有のタスクを実行
+        url: "/config-windows/sas-perform-specific-task.html"
+      - title: ホストでストレージを検出します
+        url: "/config-windows/discover-storage-host-task.html"
+      - title: ホストでストレージを設定する
+        url: "/config-windows/configure-storage-host-task.html"
+      - title: ホストでストレージアクセスを確認
+        url: "/config-windows/verify-storage-access-host-task.html"
+  - title: システムをアップグレードする
+    entries:
+    - title: コントローラ
+      pdf-filename: コントローラハードウェアのアップグレード
+      entries:
+      - title: 概要
+        url: "/upgrade-controllers/index.html"
+      - title: アップグレード時の考慮事項
+        url: "/upgrade-controllers/overview-requirements-concept.html"
+      - title: コントローラをアップグレードする準備をします
+        url: "/upgrade-controllers/prepare-upgrade-controllers-task.html"
+      - title: コントローラを取り外します
+        url: "/upgrade-controllers/remove-controllers-task.html"
+      - title: 新しいコントローラを設置
+        url: "/upgrade-controllers/install-controllers-task.html"
+      - title: ドライブのロックを解除する
+        url: "/upgrade-controllers/upgrade-unlock-drives-task.html"
+      - title: コントローラのアップグレードを完了する
+        url: "/upgrade-controllers/complete-upgrade-controllers-task.html"
+      - title: ベンダーが LSI から NETAPP に変わった場合は、ボリュームを再マウントします
+        url: "/upgrade-controllers/remount-volumes-lsi-task.html"
+      - title: SAS-2 システムを再構成します
+        url: "/upgrade-controllers/reconfigure-sas-task.html"
+    - title: SANtricity OS の略
+      pdf-filename: SANtricity ソフトウェアのアップグレード
+      entries:
+      - title: 概要
+        url: "/upgrade-santricity/index.html"
+      - title: アップグレード時の考慮事項
+        url: "/upgrade-santricity/overview-upgrade-consider-task.html"
+      - title: シングルコントローラをアップグレードします
+        url: "/upgrade-santricity/upgrade-single-controller-task.html"
+      - title: 複数のコントローラをアップグレードする
+        url: "/upgrade-santricity/upgrade-multiple-controller-task.html"
+      - title: ドライブファームウェアをアップグレードします
+        url: "/upgrade-santricity/upgrade-drive-firmware-task.html"
+  - title: システムの保守
+    entries:
+    - title: EF300 および EF600
+      pdf-filename: EF300 - EF600 メンテナンスシステム
+      entries:
+      - title: 概要
+        url: "/maintenance-ef600/index.html"
+      - title: 電池
+        pdf-filename: EF300 - EF600 ではバッテリがメンテナンスされます
+        entries:
+        - title: 概要と要件
+          url: "/maintenance-ef600/batteries-overview-requirements-concept.html"
+        - title: バッテリーを交換します
+          url: "/maintenance-ef600/batteries-replace-supertask-task.html"
+      - title: コントローラ
+        pdf-filename: EF300 - EF600 のコントローラはメンテナンスされます
+        entries:
+        - title: 概要と要件
+          url: "/maintenance-ef600/controllers-overview-supertask-concept.html"
+        - title: コントローラを交換してください
+          url: "/maintenance-ef600/controllers-replace-supertask-task.html"
+      - title: DIMM
+        pdf-filename: EF300 - EF600 は DIMM をメンテナンスします
+        entries:
+        - title: 概要と要件
+          url: "/maintenance-ef600/dimms-overview-supertask-concept.html"
+        - title: DIMM を交換します
+          url: "/maintenance-ef600/dimms-replace-supertask-task.html"
+      - title: ドライブ
+        pdf-filename: EF300 - EF600 のメンテナンスドライブ
+        entries:
+        - title: 概要と要件
+          url: "/maintenance-ef600/drives-overview-supertask-concept.html"
+        - title: EF300 ドライブを交換してください
+          url: "/maintenance-ef600/drives-replace-EF300-task.html"
+        - title: EF600 ドライブを交換する
+          url: "/maintenance-ef600/drives-replace-supertask-task.html"
+      - title: ファン
+        pdf-filename: EF300 - EF600 はファンを維持します
+        entries:
+        - title: 概要と要件
+          url: "/maintenance-ef600/fans-overview-requirements-replacing2-concept.html"
+        - title: ファンを交換します
+          url: "/maintenance-ef600/fans-replace-supertask-task.html"
+      - title: ホストインターフェイスカード
+        pdf-filename: EF300 - EF600 では HIC が維持されます
+        entries:
+        - title: 概要と要件
+          url: "/maintenance-ef600/hics-overview-supertask-concept.html"
+        - title: ホストインターフェイスカードを追加します
+          url: "/maintenance-ef600/hics-add-supertask-task.html"
+        - title: ホストインターフェイスカードをアップグレードします
+          url: "/maintenance-ef600/hics-upgrade-intro.html"
+        - title: 障害が発生したホストインターフェイスカードの交換
+          url: "/maintenance-ef600/hics-replace-supertask-task.html"
+      - title: ホストポートプロトコルを変更します
+        pdf-filename: EF300 - EF600 はホストポートを維持します
+        entries:
+        - title: 概要と要件
+          url: "/maintenance-ef600/hpp-overview-supertask-concept.html"
+        - title: ホストプロトコルを変更します
+          url: "/maintenance-ef600/hpp-change-supertask-task.html"
+        - title: ホストプロトコル変更後の処理
+          url: "/maintenance-ef600/hpp-complete-protocol-conversion-task.html"
+      - title: 電源装置
+        pdf-filename: EF300 - EF600 の電源装置はメンテナンスします
+        entries:
+        - title: 概要と要件
+          url: "/maintenance-ef600/power-overview-requirements2-concept.html"
+        - title: 電源装置を交換してください
+          url: "/maintenance-ef600/power-replace-supertask-task.html"
+      - title: SAS 拡張カード
+        entries:
+        - title: 概要と要件
+          url: "/maintenance-ef600/sas-overview-supertask-concept.html"
+        - title: SAS 拡張カードを追加します
+          url: "/maintenance-ef600/sas-add-supertask-task.html"
+    - title: E2800
+      pdf-filename: E2800 Maintain System の略
+      entries:
+      - title: 概要
+        url: "/maintenance-e2800/index.html"
+      - title: 電池
+        pdf-filename: E2800 ではバッテリがメンテナンスされます
+        entries:
+        - title: バッテリの交換に際しての要件
+          url: "/maintenance-e2800/batteries-overview-requirements-concept.html"
+        - title: バッテリを交換する準備をします
+          url: "/maintenance-e2800/batteries-prepare-replace-task.html"
+        - title: コントローラキャニスターを取り外します
+          url: "/maintenance-e2800/batteries-remove-controller-canister-task.html"
+        - title: 故障したバッテリを取り外します
+          url: "/maintenance-e2800/batteries-remove-failed-task.html"
+        - title: 新しいバッテリを取り付けます
+          url: "/maintenance-e2800/batteries-install-new-task.html"
+        - title: コントローラキャニスターを再度取り付けます
+          url: "/maintenance-e2800/batteries-reinstall-controller-canister-task.html"
+        - title: バッテリ交換後の処理
+          url: "/maintenance-e2800/batteries-complete-replacement-task.html"
+      - title: コントローラ
+        pdf-filename: E2800 はコントローラをメンテナンスします
+        entries:
+        - title: コントローラの交換に際しての要件
+          url: "/maintenance-e2800/controllers-overview-supertask-concept.html"
+        - title: 2 台目のコントローラキャニスターを追加します
+          url: "/maintenance-e2800/controllers-second-add-task.html"
+        - title: デュプレックス構成でのコントローラの交換
+          url: "/maintenance-e2800/controllers-duplex-supertask-task.html"
+        - title: シンプレックス構成でコントローラを交換します
+          url: "/maintenance-e2800/controllers-simplex-supertask-task.html"
+      - title: キャニスター
+        pdf-filename: E2800 メンテナンスキャニスター
+        entries:
+        - title: キャニスター交換に際しての要件
+          url: "/maintenance-e2800/canisters-overview-supertask-concept.html"
+        - title: 電源装置の交換（ 12 ドライブまたは 24 ドライブ）
+          url: "/maintenance-e2800/canisters-supply-supertask-task.html"
+        - title: 電源キャニスターの交換（ 60 ドライブ）
+          url: "/maintenance-e2800/canisters-60-replace-power-task.html"
+        - title: ファンキャニスターの交換（ 60 ドライブ）
+          url: "/maintenance-e2800/canisters-fan-supertask-task.html"
+      - title: ドライブ
+        pdf-filename: E2800 はドライブのメンテナンスを行います
+        entries:
+        - title: ドライブ交換に際しての要件
+          url: "/maintenance-e2800/drives-overview-supertask-concept.html"
+        - title: ドライブの交換（ 12 ドライブまたは 24 ドライブ）
+          url: "/maintenance-e2800/drives-12-24-supertask-task.html"
+        - title: ドライブの交換（ 60 ドライブ）
+          url: "/maintenance-e2800/drives-60-replace-task.html"
+        - title: ドライブドロワーの交換（ 60 ドライブ）
+          url: "/maintenance-e2800/drives-60-supertask-task.html"
+      - title: ホストインターフェイスカード
+        pdf-filename: E2800 では HIC が維持されます
+        entries:
+        - title: HIC の交換に際しての要件
+          url: "/maintenance-e2800/hics-overview-supertask-concept.html"
+        - title: ホストインターフェイスカードを追加します
+          url: "/maintenance-e2800/hics-add-supertask-task.html"
+        - title: ホストインターフェイスカードをアップグレードします
+          url: "/maintenance-e2800/hics-upgrade-supertask-task.html"
+        - title: ホストインターフェイスカードを交換します
+          url: "/maintenance-e2800/hics-replace-supertask-task.html"
+      - title: ホストポートプロトコルを変更します
+        pdf-filename: E2800 ホストプロトコルの変換
+        entries:
+        - title: 変換の要件
+          url: "/maintenance-e2800/hpp-overview-supertask-concept.html"
+        - title: ホストプロトコルを変更します
+          url: "/maintenance-e2800/hpp-change-host-protocol-task.html"
+        - title: ホストプロトコル変更後の処理
+          url: "/maintenance-e2800/hpp-complete-protocol-conversion-task.html"
+    - title: E5700 の
+      pdf-filename: E5700 Maintain System の略
+      entries:
+      - title: 概要
+        url: "/maintenance-e5700/index.html"
+      - title: 電池
+        pdf-filename: E5700 ではバッテリが維持されます
+        entries:
+        - title: 概要と要件
+          url: "/maintenance-e5700/batteries-intro-concept.html"
+        - title: バッテリーを交換します
+          url: "/maintenance-e5700/batteries-replace-supertask-task.html"
+      - title: コントローラ
+        pdf-filename: E5700 はコントローラのメンテナンスを行います
+        entries:
+        - title: 概要と要件
+          url: "/maintenance-e5700/controllers-overview-concept.html"
+        - title: デュプレックス構成でのコントローラの交換
+          url: "/maintenance-e5700/controllers-duplex-supertask-task.html"
+      - title: キャニスター
+        pdf-filename: E5700 ではキャニスターがメンテナンスされます
+        entries:
+        - title: 概要と要件
+          url: "/maintenance-e5700/canisters-overview-supertask-concept.html"
+        - title: 電源装置の交換（ 24 ドライブ）
+          url: "/maintenance-e5700/canisters-supply-replace-task.html"
+        - title: 電源キャニスターの交換（ 60 ドライブ）
+          url: "/maintenance-e5700/canisters-power-supertask-task.html"
+        - title: ファンキャニスターの交換（ 60 ドライブ）
+          url: "/maintenance-e5700/canisters-fan-replace-task.html"
+      - title: ドライブ
+        pdf-filename: E5700 でドライブがメンテナンスされます
+        entries:
+        - title: 概要と要件
+          url: "/maintenance-e5700/drives-overview-supertask-concept.html"
+        - title: ドライブの交換（ 24 ドライブ）
+          url: "/maintenance-e5700/drives-24-supertask-task.html"
+        - title: ドライブの交換（ 60 ドライブ）
+          url: "/maintenance-e5700/drives-60-replace-task.html"
+        - title: ドライブドロワーの交換（ 60 ドライブ）
+          url: "/maintenance-e5700/drives-drawer-supertask-task.html"
+      - title: ホストインターフェイスカード
+        pdf-filename: E5700 では HIC が維持されます
+        entries:
+        - title: 概要と要件
+          url: "/maintenance-e5700/hics-overview-supertask-concept.html"
+        - title: ホストインターフェイスカードを追加します
+          url: "/maintenance-e5700/hics-add-supertask-task.html"
+        - title: ホストインターフェイスカードをアップグレードします
+          url: "/maintenance-e5700/hics-upgrade-supertask-task.html"
+        - title: ホストインターフェイスカードを交換します
+          url: "/maintenance-e5700/hics-replace-supertask-task.html"
+      - title: ホストポートプロトコル
+        pdf-filename: E5700 Change Host Protocol の略
+        entries:
+        - title: 概要と要件
+          url: "/maintenance-e5700/hpp-overview-supertask-concept.html"
+        - title: ホストプロトコルを変更します
+          url: "/maintenance-e5700/hpp-change-host-protocol-task.html"
+        - title: ホストプロトコル変更後の処理
+          url: "/maintenance-e5700/hpp-complete-protocol-conversion-task.html"
+  - title: ストレージを管理します
+    url: "/manage-storage.html"
+  - title: SANtricity ソリューションを使用する
+    entries:
+    - title: Web サービスプロキシ
+      entries:
+      - title: 概要
+        url: "/web-services-proxy/index.html"
+      - title: Web サービスについて説明します
+        entries:
+        - title: Web Services API の概要
+          url: "/web-services-proxy/overview-intro-concept.html"
+        - title: 互換性と制限事項
+          url: "/web-services-proxy/overview-compat-concept.html"
+        - title: API の基礎
+          url: "/web-services-proxy/overview-api-concept.html"
+        - title: 用語と概念
+          url: "/web-services-proxy/overview-terms-concept.html"
+      - title: インストールと設定
+        entries:
+        - title: 要件を確認
+          url: "/web-services-proxy/install-reqs-task.html"
+        - title: Web Services Proxy をインストール
+          url: "/web-services-proxy/install-wsp-task.html"
+        - title: API と Unified Manager にログインします
+          url: "/web-services-proxy/install-login-task.html"
+        - title: Web Services Proxy を設定する
+          url: "/web-services-proxy/install-config-task.html"
+        - title: Web Services Proxy をアンインストールする
+          url: "/web-services-proxy/install-uninstall-task.html"
+      - title: ユーザアクセスの管理
+        url: "/web-services-proxy/access-intro-concept.html"
+      - title: セキュリティと証明書を管理する
+        url: "/web-services-proxy/certificates-intro-concept.html"
+      - title: ストレージシステムを管理
+        url: "/web-services-proxy/array-intro-concept.html"
+      - title: 自動ポーリングの管理
+        url: "/web-services-proxy/polling-intro-concept.html"
+      - title: AutoSupport を管理します
+        url: "/web-services-proxy/asup-intro-concept.html"
+    - title: リモートボリュームミラーリング
+      entries:
+      - title: 概要
+        url: "/remote-storage-volumes/index.html"
+      - title: 要件と制限事項
+        url: "/remote-storage-volumes/system-reqs-concept.html"
+      - title: ハードウェアを設定する
+        url: "/remote-storage-volumes/setup-remote-volumes-concept.html"
+      - title: リモートストレージをインポートします
+        url: "/remote-storage-volumes/import-remote-storage-task.html"
+      - title: インポートの進捗を管理します
+        url: "/remote-storage-volumes/view-import-progress-task.html"
+      - title: 接続設定を変更します
+        url: "/remote-storage-volumes/modify-remote-storage-task.html"
+      - title: リモートストレージオブジェクトを削除する
+        url: "/remote-storage-volumes/remove-remote-storage-task.html"
+    - title: vCenter 用のストレージプラグイン
+      entries:
+      - title: 概要
+        url: "/san-spvc-ic-overview.html"
+      - title: プラグインをインストールします
+        url: "/san-spvc-ic-installation.html"
+      - title: アクセス権限を設定します
+        url: "/san-spvc-ic-user-access.html"
+      - title: ログインして操作します
+        url: "/san-spvc-ic-login-and-navigation.html"
+      - title: ストレージアレイを検出
+        url: "/san-spvc-ic-storage-array-discovery.html"
+      - title: ストレージのプロビジョニング
+        url: "/san-spvc-ic-storage-provisioning.html"
+      - title: プラグインを削除します
+        url: "/san-spvc-ic-plugin-removal.html"
+    - title: 従来のソリューション
+      entries:
+      - title: Cloud Connector の場合
+        entries:
+        - title: 概要
+          url: "/cloud-connector/index.html"
+        - title: 要件
+          url: "/cloud-connector/learn-intro-concept.html"
+        - title: Cloud Connector をインストール
+          url: "/cloud-connector/install-intro-concept.html"
+        - title: Cloud Connector の初期設定
+          url: "/cloud-connector/config-intro-concept.html"
+        - title: Cloud Connector にログインします
+          url: "/cloud-connector/login-task.html"
+        - title: バックアップ
+          url: "/cloud-connector/backup-intro-concept.html"
+        - title: リストアします
+          url: "/cloud-connector/restore-intro-concept.html"
+        - title: 設定を変更します
+          url: "/cloud-connector/modify-intro-concept.html"
+        - title: Cloud Connector をアンインストールします
+          url: "/cloud-connector/uninstall-intro-concept.html"
+  - title: 以前のバージョン
+    url: "/early-versions.html"
+  - title: テクニカルレポート
+    url: "/tech-reports.html"
+  - title: 法的通知
+    url: "/legal-notices.html"
+homepage:
+  tiles:
+  - title: はじめに
+    links:
+    - title: クイックスタート
+      url: "/getting-started/getup-run-concept.html"
+    - title: EF シリーズの概要
+      url: https://www.netapp.com/pdf.html?item=/media/19339-DS-4082.pdf
+    - title: E5700 シリーズの概要
+      url: https://www.netapp.com/pdf.html?item=/media/7572-ds-3894.pdf
+    - title: E2800 シリーズの概要
+      url: https://www.netapp.com/pdf.html?item=/media/7573-ds-3805.pdf
+    - title: SANtricity ソフトウェアの概要
+      url: https://www.netapp.com/pdf.html?item=/media/7676-ds-3891.pdf
+  - title: オンラインヘルプ
+    links:
+    - title: SANtricity システムマネージャ 11.7
+      url: https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-117/home.html
+    - title: SANtricity Unified Manager 5.
+      url: https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-uni-5/home.html
+    - title: コマンドラインインターフェイス（ CLI ）リファレンス
+      url: https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-cli-115/home.html
+  - title: SANtricity API
+    links:
+    - title: Web サービス
+      url: "/web-services-proxy/index.html"
+    - title: vCenter 向けプラグイン
+      url: "/san-spvc-ic-overview.html"
+    - title: SMI-S プロバイダ
+      url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62208
+  - title: パフォーマンスアプリケーションのアドオン
+    links:
+    - title: Splunk Enterprise 向けの SANtricity アプリです
+      url: https://splunkbase.splunk.com/app/1932/
+    - title: SANtricity 向け Splunk テクノロジアドオン
+      url: https://splunkbase.splunk.com/app/1933/
+    - title: パフォーマンス分析ツールと E シリーズ + Grafana
+      url: https://github.com/NetApp/eseries-perf-analyzer
+    - title: E シリーズ Performance Analyzer に関するブログ
+      url: https://blog.netapp.com/monitoring-netapp-eseries
+  - title: SE 向け
+    links:
+    - title: E シリーズ / EF シリーズテクニカルトレーニング（ログインが必要）
+      url: https://fieldportal.netapp.com/content/199944
+    - title: EF300 の概要と技術的な詳細 ( ログインが必要 )
+      url: https://fieldportal.netapp.com/content/1417672
+    - title: NetApp Fusion （ログインが必要）
+      url: https://fusion.netapp.com/
+  - title: ツールのサポート
+    links:
+    - title: NetApp Interoperability Matrix を参照してください
+      url: http://mysupport.netapp.com/matrix/
+    - title: ネットアップナレッジベース
+      url: https://kb.netapp.com/
+    - title: Active IQ （ログインが必要）
+      url: https://activeiq.netapp.com/?source=aiqnsspage
+    - title: E シリーズ / SANtricity のダウンロード（ログインが必要）
+      url: https://mysupport.netapp.com/site/downloads#E

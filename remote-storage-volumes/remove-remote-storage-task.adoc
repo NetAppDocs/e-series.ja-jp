@@ -1,0 +1,26 @@
+---
+permalink: remote-storage-volumes/remove-remote-storage-task.html 
+sidebar: sidebar 
+keywords: remove storage object, disconnect remote storage 
+summary: 設定済みのリモートストレージオブジェクトは、 SANtricity システムマネージャを使用して削除できます。 
+---
+= リモートストレージオブジェクトを削除する
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+インポートの完了後、ローカルデバイスとリモートデバイス間でデータをコピーする必要がなくなった場合は、リモートストレージオブジェクトを削除できます。
+
+.手順
+. 削除するリモートストレージオブジェクトにインポートが関連付けられていないことを確認してください。
+. SANtricity システムマネージャのリモートストレージ画面で、結果リストセクションから目的のリモートストレージオブジェクトを選択します。
+. [ 削除（ Remove ） ] をクリックします。
++
+[ リモートストレージ接続の削除の確認 ] ダイアログが表示されます。
+
+. 「 re move 」と入力し、「 * Remove 」をクリックして操作を確認します。
++
+選択したリモートストレージオブジェクトが削除されます。
+
+

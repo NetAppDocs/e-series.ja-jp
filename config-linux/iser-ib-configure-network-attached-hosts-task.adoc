@@ -1,0 +1,165 @@
+---
+permalink: config-linux/iser-ib-configure-network-attached-hosts-task.html 
+sidebar: sidebar 
+keywords: configure network Linux, configure hosts linux, express linux configuration, linux host, 
+summary: InfiniBand OFED ドライバスタックでは iSER と SRP の両方を同じポートで同時に実行できるため、追加のハードウェアは必要ありません。 
+---
+= ストレージ接続ホストのネットワークを設定します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+iSER over InfiniBand プロトコルを使用する構成の場合は、このセクションの手順を実行します。
+
+InfiniBand OFED ドライバスタックでは iSER と SRP の両方を同じポートで同時に実行できるため、追加のハードウェアは必要ありません。
+
+ネットアップ推奨の OFED をシステムにインストールしておきます。詳細については、を参照してください https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]。
+
+.手順
+. ホストで iSCSI サービスを有効にして開始します。
++
+* Red Hat Enterprise Linux 7 および 8 （ RHEL 7 および RHEL 8 ） *
+
++
+[listing]
+----
+
+# systemctl start iscsi
+# systemctl start iscsid
+# systemctl enable iscsi
+# systemctl enable iscsid
+----
++
+* SUSE Linux Enterprise Server 12 および 15 （ SLES 12 および SLES 15 ） *
+
++
+[listing]
+----
+
+# systemctl start iscsid.service
+# systemctl enable iscsid.service
+----
+. IPoIB ネットワークインターフェイスを設定します。
++
+.. 使用する InfiniBand ポートを特定します。各ポートのハードウェアアドレス（ MAC アドレス）を記録します。
+.. InfiniBand ネットワークインターフェイスデバイスの永続的な名前を設定します。
+.. 特定した IPoIB インターフェイスの IP アドレスとネットワーク情報を設定します。
++
+必要なインターフェイス設定は、使用するオペレーティングシステムによって異なる場合があります。具体的な実装方法については、ベンダーのオペレーティングシステムのドキュメントを参照してください。
+
+.. ネットワークサービスを再起動するか、各インターフェイスを手動で再起動して、 IB ネットワークインターフェイスを起動します。例：
++
+[listing]
+----
+systemctl restart network
+----
+.. ターゲットポートへの接続を確認します。ネットワーク接続を設定したときに設定した IP アドレスにホストから ping を実行します。
+
+
+. サービスを再起動して iSER モジュールをロードします。
+. /etc/iscsi/iscsid.conf で iSCSI 設定を編集します
++
+[listing]
+----
+node.startup = automatic replacement_timeout = 20
+----
+. iSCSI セッションを設定します。
++
+.. InfiniBand インターフェイスごとに iface 構成ファイルを作成します。
++
+
+NOTE: iSCSI iface ファイルのディレクトリの場所は、オペレーティングシステムによって異なります。Red Hat Enterprise Linux を使用している場合の例を次に示します。
+
++
+[listing]
+----
+iscsiadm -m iface -I iser > /var/lib/iscsi/ifaces/iface-ib0
+iscsiadm -m iface -I iser > /var/lib/iscsi/ifaces/iface-ib1
+----
+.. 各 iface ファイルを編集して、インターフェイス名とイニシエータ IQN を設定します。各 iface ファイルで次のパラメータを適切に設定します。
++
+|===
+| オプション | 価値 
+
+
+ a| 
+iface.net_ifacename
+ a| 
+インターフェイスデバイス名（例：ib0 ）。
+
+
+
+ a| 
+iface.initiatorname
+ a| 
+ワークシートに記録したホストイニシエータ IQN 。
+
+|===
+.. ターゲットへの iSCSI セッションを作成します。
++
+セッションの作成には、 SendTargets 検出を使用する方法を推奨します。ただし、この方法は一部のオペレーティングシステムリリースでは機能しません。
+
++
+
+NOTE: RHEL 6.x または SLES 11.3 以降では * メソッド 2 * を使用してください。
+
++
+*** * 方法 1 - SendTargets 検出： * ターゲットポータルの IP アドレスの 1 つに対して SendTargets 検出メカニズムを使用します。これにより、ターゲットポータルごとにセッションが作成されます。
++
+[listing]
+----
+iscsiadm -m discovery -t st -p 192.168.130.101 -I iser
+----
+*** * 方法 2 - 手動での作成： * ターゲットポータルの IP アドレスごとに、適切なホストインターフェイス iface 設定を使用してセッションを作成します。この例では、インターフェイス ib0 がサブネット A にあり、インターフェイス ib1 がサブネット B にありますこれらの変数については、ワークシートにある適切な値を指定します。
++
+**** <Target IQN> = ストレージアレイのターゲット IQN
+**** <Target Port IP> = 指定したターゲットポートに設定された IP アドレス
+
+
+
+
+
+
++
+[listing]
+----
+# Controller A Port 1
+iscsiadm -m node -target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l -o new
+# Controller B Port 1
+iscsiadm -m node -target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l -o new
+# Controller A Port 2
+iscsiadm -m node -target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l -o new
+# Controller B Port 2
+iscsiadm -m node -target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l -o new
+----
+. iSCSI セッションにログインします。
++
+各セッションで、 iscsiadm コマンドを実行してセッションにログインします。
+
++
+[listing]
+----
+# Controller A Port 1
+iscsiadm -m node -target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l
+# Controller B Port 1
+iscsiadm -m node -target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l
+# Controller A Port 2
+iscsiadm -m node -target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l
+# Controller B Port 2
+iscsiadm -m node -target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l
+----
+. iSER / iSCSI セッションを検証します。
++
+.. ホストでの iSCSI セッションのステータスを確認します。
++
+[listing]
+----
+iscsiadm -m session
+----
+.. アレイから iSCSI セッションのステータスを確認します。SANtricity システムマネージャで、 * ストレージアレイ * > * iSER * > * View / End Sessions * に移動します。
+
+
+
+
+iSCSI サービスが実行されている場合、 OFED / RDMA サービスの開始時にデフォルトで iSER カーネルモジュールがロードされます。iSER 接続のセットアップを完了するには、 iSER モジュールをロードする必要があります。現在、これにはホストのリブートが必要です。

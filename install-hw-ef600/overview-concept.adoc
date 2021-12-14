@@ -1,0 +1,15 @@
+---
+permalink: install-hw-ef600/overview-concept.html 
+sidebar: sidebar 
+keywords: EF300, EF600, installation process overview 
+summary: EF300 または EF600 をインストールしてセットアップするプロセスを確認します。 
+---
+= インストールプロセス
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+新しいストレージシステムを設置してセットアップする前に、設置プロセスを確認してください。
+
+image::../media/ef600_isi_workflow_v_2_inst-hw-ef600.bmp[ef600 isi ワークフロー v 2 inst hwef600]

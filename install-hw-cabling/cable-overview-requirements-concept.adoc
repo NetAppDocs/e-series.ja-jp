@@ -1,0 +1,21 @@
+---
+permalink: install-hw-cabling/cable-overview-requirements-concept.html 
+sidebar: sidebar 
+keywords: cabling, cabling requirements, drive shelf cabling, controller cabling, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C 
+summary: E シリーズシェルフのケーブル接続には複数のコンポーネントが必要です。 
+---
+= 要件
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ストレージシステムをケーブル接続する際には、コントローラシェルフとドライブシェルフに加えて、次のコンポーネントの一部または全部が必要となります。
+
+* ケーブル： SAS 、 Fibre Channel （ FC ）、イーサネット、 InfiniBand
+* Small Form-factor Pluggable （ SFP ）または Quad SFP （ QSFP ）トランシーバを使用してください
+* スイッチ
+* ホストバスアダプタ（ HBA ）
+* ホストチャネルアダプタ（ HCA ）
+* Network Interface Card （ NIC ；ネットワークインターフェイスカード）
+

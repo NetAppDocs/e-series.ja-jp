@@ -1,0 +1,50 @@
+---
+permalink: cloud-connector/index.html 
+sidebar: sidebar 
+keywords: Cloud Connector 
+summary: SANtricity Cloud Connector の略 
+---
+= SANtricity ® Cloud Connector の概要
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SANtricity Cloud Connector はホストベースの Linux アプリケーションです。 E シリーズボリュームを S3 準拠のアカウント（ Amazon Simple Storage Service および NetApp StorageGRID など）および NetApp AltaVault アプライアンスへブロックベースおよびファイルベースでフルバックアップし、リカバリすることができます。
+
+SANtricity Cloud Connector は、 RedHat および SUSE の Linux プラットフォームにインストールできるパッケージ解決策（ .bin ファイル）です。SANtricity Cloud Connector のインストールが完了したら、 AltaVault アプライアンスや既存の Amazon S3 または StorageGRID アカウントへの E シリーズボリュームのバックアップジョブとリストアジョブを実行するように設定することができます。SANtricity Cloud Connector で実行されるすべてのジョブは REST ベースの API を使用します。
+
+
+
+== 考慮事項
+
+これらの手順を使用する場合は、次の点に注意してください。
+
+* これらの手順で説明する設定ジョブとバックアップ / リストアジョブは、 SANtricity Cloud Connector のグラフィカルユーザインターフェイスバージョンに該当します。
+* SANtricity Cloud Connector アプリケーションの REST API のワークフローについては、この手順では説明していません。経験豊富な開発者向けに、 SANtricity Cloud Connector の各処理について、 API ドキュメントでエンドポイントを使用できます。API ドキュメントには ' ブラウザ経由で http://<hostname.domain>:<port>/docs`` に移動することでアクセスできます
+
+
+
+
+== バックアップのタイプ
+
+SANtricity Cloud Connector には、イメージベースとファイルベースの 2 種類のバックアップがあります。
+
+* * イメージベースのバックアップ *
++
+イメージベースのバックアップは、 Snapshot ボリュームから生のデータブロックを読み取り、イメージと呼ばれるファイルにバックアップします。空のブロック、削除されたファイルが占有しているブロック、パーティショニングに関連付けられているブロック、ファイルシステムメタデータを含む、 Snapshot ボリューム上のすべてのデータブロックがバックアップされます。イメージバックアップには、パーティショニングスキームやファイルシステムに関係なく、すべての情報を Snapshot ボリュームを使用して格納できるという利点があります。
+
++
+イメージは、バックアップターゲットに 1 つのファイルとして格納されるのではなく、 64MB の一連のデータチャンクに分割されて格納されます。データチャンクに分割することで SANtricity Cloud Connector からバックアップターゲットへの複数の接続を利用できるため、バックアッププロセスのパフォーマンスが向上します。
+
++
+StorageGRID および Amazon Web Services （ S3 ）へのバックアップでは、データチャンクごとに別々の暗号化キーを使用してチャンクが暗号化されます。このキーには、ユーザが指定したパスフレーズとユーザデータの SHA256 ハッシュを組み合わせた SHA256 ハッシュが使用されます。AltaVault へのバックアップでは、 AltaVault で暗号化が行われるため、 SANtricity Cloud Connector はデータチャンクを暗号化しません。
+
+* * ファイルベースのバックアップ *
++
+ファイルベースのバックアップは、ファイルシステムパーティションに格納されているファイルを読み取り、 64MB の一連のデータチャンクにバックアップします。ファイルベースのバックアップでは、削除されたファイルやパーティショニングおよびファイルシステムのメタデータはバックアップされません。イメージベースのバックアップと同様に、データチャンクに分割することで SANtricity Cloud Connector からバックアップターゲットへの複数の接続を利用できるため、バックアッププロセスのパフォーマンスが向上します。
+
++
+StorageGRID および Amazon Web Services へのバックアップでは、データチャンクごとに別々の暗号化キーを使用してチャンクが暗号化されます。このキーには、ユーザが指定したパスフレーズとユーザデータの SHA256 ハッシュを組み合わせた SHA256 ハッシュが使用されます。AltaVault へのバックアップでは、 AltaVault で暗号化が行われるため、 SANtricity Cloud Connector はデータチャンクを暗号化しません。
+
+

@@ -1,0 +1,23 @@
+---
+permalink: config-linux/srp-ib-determine-host-port-guids-task.html 
+sidebar: sidebar 
+keywords: host port GUIDs, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: ホストポートの GUID を特定します。 
+---
+= ホストポートの GUID を特定し、推奨設定を適用します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+InfiniBand-diags パッケージには、各 InfiniBand （ IB ）ポートのグローバル一意識別子（ GUID ）を表示するためのコマンドが含まれています。付属のパッケージで OFED / RDMA がサポートされる Linux ディストリビューションのほとんどに InfiniBand-diags パッケージも付属しており、このパッケージに含まれるコマンドを使用して HCA に関する情報を表示できます。
+
+.手順
+. オペレーティングシステムのパッケージ管理コマンドを使用して InfiniBand-diags パッケージをインストールします。
+. 「 ibstat 」コマンドを実行して、ポート情報を表示します。
+. イニシエータの GUID をに記録します xref:srp-ib-worksheet-concept.adoc[SRP ワークシート]。
+. HBA ユーティリティで適切な設定を選択します。
++
+構成に適した設定は、の Notes 列に表示されます https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]。
+
+

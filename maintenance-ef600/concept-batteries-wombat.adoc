@@ -1,0 +1,13 @@
+---
+permalink: maintenance-ef600/concept-batteries-wombat.html 
+sidebar: sidebar 
+keywords: battery, include, controller, preserve, cache, data, ac, power, fail, batteries 
+summary: バッテリはコントローラに搭載されており、 AC 電源で障害が発生した場合にキャッシュデータを保持します。 
+---
+= 電池
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+バッテリはコントローラに搭載されており、 AC 電源で障害が発生した場合にキャッシュデータを保持します。

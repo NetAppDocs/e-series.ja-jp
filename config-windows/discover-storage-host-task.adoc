@@ -1,0 +1,31 @@
+---
+permalink: config-windows/discover-storage-host-task.html 
+sidebar: sidebar 
+keywords: LUNs, discover LUNs, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: Windows の簡単な方法でストレージを検出します。 
+---
+= ホストでストレージを検出します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+新しい LUN を追加した場合、その LUN を検出するために関連付けられたディスクを手動で再スキャンする必要があります。新しい LUN は、ホストで自動的には検出されません。
+
+ストレージシステム上の LUN は、 Windows ホストではディスクとして表示されます。
+
+.手順
+. 管理者としてログオンします。
+. ストレージを検出するには、 Windows コマンドプロンプトで次のコマンドを実行します。
++
+[listing]
+----
+# echo rescan | diskpart
+----
+. 新しいストレージが追加されたことを確認するには、次のコマンドを実行します。
++
+[listing]
+----
+# echo list disk | diskpart
+----
+

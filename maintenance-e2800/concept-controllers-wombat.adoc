@@ -1,0 +1,13 @@
+---
+permalink: maintenance-e2800/concept-controllers-wombat.html 
+sidebar: sidebar 
+keywords: controller, board, firmware, software, control, drive, implement, system, manager, function, convert, duplex 
+summary: コントローラは、ボード、ファームウェア、ソフトウェアで構成されます。ドライブを制御し、 System Manager の機能を実装します。ここでは、 2 台目のコントローラを追加してデュプレックス構成に変換する方法と、シンプレックス構成およびデュプレックス構成でコントローラを交換する方法について説明します。 
+---
+= コントローラ
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+コントローラは、ボード、ファームウェア、ソフトウェアで構成されます。ドライブを制御し、 System Manager の機能を実装します。ここでは、 2 台目のコントローラを追加してデュプレックス構成に変換する方法と、シンプレックス構成およびデュプレックス構成でコントローラを交換する方法について説明します。

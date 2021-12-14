@@ -1,0 +1,86 @@
+---
+permalink: config-linux/srp-ib-create-partitions-filesystems-task.html 
+sidebar: sidebar 
+keywords: partitions, file systems, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: Linux ホストで初めて検出された時点では、新しい LUN にはパーティションやファイルシステムは設定されていません。LUN を使用できるようにするにはフォーマットする必要があります。必要に応じて、 LUN にファイルシステムを作成できます。 
+---
+= パーティションとファイルシステムを作成します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Linux ホストで初めて検出された時点では、新しい LUN にはパーティションやファイルシステムがないため、使用する前に LUN をフォーマットする必要があります。必要に応じて、 LUN にファイルシステムを作成できます。
+
+.必要なもの
+* ホストによって検出された LUN 。
+* 使用可能なディスクのリスト。( 利用可能なディスクを表示するには '/dev/mapper フォルダで ls コマンドを実行します )
+
+
+ディスクは、 GUID パーティションテーブル（ GPT ）またはマスターブートレコード（ MBR ）を使用して、ベーシックディスクとして初期化することができます。
+
+LUN は ext4 などのファイルシステムでフォーマットします。一部のアプリケーションではこの手順が不要です。
+
+.手順
+. 「 anlun lun lun show -p 」コマンドを発行して、マッピングされたディスクの SCSI ID を取得します。
++
+SCSI ID は、 3 から始まる 33 文字の 16 進数値です。ユーザにわかりやすい名前の使用が有効になっている場合、 SCSI ID の代わりに mpath がレポートされます。
+
++
+[listing]
+----
+# sanlun lun show -p
+
+                E-Series Array: ictm1619s01c01-SRP(60080e50002908b40000000054efb9d2)
+                   Volume Name:
+               Preferred Owner: Controller in Slot B
+                 Current Owner: Controller in Slot B
+                          Mode: RDAC (Active/Active)
+                       UTM LUN: None
+                           LUN: 116
+                      LUN Size:
+                       Product: E-Series
+                   Host Device: mpathr(360080e50004300ac000007575568851d)
+              Multipath Policy: round-robin 0
+            Multipath Provider: Native
+--------- ---------- ------- ------------ ----------------------------------------------
+host      controller                      controller
+path      path       /dev/   host         target
+state     type       node    adapter      port
+--------- ---------- ------- ------------ ----------------------------------------------
+up        secondary  sdcx    host14       A1
+up        secondary  sdat    host10       A2
+up        secondary  sdbv    host13       B1
+----
+. Linux OS のリリースに応じた方法で新しいパーティションを作成します。
++
+通常、ディスクのパーティションを識別する文字（数字の 1 や p3 など）が SCSI ID に追加されます。
+
++
+[listing]
+----
+# parted -a optimal -s -- /dev/mapper/360080e5000321bb8000092b1535f887a mklabel
+gpt mkpart primary ext4 0% 100%
+----
+. パーティションにファイルシステムを作成します。
++
+ファイルシステムの作成方法は、選択したファイルシステムによって異なります。
+
++
+[listing]
+----
+# mkfs.ext4 /dev/mapper/360080e5000321bb8000092b1535f887a1
+----
+. 新しいパーティションをマウントするフォルダを作成します。
++
+[listing]
+----
+# mkdir /mnt/ext4
+----
+. パーティションをマウントします。
++
+[listing]
+----
+# mount /dev/mapper/360080e5000321bb8000092b1535f887a1 /mnt/ext4
+----
+

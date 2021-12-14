@@ -1,0 +1,146 @@
+---
+permalink: config-linux/overview-concept.html 
+sidebar: sidebar 
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: クイック方式を使用して E シリーズアレイと Linux ホストを設定するための要件を確認します。 
+---
+= 前提条件
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Linux のクイック方式は、次の前提に基づいています。
+
+|===
+| コンポーネント | 前提条件 
+
+
+ a| 
+ハードウェア
+ a| 
+* コントローラシェルフに付属の設置とセットアップの手順書に従ってハードウェアを設置済みである。
+* オプションのドライブシェルフとコントローラをケーブルで接続済みである。
+* ストレージシステムに電源を投入済みである。
+* 他のすべてのハードウェア（管理ステーション、スイッチなど）を設置し、必要な接続を確立済みである。
+* NVMe over InfiniBand 、 NVMe over RoCE 、または NVMe over Fibre Channel を使用する場合は、 EF300 、 EF600 、 EF570 、または E5700 コントローラのそれぞれに 32GB 以上の RAM が搭載されている。
+
+
+
+
+ a| 
+ホスト
+ a| 
+* ストレージシステムとデータホストの間に接続を確立済みである。
+* ホストオペレーティングシステムをインストール済みである。
+* Linux を仮想ゲストとして使用しない。
+* データ（ I/O 接続）ホストを SAN からブートするように設定しない。
+* に表示されている OS の更新をインストールしておきます https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]。
+
+
+
+
+ a| 
+ストレージ管理ステーション
+ a| 
+* 1Gbps 以上の速度の管理ネットワークを使用している。
+* 管理用にデータ（ I/O 接続）ホストではなく別のステーションを使用している。
+* アウトオブバンド管理を使用して、コントローラとのイーサネット接続を介してストレージ管理ステーションからストレージシステムにコマンドを送信している。
+* 管理ステーションをストレージ管理ポートと同じサブネットに接続済みである。
+
+
+
+
+ a| 
+IP アドレス
+ a| 
+* DHCP サーバのインストールと設定が完了している。
+* 管理ステーションとストレージシステムの間にイーサネット接続をまだ確立していない * 。
+
+
+
+
+ a| 
+ストレージのプロビジョニング
+ a| 
+* 共有ボリュームは使用しません。
+* ボリュームグループではなくプールを作成する。
+
+
+
+
+ a| 
+プロトコル： FC
+ a| 
+* ホスト側の FC 接続をすべて確立し、スイッチのゾーニングをアクティブ化済みである。
+* ネットアップがサポートする FC HBA およびスイッチを使用している。
+* に掲載されているバージョンの FC HBA ドライバおよびファームウェアを使用している https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]。
+
+
+
+
+ a| 
+プロトコル： iSCSI
+ a| 
+* iSCSI トラフィックを転送できるイーサネットスイッチを使用している。
+* iSCSI に関するベンダーの推奨事項に従ってイーサネットスイッチを設定済みである。
+
+
+
+
+ a| 
+プロトコル： SAS
+ a| 
+* ネットアップがサポートする SAS HBA を使用している。
+* に掲載されているバージョンの SAS HBA ドライバおよびファームウェアを使用している https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]。
+
+
+
+
+ a| 
+プロトコル： iSER over InfiniBand
+ a| 
+* InfiniBand ファブリックを使用している。
+* に掲載されているバージョンの IB-iSER HBA ドライバおよびファームウェアを使用している https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]。
+
+
+
+
+ a| 
+プロトコル： SRP over InfiniBand
+ a| 
+* InfiniBand ファブリックを使用している。
+* に掲載されているバージョンの IB-SRP ドライバおよびファームウェアを使用している https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]。
+
+
+
+
+ a| 
+プロトコル： NVMe over InfiniBand
+ a| 
+* EF300 、 EF600 、 EF570 、または E5700 ストレージシステムに NVMe over InfiniBand プロトコルがあらかじめ設定されていて、 100G または 200G のホストインターフェイスカードが取り付けられている。または、標準の IB ポートを搭載したコントローラを購入し、 NVMe-oF ポートへの変換が必要である。
+* InfiniBand ファブリックを使用している。
+* に掲載されているバージョンの NVMe / IB ドライバおよびファームウェアを使用している https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]。
+
+
+
+
+ a| 
+プロトコル： NVMe over RoCE
+ a| 
+* EF300 、 EF600 、 EF570 、または E5700 ストレージシステムに NVMe over RoCE プロトコルがあらかじめ設定されていて、 100G または 200G のホストインターフェイスカードが取り付けられている。または、標準の IB ポートを搭載したコントローラを購入し、 NVMe-oF ポートへの変換が必要である。
+* に掲載されているバージョンの NVMe / RoCE ドライバおよびファームウェアを使用している https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]。
+
+
+
+
+ a| 
+プロトコル： NVMe over Fibre Channel
+ a| 
+* EF300 、 EF600 、 EF570 、または E5700 ストレージシステムに NVMe over Fibre Channel プロトコルがあらかじめ設定されていて、 32G のホストインターフェイスカードが取り付けられている。または、標準の FC ポートを搭載したコントローラを購入し、 NVMe-oF ポートへの変換が必要である。
+* に掲載されているバージョンの NVMe / FC ドライバおよびファームウェアを使用している https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]。
+
+
+|===
+
+NOTE: ここで説明する簡単な方法の手順には、 SUSE Linux Enterprise Server （ SLES ）および Red Hat Enterprise Linux （ RHEL ）での例が含まれています。

@@ -1,0 +1,13 @@
+---
+permalink: upgrade-controllers/upgrade-controllers-task.html 
+sidebar: sidebar 
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller 
+summary: 既存のコントローラを交換することでストレージアレイをアップグレードすることができます。コントローラは、ボード、ファームウェア、ソフトウェアで構成されます。ドライブを制御し、管理ソフトウェアの機能を実装します。 
+---
+= E シリーズコントローラをアップグレードする
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+既存のコントローラを交換することでストレージアレイをアップグレードすることができます。コントローラは、ボード、ファームウェア、ソフトウェアで構成されます。ドライブを制御し、管理ソフトウェアの機能を実装します。

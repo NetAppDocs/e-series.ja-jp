@@ -1,0 +1,86 @@
+---
+permalink: web-services-proxy/overview-intro-concept.html 
+sidebar: sidebar 
+keywords: Web Services, WSP, SANtricity API, 
+summary: Web Services API について説明します 
+---
+= Web Services と Unified Manager の概要
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Web サービスプロキシをインストールして設定する前に、 Web サービスと SANtricity Unified Manager の概要を確認します。
+
+
+
+== Web サービス
+
+Web Services は、ネットアップの E シリーズおよび EF シリーズのストレージシステムを設定、管理、監視するためのアプリケーションプログラミングインターフェイス（ API ）です。API 要求を発行することで、 E シリーズストレージシステムの設定、プロビジョニング、パフォーマンス監視などのワークフローを実行できます。
+
+Web Services API を使用してストレージシステムを管理するには、次の知識が必要です。
+
+* JavaScript Object Notation （ JSON ）： Web Services のデータは JSON でエンコードされているため、 JSON のプログラミング概念を理解しておく必要があります。詳細については、を参照してください http://www.json.org["JSON の概要"^]。
+* Representational State Transfer （ REST ）： Web Services は実質的にすべての SANtricity 管理機能へのアクセスを提供する RESTful API であるため、 REST の概念を理解しておく必要があります。詳細については、を参照してください http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm["アーキテクチャスタイルとネットワークベースのソフトウェアアーキテクチャの設計"^]。
+* プログラミング言語の概念– Web Services API で使用される最も一般的なプログラミング言語は Java と Python ですが、 HTTP 要求を行うことができるプログラミング言語はすべて API の連携に十分です。
+
+
+Web Services には次の 2 つの実装があります。
+
+* * 組み込み * - NetApp SANtricity 11.30 以降のバージョンを実行する E2800 / EF280 ストレージシステム、 SANtricity 11.40 以降のバージョンを実行する E5700 / EF570 ストレージシステム、および SANtricity 11.60 以降のバージョンを実行する EF300 または EF600 ストレージシステムには、各コントローラに RESTful API サーバが組み込まれています。インストールは不要です。
+* * プロキシ * -- SANtricity Web サービスプロキシは、 Windows または Linux サーバーに別途インストールされる RESTful API サーバーです。このホストベースのアプリケーションでは、数百台規模の新旧の NetApp E シリーズストレージシステムを管理できます。一般に、ストレージシステムが 10 台を超えるネットワークではプロキシを使用します。プロキシは、多数の要求を組み込みの API よりも効率的に処理できます。
+
+
+中核となる API はどちらの実装でも使用できます。
+
+image::../media/web_services_proxy_overview.gif[Web サービスプロキシの概要]
+
+次の表に、プロキシと組み込みバージョンの比較を示します。
+
+|===
+| 考慮事項 | プロキシ | 組み込み 
+
+
+ a| 
+インストール
+ a| 
+ホストシステム（ Linux または Windows ）が必要です。プロキシは、からダウンロードできます http://mysupport.netapp.com/NOW/cgi-bin/software/?product=E-Series+SANtricity+Web+Services+%28REST+API%29&platform=WebServices["ネットアップサポートサイト"^] または ON。
+ a| 
+インストールや有効化は必要ありません。
+
+
+
+ a| 
+セキュリティ
+ a| 
+デフォルトで最小限のセキュリティ設定が適用されます。
+
+セキュリティ設定が低いため、開発者は API をすばやく簡単に使用できます。必要に応じて、組み込みバージョンと同じセキュリティプロファイルを使用してプロキシを設定できます。
+ a| 
+デフォルトでは、高セキュリティ設定が適用されます。
+
+セキュリティ設定が高くなっているのは、 API がコントローラ上で直接実行されるためです。たとえば、 HTTP アクセスは許可されず、 HTTPS については SSL や古い TLS の暗号化プロトコルはすべて無効です。
+
+
+
+ a| 
+一元管理
+ a| 
+1 台のサーバからすべてのストレージシステムを管理します。
+ a| 
+組み込み先のコントローラのみを管理します。
+
+|===
+
+
+== Unified Manager の略
+
+プロキシインストールパッケージには、 E2800 、 E5700 、 EF300 、 EF600 などの E シリーズおよび EF シリーズの新しいストレージシステムの設定が可能な、 Web ベースのインターフェイスである Unified Manager が含まれています。
+
+Unified Manager では次のバッチ処理を実行できます。
+
+* 複数のストレージシステムのステータスをまとめて表示できます
+* ネットワーク内の複数のストレージシステムを検出します
+* 1 つのストレージシステムから複数のシステムに設定をインポートします
+* 複数のストレージシステムのファームウェアをアップグレードしてください
+

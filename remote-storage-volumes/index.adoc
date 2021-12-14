@@ -1,0 +1,34 @@
+---
+permalink: remote-storage-volumes/index.html 
+sidebar: sidebar 
+keywords: Remote Storage Volumes, RTV, remote volumes, remote storage E-Series 
+summary: リモートストレージボリューム機能を使用して、リモートストレージデバイスからローカルの E シリーズボリュームにデータを直接インポートします。 
+---
+= Remote Storage Volumes の概要
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SANtricity ® リモートストレージボリューム機能を使用して、リモートストレージデバイスからローカルの E シリーズボリュームにデータを直接インポートできます。この機能は、機器のアップグレードプロセスを合理化し、 E シリーズ以外のデバイスから E シリーズシステムにデータを移動するためのデータ移行機能を提供します。
+
+
+
+== 設定の概要
+
+リモートストレージボリューム機能は、選択したサブモデル ID の SANtricity System Manager で使用できます。この機能を使用するには、リモートストレージシステムと E シリーズストレージシステムが相互に通信できるように設定する必要があります。
+
+次のワークフローを使用します。
+
+. link:system-reqs-concept.html["要件と制限事項を確認します"]。
+. link:setup-remote-volumes-concept.html["ハードウェアを設定する"]。
+. link:import-remote-storage-task.html["リモートストレージをインポートします"]。
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+* オンラインヘルプ。 System Manager ユーザインターフェイスまたはで参照できます https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-117/home.html?cp=5_0["ドキュメントセンター"^]。
+* リモートストレージボリューム機能の技術情報については、を参照してください https://www.netapp.com/pdf.html?item=/media/28697-tr-4893-deploy.pdf["Remote Storage Volumes テクニカルレポート"^]。
+

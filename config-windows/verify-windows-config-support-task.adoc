@@ -1,0 +1,54 @@
+---
+permalink: config-windows/verify-windows-config-support-task.html 
+sidebar: sidebar 
+keywords: express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: Windows 構成がサポートされていることを確認します。 
+---
+= Windows 構成がサポートされていることを確認する
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安定した稼働を確保するために、導入計画を作成し、 NetApp Interoperability Matrix Tool （ IMT ）を使用して構成全体がサポートされることを確認します。
+
+.手順
+. にアクセスします http://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]。
+. [* Storage 解決策 Search* （ストレージ検索） ] タイルをクリックします。
+. [Protocols [SAN Host] （プロトコル [SAN ホスト ] ）領域で、 * E シリーズ SAN ホスト * の横の * 追加ボタンをクリックします。
+. ［ * 検索条件の絞り込み検索の表示 * ］ をクリックします。
++
+[ 検索条件の絞り込み ] セクションが表示されます。このセクションでは、適用するプロトコル、およびオペレーティングシステム、ネットアップ OS 、ホストマルチパスドライバなど、構成のその他の条件を選択できます。構成に必要な条件を選択し、互換性のある構成要素を確認します。必要に応じて、使用するオペレーティングシステムとプロトコルに対して IMT に記載された更新を実行します。選択した構成の詳細情報には、右ページ矢印をクリックして、 [View Supported Configurations] ページからアクセスできます。
+
+. 必要に応じて、使用するオペレーティングシステムとプロトコルに対して次の表に記載された更新を実行します。
++
+|===
+| オペレーティングシステムの更新 | プロトコル | プロトコル関連の更新 
+
+
+ a| 
+適切な機能とサポートを確保するために、ドライバのインストールが必要になる場合があります。
+
+ブートコードとファームウェアを更新する方法は、 HBA ベンダーごとに異なります。HBA のブートコードとファームウェアの更新に必要な手順書とソフトウェアの入手については、ベンダーの Web サイトでサポートセクションを参照してください。
+ a| 
+FC
+ a| 
+ホストバスアダプタ（ HBA ）のドライバ、ファームウェア、ブートコード
+
+
+
+ a| 
+iSCSI
+ a| 
+ネットワークインターフェイスカード（ NIC ）のドライバ、ファームウェア、ブートコード
+
+
+
+ a| 
+（ SAS ）。
+ a| 
+ホストバスアダプタ（ HBA ）のドライバ、ファームウェア、ブートコード
+
+|===
+

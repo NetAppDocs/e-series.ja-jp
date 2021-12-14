@@ -1,0 +1,99 @@
+---
+permalink: config-linux/nvme-fc-setup-host-side-task.html 
+sidebar: sidebar 
+keywords: NVMe over Fibre Channel, host side, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: Fibre Channel 環境で NVMe イニシエータを設定するには、 nvme-CLI パッケージをインストールして設定し、ホストで NVMe/FC イニシエータを有効にします。 
+---
+= ホスト側で NVMe over Fibre Channel を設定します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Fibre Channel 環境で NVMe イニシエータを設定するには、 CLI パッケージをインストールして設定し、ホストで NVMe/FC イニシエータを有効にします。
+
+次の手順は、 Broadcom Emulex または QLogic NVMe/FC 対応の FC HBA を使用する RHEL 7 、 RHEL 8 、 SLES 12 、および SLES 15 用です。これらの OS または HBA のどのバージョンがサポートされているかについては、を参照してください https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]。
+
+.手順
+. 「 nvme-cli 」パッケージをインストールします。
++
+* SLES 12 または SLES 15 *
+
++
+[listing]
+----
+
+# zypper install nvme-cli
+----
++
+* RHEL 7 または RHEL 8*
+
++
+[listing]
+----
+
+# yum install nvme-cli
+----
++
+.. RHEL 7 の場合のみ、を介した NVMe/FC 接続用の外部 Broadcom Autoconnect スクリプトをダウンロードしてインストールします https://www.broadcom.com/support/download-search["Broadcom の Web サイト"^]。Inbox NVMe over FC Drivers* のキーワード「 * Autoconnect Script File 」を入力し、お使いの OS に固有の最新バージョンを選択します。
+.. Qlogic の場合は、 Broadcom NVMe/FC 自動接続スクリプトをインストールした後、「 /lib/systemd/system/nvmefc-boot-connections.service` 」を変更して次の内容を指定します。
++
+[listing]
+----
+[Unit]
+Description=Auto-connect to subsystems on FC-NVME devices found during boot
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c "echo add > /sys/class/fc/fc_udev_device/nvme_discovery"
+
+[Install]
+WantedBy=default.target
+----
+
+
+. 「 nvmefc-boot-connections 」サービスを有効にして開始します。
++
+[listing]
+----
+systemctl enable nvmefc-boot-connections.service
+----
++
+[listing]
+----
+systemctl start nvmefc-boot-connections.service
+----
+
+
+* Emulex HBA 用のホスト側のセットアップ： *
+
+
+NOTE: 次の手順は Emulex HBA のみを対象としています。
+
+. 「 lpfc_enable_fc4_type 」を「 3 」に設定して、 SLES12 SP4 を NVMe/FC イニシエータとして有効にします。
++
+[listing]
+----
+# cat /etc/modprobe.d/lpfc.conf
+options lpfc lpfc_enable_fc4_type=3
+----
+. initrd を再構築して 'Emulex の変更とブート・パラメータの変更を取得します
++
+[listing]
+----
+# dracut --force
+----
+. ホストを再起動して 'IPFC' ドライバの変更をロードします
++
+[listing]
+----
+# reboot
+----
++
+ホストがリブートされ、 NVMe / FC イニシエータが有効になります。
+
++
+
+NOTE: ホスト側の設定が完了すると、 NVMe over Fibre Channel ポートの接続が自動的に確立されます。
+
+

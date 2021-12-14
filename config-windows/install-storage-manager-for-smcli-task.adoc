@@ -1,0 +1,37 @@
+---
+permalink: config-windows/install-storage-manager-for-smcli-task.html 
+sidebar: sidebar 
+keywords: install Storage Manager Windows, install CLI Windows, install command line interface, install Host Context Agent, install HCA, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: CLI および HCA 用の Storage Manager を Windows の簡単な方法でインストールします。 
+---
+= SMcli および Host Context Agent （ HCA ）を使用するための SANtricity Storage Manager のインストール
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SANtricity ソフトウェア 11.53 以前を使用している場合は、管理ステーションに SANtricity Storage Manager ソフトウェアをインストールして、アレイの管理に役立てることができます。
+
+SANtricity Storage Manager には、管理タスクを実行するためのコマンドラインインターフェイス（ CLI ）と、 I/O パスを介してストレージアレイコントローラにホスト構成情報をプッシュするためのホストコンテキストエージェントがあります。
+
+
+NOTE: SANtricity ソフトウェア 11.60 以降を使用している場合は、次の手順は実行する必要はありません。SANtricity Secure CLI （ SMcli ）は SANtricity OS に含まれており、 SANtricity System Manager からダウンロードできます。SANtricity システムマネージャを使用して SMcli をダウンロードする方法の詳細については、 SANtricity システムマネージャオンラインヘルプの「ダウンロードコマンドラインインターフェイス（ CLI ） _ topic 」を参照してください。
+
+.必要なもの
+* SANtricity ソフトウェア 11.53 以前。
+* 適切な管理者権限またはスーパーユーザ権限です。
+* SANtricity Storage Manager クライアント用の、次の最小要件を持つシステム。
++
+** *RAM*: Java Runtime Engine 用に 2GB
+** * ディスク容量 * ： 5GB
+** * OS / アーキテクチャ * ：サポートされているオペレーティング・システムのバージョンとアーキテクチャーを判断するためのガイダンスについては、を参照してください http://mysupport.netapp.com["ネットアップサポート"^]。Downloads * タブで、ダウンロード [E-Series SANtricity Storage Manager] に移動します。
+
+
+
+
+.手順
+. SANtricity ソフトウェアリリースは、からダウンロードします http://mysupport.netapp.com["ネットアップサポート"^]。Downloads * タブのメニュー： Downloads [E-Series SANtricity Storage Manager] 。
+. SANtricity インストーラを実行します。実行する SMIA*.exe インストールパッケージをダブルクリックします。
+. インストールウィザードを使用して、管理ステーションにソフトウェアをインストールします。
+

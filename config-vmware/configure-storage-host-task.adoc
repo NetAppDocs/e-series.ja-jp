@@ -1,0 +1,20 @@
+---
+permalink: config-vmware/configure-storage-host-task.html 
+sidebar: sidebar 
+keywords: configure storage ESXi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: ESXi ホストに割り当てられたストレージは、 Virtual Machine File System\ （ VMFS\ ）データストアまたは raw デバイスマッピング \ （ RDM \ ）として使用できます。RDM は、 NVMe over Fibre Channel プロトコルではサポートされません。 
+---
+= ホストでストレージを設定します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ESXi ホストに割り当てられたストレージは、 Virtual Machine File System （ VMFS ）データストアまたは Raw デバイスマッピング（ RDM ）として使用できます。RDM は、 NVMe over Fibre Channel プロトコルではサポートされません。
+
+ESXi 6.x および 7.x のすべてのバージョンで、 VMFS バージョン 5 および 6 がサポートされます。
+
+.手順
+. ESXi ホストにマッピングされたボリュームが正しく検出されていることを確認してください。
+. vSphere Client または vSphere Web Client で VMFS データストアを作成する手順、またはボリュームを RDM として使用する手順については、を参照してください https://www.vmware.com/support/pubs/["VMware のドキュメント Web サイト"^]。
+

@@ -1,0 +1,90 @@
+---
+permalink: config-linux/nvme-roce-discover-connect-storage-host-task.html 
+sidebar: sidebar 
+keywords: discover storage, host, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: SANtricity System Manager で各ホストを定義する前に、ホストからターゲットコントローラポートを検出し、 NVMe 接続を確立する必要があります。 
+---
+= ホストからストレージを検出して接続します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SANtricity System Manager で各ホストを定義する前に、ホストからターゲットコントローラポートを検出し、 NVMe 接続を確立する必要があります。
+
+.手順
+. 次のコマンドを使用して、すべてのパスの NVMe-oF ターゲット上の使用可能なサブシステムを検出します。
++
+[listing]
+----
+nvme discover -t rdma -a target_ip_address
+----
++
+このコマンドで 'target_ip_address はターゲット・ポートの IP アドレスです
+
++
+
+NOTE: 「 nvme discover 」コマンドでは、ホスト・アクセスに関係なく、サブシステム内のすべてのコントローラ・ポートが検出されます。
+
++
+[listing]
+----
+# nvme discover -t rdma -a 192.168.1.77
+Discovery Log Number of Records 2, Generation counter 0
+=====Discovery Log Entry 0======
+trtype:  rdma
+adrfam:  ipv4
+subtype: nvme subsystem
+treq:    not specified
+portid:  0
+trsvcid: 4420
+subnqn:  nqn.1992-08.com.netapp:5700.600a098000a527a7000000005ab3af94
+traddr:  192.168.1.77
+rdma_prtype: roce
+rdma_qptype: connected
+rdma_cms:    rdma-cm
+rdma_pkey: 0x0000
+=====Discovery Log Entry 1======
+trtype:  rdma
+adrfam:  ipv4
+subtype: nvme subsystem
+treq:    not specified
+portid:  1
+trsvcid: 4420
+subnqn:  nqn.1992-08.com.netapp:5700.600a098000a527a7000000005ab3af94
+traddr:  192.168.2.77
+rdma_prtype: roce
+rdma_qptype: connected
+rdma_cms:    rdma-cm
+rdma_pkey: 0x0000
+----
+. 他の接続についても手順 1 を繰り返します。
+. 次のコマンドを使用して最初のパスで検出されたサブシステムに接続します。「 nvme connect -t rdma -n Discovered_sub_nqn -a target_ip_address -Q queue_depth_setting -l controller_loss_timeout_period
++
+
+NOTE: 上記のコマンドは、リブート後も維持されません。リブートのたびに 'nvme connect コマンドを実行して 'NVMe 接続を再確立する必要があります
+
++
+
+NOTE: 検出されたポートのうち、ホストからアクセスできないポートへの接続は確立されません。
+
++
+
+NOTE: このコマンドでポート番号を指定すると、接続は失敗します。接続用に設定されているポートはデフォルトポートだけです。
+
++
+
+NOTE: 推奨されるキュー深度は 1024 です。次の例に示すように ' コマンド・ライン・オプションの -Q 1024 を使用して ' デフォルトの設定である 128 を 1024 でオーバーライドします
+
++
+
+NOTE: コントローラ損失のタイムアウト時間として推奨される秒数は 3 、 600 秒（ 60 分）です。次の例に示すように '-l 3600 コマンド・ライン・オプションを使用して ' デフォルトの設定である 600 秒を 3600 秒でオーバーライドします
+
++
+[listing]
+----
+# nvme connect -t rdma -a 192.168.1.77 -n nqn.1992-08.com.netapp:5700.600a098000a527a7000000005ab3af94 -Q 1024 -l 3600
+# nvme connect -t rdma -a 192.168.2.77 -n nqn.1992-08.com.netapp:5700.600a098000a527a7000000005ab3af94 -Q 1024 -l 3600
+----
+. 手順 3 を繰り返して、 2 番目のパスで検出されたサブシステムを接続します。
+

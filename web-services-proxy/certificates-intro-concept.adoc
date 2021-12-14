@@ -1,0 +1,129 @@
+---
+permalink: web-services-proxy/certificates-intro-concept.html 
+sidebar: sidebar 
+keywords: Certificates Web Services Proxy, WSP certificates, 
+summary: Web Services Proxy 構成ファイル、 API コマンド、または Unified Manager インターフェイスを使用して証明書を管理します。 
+---
+= Web Services Proxy でセキュリティと証明書を管理する
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Web Services Proxy のセキュリティ上の理由から、 SSL ポートを指定して証明書を管理することができます。証明書で Web サイトの所有者を識別することにより、クライアントとサーバの間のセキュアな接続が確立
+
+
+
+== SSL を有効にします
+
+Web Services Proxy はセキュリティ対策として Secure Sockets Layer （ SSL ）を使用しており、インストール時に SSL が有効化されます。SSL ポートの指定は、 wsconfig.xml ファイルで変更できます。
+
+.手順
+. 次の場所にある wsconfig.xml ファイルを開きます。
++
+** （ Windows ） - C ： \Program Files\NetApp\Virtual Web Services Proxy
+** （ Linux ） - /opt/netapp/santricity_web_services_proxy
+
+
+. 次の例のように、 SSL ポート番号を追加または変更します。
++
+[listing]
+----
+<sslport clientauth="request">8443</sslport>
+----
+
+
+SSL が設定された状態でサーバを起動すると、サーバはキーストアファイルと信頼ストアファイルを探します。
+
+* キーストアが見つからない場合、サーバは最初に検出された非ループバック IPv4 アドレスの IP アドレスを使用してキーストアを生成し、自己署名証明書をキーストアに追加します。
+* 信頼ストアが見つからないか指定されていない場合、サーバはキーストアを信頼ストアとして使用します。
+
+
+
+
+== 証明書の検証を省略します
+
+セキュアな接続をサポートするために、 Web Services Proxy はストレージシステムの証明書を独自の信頼された証明書と照合して検証します。必要に応じて、ストレージシステムへの接続時にこの検証を省略するように指定できます。
+
+.作業を開始する前に
+* ストレージシステムへの接続がすべてセキュアである必要があります。
+
+
+.手順
+. 次の場所にある wsconfig.xml ファイルを開きます。
++
+** （ Windows ） - C ： \Program Files\NetApp\Virtual Web Services Proxy
+** （ Linux ） - /opt/netapp/santricity_web_services_proxy
+
+
+. 次の例に示すように 'trust.all.arrays' エントリに「 true 」と入力します
++
+[listing]
+----
+<env key="trust.all.arrays">true</env>
+----
+. ファイルを保存します。
+
+
+
+
+== ホスト管理証明書を生成してインポートします
+
+証明書で Web サイトの所有者を識別することにより、クライアントとサーバの間のセキュアな接続が確立Web Services Proxy がインストールされているホストシステムの認証局（ CA ）証明書を生成してインポートするには、 API エンドポイントを使用します。
+
+ホストシステムの証明書を管理するには、 API を使用して次のタスクを実行します。
+
+* ホストシステムの証明書署名要求（ CSR ）を作成します。
+* CSR ファイルを CA に送信し、証明書ファイルが送られてくるのを待ちます。
+* 署名済み証明書をホストシステムにインポートします。
+
+
+
+NOTE: 証明書は Unified Manager インターフェイスでも管理できます。詳細については、 Unified Manager のオンラインヘルプを参照してください。
+
+.手順
+. にログインします link:install-login-task.html["対話型の API ドキュメント"]。
+. 右上のドロップダウンメニューに移動し、「 * v2 * 」を選択します。
+. [* Administration] リンクを展開し、 */certificates* エンドポイントまで下にスクロールします。
+. CSR ファイルを生成します。
++
+.. 「 * POST ： /certificates * 」を選択し、「 * Try it out * 」を選択します。
++
+Web サーバで自己署名証明書が再生成されます。各フィールドに情報を入力して、 CSR の生成に使用する共通名、組織、組織単位、代替 ID などの情報を定義できます。
+
+.. [*Example Values] ペインに必要な情報を追加して有効な CA 証明書を生成し、コマンドを実行します。
++
+
+NOTE: CSR の再生成が必要になるため、「 * POST ： /certificates 」や「 * POST ： /certificates/reset * 」は繰り返し呼び出さないでください。POST ： /certificates * または * POST ： /certificates/reset * と呼び出すと、新しい秘密鍵を使用して新しい自己署名証明書が生成されます。サーバで秘密鍵がリセットされる前に生成された CSR を送信した場合、新しいセキュリティ証明書は機能しません。新しい CSR を生成し、新しい CA 証明書を要求する必要があります。
+
+.. GET ： /certificates/server * エンドポイントを実行して、現在の証明書が自己署名証明書であり、 * POST ： /certificates * コマンドで追加した情報が含まれていることを確認します。
++
+サーバ証明書（「 jetty 」という別名で表示）は、この時点ではまだ自己署名証明書です。
+
+.. POST ： /certificates/export * エンドポイントを展開し、 * Try it out * を選択して CSR ファイルのファイル名を入力し、 * Execute * をクリックします。
+
+
+. 「 fileURL 」を新しいブラウザタブにコピーして貼り付け、 CSR ファイルをダウンロードしてから、 CSR ファイルを有効な CA に送信して、新しい Web サーバ証明書チェーンを要求します。
+. CA から新しい証明書チェーンが発行されたら、証明書管理ツールを使用してルート証明書、中間証明書、および Web サーバ証明書を分割し、それらの証明書を Web Services Proxy サーバにインポートします。
++
+.. POST ： /sslconfig/server* エンドポイントを展開し、 [* 試してみましょう * ] を選択します。
+.. [*alias*] フィールドに CA ルート証明書の名前を入力します。
+.. [*replaceMainServerCertificate*] フィールドで [*false*] を選択します。
+.. 新しい CA ルート証明書を参照して選択します。
+.. [* Execute] をクリックします。
+.. 証明書のアップロードが成功したことを確認します。
+.. CA 中間証明書について、 CA 証明書のアップロード用手順を繰り返します。
+.. 新しい Web サーバセキュリティ証明書ファイルに対して証明書アップロード手順を繰り返します。ただし、この手順では、 [*replaceMainServerCertificate*] ドロップダウンで [*true*] を選択します。
+.. Web サーバセキュリティ証明書のインポートが正常に完了したことを確認します。
+.. キーストアに新しいルート証明書、中間証明書、および Web サーバ証明書があることを確認するには、 * GET ： /certificates/server * を実行します。
+
+
+. [* POST ： /certificates/reload * endpoint] を選択して展開し、 [* Try it out * ] を選択します。両方のコントローラを再起動するかどうかを確認するメッセージが表示されたら、「 * false * 」を選択します。（「 True 」はデュアルアレイコントローラの場合にのみ適用されます）。 [* Execute] をクリックします。
++
+通常、 */certificates/reload * エンドポイントは HTTP 202 応答を返します。ただし、 Web サーバの信頼ストアとキーストアの証明書をリロードする際、 API のプロセスと Web サーバの証明書リロードプロセスの間でまれに競合が発生します。まれに、 Web サーバ証明書のリロードが API の処理よりも優先されることがあります。この場合、リロードが正常に完了していても失敗したように表示されます。この場合も次の手順に進みます。実際にリロードに失敗した場合は、次の手順も失敗します。
+
+. Web Services Proxy への現在のブラウザセッションを閉じて新しいブラウザセッションを開き、 Web Services Proxy への新しいセキュアなブラウザ接続を確立できることを確認します。
++
+incognito モードまたは in-private モードのブラウズセッションを使用すると、以前のブラウズセッションで保存されたデータを使用せずにサーバへの接続を開くことができます。
+
+

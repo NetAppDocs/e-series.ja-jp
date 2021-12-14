@@ -1,0 +1,134 @@
+---
+permalink: install-hw-ef600/prepare-for-install-task.html 
+sidebar: sidebar 
+keywords: EF300, EF600, installation, create account, register hardware 
+summary: EF300 または EF600 を設置するには、アカウントを作成してハードウェアを登録します。 
+---
+= 設置を準備
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+EF300 シリーズまたは EF600 シリーズストレージシステムの設置準備の方法について説明します。
+
+SAS 拡張用に EF300 をケーブル接続する場合は、次の情報を確認します。
+
+* link:../maintenance-ef600/sas-add-supertask-task.html["SAS 拡張カードを追加します"^] SAS 拡張カードの取り付け
+* link:../install-hw-cabling/index.html["ケーブル接続の概要"] SAS 拡張ケーブル接続の場合：
+
+
+.手順
+. アカウントを作成し、でハードウェアを登録します http://mysupport.netapp.com/["mysupport.netapp.com"^]。
+. 次のものが同梱されていることを確認してください。
++
+|===
+
+
+ a| 
+image:../media/ef600_w_faceplate.png[""]
+ a| 
+ドライブが取り付けられたシェルフ（ベゼルとエンドキャップは別に梱包）
+
+
+
+ a| 
+image:../media/superrails_inst-hw-ef600.png[""]
+ a| 
+ラックマウントハードウェア
+
+|===
++
+次の表に、同梱されているケーブルの種類を示します。表に記載されていないケーブルがある場合は、を参照してください https://hwu.netapp.com/["Hardware Universe"] ケーブルの場所を確認し、用途を特定します。
+
++
+|===
+| コネクタのタイプ | ケーブルのタイプ | 使用 
+
+
+ a| 
+image:../media/cable_ethernet_inst-hw-ef600.png[""]
+ a| 
+RJ-45 イーサネットケーブル（発注した場合）
+ a| 
+管理接続
+
+
+
+ a| 
+image:../media/cable_io_inst-hw-ef600.png[""]
+ a| 
+I/O ケーブル（発注した場合）
+ a| 
+データホストのケーブル接続
+
+
+
+ a| 
+image:../media/cable_power_inst-hw-ef600.png[""]
+ a| 
+電源ケーブル（発注した場合）
+ a| 
+ストレージシステムの電源
+
+|===
+. 次のものを用意します。
++
+|===
+
+
+ a| 
+image:../media/screwdriver_inst-hw-ef600.png[""]
+ a| 
+No.2 プラスドライバ
+
+
+
+ a| 
+image:../media/flashlight_inst-hw-ef600.png[""]
+ a| 
+懐中電灯
+
+
+
+ a| 
+image:../media/wrist_strap_inst-hw-ef600.png[""]
+ a| 
+静電気防止用ストラップ
+
+
+
+ a| 
+image:../media/2u_rackspace_inst-hw-ef600.png[""]
+ a| 
+2U ラックスペース： 48.3cm の標準搭載。48.30cm （ 19 インチ）ラック
+
+* 深さ *: 19.0 インチ（ 48.3 cm ）
+
+* 幅 * ： 17.6 インチ（ 44.7 cm ）
+
+* 高さ *:3.34 インチ（ 8.48 cm ）
+
+* シェルフ * ： 24 ドライブ
+
+* 最大重量 * ： 27.4kg （ 60.5 ポンド）
+
+
+NOTE: 他社製のキャビネットを使用すると、電源ケーブルを原因で接続してコントローラへのアクセスを制限できます。
+
+
+
+ a| 
+image:../media/management_station_inst-hw-ef600_g60b3.png[""]
+ a| 
+管理ソフトウェアでサポートされているブラウザ：
+
+** Google Chrome （バージョン 78 以降）
+** Microsoft Internet Explorer （バージョン 11 以降）
+** Microsoft Edge （ 88 以降）
+** Mozilla Firefox （バージョン 70 以降）
+** Safari （バージョン 12 以降）
+
+
+|===
+

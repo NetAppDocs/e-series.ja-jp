@@ -1,0 +1,75 @@
+---
+permalink: cloud-connector/uninstall-intro-concept.html 
+sidebar: sidebar 
+keywords: Cloud Connector uninstall, remove Cloud Connector 
+summary: SANtricity Cloud Connector は、グラフィカルなアンインストーラまたはコンソールからアンインストールできます。 
+---
+= SANtricity Cloud Connector をアンインストールします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SANtricity Cloud Connector は、グラフィカルなアンインストーラまたはコンソールモードを使用してアンインストールできます。
+
+
+
+== グラフィカルモードを使用してアンインストールします
+
+Linux オペレーティングシステムでグラフィカルモードを使用して SANtricity Cloud Connector をアンインストールできます。
+
+.手順
+. ターミナルウィンドウで、 SANtricity Cloud Connector アンインストールファイルが格納されているディレクトリに移動します。
++
+SANtricity Cloud Connector のアンインストールファイルのデフォルトのディレクトリは次のとおりです。
+
++
+[listing]
+----
+/opt/netapp/santricity_cloud_connector4/uninstall_cloud_connector4
+----
+. SANtricity Cloud Connector アンインストールファイルが格納されているディレクトリから、次のコマンドを実行します。
++
+[listing]
+----
+./uninstall_cloud_connector4 –i gui
+----
++
+SANtricity Cloud Connector のアンインストールプロセスが開始されます。
+
+. アンインストールウィンドウで、 *Uninstall* をクリックして、 SANtricity Cloud Connector のアンインストールを続行します。
++
+アンインストールプロセスが完了し、 SANtricity Cloud Connector アプリケーションが Linux オペレーティングシステムからアンインストールされます。
+
+
+
+
+
+== コンソールモードを使用してをアンインストールします
+
+Linux オペレーティングシステムでコンソールモードを使用して SANtricity Cloud Connector をアンインストールできます。
+
+.手順
+. ターミナルウィンドウで、 SANtricity Cloud Connector アンインストールファイルが格納されているディレクトリに移動します。
++
+SANtricity Cloud Connector のアンインストールファイルのデフォルトのディレクトリは次のとおりです。
+
++
+[listing]
+----
+/opt/netapp/santricity_cloud_connector4/uninstall_cloud_connector4
+----
+. SANtricity Cloud Connector アンインストールファイルが格納されているディレクトリから、次のコマンドを実行します。
++
+[listing]
+----
+./uninstall_cloud_connector4 –i console
+----
++
+SANtricity Cloud Connector のアンインストールプロセスが開始されます。
+
+. アンインストールウィンドウで *Enter * を押して、 SANtricity Cloud Connector のアンインストールに進みます。
++
+アンインストールプロセスが完了し、 SANtricity Cloud Connector アプリケーションが Linux オペレーティングシステムからアンインストールされます。
+
+

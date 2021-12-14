@@ -1,0 +1,169 @@
+---
+permalink: web-services-proxy/asup-intro-concept.html 
+sidebar: sidebar 
+keywords: ASUP configuration Web Services, AutoSupport Web Services Proxy, WSP ASUP config 
+summary: AutoSupport （ ASUP ）を設定すると、データを収集し、収集したデータをリモートでのトラブルシューティングや問題分析用にテクニカルサポートに自動的に送信することができます。 
+---
+= Web サービスプロキシを使用して AutoSupport を管理します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+AutoSupport （ ASUP ）を設定すると、データを収集し、収集したデータをリモートでのトラブルシューティングや問題分析用にテクニカルサポートに自動的に送信することができます。
+
+
+
+== AutoSupport （ ASUP ）の概要
+
+AutoSupport （ ASUP ）は、手動およびスケジュールベースの基準に基づいてネットアップにメッセージを自動的に送信します。
+
+各 AutoSupport メッセージは、ログファイル、設定データ、状態データ、およびパフォーマンス指標の集まりです。デフォルトでは、 AutoSupport は週に 1 回、次の表に記載されたファイルをネットアップサポートチームに送信します。
+
+|===
+| ファイル名（ File Name ） | 説明 
+
+
+ a| 
+x-headers-data.txt
+ a| 
+X ヘッダー情報を含む .txt ファイル。
+
+
+
+ a| 
+Manifest.xml
+ a| 
+メッセージの内容を詳しく説明した .xml ファイル。
+
+
+
+ a| 
+arraydata.xml
+ a| 
+クライアントの永続データのリストを含む .xml ファイル。
+
+
+
+ a| 
+appserver-config.txt
+ a| 
+アプリケーションサーバの設定データを含む .txt ファイル。
+
+
+
+ a| 
+wsconfig.txt
+ a| 
+Web サービスの設定データを含む .txt ファイル。
+
+
+
+ a| 
+host-info.txt
+ a| 
+ホスト環境に関する情報を含む .txt ファイル。
+
+
+
+ a| 
+サーバログ .7z
+ a| 
+使用可能なすべての Web サーバログファイルを含む .7z ファイル。
+
+
+
+ a| 
+client-info.txt
+ a| 
+メソッドや Web ページのヒット数など、アプリケーション固有のカウンタの任意のキーと値のペアを含む .txt ファイル。
+
+
+
+ a| 
+WebServices - profile.json
+ a| 
+これらのファイルには、 Web Services のプロファイルデータと Jersey の監視統計データが含まれています。デフォルトでは、 Jersey の監視統計は有効になっています。wsconfig.xml ファイルで、次のように有効または無効にできます。
+
+* イネーブル：「 <env key="enable.jerse.statistics">true</env>`
+* 無効：「 <env key="enable.jerse.statistics">false</env>` 」
+
+
+|===
+
+
+== AutoSupport を設定します
+
+AutoSupport はインストール時にデフォルトで有効になりますが、この設定を変更したり、配信タイプを変更したりすることができます。
+
+
+
+=== AutoSupport を有効または無効にします
+
+AutoSupport 機能は Web サービスプロキシの初回インストール時に有効または無効になりますが、 ASUPConfig ファイルで設定を変更することができます。
+
+次の手順に従って、 ASUPConfig.xml ファイルを使用して AutoSupport を有効または無効にできます。または、 * Configuration * および * POST/asup * を使用して API でこの機能を有効または無効にし、「 true 」または「 false 」を入力してもかまいません。
+
+. 作業ディレクトリで ASUPConfig.xml ファイルを開きます。
+. 「 <asupdata enabled="(boolean)" timestamp=>` 」の行を探します
+. 「 true 」（イネーブル）または「 false 」（ディセーブル）を入力します。例：
++
+[listing]
+----
+<asupdata enabled="false" timestamp="0">
+----
++
+
+NOTE: タイムスタンプエントリは必要ありません。
+
+. ファイルを保存します。
+
+
+
+
+=== AutoSupport の配信方法を設定する
+
+AutoSupport 機能で HTTPS 、 HTTP 、または SMTP の配信方法を使用するように設定できます。デフォルトの配信方法は HTTPS です。
+
+. 作業ディレクトリ内の ASUPConfig.xml ファイルにアクセスします。
+. 文字列「 <delivery type="n">` 」に、表の説明に従って 1 、 2 、または 3 を入力します。
++
+|===
+| 価値 | 説明 
+
+
+ a| 
+1.
+ a| 
+* HTTPS * （デフォルト）
+
+<delivery type="1"> 」を参照してください
+
+
+
+ a| 
+2.
+ a| 
+* HTTP *
+
+<delivery type="2"> 」を参照してください
+
+
+
+ a| 
+3.
+ a| 
+*smtp* -- AutoSupport 配信タイプを SMTP に正しく設定するには、次の例のように、 SMTP メールサーバのアドレスと、送信者と受信者のユーザの E メールアドレスを含める必要があります。
+
+[listing]
+----
+<delivery type="3">
+<smtp>
+<mailserver>smtp.example.com</mailserver>
+<sender>user@example.com</sender>
+<replyto>user@example.com</replyto>
+</smtp>
+</delivery>
+----
+|===
+

@@ -1,0 +1,20 @@
+---
+permalink: maintenance-ef600/fans-overview-requirements-replacing2-concept.html 
+sidebar: sidebar 
+keywords: replace EF300 fan, replace EF600 fan, 
+summary: EF300 または EF600 ファンを交換する前に、要件と考慮事項を確認します。 
+---
+= EF300 または EF600 ファンの交換に際しての要件
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+EF300 または EF600 アレイの障害が発生したファンを交換する前に、次の要件を確認します。
+
+* コントローラシェルフまたはドライブシェルフのモデルに対応した交換用ファンを用意しておきます。
+* ESD リストバンドを装着するか、静電気防止処置を施しておきます。
+
+
+
+NOTE: Recovery Guru にファンを削除しないよう記載されている場合は、テクニカルサポートにお問い合わせください。

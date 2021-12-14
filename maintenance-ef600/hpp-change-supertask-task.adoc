@@ -1,0 +1,694 @@
+---
+permalink: maintenance-ef600/hpp-change-supertask-task.html 
+sidebar: sidebar 
+keywords: host protocol change, EF300 host protocol, EF600 host protocol 
+summary: EF300 または EF600 アレイのホストポートプロトコルを変更する。 
+---
+= EF300 または EF600 のホストプロトコルを変更する
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+EF300 または EF600 アレイのホストポートプロトコルを変更する場合は、この手順に従います。この手順は、 Infiniband （ IB ）または Fibre Channel （ FC ）を使用するホストインターフェイスカード（ HIC ）にのみ適用されます。
+
+
+
+== 手順 1 ：機能パックキーを入手する
+
+機能パックキーを入手するには、コントローラシェルフのシリアル番号、 Feature Activation Code 、およびストレージアレイの機能有効識別子が必要です。
+
+.手順
+. シリアル番号を確認します。
++
+.. SANtricity システムマネージャで、メニューサポート [ サポートセンター ] を選択します。
+.. Support Resources * タブを選択した状態で、 * View top storage array properties * セクションまでスクロールします。
+.. シャーシのシリアル番号 * を探し、この値をテキストファイルにコピーします。
++
+image::../media/sam1130_ss_e2800_storage_array_profile_sn_smid_copy_maint-ef600.gif[sam1130 ss e2800 storage array profile snsmid copy maint ef600]
+
+
+
+. 機能パックサブモデル ID * を確認します。
++
+.. SANtricity システムマネージャで、 * サポート * を選択します。
+.. [ サポートセンター * （ Support Center * ） ] タイルを選択します。
+.. [ サポートリソース ] タブで、 [* ストレージアレイプロファイル * ] リンクを探して選択します。
+.. テキストボックスに * feature pack サブモデル ID* と入力し、 * 検索 * をクリックします。
+.. 変更前の構成の機能パックサブモデル ID を確認します。
++
+image::../media/storage_array_profile2_maint-ef600.gif[ストレージアレイ profile2 maint ef600]
+
+
+
+. 機能パックサブモデル ID を使用して、変更前の構成の対応するコントローラサブモデル ID を確認し、次の表から変更後の構成の Feature Activation Code を探します。次に、その Feature Activation Code をテキストファイルにコピーします。
++
+|===
+2+| 変更前の構成 2+| 変更後の構成 .2+| Feature Activation Code （機能アクティベーションコード） 
+
+
+| コントローラサブモデル ID | HIC ポート | コントローラサブモデル ID | HIC ポート 
+
+
+ a| 
+443
+ a| 
+NVMe/FC
+
+または
+
+NVMe/RoCE
+ a| 
+444 番です
+ a| 
+NVMe/IB
+ a| 
+DH5-HB4-ZK9QH
+
+
+
+ a| 
+448
+ a| 
+FC
+ a| 
+7HZ-EB4-ZHAYW
+
+
+
+ a| 
+491
+ a| 
+iSER/IB
+ a| 
+0H1-675-Z5SII
+
+
+
+ a| 
+492.
+ a| 
+SRP/IB
+ a| 
+nHD-V75-ZB6ZX
+
+
+
+ a| 
+444 番です
+ a| 
+NVMe/FC
+
+または
+
+NVMe/IB
+ a| 
+443
+ a| 
+NVMe/RoCE
+ a| 
+YH3-XB4 - ZJRIZ
+
+
+
+ a| 
+448
+ a| 
+FC
+ a| 
+2HU-BB4-ZFCG5
+
+
+
+ a| 
+491
+ a| 
+iSER/IB
+ a| 
+2H3-P75-Z6AQG
+
+
+
+ a| 
+492.
+ a| 
+SRP/IB
+ a| 
+5HG-G75-ZDNEZ
+
+
+
+ a| 
+448
+ a| 
+FC
+ a| 
+443
+ a| 
+NVMe/FC
+
+または
+
+NVMe/RoCE
+ a| 
+JHX-UB4 - ZGTP1
+
+
+
+ a| 
+444 番です
+ a| 
+NVMe/FC
+
+または
+
+NVMe/IB
+ a| 
+LHS-RB4-ZDV29
+
+
+
+ a| 
+491
+ a| 
+iSER/IB
+ a| 
+FH6-975-Z7Q7H
+
+
+
+ a| 
+492.
+ a| 
+SRP/IB
+ a| 
+0HI-Z75-Z4L5
+
+
+
+ a| 
+491
+ a| 
+iSER/IB
+ a| 
+443
+ a| 
+NVMe/FC または NVMe/RoCE
+ a| 
+MHQ-M85-ZIJNT
+
+
+
+ a| 
+444 番です
+ a| 
+NVMe/FC または NVMe/IB
+ a| 
+4HS-685-ZJZ1U
+
+
+
+ a| 
+448
+ a| 
+FC
+ a| 
+YHU-P85-ZLHCX
+
+
+
+ a| 
+465
+ a| 
+FC / PTL
+ a| 
+AHX-985 - ZMXMI
+
+
+
+ a| 
+492.
+ a| 
+SRP/IB
+ a| 
+ZHZ-S85-ZNF4J
+
+
+
+ a| 
+492.
+ a| 
+SRP/IB
+ a| 
+443
+ a| 
+NVMe/FC または NVMe/RoCE
+ a| 
+EH3-C85-Z0V93
+
+
+
+ a| 
+444 番です
+ a| 
+NVMe/FC または NVMe/IB
+ a| 
+BH5-V85-ZQDQJ
+
+
+
+ a| 
+448
+ a| 
+FC
+ a| 
+1H8-F85-ZRT1V
+
+
+
+ a| 
+465
+ a| 
+FC / PTL
+ a| 
+1HA-Y85-ZSB7S
+
+
+
+ a| 
+491
+ a| 
+iSER/IB
+ a| 
+KHD-I85-ZUSMI
+
+
+
+ a| 
+465
+ a| 
+FC / PTL
+ a| 
+491
+ a| 
+iSER
+ a| 
+6H8-S75-Z98FH
+
+
+
+ a| 
+492.
+ a| 
+SRP （ SRP ）
+ a| 
+NHL-J75-ZFL3W
+
+
+
+ a| 
+516
+ a| 
+NVMe/RoCE
+ a| 
+517
+ a| 
+NVMe/IB
+ a| 
+LHF-285 - ZV9YZ
+
+
+
+ a| 
+518
+ a| 
+FC
+ a| 
+IHI-L85-ZXQEP
+
+
+
+ a| 
+519
+ a| 
+iSER/IB
+ a| 
+RHK-585-ZY7P5
+
+
+
+ a| 
+520
+ a| 
+FC-PTL
+ a| 
+NHN-095-ZZ0XF
+
+
+
+ a| 
+521
+ a| 
+SRP/IB
+ a| 
+GHP-895-Z25BD
+
+
+
+ a| 
+517
+ a| 
+NVMe/IB
+ a| 
+516
+ a| 
+NVMe/RoCE
+ a| 
+7HS-R95-Z3M06
+
+
+
+ a| 
+518
+ a| 
+FC
+ a| 
+UHU-B95-Z43X2
+
+
+
+ a| 
+519
+ a| 
+FC-PTL
+ a| 
+8HX-U95-Z5K6F
+
+
+
+ a| 
+520
+ a| 
+iSER/IB
+ a| 
+UHZ-E95-Z71LH
+
+
+
+ a| 
+521
+ a| 
+SRP/IB
+ a| 
+SH2-X95-Z8IVS
+
+
+
+ a| 
+518
+ a| 
+FC
+ a| 
+516
+ a| 
+NVMe/FC または
+
+NVMe/RoCE
+ a| 
+UH5-H95-Z9Z58
+
+
+
+ a| 
+517
+ a| 
+NVMe/FC または
+
+NVMe/IB
+ a| 
+XH7-195-ZBGJC
+
+
+
+ a| 
+519
+ a| 
+FC-PTL
+ a| 
+FHA-K95-ZCXX0
+
+
+
+ a| 
+520
+ a| 
+iSER/IB
+ a| 
+JHC-595-ZDE3X
+
+
+
+ a| 
+521
+ a| 
+SRP/IB
+ a| 
+0HF-095-ZFVFN
+
+
+
+ a| 
+519
+ a| 
+FC-PTL
+ a| 
+516
+ a| 
+NVMe/FC または NVMe/RoCE
+ a| 
+YHH-895-ZGCXS
+
+
+
+ a| 
+517
+ a| 
+NVMe/FC または NVMe/IB
+ a| 
+2HK-R95-ZHT83
+
+
+
+ a| 
+518
+ a| 
+FC
+ a| 
+1HM-BA5-ZJALA
+
+
+
+ a| 
+520
+ a| 
+iSER/IB
+ a| 
+YHP-UA5-ZKRXA
+
+
+
+ a| 
+521
+ a| 
+SRP/IB
+ a| 
+MHR - EA5 - ZL83V
+
+
+
+ a| 
+520
+ a| 
+iSER/IB
+ a| 
+516
+ a| 
+NVMe/FC または NVMe/RoCE
+ a| 
+HU-XA5-ZNPLT
+
+
+
+ a| 
+517
+ a| 
+NVMe/FC または NVMe/IB
+ a| 
+YHW-HA5-Z07QK
+
+
+
+ a| 
+518
+ a| 
+FC
+ a| 
+WHZ-1A5-ZPN4U
+
+
+
+ a| 
+519
+ a| 
+FC / PTL
+ a| 
+7H2-KA5-ZR5C3
+
+
+
+ a| 
+521
+ a| 
+SRP （ SRP ）
+ a| 
+3H5-4A5-ZSLVX
+
+
+
+ a| 
+521
+ a| 
+SRP/IB
+ a| 
+516
+ a| 
+NVMe/FC または NVMe/RoCE
+ a| 
+1H7-NA5-ZT31W
+
+
+
+ a| 
+517
+ a| 
+NVMe/FC または NVMe/IB
+ a| 
+XHA-7A5-ZV日揮
+
+
+
+ a| 
+518
+ a| 
+FC
+ a| 
+KHC-QA5-ZW1P3
+
+
+
+ a| 
+519
+ a| 
+FC / PTL
+ a| 
+Che-AA5-ZXH2F
+
+
+
+ a| 
+520
+ a| 
+iSER/IB
+ a| 
+SHH-TA5-ZZYHS
+
+|===
++
+
+NOTE: この表にコントローラサブモデル ID が記載されていない場合は、にお問い合わせください https://mysupport.netapp.com/site/["ネットアップサポート"^]。
+
+. System Manager で、機能有効識別子を確認します。
++
+.. メニュー「 Settings （設定）」 [ System （システム） ] に移動します。
+.. 下にスクロールして * アドオン * を表示します。
+.. * 機能パックの変更 * で、 * 機能有効識別子 * を探します。
+.. この 32 桁の番号をコピーしてテキストファイルに貼り付けます。
++
+image::../media/sam1130_ss_e2800_change_feature_pack_feature_enable_identifier_copy_maint-ef600.gif[sam1130 ss e2800 変更機能パックのイネーブル ID コピー maint 600]
+
+
+
+. に進みます http://partnerspfk.netapp.com["ネットアップライセンスのアクティブ化：ストレージアレイプレミアム機能のアクティブ化"^]をクリックし、機能パックの入手に必要な情報を入力します。
++
+** シャーシのシリアル番号
+** Feature Activation Code （機能アクティベーションコード）
+** 機能有効識別子注意：プレミアム機能有効化 Web サイトには、「プレミアム機能有効化手順」へのリンクがあります。 この手順では、この手順を使用しないでください。
+
+
+. 機能パックのキーファイルを E メールで受け取るかサイトから直接ダウンロードするかを選択します。
+
+
+
+
+== 手順 2 ：ホスト I/O を停止します
+
+ホストポートのプロトコルを変更する前に、ホストからの I/O 処理をすべて停止します。
+
+変更が完了するまではストレージアレイのデータにアクセスできません。
+
+.手順
+. ストレージアレイと接続されているすべてのホストの間で I/O 処理が発生しないようにします。たとえば、次の手順を実行します。
++
+** ストレージからホストにマッピングされた LUN に関連するすべてのプロセスを停止します。
+** ストレージからホストにマッピングされた LUN にアプリケーションがデータを書き込んでいないことを確認します。
+** アレイのボリュームに関連付けられているファイルシステムをすべてアンマウントします。
++
+
+NOTE: ホスト I/O 処理を停止する具体的な手順はホストオペレーティングシステムや構成によって異なり、ここでは説明していません。環境内でホスト I/O 処理を停止する方法がわからない場合は、ホストをシャットダウンすることを検討してください。
+
++
+
+CAUTION: * データ損失の可能性 * - I/O 処理の実行中にこの手順を続行すると、データが失われる可能性があります。
+
+
+
+. キャッシュメモリ内のデータがドライブに書き込まれるまで待ちます。
++
+キャッシュされたデータをドライブに書き込む必要がある場合は、各コントローラの背面にある緑のキャッシュアクティブ LED が点灯します。この LED が消灯するまで待つ必要があります。
+
+. SANtricity システムマネージャのホームページで、「 * 進行中の操作を表示」を選択します。
+. すべての処理が完了するまで待ってから、次の手順に進みます。
+
+
+
+
+== 手順 3 ：機能パックを変更する
+
+機能パックを変更してホストポートのホストプロトコルを変更します。
+
+.手順
+. SANtricity システムマネージャで、 [MENU: Settings （メニュー：設定） ] [System] （システム）を選択します。
+. [ * アドオン * ] で、 [ * 機能パックの変更 * ] を選択します。
++
+image::../media/sam1130_ss_system_change_feature_pack_maint-ef600.gif[sam1130 ss system change feature pack maint 600]
+
+. [ * 参照 ] をクリックし、適用する機能パックを選択します。
+. フィールドに「 * CHANGE * 」と入力します。
+. [ 変更（ Change ） ] をクリックします。
++
+機能パックの移行が開始されます。両方のコントローラが自動的に 2 回リブートし、新しい機能パックが有効になります。リブートが完了すると、ストレージアレイは応答可能な状態に戻ります。
+
+. ホストポートのプロトコルが想定したプロトコルになっていることを確認します。
++
+.. SANtricity システムマネージャで、 * ハードウェア * を選択します。
+.. Show back of shelf* （シェルフの背面を表示）をクリックします。
+.. コントローラ A またはコントローラ B の図を選択します
+.. コンテキストメニューから * 表示設定 * （ * View settings * ）を選択します。
+.. [ * ホスト・インターフェイス * ] タブを選択します。
+.. [ 詳細設定を表示する *] をクリックします。
+
+
+
+
+に進みます link:hpp-complete-protocol-conversion-task.html["ホストプロトコル変更後の処理"]。

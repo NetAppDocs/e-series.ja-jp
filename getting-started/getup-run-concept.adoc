@@ -1,0 +1,81 @@
+---
+permalink: getting-started/getup-run-concept.html 
+sidebar: sidebar 
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, 
+summary: E シリーズシステムの運用を開始するには、ハードウェアコンポーネントを設置し、ホストシステムを設定し、ストレージを設定します。 
+---
+= E シリーズの運用を開始
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+E シリーズシステムの運用を開始するには、ハードウェアコンポーネントを設置し、ホストシステムを設定し、ストレージを設定します。
+
+ストレージアレイを導入するためのワークフローは次のとおりです。
+
+image::../media/doccenterworkflow.gif[doccenterworkflow]
+
+
+
+== 手順 1 ：ハードウェアを設置する
+
+E シリーズハードウェアを設置する方法については、使用するストレージアレイとシェルフタイプに対応した設置とセットアップの手順書を参照してください。
+
+* link:../install-hw-ef600/index.html["24 ドライブシェルフの EF600 または EF300 シリーズ"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2842063["E2800 / EF280 または E5700 / EF570 シリーズ。 12 または 24 ドライブシェルフ構成です"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2842061["E2800 シリーズまたは E5700 シリーズ。 60 ドライブシェルフを搭載しています"^]
+
+
+
+
+== 手順 2 ：キャビネットをセットアップする
+
+ストレージアレイ用に新しいキャビネットをセットアップする場合は、キャビネットを設置場所に移動し、ハードウェアを設置して電源に接続する必要があります。キャビネットをセットアップするには、次の手順書を参照してください。
+
+* link:../install-hw-cabinet/index.html["3040 40U キャビネットを設置します"^]
+
+
+
+
+== 手順 3 ：レールを取り付ける
+
+シェルフはラックマウントハードウェアとともに出荷されます。レールの詳しい取り付け手順については、使用するレールタイプを選択してください。
+
+* https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1652045["アジャスタブル支持レールを設置します"^]
+* https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2484194["4 ポストラックに 2U エンクロージャを設置します"^]
+* https://mysupport.netapp.com/ecm/ecm_download_file/ECMM1280302["2 ポストラックへの DE224C シェルフの設置"^]
+* http://docs.netapp.com/platstor/topic/com.netapp.doc.hw-rail-superrail/home.html["4 ポストラックへの SuperRail の設置（ DE224C / DE460C シェルフ）"^]
+
+
+
+
+== 手順 4 ：ケーブルを接続する
+
+設置とセットアップの手順（手順 1 ）には、ケーブルを接続する手順が記載されています。ただし、サポートされるケーブルとトランシーバのリスト、ケーブル接続のベストプラクティス、コントローラのホストポートに関する詳細情報が必要な場合は、次の手順を参照してください。
+
+* link:../install-hw-cabling/index.html["E シリーズハードウェアをケーブル接続"]
+
+
+
+
+== 手順 5 ：ホストを設定する
+
+ホストでストレージを使用できるようにするには、ホストのオペレーティングシステムタイプに対応するガイドを参照してください。
+
+* link:../config-linux/index.html["Linux の簡単な設定"]
+* link:../config-vmware/index.html["VMware の簡単な設定"]
+* link:../config-windows/index.html["Windows の簡単な設定"]
+
+
+
+
+== 手順 6 ：ストレージを設定する
+
+ストレージを設定するには、ブラウザにコントローラの IP アドレスを入力して、 Web ベースのインターフェイスである System Manager にアクセスします。セットアップウィザードを使用してシステムを設定できます。コマンドラインインターフェイス（ CLI ）を使用することもできます。
+
+使用するインターフェイスを選択します。
+
+* https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-117/home.html["SANtricity システムマネージャ 11.7x オンラインヘルプ"]
+* https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-116/home.html["SANtricity システムマネージャオンラインヘルプの 11.6x 版"]
+

@@ -1,0 +1,185 @@
+---
+permalink: web-services-proxy/install-config-task.html 
+sidebar: sidebar 
+keywords: configure Web Services Proxy, WSP configuration, start stop Webserver, start stop WSP service 
+summary: Web Services Proxy の設定は、環境独自の運用やパフォーマンスの要件に合わせて変更することができます。 
+---
+= Web Services Proxy を設定する
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Web Services Proxy の設定は、環境独自の運用やパフォーマンスの要件に合わせて変更することができます。
+
+
+
+== Web サーバを停止または再起動します
+
+Web サーバサービスはインストール時に開始され、バックグラウンドで実行されます。一部の設定タスクでは、 Web サーバサービスの停止や再起動が必要になる場合があります。
+
+.手順
+. 次のいずれかを実行します。
++
+** Windows の場合は、「 * Start * 」メニューから「メニュー：管理ツール [ サービス ] 」を選択し、「 NetApp SANtricity Web サービス * 」を検索して、「 * Stop * 」または「 * Restart * 」を選択します。
+** Linux の場合、オペレーティングシステムのバージョンに応じて Web サーバを停止および再起動する方法を選択します。どのデーモンが開始されたかは、インストール中にポップアップダイアログに表示されます。例：
++
+web_services_proxy Web サーバをインストールして起動しましたsystemctl start | stop | restart | status web_services_proxy.service` を使用して操作できます
+
++
+サービスとやり取りする最も一般的な方法は 'ystemctl' コマンドを使用することです
+
+
+
+
+
+
+
+== ポートの競合を解決します
+
+定義されたアドレスまたはポートで別のアプリケーションを使用しているときに Web Services Proxy を実行している場合は、 wsconfig.xml ファイルでポートの競合を解決できます。
+
+.手順
+. 次の場所にある wsconfig.xml ファイルを開きます。
++
+** （ Windows ） - C ： \Program Files\NetApp\Virtual Web Services Proxy
+** （ Linux ） - /opt/netapp/santricity_web_services_proxy
+
+
+. wsconfig.xml ファイルに次の行を追加します。この行で、 _n_ はポート番号です。
++
+[listing]
+----
+<sslport clientauth=”request”>*n*</sslport>
+<port>n</port>
+----
++
+次の表に、 HTTP ポートと HTTPS ポートを制御する属性を示します。
+
++
+|===
+| 名前 | 説明 | 親ノード（ Parent Node ） | 属性（ Attributes ） | 必須 
+
+
+ a| 
+構成
+ a| 
+設定のルートノード
+ a| 
+null
+ a| 
+Version ：設定スキーマの現在のバージョンは 1.0 です。
+ a| 
+はい。
+
+
+
+ a| 
+sslport
+ a| 
+SSL 要求をリスンする TCP ポート。デフォルトは 8443 です。
+ a| 
+構成
+ a| 
+Clientauth
+ a| 
+いいえ
+
+
+
+ a| 
+ポート
+ a| 
+HTTP 要求をリスンする TCP ポート。デフォルトは 8080 です。
+ a| 
+構成
+ a| 
+-
+ a| 
+いいえ
+
+|===
+. ファイルを保存して閉じます。
+. Web サーバサービスを再起動して変更を反映させます。
+
+
+
+
+== ロードバランシングやハイアベイラビリティの設定
+
+ハイアベイラビリティ（ HA ）構成で Web Services Proxy を使用するには、ロードバランシングを設定します。通常、 HA 構成では、 1 つのノードですべての要求を受信して他のノードはスタンバイにするか、すべてのノード間で要求の負荷を分散します。
+
+Web Services Proxy はハイアベイラビリティ（ HA ）環境で利用することができ、ほとんどの API は要求を受信するノードに関係なく正しく動作します。メタデータタグとフォルダの 2 つは例外で、タグとフォルダはローカルデータベースに格納され、 Web Services Proxy インスタンス間で共有されません。
+
+ただし、ごく一部の要求でタイミングの問題が発生することがわかっています。具体的には、プロキシのインスタンスごとに、小さいウィンドウのインスタンスよりも新しいデータの取得速度が速くなります。Web サービスプロキシには、このタイミング問題を削除する特別な設定が含まれています。このオプションは、（データの整合性を保つために）要求の処理にかかる時間を長くするため、デフォルトでは有効になっていません。このオプションを有効にするには、 .INI ファイル（ Windows ）または .SH ファイル（ Linux ）にプロパティを追加する必要があります。
+
+.手順
+. 次のいずれかを実行します。
++
+** Windows: appserver64.ini ファイルを開き、「 D load-balance.enabled=true 」プロパティを追加します。
++
+たとえば 'vmarg.7=-dload-sbalance .enabled=true' のようになります
+
+** Linux ： webserver.sh ファイルを開き、「 D load-balance.enabled=true 」プロパティを追加します。
++
+たとえば、「バグ _ スタート _ オプション = 」 -dload-sbalance .enabled=true"` のようになります
+
+
+
+. 変更を保存します。
+. Web サーバサービスを再起動して変更を反映させます。
+
+
+
+
+== SYMbol HTTPS を無効にする
+
+SYMbol コマンド（デフォルト設定）を無効にして、リモート手順呼び出し（ RPC ）でコマンドを送信することができます。この設定は、 wsconfig.xml ファイルで変更できます。
+
+デフォルトでは、 Web Services Proxy は SANtricity OS バージョン 08.40 以降を実行する E2800 シリーズおよび E5700 シリーズのすべてのストレージシステムに HTTPS 経由で SYMbol コマンドを送信します。HTTPS 経由で送信された SYMbol コマンドは、ストレージシステムに対して認証されます。必要に応じて、 HTTPS SYMbol のサポートを無効にし、 RPC 経由でコマンドを送信することができます。RPC 経由の SYMbol が設定されている場合、ストレージシステムへのすべてのパッシブコマンドが認証なしで有効になります。
+
+
+NOTE: RPC 経由の SYMbol が使用された場合、 Web Services Proxy は SYMbol 管理ポートが無効になっているシステムに接続できません。
+
+.手順
+. 次の場所にある wsconfig.xml ファイルを開きます。
++
+** （ Windows ） - C ： \Program Files\NetApp\Virtual Web Services Proxy
+** （ Linux ） - /opt/netapp/santricity_web_services_proxy
+
+
+. 「 evicemgt.symbolclientstrategy 」エントリで、「 https Preferred 」の値を「 rpcOnly 」に置き換えます。
++
+例：
+
++
+`<env key="devicemgt.symbolclientstrateg"> rpcOnly</env>`
+
+. ファイルを保存します。
+
+
+
+
+== Cross-Origin Resource Sharing の設定
+
+Cross-Origin Resource Sharing （ CORS ）を設定できます。 CORS は、追加の HTTP ヘッダーを使用して、あるオリジン（ドメイン）で実行されている Web アプリケーションに別のオリジンにあるサーバのリソースへのアクセスを許可するメカニズムです。
+
+CORS は、作業ディレクトリにある cors.cfg ファイルで制御されます。デフォルトでは CORS は無制限に許可され、クロスドメインアクセスは制限されません。
+
+構成ファイルがない場合、 CORS は無制限に許可されます。ただし、 cors.cfg ファイルが存在する場合は、そのファイルが使用されます。cors.cfg ファイルが空の場合は、 CORS 要求は実行できません。
+
+.手順
+. 作業ディレクトリにある cors.cfg ファイルを開きます。
+. 必要な行をファイルに追加します。
++
+CORS 構成ファイルの各行は、照合する正規表現のパターンで構成されます。origin ヘッダーが cors.cfg ファイルの各行と一致している必要があります。いずれかのラインパターンが送信元ヘッダーと一致する場合、要求は許可されます。ホスト要素だけでなく、完全なオリジンが比較されます。
+
+. ファイルを保存します。
+
+
+要求は次のようにプロトコルに基づいてホストと照合されます。
+
+* localhost を任意のプロトコルに対応します --`\*localhost*`
+* HTTPS のみの localhost に対応 --`+https://localhost*+`
+

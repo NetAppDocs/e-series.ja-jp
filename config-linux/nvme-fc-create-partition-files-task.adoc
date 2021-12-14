@@ -1,0 +1,145 @@
+---
+permalink: config-linux/nvme-fc-create-partition-files-task.html 
+sidebar: sidebar 
+keywords: partitions, file systems, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: マルチパスデバイスにパーティションを作成し、必要に応じてネームスペースにファイルシステムを作成して、パーティションをマウントします。 
+---
+= ファイルシステムを作成します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ネームスペースまたはネイティブの NVMe デバイスにファイルシステムを作成し、ファイルシステムをマウントできます。
+
+
+
+== ファイルシステムの作成（ RHEL 7 および SLES 12 ）
+
+RHEL 7 および SLES 12 の場合は、目的の DM デバイスにファイルシステムを作成し、ファイルシステムをマウントします。
+
+.手順
+. 「 multipath -ll 」コマンドを実行して '/dev/mapper/dm' デバイスのリストを取得します
++
+[listing]
+----
+# multipath -ll
+----
++
+このコマンドの結果、「 d-19 」と「 d-16 」の 2 つのデバイスが表示されます。
+
++
+[listing]
+----
+eui.00001ffe5a94ff8500a0980000af4444 dm-19 NVME,NetApp E-Series
+size=10G features='1 queue_if_no_path' hwhandler='0' wp=rw
+|-+- policy='service-time 0' prio=50 status=active
+| |- #:#:#:# nvme0n19 259:19  active ready running
+| `- #:#:#:# nvme1n19 259:115 active ready running
+`-+- policy='service-time 0' prio=10 status=enabled
+  |- #:#:#:# nvme2n19 259:51  active ready running
+  `- #:#:#:# nvme3n19 259:83  active ready running
+eui.00001fd25a94fef000a0980000af4444 dm-16 NVME,NetApp E-Series
+size=16G features='1 queue_if_no_path' hwhandler='0' wp=rw
+|-+- policy='service-time 0' prio=50 status=active
+| |- #:#:#:# nvme0n16 259:16  active ready running
+| `- #:#:#:# nvme1n16 259:112 active ready running
+`-+- policy='service-time 0' prio=10 status=enabled
+  |- #:#:#:# nvme2n16 259:48  active ready running
+  `- #:#:#:# nvme3n16 259:80  active ready running
+----
+. 各 /dev/mapper/eui`device のパーティションにファイルシステムを作成します。
++
+ファイルシステムの作成方法は、選択したファイルシステムによって異なります。この例は 'ext4 ファイル・システムを作成する方法を示しています
+
++
+[listing]
+----
+# mkfs.ext4 /dev/mapper/dm-19
+mke2fs 1.42.11 (09-Jul-2014)
+Creating filesystem with 2620928 4k blocks and 655360 inodes
+Filesystem UUID: 97f987e9-47b8-47f7-b434-bf3ebbe826d0
+Superblock backups stored on blocks:
+        32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632
+
+Allocating group tables: done
+Writing inode tables: done
+Creating journal (32768 blocks): done
+Writing superblocks and filesystem accounting information: done
+----
+. 新しいデバイスをマウントするフォルダを作成します。
++
+[listing]
+----
+# mkdir /mnt/ext4
+----
+. デバイスをマウントします。
++
+[listing]
+----
+# mount /dev/mapper/eui.00001ffe5a94ff8500a0980000af4444 /mnt/ext4
+----
+
+
+
+
+== ファイルシステムの作成（ RHEL 8 および SLES 15 ）
+
+RHEL 8 および SLES 15 の場合は、ネイティブの NVMe デバイスにファイルシステムを作成し、ファイルシステムをマウントします。
+
+.手順
+. multipath -ll コマンドを実行して、 /dev/nvme デバイスの一覧を表示します。
++
+[listing]
+----
+# multipath -ll
+----
++
+このコマンドの出力では、デバイス nvme0n6 が表示されます。
+
++
+[listing]
+----
+eui.000082dd5c05d39300a0980000a52225 [nvme]:nvme0n6 NVMe,NetApp E-Series,08520000
+size=4194304 features='n/a' hwhandler='ANA' wp=rw
+|-+- policy='n/a' prio=50 status=optimized
+| `- 0:0:1 nvme0c0n1 0:0 n/a optimized     live
+|-+- policy='n/a' prio=50 status=optimized
+| `- 0:1:1 nvme0c1n1 0:0 n/a optimized     live
+|-+- policy='n/a' prio=10 status=non-optimized
+| `- 0:2:1 nvme0c2n1 0:0 n/a non-optimized live
+`-+- policy='n/a' prio=10 status=non-optimized
+  `- 0:3:1 nvme0c3n1 0:0 n/a non-optimized live
+----
+. /dev/nvme0n# デバイスごとに、パーティションにファイルシステムを作成します。
++
+ファイルシステムの作成方法は、選択したファイルシステムによって異なります。この例では、 ext4 ファイルシステムを作成します。
+
++
+[listing]
+----
+# mkfs.ext4 /dev/disk/by-id/nvme-eui.000082dd5c05d39300a0980000a52225
+mke2fs 1.42.11 (22-Oct-2019)
+Creating filesystem with 2620928 4k blocks and 655360 inodes
+Filesystem UUID: 97f987e9-47b8-47f7-b434-bf3ebbe826d0
+Superblock backups stored on blocks:
+        32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632
+
+Allocating group tables: done
+Writing inode tables: done
+Creating journal (32768 blocks): done
+Writing superblocks and filesystem accounting information: done
+----
+. 新しいデバイスをマウントするフォルダを作成します。
++
+[listing]
+----
+# mkdir /mnt/ext4
+----
+. デバイスをマウントします。
++
+[listing]
+----
+# mount /dev/disk/by-id/nvme-eui.000082dd5c05d39300a0980000a52225 /mnt/ext4
+----
+

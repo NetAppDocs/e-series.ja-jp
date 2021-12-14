@@ -1,0 +1,123 @@
+---
+permalink: config-linux/nvme-roce-configure-storage-connections-task.html 
+sidebar: sidebar 
+keywords: NVMe over RoCE, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: コントローラに NVMe over RoCE 用の接続（ RDMA over Converged Ethernet ）が含まれている場合は、 SANtricity System Manager のハードウェアページまたはシステムページから NVMe ポートを設定できます。 
+---
+= ストレージアレイの NVMe over RoCE 接続を設定します
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+コントローラに NVMe over RoCE （ RDMA over Converged Ethernet ）用の接続が含まれている場合は、 SANtricity System Manager のハードウェアページまたはシステムページで NVMe ポートを設定できます。
+
+.必要なもの
+* コントローラ上の NVMe over RoCE ホストポート。それ以外の場合、 System Manager では NVMe over RoCE 設定を使用できません。
+* ホスト接続の IP アドレス。
+
+
+NVMe over RoCE 構成には、 * Hardware * ページまたはメニューからアクセスできます： Settings [ System ] 。このタスクでは、 Hardware ページからポートを設定する方法について説明します。
+
+
+NOTE: NVMe over RoCE の設定と機能は、ストレージアレイのコントローラに NVMe over RoCE ポートが搭載されている場合にのみ表示されます。
+
+.手順
+. System Manager インターフェイスから、 * Hardware * を選択します。
+. NVMe over RoCE ポートを設定するコントローラをクリックします。
++
+コントローラのコンテキストメニューが表示されます。
+
+. NVMe over RoCE ポートの設定 * を選択します。
++
+Configure NVMe over RoCE Ports * （ NVMe over RoCE ポートの設定 * ）ダイアログボックスが開きます。
+
+. ドロップダウンリストで、設定するポートを選択し、 * Next * をクリックします。
+. 使用するポート設定を選択し、 * 次へ * をクリックします。
++
+すべてのポート設定を表示するには、ダイアログボックスの右側にある * Show more port settings * リンクをクリックします。
+
++
+|===
+| ポートの設定 | 説明 
+
+
+ a| 
+イーサネットポート速度の設定
+ a| 
+目的の速度を選択します。ドロップダウンリストに表示されるオプションは、ネットワークがサポートできる最大速度（ 10Gbps など）によって異なります。指定できる値は次のとおりです。
+
+** オートネゴシエート
+** 10 Gbps
+** 25Gbps
+** 40Gbps
+** 50 Gbps
+** 100Gbps
+** 200 Gbps
+
+
+
+NOTE: QSFP56 ケーブルで 200Gb 対応の HIC を接続している場合、自動ネゴシエーションは Mellanox スイッチやアダプタに接続している場合にのみ使用できます。
+
+
+NOTE: NVMe over RoCE ポートには、そのポートの SFP の対応速度に合った速度を設定する必要があります。すべてのポートを同じ速度に設定する必要があります。
+
+
+
+ a| 
+IPv4 を有効にするか、 IPv6 を有効にします
+ a| 
+一方または両方のオプションを選択して、 IPv4 ネットワークと IPv6 ネットワークのサポートを有効にします。
+
+
+
+ a| 
+MTU サイズ（ * Show more port settings* をクリックすると使用可能）
+ a| 
+必要に応じて、最大伝送ユニット（ MTU ）の新しいサイズ（バイト）を入力します。デフォルトの MTU サイズは 1500 バイト / フレームです。1500 ～ 4200 の値を入力する必要があります
+
+|===
++
+[*IPv4 を有効にする *] を選択した場合は、 [ 次へ *] をクリックすると、 IPv4 設定を選択するためのダイアログボックスが開きます。[*IPv6 を有効にする *] を選択した場合、 [ 次へ *] をクリックすると、 IPv6 設定を選択するためのダイアログボックスが開きます。両方のオプションを選択した場合は、 IPv4 設定のダイアログボックスが最初に開き、 * 次へ * をクリックすると、 IPv6 設定のダイアログボックスが開きます。
+
+. IPv4 と IPv6 、またはその両方を自動または手動で設定します。すべてのポート設定を表示するには、ダイアログボックスの右側にある * Show more settings * リンクをクリックします。
++
+|===
+| ポートの設定 | 説明 
+
+
+ a| 
+DHCP サーバから自動的に設定を取得します
+ a| 
+設定を自動的に取得するには、このオプションを選択します。
+
+
+
+ a| 
+静的な設定を手動で指定します
+ a| 
+このオプションを選択した場合は、フィールドに静的アドレスを入力します。IPv4 の場合は、ネットワークのサブネットマスクとゲートウェイも指定します。IPv6 の場合は、ルーティング可能な IP アドレスとルータの IP アドレスも指定します。
+
+
+NOTE: ルーティング可能な IP アドレスが 1 つしかない場合は、残りのアドレスを 0 ： 0 ： 0 ： 0 ： 0 ： 0 ： 0 ： 0 に設定します。
+
+
+
+ a| 
+VLAN サポートを有効にします（ * Show more settings * をクリックして使用可能）。
+ a| 
+
+NOTE: このオプションは、 iSCSI 環境でのみ使用できます。NVMe over RoCE 環境では使用できません。
+
+
+
+ a| 
+イーサネットの優先順位を有効にする（ [ 詳細設定を表示する *] をクリックして使用可能）。
+ a| 
+
+NOTE: このオプションは、 iSCSI 環境でのみ使用できます。NVMe over RoCE 環境では使用できません。
+
+|===
+. [ 完了 ] をクリックします。
+

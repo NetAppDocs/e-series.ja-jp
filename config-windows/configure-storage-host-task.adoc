@@ -1,0 +1,72 @@
+---
+permalink: config-windows/configure-storage-host-task.html 
+sidebar: sidebar 
+keywords: LUNs, configure LUNs, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: Windows の簡単な方法でホストのストレージを設定します。 
+---
+= ホストでストレージを設定します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Windows ホストで初めて検出された時点では、新しい LUN はオフラインで、パーティションやファイルシステムは設定されていないため、ボリュームをオンラインにして Windows で初期化する必要があります。必要に応じて、ファイルシステムで LUN をフォーマットできます。
+
+ディスクは、 GPT または MBR パーティションテーブルを使用して、ベーシックディスクとして初期化することができます。通常、 LUN は New Technology File System （ NTFS ）などのファイルシステムでフォーマットします。
+
+ホストによって検出された LUN 。
+
+.手順
+. Windows のコマンドプロンプトで、「 diskpart 」コンテキストを入力します。
++
+[listing]
+----
+> diskpart
+----
+. 使用可能なディスクのリストを表示します。
++
+[listing]
+----
+> list disk
+----
+. オンラインにするディスクを選択します。
++
+[listing]
+----
+> select disk 1
+----
+. ディスクをオンラインにします。
++
+[listing]
+----
+> online disk
+----
+. パーティションを作成します。
++
+[listing]
+----
+> create partition primary
+----
++
+
+NOTE: Windows Server 2008 以降では、パーティションの作成後すぐにプロンプトが表示され、ディスクをフォーマットして名前を付けます。パーティションのフォーマットと名前の付けを続けるには、プロンプトで * Cancel * を選択します。
+
+. ドライブ文字を割り当てます。
++
+[listing]
+----
+> assign letter=f
+----
+. ディスクをフォーマットします。
++
+[listing]
+----
+> format FS=NTFS LABEL=”New Volume” QUICK
+----
+. diskpart コンテキストを終了します。
++
+[listing]
+----
+> exit
+----
+

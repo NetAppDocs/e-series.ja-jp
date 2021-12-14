@@ -1,0 +1,40 @@
+---
+permalink: config-windows/index.html 
+sidebar: sidebar 
+keywords: express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: E シリーズシステムを使用する Windows ホストの簡単な設定を使用します。 
+---
+= Windows の簡単な設定の概要
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Windows の簡単な方法でストレージアレイをインストールして SANtricity System Manager にアクセスする方法は、 E シリーズシステムにスタンドアロンの Windows ホストを設定する場合に適しています。最低限の選択で可能なかぎり迅速にストレージシステムの運用を開始できるように設計されています。
+
+
+
+=== 手順の概要
+
+クイック方式で実行する手順は次のとおりです。も参照してください link:understand-windows-concept.html["Windows ワークフロー"]。
+
+. 次のいずれかの通信環境を設定します。
++
+** link:fc-perform-specific-task.html["Fibre Channel （ FC ；ファイバチャネル）"]
+** link:iscsi-perform-specific-task.html["iSCSI"]
+** link:sas-perform-specific-task.html["（ SAS ）。"]
+
+
+. ストレージアレイに論理ボリュームを作成します。
+. ボリュームがデータホストに表示されるようにします。
+
+
+
+
+=== 詳細については、こちらをご覧ください
+
+* オンラインヘルプ -- SANtricity System Manager を使用して構成とストレージ管理タスクを実行する方法について説明します製品内で使用できます。
+* https://kb.netapp.com/["ネットアップナレッジベース"^] （記事のデータベース） - トラブルシューティング情報、 FAQ 、ネットアップのさまざまな製品とテクノロジの説明を掲載しています。
+* http://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] -- ネットアップが指定した基準と要件を満たすネットアップの製品とコンポーネントの構成を検索できます
+* http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61343["ネットアップのマニュアル： Host Utilities"^] -- 現在の Windows Unified Host Utilities バージョンのマニュアルを提供します。
+

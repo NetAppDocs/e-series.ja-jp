@@ -1,0 +1,60 @@
+---
+permalink: web-services-proxy/overview-compat-concept.html 
+sidebar: sidebar 
+keywords: Web Services, WSP, SANtricity API, 
+summary: WSP の互換性と制限事項 
+---
+= 互換性と制限事項
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Web Services Proxy の使用に関する互換性と制限事項を以下に記載します。
+
+|===
+| 考慮事項 | 互換性または制限事項 
+
+
+ a| 
+HTTP サポート
+ a| 
+Web Services Proxy では HTTP または HTTPS を使用できます。（組み込み版の Web Services にはセキュリティ上の理由から HTTPS が必要です）。
+
+
+
+ a| 
+ストレージシステムとファームウェア
+ a| 
+Web Services Proxy ではすべての E シリーズストレージシステムを管理でき、古いシステムと最新の E2800 、 EF280 、 E5700 、 EF570 、 EF300 を混在させることもできます。 EF600 シリーズシステムで使用できます。
+
+
+
+ a| 
+IP サポート
+ a| 
+Web Services Proxy では、 IPv4 プロトコルまたは IPv6 プロトコルがサポートされます。
+
+
+NOTE: IPv6 プロトコルは、 Web Services Proxy がコントローラの設定から管理アドレスを自動的に検出しようとしたときに失敗することがあります。原因としては、 IP アドレスの転送時の問題のほか、ストレージシステムで IPv6 が有効になっているがサーバでは有効になっていない場合などが考えられます。
+
+
+
+ a| 
+NVSRAM ファイル名の制約
+ a| 
+Web Services Proxy は、 NVSRAM ファイル名を使用してバージョン情報を正確に識別します。そのため、 Web Services Proxy で使用されている NVSRAM ファイルの名前は変更できません。NVSRAM ファイルの名前が変更された場合、 Web Services Proxy で有効なファームウェアファイルとして認識されない可能性があります。
+
+
+
+ a| 
+Symbol Web サイトを参照して
+ a| 
+SYMbol Web は REST API 内の URL です。ほぼすべての symbol 呼び出しへのアクセスを提供します。symbol 関数は次の URL の一部です。
+
+「 + http://host:port/devmgr/storage-system/storage 配列 ID/ シンボル / シンボル関数 +` 」
+
+
+NOTE: SYMbol が無効なストレージシステムは、 Web Services Proxy を介してサポートされます。
+
+|===

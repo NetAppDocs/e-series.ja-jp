@@ -1,0 +1,23 @@
+---
+permalink: maintenance-ef600/hpp-complete-protocol-conversion-task.html 
+sidebar: sidebar 
+keywords: host protocol change, EF300 host protocol, EF600 host protocol 
+summary: ホストポートのプロトコルを変更したら、新しいプロトコルを使用する手順を追加で実行します。 
+---
+= EF300 または EF600 でホストプロトコルを変更する
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+機能パックキーを適用してプロトコルを変更したら、適切なプロトコルを使用するようにホストを設定する必要があります。
+
+手順については、システムに応じたガイドを参照してください。
+
+* link:../config-linux/index.html["Linux の簡単な設定"]
+* link:../config-vmware/index.html["VMware の簡単な設定"]
+* link:../config-windows/index.html["Windows の簡単な設定"]
++
+具体的な設定は環境によって異なります。を確認します http://mysupport.netapp.com/matrix["NetApp Interoperability Matrix を参照してください"^] 具体的な手順および解決策のその他の推奨設定については、を参照してください。
+
+

@@ -1,0 +1,35 @@
+---
+permalink: install-hw-e2800-e5700/index.html 
+sidebar: sidebar 
+keywords: E2800, E5700, installation 
+summary: E2800 または E5700 アレイを設置してセットアップします。 
+---
+= E2800 および E5700 ストレージシステムをインストールしてセットアップする
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+E2800 または E5700 ストレージシステムの設置とセットアップの方法について説明します。
+
+新しいストレージシステムを設置してセットアップする際に、次のいずれかの形式を選択します。
+
+* * PDF *
++
+ステップバイステップの手順と追加コンテンツへのライブリンクが記載された PDF 形式のガイドです。以下のポスターのいずれかを選んで、作業を開始してください。
+
++
+** https://library.netapp.com/ecm/ecm_download_file/ECMLP2842061["E2860 、 E5760 、および DE460C PDF ポスター"^]
+** https://library.netapp.com/ecm/ecm_download_file/ECMLP2842063["E5724 、 EF570 、 EF280 、 E2812 、 E2824 、 DE212C 、 DE224C の PDF ポスター"^]
+
+
+* * オンラインでの手順 *
++
+これらは、このサイトで説明されているセットアップ手順です。次のいずれかのトピックから開始して、開始してください。
+
++
+** xref:e2860-e5760-prepare-task.adoc[E2860 、 E5760 、および DE460C をインストールする準備をします]
+** xref:e2824-e5724-prepare-task.adoc[E5724 、 EF570 、 EF280 、 E2812 、 E2824 、または DE212C 、 DE224C のいずれかに該当します]
+
+
+

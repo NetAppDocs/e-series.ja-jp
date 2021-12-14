@@ -1,0 +1,98 @@
+---
+sidebar: sidebar 
+permalink: tech-reports.html 
+keywords: technical reports, e-series, hardware, santricity, os 
+summary: E シリーズのテクニカルレポート 
+---
+= テクニカルレポート
+
+
+[role="lead"]
+E シリーズハードウェアおよび SANtricity ソフトウェアに関するテクニカルレポートは、以下のリンクから入手できます。リンクをクリックすると、別のドキュメントサイトにアクセスできます。
+
+
+
+== プラットフォーム TR
+
+* https://www.netapp.com/pdf.html?item=/media/17026-tr4725pdf.pdf["E2800 アレイ機能の概要"^]
+* https://www.netapp.com/pdf.html?item=/media/17120-tr4724pdf.pdf["E5700 アレイの機能の概要"^]
+* https://www.netapp.com/pdf.html?item=/media/21363-tr-4877.pdf["EF300 アレイ機能の概要"^]
+* https://www.netapp.com/pdf.html?item=/media/17009-tr4800pdf.pdf["EF600 アレイ機能の概要"^]
+
+
+
+
+== セキュリティ TR
+
+* https://www.netapp.com/pdf.html?item=/media/17162-tr4474pdf.pdf["『 NetApp SANtricity ドライブセキュリティ機能詳細ガイド』"^]
+* https://www.netapp.com/pdf.html?item=/media/17079-tr4712pdf.pdf["『 NetApp SANtricity 管理セキュリティ機能の詳細および構成ガイド』"^]
+* https://www.netapp.com/pdf.html?item=/media/17218-tr4813pdf.pdf["NetApp E シリーズストレージシステムの証明書の管理"^]
+* https://www.netapp.com/pdf.html?item=/media/19422-tr-4855.pdf["Security Hardening Guide for NetApp SANtricity 』を参照してください"^]
+* https://fieldportal.netapp.com/content/1117377["E シリーズストレージシステムのアクセス管理"^]
+
+
+
+
+== 解決策 TR
+
+
+
+=== Splunk
+
+* https://www.netapp.com/pdf.html?item=/media/16851-tr-4623pdf.pdf["Splunk Enterprise を搭載した E5700"^]
+* https://www.netapp.com/media/57104-tr-4903.pdf["Splunk Enterprise を使用した EF300"^]
+
+
+
+
+=== エンタープライズデータベース
+
+* https://www.netapp.com/pdf.html?item=/media/17086-tr4764pdf.pdf["NetApp EF シリーズでの Microsoft SQL Server のベストプラクティスガイド"^]
+* https://www.netapp.com/pdf.html?item=/media/17248-tr4794pdf.pdf["NetApp EF シリーズを基盤にした Oracle データベース"^]
+
+
+
+
+=== バックアップとリカバリ
+
+* https://www.netapp.com/pdf.html?item=/media/17042-tr4320pdf.pdf["『 Best Practices with Commvault Data Platform V11 』を参照してください"^]
+* https://www.netapp.com/pdf.html?item=/media/17159-tr4471pdf.pdf["ベストプラクティスと Veeam Backup & Replication を組み合わせて使用してください"^]
+* https://www.netapp.com/pdf.html?item=/media/16433-tr-4704pdf.pdf["NetApp E シリーズストレージを使用した Veritas NetBackup の導入"^]
+
+
+
+
+=== VSS
+
+* https://www.netapp.com/pdf.html?item=/media/17200-tr4825pdf.pdf["ビデオ監視向け NetApp E シリーズベストプラクティスガイド"^]
+* https://www.netapp.com/pdf.html?item=/media/6143-tr4818pdf.pdf["NetApp E シリーズストレージによるビデオ管理システムの仮想化"^]
+* https://www.netapp.com/pdf.html?item=/media/19400-tr-4848.pdf["NetApp E シリーズ E2800 ディスクストレージアレイを使用した Bosch Video Recording 解決策"^]
+
+
+
+
+=== HPC
+
+* https://www.netapp.com/pdf.html?item=/media/31665-tr-4884.pdf["NetApp E シリーズと IBM Spectrum Scale を搭載したエントリレベルの HPC システム"^]
+* https://www.netapp.com/pdf.html?item=/media/22029-tr-4859.pdf["NetApp E シリーズストレージによる IBM Spectrum Scale の導入"^]
+* https://www.netapp.com/pdf.html?item=/media/19407-tr-4856-deploy.pdf["Red Hat Enterprise Linux Server を使用した E シリーズでの BeeGFS 高可用性"^]
+* https://www.netapp.com/pdf.html?item=/media/19431-tr-4862.pdf["SUSE Linux Enterprise Server を使用した E シリーズでの BeeGFS 高可用性"^]
+
+
+
+
+== 機能 TR
+
+* https://www.netapp.com/pdf.html?item=/media/28697-tr-4893-deploy.pdf["SANtricity リモートストレージボリューム"^]
+* https://www.netapp.com/pdf.html?item=/media/19405-tr-4839.pdf["SANtricity の同期ミラーリングと非同期ミラーリング（ 11.62 以降）"^]
+* https://www.netapp.com/pdf.html?item=/media/17167-tr4747pdf.pdf["『 SANtricity スナップショット機能の概要と導入ガイド』"^]
+* https://www.netapp.com/ko/media/12421-tr4652.pdf["SANtricity Dynamic Disk Pools"^]
+* https://www.netapp.com/pdf.html?item=/media/17144-tr4737pdf.pdf["SANtricity 自動ロードバランシング機能の概要と実装"^]
+
+
+
+
+== インターフェイス TR
+
+* https://www.netapp.com/pdf.html?item=/media/17142-tr4736pdf.pdf["SANtricity Web Services API に組み込まれた機能と集中管理機能"^]
+

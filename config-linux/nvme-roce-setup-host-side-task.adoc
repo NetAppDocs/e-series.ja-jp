@@ -1,0 +1,132 @@
+---
+permalink: config-linux/nvme-roce-setup-host-side-task.html 
+sidebar: sidebar 
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: RoCE 環境で NVMe イニシエータを設定するには、 rdma-core および nvme-CLI パッケージをインストールして設定し、イニシエータの IP アドレスを設定し、ホストで NVMe-oF レイヤを設定します。 
+---
+= ホスト側で NVMe over RoCE を設定します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+RoCE 環境で NVMe イニシエータを設定するには、 rdma-core および nvme-CLI パッケージをインストールして設定し、イニシエータの IP アドレスを設定し、ホストで NVMe-oF レイヤを設定します。
+
+RHEL 7 、 RHEL 8 、互換性のある最新の SUSE Linux Enterprise Server 12 および 15 サービスパックオペレーティングシステムが実行されている必要があります。を参照してください https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] をクリックして、最新の要件を確認してください。
+
+.手順
+. RDMA パッケージと nvme-CLI パッケージをインストールします。
++
+* SLES 12 または SLES 15 *
+
++
+[listing]
+----
+
+# zypper install rdma-core
+# zypper install nvme-cli
+----
++
+* RHEL 7 または RHEL 8*
+
++
+[listing]
+----
+
+# yum install rdma-core
+# yum install nvme-cli
+----
+. NVMe over RoCE の接続に使用されるイーサネットポートで、 IPv4 の IP アドレスを設定します。ネットワークインターフェイスごとに、そのインターフェイスに対応する変数を含む構成スクリプトを作成します。
++
+この手順で使用する変数は、サーバハードウェアとネットワーク環境に基づいています。変数には 'IPADDR' と 'gateway' が含まれます次に、 SLES および RHEL の例を示します。
+
++
+* SLES 12 および SLES 15 *
+
++
+** 次のように '/etc/sysconfig/network/ifcfg-eth4' サンプルファイルを作成します
++
+[listing]
+----
+BOOTPROTO='static'
+   BROADCAST=
+   ETHTOOL_OPTIONS=
+   IPADDR='192.168.1.87/24'
+   GATEWAY='192.168.1.1'
+   MTU=
+   NAME='MT27800 Family [ConnectX-5]'
+   NETWORK=
+   REMOTE_IPADDR=
+   STARTMODE='auto'
+----
+** ファイル /etc/sysconfig/network/ifcfg-eth5' を次のように作成します。
++
+[listing]
+----
+BOOTPROTO='static'
+   BROADCAST=
+   ETHTOOL_OPTIONS=
+   IPADDR='192.168.2.87/24'
+   GATEWAY='192.168.2.1'
+   MTU=
+   NAME='MT27800 Family [ConnectX-5]'
+   NETWORK=
+   REMOTE_IPADDR=
+   STARTMODE='auto'
+----
++
+* RHEL 7 および RHEL 8*
+
+** 次のように '/etc/sysconfig/network-scripts/ifcfg-eth4' サンプルファイルを作成します
++
+[listing]
+----
+BOOTPROTO='static'
+  BROADCAST=
+  ETHTOOL_OPTIONS=
+  IPADDR='192.168.1.87/24’
+  GATEWAY='192.168.1.1'
+  MTU=
+  NAME='MT27800 Family [ConnectX-5]'
+  NETWORK=
+  REMOTE_IPADDR=
+  STARTMODE='auto'
+----
+** ファイル /etc/sysconfig/network-scripts/ifcfg-eth5' を次のように作成します。
++
+[listing]
+----
+BOOTPROTO='static'
+   BROADCAST=
+   ETHTOOL_OPTIONS=
+   IPADDR='192.168.2.87/24'
+   GATEWAY='192.168.2.1'
+   MTU=
+   NAME='MT27800 Family [ConnectX-5]'
+   NETWORK=
+   REMOTE_IPADDR=
+   STARTMODE='auto'
+----
+
+
+. ネットワークインターフェイスを有効にします。
++
+[listing]
+----
+
+# ifup eth4
+# ifup eth5
+----
+. ホストで NVMe-oF レイヤを設定します。
++
+.. /etc/modules-load.d/ の下に次のファイルを作成して 'nvme-rdma' カーネルモジュールをロードし ' 再起動後もカーネルモジュールが常にオンになることを確認します
++
+[listing]
+----
+
+# cat /etc/modules-load.d/nvme-rdma.conf
+  nvme-rdma
+----
+
+
+

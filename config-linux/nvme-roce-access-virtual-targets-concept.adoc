@@ -1,0 +1,125 @@
+---
+permalink: config-linux/nvme-roce-access-virtual-targets-concept.html 
+sidebar: sidebar 
+keywords: NVMe volume virtual, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: Linux のバージョンに基づいて、デバイスターゲットに転送される I/O を設定できます。 
+---
+= 仮想デバイスターゲットの NVMe ボリュームにアクセスします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用している OS （および拡張マルチパス方式）に基づいて、デバイスターゲットに転送される I/O を設定できます。
+
+RHEL 7 および SLES 12 の場合、 I/O は Linux ホストによって仮想デバイスターゲットに転送されます。DM-MP は、これらの仮想ターゲットへの物理パスを管理します。
+
+
+
+== 仮想デバイスは I/O ターゲットです
+
+実行しているのは DM-MP で作成された仮想デバイスに対する I/O のみで、物理デバイスパスに対しては実行していないことを確認してください。物理パスに対して I/O を実行している場合、 DM-MP がフェイルオーバーイベントを実行できず、 I/O が失敗します。
+
+これらのブロック・デバイスには 'd`device または /dev/mapper の「 ymlink 」からアクセスできます例：
+
+[listing]
+----
+/dev/dm-1
+/dev/mapper/eui.00001bc7593b7f5f00a0980000af4462
+----
+
+
+== 例
+
+次に 'nvme list' コマンドの出力例を示しますこの例では ' ホスト・ノード名とネームスペース ID との関連性が示されています
+
+[listing]
+----
+
+NODE         SN           MODEL           NAMESPACE
+
+/dev/nvme1n1 021648023072 NetApp E-Series 10
+/dev/nvme1n2 021648023072 NetApp E-Series 11
+/dev/nvme1n3 021648023072 NetApp E-Series 12
+/dev/nvme1n4 021648023072 NetApp E-Series 13
+/dev/nvme2n1 021648023151 NetApp E-Series 10
+/dev/nvme2n2 021648023151 NetApp E-Series 11
+/dev/nvme2n3 021648023151 NetApp E-Series 12
+/dev/nvme2n4 021648023151 NetApp E-Series 13
+----
+|===
+| 列（ Column ） | 説明 
+
+
+ a| 
+「ノード」
+ a| 
+ノード名は次の 2 つの部分で構成されます。
+
+* 「 nvme1 」はコントローラ A を表し、「 nvme2 」はコントローラ B を表します
+* ホスト側から見た名前空間識別子は 'n1' n2' のように表記されていますこの表では、これらの識別子がコントローラ A に対して 1 回、コントローラ B に対して 1 回、繰り返し出力されています
+
+
+
+
+ a| 
+「ネームスペース」
+ a| 
+Namespace 列にはネームスペース ID （ NSID ）が表示されます。これは、ストレージアレイ側で認識される識別子です。
+
+|===
+次の「マルチパス -ll 」の出力では、最適化されたパスの prio の値は 50 、最適化されていないパスの prio の値は 10 です。
+
+Linux オペレーティングシステムは、「ステータス = アクティブ」と表示されたパスグループに I/O をルーティングし、「ステータス = 有効」と表示されたパスグループはフェイルオーバーに使用できます。
+
+[listing]
+----
+eui.00001bc7593b7f500a0980000af4462 dm-0 NVME,NetApp E-Series
+size=15G features='1 queue_if_no_path' hwhandler='0' wp=rw
+|-+- policy='service-time 0' prio=50 status=active
+| `- #:#:#:# nvme1n1 259:5 active ready running
+`-+- policy='service-time 0' prio=10 status=enabled
+  `- #:#:#:# nvme2n1 259:9  active ready running
+
+eui.00001bc7593b7f5f00a0980000af4462 dm-0 NVME,NetApp E-Series
+size=15G features='1 queue_if_no_path' hwhandler='0' wp=rw
+|-+- policy='service-time 0' prio=0 status=enabled
+| `- #:#:#:# nvme1n1 259:5 failed faulty running
+`-+- policy='service-time 0' prio=10 status=active
+  `- #:#:#:# nvme2n1 259:9  active ready running
+----
+|===
+| 見積項目 | 説明 
+
+
+ a| 
+'policy='service-time 0' prio=50 status=active
+ a| 
+この行と次の行は、 NSID が 10 のネームスペース nvme1n1 が、 prio の値が 50 で「 tatus 」の値が「 active 」のパスで最適化されていることを示しています。
+
+このネームスペースはコントローラ A に所有されています
+
+
+
+ a| 
+'policy='service-time 0' prio=10 status=enabled
+ a| 
+この行は、名前空間 10 のフェールオーバーパスを示しています。 prio の値は 10 で、 'tatus' の値は「 enabled 」です。このパスのネームスペースには、この時点では I/O は転送されていません。
+
+このネームスペースはコントローラ B に所有されています
+
+
+
+ a| 
+'policy='service-time 0' prio=0 status=enabled
+ a| 
+この例では、コントローラ A がリブートしているときの、異なる時点からの「マルチパス -ll 」出力を示しています。名前空間 10 へのパスは「 failed faulty running 」と表示されます。 prio の値は 0 で、「 tatus 」の値は「 enabled 」です。
+
+
+
+ a| 
+'policy='service-time 0' prio=10 status=active
+ a| 
+「 active 」パスが「 nvme2 」を参照しているため、このパスでコントローラ B に I/O が転送されています
+
+|===

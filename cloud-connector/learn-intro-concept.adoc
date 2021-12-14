@@ -1,0 +1,89 @@
+---
+permalink: cloud-connector/learn-intro-concept.html 
+sidebar: sidebar 
+keywords: Cloud Connector requirements 
+summary: SANtricity Cloud Connector アプリケーションに関連するシステム要件、セットアップ、インストール、設定、およびジョブ。 
+---
+= Cloud Connector のシステム要件
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ご使用のシステムが SANtricity Cloud Connector の互換性に関する要件を満たしている必要があります。
+
+
+
+== ホストハードウェアの要件
+
+ハードウェアは、次の最小要件を満たしている必要があります。
+
+* 最低 5 GB のメモリ、設定されている最大ヒープサイズの 4 GB
+* ソフトウェアのインストールには、少なくとも 5GB の空きディスクスペースが必要です
+
+
+SANtricity Cloud Connector を使用するには、 SANtricity Web サービスプロキシをインストールする必要があります。Web Services Proxy はローカルにインストールすることも、別のサーバでリモートで実行することもできます。SANtricity Web サービスプロキシのインストールについては、を参照してください link:../web-services-proxy/index.html["Web Services Proxy のトピック"]。
+
+
+
+== サポートされているブラウザ
+
+SANtricity Cloud Connector アプリケーションでサポートされるブラウザと最小バージョンは次のとおりです。
+
+* Firefox v31
+* Google Chrome v47
+* Microsoft Internet Explorer v11
+* Microsoft Edge 、 EdgeHTML 12
+* Safari v9.
+
+
+
+NOTE: Microsoft Internet Explorer 11 の互換表示設定を使用している場合、 SANtricity Cloud Connector アプリケーションの API ドキュメントはロードされません。Microsoft Internet Explorer 11 で API ドキュメントが正しく表示されるようにするため、互換表示設定を無効にすることを推奨します。
+
+
+
+== 互換性があるストレージアレイとコントローラファームウェア
+
+SANtricity Cloud Connector アプリケーションを使用する前に、ストレージアレイとファームウェアの互換性を確認する必要があります。
+
+SANtricity Cloud Connector と互換性があるすべてのストレージアレイおよびファームウェアの最新のリストについては、を参照してください http://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]。
+
+
+
+== 互換性のあるオペレーティングシステム
+
+SANtricity Cloud Connector 4.0 アプリケーションと互換性があり、次のオペレーティングシステムでサポートされています。
+
+|===
+| オペレーティングシステム | バージョン | アーキテクチャ 
+
+
+ a| 
+Red Hat Enterprise Linux （ RHEL ）
+ a| 
+7.x
+ a| 
+64 ビット
+
+
+
+ a| 
+SUSE Linux Enterprise Server （ SLES ）
+ a| 
+12.x
+ a| 
+64 ビット
+
+|===
+
+
+== サポートされているファイルシステム
+
+SANtricity Cloud Connector アプリケーションを使用してバックアップとリストアを実行するには、サポートされているファイルシステムを使用する必要があります。
+
+SANtricity Cloud Connector アプリケーションでは、次のファイルシステムのバックアップ処理とリストア処理がサポートされます。
+
+* ext2
+* ext3
+* ext4
+

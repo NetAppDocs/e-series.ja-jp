@@ -1,0 +1,227 @@
+---
+permalink: web-services-proxy/access-intro-concept.html 
+sidebar: sidebar 
+keywords: Web Services, WSP, roles WSP, user access WSP 
+summary: セキュリティ対策として、 Web Services API と Unified Manager へのユーザアクセスを管理することができます。 
+---
+= Web Services Proxy でユーザアクセスを管理します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+セキュリティ対策として、 Web Services API と Unified Manager へのユーザアクセスを管理することができます。
+
+
+
+== アクセス管理の概要
+
+アクセス管理には、ロールベースログイン、パスワード暗号化、ベーシック認証、 LDAP 統合が含まれます。
+
+
+
+=== ロールベースアクセス制御
+
+ロールベースアクセス制御（ RBAC ）は、事前定義されたユーザにロールを関連付けます。各ロールは、特定のレベルの機能に対する権限を付与します。
+
+次の表に、各ロールの説明を示します。
+
+|===
+| ロール | 説明 
+
+
+ a| 
+security.admin
+ a| 
+SSL および証明書の管理。
+
+
+
+ a| 
+storagec.admin
+ a| 
+ストレージシステム構成への読み取り / 書き込みのフルアクセス。
+
+
+
+ a| 
+storage.monitor
+ a| 
+ストレージシステムデータを表示するための読み取り専用アクセス。
+
+
+
+ a| 
+support.admin
+ a| 
+ストレージシステムのすべてのハードウェアリソースと AutoSupport （ ASUP ）の取得などのサポート処理に対するアクセス。
+
+|===
+デフォルトのユーザアカウントは、 users.properties ファイルで定義されています。ユーザアカウントは、 users.properties ファイルを直接変更するか、 Unified Manager のアクセス管理機能を使用して変更できます。
+
+次の表に、 Web Services Proxy で使用可能なユーザログインを示します。
+
+|===
+| 事前定義されたユーザログイン | 説明 
+
+
+ a| 
+管理
+ a| 
+すべての機能にアクセスできるスーパー管理者。すべてのロールが含まれています。Unified Manager の場合は、初回ログイン時にパスワードを設定する必要があります。
+
+
+
+ a| 
+ストレージ
+ a| 
+すべてのストレージプロビジョニングを担当する管理者。このユーザには、 storage.admin 、 support.admin 、および storage.monitor というロールが含まれています。このアカウントは、パスワードが設定されるまで無効になります。
+
+
+
+ a| 
+セキュリティ
+ a| 
+セキュリティ設定を担当するユーザ。このユーザには、 security.admin と storage.monitor というロールが含まれています。このアカウントは、パスワードが設定されるまで無効になります。
+
+
+
+ a| 
+サポート
+ a| 
+ハードウェアリソース、障害データ、ファームウェアアップグレードを担当するユーザ。このユーザには、 support.admin と storage.monitor というロールが含まれています。このアカウントは、パスワードが設定されるまで無効になります。
+
+
+
+ a| 
+モニタ
+ a| 
+システムへの読み取り専用アクセス権を持つユーザ。このユーザには storage.monitor ロールのみが含まれています。このアカウントは、パスワードが設定されるまで無効になります。
+
+
+
+ a| 
+RW
+ a| 
+rw （読み取り / 書き込み）ユーザには、 storage.admin 、 support.admin 、および storage.monitor というロールが含まれています。このアカウントは、パスワードが設定されるまで無効になります。
+
+
+
+ a| 
+RO
+ a| 
+ro （読み取り専用）ユーザには、 storage.monitor ロールのみが含まれます。このアカウントは、パスワードが設定されるまで無効になります。
+
+|===
+
+
+=== パスワード暗号化
+
+それぞれのパスワードに対して、既存の SHA256 パスワードエンコーディングを使用して暗号化プロセスを追加で適用できます。この追加の暗号化プロセスは、各 SHA256 ハッシュ暗号化の各パスワードにランダムなバイトセット（ソルト）を適用します。ソルトが付加された SHA256 暗号化は、新しく作成されるすべてのパスワードに適用されます。
+
+
+NOTE: Web Services Proxy 3.0 よりも前のリリースでは、パスワードは SHA256 ハッシュのみで暗号化されていました。SHA256 ハッシュのみで暗号化された既存のパスワードではこのエンコーディングが維持され、 users.properties ファイルで引き続き有効です。ただし、 SHA256 ハッシュのみで暗号化されたパスワードは、 SHA256 暗号化で暗号化されるパスワードほど安全ではありません。
+
+
+
+=== ベーシック認証
+
+デフォルトでは、ベーシック認証は有効になっており、サーバからベーシック認証チャレンジが返されます。この設定は、 wsconfig.xml ファイルで変更できます。
+
+
+
+=== LDAP
+
+Lightweight Directory Access Protocol （ LDAP ）は、分散型のディレクトリ情報サービスへのアクセスと管理に使用されるアプリケーションプロトコルで、 Web Services Proxy で有効になっています。LDAP との統合により、ユーザ認証とグループへのロールのマッピングが可能になります。
+
+LDAP 機能の設定については、 Unified Manager インターフェイスの設定オプション、または対話型の API ドキュメントの LDAP のセクションを参照してください。
+
+
+
+== ユーザアクセスを設定
+
+ユーザアクセスの管理では、パスワードの暗号化を追加し、ベーシック認証を設定し、ロールベースアクセスを定義します。
+
+
+
+=== パスワードに暗号化を追加します
+
+最高レベルのセキュリティを実現するために、既存の SHA256 パスワードエンコーディングを使用して、パスワードに暗号化を追加で適用できます。
+
+この追加の暗号化プロセスは、各 SHA256 ハッシュ暗号化の各パスワードにランダムなバイトセット（ソルト）を適用します。ソルトが付加された SHA256 暗号化は、新しく作成されるすべてのパスワードに適用されます。
+
+.手順
+. 次の場所にある users.properties ファイルを開きます。
++
+** （ Windows ） - C ： \Program Files\NetApp\Virtual Web Services Proxy\data\config
+** （ Linux ） - /opt/netapp/santricity_web_services_proxy/data/config を使用します
+
+
+. 暗号化されたパスワードをプレーンテキストで再入力します。
+. 「 ecurepasswds 」コマンドラインユーティリティを実行して、パスワードを再暗号化するか、 Web Services Proxy を再起動します。このユーティリティは、 Web Services Proxy のルートインストールディレクトリにインストールされています。
++
+
+NOTE: また、 Unified Manager でパスワードが編集されるたびに、ローカルユーザのパスワードにソルトを付加してハッシュ化することもできます。
+
+
+
+
+
+=== ベーシック認証を設定する
+
+ベーシック認証はデフォルトで有効になっており、サーバからベーシック認証チャレンジが返されます。必要に応じて、 wsconfig.xml ファイルで設定を変更できます。
+
+. 次の場所にある wsconfig.xml ファイルを開きます。
++
+** （ Windows ） - C ： \Program Files\NetApp\Virtual Web Services Proxy
+** （ Linux ） - /opt/netapp/santricity_web_services_proxy
+
+
+. ファイルの次の行を、 false （無効）または true （有効）を指定して変更します。
++
+たとえば、「 <env key="enable-basic-auth">true</env>` 」のように指定します
+
+. ファイルを保存します。
+. Web サーバサービスを再起動して変更を反映させます。
+
+
+
+
+=== ロールベースアクセスを設定
+
+ユーザアクセスを特定の機能に制限するには、各ユーザアカウントに指定するロールを変更します。
+
+Web Services Proxy にはロールベースアクセス制御（ RBAC ）が含まれており、事前定義されたユーザにロールが関連付けられています。各ロールは、特定のレベルの機能に対する権限を付与します。ユーザアカウントに割り当てられているロールは、 users.properties ファイルを直接変更することで変更できます。
+
+
+NOTE: Unified Manager のアクセス管理を使用してユーザアカウントを変更することもできます。詳細については、 Unified Manager のオンラインヘルプを参照してください。
+
+.手順
+. 次の場所にある users.properties ファイルを開きます。
++
+** （ Windows ） - C ： \Program Files\NetApp\Virtual Web Services Proxy\data\config
+** （ Linux ） - /opt/netapp/santricity_web_services_proxy/data/config を使用します
+
+
+. 変更するユーザアカウント（ storage 、 security 、 monitor 、 support 、 rw 、 または ro ）をクリックします。
++
+
+NOTE: admin ユーザは変更しないでください。これは、すべての機能にアクセスできるスーパーユーザです。
+
+. 必要に応じて、指定されたロールを追加または削除します。
++
+次のロールがあります。
+
++
+** security.admin -- SSL および証明書の管理。
+** storage.admin ：ストレージシステム設定への読み取り / 書き込みのフルアクセス。
+** storage.monitor ：ストレージシステムデータを表示するための読み取り専用アクセス。
+** support.admin ：ストレージシステムのすべてのハードウェアリソースと AutoSupport （ ASUP ）の取得などのサポート処理に対するアクセス。
++
+
+NOTE: storage.monitor ロールは、管理者を含むすべてのユーザに必要です。
+
+
+
+. ファイルを保存します。
+

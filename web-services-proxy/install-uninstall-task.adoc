@@ -1,0 +1,98 @@
+---
+permalink: web-services-proxy/install-uninstall-task.html 
+sidebar: sidebar 
+keywords: uninstall Web Services Proxy, remove WSP, 
+summary: Web Services Proxy と Unified Manager を削除する際は、インストール時に使用した方法に関係なく、任意のモード（グラフィカル、コンソール、サイレント、または RPM ファイル）を使用できます。 
+---
+= Web Services Proxy をアンインストールする
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Web Services Proxy と Unified Manager を削除する際は、インストール時に使用した方法に関係なく、任意のモード（グラフィカル、コンソール、サイレント、または RPM ファイル）を使用できます。
+
+
+
+== グラフィカルモードでのアンインストール
+
+グラフィカルモードでのアンインストールは、 Windows と Linux のどちらでも実行できます。グラフィカルモードでは、 Windows 形式のインターフェイスにプロンプトが表示されます。
+
+.手順
+. Windows または Linux のアンインストールを起動します。
++
+** Windows -- uninstall_web_services_proxy アンインストールファイルが格納されているディレクトリに移動しますデフォルトのディレクトリは次の場所にあります。 C ： \Program Files\NetApp\Virtual Web Services Proxy/[uninstall_web_services_proxy.exe] をダブルクリックします。
++
+
+NOTE: または、メニュー [ プログラム ]>[ プログラムのアンインストール ] の順に選択し、 NetApp SANtricity Web サービスプロキシを選択することもできます。
+
+** Linux -- Web Services Proxy アンインストールファイルが格納されているディレクトリに移動しますデフォルトのディレクトリは、 +`/opt/NetApp/SANtricity _web_services_proxy/uninstall_web_services_proxy です
+
+
+. 次のコマンドを実行します。
++
+uninstall_web_services_proxy-i gui
+
++
+SANtricity Web Services Proxy のスプラッシュ画面が表示されます。
+
+. [ アンインストール ] ダイアログボックスで、 [*Uninstall*] をクリックします。
++
+アンインストールの進捗状況が表示されます。
+
+. アンインストール完了のメッセージが表示されたら、「 * 完了 * 」をクリックします。
+
+
+
+
+== コンソールモードでのアンインストール
+
+コンソールモードでのアンインストールは、 Windows と Linux のどちらでも実行できます。コンソールモードでは、ターミナルウィンドウにプロンプトが表示されます。
+
+.手順
+. uninstall_web_services_proxy ディレクトリに移動します。
+. 次のコマンドを実行します。
++
+uninstall_web_services_proxy-i コンソール
+
++
+アンインストールプロセスが開始されます。
+
+. アンインストールが完了したら、 Enter キーを押してインストーラを終了します。
+
+
+
+
+== サイレントモードでのアンインストール
+
+サイレントモードでのアンインストールは、 Windows と Linux のどちらでも実行できます。サイレントモードでは、メッセージやスクリプトはターミナルウィンドウに表示されません。
+
+.手順
+. uninstall_web_services_proxy ディレクトリに移動します。
+. 次のコマンドを実行します。
++
+uninstall_web_services_proxy -i silent
+
++
+アンインストールプロセスは実行されますが、メッセージやスクリプトはターミナルウィンドウに表示されません。Web Services Proxy のアンインストールが完了すると、ターミナルウィンドウにコマンドプロンプトが表示されます。
+
+
+
+
+
+== RPM コマンドでのアンインストール（ Linux のみ）
+
+RPM コマンドを使用して、 Linux システムから Web Services Proxy をアンインストールできます。
+
+.手順
+. ターミナルウィンドウを開きます。
+. 次のコマンドラインを入力します。
++
+「 rpm -e SANtricity_webservices 」のように設定します
+
++
+
+NOTE: アンインストールプロセスでは、元のインストールに含まれていなかったファイルが残る場合があります。Web Services Proxy を完全に削除するには、それらのファイルを手動で削除してください。
+
+

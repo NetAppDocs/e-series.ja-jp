@@ -1,0 +1,22 @@
+---
+permalink: config-vmware/discover-storage-host-task.html 
+sidebar: sidebar 
+keywords: discover storage ESXi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: ホストにボリュームを割り当てたら、ホストがボリュームを検出してマルチパスを設定できるように、再スキャンを実行します。 
+---
+= ホストでストレージを検出します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ホストにボリュームを割り当てたら、ホストがボリュームを検出してマルチパスを設定できるように、再スキャンを実行します。
+
+デフォルトでは、 ESXi ホストは 5 分ごとに再スキャンを実行します。ボリュームを作成してからホストに割り当てるまでの間に、手動の再スキャンを実行する前にボリュームが表示されることがあります。その場合でも、手動で再スキャンを実行してすべてのボリュームが正しく設定されていることを確認できます。
+
+.手順
+. 1 つ以上のボリュームを作成して ESXi ホストに割り当てます。
+. vCenter Server を使用している場合は、ホストをサーバのインベントリに追加します。
+. vSphere Client または vSphere Web Client を使用して、 vCenter Server または ESXi ホストに直接接続します。
+. ESXi ホストでストレージの再スキャンを実行する方法については、を検索してください https://kb.vmware.com/s/["VMware のナレッジベース"^] このトピックの記事です。
+

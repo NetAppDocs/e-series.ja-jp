@@ -1,0 +1,106 @@
+---
+permalink: config-linux/nvme-roce-setup-failover-host-task.html 
+sidebar: sidebar 
+keywords: failover, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: ホストでフェイルオーバーを実行するように設定します。 
+---
+= ホストでフェイルオーバーを設定します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ストレージアレイへのパスを冗長化するには、フェイルオーバーを実行するようにホストを設定します。
+
+必要なパッケージをシステムにインストールする必要があります。
+
+* Red Hat （ RHEL ）ホストの場合、パッケージがインストールされていることを確認するには、「 rpm -q device-mapper-multipath 」を実行します
+* SLES ホストの場合 'rpm -q multipath-tools' を実行してパッケージがインストールされていることを確認します
+
+
+
+NOTE: を参照してください https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] マルチパスは GA バージョンの SLES または RHEL では正しく機能しない場合があるため、必要な更新がインストールされていることを確認する必要があります。
+
+RHEL 7 および SLES 12 は、 NVMe over RoCE のマルチパスに Device Mapper Multipath （ DMMP ）を使用します。RHEL 8 および SLES 15 では、ネイティブの NVMe フェイルオーバーが組み込まれています。実行している OS に応じて、適切に実行するためにマルチパスを追加で設定する必要があります。
+
+
+
+== RHEL 7 または SLES 12 の Device Mapper Multipath （ DMMP ）を有効にします
+
+RHEL および SLES では、デフォルトでは DM-MP は無効になっています。ホストで DM-MP コンポーネントを有効にするには、次の手順を実行します。
+
+.手順
+. 次の例に示すように '/etc/multipath.conf ファイルの devices セクションに NVMe E シリーズデバイスのエントリを追加します
++
+[listing]
+----
+
+devices {
+        device {
+                vendor "NVME"
+                product "NetApp E-Series*"
+                path_grouping_policy group_by_prio
+                failback immediate
+                no_path_retry 30
+        }
+}
+----
+. システム起動時に起動するように「マルチパス」を設定します。
++
+[listing]
+----
+# systemctl enable multipathd
+----
+. 現在実行されていない場合は、「マルチパス」を開始します。
++
+[listing]
+----
+# systemctl start multipathd
+----
+. 「マルチパス」のステータスを確認して、アクティブで実行中であることを確認します。
++
+[listing]
+----
+# systemctl status multipathd
+----
+
+
+
+
+== ネイティブの NVMe マルチパスを使用して RHEL 8 をセットアップします
+
+ネイティブの NVMe マルチパスは、 RHEL 8 ではデフォルトで無効になっており、次の手順を使用して有効にする必要があります。
+
+. ネイティブの NVMe マルチパスをオンにする「 m odprobe 」ルールを設定します。
++
+[listing]
+----
+# echo "options nvme_core multipath=y" >> /etc/modprobe.d/50-nvme_core.conf
+----
+. 新しい「 modprobe 」パラメータで「 initramfs 」を再作成します。
++
+[listing]
+----
+# dracut -f
+----
+. サーバをリブートして、ネイティブの NVMe マルチパスを有効にします。
++
+[listing]
+----
+# reboot
+----
+. ホストのブート後にネイティブの NVMe マルチパスが有効になっていることを確認します。
++
+[listing]
+----
+# cat /sys/module/nvme_core/parameters/multipath
+----
++
+.. コマンド出力が「 N 」の場合、ネイティブ NVMe マルチパスは無効のままです。
+.. コマンド出力が「 Y 」の場合は、ネイティブ NVMe マルチパスが有効になり、検出した NVMe デバイスでこのコマンドが使用されます。
+
+
+
+
+
+NOTE: SLES 15 では、ネイティブの NVMe マルチパスはデフォルトで有効になるため、追加の設定は必要ありません。

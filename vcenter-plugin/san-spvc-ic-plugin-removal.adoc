@@ -1,0 +1,99 @@
+---
+sidebar: sidebar 
+permalink: san-spvc-ic-plugin-removal.html 
+keywords: remove vCenter plugin, uninstall Plugin for vCenter, unregister vCenter plugin, 
+summary: vCenter 向けプラグインを削除します。 
+---
+= vCenter 向けストレージプラグインを削除します
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+vCenter Server Appliance からプラグインを削除し、アプリケーションホストからプラグイン Web サーバをアンインストールできます。
+
+これらは、任意の順序で実行できる 2 つのステップです。ただし、プラグインの登録を解除する前にプラグイン Web サーバをアプリケーションホストから削除することを選択した場合、登録スクリプトはその処理中に削除され、方法 1 を使用して登録を解除することはできません。
+
+
+
+== vCenter Server Appliance からプラグインの登録を解除します
+
+vCenter Server Appliance からプラグインの登録を解除するには、次のいずれかの方法を選択します。
+
+* 方法 1: 登録スクリプトを実行する
+* 方法 2 ： vCenter Server のモブページを使用する
+
+
+
+
+=== 方法 1: 登録スクリプトを実行する
+
+. コマンドラインでプロンプトを開き、次のディレクトリに移動します。
++
+`< インストールディレクトリ >\vcenter-register-bin'
+
+. 「 vcenter-register.bat 」ファイルを実行します。
++
+vcenter-register.bat
+
++
+`-action unregisterPlugin^`
+
++
+`-vcenterHostname <vCenter FQDN>^`
+
++
+`-username <Administrator Username>^`
+
+. スクリプトが正常に実行されたことを確認します。
++
+ログは '%install_dir%/working/logs/vc-registration.log' に保存されます
+
+
+
+
+
+=== 方法 2 ： vCenter Server のモブページを使用する
+
+. Web ブラウザを開き、次の URL を入力します。
++
+++ https://<FQDN[] vCenter Server の数 >/mob ++
+
+. 管理者のクレデンシャルでログインします。
+. extensionManager のプロパティ名を探し ' そのプロパティに関連付けられているリンクをクリックします
+. [ * 詳細 * … ] をクリックして、プロパティリストを展開します。 リンクをクリックします。
+. 拡張子「 plugin.netapp.eseries` 」がリストに含まれていることを確認します。
+. このメソッドが存在する場合は 'UnregisterExtension' メソッドをクリックします
+. ダイアログに「 plugin.netapp.eseries` 」という値を入力し、 * invoke method * をクリックします。
+. ダイアログを閉じ、 Web ブラウザをリフレッシュします。
+. plugin.netapp.eseries` 拡張子がリストにないことを確認します
+
+
+
+NOTE: この手順は、 vCenter Server Appliance からプラグインの登録を解除しますが、サーバからプラグインパッケージファイルを削除することはありません。パッケージファイルを削除するには、 SSH を使用して vCenter Server Appliance にアクセスし、次のディレクトリに移動します。
+
+/etc/vmware/vsphere-clientui/vc-packages/vsphere-client-serenity / です
+
+次に、プラグインに関連付けられているディレクトリを削除します。
+
+
+
+== アプリケーションホストからプラグイン Web サーバを削除します
+
+プラグインソフトウェアをアプリケーションホストから削除するには、次の手順を実行します。
+
+. アプリケーションサーバーから、 * コントロールパネル * に移動します。
+. 「 * Apps & Features * 」に移動し、「 * SANtricity Storage Plugin for vCenter * 」を選択します。
+. [ アンインストール / 変更 *] をクリックします。
++
+確認ダイアログが開きます。
+
+. [ アンインストール ] をクリックします。
++
+アンインストールが完了すると、確認メッセージが表示されます。
+
+. [ 完了（ Done ） ] をクリックします。
+

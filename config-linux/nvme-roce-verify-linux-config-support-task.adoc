@@ -1,0 +1,73 @@
+---
+permalink: config-linux/nvme-roce-verify-linux-config-support-task.html 
+sidebar: sidebar 
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 安定した稼働を確保するために、導入計画を作成し、 NetApp Interoperability Matrix Tool （ IMT ）を使用して構成全体がサポートされることを確認します。 
+---
+= Linux のサポートを確認し、制限事項を確認します
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+最初に、 Linux 構成がサポートされていることを確認し、コントローラ、スイッチ、ホスト、およびリカバリの制限事項を確認する必要があります。
+
+
+
+== Linux 構成がサポートされていることを確認する
+
+安定した稼働を確保するために、導入計画を作成し、 NetApp Interoperability Matrix Tool （ IMT ）を使用して構成全体がサポートされることを確認します。
+
+.手順
+. にアクセスします https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]。
+. [ 検索（解決策 Search ） ] タイルをクリックします。
+. [Protocols [SAN Host] （プロトコル [SAN ホスト ] ）領域で、 * E シリーズ SAN ホスト * の横の * 追加ボタンをクリックします。
+. ［ * 検索条件の絞り込み検索の表示 * ］ をクリックします。
++
+[ 検索条件の絞り込み ] セクションが表示されます。このセクションでは、適用するプロトコル、およびオペレーティングシステム、ネットアップ OS 、ホストマルチパスドライバなど、構成のその他の条件を選択できます。
+
+. 構成に必要な条件を選択し、互換性のある構成要素を確認します。
+. 必要に応じて、使用するオペレーティングシステムとプロトコルに対して IMT に記載された更新を実行します。
++
+選択した構成の詳細情報には、右ページ矢印をクリックして、 [View Supported Configurations] ページからアクセスできます。
+
+
+
+
+
+== NVMe over RoCE の制限事項を確認します
+
+NVMe over RoCE を使用する前に、コントローラ、スイッチ、ホスト、およびリカバリの制限事項を確認してください。すべての制限事項の最新のリストについては、を参照してください https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]。
+
+
+
+=== コントローラの制限事項
+
+* NVMe over RoCE は、 EF300 （ 100GB コントローラのみ）、 EF600 、 EF570 、 E5700 コントローラで設定できます。コントローラには 100GB または 200GB のホストポートが必要です。
+* このプロトコルは、 EF300 、 EF600 、 EF570 、および E5700 コントローラでのみ使用できます。EF600 、 EF570 、および E5700 コントローラでこのプロトコルを使用するには、 32GB 以上の物理メモリが必要です。EF300 の場合は、最低 16 GB の物理メモリが必要です。一日の開始処理でコントローラの最小メモリ要件が満たされていないと、問題を診断するためのメッセージが表示されます。
+* シンプレックス（シングルコントローラ）構成はサポートされません。
+* サポートされるホストインターフェイスカード（ HIC ）は、 100G または 200G の EDR HIC のみです。この HIC は NVMe over InfiniBand 、 iSER 、 SRP もサポートします。
+* NVMe over RoCE ホストインターフェイスを、 NVMe over InfiniBand または SCSI ホストインターフェイスと組み合わせて使用することはできません。
+
+
+
+
+=== スイッチの制限事項
+
+
+NOTE: * データ損失のリスク。 * NVMe over RoCE 環境では、データ損失のリスクを排除するために、スイッチで優先度フロー制御またはグローバルポーズ制御を有効にする必要があります。
+
+
+
+=== ホスト、ホストプロトコル、およびホストオペレーティングシステムの制限事項
+
+すべての要件の一覧については、を参照してください https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]。
+
+
+
+=== ストレージとディザスタリカバリの制限事項
+
+* 非同期ミラーリングと同期ミラーリングはサポートされません。
+* シンプロビジョニング（シンボリュームの作成）はサポートされていません。
+

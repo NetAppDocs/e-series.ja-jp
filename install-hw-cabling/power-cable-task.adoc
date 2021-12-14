@@ -1,0 +1,24 @@
+---
+permalink: install-hw-cabling/power-cable-task.html 
+sidebar: sidebar 
+keywords: cabling, cables, power cable, power cabling, power supply cabling, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C 
+summary: 各コンポーネントの電源装置を別々の電源回路に接続します。 
+---
+= 電源のケーブル接続
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+各コンポーネントの電源装置を別々の電源回路に接続する必要があります。
+
+.作業を開始する前に
+* 設置場所で必要な電力が供給されていることを確認しておきます。
+* シェルフの 2 つの電源装置の 2 つの電源スイッチをオフにする必要があります。
+
+
+ストレージシステムの電源が、新しいドライブシェルフの電力要件に対応できる必要があります。ストレージ・システムの消費電力については、を参照してください https://hwu.netapp.com/Controller/Index?platformTypeId=2357027["Hardware Universe"^]。
+
+.ステップ
+. 各シェルフの 2 本の電源ケーブルを、キャビネットまたはラック内の別々の配電ユニット（ PDU ）に接続します。
+

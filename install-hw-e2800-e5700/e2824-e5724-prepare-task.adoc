@@ -1,0 +1,140 @@
+---
+permalink: install-hw-e2800-e5700/e2824-e5724-prepare-task.html 
+sidebar: sidebar 
+keywords: e5724, ef570, ef280, e2812, e2824, de212c, de224c, installation 
+summary: E5724 、 EF570 、 EF280 、 E2812 、 E2824 、または DE212C 、 DE224C 、アカウントの作成とハードウェアの登録 
+---
+= 設置を準備
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+E5724 、 EF570 、 EF280 、 E2812 、 E2824 、または DE212C / DE224C シリーズストレージシステム。
+
+.手順
+. アカウントを作成し、でハードウェアを登録します http://mysupport.netapp.com/["mysupport.netapp.com"^]。
+. 次のものが同梱されていることを確認してください。
++
+|===
+
+
+ a| 
+image:../media/trafford_overview.png[""]
+ a| 
+ドライブが取り付けられたシェルフ（ベゼルは別に梱包）
+
+
+
+ a| 
+image:../media/superrails_inst-hw-e2800-e5700.png[""]
+ a| 
+ラックマウントハードウェア
+
+|===
++
+次の表に、同梱されているケーブルの種類を示します。表に記載されていないケーブルがある場合は、を参照してください https://hwu.netapp.com/["Hardware Universe"^] ケーブルの場所を確認し、用途を特定します。
+
++
+|===
+| コネクタのタイプ | ケーブルのタイプ | 使用 
+
+
+ a| 
+image:../media/cable_ethernet_inst-hw-e2800-e5700.png[""]
+ a| 
+イーサネットケーブル
+
+（発注した場合）
+ a| 
+管理接続
+
+
+
+ a| 
+image:../media/cable_io_inst-hw-e2800-e5700.png[""]
+ a| 
+I/O ケーブル
+
+（発注した場合）
+ a| 
+データホストのケーブル接続
+
+
+
+ a| 
+image:../media/cable_power_inst-hw-e2800-e5700.png[""]
+ a| 
+電源ケーブル
+
+（発注した場合）
+ a| 
+ストレージシステムの電源
+
+
+
+ a| 
+image:../media/sas_cable.png[""]
+ a| 
+SAS ケーブルはドライブシェルフにのみ付属しています
+ a| 
+SAS ケーブル
+
+|===
+. 次のものを用意します。
++
+|===
+
+
+ a| 
+image:../media/screwdriver_inst-hw-e2800-e5700.png[""]
+ a| 
+No.2 プラスドライバ
+
+
+
+ a| 
+image:../media/flashlight_inst-hw-e2800-e5700.png[""]
+ a| 
+懐中電灯
+
+
+
+ a| 
+image:../media/wrist_strap_inst-hw-e2800-e5700.png[""]
+ a| 
+静電気防止用ストラップ
+
+
+
+ a| 
+image:../media/2u_rackspace_inst-hw-e2800-e5700.png[""]
+ a| 
+2U ラックスペース： 48.3cm の標準搭載。48.30cm （ 19 インチ）ラック
+
+* 深さ *: 19.0 インチ（ 48.3 cm ）
+
+* 幅 * ： 17.6 インチ（ 44.7 cm ）
+
+* 高さ *:3.34 インチ（ 8.48 cm ）
+
+* シェルフ * ： 24 ドライブ
+
+* 最大重量 * ： 27.4kg （ 60.5 ポンド）
+
+
+
+ a| 
+image:../media/management_station_inst-hw-e2800-e5700_g60b3.png[""]
+ a| 
+管理ソフトウェアでサポートされているブラウザ：
+
+** Google Chrome （バージョン 78 以降）
+** Microsoft Internet Explorer （バージョン 11 以降）
+** Microsoft Edge （ 88 以降）
+** Mozilla Firefox （バージョン 70 以降）
+** Safari （バージョン 12 以降）
+
+
+|===
+

@@ -1,0 +1,30 @@
+---
+permalink: install-hw-cabinet/index.html 
+sidebar: sidebar 
+keywords: 3040 40U cabinet, cabinet installation, drive tray installation, controller installation, shelf installation, E2800, E5700, EF300, EF600, 
+summary: E シリーズ 3040 40U キャビネットにドライブトレイを取り付ける方法の概要 
+---
+= 3040 40U キャビネットにトレイを取り付けます
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+E シリーズ 3040 40U キャビネットには、次のコントローラドライブトレイと拡張ドライブトレイを取り付けることができます。
+
+* E2612 、 E2624 、および E2660 コントローラのドライブトレイ
+* E2712 、 E2724 、 E2760 コントローラドライブトレイ
+* E5412 、 E5424 、および E5460 コントローラのドライブトレイ
+* E5512 、 E5524 、 E5560 コントローラドライブトレイ
+* E5612 、 E5624 、 E5660 コントローラドライブトレイ
+* EF540 / EF550 / EF560 フラッシュアレイ
+* DE1600 、 DE5600 、および DE6600 ドライブトレイ
+
+
+次の SAS-3 コントローラシェルフとドライブシェルフをキャビネットに取り付けることもできます。
+
+* E2812 / E2824 / E5724 コントローラシェルフ
+* DE212C / DE224C ドライブシェルフ
+
+
+ただし、これらのシェルフの仕様は記載されていません。を参照してください https://hwu.netapp.com["NetApp Hardware Universe の略"^]。

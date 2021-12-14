@@ -1,0 +1,21 @@
+---
+permalink: config-vmware/configure-multipath-software-concept.html 
+sidebar: sidebar 
+keywords: multipath software for vmware, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 物理パスの 1 つが中断された場合にストレージアレイへの冗長パスを提供するように m ソフトウェアを設定します。 
+---
+= マルチパスソフトウェアを設定します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ストレージアレイへのパスを冗長化するには、マルチパスソフトウェアを設定します。
+
+マルチパスソフトウェアは、物理パスの 1 つが中断された場合に備えて、ストレージアレイへのパスを冗長化します。マルチパスソフトウェアは、ストレージへのアクティブな物理パスを 1 つの仮想デバイスとしてオペレーティングシステムに提示します。また、フェイルオーバープロセスも管理して仮想デバイスを更新します。VMware の場合、 NVMe/FC はハイパフォーマンスプラグイン（ HPP ）を使用します。
+
+VMware では、 FC 、 iSCSI 、および SAS の各プロトコルにのみ対応し、特定のベンダーのストレージアレイのフェイルオーバー実装を処理するため、ストレージアレイタイププラグイン（ SATP ）と呼ばれるプラグインを提供しています。
+
+使用する SATP は * VMW_SATP_ALUA * です。
+
+詳細については、を参照してください https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-DB5BC795-E4D9-4350-9C5D-12BB3C0E6D99.html["VMware SATPs"^]。

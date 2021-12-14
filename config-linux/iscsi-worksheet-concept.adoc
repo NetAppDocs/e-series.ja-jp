@@ -1,0 +1,59 @@
+---
+permalink: config-linux/iscsi-worksheet-concept.html 
+sidebar: sidebar 
+keywords: iSCSI worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: このワークシートを使用して、 iSCSI ストレージの構成情報を記録します。 
+---
+= iSCSI の設定を記録します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+このページの PDF を生成して印刷し、次のワークシートを使用して iSCSI ストレージの構成情報を記録できます。この情報は、プロビジョニングタスクを実行する際に必要になります。
+
+
+
+== 推奨される構成
+
+推奨構成は、 2 つのイニシエータポートと 4 つのターゲットポートを 1 つ以上の VLAN で接続した構成です。
+
+image::../media/50001_01_conf-lin.gif[50001 01 conf LIN]
+
+
+
+== ターゲット IQN
+
+|===
+| 番号 | ターゲットポート接続 | IQN 
+
+
+ a| 
+2.
+ a| 
+ターゲットポート
+ a| 
+
+|===
+
+
+== マッピングホスト名
+
+|===
+| 番号 | ホスト情報 | 名前とタイプ 
+
+
+ a| 
+1.
+ a| 
+マッピングホスト名
+ a| 
+
+
+
+ a| 
+ a| 
+ホスト OS タイプ
+ a| 
+
+|===

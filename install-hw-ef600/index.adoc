@@ -1,0 +1,26 @@
+---
+permalink: install-hw-ef600/index.html 
+sidebar: sidebar 
+keywords: EF300, EF600, installation 
+summary: EF300 および EF600 アレイを設置してセットアップします。 
+---
+= EF300 および EF600 ストレージシステムを設置してセットアップする
+:icons: font
+:imagesdir: ../media/
+:pdfdir: ../pdf/
+
+
+[role="lead"]
+EF300 または EF600 ストレージシステムを設置してセットアップする方法について説明します。
+
+新しいストレージシステムを設置してセットアップする際に、次のいずれかの形式を選択します。
+
+* * PDF *
++
+これはです https://library.netapp.com/ecm/ecm_download_file/ECMLP2851449["PDF ポスター"^] 詳細な手順と追加コンテンツへのライブリンクが記載されています。
+
+* * オンラインでの手順 *
++
+これらは、このサイトで説明されているオンラインセットアップ手順です。で開始します xref:prepare-for-install-task.adoc[設置を準備] をダウンロードしてご確認ください。
+
+

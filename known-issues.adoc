@@ -1,0 +1,16 @@
+---
+sidebar: sidebar 
+permalink: known-issues.html 
+keywords: known, issues, santricity, os 
+summary: 既知の問題 
+---
+= リリースノート
+
+
+[role="lead"]
+このサイトにはリリースノートがありません。ネットアップサポートサイトのクレデンシャルでログインするように求められます。
+
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2874254["11.70 リリースノート"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2857931["11.60 リリースノート"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2842060["11.50 リリースノート"^]
+

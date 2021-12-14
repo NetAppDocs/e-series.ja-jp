@@ -1,0 +1,54 @@
+---
+sidebar: sidebar 
+permalink: early-versions.html 
+keywords: early versions, e-series, hardware, santricity, os 
+summary: 以前のバージョンのドキュメント 
+---
+= 以前のバージョン
+
+
+[role="lead"]
+E シリーズハードウェアおよび SANtricity ソフトウェアの以前のバージョンのドキュメントにアクセスするには、以下のリンクを参照してください。リンクをクリックすると、別のドキュメントサイトにアクセスできます。
+
+
+
+== 以前のリリースのハードウェアマニュアル
+
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2484026["E2712 、 E2724 、 E5612 、 E5624 コントローラドライブトレイ、 DE1600 、 DE5600 拡張ドライブトレイを搭載"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2484072["E2760 と E5660 コントローラドライブトレイと DE6600 拡張ドライブトレイを設置します"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2484108["EF560 フラッシュアレイと DE5600 フラッシュ拡張トレイを設置"^]
+* https://mysupport.netapp.com/info/web/ECMP11392380.html["古いシステムをインストールします"^]
+* https://mysupport.netapp.com/info/web/ECMP11751516.html["古いシステムを維持します"^]
+* https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1394872["E2600 および E2700 に 2 台目のコントローラを追加します"^]
+* https://mysupport.netapp.com/info/web/ECMP11750309.html["ホストプロトコルを変更または追加する"^]
+* https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1656638["AC 電源から DC 電源に変換します"^]
+
+
+
+
+== 以前のリリースのソフトウェアドキュメント
+
+
+
+=== SANtricity リリース 11.6
+
+* https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-116/home.html["System Manager オンラインヘルプ"^]
+* https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-uni-32/home.html["Unified Manager オンラインヘルプ"^]
+
+
+
+
+=== SANtricity リリース 11.5
+
+* https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-115/home.html["System Manager オンラインヘルプ"^]
+* https://mysupport.netapp.com/NOW/public/eseries/unified_archive1150/index.html["Unified Manager オンラインヘルプ"^]
+
+
+
+
+=== SANtricity リリース 11.4
+
+* https://mysupport.netapp.com/NOW/public/eseries/sam_archive1140/index.html["System Manager （ E2800 ）オンラインヘルプ"^]
+* https://mysupport.netapp.com/ecm/ecm_get_file/ECMLP2862590["AMW （ E2700 、 E5600 / EF560 ）オンラインヘルプ"^]
+* https://mysupport.netapp.com/ecm/ecm_get_file/ECMLP2862588["EMW （ E2700 、 E5600 / EF560 ）オンラインヘルプ"^]
+

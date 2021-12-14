@@ -1,0 +1,15 @@
+---
+permalink: config-vmware/verify-storage-access-host-task.html 
+sidebar: sidebar 
+keywords: verify storage ESXi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: ボリュームを使用する前に、ホストがボリュームに対してデータの読み取りと書き込みを実行できることを確認します。 
+---
+= ホストでストレージアクセスを確認
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ボリュームを使用する前に、ホストがボリュームに対してデータの読み取りと書き込みを実行できることを確認します。
+
+これを行うには、ボリュームが Virtual Machine File System （ VMFS ）データストアとして使用されているか、または Raw デバイスマッピング（ RDM ）として VM に直接マッピングされていることを確認します。

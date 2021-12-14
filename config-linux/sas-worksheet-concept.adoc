@@ -1,0 +1,88 @@
+---
+permalink: config-linux/sas-worksheet-concept.html 
+sidebar: sidebar 
+keywords: SAS worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: このワークシートを使用して、 SAS ストレージの構成情報を記録します。 
+---
+= SAS の設定を記録します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+このページの PDF を生成して印刷し、次のワークシートを使用して SAS ストレージの構成情報を記録できます。この情報は、プロビジョニングタスクを実行する際に必要になります。
+
+image::../media/sas_topology_diagram_conf-lin.gif[図： SAS トポロジ]
+
+
+
+== ホスト識別子
+
+|===
+| 番号 | ホスト（イニシエータ）ポート接続 | SAS アドレス 
+
+
+ a| 
+1.
+ a| 
+ホスト
+ a| 
+_ 該当なし _
+
+
+
+ a| 
+2.
+ a| 
+ホスト（イニシエータ）ポート 1 からコントローラ A のポート 1
+ a| 
+
+
+
+ a| 
+3.
+ a| 
+ホスト（イニシエータ）ポート 1 からコントローラ B のポート 1
+ a| 
+
+
+
+ a| 
+4.
+ a| 
+ホスト（イニシエータ）ポート 2 からコントローラ A のポート 1
+ a| 
+
+
+
+ a| 
+5.
+ a| 
+ホスト（イニシエータ）ポート 2 からコントローラ B のポート 1
+ a| 
+
+|===
+
+
+== ターゲット識別子
+
+推奨構成は 2 つのターゲットポートで構成されます。
+
+
+
+== マッピングホスト
+
+|===
+
+
+ a| 
+マッピングホスト名
+ a| 
+
+
+
+ a| 
+ホスト OS タイプ
+ a| 
+
+|===

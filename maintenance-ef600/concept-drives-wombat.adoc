@@ -1,0 +1,13 @@
+---
+permalink: maintenance-ef600/concept-drives-wombat.html 
+sidebar: sidebar 
+keywords: drive, device, physical, storage, media, data 
+summary: ドライブは、データの物理ストレージメディアとして使用されるデバイスです。 
+---
+= ドライブ
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ドライブは、データの物理ストレージメディアとして使用されるデバイスです。

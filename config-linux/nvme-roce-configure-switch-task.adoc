@@ -1,0 +1,21 @@
+---
+permalink: config-linux/nvme-roce-configure-switch-task.html 
+sidebar: sidebar 
+keywords: configure switch, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: NVMe over RoCE に関するベンダーの推奨事項に従ってスイッチを設定します。これらの推奨事項には、設定の指示とコードの更新が含まれる場合があります。 
+---
+= スイッチを設定します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NVMe over RoCE に関するベンダーの推奨事項に従ってスイッチを設定します。これらの推奨事項には、設定の指示とコードの更新が含まれる場合があります。
+
+
+NOTE: * データ損失のリスク。 * NVMe over RoCE 環境では、データ損失のリスクを排除するために、スイッチで優先度フロー制御またはグローバルポーズ制御を有効にする必要があります。
+
+.手順
+. ベストプラクティス構成として、イーサネットポーズフレームフロー制御 * エンドツーエンド * を有効にします。
+. 環境に最適な構成を選択するには、ネットワーク管理者に相談してください。
+

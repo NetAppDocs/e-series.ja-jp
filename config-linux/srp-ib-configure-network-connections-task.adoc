@@ -1,0 +1,115 @@
+---
+permalink: config-linux/srp-ib-configure-network-connections-task.html 
+sidebar: sidebar 
+keywords: configure network SRP over IB, configure Linux network, OFED, RDMA, express linux configuration, linux host, 
+summary: SRP over InfiniBand プロトコルを使用する構成の場合は、ここで説明する手順を実行します。 
+---
+= ネットワーク接続の設定： SRP over InfiniBand
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SRP over InfiniBand プロトコルを使用する構成の場合は、ここで説明する手順を実行します。
+
+Linux ホストをストレージアレイに接続するためには、該当するオプションで InfiniBand ドライバスタックを有効にする必要があります。具体的な設定は Linux ディストリビューションによって異なる場合があります。を確認します https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] 具体的な手順および解決策固有のその他の推奨設定については、を参照してください。
+
+.手順
+. 使用する OS に対応した OFED / RDMA ドライバスタックをインストールします。
++
+* SLES *
+
++
+[listing]
+----
+zypper install rdma-core
+----
++
+* RHEL *
+
++
+[listing]
+----
+yum install rdma-core
+----
+. SRP モジュールをロードするように OFED / RDMA を設定します。
++
+* SLES *
+
++
+[listing]
+----
+zypper install srp_daemon
+----
++
+* RHEL *
+
++
+[listing]
+----
+ yum install srp_daemon
+----
+. OFED / RDMA 構成ファイルで、「 S rp_load=yes 」と「 S rp_daemon_enable=yes 」を設定します。
++
+RDMA 構成ファイルは次の場所にあります。
+
++
+[listing]
+----
+/etc/rdma/rdma.conf
+----
+. OFED / RDMA サービスを有効にして開始します。
++
+* RHEL 7.x および SLES 12.x 以降 *
+
++
+** InfiniBand モジュールを有効にしてブート時にロードする場合：
++
+[listing]
+----
+systemctl enable rdma
+----
+** InfiniBand モジュールをすぐにロードする場合：
++
+[listing]
+----
+systemctl start rdma
+----
+
+
+. SRP デーモンを有効にします。
++
+* RHEL 7.x および SLES 12 以降 *
+
++
+** SRP デーモンを有効にしてブート時に開始する場合：
++
+[listing]
+----
+systemctl enable srp_daemon
+----
+** SRP デーモンをすぐに開始する場合：
++
+[listing]
+----
+systemctl start srp_daemon
+----
+
+
+. SRP 設定を変更する必要がある場合は、次のコマンドを入力して「 /etc/modprobe.d/ib_srp.conf 」を作成します。
++
+[listing]
+----
+options ib_srp cmd_sg_entries=255 allow_ext_sg=y indirect_sg_entries=2048
+----
++
+.. /etc/srp_daemon.conf の下に次の行を追加します
++
+[listing]
+----
+a
+    max_sect=4096
+----
+
+
+

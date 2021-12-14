@@ -1,0 +1,130 @@
+---
+permalink: config-linux/nvme-fc-worksheet-concept.html 
+sidebar: sidebar 
+keywords: NVMe over FC worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: このワークシートを使用して、 NVMe over Fibre Channel ストレージの構成情報を記録します。 
+---
+= NVMe over FC の設定を記録します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+このページの PDF を生成して印刷し、次のワークシートを使用して NVMe over Fibre Channel ストレージの構成情報を記録できます。この情報は、プロビジョニングタスクを実行する際に必要になります。
+
+
+
+== 直接接続トポロジ
+
+直接接続トポロジでは、 1 つ以上のホストをコントローラに直接接続します。
+
+image::../media/nvme_fc_direct_topology.png[NVMe FC 直接トポロジ]
+
+* ホスト 1 の HBA ポート 1 とコントローラ A のホストポート 1
+* ホスト 1 の HBA ポート 2 とコントローラ B のホストポート 1
+* ホスト 2 の HBA ポート 1 とコントローラ A のホストポート 2
+* ホスト 2 の HBA ポート 2 とコントローラ B のホストポート 2
+* ホスト 3 の HBA ポート 1 とコントローラ A のホストポート 3
+* ホスト 3 の HBA ポート 2 とコントローラ B のホストポート 3
+* ホスト 4 の HBA ポート 1 とコントローラ A のホストポート 4
+* ホスト 4 の HBA ポート 2 とコントローラ B のホストポート 4
+
+
+
+
+== スイッチ接続トポロジ
+
+ファブリックトポロジでは、 1 つ以上のスイッチを使用します。を参照してください https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] を参照してください。
+
+image::../media/nvme_fc_fabric_topology.png[NVMe FC ファブリックトポロジ]
+
+
+
+== ホスト識別子
+
+各ホストのイニシエータ NQN を特定して記録します。
+
+|===
+| ホストポート接続 | ホスト NQN 
+
+
+ a| 
+ホスト（イニシエータ） 1.
+ a| 
+
+
+
+ a| 
+ホスト（イニシエータ） 2.
+ a| 
+
+|===
+
+
+== ターゲット NQN
+
+ストレージアレイのターゲット NQN を記録します。
+
+|===
+| アレイ名 | ターゲット NQN 
+
+
+ a| 
+アレイコントローラ（ターゲット）
+ a| 
+
+|===
+
+
+== ターゲット NQN
+
+アレイポートで使用する NQN を記録します。
+
+|===
+| アレイコントローラ（ターゲット）ポート接続 | NQN 
+
+
+ a| 
+コントローラ A のポート 1
+ a| 
+
+
+
+ a| 
+コントローラ B のポート 1
+ a| 
+
+
+
+ a| 
+コントローラ A のポート 2
+ a| 
+
+
+
+ a| 
+コントローラ B 、ポート 2
+ a| 
+
+|===
+
+
+== マッピングホスト名
+
+
+NOTE: マッピングホスト名はワークフロー中に作成されます。
+
+|===
+
+
+ a| 
+マッピングホスト名
+ a| 
+
+
+
+ a| 
+ホスト OS タイプ
+ a| 
+
+|===

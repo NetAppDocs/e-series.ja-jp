@@ -1,0 +1,35 @@
+---
+permalink: web-services-proxy/index.html 
+sidebar: sidebar 
+keywords: Web Services Proxy, WSP, 
+summary: SANtricity ® Web Services Proxy 、 Web Services API 、 REST API の概要 
+---
+= SANtricity Web Services Proxy の概要
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SANtricity Web Services Proxy は RESTful API サーバで、ホストシステムに別途インストールして、数百台規模の新旧の NetApp E シリーズストレージシステムを管理します。プロキシには SANtricity Unified Manager が搭載されており、同様の機能を提供する Web ベースのインターフェイスです。
+
+
+
+== インストールの概要
+
+Web Services Proxy をインストールして設定するには、次の手順を実行します。
+
+. link:install-reqs-task.html["インストールとアップグレードの要件を確認"]。
+. link:install-wsp-task.html["Web Services Proxy ファイルをダウンロードしてインストール"]。
+. link:install-login-task.html["API と Unified Manager にログインします"]。
+. link:install-config-task.html["Web Services Proxy を設定する"]。
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+* Unified Manager -- プロキシインストールには、新しい E シリーズおよび EF シリーズストレージシステムへの設定アクセスを提供する Web ベースのインターフェイス、 SANtricity Unified Manager が含まれます。詳細については、 Unified Manager のオンラインヘルプを参照してください。このヘルプはユーザインターフェイスまたはから入手できます https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-uni-5/home.html?cp=5_1["ドキュメントセンター"^]。
+* GitHub リポジトリ -- GitHub には、 NetApp SANtricity Web サービス API の使用方法を示すサンプルスクリプトをまとめ、整理するためのリポジトリが用意されています。リポジトリにアクセスするには、を参照してください https://github.com/NetApp/webservices-samples["ネットアップ Web Services のサンプル"^]。
+* Representational State Transfer （ REST ）： Web Services は実質的にすべての SANtricity 管理機能へのアクセスを提供する RESTful API であるため、 REST の概念を理解しておく必要があります。詳細については、を参照してください http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm["アーキテクチャスタイルとネットワークベースのソフトウェアアーキテクチャの設計"^]。
+* JavaScript Object Notation （ JSON ）： Web Services のデータは JSON でエンコードされているため、 JSON のプログラミング概念を理解しておく必要があります。詳細については、を参照してください http://www.json.org["JSON の概要"^]。
+

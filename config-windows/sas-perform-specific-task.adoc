@@ -1,0 +1,115 @@
+---
+permalink: config-windows/sas-perform-specific-task.html 
+sidebar: sidebar 
+keywords: sas, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: SAS プロトコルを使用する場合は、ホストポートアドレスを特定し、推奨設定を適用します。 
+---
+= SAS 固有のタスクを実行
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SAS プロトコルを使用する場合は、ホストポートのアドレスを特定し、適切に設定します。
+
+
+
+== 手順 1 ： SAS ホスト識別子を確認する—最初の Windows
+
+HBA ユーティリティを使用して SAS アドレスを確認し、 HBA BIOS を使用して適切な設定を行います。
+
+HBA ユーティリティのガイドラインを確認します。
+
+* ほとんどの HBA ベンダーは HBA ユーティリティを提供しています。使用するホストオペレーティングシステムと CPU に応じて、 LSI-sas2flash （ 6G ）または sas3flash （ 12G ）のいずれかのユーティリティを使用します。
+* Host Context Agent がインストールされている場合、ホストの I/O ポートは自動的に登録されることがあります。
+
+
+.手順
+. HBA ベンダーの Web サイトから、 LSI-sas2flash （ 6G ）または sas3flash （ 12G ）ユーティリティをダウンロードします。
+. ユーティリティをインストールします。
+. HBA BIOS を使用して構成に適した設定を選択します。
++
+推奨事項の設定については、の「メモ」列を参照してください http://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]。
+
+
+
+
+
+== 手順 2 ：設定を記録する
+
+このページの PDF を生成して印刷し、次のワークシートを使用してプロトコル固有のストレージ構成情報を記録できます。この情報は、プロビジョニングタスクを実行する際に必要になります。
+
+image::../media/sas_topology_diagram_conf-win.gif[図： SAS トポロジ]
+
+
+
+=== ホスト識別子
+
+|===
+| 番号 | ホスト（イニシエータ）ポート接続 | SAS アドレス 
+
+
+ a| 
+1.
+ a| 
+ホスト
+ a| 
+_ 該当なし _
+
+
+
+ a| 
+2.
+ a| 
+ホスト（イニシエータ）ポート 1 からコントローラ A のポート 1
+ a| 
+
+
+
+ a| 
+3.
+ a| 
+ホスト（イニシエータ）ポート 1 からコントローラ B のポート 1
+ a| 
+
+
+
+ a| 
+4.
+ a| 
+ホスト（イニシエータ）ポート 2 からコントローラ A のポート 1
+ a| 
+
+
+
+ a| 
+5.
+ a| 
+ホスト（イニシエータ）ポート 2 からコントローラ B のポート 1
+ a| 
+
+|===
+
+
+=== ターゲット識別子
+
+推奨構成は 2 つのターゲットポートで構成されます。
+
+
+
+=== マッピングホスト名
+
+|===
+
+
+ a| 
+マッピングホスト名
+ a| 
+
+
+
+ a| 
+ホスト OS タイプ
+ a| 
+
+|===

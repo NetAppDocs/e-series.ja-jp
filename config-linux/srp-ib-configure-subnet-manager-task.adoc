@@ -1,0 +1,72 @@
+---
+permalink: config-linux/srp-ib-configure-subnet-manager-task.html 
+sidebar: sidebar 
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: InfiniBand スイッチを使用してサブネットマネージャを実行する場合、負荷が高いときに原因でパスが予期せず失われる可能性があります。パスの損失を防ぐには、 opensm を使用して 1 つ以上のホストにサブネットマネージャを設定します。 
+---
+= サブネットマネージャを設定します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+スイッチまたはホスト上の環境でサブネットマネージャが実行されている必要があります。ホスト側で実行する場合は、次の手順を使用してセットアップします。
+
+.手順
+. サブネット・マネージャを実行するすべてのホストに 'opensm' パッケージをインストールします
+. 「 ibstat -p 」コマンドを使用して、 HBA ポートの「 GUID0 」と「 GUID1 」を確認します。例：
++
+[listing]
+----
+# ibstat -p
+ 0x248a070300a80a80
+ 0x248a070300a80a81
+----
+. ホスト上の接続された HCA の各ポートでサブネットマネージャを有効にします。
++
+* SLES の例 *
+
++
+** /etc/rc.d/rc.after に次の 2 行を追加します。「 GUID0 」と「 GUID1 」の値は、手順 2 で確認した値に置き換えてください。「 P0 」と「 P1 」には、サブネットマネージャの優先順位を使用します。 1 は最低、 15 は最高です。
++
+[listing]
+----
+ opensm -B -g GUID0 -p P0 -f /var/log/opensm-ib0.log
+ opensm -B -g GUID1 -p P1 -f /var/log/opensm-ib1.log
+----
++
+値を置き換えたコマンドの例を次に示します。
+
++
+[listing]
+----
+# cat /etc/rc.d/rc.local
+ opensm -B -g 0x248a070300a80a80 -p 15 -f /var/log/opensm-ib0.log
+ opensm -B -g 0x248a070300a80a81 -p 1 -f /var/log/opensm-ib1.log
+----
+
+
++
+* RHEL の例 *
+
++
+** /etc/rc.d/rc.local に次の 2 行を追加します。「 GUID0 」と「 GUID1 」の値は、手順 2 で確認した値に置き換えてください。「 P0 」と「 P1 」には、サブネットマネージャの優先順位を使用します。 1 は最低、 15 は最高です。
++
+[listing]
+----
+opensm -B -g GUID0 -p P0 -f /var/log/opensm-ib0.log
+opensm -B -g GUID1 -p P1 -f /var/log/opensm-ib1.log
+----
++
+値を置き換えたコマンドの例を次に示します。
+
++
+[listing]
+----
+# cat /etc/rc.d/rc.local
+ opensm -B -g 0x248a070300a80a80 -p 15 -f /var/log/opensm-ib0.log
+ opensm -B -g 0x248a070300a80a81 -p 1 -f /var/log/opensm-ib1.log
+----
+
+
+

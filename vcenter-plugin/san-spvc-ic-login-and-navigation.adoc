@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: san-spvc-ic-login-and-navigation.html 
+keywords: log in vCenter plugin, login Plugin for vCenter, browsers vCenter plugin user interface, vCenter GUI, 
+summary: ログインして vCenter 向けプラグインに移動します。 
+---
+= ログインして、 Storage Plugin for vCenter に移動します
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+vCenter 向けストレージプラグインにログインして、ユーザインターフェイスを操作できます。
+
+. プラグインにログインする前に、次のいずれかのブラウザを使用していることを確認してください。
++
+** Google Chrome 79 以降
+** Mozilla Firefox 70 以降
+** Microsoft Edge 79 以降
+
+
+. プラグインの読み取り / 書き込み権限を持つユーザアカウントで vSphere Client にログインします。
+. vSphere Client のホームページで、 * SANtricity Storage Plugin for vCenter * をクリックします。
++
+vSphere Client ウィンドウにプラグインが開きます。プラグインのメインページが開き、 * Manage-All * が表示されます。
+
+. 左側のナビゲーションサイドバーからストレージ管理タスクにアクセスします。
++
+** * 管理 * –ネットワーク内のストレージ・アレイの検出 ' アレイの System Manager の起動 ' アレイから複数のアレイへの設定のインポート ' アレイ・グループの管理 'OS ソフトウェアのアップグレード ' ストレージのプロビジョニングを行います
+** * 証明書管理 * –ブラウザとクライアント間で認証するための証明書を管理します。
+** * 操作 * - あるアレイから別のアレイへの設定のインポートなど、バッチ操作の進行状況を表示します。
+** * サポート * –テクニカルサポートのオプション、リソース、連絡先を表示します。
+
+
+

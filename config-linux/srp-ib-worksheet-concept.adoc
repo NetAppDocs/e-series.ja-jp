@@ -1,0 +1,96 @@
+---
+permalink: config-linux/srp-ib-worksheet-concept.html 
+sidebar: sidebar 
+keywords: SRP over Infiniband worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: このワークシートを使用して、 SRP over InfiniBand ストレージの構成情報を記録します。 
+---
+= SRP over IB の設定を記録します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+このページの PDF を生成して印刷し、次のワークシートを使用して SRP over InfiniBand ストレージの設定情報を記録できます。この情報は、プロビジョニングタスクを実行する際に必要になります。
+
+image::../media/port_identifiers_ib_srp.gif[port identifiers ib srp]
+
+
+
+== ホスト識別子
+
+
+NOTE: イニシエータの GUID は、タスクで特定します。 xref:srp-ib-determine-host-port-guids-task.adoc[ホストポートの GUID を特定し、推奨設定を適用します]。
+
+|===
+| 番号 | ホスト（イニシエータ）ポート接続 | GUID 
+
+
+ a| 
+1.
+ a| 
+ホスト
+ a| 
+_ 該当なし _
+
+
+
+ a| 
+3.
+ a| 
+スイッチ
+ a| 
+_ 該当なし _
+
+
+
+ a| 
+4.
+ a| 
+ターゲット（ストレージアレイ）
+ a| 
+_ 該当なし _
+
+
+
+ a| 
+2.
+ a| 
+ホストポート 1 から IB スイッチ 1 （「 A 」パス）
+ a| 
+
+
+
+ a| 
+5.
+ a| 
+ホストポート 2 から IB スイッチ 2 （「 B 」パス）
+ a| 
+
+|===
+
+
+== 推奨される構成
+
+推奨構成は、 2 つのイニシエータポートと 4 つのターゲットポートで構成されます。
+
+
+
+== マッピングホスト名
+
+
+NOTE: マッピングホスト名はワークフロー中に作成されます。
+
+|===
+
+
+ a| 
+マッピングホスト名
+ a| 
+
+
+
+ a| 
+ホスト OS タイプ
+ a| 
+
+|===

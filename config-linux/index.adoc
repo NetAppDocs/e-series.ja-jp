@@ -1,0 +1,45 @@
+---
+permalink: config-linux/index.html 
+sidebar: sidebar 
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: E シリーズシステムを使用する Linux ホストの簡単な設定を使用します。 
+---
+= Linux の簡単な設定の概要
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ストレージアレイをインストールして SANtricity System Manager にアクセスするための Linux の簡単な方法は、 E シリーズストレージシステムにスタンドアロンの Linux ホストをセットアップする場合に適しています。最低限の選択で可能なかぎり迅速にストレージシステムの運用を開始できるように設計されています。
+
+
+
+=== 手順の概要
+
+Linux のクイック方式で実行する手順は次のとおりです。
+
+. 次のいずれかの通信環境を設定します。
++
+** Fibre Channel （ FC ；ファイバチャネル）
+** iSCSI
+** （ SAS ）。
+** iSER over InfiniBand
+** SRP over InfiniBand の場合
+** NVMe over InfiniBand
+** NVMe over RoCE
+** NVMe over Fibre Channel の 2 つのプロトコルがサポート
+
+
+. ストレージアレイに論理ボリュームを作成します。
+. ボリュームがデータホストに表示されるようにします。
+
+
+
+
+=== 詳細については、こちらをご覧ください
+
+* オンラインヘルプ -- SANtricity System Manager を使用して構成とストレージ管理タスクを実行する方法について説明します製品内で使用できます。
+* https://kb.netapp.com/["ネットアップナレッジベース"^] （記事のデータベース） - トラブルシューティング情報、 FAQ 、ネットアップのさまざまな製品とテクノロジの説明を掲載しています。
+* http://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] -- ネットアップが指定した基準と要件を満たすネットアップの製品とコンポーネントの構成を検索できます
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2547936["『 Linux Unified Host Utilities 7.1 Installation Guide 』"^] -- Linux Unified Host Utilities 7.1 の使用方法について説明します。
+

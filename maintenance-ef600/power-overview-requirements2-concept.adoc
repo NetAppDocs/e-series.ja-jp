@@ -1,0 +1,17 @@
+---
+permalink: maintenance-ef600/power-overview-requirements2-concept.html 
+sidebar: sidebar 
+keywords: replace EF300 power supply, replace EF600 power supply, 
+summary: EF300 または EF600 の電源装置を交換する前に、要件と考慮事項を確認します。 
+---
+= EF300 または EF600 電源装置の交換に際しての要件
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+EF300 または EF600 アレイの電源装置を交換する前に、次の要件を確認します。
+
+* コントローラシェルフまたはドライブシェルフのモデルに対応した交換用電源装置を用意しておく必要があります。
+* ESD リストバンドを装着するか、静電気防止処置を施しておく必要があります。
+

@@ -1,0 +1,37 @@
+---
+permalink: getting-started/index.html 
+sidebar: sidebar 
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, 
+summary: このサイトには、 E シリーズの特定のリリース、モデル、およびコンポーネントに関する情報が掲載されています。 
+---
+= このサイトの内容
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+このサイトには、 E シリーズの特定のリリース、モデル、およびコンポーネントに関する情報が掲載されています。
+
+|===
+| 含まれるもの | 含まれていない内容（ _NOT included ） 
+
+
+ a| 
+このサイトには、次のリリースおよびコンポーネントタイプに関する情報が含まれています。
+
+* * SANtricity ソフトウェア * -- バージョン 11.50 以降。
+* * コントローラファームウェア * - バージョン 8.50 以降
+* * コントローラタイプ * - E2800 、 EF280 、 EF300 、 E5700 、 EF570 EF600 モデル：
+* * インターフェイスタイプ * - Fibre Channel 、 iSCSI 、 iSER 、 SAS 、 NVMe
+* * ホストにインストールされているオペレーティング・システム * -- Linux 、 VMware 、 Windows 。
++
+
+NOTE: その他のインターフェイスやオペレーティングシステムもサポートされている場合があります。詳細については、テクニカルサポートにお問い合わせください。
+
+
+ a| 
+このサイトは、ソフトウェアバージョン 11.50 より古いリリースとファームウェアバージョン 8.50 より古いリリースに関する情報を提供していません。以前のリリースについては、を参照してください https://www.netapp.com/us/documentation/eseries-santricity.aspx["E シリーズおよび SANtricity のドキュメントリソース"^] ページ
+
+サイト準備要件の詳細については、を参照してください https://hwu.netapp.com/["NetApp Hardware Universe の略"^]。
+
+|===

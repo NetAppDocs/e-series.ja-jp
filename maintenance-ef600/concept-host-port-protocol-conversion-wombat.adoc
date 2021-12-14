@@ -1,0 +1,13 @@
+---
+permalink: maintenance-ef600/concept-host-port-protocol-conversion-wombat.html 
+sidebar: sidebar 
+keywords: convert, protocol, host, compatibility, connection, infrastructure, conversion 
+summary: ホストのプロトコルを別のプロトコルに変換して互換性を確保したり、ホスト接続のプロトコルをインフラのニーズに合わせて別のプロトコルに変換したりできます。 
+---
+= ホストポートプロトコルを変更します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ホストのプロトコルを別のプロトコルに変換して互換性を確保したり、ホスト接続のプロトコルをインフラのニーズに合わせて別のプロトコルに変換したりできます。

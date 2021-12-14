@@ -1,0 +1,30 @@
+---
+permalink: config-linux/iser-ib-setup-multipath-conf-file-concept.html 
+sidebar: sidebar 
+keywords: multipath.conf file, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: multipath.conf ファイルは、マルチパスデーモン multipathd の構成ファイルです。 
+---
+= multipath.conf ファイルをセットアップします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+multipath.conf ファイルは、マルチパスデーモン multipathd の構成ファイルです。
+
+multipath.conf ファイルは、 multipathd の組み込みの構成テーブルよりも優先されます。空白を含まない最初の文字 # を含むファイル内の行は、コメント行とみなされます。
+
+
+NOTE: SANtricity OS 8.30 以降では、デフォルト設定をそのまま使用することを推奨します。
+
+multipath.conf ファイルは、次の場所にあります。
+
+* SLES の場合：
++
+/usr/share/doc/packages/multipath-tools/multipath.conf Synthetic
+
+* RHEL の場合：
++
+/usr/share/doc/device-mapper-multipath-0.4.9/multipath.conf
+
+

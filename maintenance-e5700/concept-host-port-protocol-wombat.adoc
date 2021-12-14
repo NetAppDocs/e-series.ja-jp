@@ -1,0 +1,13 @@
+---
+permalink: maintenance-e5700/concept-host-port-protocol-wombat.html 
+sidebar: sidebar 
+keywords: convert, protocol, host, compatibility, communication, establish, port 
+summary: 互換性と通信の確立のために、ホストのプロトコルを別のプロトコルに変換することができます。 
+---
+= ホストポートプロトコル
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+互換性と通信の確立のために、ホストのプロトコルを別のプロトコルに変換することができます。

@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: rackmount-hardware.html 
+keywords: rackmount, rack-mount, install in rack, rails 
+summary: ハードウェアをラックに設置します。 
+---
+= ラックマウントハードウェア
+
+
+[role="lead"]
+ラックマウントハードウェアの設置方法については、次のリンク先のマニュアルを参照してください。
+
+
+
+== 調整可能なサポートレール
+
+にアクセスします https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1652045["アジャスタブル支持レールの設置"^] 別途出荷された（キャビネットに取り付けられていない）コントローラドライブトレイまたはドライブトレイの取り付け用。この手順は、次の 2U （ 9 cm または 3.5 インチ）トレイに適用できます。
+
+* DE1600 または DE5600
+* E2612 または E2624
+* E5412 、 E5424 、 E5512 、または E5524
+
+
+
+
+== 2 ポストラック● 2U
+
+にアクセスします https://mysupport.netapp.com/ecm/ecm_download_file/ECMM1280302["2 ポストラックへの 2U 装置の設置"^]。
+
+
+
+== 4 ポストラックまたはキャビネット— 2U
+
+にアクセスします https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2484194["4 ポストラックまたはキャビネットに 2U 12 ドライブエンクロージャを設置する"^]。
+
+
+
+== 4 ポストラック— SuperRail
+
+にアクセスします http://docs.netapp.com/platstor/topic/com.netapp.doc.hw-rail-superrail/home.html["4 ポストラックへの SuperRail の設置（ DE224C / DE460C シェルフ）"^]。

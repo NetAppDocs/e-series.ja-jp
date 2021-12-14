@@ -1,0 +1,35 @@
+---
+permalink: config-linux/fc-determine-host-port-wwpns-task.html 
+sidebar: sidebar 
+keywords: host wwpn, HBA utility, express linux configuration, software configuration, linux host, 
+summary: FC HBA ユーティリティをインストールして、各ホストポートの World Wide Port Name （ WWPN ；ワールドワイドポート名）を確認します。また、 HBA ユーティリティを使用して、サポートされる構成の NetApp Interoperability Matrix Tool の Notes 列に推奨される設定を変更することもできます。 
+---
+= ホストの WWPN を特定し、推奨設定を適用します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+FC HBA ユーティリティをインストールして、各ホストポートの World Wide Port Name （ WWPN ）を確認できるようにします。
+
+また、 HBA ユーティリティを使用して、の Notes 列に推奨される設定を変更することもできます https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] を参照してください。
+
+HBA ユーティリティについては、次のガイドラインを確認してください。
+
+* ほとんどの HBA ベンダーは HBA ユーティリティを提供しています。使用するホストオペレーティングシステムと CPU に対応した正しいバージョンの HBA が必要です。FC HBA ユーティリティには次のようなものがあります。
++
+** Emulex HBA 用の Emulex OneCommand Manager
+** QLogic HBA 用の QLogic QConverge コンソール
+
+
+* Host Context Agent がインストールされている場合、ホストの I/O ポートは自動的に登録されることがあります。
+
+
+.手順
+. HBA ベンダーの Web サイトから該当するユーティリティをダウンロードします。
+. ユーティリティをインストールします。
+. HBA ユーティリティで適切な設定を選択します。
++
+構成に適した設定は、の Notes 列に表示されます https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]。
+
+

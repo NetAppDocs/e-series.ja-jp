@@ -1,0 +1,90 @@
+---
+permalink: config-linux/sas-configure-multipath-software-task.html 
+sidebar: sidebar 
+keywords: multipath software for Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: マルチパスソフトウェアを設定します。これにより、物理パスの 1 つが中断された場合にストレージアレイへのパスが冗長化されます。 
+---
+= マルチパスソフトウェアを設定します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ストレージアレイへのパスを冗長化するには、マルチパスソフトウェアを設定します。
+
+必要なパッケージをシステムにインストールする必要があります。
+
+* Red Hat （ RHEL ）ホストの場合、パッケージがインストールされていることを確認するには、「 rpm -q device-mapper-multipath 」を実行します。
+* SLES ホストの場合 'rpm -q multipath-tools' を実行してパッケージがインストールされていることを確認します
+
+
+オペレーティングシステムがまだインストールされていない場合は、オペレーティングシステムのベンダーから提供されたメディアを使用してください。
+
+マルチパスソフトウェアは、物理パスの 1 つが中断された場合に備えて、ストレージアレイへのパスを冗長化します。マルチパスソフトウェアは、ストレージへのアクティブな物理パスを 1 つの仮想デバイスとしてオペレーティングシステムに提示します。また、フェイルオーバープロセスも管理して仮想デバイスを更新します。
+
+Linux 環境では、 Device Mapper Multipath （ DM-MP ）ツールを使用します。RHEL および SLES では、デフォルトでは DM-MP は無効になっています。ホストで DM-MP コンポーネントを有効にするには、次の手順を実行します。
+
+.手順
+. multipath.conf ファイルがまだ作成されていない場合は、「 # touch /etc/multipath.conf 」コマンドを実行します。
+. multipath.conf ファイルを空白のままにして、デフォルトのマルチパス設定を使用します。
+. マルチパスサービスを開始します。
++
+[listing]
+----
+# systemctl start multipathd
+----
+. uname -r コマンドを実行して ' カーネル・バージョンを保存します
++
+[listing]
+----
+# uname -r
+3.10.0-327.el7.x86_64
+----
++
+この情報は、ホストにボリュームを割り当てるときに使用します。
+
+. 起動時に「マルチパス」デーモンを有効にするには、次のいずれかの操作を行います。
++
+|===
+| 使用する場合 | 手順 
+
+
+ a| 
+RHEL 7.x および 8.x システム：
+ a| 
+'systemctl enable multipathd
+
+
+
+ a| 
+SLES 12.x および 15.x システム：
+ a| 
+'systemctl enable multipathd
+
+|===
+. initramfs イメージまたは initrd イメージを '/boot ディレクトリの下に再構築します
++
+|===
+| 使用する場合 | 手順 
+
+
+ a| 
+RHEL 7.x および 8.x システム：
+ a| 
+「 racut --force -- マルチパスの追加」
+
+
+
+ a| 
+SLES 12.x および 15.x システム：
+ a| 
+「 racut --force -- マルチパスの追加」
+
+|===
+. ブート構成ファイルで、新しく作成した /boot/initrams-* イメージまたは /boot/initrd-* イメージが選択されていることを確認します。
++
+たとえば 'grub の場合は '/boot/grub/menu.lst' で 'grub2 の場合は '/boot/grub2/menu.cfg です
+
+. オンラインヘルプの「 Create host manually 」手順を使用して、ホストが定義されているかどうかを確認します。自動ロードバランシング機能を有効にする場合は、各ホストタイプが * Linux DM-MP （カーネル 3.10 以降） * であること、自動ロードバランシング機能を無効にする場合は * Linux DM-MP （カーネル 3.9 以前） * であることを確認してください。必要に応じて、選択したホストタイプを適切な設定に変更します。
+. ホストをリブートします。
+

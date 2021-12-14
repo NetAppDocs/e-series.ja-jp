@@ -1,0 +1,133 @@
+---
+permalink: cloud-connector/modify-intro-concept.html 
+sidebar: sidebar 
+keywords: Cloud Connector settings 
+summary: SANtricity Cloud Connector アプリケーションの左ナビゲーションパネルで、設定オプションにアクセスできます。Settings オプションでは、 S3 アカウント、管理対象のストレージアレイとホスト、および Web Services Proxy クレデンシャルのアプリケーションの現在の設定を変更できます。SANtricity Cloud Connector アプリケーションのパスワードは、設定オプションを使用して変更することもできます。 
+---
+= SANtricity クラウドコネクタの設定を変更します
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Settings オプションでは、 S3 アカウント、管理対象のストレージアレイとホスト、および Web Services Proxy クレデンシャルのアプリケーションの現在の設定を変更できます。SANtricity Cloud Connector アプリケーションのパスワードは、設定オプションを使用して変更することもできます。
+
+
+
+== S3 アカウントの設定を変更します
+
+SANtricity Cloud Connector アプリケーションの既存の S3 設定は、 S3 Account Settings ウィンドウで変更できます。
+
+URL または S3 バケットラベルの設定を変更すると、 SANtricity Cloud Connector で設定された既存のバックアップへのアクセスに影響する点に注意してください。
+
+.手順
+. 左側のツールバーで、 * Settings > Configuration * をクリックします。
++
+設定 - 設定ページが表示されます。
+
+. S3 アカウント設定の「 * 表示 / 設定の編集」をクリックします。
++
+S3 Account Settings ページが表示されます。
+
+. URL ファイルに、 S3 クラウドサービスの URL を入力します。
+. Access Key ID * フィールドに、 S3 ターゲットのアクセス ID を入力します。
+. 「 * Secret Access Key * 」フィールドに、 S3 ターゲットのアクセスキーを入力します。
+. S3 Bucket Name * フィールドに、 S3 ターゲットのバケット名を入力します。
+. 必要に応じて、 [ パススタイルアクセスを使用（ * Use Path Style Access * ） ] チェックボックスを選択します。
+. Test Connection * をクリックして、入力した S3 クレデンシャルの接続を確認します。
+. [ 保存（ Save ） ] をクリックして、修正を適用する。
++
+変更した S3 アカウント設定が適用されます。
+
+
+
+
+
+== ストレージアレイを管理します
+
+ストレージアレイの管理ページで、 SANtricity Cloud Connector ホストに登録された Web サービスプロキシからストレージアレイを追加または削除できます。
+
+ストレージアレイの管理ページに、 SANtricity Cloud Connector ホストへの登録に使用できる Web サービスプロキシのストレージアレイのリストが表示されます。
+
+.手順
+. 左側のツールバーで、 * Settings > Storage Arrays * をクリックします。
++
+Settings - Storage Arrays （設定 - ストレージアレイ）画面が表示されます。
+
+. SANtricity Cloud Connector にストレージアレイを追加するには、 * Add * をクリックします。
++
+.. Add Storage Arrays （ストレージアレイの追加）ウィンドウで、結果リストから目的のストレージアレイの横にある各チェックボックスをオンにします。
+.. [ 追加（ Add ） ] をクリックします。
++
+選択したストレージアレイが SANtricity クラウドコネクタに追加され、 [Settings] - [Storage Arrays] 画面の [Result] リストセクションに表示されます。
+
+
+
+. 追加したストレージアレイのホストを変更するには、 Settings - Storage Arrays （設定 - ストレージアレイ）画面の結果リストセクションにある行アイテムの * Edit * （編集）をクリックします。
++
+.. 関連付けられているホストドロップダウンメニューで、ストレージアレイのホストを選択します。
+.. [ 保存（ Save ） ] をクリックします。
++
+選択したホストがストレージアレイに割り当てられます。
+
+
+
+. SANtricity Cloud Connector ホストから既存のストレージアレイを削除するには、下部の結果リストから目的のストレージアレイを選択し、 * Remove * をクリックします。
++
+.. [ ストレージアレイの削除の確認 ] フィールドに「 re move 」と入力します。
+.. [ 削除（ Remove ） ] をクリックします。
++
+選択したストレージアレイが SANtricity Cloud Connector ホストから削除されます。
+
+
+
+
+
+
+
+== Web Services Proxy の設定を変更
+
+SANtricity Cloud Connector アプリケーションの既存の Web サービスプロキシ設定は、 Web Services Proxy Settings ウィンドウで変更できます。
+
+SANtricity Cloud Connector で使用する Web サービスプロキシに適切なアレイが追加されていて、対応するパスワードが設定されている必要があります。
+
+.手順
+. 左側のツールバーで、 * MENU ： Settings （設定） [Configuration]* をクリックします。
++
+Settings - Configuration （設定 - 設定）画面が表示されます。
+
+. Web Services Proxy の [ 設定の表示 / 編集 ] をクリックします。
++
+Web Services Proxy の設定画面が表示されます。
+
+. [URL] フィールドに、 SANtricity Cloud Connector で使用する Web サービスプロキシの URL を入力します。
+. User Name フィールドに、 Web Services Proxy 接続のユーザ名を入力します。
+. Password フィールドに、 Web Services Proxy 接続のパスワードを入力します。
+. [ 接続のテスト * ] をクリックして、入力した Web Services Proxy クレデンシャルの接続を確認します。
+. [ 保存（ Save ） ] をクリックして、修正を適用する。
+
+
+
+
+== SANtricity Cloud Connector のパスワードを変更します
+
+SANtricity Cloud Connector アプリケーションのパスワードは、パスワードの変更画面で変更できます。
+
+.手順
+. 左側のツールバーで、 * MENU ： Settings （設定） [Configuration]* をクリックします。
++
+Settings - Configuration （設定 - 設定）画面が表示されます。
+
+. SANtricity Cloud Connector のパスワードの変更 * をクリックします。
++
+Change Password （パスワードの変更）画面が表示されます。
+
+. Current password フィールドに、 SANtricity Cloud Connector アプリケーションの現在のパスワードを入力します。
+. [ 新しいパスワード ] フィールドに、 SANtricity Cloud Connector アプリケーションの新しいパスワードを入力します。
+. [ 新しいパスワードの確認入力 ] フィールドに新しいパスワードを再入力します。
+. 新しいパスワードを適用するには、 [*Change] をクリックします。
++
+変更したパスワードが SANtricity Cloud Connector アプリケーションに適用されます。
+
+

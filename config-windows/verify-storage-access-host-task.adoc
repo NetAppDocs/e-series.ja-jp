@@ -1,0 +1,58 @@
+---
+permalink: config-windows/verify-storage-access-host-task.html 
+sidebar: sidebar 
+keywords: express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: ホストが LUN に対してデータを読み取りおよび書き込みできることを確認します。 
+---
+= ホストでストレージアクセスを確認
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ボリュームを使用する前に、ホストが LUN に対してデータの読み取りと書き込みを実行できることを確認します。
+
+LUN を初期化し、ファイルシステムでフォーマットしておく必要があります。
+
+.手順
+. 新しい LUN にファイルを作成して書き込みます。
++
+[listing]
+----
+> echo test file > f:\\test.txt
+----
+. ファイルを読み取り、データが書き込まれたことを確認します。
++
+[listing]
+----
+> type f:\\test.txt
+----
+. マルチパスが機能していることを確認するために、ボリューム所有権を変更します。
++
+.. SANtricity システム・マネージャの GUI から、 * ストレージ * > * ボリューム * に移動し、 * その他 * > * 所有権の変更 * を選択します。
+.. [ ボリューム所有権の変更 ] ダイアログ・ボックスで '[* 優先所有者 *] プルダウンを使用して ' リスト内のいずれかのボリュームの他のコントローラを選択し ' 操作を確定します
+.. 引き続き LUN のファイルにアクセスできることを確認します。
++
+[listing]
+----
+> dir f:\\
+----
+
+
+. ターゲット ID を検索します。
++
+
+NOTE: dsmUtil ユーティリティでは大文字と小文字が区別されます。
+
++
+[listing]
+----
+> C:\\Program Files \(x86\)\\DSMDrivers\\mppdsm\\dsmUtil.exe -a
+----
+. LUN へのパスを表示し、パスの数が想定どおりであることを確認します。コマンドの「 <target ID>` 」部分で、前の手順で見つかったターゲット ID を使用します。
++
+[listing]
+----
+> C:\\Program Files \(x86\)\\DSMDrivers\\mppdsm\\dsmUtil.exe –g <target ID\>
+----
+

@@ -1,0 +1,205 @@
+---
+permalink: config-vmware/nmve-fc-perform-specific-task.html 
+sidebar: sidebar 
+keywords: Nvme over FC, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: NVMe over Fibre Channel プロトコルを使用する場合は、スイッチを設定し、ホストポート識別子を特定します。 
+---
+= NVMe over FC 固有のタスクを実行する
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NVMe over Fibre Channel プロトコルを使用する場合は、スイッチを設定し、ホストポート識別子を特定します。
+
+
+
+== 手順 1 ： NVMe/FC スイッチを設定します
+
+NVMe over Fibre Channel （ FC ）スイッチを設定（ゾーニング）すると、ホストをストレージアレイに接続できるようになり、パスの数が制限されます。スイッチのゾーニングはスイッチの管理インターフェイスで設定します。
+
+.必要なもの
+* スイッチの管理者クレデンシャル。
+* 各ホストイニシエータポートの WWPN と、スイッチに接続されている各コントローラターゲットポートの WWPN 。（ HBA ユーティリティを使用して検出してください）。
+
+
+
+NOTE: ベンダーの HBA ユーティリティを使用して、 HBA に関する具体的な情報をアップグレードおよび取得することができます。HBA ユーティリティの入手方法については、ベンダーの Web サイトでサポートのセクションを参照してください。
+
+各イニシエータポートを別々のゾーンに配置し、各イニシエータに対応するターゲットポートをすべて配置する必要があります。スイッチのゾーニングの詳細については、スイッチベンダーのマニュアルを参照してください。
+
+.手順
+. FC スイッチの管理プログラムにログインし、ゾーニング設定のオプションを選択します。
+. 新しいゾーンを作成し、 1 つ目のホストイニシエータポート、およびそのイニシエータと同じ FC スイッチに接続するすべてのターゲットポートを配置します。
+. スイッチの FC ホストイニシエータごとにゾーンを作成します。
+. ゾーンを保存し、新しいゾーニング設定をアクティブ化します。
+
+
+
+
+== 手順 2 ：ホストポートの WWPN を特定する—最初の NVMe / FC VMware
+
+FC ゾーニングを設定するためには、各イニシエータポートの World Wide Port Name （ WWPN ）を特定する必要があります。
+
+.手順
+. SSH または ESXi シェルを使用して ESXi ホストに接続します。
+. 次のコマンドを実行します。
++
+[listing]
+----
+esxcfg-scsidevs –a
+----
+. イニシエータ識別子を記録します。次のような出力が表示されます。
++
+[listing]
+----
+vmhba3 lpfc link-up  fc.20000090fa05e848:10000090fa05e848 (0000:03:00.0)
+Emulex Corporation Emulex LPe16000 16Gb PCIe Fibre Channel Adapter
+vmhba4 lpfc link-up  fc.20000090fa05e849:10000090fa05e849 (0000:03:00.1)
+Emulex Corporation Emulex LPe16000 16Gb PCIe Fibre Channel Adapter
+----
+
+
+
+
+== 手順 3 ： HBA ドライバを有効にします
+
+Broadcom / Emulex および Marvell / Qlogic HBA ドライバで NVMe のサポートが有効になっている必要があります。
+
+.手順
+. ESXi シェルから次のいずれかのコマンドを実行します。
++
+** * Broadcom/Emulex HBA ドライバ *
++
+[listing]
+----
+esxcli system module parameters set -m lpfc -p "lpfc_enable_fc4_type=3"
+----
+** * Marvell ／ Qlogic HBA ドライバ *
++
+[listing]
+----
+esxcfg-module -s "ql2xnvmesupport=1" qlnativefc
+----
+
+
+. ホストをリブートします。
+
+
+
+
+== 手順 4 ：構成を記録する
+
+このページの PDF を生成して印刷し、次のワークシートを使用して NVMe over Fibre Channel ストレージの構成情報を記録できます。この情報は、プロビジョニングタスクを実行する際に必要になります。
+
+次の図では、 2 つのゾーンでホストが E シリーズストレージアレイに接続されています。一方のゾーンは青い線で示され、もう一方のゾーンは赤い線で示されます。各ゾーンには、 1 つのイニシエータポートとすべてのターゲットポートが含まれます。
+
+image::../media/port_identifiers_host_and_target_conf-vmw.gif[ポート識別子 host および target conf vmw]
+
+
+
+=== ホスト識別子
+
+|===
+| 番号 | ホスト（イニシエータ）ポート接続 | WWPN 
+
+
+ a| 
+1.
+ a| 
+ホスト
+ a| 
+_ 該当なし _
+
+
+
+ a| 
+2.
+ a| 
+ホストポート 0 から FC スイッチゾーン 0
+ a| 
+
+
+
+ a| 
+7.
+ a| 
+ホストポート 1 から FC スイッチゾーン 1
+ a| 
+
+|===
+
+
+=== ターゲット識別子
+
+|===
+| 番号 | アレイコントローラ（ターゲット）ポート接続 | WWPN 
+
+
+ a| 
+3.
+ a| 
+スイッチ
+ a| 
+_ 該当なし _
+
+
+
+ a| 
+6.
+ a| 
+アレイコントローラ（ターゲット）
+ a| 
+_ 該当なし _
+
+
+
+ a| 
+5.
+ a| 
+コントローラ A のポート 1 から FC スイッチ 1
+ a| 
+
+
+
+ a| 
+9.
+ a| 
+コントローラ A のポート 2 から FC スイッチ 2
+ a| 
+
+
+
+ a| 
+4.
+ a| 
+コントローラ B のポート 1 から FC スイッチ 1
+ a| 
+
+
+
+ a| 
+8.
+ a| 
+コントローラ B のポート 2 から FC スイッチ 2
+ a| 
+
+|===
+
+
+=== マッピングホスト
+
+|===
+
+
+ a| 
+マッピングホスト名
+ a| 
+
+
+
+ a| 
+ホスト OS タイプ
+ a| 
+
+|===

@@ -1,0 +1,40 @@
+---
+permalink: maintenance-e2800/batteries-reinstall-controller-canister-task.html 
+sidebar: sidebar 
+keywords: E2800 battery fail, E2800 battery, E2800 battery replacement, replace E2800 battery, replacing E2800 battery, E2800, E-Series, eseries 
+summary: 新しいバッテリを取り付けたら、コントローラキャニスターをコントローラシェルフに再度取り付けます。 
+---
+= E2800 コントローラキャニスターを再度取り付けます
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+新しいバッテリを取り付けたあと、コントローラキャニスターをコントローラシェルフに再度取り付けます。
+
+.手順
+. カチッという音がしてボタンが固定されるまでカバーを前方から後方にスライドして、コントローラキャニスターにカバーを再度取り付けます。
+. 取り外し可能なカバーが下になるようにコントローラキャニスターを裏返します。
+. カムハンドルを開いた状態でコントローラキャニスターをスライドし、コントローラシェルフに最後まで挿入します。
++
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[28 dwg e2824 controller キャニスタ maint e2800 を削除します]
+
++
+* （ 1 ） * _ コントローラキャニスター _
+
++
+* （ 2 ） * _CAM ハンドル _
+
++
+image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[28 dwg e2860 add controller キャニスタ maint e2800]
+
++
+* （ 1 ） * _ コントローラキャニスター _
+
++
+* （ 2 ） * _CAM ハンドル _
+
+. カムハンドルを左側に動かして、コントローラキャニスターを所定の位置にロックします。
+. すべてのケーブルを再接続します。
+. に進みます link:batteries-complete-replacement-task.html["E2800 バッテリの交換後の処理"]。
+
