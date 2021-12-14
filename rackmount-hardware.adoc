@@ -37,4 +37,4 @@ summary: ハードウェアをラックに設置します。
 
 == 4 ポストラック— SuperRail
 
-にアクセスします http://docs.netapp.com/platstor/topic/com.netapp.doc.hw-rail-superrail/home.html["4 ポストラックへの SuperRail の設置（ DE224C / DE460C シェルフ）"^]。
+にアクセスします https://docs.netapp.com/us-en/ontap-systems/platform-supplemental/superrail-install.html["4 ポストラックへの SuperRail の設置（ DE224C / DE460C シェルフ）"^]。
