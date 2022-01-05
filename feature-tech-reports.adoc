@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: feature-tech-reports.html 
+keywords: feature technical reports, e-series, hardware, santricity, os 
+summary: E シリーズのテクニカルレポート 
+---
+= 注目のテクニカルレポートを参照できます
+
+
+
+
+== 機能 TR
+
+[cols="9,9,9"]
+|===
+
+
+| https://www.netapp.com/pdf.html?item=/media/28697-tr-4893-deploy.pdf["* TR-4893 ： SANtricity リモート・ストレージ・ボリューム *"^] | https://www.netapp.com/pdf.html?item=/media/19405-tr-4839.pdf["* TR-4839 ：『 SANtricity Synchronous and Asynchronous Mirroring 』"^] | https://www.netapp.com/pdf.html?item=/media/17167-tr4747pdf.pdf["* TR-4747 ：『 SANtricity Snapshot Feature Overview and Deployment Guide 』 *"^] 
+
+
+| 解決策のアーキテクチャ、および E シリーズストレージシステムを使用して既存のリモートストレージデバイスからデータをインポートする方法について説明します。 | SANtricity の同期ミラーリング機能と非同期ミラーリング機能について説明します。 | SANtricity System Manager を使用した GUI の操作方法など、 SANtricity の Snapshot 機能について説明します。 
+
+
+|  |  |  
+
+
+|  |  |  
+
+
+| https://www.netapp.com/ko/media/12421-tr4652.pdf["* TR-4652 ：『 SANtricity Dynamic Disk Pools * 』"^] | https://www.netapp.com/pdf.html?item=/media/17144-tr4737pdf.pdf["* TR-4737 ：『 SANtricity Automatic Load Balancing * 』"^] | https://www.netapp.com/pdf.html?item=/media/17142-tr4736pdf.pdf["* TR-4736 ：『 SANtricity Web Services API * 』"^] 
+
+
+| ストレージ管理者が、同様のディスクのセットをプールトポロジにグループ化し、プール内のすべてのドライブを I/O ワークフローに含める方法について説明します。 | ALB 機能の動作の概要、主な設定パラメータ、およびホストの相互運用性の強化について説明します。 | SANtricity Web サービスの概要について説明します。 E シリーズストレージシステムの設定と管理に使用する API です。 
+|===

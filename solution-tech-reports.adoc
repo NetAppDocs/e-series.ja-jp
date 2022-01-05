@@ -1,0 +1,86 @@
+---
+sidebar: sidebar 
+permalink: solution-tech-reports.html 
+keywords: solution technical reports, e-series, hardware, santricity, os 
+summary: E シリーズのテクニカルレポート 
+---
+= 解決策テクニカルレポートを参照できます
+
+
+
+
+== Splunk
+
+[cols="9,1,9,1,9"]
+|===
+
+
+| https://www.netapp.com/pdf.html?item=/media/16851-tr-4623pdf.pdf["* TR-4623 ：『 E5700 with Splunk Enterprise * 』"^] |  | https://www.netapp.com/media/57104-tr-4903.pdf["* TR-4903 ：『 EF300 with Splunk Enterprise * 』を参照してください"^] |  |  
+
+
+| E5700 システムと Splunk の設計を統合したアーキテクチャについて説明します。また、 Splunk のマシンログイベントシミュレーションツールから取得したパフォーマンステスト結果もまとめています。 |  | EF300 オールフラッシュアレイと Splunk 設計の統合アーキテクチャについて説明します。また、 Splunk のマシンログイベントシミュレーションツールから取得したパフォーマンステスト結果もまとめています。 |  |  
+|===
+
+
+== エンタープライズデータベース
+
+[cols="9,9,9"]
+|===
+
+
+| https://www.netapp.com/pdf.html?item=/media/17086-tr4764pdf.pdf["* TR-4764 ：『 Best Practice Guide for Microsoft SQL Server with NetApp EF Series * 』"^] | https://www.netapp.com/pdf.html?item=/media/17248-tr4794pdf.pdf["* TR-4794 ：『 Oracle Databases on NetApp EF Series * 』"^] |  
+
+
+| ストレージ管理者とデータベース管理者が NetApp EF シリーズストレージに Microsoft SQL Server を導入する際に役立ちます。 | ストレージ管理者とデータベース管理者が Oracle を NetApp EF シリーズストレージに導入する際に役立ちます。 |  
+|===
+
+
+== バックアップとリカバリ
+
+[cols="9,9,9"]
+|===
+
+
+| https://www.netapp.com/pdf.html?item=/media/17042-tr4320pdf.pdf["* TR-4320 ：『 Best Practices with Commvault Data Platform V11 * 』を参照してください"^] | https://www.netapp.com/pdf.html?item=/media/17159-tr4471pdf.pdf["* TR-4471 ：『 Best Practices with Veeam Backup and Replication 』を参照してください"^] | https://www.netapp.com/pdf.html?item=/media/16433-tr-4704pdf.pdf["* TR-4704 ：『 Deploying Veritas NetBackup with NetApp E-Series Storage * 』"^] 
+
+
+| Commvault Data Platform V11 環境で NetApp E シリーズストレージを使用する際のリファレンスアーキテクチャとベストプラクティスについて説明します。 | Veeam Backup & Replication 9.5 環境で NetApp E シリーズストレージを使用する際のリファレンスアーキテクチャとベストプラクティスについて説明します。 | NetApp E シリーズストレージへの Veritas NetBackup の導入について説明します。 
+|===
+
+
+== VSS
+
+[cols="9,9,9"]
+|===
+
+
+| https://www.netapp.com/pdf.html?item=/media/17200-tr4825pdf.pdf["* TR-4725 ：『 NetApp E-Series for Video Surveillance Best Practice Guide 』 * を参照してください"^] | https://www.netapp.com/pdf.html?item=/media/6143-tr4818pdf.pdf["* TR-4818 ：『 Virtualizing Video Management Systems with NetApp E-Series Storage * 』"^] | https://www.netapp.com/pdf.html?item=/media/19400-tr-4848.pdf["* TR-4848 ：『 Bosch Video Recording 解決策 with NetApp E-Series E2800 Disk Storage Array 』"^] 
+
+
+| E シリーズアレイをビデオ監視環境に導入するためのベストプラクティスについて説明します。 | NetApp E シリーズストレージでビデオ管理システムを設計および導入する方法について説明します。 | ビデオ監視解決策アーキテクチャについて説明し、コンポーネントとストレージのベストプラクティスの詳細を示します。 
+|===
+
+
+== HPC
+
+[cols="9,9,9"]
+|===
+
+
+| https://www.netapp.com/pdf.html?item=/media/31665-tr-4884.pdf["* TR-4884 ：『 Entry-level HPC systems with NetApp E-Series and IBM Spectrum Scale 』 *"^] | https://www.netapp.com/pdf.html?item=/media/22029-tr-4859.pdf["* TR-4859 ：『 Deploying IBM Spectrum Scale with NetApp E-Series Storage 』"^] | https://www.netapp.com/pdf.html?item=/media/19407-tr-4856-deploy.pdf["* TR-4856 ：『 BeeGFS High Availability with E-Series using Red Hat Enterprise Linux Server* 』"^] 
+
+
+| NetApp E シリーズストレージシステムと IBM Spectrum Scale を基盤としたエントリレベル HPC システムのリファレンスアーキテクチャについて説明している。 | IBM の Spectrum Scale ソフトウェアスタックに基づいて、フル並列ファイルシステムの解決策を導入するプロセスについて説明します。 | NetApp E シリーズシステムにサポートされる BeeGFS アーキテクチャにハイアベイラビリティを実装し、 BeeGFS ストレージ、メタデータ、管理サービスに RedHat Enterprise Linux を使用するために必要な構成について説明します。 
+
+
+|  |  |  
+
+
+|  |  |  
+
+
+| https://www.netapp.com/pdf.html?item=/media/19431-tr-4862.pdf["* TR-4862 ： SUSE Linux Enterprise Server * を使用した E シリーズでの BeeGFS 高可用性"^] |  |  
+
+
+| NetApp E シリーズシステムを基盤とし、 BeeGFS ストレージ、メタデータ、管理サービスに SUSE Linux Enterprise Server を使用する BeeGFS アーキテクチャに高可用性を実装するために必要な構成について説明します。 |  |  
+|===

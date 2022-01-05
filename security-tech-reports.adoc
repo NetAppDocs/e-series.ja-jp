@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: security-tech-reports.html 
+keywords: security technical reports, e-series, hardware, santricity, os 
+summary: E シリーズのテクニカルレポート 
+---
+= セキュリティに関するテクニカルレポートを参照できます
+
+
+
+
+== セキュリティ TR
+
+[cols="9,9,9"]
+|===
+
+
+| https://www.netapp.com/pdf.html?item=/media/17162-tr4474pdf.pdf["* TR-4474 『 SANtricity Drive Security Feature Guide 』"] | https://www.netapp.com/pdf.html?item=/media/17079-tr4712pdf.pdf["* TR-4712 ：『 SANtricity Management Security Features * 』"] | https://www.netapp.com/pdf.html?item=/media/17218-tr4813pdf.pdf["* TR-4813 ：『 Managing Certificates for E-Series Systems 』 *"] 
+
+
+| FIPS 140-2 認定ドライブのサポート、内部と外部の両方のキー管理のサポートなど、 E シリーズシステムの完全なディスク暗号化機能について説明します。 | NetApp E シリーズ E2800 、 E5700 、 EF280 、 EF570 、 EF300 、 SANtricity のセキュリティ機能について説明します。 および EF600 ストレージシステム： | 最新の E シリーズコントローラおよびアプリケーションでセキュリティ証明書を管理する方法について説明します。 
+
+
+|  |  |  
+
+
+|  |  |  
+
+
+| https://www.netapp.com/pdf.html?item=/media/19422-tr-4855.pdf["* TR-4855 ：『 Security Hardening Guide for SANtricity * 』"] | https://www.netapp.com/media/19404-tr-4853.pdf["* TR-4853 ：『 Access Management for E-Series Systems 』"] |  
+
+
+| 情報システムの機密性、整合性、および可用性に関する規定のセキュリティ目標を満たすために SANtricity を導入する方法について説明します。 | ロールベースアクセス制御（ RBAC ）、 Lightweight Directory Access Protocol （ LDAP ）、 Security Assertion Markup Language （ SAML ）などのアクセス管理の設定方法について説明します。 |  
+|===

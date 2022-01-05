@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: platform-tech-reports.html 
+keywords: platform technical reports, e-series, hardware, santricity, os 
+summary: E シリーズのテクニカルレポート 
+---
+= プラットフォームのテクニカルレポートを参照できます
+
+
+
+
+== プラットフォーム TR
+
+[cols="9,9,9"]
+|===
+
+
+| https://www.netapp.com/pdf.html?item=/media/17026-tr4725pdf.pdf["* TR-4725 ：『 E2800 Arrays feature overview 』 *"] | https://www.netapp.com/pdf.html?item=/media/17120-tr4724pdf.pdf["*+++TR-4724 ： E5700 アレイの概要 ++*"] | https://www.netapp.com/pdf.html?item=/media/21363-tr-4877.pdf["*++++TR-487: EF300 アレイの概要 ++*"] 
+
+
+| E2800 ハイブリッドアレイのハードウェアとソフトウェアの機能、および SANtricity OS の最新機能について説明します。 | 最新バージョンの SANtricity で導入された新しいハードウェアやソフトウェア機能など、 E5700 の製品情報について説明します。 | EF300 オールフラッシュアレイのハードウェアとソフトウェアの機能、および SANtricity OS の新機能について説明します。 
+
+
+|  |  |  
+
+
+|  |  |  
+
+
+| https://www.netapp.com/pdf.html?item=/media/17009-tr4800pdf.pdf["* TR-4800 ： EF600 アレイ機能の概要 *"] |  |  
+
+
+| EF600 オールフラッシュアレイのハードウェアおよびソフトウェア機能と SANtricity OS の新機能について説明します。 |  |  
+|===

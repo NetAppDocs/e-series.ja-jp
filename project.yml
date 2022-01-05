@@ -247,7 +247,7 @@ sidebar:
           url: "/config-linux/srp-ib-setup-multipath-conf-file-concept.html"
         - title: ホストポートの GUID を特定します
           url: "/config-linux/srp-ib-determine-host-port-guids-task.html"
-        - title: ネットワーク接続の設定： SRP over InfiniBand
+        - title: ネットワーク接続の設定 - SRPoverInfiniBand での必要な SRP の実行中です
           url: "/config-linux/srp-ib-configure-network-connections-task.html"
         - title: パーティションとファイルシステムを作成します
           url: "/config-linux/srp-ib-create-partitions-filesystems-task.html"
@@ -771,7 +771,15 @@ sidebar:
   - title: 以前のバージョン
     url: "/early-versions.html"
   - title: テクニカルレポート
-    url: "/tech-reports.html"
+    entries:
+    - title: プラットフォーム TR
+      url: "/platform-tech-reports.html"
+    - title: セキュリティ TR
+      url: "/security-tech-reports.html"
+    - title: 機能 TR
+      url: "/feature-tech-reports.html"
+    - title: 解決策 TR
+      url: "/solution-tech-reports.html"
   - title: 法的通知
     url: "/legal-notices.html"
 homepage:
