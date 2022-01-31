@@ -520,7 +520,6 @@
   <block id="e278e6437347ba1b8b43475dafb1ed84" category="inline-link">11.50 リリースノート</block>
   <block id="7d69ef318412295725664b5711e60b81" category="list-text"><block ref="7d69ef318412295725664b5711e60b81" category="inline-link-rx"></block></block>
   <block id="7bf44c1a455e947396fedd5ddf411974" category="summary">SANtricity OS の新機能</block>
-  <block id="e8c6def5b285f222ff823e524f74b08f" category="doc">SANtricity OS の新機能</block>
   <block id="6145bf00e47cb3c5a3eda8fca6aabc42" category="paragraph">次の表では、 SANtricity OS の新機能について説明します。</block>
   <block id="03dc85e2c8b5b9e533b1cfe1c880a8d1" category="admonition">リソースプロビジョニング機能は、特定の NVMe SSD を搭載した EF300 および EF600 システムでのみ使用でき、バージョン 11.71 および 11.72 では未解決の問題を解決するために無効になっています。System Manager の一部のビューでは、コンポーネントがリソースプロビジョニング（ DULBE ）対応と報告されている場合がありますが、リソースプロビジョニングされたボリュームを作成する機能はありません。</block>
   <block id="1a75366a6d4c821ee7e455bce4cffa25" category="section-title">バージョン 11.72 の新機能</block>
@@ -6147,7 +6146,6 @@
   <block id="6a4d0dbc61fd816c20d68cb9db43dd53" category="list-text">コマンド出力が「 Y 」の場合は、ネイティブ NVMe マルチパスが有効になり、検出した NVMe デバイスでこのコマンドが使用されます。</block>
   <block id="c6d2cbe524754a93e33c6a6214065d08" category="admonition">SLES 15 では、ネイティブの NVMe マルチパスはデフォルトで有効になるため、追加の設定は必要ありません。</block>
   <block id="210e6499642ef4cb56b0a0b8f858e5a6" category="summary">SRP over InfiniBand プロトコルを使用する構成の場合は、ここで説明する手順を実行します。</block>
-  <block id="319377a956f2ad8b0c1d7f2fc49c93b4" category="doc">ネットワーク接続の設定： SRP over InfiniBand</block>
   <block id="6ad990bbfc5964e82429678d558d6312" category="paragraph">Linux ホストをストレージアレイに接続するためには、該当するオプションで InfiniBand ドライバスタックを有効にする必要があります。具体的な設定は Linux ディストリビューションによって異なる場合があります。を確認します<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> 具体的な手順および解決策固有のその他の推奨設定については、を参照してください。</block>
   <block id="7ca26655b7b9ad8ac64151af48311ace" category="list-text">使用する OS に対応した OFED / RDMA ドライバスタックをインストールします。</block>
   <block id="86a10b4eb734a918e85e2f5d261ce7ea" category="paragraph">* SLES *</block>
@@ -7267,4 +7265,5 @@
   <block id="47258fb44590338243e024351300f997" category="cell">情報システムの機密性、整合性、および可用性に関する規定のセキュリティ目標を満たすために SANtricity を導入する方法について説明します。</block>
   <block id="39a9002fa4dcf0afc27b1355c1567969" category="cell">ロールベースアクセス制御（ RBAC ）、 Lightweight Directory Access Protocol （ LDAP ）、 Security Assertion Markup Language （ SAML ）などのアクセス管理の設定方法について説明します。</block>
   <block id="82e361f392a68c54a4e7d72ceec97843" category="sidebar">ネットワーク接続の設定 - SRPoverInfiniBand での必要な SRP の実行中です</block>
+  <block id="b71e2b4d6a1e1e3ddb1014777fc5a53c" category="doc">SANtricity OS の新機能</block>
 </blocks>
