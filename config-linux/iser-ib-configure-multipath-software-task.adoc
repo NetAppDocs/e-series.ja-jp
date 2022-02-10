@@ -62,7 +62,7 @@ SLES 12.x および 15.x システム：
 'systemctl enable multipathd
 
 |===
-. initramfs イメージまたは initrd イメージを /boot ディレクトリに再構築します。
+. initramfs イメージまたは initrd イメージを /boot ディレクトリに再構築します
 +
 |===
 | 使用する場合 | 手順 
