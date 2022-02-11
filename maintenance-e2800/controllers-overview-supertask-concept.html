@@ -2881,7 +2881,7 @@
         <div class="na-navbar-padding"> 電池</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/e-series/maintenance-e2800/batteries-overview-requirements-concept.html">
-        バッテリの交換に際しての要件
+        概要と要件
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/e-series/maintenance-e2800/batteries-prepare-replace-task.html">
         バッテリを交換する準備をします
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/e-series/maintenance-e2800/batteries-remove-controller-canister-task.html">
@@ -2898,7 +2898,7 @@
         <div class="na-navbar-padding"> コントローラ</div>
       </a>
       <ul><li class="  active "><a class="na-navbar-padding" href="/ja-jp/e-series/maintenance-e2800/controllers-overview-supertask-concept.html">
-        コントローラの交換に際しての要件
+        概要と要件
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/e-series/maintenance-e2800/controllers-second-add-task.html">
         2 台目のコントローラキャニスターを追加します
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/e-series/maintenance-e2800/controllers-duplex-supertask-task.html">
@@ -2909,7 +2909,7 @@
         <div class="na-navbar-padding"> キャニスター</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/e-series/maintenance-e2800/canisters-overview-supertask-concept.html">
-        キャニスター交換に際しての要件
+        概要と要件
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/e-series/maintenance-e2800/canisters-supply-supertask-task.html">
         電源装置の交換（ 12 ドライブまたは 24 ドライブ）
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/e-series/maintenance-e2800/canisters-60-replace-power-task.html">
@@ -2920,7 +2920,7 @@
         <div class="na-navbar-padding"> ドライブ</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/e-series/maintenance-e2800/drives-overview-supertask-concept.html">
-        ドライブ交換に際しての要件
+        概要と要件
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/e-series/maintenance-e2800/drives-12-24-supertask-task.html">
         ドライブの交換（ 12 ドライブまたは 24 ドライブ）
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/e-series/maintenance-e2800/drives-60-replace-task.html">
@@ -2931,7 +2931,7 @@
         <div class="na-navbar-padding"> ホストインターフェイスカード</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/e-series/maintenance-e2800/hics-overview-supertask-concept.html">
-        HIC の交換に際しての要件
+        概要と要件
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/e-series/maintenance-e2800/hics-add-supertask-task.html">
         ホストインターフェイスカードを追加します
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/e-series/maintenance-e2800/hics-upgrade-supertask-task.html">
@@ -2942,7 +2942,7 @@
         <div class="na-navbar-padding"> ホストポートプロトコルを変更します</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/e-series/maintenance-e2800/hpp-overview-supertask-concept.html">
-        変換の要件
+        概要と要件
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/e-series/maintenance-e2800/hpp-change-host-protocol-task.html">
         ホストプロトコルを変更します
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/e-series/maintenance-e2800/hpp-complete-protocol-conversion-task.html">
@@ -3189,11 +3189,19 @@
 <p class="page-details">
   
     
-    <time datetime="2022-02-10 14:59:17 +0000">02/10/2022</time>
+    <time datetime="2022-02-11 18:45:24 +0000">02/11/2022</time>
     
   
 
 <span>寄稿者
+  <a target="_blank" href="https://github.com/netapp-echurch">
+    <img  class="avatar avatar-small"
+          alt="netapp-echurch"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/84341172?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
   <a target="_blank" href="https://github.com/netapp-jolieg">
     <img  class="avatar avatar-small"
           alt="netapp-jolieg"
@@ -3223,6 +3231,21 @@
 </div>
 <div class="paragraph">
 <p>各コントローラキャニスターには、コントローラカード、バッテリ、およびオプションでホストインターフェイスカード（ HIC ）が搭載されています。シンプレックス構成に 2 台目のコントローラを追加したり、障害が発生したコントローラを交換したりできます。</p>
+</div>
+<div class="paragraph">
+<p>この 手順 環境 IOM12 および IOM12B ドライブシェルフを使用します。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/e-series/images/note.svg" alt="注記">
+</td>
+<td class="content">
+この手順 は、シェルフの IOM のホットスワップや交換に使用されます。つまり、 IOM12 モジュールを別の IOM12 モジュールに交換するか、 IOM12B モジュールを別の IOM12B モジュールに交換しなければなりません。（シェルフに IOM12 モジュールを 2 台搭載することも、 IOM12B モジュールを 2 つ使用することもできます）
+</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
