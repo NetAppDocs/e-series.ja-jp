@@ -546,7 +546,7 @@ sidebar:
       - title: 電池
         pdf-filename: E2800 ではバッテリがメンテナンスされます
         entries:
-        - title: バッテリの交換に際しての要件
+        - title: 概要と要件
           url: "/maintenance-e2800/batteries-overview-requirements-concept.html"
         - title: バッテリを交換する準備をします
           url: "/maintenance-e2800/batteries-prepare-replace-task.html"
@@ -563,7 +563,7 @@ sidebar:
       - title: コントローラ
         pdf-filename: E2800 はコントローラをメンテナンスします
         entries:
-        - title: コントローラの交換に際しての要件
+        - title: 概要と要件
           url: "/maintenance-e2800/controllers-overview-supertask-concept.html"
         - title: 2 台目のコントローラキャニスターを追加します
           url: "/maintenance-e2800/controllers-second-add-task.html"
@@ -574,7 +574,7 @@ sidebar:
       - title: キャニスター
         pdf-filename: E2800 メンテナンスキャニスター
         entries:
-        - title: キャニスター交換に際しての要件
+        - title: 概要と要件
           url: "/maintenance-e2800/canisters-overview-supertask-concept.html"
         - title: 電源装置の交換（ 12 ドライブまたは 24 ドライブ）
           url: "/maintenance-e2800/canisters-supply-supertask-task.html"
@@ -585,7 +585,7 @@ sidebar:
       - title: ドライブ
         pdf-filename: E2800 はドライブのメンテナンスを行います
         entries:
-        - title: ドライブ交換に際しての要件
+        - title: 概要と要件
           url: "/maintenance-e2800/drives-overview-supertask-concept.html"
         - title: ドライブの交換（ 12 ドライブまたは 24 ドライブ）
           url: "/maintenance-e2800/drives-12-24-supertask-task.html"
@@ -596,7 +596,7 @@ sidebar:
       - title: ホストインターフェイスカード
         pdf-filename: E2800 では HIC が維持されます
         entries:
-        - title: HIC の交換に際しての要件
+        - title: 概要と要件
           url: "/maintenance-e2800/hics-overview-supertask-concept.html"
         - title: ホストインターフェイスカードを追加します
           url: "/maintenance-e2800/hics-add-supertask-task.html"
@@ -607,7 +607,7 @@ sidebar:
       - title: ホストポートプロトコルを変更します
         pdf-filename: E2800 ホストプロトコルの変換
         entries:
-        - title: 変換の要件
+        - title: 概要と要件
           url: "/maintenance-e2800/hpp-overview-supertask-concept.html"
         - title: ホストプロトコルを変更します
           url: "/maintenance-e2800/hpp-change-host-protocol-task.html"

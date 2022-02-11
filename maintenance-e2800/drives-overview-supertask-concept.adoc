@@ -18,6 +18,11 @@ E2800 ドライブを交換する前に、要件と考慮事項を確認して�
 
 12 ドライブ、 24 ドライブ、 60 ドライブのコントローラシェルフまたはドライブシェルフに搭載されたドライブを交換することができます。
 
+この 手順 環境 IOM12 および IOM12B ドライブシェルフおよび DCM と DCM2 ドライブシェルフです
+
+
+NOTE: この手順 は、シェルフの IOM のホットスワップや交換に使用されます。つまり、 IOM12 モジュールを別の IOM12 モジュールに交換するか、 IOM12B モジュールを別の IOM12B モジュールに交換しなければなりません。（シェルフに IOM12 モジュールを 2 台搭載することも、 IOM12B モジュールを 2 つ使用することもできます）
+
 
 
 === 12 ドライブまたは 24 ドライブシェルフ
@@ -60,7 +65,7 @@ image::../media/28_dwg_e2860_de460c_front_no_callouts_maint-e2800.gif[28 dwg e28
 
 5 台の各ドロワーに最大 12 本のドライブを搭載できます。
 
-image:../media/92_dwg_de6600_drawer_with_hdds_no_callouts_maint-e2800.gif[""] image:../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[""]
+image:../media/92_dwg_de6600_drawer_with_hdds_no_callouts_maint-e2800.gif[""]
 
 
 
