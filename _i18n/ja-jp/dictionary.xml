@@ -1534,7 +1534,6 @@
   <block id="d60c0bc605d3ea38eff56a862b5a189c" category="paragraph">この手順は複雑であるため、次のことを推奨します。</block>
   <block id="8322d8f6737b683258acd6d9233af80a" category="list-text">手順を開始する前に、すべての手順を確認してください。</block>
   <block id="8567550b0509793441808f6c97ce695d" category="list-text">ドライブシェルフのホットアドが必要な手順であることを確認します。</block>
-  <block id="f4895416b905bb96e49cad6cea70b73a" category="paragraph">ここで説明する手順環境のホットアドでは、 DE212C 、 DE224C 、 DE460C ドライブシェルフを E5700 、 EF570 、 E2800 、 EF280 、または EF300 コントローラシェルフに追加します。</block>
   <block id="5a1179aaa65f35de522ce2a2ea82749a" category="inline-link">IOM ドライブシェルフを既存の E27XX 、 E56XX 、または EF560 コントローラシェルフに追加</block>
   <block id="a6f3f1b5a23e23fffe14cffdfdd4e3e6" category="paragraph">古いコントローラシェルフを DE212C 、 DE224C 、または DE460 に接続する方法については、を参照してください<block ref="0198df91334a412ebbcbbf86e387ec1b" category="inline-link-rx"></block>。</block>
   <block id="160e453c42b3cffabeeb1eac7a869cc4" category="admonition">システムの整合性を維持するには、手順を記載された順序で正確に実行する必要があります。</block>
@@ -1624,7 +1623,6 @@
   <block id="24d1db435624223ea3fcfe34e7480965" category="doc">ドライブシェルフのケーブル接続</block>
   <block id="23c9c1d703a67af9b3d48c36aebc7730" category="paragraph">コントローラシェルフの各コントローラをドライブシェルフの I/O モジュール（ IOM ）に接続する必要があります。</block>
   <block id="ae7a26030f4b035778f68ea33d2444dc" category="section-title">E2800 および E5700 のケーブル接続</block>
-  <block id="114ecf49e92ab17f5f1e33e40c278a8d" category="paragraph">ここでは、 E5700 、 EF570 、 E2800 、 EF280 の各コントローラシェルフを DE212C 、 DE224C 、または DE460 の各ドライブシェルフにケーブル接続する方法について説明環境します。</block>
   <block id="6541fff12d201f839eebf251a3ed5689" category="section-title">12 ドライブまたは 24 ドライブシェルフのケーブル接続</block>
   <block id="b1a8455c6973aaf461d1caf3201674d7" category="paragraph">1 台以上の 12 ドライブまたは 24 ドライブシェルフにコントローラシェルフをケーブル接続できます。</block>
   <block id="39629fad2cdbfe0923082e37fa9dd684" category="paragraph">次の図は、コントローラシェルフとドライブシェルフを示しています。モデル上のポートの位置を確認するには、を参照してください<block ref="5d49ffd87c57001d2b40191486fafc6a" category="inline-link-rx"></block>。</block>
@@ -7262,4 +7260,6 @@
   <block id="ebc31fad1cf84954196a7706294df684" category="paragraph">この 手順 環境 DCM および DCM2 ドライブ・シェルフ</block>
   <block id="9fab40c340a50dc566e1060dd32e768d" category="admonition">クライアント証明書とサーバ証明書を取得するには、ストレージアレイが最適な状態である必要があります。証明書を取得できない場合は、新しい CSR を作成して署名し、 EKMS からサーバ証明書をダウンロードする必要があります。</block>
   <block id="86e856206affbccd36d96e0932a14510" category="paragraph">「 nvme-rdma 」カーネルモジュールがロードされていることを確認するには、次のコマンドを実行します。</block>
+  <block id="dbf42093a0041931999943f18d3f0986" category="paragraph">E2800 、 E2800B 、 EF280 、 E5700 、 EF5700B の環境 のケーブル接続については、次の情報を参照してください。 または EF570 コントローラシェルフから DE212C 、 DE224C 、 DE460 の各ドライブシェルフに接続できます。</block>
+  <block id="67b64abed949ae2b1a2626ebe211fd47" category="paragraph">ここで説明する 手順 環境 のホットアドで、 DE212C 、 DE224C 、 DE460C ドライブシェルフを E2800 、 E2800B 、 EF280 、 E5700 、 E5700B に追加 EF570 または EF300 コントローラシェルフ。</block>
 </blocks>
