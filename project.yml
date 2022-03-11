@@ -733,19 +733,19 @@ sidebar:
     - title: vCenter 用のストレージプラグイン
       entries:
       - title: 概要
-        url: "/san-spvc-ic-overview.html"
+        url: "/vcenter-plugin/san-spvc-ic-overview.html"
       - title: プラグインをインストールします
-        url: "/san-spvc-ic-installation.html"
+        url: "/vcenter-plugin/san-spvc-ic-installation.html"
       - title: アクセス権限を設定します
-        url: "/san-spvc-ic-user-access.html"
+        url: "/vcenter-plugin/san-spvc-ic-user-access.html"
       - title: ログインして操作します
-        url: "/san-spvc-ic-login-and-navigation.html"
+        url: "/vcenter-plugin/san-spvc-ic-login-and-navigation.html"
       - title: ストレージアレイを検出
-        url: "/san-spvc-ic-storage-array-discovery.html"
+        url: "/vcenter-plugin/san-spvc-ic-storage-array-discovery.html"
       - title: ストレージのプロビジョニング
-        url: "/san-spvc-ic-storage-provisioning.html"
+        url: "/vcenter-plugin/san-spvc-ic-storage-provisioning.html"
       - title: プラグインを削除します
-        url: "/san-spvc-ic-plugin-removal.html"
+        url: "/vcenter-plugin/san-spvc-ic-plugin-removal.html"
     - title: 従来のソリューション
       entries:
       - title: Cloud Connector の場合
