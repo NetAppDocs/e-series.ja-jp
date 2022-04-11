@@ -15,7 +15,7 @@ EF300 または EF600 アレイのホストインターフェイスカード（ 
 * この手順でダウンタイムのメンテナンス時間をスケジュールしておきます。この手順が完了するまではストレージアレイのデータにアクセスできません。電源がオンになっているときは両方のコントローラで HIC の構成が同じである必要があるため、 HIC の構成を変更したときは電源をオフにする必要があります。HIC が一致していないと、交換用 HIC を搭載したコントローラをオンラインにしたときにロックダウン状態になります。
 * 新しいホストポートの接続に必要なすべてのケーブル、トランシーバ、スイッチ、ホストバスアダプタ（ HBA ）を用意しておきます。
 +
-互換性のあるハードウェアについては、を参照してください https://mysupport.netapp.com/NOW/products/interoperability["NetApp Interoperability Matrix を参照してください"^] または。
+互換性のあるハードウェアについては、を参照してください https://mysupport.netapp.com/NOW/products/interoperability["NetApp Interoperability Matrix を参照してください"^] または http://hwu.netapp.com/home.aspx["NetApp Hardware Universe の略"^]。
 
 * ESD リストバンドを装着するか、静電気防止処置を施しておきます。
 * No.1 プラスドライバを用意しておきます。

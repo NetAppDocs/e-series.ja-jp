@@ -116,7 +116,7 @@ FC ホストポートのみを使用していた環境で、そのうちの一�
 . FC ホストを新しい iSCSI ポートから FC のまま残すポートに移動します。
 . デュアルプロトコル SFP を使用していない場合は、 FC SFP をすべて取り外します。
 . 新しい iSCSI ホストを上記のポートに直接またはスイッチを使用して接続します。
-. 新しいホストおよびポートに対して iSCSI ネットワークを設定します。手順については、を参照してください link:../config-linux/index.html["Linux の簡単な設定"]、 または 。
+. 新しいホストおよびポートに対して iSCSI ネットワークを設定します。手順については、を参照してください link:../config-linux/index.html["Linux の簡単な設定"]、 link:../config-windows/index.html["Windows の簡単な設定"]または link:../config-vmware/index.html["VMware の簡単な設定"]。
 
 
 
@@ -153,7 +153,7 @@ iSCSI ホストポートのみを使用していた環境で、そのうちの�
 . iSCSI ホストを新しい FC ポートから iSCSI のまま残すポートに移動します。
 . デュアルプロトコル SFP を使用していない場合は、 FC SFP をすべて取り外します。
 . 新しい FC ホストを上記のポートに直接またはスイッチを使用して接続します。
-. 新しいホストおよびポートに対して FC ネットワークを設定します。手順については、を参照してください link:../config-windows/index.html["Linux の簡単な設定"]、 または 。
+. 新しいホストおよびポートに対して FC ネットワークを設定します。手順については、を参照してください link:../config-windows/index.html["Linux の簡単な設定"]、 link:../config-windows/index.html["Windows の簡単な設定"]または link:../config-vmware/index.html["VMware の簡単な設定"]。
 
 
 
@@ -190,7 +190,7 @@ FC ホストポートと iSCSI ホストポートを組み合わせて使用し�
 . デュアルプロトコル SFP を使用していない場合は、 iSCSI SFP をすべて取り外して FC SFP またはデュアルプロトコル SFP に交換します。
 . デュアルプロトコル SFP を使用していない場合は、 FC SFP をすべて取り外します。
 . 新しい FC ホストを上記のポートに直接またはスイッチを使用して接続します
-. 新しいホストおよびポートに対して FC ネットワークを設定します。手順については、を参照してください link:../config-linux/index.html["Linux の簡単な設定"]、 または 。
+. 新しいホストおよびポートに対して FC ネットワークを設定します。手順については、を参照してください link:../config-linux/index.html["Linux の簡単な設定"]、 link:../config-windows/index.html["Windows の簡単な設定"]または link:../config-vmware/index.html["VMware の簡単な設定"]。
 
 
 
@@ -226,7 +226,7 @@ FC ホストポートと iSCSI ホストポートを組み合わせて使用し�
 
 . デュアルプロトコル SFP を使用していない場合は、すべての FC SFP を取り外して iSCSI SFP またはデュアルプロトコル SFP に交換します。
 . 新しい iSCSI ホストを上記のポートに直接またはスイッチを使用して接続します。
-. 新しいホストおよびポートに対して iSCSI ネットワークを設定します。手順については、を参照してください link:../config-linux/index.html["Linux の簡単な設定"]、 または 。
+. 新しいホストおよびポートに対して iSCSI ネットワークを設定します。手順については、を参照してください link:../config-linux/index.html["Linux の簡単な設定"]、 link:../config-windows/index.html["Windows の簡単な設定"]または link:../config-vmware/index.html["VMware の簡単な設定"]。
 
 
 

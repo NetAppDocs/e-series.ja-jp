@@ -193,4 +193,4 @@ System Manager にアクセスするには、管理ポートの設定に使用�
 |===
 
 
-SAS 拡張用に EF300 をケーブル接続する場合は、を参照してください link:../maintenance-ef600/index.html["EF600 ハードウェアのメンテナンス"] SAS 拡張カードの取り付けと  SAS 拡張ケーブル接続の場合：
+SAS 拡張用に EF300 をケーブル接続する場合は、を参照してください link:../maintenance-ef600/index.html["EF600 ハードウェアのメンテナンス"] SAS 拡張カードの取り付けと link:../install-hw-cabling/index.html["E シリーズハードウェアのケーブル接続"] SAS 拡張ケーブル接続の場合：

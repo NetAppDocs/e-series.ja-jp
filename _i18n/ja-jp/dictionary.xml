@@ -7262,4 +7262,6 @@
   <block id="86e856206affbccd36d96e0932a14510" category="paragraph">「 nvme-rdma 」カーネルモジュールがロードされていることを確認するには、次のコマンドを実行します。</block>
   <block id="dbf42093a0041931999943f18d3f0986" category="paragraph">E2800 、 E2800B 、 EF280 、 E5700 、 EF5700B の環境 のケーブル接続については、次の情報を参照してください。 または EF570 コントローラシェルフから DE212C 、 DE224C 、 DE460 の各ドライブシェルフに接続できます。</block>
   <block id="67b64abed949ae2b1a2626ebe211fd47" category="paragraph">ここで説明する 手順 環境 のホットアドで、 DE212C 、 DE224C 、 DE460C ドライブシェルフを E2800 、 E2800B 、 EF280 、 E5700 、 E5700B に追加 EF570 または EF300 コントローラシェルフ。</block>
+  <block id="f2c505979298b93cfd8e71dc78ddd1b0" category="admonition">異なる電圧タイプの PSU を混在させないでください。いつものように同じように置換します。</block>
+  <block id="b7b26f8fd8107cf68f2bc572008d19a7" category="admonition">交換用コントローラには 16GB のメモリがあらかじめ取り付けられています。コントローラで 64GB の構成が必要な場合は、交換用コントローラを取り付ける前に、付属のアップグレードキットを使用してください。</block>
 </blocks>

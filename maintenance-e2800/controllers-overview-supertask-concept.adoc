@@ -45,9 +45,9 @@ NOTE: この図はコントローラキャニスターの例を示したもの�
 * 現在取り付けられているコントローラキャニスターの HIC と同じ新しい HIC （現在取り付けられているコントローラキャニスターにホストインターフェイスカードが搭載されている場合のみ）。
 * 新しいコントローラポートの接続に必要なすべてのケーブル、トランシーバ、スイッチ、ホストバスアダプタ（ HBA ）。
 +
-互換性のあるハードウェアについては、を参照してください https://mysupport.netapp.com/NOW/products/interoperability["NetApp Interoperability Matrix を参照してください"^] または。
+互換性のあるハードウェアについては、を参照してください https://mysupport.netapp.com/NOW/products/interoperability["NetApp Interoperability Matrix を参照してください"^] または http://hwu.netapp.com/home.aspx["NetApp Hardware Universe の略"^]。
 
-* ホストにマルチパスドライバがインストールされているため、両方のコントローラを使用できます。を参照してください link:../config-linux/index.html["Linux の簡単な設定"]、 または  手順については、を参照し
+* ホストにマルチパスドライバがインストールされているため、両方のコントローラを使用できます。を参照してください link:../config-linux/index.html["Linux の簡単な設定"]、 link:../config-windows/index.html["Windows の簡単な設定"]または link:../config-vmware/index.html["VMware の簡単な設定"] 手順については、を参照し
 * ESD リストバンドを装着するか、静電気防止処置を施しておきます。
 * No.1 プラスドライバ。
 * 新しいケーブルを識別するためのラベル。

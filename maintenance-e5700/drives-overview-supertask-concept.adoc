@@ -34,7 +34,7 @@ NOTE: この手順 は、シェルフの IOM のホットスワップや交換�
 image::../media/28_dwg_e2824_de224c_drive_numbering_maint-e5700.gif[28 dwg e2824 de224c ドライブの番号が maint e5700 となっています]
 
 
-NOTE: E5724 のストレージアレイには、 DE5600 24 ドライブトレイや DE6600 60 ドライブトレイなど、従来の SAS-2 拡張ドライブトレイが搭載されている場合がありますいずれかのドライブトレイのドライブを交換する手順については、を参照してください link:https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2577975["E2660 、 E2760 、 E5460 、 E5560 、または E5660 ドライブトレイのドライブの交換"] および 。
+NOTE: E5724 のストレージアレイには、 DE5600 24 ドライブトレイや DE6600 60 ドライブトレイなど、従来の SAS-2 拡張ドライブトレイが搭載されている場合がありますいずれかのドライブトレイのドライブを交換する手順については、を参照してください link:https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2577975["E2660 、 E2760 、 E5460 、 E5560 、または E5660 ドライブトレイのドライブの交換"] および link:https://library.netapp.com/ecmdocs/ECMLP2577971/html/GUID-E9157E41-F4BF-4237-9454-F1C9145247F0.html["E2600 、 E2700 、 E5400 、 E5500 、および E5600 の 12 ドライブトレイまたは 24 ドライブトレイのドライブの交換"]。
 
 
 
@@ -49,7 +49,7 @@ E5760 コントローラシェルフドロワーと DE460C ドライブシェル
 image::../media/dwg_trafford_drawer_with_hdds_callouts_maint-e5700.gif[DWG トラフォードドロワー（ HDD の寸法テキストが maint e5700 で表示]
 
 
-NOTE: E5760 のストレージアレイには、 DE1600 12 ドライブトレイ、 DE5600 24 ドライブトレイ、 DE6600 60 ドライブトレイなど、従来の SAS-2 拡張ドライブトレイが搭載されている場合がありますいずれかのドライブトレイのドライブを交換する手順については、を参照してください link:https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2577975["E2660 、 E2760 、 E5460 、 E5560 、または E5660 ドライブトレイのドライブの交換"] および 。
+NOTE: E5760 のストレージアレイには、 DE1600 12 ドライブトレイ、 DE5600 24 ドライブトレイ、 DE6600 60 ドライブトレイなど、従来の SAS-2 拡張ドライブトレイが搭載されている場合がありますいずれかのドライブトレイのドライブを交換する手順については、を参照してください link:https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2577975["E2660 、 E2760 、 E5460 、 E5560 、または E5660 ドライブトレイのドライブの交換"] および link:https://library.netapp.com/ecmdocs/ECMLP2577971/html/GUID-E9157E41-F4BF-4237-9454-F1C9145247F0.html["E2600 、 E2700 、 E5400 、 E5500 、および E5600 の 12 ドライブトレイまたは 24 ドライブトレイのドライブの交換"]。
 
 
 

@@ -25,7 +25,7 @@ HIC を追加するには、ストレージアレイの電源をオフにし、 
 * スイッチや Host Bus Adapter （ HBA ；ホストバスアダプタ）などの新しいホストポート用の新しいホストハードウェアを設置します。
 * 新しいホストポートの接続に必要なすべてのケーブル、トランシーバ、スイッチ、ホストバスアダプタ（ HBA ）。
 +
-互換性のあるハードウェアについては、を参照してください https://mysupport.netapp.com/NOW/products/interoperability["NetApp Interoperability Matrix を参照してください"^] および。
+互換性のあるハードウェアについては、を参照してください https://mysupport.netapp.com/NOW/products/interoperability["NetApp Interoperability Matrix を参照してください"^] および http://hwu.netapp.com/home.aspx["NetApp Hardware Universe の略"^]。
 
 * コントローラキャニスターに接続する各ケーブルを識別するためのラベル。
 * ESD リストバンドを装着するか、静電気防止処置を施しておきます。
@@ -338,7 +338,7 @@ NOTE: 問題が解決しない場合は、テクニカルサポートにお問�
 
 . コントローラのホストポートからデータホストにケーブルを接続します。
 +
-新しいホストプロトコルの設定や使用に関する手順を確認する必要がある場合は、を参照してください link:../config-linux/index.html["Linux の簡単な設定"]、 または 。
+新しいホストプロトコルの設定や使用に関する手順を確認する必要がある場合は、を参照してください link:../config-linux/index.html["Linux の簡単な設定"]、 link:../config-windows/index.html["Windows の簡単な設定"]または link:../config-vmware/index.html["VMware の簡単な設定"]。
 
 
 

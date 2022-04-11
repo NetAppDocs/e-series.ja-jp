@@ -25,7 +25,7 @@ HIC をアップグレードするときは、ストレージアレイの電源�
 * スイッチや Host Bus Adapter （ HBA ；ホストバスアダプタ）などの新しいホストポート用の新しいホストハードウェアを設置します。
 * 新しいホストポートの接続に必要なすべてのケーブル、トランシーバ、スイッチ、ホストバスアダプタ（ HBA ）。
 +
-互換性のあるハードウェアについては、を参照してください https://mysupport.netapp.com/NOW/products/interoperability["NetApp Interoperability Matrix を参照してください"^] または。
+互換性のあるハードウェアについては、を参照してください https://mysupport.netapp.com/NOW/products/interoperability["NetApp Interoperability Matrix を参照してください"^] または http://hwu.netapp.com/home.aspx["NetApp Hardware Universe の略"^]。
 
 * コントローラキャニスターに接続する各ケーブルを識別するためのラベル。
 * ESD リストバンドを装着するか、静電気防止処置を施しておきます。

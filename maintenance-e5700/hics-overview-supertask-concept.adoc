@@ -40,7 +40,7 @@ E5700 コントローラ（ E5724 または E5760 ）の HIC を交換する手�
 
 * 新しいホストポートの接続に必要なすべてのケーブル、トランシーバ、スイッチ、ホストバスアダプタ（ HBA ）を用意しておきます。
 +
-互換性のあるハードウェアについては、を参照してください https://mysupport.netapp.com/NOW/products/interoperability["NetApp Interoperability Matrix を参照してください"^] または。
+互換性のあるハードウェアについては、を参照してください https://mysupport.netapp.com/NOW/products/interoperability["NetApp Interoperability Matrix を参照してください"^] または http://hwu.netapp.com/home.aspx["NetApp Hardware Universe の略"^]。
 
 * ESD リストバンドを装着するか、静電気防止処置を施しておきます。
 * No.1 プラスドライバを用意しておきます。

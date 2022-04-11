@@ -38,7 +38,7 @@ image::../media/28_dwg_e2812_de212c_drive_numbering.gif[28 dwg e2812 de212c ド�
 image::../media/28_dwg_e2824_de224c_drive_numbering_maint-e2800.gif[28 dwg e2824 de224c ドライブ番号が maint e2800 になっている]
 
 
-NOTE: E2812 、 E2824 、または EF280 のストレージアレイには、 DE1600 12 ドライブトレイ、 DE5600 24 ドライブトレイ、 DE6600 60 ドライブトレイなど、従来の SAS-2 拡張ドライブトレイが搭載されている場合がありますいずれかのドライブトレイのドライブを交換する手順については、を参照してください link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2577975["E2660 、 E2760 、 E5460 、 E5560 、または E5660 トレイのドライブの交換"^] および 。
+NOTE: E2812 、 E2824 、または EF280 のストレージアレイには、 DE1600 12 ドライブトレイ、 DE5600 24 ドライブトレイ、 DE6600 60 ドライブトレイなど、従来の SAS-2 拡張ドライブトレイが搭載されている場合がありますいずれかのドライブトレイのドライブを交換する手順については、を参照してください link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2577975["E2660 、 E2760 、 E5460 、 E5560 、または E5660 トレイのドライブの交換"^] および link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2577971["E2600 、 E2700 、 E5400 、 E5500 、および E5600 の 12 ドライブトレイまたは 24 ドライブトレイのドライブの交換"^]。
 
 
 
@@ -53,7 +53,7 @@ E2860 コントローラシェルフと DE460C ドライブシェルフの各ド
 image::../media/dwg_trafford_drawer_with_hdds_callouts_maint-e2800.gif[DWG トラフォードドロワー（ HDD の寸法テキストが maint e2800]
 
 
-NOTE: E2860 ストレージアレイには、 DE1600 12 ドライブトレイ、 DE5600 24 ドライブトレイ、 DE6600 60 ドライブトレイなど、従来の SAS-2 拡張ドライブトレイが搭載されている場合がありますいずれかのドライブトレイのドライブを交換する手順については、を参照してください link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2577975["E2660 、 E2760 、 E5460 、 E5560 、または E5660 トレイのドライブの交換"^] および 。
+NOTE: E2860 ストレージアレイには、 DE1600 12 ドライブトレイ、 DE5600 24 ドライブトレイ、 DE6600 60 ドライブトレイなど、従来の SAS-2 拡張ドライブトレイが搭載されている場合がありますいずれかのドライブトレイのドライブを交換する手順については、を参照してください link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2577975["E2660 、 E2760 、 E5460 、 E5560 、または E5660 トレイのドライブの交換"^] および link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2577971["E2600 、 E2700 、 E5400 、 E5500 、および E5600 の 12 ドライブトレイまたは 24 ドライブトレイのドライブの交換"^]。
 
 
 
