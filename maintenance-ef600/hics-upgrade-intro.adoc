@@ -5,6 +5,7 @@ keywords: upgrade EF300 HIC, upgrade EF600 HIC, increase host ports, change host
 summary: ホストインターフェイスカード（ HIC ）をアップグレードして、ホストポートの数を増やしたり、ホストプロトコルを変更したりできます。 
 ---
 = EF300 または EF600 ホストインターフェイスカード（ HIC ）のアップグレード
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

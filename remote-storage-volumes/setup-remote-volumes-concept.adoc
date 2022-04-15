@@ -5,6 +5,7 @@ keywords: configure Remote Storage Volumes, set up RTV, configure remote volumes
 summary: 初期セットアップは、サポートされる iSCSI プロトコルを使用して E シリーズシステムからリモートストレージに接続できるようにするために必要です。 
 ---
 = リモートストレージボリュームのハードウェアを設定する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

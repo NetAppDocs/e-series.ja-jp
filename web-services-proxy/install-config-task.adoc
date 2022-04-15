@@ -5,6 +5,7 @@ keywords: configure Web Services Proxy, WSP configuration, start stop Webserver,
 summary: Web Services Proxy の設定は、環境独自の運用やパフォーマンスの要件に合わせて変更することができます。 
 ---
 = Web Services Proxy を設定する
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

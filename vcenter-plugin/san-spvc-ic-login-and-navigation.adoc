@@ -6,6 +6,7 @@ summary: ログインして vCenter 向けプラグインに移動します。
 ---
 = ログインして、 Storage Plugin for vCenter に移動します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

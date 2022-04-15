@@ -5,6 +5,7 @@ keywords: E5700 controller, repair E5700 controller, replace E5700 controller, f
 summary: デュプレックス構成でのコントローラキャニスターの交換 
 ---
 = デュプレックス構成でのコントローラの交換
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

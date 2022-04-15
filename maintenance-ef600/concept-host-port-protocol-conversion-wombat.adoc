@@ -5,6 +5,7 @@ keywords: convert, protocol, host, compatibility, connection, infrastructure, co
 summary: ホストのプロトコルを別のプロトコルに変換して互換性を確保したり、ホスト接続のプロトコルをインフラのニーズに合わせて別のプロトコルに変換したりできます。 
 ---
 = ホストポートプロトコルを変更します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

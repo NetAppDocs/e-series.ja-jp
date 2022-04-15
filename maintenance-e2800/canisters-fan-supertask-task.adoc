@@ -5,6 +5,7 @@ keywords: E2800 replace 60-drive fan canister, replacing E2800 fan canister, E28
 summary: 60 ドライブのコントローラシェルフまたはドライブシェルフのファンキャニスターを交換します。 
 ---
 = E2800 ファンキャニスターの交換（ 60 ドライブ）
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/
@@ -140,7 +141,7 @@ NOTE: ファンキャニスターの交換後、ファンキャニスターが�
 
 
 
-. 障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。
+. 障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["部品返却と交換ページ"] を参照してください。
 
 
 これでファンキャニスターの交換は完了です。通常の運用を再開することができます。

@@ -5,6 +5,7 @@ keywords: NVMe over RoCE, express linux configuration, software configuration, l
 summary: コントローラに NVMe over RoCE 用の接続（ RDMA over Converged Ethernet ）が含まれている場合は、 SANtricity System Manager のハードウェアページまたはシステムページから NVMe ポートを設定できます。 
 ---
 = ストレージアレイの NVMe over RoCE 接続を設定します
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

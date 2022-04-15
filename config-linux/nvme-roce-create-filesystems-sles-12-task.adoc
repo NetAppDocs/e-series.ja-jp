@@ -5,6 +5,7 @@ keywords: file systems, express linux configuration, software configuration, lin
 summary: RHEL 7 および SLES 12 の場合は、ネームスペースにファイルシステムを作成し、ファイルシステムをマウントします。 
 ---
 = ファイルシステムの作成（ RHEL 7 および SLES 12 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: express Windows configuration, software configuration, Windows host, E
 summary: Windows の簡単な設定ワークフローを使用します。 
 ---
 = Windows のワークフローを理解する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

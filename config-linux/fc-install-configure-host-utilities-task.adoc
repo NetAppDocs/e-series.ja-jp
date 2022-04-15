@@ -5,6 +5,7 @@ keywords: Linux Unified Host Utilities, express linux configuration, software co
 summary: FC を使用する場合は、 Linux Unified Host Utilities をインストールします。 
 ---
 = Linux Unified Host Utilities をインストールして設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

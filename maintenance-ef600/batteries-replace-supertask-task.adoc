@@ -5,6 +5,7 @@ keywords: replace EF300 battery, replace EF600 battery, EF300 battery fail, EF60
 summary: EF300 または EF600 アレイのバッテリを交換します。 
 ---
 = EF300 または EF600 バッテリを交換します
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

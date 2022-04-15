@@ -5,6 +5,7 @@ keywords: host port GUIDs, express linux configuration, software configuration, 
 summary: ホストポートの GUID を特定します。 
 ---
 = ホストポートの GUID を特定し、推奨設定を適用します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

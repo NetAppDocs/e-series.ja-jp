@@ -5,6 +5,7 @@ keywords: replace EF600 HIC, replace EF300 HIC, host interface card failed, HIC 
 summary: EF300 または EF600 の HIC を交換する前に、要件と考慮事項を確認します。 
 ---
 = EF300 または EF600 の HIC をアップグレードするための要件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

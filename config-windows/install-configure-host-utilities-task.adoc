@@ -5,6 +5,7 @@ keywords: Windows Unified Host Utilities, express Windows configuration, softwar
 summary: Windows の簡単な方法で Windows Unified Host Utilities をインストールする。 
 ---
 = Windows Unified Host Utilities をインストールして設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

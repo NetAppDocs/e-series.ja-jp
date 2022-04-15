@@ -5,6 +5,7 @@ keywords: E2800 battery fail, E2800 battery, E2800 battery replacement, replace 
 summary: 新しいバッテリを取り付けたら、コントローラキャニスターをコントローラシェルフに再度取り付けます。 
 ---
 = E2800 コントローラキャニスターを再度取り付けます
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

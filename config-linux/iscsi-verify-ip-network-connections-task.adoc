@@ -5,6 +5,7 @@ keywords: express linux configuration, software configuration, linux host, E2800
 summary: インターネットプロトコル（ IP ）ネットワーク接続を確認するには、 ping テストを使用してホストとアレイが通信できることを確認します。 
 ---
 = IP ネットワーク接続を確認します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

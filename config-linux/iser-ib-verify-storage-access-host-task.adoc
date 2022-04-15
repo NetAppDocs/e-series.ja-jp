@@ -5,6 +5,7 @@ keywords: express linux configuration, software configuration, linux host, E2800
 summary: ボリュームを使用する前に、ホストがボリュームに対してデータの読み取りと書き込みを実行できることを確認します。 
 ---
 = ホストでストレージアクセスを確認
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

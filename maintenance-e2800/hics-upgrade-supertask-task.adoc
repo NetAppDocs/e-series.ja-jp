@@ -5,6 +5,7 @@ keywords: upgrading E2800 HIC, upgrade E2800 HIC, upgrade host interface card, E
 summary: E2800 アレイのホストインターフェイスカード（ HIC ）をアップグレードします。 
 ---
 = E2800 ホストインターフェイスカード（ HIC ）のアップグレード
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

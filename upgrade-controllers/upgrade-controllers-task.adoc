@@ -5,6 +5,7 @@ keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upg
 summary: 既存のコントローラを交換することでストレージアレイをアップグレードすることができます。コントローラは、ボード、ファームウェア、ソフトウェアで構成されます。ドライブを制御し、管理ソフトウェアの機能を実装します。 
 ---
 = E シリーズコントローラをアップグレードする
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

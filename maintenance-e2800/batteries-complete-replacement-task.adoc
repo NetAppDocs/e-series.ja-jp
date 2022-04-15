@@ -5,6 +5,7 @@ keywords: E2800 battery fail, E2800 battery, E2800 battery replacement, replace 
 summary: バッテリの交換を完了します。 
 ---
 = E2800 バッテリの交換後の処理
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

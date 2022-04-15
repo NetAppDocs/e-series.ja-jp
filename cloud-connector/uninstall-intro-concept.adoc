@@ -5,6 +5,7 @@ keywords: Cloud Connector uninstall, remove Cloud Connector
 summary: SANtricity Cloud Connector は、グラフィカルなアンインストーラまたはコンソールからアンインストールできます。 
 ---
 = SANtricity Cloud Connector をアンインストールします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

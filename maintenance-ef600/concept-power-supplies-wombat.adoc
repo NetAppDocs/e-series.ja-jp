@@ -5,6 +5,7 @@ keywords: power, supply, redundant, source, controller, shelf, supplies
 summary: 電源装置は、コントローラシェルフに電源の冗長性を提供します。 
 ---
 = 電源装置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

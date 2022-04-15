@@ -5,6 +5,7 @@ keywords: ASUP configuration Web Services, AutoSupport Web Services Proxy, WSP A
 summary: AutoSupport （ ASUP ）を設定すると、データを収集し、収集したデータをリモートでのトラブルシューティングや問題分析用にテクニカルサポートに自動的に送信することができます。 
 ---
 = Web サービスプロキシを使用して AutoSupport を管理します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

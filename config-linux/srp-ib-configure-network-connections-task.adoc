@@ -5,6 +5,7 @@ keywords: configure network SRP over IB, configure Linux network, OFED, RDMA, ex
 summary: SRP over InfiniBand プロトコルを使用する構成の場合は、ここで説明する手順を実行します。 
 ---
 = ネットワーク接続の設定 - SRPoverInfiniBand での必要な SRP の実行中です
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

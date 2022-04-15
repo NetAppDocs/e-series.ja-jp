@@ -5,6 +5,7 @@ keywords: SRP over Infiniband worksheet Linux, express linux configuration, soft
 summary: このワークシートを使用して、 SRP over InfiniBand ストレージの構成情報を記録します。 
 ---
 = SRP over IB の設定を記録します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

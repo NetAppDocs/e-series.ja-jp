@@ -5,6 +5,7 @@ keywords: whats new, new features, SANtricity 11.72
 summary: SANtricity OS の新機能 
 ---
 = SANtricity OS の新機能
+:allow-uri-read: 
 
 
 [role="lead"]

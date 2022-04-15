@@ -5,6 +5,7 @@ keywords: express linux configuration, software configuration, linux host, E2800
 summary: SAS プロトコルを使用する場合は、 HBA ユーティリティを使用して SAS アドレスを確認し、 HBA BIOS を使用して適切な設定を行います。 
 ---
 = SAS ホスト識別子の特定 - Linux
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

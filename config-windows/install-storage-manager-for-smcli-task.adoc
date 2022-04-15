@@ -5,6 +5,7 @@ keywords: install Storage Manager Windows, install CLI Windows, install command 
 summary: CLI および HCA 用の Storage Manager を Windows の簡単な方法でインストールします。 
 ---
 = SMcli および Host Context Agent （ HCA ）を使用するための SANtricity Storage Manager のインストール
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

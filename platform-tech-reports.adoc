@@ -5,6 +5,7 @@ keywords: platform technical reports, e-series, hardware, santricity, os
 summary: E シリーズのテクニカルレポート 
 ---
 = プラットフォームのテクニカルレポートを参照できます
+:allow-uri-read: 
 
 
 

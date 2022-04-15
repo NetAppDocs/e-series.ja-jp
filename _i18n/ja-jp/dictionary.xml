@@ -616,7 +616,6 @@
   <block id="e82ba360b90b9dc8c3512d90f81adae2" category="admonition">このプラグインは、 SANtricity System Manager ソフトウェアに代わるものではありません。1 つのアレイで特定のストレージ管理タスクを実行する場合も、 System Manager が必要です。</block>
   <block id="05ed80d1233d90c62b52eb88f5b39c76" category="paragraph">このプラグインを使用するには、 VMware 環境に導入された VMware vCenter Server Appliance と、プラグイン Web サーバをインストールして実行するアプリケーションホストが必要です。</block>
   <block id="48d764802fe6e980e3b6bd8569912134" category="paragraph">vCenter 環境での通信の詳細については、次の図を参照してください。</block>
-  <block id="3bf4c5ae23f12f4212cf98bf1595f373" category="image-alt">vCenter 通信</block>
   <block id="282155126a94a0702cfd80daf38d4362" category="section-title">設定の概要</block>
   <block id="4c325e0efa9d7efb489577d6f330275e" category="inline-link-macro">プラグインをインストールして登録します</block>
   <block id="9670be495e136856463c7e5aa230b55e" category="list-text"><block ref="086335fac0a72f6b7709b869613c6621" category="inline-link-macro-rx"></block>。</block>
@@ -1728,7 +1727,6 @@
   <block id="a320ceabc99151b468bbfc423c22bfdf" category="list-text">SANtricity システムマネージャの Recovery Guru で「 * 再確認」を選択し、問題が解決されたことを確認します。</block>
   <block id="c01085e6cd0606ebdc3939310bd696ac" category="list-text">障害が発生した電源装置がまだ報告される場合は、の手順を繰り返します <block ref="ea8874311efff004f4ccf043a598fb2e" category="inline-xref-macro-rx"></block> およびインチ <block ref="1b7a0d310d8da3d5c98eb62f6d26c34f" category="inline-xref-macro-rx"></block>。問題が解決しない場合は、テクニカルサポートにお問い合わせください。</block>
   <block id="8d50e29d2dbe5c9bd78247f7b1bdb86f" category="list-text">静電気防止用の保護を外します。</block>
-  <block id="a8280a793d4f574a1e8ec9fdeff29427" category="list-text">障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。</block>
   <block id="3dbc4b1fda3f7e5b612f7b6c5b1c62db" category="paragraph">これで電源装置の交換は完了です。通常の運用を再開することができます。</block>
   <block id="1cceb37762649e12d403d1def85f4c21" category="summary">E5700 ドライブ要件を確認します。</block>
   <block id="f606b288add440526eb541bfdfeaba20" category="doc">E5700 ドライブの交換に際しての要件</block>
@@ -2148,7 +2146,6 @@
   <block id="bfe0056c6787fe62d52c9480cc0c3591" category="paragraph">* （ 2 ） * _Attention LED （アンバー） _</block>
   <block id="141788fd9fbcd786d76f541540756dc4" category="list-text">または、次の CLI コマンドを使用することもできます。</block>
   <block id="5811caab16d9ae3e7df8465579187dda" category="list-text">* OE * 、 * L6 * 、 * _ 消灯 _ * （サポート対象外の HIC ） * 注意： * データアクセスが失われる可能性 * - 取り付けたコントローラにこれらのいずれかのコードが表示され、別のコントローラが何らかの理由でリセットされると、 2 台目のコントローラもロックダウンする可能性があります。</block>
-  <block id="738a8c736dcf0a5ae4920a6448ab8da7" category="paragraph">テクニカルサポートにお問い合わせください<block ref="2ff36e7792a0e0257d19a11dce8cade8" category="inline-link-rx"></block>RMA 番号を確認する場合は、日本国内サポート用電話番号：国内フリーダイヤル 0066-33-123-265 または 0066-33-821-274 （国際フリーフォン 800-800-80-800 も使用可能）までご連絡ください。</block>
   <block id="2af7d274631cea316011b977d54e2eaf" category="paragraph">これで HIC の交換は完了です。通常の運用を再開することができます。</block>
   <block id="11fdd43137cfc836a71e2c84f0134b65" category="summary">弊社では、マニュアルの品質を向上していくため、皆様からのフィードバックをお待ちしています。本番レベルのドキュメント（ GA/FCS ）が最初にリリースされたときや、既存の本番レベルのドキュメントに重要な変更が加えられたときに、自動通知を受け取ることができます。</block>
   <block id="6ab85e747e0c76cd7c95b5eb2dd03018" category="doc">マニュアルの更新について</block>
@@ -6305,8 +6302,6 @@
   <block id="dcd56d80ecc0d78aefb3259c4aa4270b" category="summary">SLES 15 の場合は、ネイティブの NVMe デバイスにファイルシステムを作成し、ファイルシステムをマウントします。</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">著作権に関する声明、商標、特許などにアクセスできます。</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法的通知</block>
-  <block id="c59ae8d7beeb519a23478ab048af482c" category="paragraph"><block ref="c59ae8d7beeb519a23478ab048af482c" category="inline-link-macro-rx"></block></block>
-  <block id="6f2ac1cf1da8ec34232c651d4bba0149" category="paragraph"><block ref="6f2ac1cf1da8ec34232c651d4bba0149" category="inline-link-macro-rx"></block></block>
   <block id="cc1ba14f8dc9bd7ba20e2aa654cde10b" category="inline-link">E シリーズ / EF シリーズ SANtricity OS に関する通知です</block>
   <block id="2dae7f81af3097152530b0bc519d7eb1" category="paragraph"><block ref="2dae7f81af3097152530b0bc519d7eb1" category="inline-link-rx"></block></block>
   <block id="f54101aa6702c025c4f74ec5ada7bae3" category="summary">ストレージを管理します</block>
@@ -7264,4 +7259,19 @@
   <block id="67b64abed949ae2b1a2626ebe211fd47" category="paragraph">ここで説明する 手順 環境 のホットアドで、 DE212C 、 DE224C 、 DE460C ドライブシェルフを E2800 、 E2800B 、 EF280 、 E5700 、 E5700B に追加 EF570 または EF300 コントローラシェルフ。</block>
   <block id="f2c505979298b93cfd8e71dc78ddd1b0" category="admonition">異なる電圧タイプの PSU を混在させないでください。いつものように同じように置換します。</block>
   <block id="b7b26f8fd8107cf68f2bc572008d19a7" category="admonition">交換用コントローラには 16GB のメモリがあらかじめ取り付けられています。コントローラで 64GB の構成が必要な場合は、交換用コントローラを取り付ける前に、付属のアップグレードキットを使用してください。</block>
+  <block id="103c35d06a9326cb406be18b9f01dd19" category="paragraph"><block ref="103c35d06a9326cb406be18b9f01dd19" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="de12f8e20bb08c1655c9e9ec9fcdf669" category="inline-link">部品返却と交換ページ</block>
+  <block id="b513e4fc1080a3f36d587a4f3f169ecd" category="list-text">障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください<block ref="e0e4d885bf8f1687472b6fca77c9b03b" category="inline-link-rx"></block> を参照してください。</block>
+  <block id="6016a2b341113bf496b719905398ecd2" category="section-title">著作権</block>
+  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
+  <block id="126a02652da6de02962cf1b654fd6376" category="section-title">商標</block>
+  <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp 、 NetApp のロゴ、および NetApp の商標ページに記載されているマークは、 NetApp, Inc. の商標です。その他の会社名および製品名は、それぞれの所有者の商標である場合があります。</block>
+  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
+  <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">特許</block>
+  <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">ネットアップが所有する特許の最新リストは、次のサイトで入手できます。</block>
+  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
+  <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">プライバシーポリシー</block>
+  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
+  <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">オープンソース</block>
+  <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知ファイルには、ネットアップソフトウェアで使用されるサードパーティの著作権およびライセンスに関する情報が記載されています。</block>
 </blocks>

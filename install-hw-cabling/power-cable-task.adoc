@@ -5,6 +5,7 @@ keywords: cabling, cables, power cable, power cabling, power supply cabling, E-S
 summary: 各コンポーネントの電源装置を別々の電源回路に接続します。 
 ---
 = 電源のケーブル接続
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

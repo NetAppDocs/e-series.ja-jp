@@ -5,6 +5,7 @@ keywords: instruction, describe, install, storage, system, provide, link, additi
 summary: ここでは、新しいストレージシステムを設置してセットアップする方法について説明し、追加コンテンツへのリンクを記載します。 
 ---
 = E5724 、 EF570 、 EF280 、 E2812 、 E2824 、または DE212C 、 DE224C のいずれかに該当します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

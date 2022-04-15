@@ -5,6 +5,7 @@ keywords: E2800, E5700, installation
 summary: E2800 または E5700 を 2 ポストラックまたはネットアップシステムキャビネットに設置します。 
 ---
 = ハードウェアを設置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

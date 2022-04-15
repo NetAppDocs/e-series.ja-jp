@@ -5,6 +5,7 @@ keywords: configure switch, express linux configuration, software configuration,
 summary: NVMe over RoCE に関するベンダーの推奨事項に従ってスイッチを設定します。これらの推奨事項には、設定の指示とコードの更新が含まれる場合があります。 
 ---
 = スイッチを設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

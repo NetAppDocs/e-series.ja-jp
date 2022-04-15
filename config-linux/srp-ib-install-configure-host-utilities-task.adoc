@@ -5,6 +5,7 @@ keywords: Unified Host Utilities, express linux configuration, software configur
 summary: Linux Unified Host Utilities 7.1 には、フェイルオーバーポリシーや物理パスなど、ネットアップストレージを管理するツールが含まれています。 
 ---
 = Linux Host Utilities をインストールして設定する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

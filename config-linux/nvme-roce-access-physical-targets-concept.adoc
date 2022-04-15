@@ -5,6 +5,7 @@ keywords: NVMe volume physical, express linux configuration, software configurat
 summary: Linux のバージョンに基づいて、デバイスターゲットに転送される I/O を設定できます。 
 ---
 = 物理 NVMe デバイスターゲットの NVMe ボリュームへのアクセス
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

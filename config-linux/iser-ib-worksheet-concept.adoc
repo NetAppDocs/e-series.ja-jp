@@ -5,6 +5,7 @@ keywords: iSER worksheet Linux, express linux configuration, software configurat
 summary: このワークシートを使用して、 iSER over InfiniBand ストレージの構成情報を記録します。 
 ---
 = iSER over IB の設定を記録します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

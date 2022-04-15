@@ -5,6 +5,7 @@ keywords: express linux configuration, software configuration, linux host, E2800
 summary: iSCSI ネットワークを設定 
 ---
 = ネットワークを設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

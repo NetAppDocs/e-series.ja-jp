@@ -5,6 +5,7 @@ keywords: host protocol change, EF300 host protocol, EF600 host protocol
 summary: ホストポートのプロトコルを変更したら、新しいプロトコルを使用する手順を追加で実行します。 
 ---
 = EF300 または EF600 でホストプロトコルを変更する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

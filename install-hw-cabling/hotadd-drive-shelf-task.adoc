@@ -5,6 +5,7 @@ keywords: cabling, cables, hot add, hot add drive shelf, E-Series, eseries, E280
 summary: 他のコンポーネントに電源が投入されている状態で、新しいドライブシェルフを追加します。 
 ---
 = ドライブシェルフのホットアド
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

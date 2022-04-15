@@ -5,6 +5,7 @@ keywords: E5700 controller, repair E5700 controller, replace E5700 controller, f
 summary: E5700 コントローラのタイプと要件を確認します。 
 ---
 = E5700 コントローラの交換に際しての要件
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

@@ -5,6 +5,7 @@ keywords: SAS worksheet Linux, express linux configuration, software configurati
 summary: このワークシートを使用して、 SAS ストレージの構成情報を記録します。 
 ---
 = SAS の設定を記録します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

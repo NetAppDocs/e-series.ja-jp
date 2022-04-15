@@ -5,6 +5,7 @@ keywords: express linux configuration, assign volume, assign namespace,
 summary: ボリュームを I/O 処理に使用できるように、ホストまたはホストクラスタにボリューム（ネームスペース）を割り当てる必要があります。これにより、ストレージアレイの 1 つ以上のネームスペースへのアクセスがホストまたはホストクラスタに許可されます。 
 ---
 = ボリュームを割り当てます
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

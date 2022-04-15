@@ -6,6 +6,7 @@ summary: vCenter 向けプラグインインターフェイスを使用して、
 ---
 = プラグインでストレージアレイを検出します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -5,6 +5,7 @@ keywords: replace EF300 power supply, replace EF600 power supply,
 summary: EF300 または EF600 コントローラの電源装置で障害が発生した場合は、交換します。 
 ---
 = EF300 または EF600 の電源装置を交換します
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

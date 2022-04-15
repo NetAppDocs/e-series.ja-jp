@@ -5,6 +5,7 @@ keywords: FC worksheet Linux, express linux configuration, software configuratio
 summary: このワークシートを使用して、 FC ストレージの構成情報を記録します。 
 ---
 = FC の設定を記録します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

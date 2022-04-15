@@ -5,6 +5,7 @@ keywords: cabling, cabling requirements, drive shelf cabling, controller cabling
 summary: E シリーズシェルフのケーブル接続には複数のコンポーネントが必要です。 
 ---
 = 要件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

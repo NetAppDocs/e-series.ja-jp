@@ -5,6 +5,7 @@ keywords: express vmware configuration, software configuration, vmware host, E28
 summary: E シリーズシステムを使用する VMware ホストの簡単な設定を使用します。 
 ---
 = VMware の簡単な設定の概要
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: express linux configuration, software configuration, linux host, E2800
 summary: E シリーズシステムを使用する Linux ホストの簡単な設定を使用します。 
 ---
 = Linux の簡単な設定の概要
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

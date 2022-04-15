@@ -5,6 +5,7 @@ keywords: import Remote Storage Volumes, RTV import, import remote volumes, remo
 summary: リモートストレージデバイスのインポートは、 SANtricity システムマネージャのリモートストレージのインポートウィザードを使用して実行します。リモートストレージのインポート機能を使用すると、リモートストレージデバイスからローカルの E シリーズアレイにデータを移動できます。 
 ---
 = リモートストレージをインポートします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

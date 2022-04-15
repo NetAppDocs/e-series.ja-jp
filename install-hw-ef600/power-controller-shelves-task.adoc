@@ -5,6 +5,7 @@ keywords: EF300, EF600, installation, power on, power cables
 summary: 電源ケーブルを接続し、ドライブシェルフの電源をオンにします。 
 ---
 = コントローラシェルフの電源をオンにします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

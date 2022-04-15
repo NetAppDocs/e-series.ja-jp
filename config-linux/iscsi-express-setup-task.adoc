@@ -5,6 +5,7 @@ keywords:
 summary:  
 ---
 = iSCSI のクイックセットアップ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: E-Series, eseries, E2800, E5700, EF300, EF600, SANtricity, drive firmw
 summary: SANtricity Unified Manager を使用して、同じタイプの複数のストレージアレイの SANtricity OS ソフトウェアをアップグレードします。 
 ---
 = 複数のコントローラのソフトウェアとファームウェアをアップグレードします
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

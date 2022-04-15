@@ -5,6 +5,7 @@ keywords: EF300, EF600, installation,
 summary: EF300 または EF600 を 2 ポストラックまたはネットアップシステムキャビネットに設置します。 
 ---
 = ハードウェアを設置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

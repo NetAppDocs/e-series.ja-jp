@@ -5,6 +5,7 @@ keywords: Certificates Web Services Proxy, WSP certificates,
 summary: Web Services Proxy 構成ファイル、 API コマンド、または Unified Manager インターフェイスを使用して証明書を管理します。 
 ---
 = Web Services Proxy でセキュリティと証明書を管理する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

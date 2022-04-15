@@ -5,6 +5,7 @@ keywords: E2800 replace 60-drive power canister, replacing E2800 power canister,
 summary: 電源の冗長性を確保するために電源キャニスターを 2 つ搭載した 60 ドライブのコントローラシェルフまたはドライブシェルフを交換します。 
 ---
 = E2800 電源キャニスターの交換（ 60 ドライブ）
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/
@@ -150,7 +151,7 @@ CAUTION: 電源キャニスターをスライドしてシステムに挿入す�
 
 
 
-. 障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。
+. 障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["部品返却と交換ページ"] を参照してください。
 
 
 これで電源キャニスターの交換は完了です。通常の運用を再開することができます。

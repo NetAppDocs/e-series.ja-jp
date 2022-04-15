@@ -5,6 +5,7 @@ keywords: express linux configuration, software configuration, linux host, E2800
 summary: 安定した稼働を確保するために、導入計画を作成し、 NetApp Interoperability Matrix Tool （ IMT ）を使用して構成全体がサポートされていることを確認します。 
 ---
 = Linux 構成がサポートされていることを確認する
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

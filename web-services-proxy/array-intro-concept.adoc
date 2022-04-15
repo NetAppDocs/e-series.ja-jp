@@ -5,6 +5,7 @@ keywords: Web Services, WSP, SANtricity API, discover storage WSP,
 summary: ネットワーク内のストレージシステムを管理するには、まずそれらを検出し、管理リストに追加する必要があります。 
 ---
 = Web Services Proxy を使用してストレージシステムを管理してください
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

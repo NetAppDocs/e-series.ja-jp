@@ -5,6 +5,7 @@ keywords: IP address, DHCP, express Windows configuration, software configuratio
 summary: Dynamic Host Configuration Protocol\ （ DHCP ；動的ホスト構成プロトコル）を使用して、 Windows の簡単な方法で IP アドレスを提供します。 
 ---
 = DHCP を使用して IP アドレスを設定する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: Cloud Connector settings
 summary: SANtricity Cloud Connector アプリケーションの左ナビゲーションパネルで、設定オプションにアクセスできます。Settings オプションでは、 S3 アカウント、管理対象のストレージアレイとホスト、および Web Services Proxy クレデンシャルのアプリケーションの現在の設定を変更できます。SANtricity Cloud Connector アプリケーションのパスワードは、設定オプションを使用して変更することもできます。 
 ---
 = SANtricity クラウドコネクタの設定を変更します
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

@@ -5,6 +5,7 @@ keywords: configure iSCSI networking, express linux configuration, software conf
 summary: ホスト側で iSCSI ネットワークを設定します。 
 ---
 = ホスト側のネットワークを設定
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

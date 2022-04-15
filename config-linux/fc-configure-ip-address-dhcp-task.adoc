@@ -5,6 +5,7 @@ keywords: IP address, DHCP, express linux configuration, software configuration,
 summary: Dynamic Host Configuration Protocol\ （ DHCP ；動的ホスト構成プロトコル）を使用して IP アドレスを提供する。 
 ---
 = DHCP を使用して IP アドレスを設定する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

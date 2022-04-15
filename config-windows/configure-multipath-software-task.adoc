@@ -5,6 +5,7 @@ keywords: multipath software for Windows, express Windows configuration, softwar
 summary: Windows 用のマルチパスソフトウェアを含む DSM パッケージをインストールします。 
 ---
 = マルチパスソフトウェアを設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

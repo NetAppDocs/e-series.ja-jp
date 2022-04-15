@@ -6,6 +6,7 @@ summary: SANtricity Storage Plugin for vCenter をインストールします。
 ---
 = vCenter 向けストレージプラグインをインストールします
 :hardbreaks:
+:allow-uri-read: 
 :experimental: 
 :nofooter: 
 :icons: font

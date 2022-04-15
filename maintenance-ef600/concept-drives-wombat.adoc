@@ -5,6 +5,7 @@ keywords: drive, device, physical, storage, media, data
 summary: ドライブは、データの物理ストレージメディアとして使用されるデバイスです。 
 ---
 = ドライブ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: NVMe over Infiniband worksheet Linux, express linux configuration, sof
 summary: このワークシートを使用して、 NVMe over InfiniBand ストレージの構成情報を記録します。 
 ---
 = NVMe over IB の設定を記録します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

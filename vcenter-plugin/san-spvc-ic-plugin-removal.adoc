@@ -6,6 +6,7 @@ summary: vCenter 向けプラグインを削除します。
 ---
 = vCenter 向けストレージプラグインを削除します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

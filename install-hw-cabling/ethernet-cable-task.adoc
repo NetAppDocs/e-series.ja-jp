@@ -5,6 +5,7 @@ keywords: cabling, cables, ethernet cabling, ethernet cable, out of band, direct
 summary: アウトオブバンド管理のためにストレージシステムをイーサネットネットワークに接続します。 
 ---
 = 管理ステーションでのイーサネットケーブル接続
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

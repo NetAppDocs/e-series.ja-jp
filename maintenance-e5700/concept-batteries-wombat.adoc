@@ -5,6 +5,7 @@ keywords: battery, controller, canister, preserve, cache, data, ac, power, fail,
 summary: バッテリは、コントローラキャニスターに搭載されており、 AC 電源で障害が発生した場合にキャッシュデータを保持する役割があります。 
 ---
 = 電池
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

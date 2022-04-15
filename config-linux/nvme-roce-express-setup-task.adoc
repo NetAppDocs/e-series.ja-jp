@@ -5,6 +5,7 @@ keywords: nvme, rdma, converge, ethernet, roce, network, protocol, express, setu
 summary: NVMe は RDMA over Converged Ethernet / （ RoCE ）ネットワークプロトコルで使用できます。 
 ---
 = NVMe over RoCE のクイックセットアップ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

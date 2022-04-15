@@ -5,6 +5,7 @@ keywords: E2800 replace drive, replacing E2800 drive, E2800 replace drive, repla
 summary: E2800 のドライブを 60 ドライブシェルフと交換する。 
 ---
 = E2800 のドライブの交換（ 60 ドライブシェルフ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
@@ -181,7 +182,7 @@ NOTE: この処理は、テクニカルサポートまたは Recovery Guru か�
 
 
 . 必要に応じて、ベゼルを再度取り付けます。
-. 障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。
+. 障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["部品返却と交換ページ"] を参照してください。
 
 
 これでドライブの交換は完了です。通常の運用を再開することができます。

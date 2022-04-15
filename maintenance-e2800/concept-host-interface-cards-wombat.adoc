@@ -5,6 +5,7 @@ keywords: host, interface, card, hic, install, controller, canister, e2800, buil
 summary: ホストインターフェイスカード（ HIC ）は、コントローラキャニスターにオプションで取り付けることができます。E2800 コントローラには、コントローラカード自体に搭載されたホストポートとオプションの HIC に搭載されたホストポートがあります。コントローラに搭載されたホストポートのことをベースボードホストポートと呼び、HIC に搭載されたホストポートのことを HIC ポートと呼びます。 
 ---
 = ホストインターフェイスカード
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -6,6 +6,7 @@ summary: vCenter 向け Storage Plugin のアクセス権限を設定します�
 ---
 = プラグインアクセス権限を設定します
 :hardbreaks:
+:allow-uri-read: 
 :experimental: 
 :nofooter: 
 :icons: font

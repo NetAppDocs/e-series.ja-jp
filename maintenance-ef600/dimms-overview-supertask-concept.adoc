@@ -5,6 +5,7 @@ keywords: replace EF300 DIMM, replace EF600 DIMM,
 summary: EF300 または EF600 DIMM を交換する前に、要件と考慮事項を確認します。 
 ---
 = EF300 または EF600 DIMM の交換に際しての要件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

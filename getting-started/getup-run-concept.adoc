@@ -5,6 +5,7 @@ keywords: E-Series, eseries, E2800, E5700, EF300, EF600,
 summary: E シリーズシステムの運用を開始するには、ハードウェアコンポーネントを設置し、ホストシステムを設定し、ストレージを設定します。 
 ---
 = E シリーズの運用を開始
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

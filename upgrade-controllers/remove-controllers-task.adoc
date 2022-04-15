@@ -5,6 +5,7 @@ keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upg
 summary: コントローラをアップグレードする前に、古いコントローラとオプションでバッテリを取り外す必要があります。 
 ---
 = コントローラを取り外します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

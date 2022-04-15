@@ -5,6 +5,7 @@ keywords: early versions, e-series, hardware, santricity, os
 summary: 以前のバージョンのドキュメント 
 ---
 = 以前のバージョン
+:allow-uri-read: 
 
 
 [role="lead"]

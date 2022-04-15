@@ -5,6 +5,7 @@ keywords: Cloud Connector requirements
 summary: SANtricity Cloud Connector アプリケーションに関連するシステム要件、セットアップ、インストール、設定、およびジョブ。 
 ---
 = Cloud Connector のシステム要件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: express linux configuration, software configuration, linux host, E2800
 summary: クイック方式を使用して E シリーズアレイと Linux ホストを設定するための要件を確認します。 
 ---
 = 前提条件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: E2800 battery fail, E2800 battery, E2800 battery replacement, replace 
 summary: E2800 バッテリの交換に関する要件と考慮事項を確認します。 
 ---
 = E2800 バッテリの交換に際しての要件
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

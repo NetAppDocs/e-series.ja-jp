@@ -5,6 +5,7 @@ keywords: Remote Storage Volumes requirements, RTV requirements, RTV restriction
 summary: ご使用のシステムがリモートストレージボリュームの互換性に関する要件を満たしている必要があります。 
 ---
 = リモートストレージの要件と制限事項
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

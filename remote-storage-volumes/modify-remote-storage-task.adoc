@@ -5,6 +5,7 @@ keywords: modify Remote Storage Volumes settings, RTV settings, remote volume se
 summary: 設定済みのリモートストレージインポートの接続設定は、 SANtricity システムマネージャのリモートストレージ画面にある設定の表示 / 編集オプションを使用して変更できます。 
 ---
 = リモートストレージの接続設定の変更
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

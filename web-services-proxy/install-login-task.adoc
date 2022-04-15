@@ -5,6 +5,7 @@ keywords: log in API, log in Unified Manager
 summary: Web Services API と Unified Manager にアクセスしてログインします。 
 ---
 = API と Unified Manager にログインします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

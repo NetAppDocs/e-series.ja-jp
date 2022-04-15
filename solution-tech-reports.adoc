@@ -5,6 +5,7 @@ keywords: solution technical reports, e-series, hardware, santricity, os
 summary: E シリーズのテクニカルレポート 
 ---
 = 解決策テクニカルレポートを参照できます
+:allow-uri-read: 
 
 
 

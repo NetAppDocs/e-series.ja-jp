@@ -5,6 +5,7 @@ keywords:
 summary:  
 ---
 = iSER over InfiniBand のクイックセットアップ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

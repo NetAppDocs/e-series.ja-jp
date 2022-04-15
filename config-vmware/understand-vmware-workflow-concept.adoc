@@ -5,6 +5,7 @@ keywords: workflow, guide, express, method, configuring, configure, storage, arr
 summary: WVMware の簡単な設定ワークフローを使用します。 
 ---
 = VMware のワークフローを理解する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

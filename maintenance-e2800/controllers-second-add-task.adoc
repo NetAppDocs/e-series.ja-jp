@@ -5,6 +5,7 @@ keywords: add E2800 controller, adding E2800 controller, simplex to duplex, conv
 summary: コントローラキャニスターが 1 台だけ搭載されたコントローラシェルフに 2 台目のコントローラを追加するか、シンプレックスバージョンに 2 台目のコントローラキャニスターを追加します。 
 ---
 = E2800 に 2 台目のコントローラキャニスターを追加する
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

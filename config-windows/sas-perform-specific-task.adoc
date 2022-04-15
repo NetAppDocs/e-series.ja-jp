@@ -5,6 +5,7 @@ keywords: sas, express Windows configuration, software configuration, Windows ho
 summary: SAS プロトコルを使用する場合は、ホストポートアドレスを特定し、推奨設定を適用します。 
 ---
 = SAS 固有のタスクを実行
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

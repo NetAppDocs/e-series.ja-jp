@@ -5,6 +5,7 @@ keywords: express linux configuration, software configuration, linux host, E2800
 summary: nvme-CLI パッケージに含まれている SMdevices ツールを使用して、現在ホストで認識されているボリュームを表示します。これは nvme list コマンドの代わりです。 
 ---
 = ホストが認識できるボリュームを表示する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

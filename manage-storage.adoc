@@ -5,6 +5,7 @@ keywords: online help, System Manager, Unified Manager
 summary: ストレージを管理します 
 ---
 = ストレージを管理します
+:allow-uri-read: 
 
 
 [role="lead"]

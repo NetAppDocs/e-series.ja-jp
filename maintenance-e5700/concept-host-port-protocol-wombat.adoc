@@ -5,6 +5,7 @@ keywords: convert, protocol, host, compatibility, communication, establish, port
 summary: 互換性と通信の確立のために、ホストのプロトコルを別のプロトコルに変換することができます。 
 ---
 = ホストポートプロトコル
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

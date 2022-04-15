@@ -5,6 +5,7 @@ keywords: partitions, file systems, express linux configuration, software config
 summary: マルチパスデバイスにパーティションを作成し、必要に応じてネームスペースにファイルシステムを作成して、パーティションをマウントします。 
 ---
 = ファイルシステムを作成します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

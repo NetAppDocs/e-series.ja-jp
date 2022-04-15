@@ -5,6 +5,7 @@ keywords: installation, download, install proxy,
 summary: インストールを行うには、ファイルをダウンロードし、 Linux サーバまたは Windows サーバにプロキシパッケージをインストールします。 
 ---
 = Web Services Proxy ファイルをダウンロードしてインストール
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

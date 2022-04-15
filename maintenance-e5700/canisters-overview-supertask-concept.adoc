@@ -5,6 +5,7 @@ keywords: E5700 canister, E5700 power supply, repair E5700 power supply, replace
 summary: E5700 キャニスターのタイプと要件を確認します。 
 ---
 = E5700 キャニスターの交換に際しての要件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

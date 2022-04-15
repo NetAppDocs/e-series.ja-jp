@@ -5,6 +5,7 @@ keywords: multipath software for vmware, express vmware configuration, software 
 summary: 物理パスの 1 つが中断された場合にストレージアレイへの冗長パスを提供するように m ソフトウェアを設定します。 
 ---
 = マルチパスソフトウェアを設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

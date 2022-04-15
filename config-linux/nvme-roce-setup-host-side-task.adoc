@@ -5,6 +5,7 @@ keywords: express linux configuration, software configuration, linux host, E2800
 summary: RoCE 環境で NVMe イニシエータを設定するには、 rdma-core および nvme-CLI パッケージをインストールして設定し、イニシエータの IP アドレスを設定し、ホストで NVMe-oF レイヤを設定します。 
 ---
 = ホスト側で NVMe over RoCE を設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

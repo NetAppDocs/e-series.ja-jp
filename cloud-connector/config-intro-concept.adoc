@@ -5,6 +5,7 @@ keywords: Cloud Connector configuration
 summary: インストールが完了したら、設定ウィザードを使用して SANtricity Cloud Connector アプリケーションをセットアップできます。設定ウィザードは、 SANtricity Cloud Connector に最初にログインしたときに表示されます。 
 ---
 = SANtricity Cloud Connector を初めて設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

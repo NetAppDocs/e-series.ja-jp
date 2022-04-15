@@ -5,6 +5,7 @@ keywords: express Windows configuration, software configuration, Windows host, E
 summary: ホストが LUN に対してデータを読み取りおよび書き込みできることを確認します。 
 ---
 = ホストでストレージアクセスを確認
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

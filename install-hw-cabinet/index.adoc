@@ -5,6 +5,7 @@ keywords: 3040 40U cabinet, cabinet installation, drive tray installation, contr
 summary: E シリーズ 3040 40U キャビネットにドライブトレイを取り付ける方法の概要 
 ---
 = 3040 40U キャビネットにトレイを取り付けます
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

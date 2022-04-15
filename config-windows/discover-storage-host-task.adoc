@@ -5,6 +5,7 @@ keywords: LUNs, discover LUNs, express Windows configuration, software configura
 summary: Windows の簡単な方法でストレージを検出します。 
 ---
 = ホストでストレージを検出します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

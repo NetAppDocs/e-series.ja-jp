@@ -5,6 +5,7 @@ keywords: 3040 40U cabinet specs, cabinet installation, drive tray installation,
 summary: キャビネット設置の概要と仕様を確認 
 ---
 = キャビネットの仕様
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

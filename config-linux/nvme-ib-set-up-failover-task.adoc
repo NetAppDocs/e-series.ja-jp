@@ -5,6 +5,7 @@ keywords: failover, express linux configuration, software configuration, linux h
 summary: ホストでフェイルオーバーを実行するように設定します。 
 ---
 = フェイルオーバーを設定
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

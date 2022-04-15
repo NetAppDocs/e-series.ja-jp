@@ -5,6 +5,7 @@ keywords: replace EF300 drive, replace EF600 drive,
 summary: EF300 または EF600 のドライブを交換する前に、要件と考慮事項を確認します。 
 ---
 = EF300 または EF600 ドライブの交換に際しての要件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

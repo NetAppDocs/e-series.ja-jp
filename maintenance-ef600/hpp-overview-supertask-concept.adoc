@@ -5,6 +5,7 @@ keywords: convert EF300 host protocol, convert EF600 host protocol,
 summary: EF300 または EF600 ホストプロトコルを変更する前に、要件と考慮事項を確認してください。 
 ---
 = EF300 または EF600 ホストプロトコル変更の要件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: replace E2800 controller, replacing E2800 controller, duplex controlle
 summary: デュプレックス構成でのコントローラキャニスターの交換 
 ---
 = E2800 デュプレックス構成でのコントローラの交換
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

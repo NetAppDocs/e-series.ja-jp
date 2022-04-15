@@ -5,6 +5,7 @@ keywords: feature technical reports, e-series, hardware, santricity, os
 summary: E シリーズのテクニカルレポート 
 ---
 = 注目のテクニカルレポートを参照できます
+:allow-uri-read: 
 
 
 

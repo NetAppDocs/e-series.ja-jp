@@ -5,6 +5,7 @@ keywords: E5700 power supply, repair E5700 power supply, replace E5700 power sup
 summary: E5700 60 ドライブ電源装置を交換します。 
 ---
 = E5700 電源キャニスターの交換（ 60 ドライブ）
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/
@@ -158,7 +159,7 @@ CAUTION: 電源キャニスターをスライドしてシステムに挿入す�
 
 
 
-. 障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。
+. 障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["部品返却と交換ページ"] を参照してください。
 
 
 これで電源キャニスターの交換は完了です。通常の運用を再開することができます。

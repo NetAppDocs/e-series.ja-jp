@@ -5,6 +5,7 @@ keywords: sas, express, setup
 summary: SAS のクイックセットアップ 
 ---
 = SAS のクイックセットアップ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

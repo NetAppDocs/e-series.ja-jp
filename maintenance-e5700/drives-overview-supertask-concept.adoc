@@ -5,6 +5,7 @@ keywords: E5700 drive, replace E5700 drive, failed E5700 drive
 summary: E5700 ドライブ要件を確認します。 
 ---
 = E5700 ドライブの交換に際しての要件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

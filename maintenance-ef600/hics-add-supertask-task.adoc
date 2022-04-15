@@ -5,6 +5,7 @@ keywords: add EF600 HIC, host interface card, increase HIC ports, new HIC
 summary: EF600 コントローラにホストインターフェイスカード（ HIC ）を追加して、ストレージアレイのホストポートの数を増やします。 
 ---
 = EF600 にホストインターフェイスカード（ HIC ）を追加する
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

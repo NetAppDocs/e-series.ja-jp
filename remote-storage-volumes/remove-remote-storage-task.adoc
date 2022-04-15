@@ -5,6 +5,7 @@ keywords: remove storage object, disconnect remote storage
 summary: 設定済みのリモートストレージオブジェクトは、 SANtricity システムマネージャを使用して削除できます。 
 ---
 = リモートストレージオブジェクトを削除する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

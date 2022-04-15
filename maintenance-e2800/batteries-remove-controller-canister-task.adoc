@@ -5,6 +5,7 @@ keywords: E2800 battery fail, E2800 battery, E2800 battery replacement, replace 
 summary: バッテリを取り外すには、まずコントローラキャニスターをコントローラシェルフから取り外します。 
 ---
 = E2800 コントローラキャニスターを取り外します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

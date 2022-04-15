@@ -5,6 +5,7 @@ keywords: configure partitions Linux, configure filesystems linux, express linux
 summary: Linux ホストで初めて検出された時点では、新しい LUN にはパーティションやファイルシステムは設定されていません。LUN を使用できるようにするにはフォーマットする必要があります。 
 ---
 = パーティションとファイルシステムを作成します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

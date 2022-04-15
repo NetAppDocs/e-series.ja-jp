@@ -5,6 +5,7 @@ keywords: 3040 40U cabinet, cabinet installation, drive tray installation, contr
 summary: 3040 40U キャビネットを設置する前に、必要な工具と機器を揃えます。 
 ---
 = 必要な工具と機器を用意する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

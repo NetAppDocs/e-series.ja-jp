@@ -5,6 +5,7 @@ keywords: express Windows configuration, software configuration, Windows host, E
 summary: Windows 構成がサポートされていることを確認します。 
 ---
 = Windows 構成がサポートされていることを確認する
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

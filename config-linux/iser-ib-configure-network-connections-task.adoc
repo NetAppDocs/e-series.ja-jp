@@ -5,6 +5,7 @@ keywords: configure network connection, express linux configuration, software co
 summary: iSER over InfiniBand プロトコルを使用する構成の場合は、ここで説明する手順を実行します。 
 ---
 = ネットワーク接続を設定します
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

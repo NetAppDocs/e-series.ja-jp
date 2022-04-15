@@ -5,6 +5,7 @@ keywords: file systems, express linux configuration, software configuration, lin
 summary: SLES 15 の場合は、ネイティブの NVMe デバイスにファイルシステムを作成し、ファイルシステムをマウントします。 
 ---
 = ファイルシステムの作成（ RHEL 8 および SLES 15 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

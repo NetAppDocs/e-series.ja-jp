@@ -5,6 +5,7 @@ keywords: FC switches, zoning, express linux configuration, software configurati
 summary: ホストがストレージアレイに接続できるように Fibre Channel スイッチを設定し、パスの数を制限します。 
 ---
 = FC スイッチを設定
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

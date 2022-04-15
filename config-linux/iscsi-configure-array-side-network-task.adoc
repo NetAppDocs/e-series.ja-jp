@@ -5,6 +5,7 @@ keywords: configure iSCSI networking, express linux configuration, software conf
 summary: アレイ側で iSCSI ネットワークを設定します。 
 ---
 = アレイ側のネットワークを設定
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

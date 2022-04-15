@@ -5,6 +5,7 @@ keywords: E-Series, eseries, E2800, E5700, EF300, EF600, SANtricity, upgrade SAN
 summary: 単一の E シリーズコントローラのソフトウェアとファームウェアをアップグレードする。 
 ---
 = 単一のコントローラのソフトウェアとファームウェアをアップグレードします
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

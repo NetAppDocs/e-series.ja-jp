@@ -5,6 +5,7 @@ keywords: Cloud Connector installation, install Cloud Connector
 summary: SANtricity Cloud Connector Packaged 解決策（ .bin ファイル）は、 RedHat および SUSE Linux プラットフォームでのみ使用できます。 
 ---
 = SANtricity Cloud Connector をインストール
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

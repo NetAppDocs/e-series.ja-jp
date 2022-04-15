@@ -5,6 +5,7 @@ keywords: define Linux host, express linux configuration, linux host,
 summary: SANtricity System Manager を使用して、ストレージアレイにデータを送信するホストを定義します。ホストの定義は、ストレージアレイが接続されているホストを認識して、ボリュームへの I/O アクセスを許可するために必要な手順の 1 つです。 
 ---
 = ホストを定義します
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

@@ -5,6 +5,7 @@ keywords: express linux configuration, software configuration, linux host,
 summary: Linux 構成がサポートされていることを確認します。 
 ---
 = Linux 構成がサポートされていることを確認する
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

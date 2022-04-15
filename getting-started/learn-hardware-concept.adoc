@@ -5,6 +5,7 @@ keywords: E-Series, eseries, E2800, E5700, EF300, EF600, hardware, all flash arr
 summary: E シリーズストレージアレイには、複数の構成やモデルがあります。 
 ---
 = E シリーズハードウェアの概要
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: configure network Linux, configure hosts linux, express linux configur
 summary: InfiniBand OFED ドライバスタックでは iSER と SRP の両方を同じポートで同時に実行できるため、追加のハードウェアは必要ありません。 
 ---
 = ストレージ接続ホストのネットワークを設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

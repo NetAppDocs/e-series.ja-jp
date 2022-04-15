@@ -5,6 +5,7 @@ keywords: E-Series, eseries, E2800, E5700, EF300, EF600, SANtricity, drive firmw
 summary: ストレージアレイの SANtricity OS コントローラのソフトウェアとファームウェア、およびドライブファームウェアのアップグレードに関する考慮事項を確認します。 
 ---
 = アップグレード時の考慮事項
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

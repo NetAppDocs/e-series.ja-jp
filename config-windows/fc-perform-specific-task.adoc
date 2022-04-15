@@ -5,6 +5,7 @@ keywords: Fibre Channel protocol, switches, zone switches, zoning, host port ide
 summary: Fibre Channel プロトコルを使用する場合は、スイッチを設定し、ホストポート識別子を特定します。 
 ---
 = FC 固有のタスクを実行
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

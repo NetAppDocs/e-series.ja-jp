@@ -5,6 +5,7 @@ keywords: E2800 battery fail, E2800 battery, E2800 battery replacement, replace 
 summary: デュプレックスとシンプレックスのそれぞれに該当する手順に従って、 E2800 バッテリを交換する準備をします。 
 ---
 = E2800 バッテリを交換する準備をします
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

@@ -5,6 +5,7 @@ keywords: E2800 battery fail, E2800 battery, E2800 battery replacement, replace 
 summary: 新しいバッテリを取り付けます。 
 ---
 = 新しい E2800 バッテリを取り付けます
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

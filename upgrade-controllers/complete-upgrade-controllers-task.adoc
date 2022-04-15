@@ -5,6 +5,7 @@ keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upg
 summary: コントローラのアップグレードを完了するには、コントローラシェルフの電源をオンにし、コントローラのソフトウェアのバージョンを確認します。その後、サポートデータを収集し、運用を再開できます。 
 ---
 = コントローラのアップグレードを完了する
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

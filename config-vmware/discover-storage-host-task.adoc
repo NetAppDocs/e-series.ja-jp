@@ -5,6 +5,7 @@ keywords: discover storage ESXi, express vmware configuration, software configur
 summary: ホストにボリュームを割り当てたら、ホストがボリュームを検出してマルチパスを設定できるように、再スキャンを実行します。 
 ---
 = ホストでストレージを検出します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

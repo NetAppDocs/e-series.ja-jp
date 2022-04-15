@@ -5,6 +5,7 @@ keywords: 'E2800 convert host port protocol, convert E2800 FC iSCSI, Fibre Chann
 summary: E2800 でのホストポートプロトコル変更に関する要件を確認します。 
 ---
 = E2800 ホストポートプロトコルを変更する場合の要件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

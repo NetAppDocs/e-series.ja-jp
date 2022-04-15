@@ -5,6 +5,7 @@ keywords: controller, board, firmware, software, control, drive, implement, syst
 summary: コントローラは、ボード、ファームウェア、ソフトウェアで構成されます。ドライブを制御し、 System Manager の機能を実装します。ここでは、デュプレックス構成でのコントローラの交換方法について説明します。 
 ---
 = コントローラ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

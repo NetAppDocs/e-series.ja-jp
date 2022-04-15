@@ -5,6 +5,7 @@ keywords: Cloud Connector
 summary: SANtricity Cloud Connector の略 
 ---
 = SANtricity ® Cloud Connector の概要
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

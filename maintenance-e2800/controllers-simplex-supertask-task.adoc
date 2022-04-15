@@ -5,6 +5,7 @@ keywords: replace E2800 controller, replacing E2800 controller, simplex controll
 summary: シンプレックス構成では、障害が発生したコントローラキャニスターを交換することができます。 
 ---
 = E2800 シンプレックス構成でのコントローラの交換
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

@@ -5,6 +5,7 @@ keywords: replace EF300 controller, replace EF600 controller,
 summary: EF300 または EF600 コントローラの交換に際しての要件と考慮事項 
 ---
 = EF300 または EF600 コントローラの交換に際しての要件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

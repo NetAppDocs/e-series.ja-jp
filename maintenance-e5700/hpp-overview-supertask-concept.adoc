@@ -5,6 +5,7 @@ keywords: E5700 change host protocol, E5700 baseboard ports, convert E5700 proto
 summary: E5700 のホストプロトコルの変換 
 ---
 = E5700 ホストポートプロトコルの変更に関する要件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

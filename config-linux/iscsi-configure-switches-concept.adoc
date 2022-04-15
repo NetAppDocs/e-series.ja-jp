@@ -5,6 +5,7 @@ keywords: Switches, zoning, express linux configuration, software configuration,
 summary: iSCSI に関するベンダーの推奨事項に従ってスイッチを設定します。 
 ---
 = スイッチを設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -6,10 +6,11 @@ summary: SANtricity Storage Plugin for vCenter では、 VMware vSphere Client �
 ---
 = vCenter 向けストレージプラグインの概要
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
@@ -32,7 +33,7 @@ NOTE: このプラグインは、 SANtricity System Manager ソフトウェア�
 
 vCenter 環境での通信の詳細については、次の図を参照してください。
 
-image::../media/vcenter_communication.png[vCenter 通信]
+image:../media/vcenter_communication.png[""]
 
 
 

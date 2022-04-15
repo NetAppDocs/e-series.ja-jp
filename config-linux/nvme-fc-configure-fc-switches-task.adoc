@@ -5,6 +5,7 @@ keywords: FC switch, zoning, express linux configuration, software configuration
 summary: Fibre Channel スイッチ（ FC ）を設定すると、ホストがストレージアレイに接続できるようになり、パスの数が制限されます。スイッチのゾーニングはスイッチの管理インターフェイスで設定します。 
 ---
 = FC スイッチを設定
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

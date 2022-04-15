@@ -5,6 +5,7 @@ keywords: Remote Storage Volumes, RTV, remote volumes, remote storage E-Series
 summary: リモートストレージボリューム機能を使用して、リモートストレージデバイスからローカルの E シリーズボリュームにデータを直接インポートします。 
 ---
 = Remote Storage Volumes の概要
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

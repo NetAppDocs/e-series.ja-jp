@@ -5,6 +5,7 @@ keywords: replace EF300 fan, replace EF600 fan, fan fail
 summary: EF300 または EF600 のファンを交換します。 
 ---
 = EF300 または EF600 ファンを交換します
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

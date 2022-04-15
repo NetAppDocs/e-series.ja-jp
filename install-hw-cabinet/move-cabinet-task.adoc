@@ -5,6 +5,7 @@ keywords: 3040 40U cabinet, cabinet installation, drive tray installation, contr
 summary: 最終設置先にキャビネットを移動します。 
 ---
 = 最終設置先へのキャビネットの移動
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

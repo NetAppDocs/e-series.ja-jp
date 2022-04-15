@@ -5,6 +5,7 @@ keywords: srp, infiniband, express, setup
 summary: SRP over InfiniBand のクイックセットアップ 
 ---
 = SRP over InfiniBand のクイックセットアップ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

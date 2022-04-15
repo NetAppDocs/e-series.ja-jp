@@ -5,6 +5,7 @@ keywords: discover storage, host, express linux configuration, software configur
 summary: SANtricity System Manager で各ホストを定義する前に、ホストからターゲットコントローラポートを検出し、 NVMe 接続を確立する必要があります。 
 ---
 = ホストからストレージを検出して接続します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

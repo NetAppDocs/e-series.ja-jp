@@ -5,6 +5,7 @@ keywords: replace EF300 HIC, replace EF600 HIC, host interface card failed, HIC 
 summary: 障害が発生した EF300 または EF600 のホストインターフェイスカード（ HIC ）を交換します。 
 ---
 = EF300 または EF600 の障害が発生したホストインターフェイスカード（ HIC ）を交換します
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

@@ -5,6 +5,7 @@ keywords: EF300, EF600, installation, host cabling, direct-attach topology, fabr
 summary: コントローラをネットワークにケーブル接続して、ストレージシステムのセットアップと設定を行います。 
 ---
 = ストレージシステムのセットアップと設定を完了
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: LUNs, configure LUNs, express Windows configuration, software configur
 summary: Windows の簡単な方法でホストのストレージを設定します。 
 ---
 = ホストでストレージを設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

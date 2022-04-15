@@ -5,6 +5,7 @@ keywords: instruction, describe, install, storage, system, link, additional, con
 summary: ここでは、新しいストレージシステムを設置してセットアップする方法について説明し、追加コンテンツへのリンクを記載します。 
 ---
 = E2860 、 E5760 、および DE460C のインストールおよびセットアップ手順
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

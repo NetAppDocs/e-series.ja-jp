@@ -5,6 +5,7 @@ keywords: replace EF300 SAS expansion card, replacing SAS card, drive tray expan
 summary: ドライブトレイを拡張できるように、 EF300 コントローラに SAS 拡張カードを追加します。 
 ---
 = EF300 に SAS 拡張カードを追加します
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

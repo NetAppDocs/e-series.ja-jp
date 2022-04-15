@@ -5,6 +5,7 @@ keywords: E2800 maintenance, E2800 repair, replace E2800 components, replacing E
 summary: E2800 コンポーネントのメンテナンスを実施する。 
 ---
 = E2800 ハードウェアのメンテナンス
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

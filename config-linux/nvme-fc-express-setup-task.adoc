@@ -5,6 +5,7 @@ keywords: volumes, host volume, express linux configuration, software configurat
 summary: NVMe は Fibre Channel プロトコルで使用できます。 
 ---
 = NVMe over Fibre Channel のクイックセットアップ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

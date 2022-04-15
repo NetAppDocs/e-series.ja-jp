@@ -5,6 +5,7 @@ keywords: 'E2800 convert host port protocol, convert E2800 FC iSCSI, Fibre Chann
 summary: ホストポートプロトコルを Fibre Channel （ FC ）から iSCSI に、または iSCSI から FC に変更します。 
 ---
 = E2800 のホストプロトコルの変更
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

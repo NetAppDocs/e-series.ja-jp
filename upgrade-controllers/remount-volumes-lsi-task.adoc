@@ -5,6 +5,7 @@ keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upg
 summary: コントローラのアップグレードでベンダー ID が LSI から NETAPP に変わった場合は、ボリュームを再マウントします。 
 ---
 = ベンダーが LSI から NETAPP に変わった場合は、ボリュームを再マウントします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

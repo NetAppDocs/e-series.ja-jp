@@ -5,6 +5,7 @@ keywords: adding E2800 HIC, add E2800 HIC, add host interface card, E2800, E-Ser
 summary: E2800 アレイにホストインターフェイスカード（ HIC ）を追加します。 
 ---
 = E2800 ホストインターフェイスカード（ HIC ）の追加
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

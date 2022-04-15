@@ -5,6 +5,7 @@ keywords: iSCSI worksheet Linux, express linux configuration, software configura
 summary: このワークシートを使用して、 iSCSI ストレージの構成情報を記録します。 
 ---
 = iSCSI の設定を記録します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

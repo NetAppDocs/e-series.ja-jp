@@ -5,6 +5,7 @@ keywords: access System Manager Windows, express Windows configuration, software
 summary: SANtricity System Manager のセットアップウィザードを使用して、ストレージアレイを設定します。 
 ---
 = SANtricity System Manager にアクセスし、セットアップウィザードを使用します
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

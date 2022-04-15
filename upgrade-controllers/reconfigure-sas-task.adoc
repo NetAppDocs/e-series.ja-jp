@@ -5,6 +5,7 @@ keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upg
 summary: 承認済みの SAS-2 アレイ（ E2700 、 E550/EF5500 、 E5600 / EF560 ）のコントローラシェルフをドライブシェルフに変換し、そのシェルフと承認済みの SAS-2 ドライブシェルフ（ DE1600 、 DE5600 、 DE6600 ）を新しい認定済みの SAS-3 アレイ（ E2800 、 E5700 / EF570 、 E5700 ）と認定済みの SAS-3 ドライブシェルフ（ DE212C 、 DE224C 、 DE460C ）の背後に配置できます。 データ保持なし： 
 ---
 = 新しい SAS-3 コントローラシェルフの背後での SAS-2 システムの再構成
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

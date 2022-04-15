@@ -5,6 +5,7 @@ keywords: install Storage Manager Linux, install CLI Windows, install command li
 summary: CLI および HCA 用の Storage Manager を Linux の簡単な方法でインストールします。 
 ---
 = SMcli を使用するための SANtricity Storage Manager のインストール（ SANtricity ソフトウェアバージョン 11.53 以前）
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

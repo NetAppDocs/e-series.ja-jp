@@ -5,6 +5,7 @@ keywords: controller, board, firmware, software, control, drive, implement, syst
 summary: コントローラは、ボード、ファームウェア、ソフトウェアで構成されます。ドライブを制御し、 System Manager の機能を実装します。このセクションでは、 EF300 または EF600 コントローラシェルフ内の 1 台または両方のコントローラを交換する方法について説明します。 
 ---
 = コントローラ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

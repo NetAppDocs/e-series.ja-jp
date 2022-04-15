@@ -5,6 +5,7 @@ keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upg
 summary: ドライブセキュリティキーを保存し、サポートデータを収集し、コントローラをオフラインにして、コントローラをアップグレードする準備をします。 
 ---
 = コントローラをアップグレードする準備をします
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

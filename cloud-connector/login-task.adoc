@@ -5,6 +5,7 @@ keywords: Cloud Connector login, log in Cloud Connector
 summary: SANtricity Cloud Connector アプリケーションのグラフィカルユーザインターフェイスには、設定されたサーバからサポートされているブラウザ経由でアクセスできます。SANtricity Cloud Connector アカウントが確立されていることを確認します。 
 ---
 = SANtricity Cloud Connector にログインします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

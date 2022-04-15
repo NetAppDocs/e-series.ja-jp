@@ -5,6 +5,7 @@ keywords: cabling, cables, drive shelf cabling, controller shelf cabling, E-Seri
 summary: コントローラシェルフの各コントローラをドライブシェルフの I/O モジュール（ IOM ）に接続します。 
 ---
 = ドライブシェルフのケーブル接続
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

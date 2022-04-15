@@ -5,6 +5,7 @@ keywords: multipath.conf, express linux configuration, software configuration, l
 summary: multipath.conf ファイルは、マルチパスデーモン multipathd の構成ファイルです。 
 ---
 = multipath.conf ファイルをセットアップします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

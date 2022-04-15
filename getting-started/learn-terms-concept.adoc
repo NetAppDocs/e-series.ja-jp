@@ -5,6 +5,7 @@ keywords: E-Series, eseries, E2800, E5700, EF300, EF600, terms
 summary: E シリーズで使用される用語について説明します。 
 ---
 = E シリーズの用語
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

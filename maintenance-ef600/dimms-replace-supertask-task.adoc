@@ -5,6 +5,7 @@ keywords: replace EF300 DIMM, replace EF600 DIMM
 summary: EF300 または EF600 アレイ内の DIMM を交換します。 
 ---
 = EF300 または EF600 の DIMM を交換します
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

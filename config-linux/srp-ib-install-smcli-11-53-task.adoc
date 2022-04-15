@@ -5,6 +5,7 @@ keywords: Storage Manager, cli, command line interface, express linux configurat
 summary: 管理ステーションに SANtricity Storage Manager ソフトウェアをインストールすると、グラフィカルユーザインターフェイス \ （ GUI\ ）とコマンドラインインターフェイス \ （ CLI\ ）がデフォルトでインストールされます。以下の手順では、 SANtricity Storage Manager GUI を I/O ホストではなく管理ステーションにインストールすることを想定しています。 
 ---
 = SMcli を使用するための SANtricity Storage Manager のインストール（ SANtricity ソフトウェアバージョン 11.53 以前）
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

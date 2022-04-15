@@ -5,6 +5,7 @@ keywords: E5700 battery, repair E5700 battery, replace E5700 battery, failed E57
 summary: E5700 ストレージシステムの障害が発生したバッテリを交換します。 
 ---
 = E5700 バッテリを交換します
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

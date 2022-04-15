@@ -6,6 +6,7 @@ summary: vCenter 向けプラグインを使用して、ボリュームの作成
 ---
 = プラグインでストレージをプロビジョニングします
 :hardbreaks:
+:allow-uri-read: 
 :experimental: 
 :nofooter: 
 :icons: font

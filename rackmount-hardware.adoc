@@ -5,6 +5,7 @@ keywords: rackmount, rack-mount, install in rack, rails
 summary: ハードウェアをラックに設置します。 
 ---
 = ラックマウントハードウェア
+:allow-uri-read: 
 
 
 [role="lead"]
