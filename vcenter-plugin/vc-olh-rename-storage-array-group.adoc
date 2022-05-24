@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-rename-storage-array-group.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 現在の名前が適切でない場合はストレージアレイグループの名前を変更します。 
+---
+= ストレージアレイグループの名前を変更します
+:hardbreaks:
+:allow-uri-read: 
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+現在の名前が適切でない場合は、ストレージアレイグループの名前を変更できます。
+
+これらのガイドラインに注意してください。
+
+* 名前には、アルファベット、数字、アンダースコア（_）、ハイフン（-）、シャープ（#）を使用できます。他の文字を選択すると、エラーメッセージが表示されます。別の名前を選択するように求められます。
+* 名前は30文字以内にしてください。名前の先頭と末尾のスペースはすべて削除されます。
+* わかりやすい一意の名前を使用してください。
+* わかりにくい名前は使用しないでください。
+
+
+.手順
+. メインビューで* Manage *を選択し、名前を変更するストレージ・アレイ・グループを選択します。
+. メニューを選択します。Manage Groups [Rename storage array group]（グループの名前変更）。
+. ［*グループ名*］フィールドに、グループの新しい名前を入力します。
+. [ 名前の変更 *] をクリックします。
+

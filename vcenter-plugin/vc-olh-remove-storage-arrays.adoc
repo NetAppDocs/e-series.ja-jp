@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-remove-storage-arrays.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: vCenter向けストレージプラグインでストレージアレイを管理する必要がなくなった場合は、削除してください。 
+---
+= ストレージアレイを削除します
+:hardbreaks:
+:allow-uri-read: 
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ストレージプラグインfor vCenterでストレージアレイを管理する必要がなくなった場合は、削除することができます。
+
+削除すると、そのストレージアレイにはアクセスできなくなります。ただし、ブラウザでIPアドレスまたはホスト名を直接指定すれば、削除したストレージアレイへの接続を確立できます。
+
+ストレージアレイを削除しても、ストレージアレイ自体やそのデータには影響はありません。ストレージアレイを誤って削除した場合は、再度追加することができます。
+
+.手順
+. [* Manage *（管理）]ページで、削除する1つ以上のストレージ・アレイを選択します。
+. メニューを選択します。一般的でないタスク[ストレージアレイの削除]。
++
+ストレージアレイがプラグインインターフェイスのすべてのビューから削除されます。
+
+

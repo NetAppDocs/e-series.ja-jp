@@ -1,15 +1,15 @@
 ---
 settings:
-  name: e-series
+  name: E-Series Systems
   internal:
-    pdf_enabled: false
+    pdf_enabled: true
   prod:
     pdf_enabled: true
     harmony_enabled: false
   langs: ja-jp,us-en,zh-cn,zh-tw,ko-kr
 sidebar:
   entries:
-  - title: E シリーズのドキュメント
+  - title: Eシリーズシステムのドキュメント
     url: "/index.html"
   - title: リリースノート
     entries:
@@ -510,8 +510,6 @@ sidebar:
         entries:
         - title: 概要と要件
           url: "/maintenance-ef600/hics-overview-supertask-concept.html"
-        - title: ホストインターフェイスカードを追加します
-          url: "/maintenance-ef600/hics-add-supertask-task.html"
         - title: ホストインターフェイスカードをアップグレードします
           url: "/maintenance-ef600/hics-upgrade-intro.html"
         - title: 障害が発生したホストインターフェイスカードの交換
@@ -734,18 +732,238 @@ sidebar:
       entries:
       - title: 概要
         url: "/vcenter-plugin/san-spvc-ic-overview.html"
-      - title: プラグインをインストールします
-        url: "/vcenter-plugin/san-spvc-ic-installation.html"
-      - title: アクセス権限を設定します
-        url: "/vcenter-plugin/san-spvc-ic-user-access.html"
-      - title: ログインして操作します
-        url: "/vcenter-plugin/san-spvc-ic-login-and-navigation.html"
-      - title: ストレージアレイを検出
-        url: "/vcenter-plugin/san-spvc-ic-storage-array-discovery.html"
+      - title: はじめに
+        entries:
+        - title: プラグインをインストールします
+          url: "/vcenter-plugin/san-spvc-ic-installation.html"
+        - title: アクセス権限を設定します
+          url: "/vcenter-plugin/san-spvc-ic-user-access.html"
+        - title: ログインして操作します
+          url: "/vcenter-plugin/san-spvc-ic-login-and-navigation.html"
+        - title: ストレージアレイを検出
+          url: "/vcenter-plugin/san-spvc-ic-storage-array-discovery.html"
+        - title: ストレージのプロビジョニング
+          url: "/vcenter-plugin/san-spvc-ic-storage-provisioning.html"
+        - title: ステータスを表示します
+          url: "/vcenter-plugin/vc-olh-view-status.html"
+      - title: 証明書を管理します
+        entries:
+        - title: 証明書の概要
+          url: "/vcenter-plugin/vc-olh-certificates-overview.html"
+        - title: CA署名証明書を使用する
+          url: "/vcenter-plugin/vc-olh-use-ca-signed-certificates.html"
+        - title: 管理証明書をリセットします
+          url: "/vcenter-plugin/vc-olh-reset-management-certificates.html"
+        - title: アレイの証明書をインポートします
+          url: "/vcenter-plugin/vc-olh-import-certificates-for-arrays.html"
+        - title: 証明書を表示します
+          url: "/vcenter-plugin/vc-olh-view-certificates.html"
+        - title: 証明書をエクスポートします
+          url: "/vcenter-plugin/vc-olh-export-certificates.html"
+        - title: 信頼された証明書を削除する
+          url: "/vcenter-plugin/vc-olh-delete-trusted-certificates.html"
+        - title: 信頼されていない証明書を
+          url: "/vcenter-plugin/vc-olh-resolve-untrusted-certificates.html"
+      - title: アレイを管理します
+        entries:
+        - title: アレイ管理の概要
+          url: "/vcenter-plugin/vc-olh-array-management-overview.html"
+        - title: ストレージアレイを検出
+          url: "/vcenter-plugin/vc-olh-discover-storage-arrays.html"
+        - title: ストレージアレイの名前を変更します
+          url: "/vcenter-plugin/vc-olh-rename-storage-array.html"
+        - title: ストレージアレイのパスワードを変更する
+          url: "/vcenter-plugin/vc-olh-change-storage-array-passwords.html"
+        - title: ストレージアレイを削除します
+          url: "/vcenter-plugin/vc-olh-remove-storage-arrays.html"
+        - title: System Manager を起動します
+          url: "/vcenter-plugin/vc-olh-launch-system-manager.html"
+      - title: 設定をインポートします
+        entries:
+        - title: 設定のインポートの概要
+          url: "/vcenter-plugin/vc-olh-import-settings-overview.html"
+        - title: アラート設定をインポートします
+          url: "/vcenter-plugin/vc-olh-import-alert-settings.html"
+        - title: AutoSupport 設定をインポートします
+          url: "/vcenter-plugin/vc-olh-import-autosupport-settings.html"
+        - title: ディレクトリサービス設定をインポートします
+          url: "/vcenter-plugin/vc-olh-import-directory-services-settings.html"
+        - title: システム設定をインポートします
+          url: "/vcenter-plugin/vc-olh-import-system-settings.html"
+        - title: ストレージ構成の設定をインポートします
+          url: "/vcenter-plugin/vc-olh-import-storage-configuration-settings.html"
+      - title: アレイグループを管理します
+        entries:
+        - title: アレイグループの概要
+          url: "/vcenter-plugin/vc-olh-array-groups-overview.html"
+        - title: ストレージアレイグループを作成します
+          url: "/vcenter-plugin/vc-olh-create-storage-array-group.html"
+        - title: ストレージアレイをグループに追加します
+          url: "/vcenter-plugin/vc-olh-add-storage-array-to-group.html"
+        - title: ストレージアレイグループの名前を変更します
+          url: "/vcenter-plugin/vc-olh-rename-storage-array-group.html"
+        - title: グループからストレージアレイを削除します
+          url: "/vcenter-plugin/vc-olh-remove-storage-arrays-from-group.html"
+        - title: ストレージアレイグループを削除します
+          url: "/vcenter-plugin/vc-olh-delete-storage-array-group.html"
+      - title: OSソフトウェアをアップグレードします
+        entries:
+        - title: アップグレードの概要
+          url: "/vcenter-plugin/vc-olh-upgrade-overview.html"
+        - title: アップグレード前の健常性チェックを実行
+          url: "/vcenter-plugin/vc-olh-perform-pre-upgrade-health-check.html"
+        - title: SANtricity OSをアップグレードします
+          url: "/vcenter-plugin/vc-olh-upgrade-santricity-os.html"
+        - title: ステージング済みOSソフトウェアをアクティブ化します
+          url: "/vcenter-plugin/vc-olh-activate-staged-os-software.html"
+        - title: ステージング済みOSソフトウェアをクリアします
+          url: "/vcenter-plugin/vc-olh-clear-staged-os-software.html"
+        - title: ソフトウェアリポジトリを管理します
+          url: "/vcenter-plugin/vc-olh-manage-software-repository.html"
       - title: ストレージのプロビジョニング
-        url: "/vcenter-plugin/san-spvc-ic-storage-provisioning.html"
+        entries:
+        - title: プロビジョニングの概要
+          url: "/vcenter-plugin/vc-olh-provisioning-overview.html"
+        - title: ストレージを作成します
+          url: "/vcenter-plugin/vc-olh-create-storage.html"
+        - title: ボリュームの容量を拡張します
+          url: "/vcenter-plugin/vc-olh-increase-capacity-of-a-volume.html"
+        - title: ボリュームの設定を変更します
+          url: "/vcenter-plugin/vc-olh-change-settings-for-a-volume.html"
+        - title: ワークロードにボリュームを追加する
+          url: "/vcenter-plugin/vc-olh-add-volumes-to-workload.html"
+        - title: ワークロードの設定を変更する
+          url: "/vcenter-plugin/vc-olh-change-workload-settings.html"
+        - title: ボリュームを初期化
+          url: "/vcenter-plugin/vc-olh-initialize-volumes.html"
+        - title: ボリュームを再配置する
+          url: "/vcenter-plugin/vc-olh-redistribute-volumes.html"
+        - title: ボリュームのコントローラ所有権を変更する
+          url: "/vcenter-plugin/vc-olh-change-controller-ownership-of-a-volume.html"
+        - title: ボリュームのキャッシュ設定を変更します
+          url: "/vcenter-plugin/vc-olh-change-cache-settings-for-a-volume.html"
+        - title: ボリュームのメディアスキャン設定を変更します
+          url: "/vcenter-plugin/vc-olh-change-media-scan-settings-for-a-volume.html"
+        - title: ボリュームを削除します
+          url: "/vcenter-plugin/vc-olh-delete-volume.html"
+      - title: ホストを設定
+        entries:
+        - title: ホスト作成の概要
+          url: "/vcenter-plugin/vc-olh-host-creation-overview.html"
+        - title: ホストアクセスを作成
+          url: "/vcenter-plugin/vc-olh-create-host-access.html"
+        - title: ホストクラスタを作成する
+          url: "/vcenter-plugin/vc-olh-create-host-cluster.html"
+        - title: ホストにボリュームを割り当てます
+          url: "/vcenter-plugin/vc-olh-assign-volumes-to-hosts.html"
+        - title: ボリュームの割り当てを解除する
+          url: "/vcenter-plugin/vc-olh-unassign-volumes.html"
+        - title: ホストの設定を変更します
+          url: "/vcenter-plugin/vc-olh-change-the-settings-for-a-host.html"
+        - title: ホストまたはホストクラスタを削除
+          url: "/vcenter-plugin/vc-olh-delete-host-or-host-cluster.html"
+      - title: プールとボリュームグループを設定
+        entries:
+        - title: プールとボリュームグループの概要
+          url: "/vcenter-plugin/vc-olh-pools-and-volume-group-overview.html"
+        - title: プールを自動的に作成する
+          url: "/vcenter-plugin/vc-olh-create-pool-automatically.html"
+        - title: プールを手動で作成する
+          url: "/vcenter-plugin/vc-olh-create-pool-manually.html"
+        - title: ボリュームグループを作成します
+          url: "/vcenter-plugin/vc-olh-create-a-volume-group.html"
+        - title: プールまたはボリュームグループに容量を追加します
+          url: "/vcenter-plugin/vc-olh-add-capacity-to-a-pool-or-volume-group.html"
+        - title: SSDキャッシュを作成する
+          url: "/vcenter-plugin/vc-olh-create-ssd-cache.html"
+        - title: プールの設定を変更します
+          url: "/vcenter-plugin/vc-olh-change-configuration-settings-for-a-pool.html"
+        - title: ボリュームグループの設定を変更します
+          url: "/vcenter-plugin/vc-olh-change-configuration-settings-for-a-volume-group.html"
+        - title: SSDキャッシュの設定を変更する
+          url: "/vcenter-plugin/vc-olh-change-ssd-cache-settings.html"
+        - title: SSDキャッシュの統計を表示します
+          url: "/vcenter-plugin/vc-olh-view-ssd-cache-statistics.html"
+        - title: ボリュームの冗長性をチェックします
+          url: "/vcenter-plugin/vc-olh-check-volume-redundancy.html"
+        - title: プールまたはボリュームグループを削除します
+          url: "/vcenter-plugin/vc-olh-delete-pool-or-volume-group.html"
+        - title: ボリュームグループの空き容量を統合します
+          url: "/vcenter-plugin/vc-olh-consolidate-free-capacity-for-a-volume-group.html"
+        - title: ロケーターライトを点灯します
+          url: "/vcenter-plugin/vc-olh-turn-on-locator-lights.html"
+        - title: 容量を削除
+          url: "/vcenter-plugin/vc-olh-remove-capacity.html"
+        - title: プールまたはボリュームグループのセキュリティを有効にします
+          url: "/vcenter-plugin/vc-olh-enable-security-for-a-pool-or-volume-group.html"
       - title: プラグインを削除します
         url: "/vcenter-plugin/san-spvc-ic-plugin-removal.html"
+      - title: よくある質問です
+        entries:
+        - title: どの設定がインポートされますか？
+          url: "/vcenter-plugin/vc-olh-what-settings-are-imported.html"
+        - title: ストレージアレイが一部表示されないのはなぜですか？
+          url: "/vcenter-plugin/vc-olh-why-do-i-not-see-all-of-my-storage-arrays.html"
+        - title: これらのボリュームがワークロードに関連付けられていないのはなぜですか？
+          url: "/vcenter-plugin/vc-olh-why-are-these-volumes-not-associated-with-a-workload.html"
+        - title: 選択したワークロードはボリュームの作成にどのように影響しますか？
+          url: "/vcenter-plugin/vc-olh-how-does-my-selected-workload-impact-volume-creation.html"
+        - title: ボリューム、ホスト、またはホストクラスタが一部表示されないのはなぜですか？
+          url: "/vcenter-plugin/vc-olh-why-do-i-not-see-all-my-volumes,-hosts,-or-host-clusters.html"
+        - title: 選択したワークロードを削除できないのはなぜですか？
+          url: "/vcenter-plugin/vc-olh-why-can-i-not-delete-the-selected-workload.html"
+        - title: アプリケーション固有のワークロードはストレージアレイの管理にどのように役立ちますか？
+          url: "/vcenter-plugin/vc-olh-how-do-application-specific-workloads-help-me-manage-my-storage-array.html"
+        - title: 拡張後の容量を認識させるにはどうすればよいですか？
+          url: "/vcenter-plugin/vc-olh-what-do-i-need-to-do-to-recognize-the-expanded-capacity.html"
+        - title: ホストの割り当てをあとで実行する場合に選択します。
+          url: "/vcenter-plugin/vc-olh-when-would-i-want-to-use-the-assign-host-later-selection.html"
+        - title: ホストブロックサイズの要件について、どのような点に注意する必要がありますか？
+          url: "/vcenter-plugin/vc-olh-what-do-i-need-to-know-about-host-block-size-requirements.html"
+        - title: ホストクラスタを作成する必要があるのはどのような場合ですか？
+          url: "/vcenter-plugin/vc-olh-why-would-i-need-to-create-a-host-cluster.html"
+        - title: 正しいホストオペレーティングシステムタイプを特定するにはどうすればよいですか？
+          url: "/vcenter-plugin/vc-olh-how-do-i-know-which-host-operating-system-type-is-correct.html"
+        - title: ホストポートをホストに一致させるにはどうすればよいですか？
+          url: "/vcenter-plugin/vc-olh-how-do-i-match-the-host-ports-to-a-host.html"
+        - title: デフォルトクラスタとは何ですか？
+          url: "/vcenter-plugin/vc-olh-what-is-the-default-cluster.html"
+        - title: 冗長性チェックとは何ですか？
+          url: "/vcenter-plugin/vc-olh-what-is-redundancy-check.html"
+        - title: 予約済み容量とは何ですか？
+          url: "/vcenter-plugin/vc-olh-what-is-preservation-capacity.html"
+        - title: アプリケーションに最適なRAIDレベルはどれですか？
+          url: "/vcenter-plugin/vc-olh-what-raid-level-is-best-for-my-application.html"
+        - title: 一部のドライブが表示されないのはなぜですか？
+          url: "/vcenter-plugin/vc-olh-why-are-some-drives-not-showing-up.html"
+        - title: 予約済み容量を増やせない場合、どのような理由が考えられますか？
+          url: "/vcenter-plugin/vc-olh-why-can-i-not-increase-my-preservation-capacity.html"
+        - title: Data Assuranceとは何ですか？
+          url: "/vcenter-plugin/vc-olh-what-is-data-assurance.html"
+        - title: FDE / FIPSセキュリティとは何ですか？
+          url: "/vcenter-plugin/vc-olh-what-is-fde-fips-security.html"
+        - title: セキュリティ対応（ドライブセキュリティ）とは何ですか？
+          url: "/vcenter-plugin/vc-olh-what-is-secure-capable-drive-security.html"
+        - title: SSDキャッシュのすべての統計情報を表示するにはどうすればよいですか？また、何が
+          url: "/vcenter-plugin/vc-olh-how-do-i-view-and-interpret-all-ssd-cache-statistics.html"
+        - title: シェルフ損失の保護およびドロワー損失の保護とは何ですか？
+          url: "/vcenter-plugin/vc-olh-what-is-shelf-loss-protection-and-drawer-loss-protection.html"
+        - title: シェルフ損失およびドロワー損失の保護を維持するにはどうすればよいですか？
+          url: "/vcenter-plugin/vc-olh-how-do-i-maintain-shelf-and-drawer-loss-protection.html"
+        - title: プールの最適化容量とは何ですか？
+          url: "/vcenter-plugin/vc-olh-what-is-optimization-capacity-for-pools.html"
+        - title: ボリュームグループの最適化容量とは何ですか？
+          url: "/vcenter-plugin/vc-olh-what-is-optimization-capacity-for-volume-groups.html"
+        - title: リソースプロビジョニング機能とは何ですか？
+          url: "/vcenter-plugin/vc-olh-what-is-resource-provisioning-capable.html"
+        - title: リソースでプロビジョニングされるボリューム機能について、どのような点に注意する必要がありますか？
+          url: "/vcenter-plugin/vc-olh-what-do-i-need-to-know-about-the-resource-provisioned-volumes-feature.html"
+        - title: 内部セキュリティキー管理と外部セキュリティキー管理の違いは何ですか？
+          url: "/vcenter-plugin/vc-olh-what-is-the-difference-between-internal-security-key-and-external-security-key-management.html"
+        - title: セキュリティキーを作成するときは、どのような点に注意する必要がありますか？
+          url: "/vcenter-plugin/vc-olh-what-do-i-need-to-know-before-creating-a-security-key.html"
+        - title: パスフレーズを定義する必要があるのはなぜですか？
+          url: "/vcenter-plugin/vc-olh-why-do-i-need-to-define-a-pass-phrase.html"
     - title: 従来のソリューション
       entries:
       - title: Cloud Connector の場合
@@ -788,28 +1006,26 @@ homepage:
     links:
     - title: クイックスタート
       url: "/getting-started/getup-run-concept.html"
-    - title: EF シリーズの概要
+    - title: EFシリーズのデータシート
       url: https://www.netapp.com/pdf.html?item=/media/19339-DS-4082.pdf
-    - title: E5700 シリーズの概要
+    - title: E5700データシート
       url: https://www.netapp.com/pdf.html?item=/media/7572-ds-3894.pdf
-    - title: E2800 シリーズの概要
+    - title: E2800データシート
       url: https://www.netapp.com/pdf.html?item=/media/7573-ds-3805.pdf
-    - title: SANtricity ソフトウェアの概要
-      url: https://www.netapp.com/pdf.html?item=/media/7676-ds-3891.pdf
-  - title: オンラインヘルプ
+  - title: SANtricity ソフトウェア
     links:
     - title: SANtricity システムマネージャ 11.7
-      url: https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-117/home.html
+      url: https://docs.netapp.com/us-en/e-series-santricity/system-manager/index.html
     - title: SANtricity Unified Manager 5.
-      url: https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-uni-5/home.html
+      url: https://docs.netapp.com/us-en/e-series-santricity/unified-manager/index.html
     - title: コマンドラインインターフェイス（ CLI ）リファレンス
-      url: https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-cli-115/home.html
+      url: https://docs.netapp.com/us-en/e-series-cli/index.html
   - title: SANtricity API
     links:
     - title: Web サービス
       url: "/web-services-proxy/index.html"
     - title: vCenter 向けプラグイン
-      url: "/vcenter-plugin/san-spvc-ic-overview.html"
+      url: "/san-spvc-ic-overview.html"
     - title: SMI-S プロバイダ
       url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62208
   - title: パフォーマンスアプリケーションのアドオン
@@ -840,3 +1056,6 @@ homepage:
       url: https://activeiq.netapp.com/?source=aiqnsspage
     - title: E シリーズ / SANtricity のダウンロード（ログインが必要）
       url: https://mysupport.netapp.com/site/downloads#E
+product-family:
+  name: E-Series
+  repo: e-series-family

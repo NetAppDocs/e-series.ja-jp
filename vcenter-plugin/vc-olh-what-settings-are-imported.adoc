@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-what-settings-are-imported.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 設定のインポート機能は、1つのストレージアレイから複数のストレージアレイに構成をロードするバッチ処理です。この処理でインポートされる設定は、System Managerでソースストレージアレイがどのように設定されているかによって異なります。 
+---
+= どの設定がインポートされますか？
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+設定のインポート機能は、1つのストレージアレイから複数のストレージアレイに構成をロードするバッチ処理です。
+
+この処理でインポートされる設定は、System Managerでソースストレージアレイがどのように設定されているかによって異なります。複数のストレージアレイにインポートできる設定は次のとおりです。
+
+* *Email alerts*--メールサーバのアドレスとアラート受信者の電子メールアドレスを設定します
+* *Syslogアラート*-- syslogサーバのアドレスとUDPポートを含む設定。
+* *snmp alerts *-- SNMPサーバのコミュニティ名とIPアドレスを含む設定。
+* * AutoSupport *--個別の機能（Basic AutoSupport 、AutoSupport OnDemand、Remote Diagnostics）、メンテナンス時間、配信方法、 およびディスパッチスケジュール。
+* *ディレクトリサービス*-- LDAP (Lightweight Directory Access Protocol)サーバーのドメイン名とURL、およびLDAPサーバーのユーザーグループとストレージアレイの定義済みロールとのマッピングが含まれます。
+* *ストレージ構成*--ボリューム(リポジトリボリューム以外のシックボリュームのみ)、ボリュームグループ、プール、およびホットスペアドライブの割り当てが含まれます。
+* *システム設定*--ボリュームのメディアスキャン設定、コントローラのSSDキャッシュ、および自動ロードバランシングが含まれます(ホスト接続レポートは含まれません)。
+

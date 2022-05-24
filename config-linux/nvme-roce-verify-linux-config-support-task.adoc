@@ -39,18 +39,7 @@ summary: 安定した稼働を確保するために、導入計画を作成し�
 
 == NVMe over RoCE の制限事項を確認します
 
-NVMe over RoCE を使用する前に、コントローラ、スイッチ、ホスト、およびリカバリの制限事項を確認してください。すべての制限事項の最新のリストについては、を参照してください https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]。
-
-
-
-=== コントローラの制限事項
-
-* NVMe over RoCE は、 EF300 （ 100GB コントローラのみ）、 EF600 、 EF570 、 E5700 コントローラで設定できます。コントローラには 100GB または 200GB のホストポートが必要です。
-* このプロトコルは、 EF300 、 EF600 、 EF570 、および E5700 コントローラでのみ使用できます。EF600 、 EF570 、および E5700 コントローラでこのプロトコルを使用するには、 32GB 以上の物理メモリが必要です。EF300 の場合は、最低 16 GB の物理メモリが必要です。一日の開始処理でコントローラの最小メモリ要件が満たされていないと、問題を診断するためのメッセージが表示されます。
-* シンプレックス（シングルコントローラ）構成はサポートされません。
-* サポートされるホストインターフェイスカード（ HIC ）は、 100G または 200G の EDR HIC のみです。この HIC は NVMe over InfiniBand 、 iSER 、 SRP もサポートします。
-* NVMe over RoCE ホストインターフェイスを、 NVMe over InfiniBand または SCSI ホストインターフェイスと組み合わせて使用することはできません。
-
+NVMe over RoCEを使用する前に、を参照してください https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] をクリックして、コントローラ、ホスト、およびリカバリの最新の制限事項を確認してください。
 
 
 
@@ -58,12 +47,6 @@ NVMe over RoCE を使用する前に、コントローラ、スイッチ、ホ�
 
 
 NOTE: * データ損失のリスク。 * NVMe over RoCE 環境では、データ損失のリスクを排除するために、スイッチで優先度フロー制御またはグローバルポーズ制御を有効にする必要があります。
-
-
-
-=== ホスト、ホストプロトコル、およびホストオペレーティングシステムの制限事項
-
-すべての要件の一覧については、を参照してください https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]。
 
 
 

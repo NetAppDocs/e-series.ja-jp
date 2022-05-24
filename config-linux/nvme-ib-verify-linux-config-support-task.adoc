@@ -39,27 +39,7 @@ summary: 安定した稼働を確保するために、導入計画を作成し�
 
 == NVMe over InfiniBand の制限事項を確認します
 
-NVMe over InfiniBand を使用する前に、コントローラ、ホスト、およびリカバリの制限事項を確認してください。すべての制限事項の最新のリストについては、を参照してください https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]。
-
-
-
-=== コントローラの制限事項
-
-* NVMe over InfiniBand は、 EF300 （ 100GB コントローラのみ）、 EF600 、 EF570 、または E5700 コントローラで設定できます。コントローラには 100GB または 200GB の InfiniBand ホストポートが必要です。
-* このプロトコルは、 EF300 、 EF600 、 EF570 、または EF570 コントローラでのみ使用できます。EF600 、 EF570 、および E5700 コントローラでこのプロトコルを使用するには、 32GB 以上の物理メモリが必要です。EF300 の場合は、最低 16 GB の物理メモリが必要です。一日の開始処理でコントローラの最小メモリ要件が満たされていないと、問題を診断するためのメッセージが表示されます。
-* シンプレックス（単一コントローラ）構成はサポートされません。
-* NVMe over InfiniBand ホストインターフェイスと SCSI ホストインターフェイスを組み合わせて使用することはできません。
-* EF300 コントローラの場合、 IB インターフェイスでサポートできる NVMe ホストの数は 64 個までです。
-
-
-
-
-=== ホスト、ホストプロトコル、およびホストオペレーティングシステムの制限事項
-
-* ホストが互換性のある最新の RHEL 7 、 SUSE Linux Enterprise Server 12 または 15 サービスパックオペレーティングシステムを実行している必要があります。を参照してください https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] をクリックして、最新の要件を確認してください。
-* ホストチャネルアダプタは、 Mellanox 製のみがサポートされます。を参照してください https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] を参照してください。
-* サポートされるホストインターフェイスカード（ HIC ）は、 100G または 200G の EDR IB HIC のみです。この HIC は iSER と SRP もサポートしますが、 iSER と SRP を同時に使用することはできません。
-
+NVMe over InfiniBandを使用する前に、を参照してください https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] をクリックして、コントローラ、ホスト、およびリカバリの最新の制限事項を確認してください。
 
 
 

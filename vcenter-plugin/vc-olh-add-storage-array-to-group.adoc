@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-add-storage-array-to-group.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: ユーザが作成したグループにストレージアレイを追加します。 
+---
+= ストレージアレイをグループに追加します
+:hardbreaks:
+:allow-uri-read: 
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ユーザが作成したグループにストレージアレイを追加することができます。
+
+* 手順 *
+
+. メインビューで、* Manage *を選択し、ストレージ・アレイを追加するグループを選択します。
+. 選択メニュー：グループの管理[グループへのストレージアレイの追加]。
+. グループに追加するストレージアレイを選択します。
+. [ 追加（ Add ） ] をクリックします。
+

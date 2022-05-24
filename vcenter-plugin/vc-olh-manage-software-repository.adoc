@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-manage-software-repository.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: ソフトウェアリポジトリを表示および管理することができます。このリポジトリには、vCenter向けストレージプラグインに関連付けられているすべてのソフトウェアファイルが表示されます。 
+---
+= ソフトウェアリポジトリを管理します
+:hardbreaks:
+:allow-uri-read: 
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ソフトウェアリポジトリを表示および管理することができます。このリポジトリには、vCenter向けストレージプラグインに関連付けられているすべてのソフトウェアファイルが表示されます。
+
+リポジトリを使用してSANtricity OSファイルを追加する場合は、ローカルシステム上にOSファイルがあることを確認します。
+
+Manage SANtricity OS Software Repositoryオプションを使用すると、プラグインが実行されているホストシステムに1つ以上のOSファイルをインポートできます。ソフトウェアリポジトリにある1つ以上のOSファイルを削除することもできます。
+
+.手順
+. メインビューから* Manage *を選択し、メニューからUpgrade Center [Manage SANtricity Software Repository]を選択します。
++
+Manage SANtricity OS Software Repository（OSソフトウェアリポジトリの管理）ダイアログが表示されます。
+
+. 次のいずれかを実行します。
++
+** *インポート：*
++
+... [* インポート * ] をクリックします。
+... [*参照]をクリックし、追加するOSファイルが保存されている場所に移動します。OSファイルのファイル名は「N2800-830000-000.dlp」のようになります。
+... 追加するOSファイルを1つ以上選択し、*インポート*をクリックします。
+
+
+** *削除：*
++
+... ソフトウェアリポジトリから削除するOSファイルを1つ以上選択します。
+... [ 削除（ Delete ） ] をクリックします。
+
+
+
+
+
+
+インポートを選択した場合は、ファイルがアップロードされて検証されます。削除を選択した場合は、ファイルがソフトウェアリポジトリから削除されます。

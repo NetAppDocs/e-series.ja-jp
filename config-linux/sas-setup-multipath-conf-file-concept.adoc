@@ -13,19 +13,9 @@ summary: multipath.conf ファイルは、マルチパスデーモン multipathd
 [role="lead"]
 multipath.conf ファイルは、マルチパスデーモン multipathd の構成ファイルです。
 
-multipath.conf ファイルは、 multipathd の組み込みの構成テーブルよりも優先されます。空白を含まない最初の文字 # を含むファイル内の行は、コメント行とみなされます。空の行は無視されます。
+multipath.conf ファイルは、 multipathd の組み込みの構成テーブルよりも優先されます。
 
 
 NOTE: SANtricity OS 8.30 以降では、デフォルト設定をそのまま使用することを推奨します。
 
-multipath.conf ファイルは、次の場所にあります。
-
-* SLES の場合：
-+
-/usr/share/doc/packages/multipath-tools/multipath.conf Synthetic
-
-* RHEL の場合：
-+
-/usr/share/doc/device-mapper-multipath-0.4.9/multipath.conf
-
-
+/etc/multipath.confを変更する必要はありません。

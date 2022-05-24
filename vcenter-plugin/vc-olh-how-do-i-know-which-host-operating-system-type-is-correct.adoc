@@ -1,0 +1,71 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-how-do-i-know-which-host-operating-system-type-is-correct.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: Host Operating System Typeフィールドには、ホストのオペレーティングシステムが表示されます。推奨されるホストタイプをドロップダウンリストから選択するか、Host Context Agent（HCA）でホストおよび適切なホストオペレーティングシステムのタイプを設定することができます。 
+---
+= 正しいホストオペレーティングシステムタイプを特定するにはどうすればよいですか？
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Host Operating System Typeフィールドには、ホストのオペレーティングシステムが表示されます。推奨されるホストタイプをドロップダウンリストから選択するか、Host Context Agent（HCA）でホストおよび適切なホストオペレーティングシステムのタイプを設定することができます。
+
+ドロップダウンリストに表示されるホストタイプは、ストレージアレイのモデルとファームウェアバージョンによって異なります。最新バージョンでは、最も一般的なオプションが最初に表示されますが、これは最も適切なオプションです。このリストに表示されるオプションが完全にサポートされているとは限りません。
+
+
+NOTE: ホストのサポートの詳細については、を参照してください http://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]。
+
+リストに表示されるホストタイプは次のとおりです。
+
+|===
+| ホストオペレーティングシステムのタイプ | オペレーティングシステム（OS）とマルチパスドライバ 
+
+
+| Linux DM-MP（カーネル3.10以降） | Device Mapper Multipathのフェイルオーバー解決策 と3.10以降のカーネルを使用するLinuxオペレーティングシステムをサポートします。 
+
+
+| VMware ESXi | VMwareに組み込みのストレージアレイタイプポリシーモジュールであるSATP_ALUAを使用してNative Multipathing Plug-in（NMP）アーキテクチャを実行するVMware ESXiオペレーティングシステムをサポートします。 
+
+
+| Windows（クラスタまたは非クラスタ） | ATTOマルチパスドライバを実行しないWindowsクラスタ構成または非クラスタ構成をサポートします。 
+
+
+| ATTOクラスタ（すべてのオペレーティングシステム） | ATTO Technology、Inc.のマルチパスドライバを使用するすべてのクラスタ構成をサポートします。 
+
+
+| Linux（Veritas DMP） | Veritas DMPマルチパス解決策 を使用するLinuxオペレーティングシステムをサポートします。 
+
+
+| Linux（ATTO） | ATTO Technology、Inc.のマルチパスドライバを使用するLinuxオペレーティングシステムをサポートします。 
+
+
+| Mac OS の場合 | ATTO Technology、Inc.のマルチパスドライバを使用するMac OSバージョンをサポートします。 
+
+
+| Windows（ATTO） | ATTO Technology、Inc.のマルチパスドライバを使用するWindowsオペレーティングシステムをサポートします。 
+
+
+| FlexArray （ALUA） | マルチパスにALUAを使用するNetApp FlexArray システムをサポートします。 
+
+
+| IBM SVCの場合 | IBM SAN Volume Controller構成をサポートします。 
+
+
+| 工場出荷時のデフォルト | ストレージアレイの初回起動用です。ホストオペレーティングシステムのタイプが工場出荷時のデフォルトに設定されている場合は、接続先ホストで実行されているホストオペレーティングシステムとマルチパスドライバに合わせて変更します。 
+
+
+| Linux DM-MP（カーネル3.9以前） | Device Mapper Multipathのフェイルオーバー解決策 と3.9以前のカーネルを使用するLinuxオペレーティングシステムをサポートします。 
+
+
+| Windowsクラスタ（廃止） | ホストオペレーティングシステムのタイプがこの値に設定されている場合は、代わりにWindows（クラスタまたは非クラスタ）の設定を使用します。 
+|===
+HCAがインストールされ、ストレージがホストに接続されると、HCAはI/Oパス経由でホストトポロジをストレージコントローラに送信します。ホストトポロジに基づいて、ストレージコントローラはホストと関連するホストポートを自動的に定義し、ホストタイプを設定します。
+
+
+NOTE: 推奨されるホストタイプがHCAで選択されない場合は、ホストタイプを手動で設定する必要があります。

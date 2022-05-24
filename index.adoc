@@ -5,7 +5,7 @@ permalink: index.html
 lead: E-Series systems give you an integrated hardware and software solution for dedicated, high-bandwidth applications like data analytics, video surveillance, and disk-based backup that need simple, fast, reliable SAN storage. 
 summary: E シリーズシステムは、シンプルで高速な信頼性の高い SAN ストレージを必要とする、データ分析、ビデオ監視、ディスクベースのバックアップなど、広帯域を使用する専用アプリケーションに対応したハードウェアとソフトウェアを統合した解決策です。 
 ---
-= E シリーズおよび SANtricity に関するドキュメント
+= Eシリーズシステムのドキュメント
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

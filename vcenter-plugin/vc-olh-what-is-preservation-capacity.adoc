@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-what-is-preservation-capacity.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 予約済み容量は、ドライブ障害に備えてプール内に確保されている容量（ドライブ数）です。 
+---
+= 予約済み容量とは何ですか？
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+予約済み容量は、ドライブ障害に備えてプール内に確保されている容量（ドライブ数）です。
+
+プールが作成されると、プール内のドライブ数に応じて自動的にデフォルトの予約済み容量が確保されます。
+
+プールの予約済み容量は再構築時に使用されますが、ボリュームグループでは同じ目的でホットスペアドライブが使用されます。予約済み容量を使用する方式は、再構築の時間を短縮できるため、ホットスペアドライブよりも優れています。予約済み容量は、ホットスペアドライブの場合は1本のドライブに確保されるのではなく、プール内の複数のドライブに分散されるため、特定のドライブの速度や可用性に制限されません。

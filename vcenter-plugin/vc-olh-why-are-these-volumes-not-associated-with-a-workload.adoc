@@ -1,0 +1,17 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-why-are-these-volumes-not-associated-with-a-workload.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: ボリュームをコマンドラインインターフェイス（CLI）を使用して作成した場合や別のストレージアレイから移行（インポート/エクスポート）した場合、それらのボリュームはワークロードに関連付けられません。 
+---
+= これらのボリュームがワークロードに関連付けられていないのはなぜですか？
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ボリュームをコマンドラインインターフェイス（CLI）を使用して作成した場合や別のストレージアレイから移行（インポート/エクスポート）した場合、それらのボリュームはワークロードに関連付けられません。

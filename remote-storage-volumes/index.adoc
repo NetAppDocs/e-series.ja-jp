@@ -30,6 +30,6 @@ SANtricity ® リモートストレージボリューム機能を使用して、
 
 == 詳細については、こちらをご覧ください
 
-* オンラインヘルプ。 System Manager ユーザインターフェイスまたはで参照できます https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-117/home.html?cp=5_0["ドキュメントセンター"^]。
+* オンラインヘルプ。 System Manager ユーザインターフェイスまたはで参照できます https://docs.netapp.com/us-en/e-series-santricity/index.html["SANtricity ソフトウェアドキュメントサイト"^]。
 * リモートストレージボリューム機能の技術情報については、を参照してください https://www.netapp.com/pdf.html?item=/media/28697-tr-4893-deploy.pdf["Remote Storage Volumes テクニカルレポート"^]。
 

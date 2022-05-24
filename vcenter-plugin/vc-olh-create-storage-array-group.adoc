@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-create-storage-array-group.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: ストレージグループでは、ボリュームを構成するストレージをどのドライブから提供するかを定義します。 
+---
+= ストレージアレイグループを作成します
+:hardbreaks:
+:allow-uri-read: 
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ストレージグループを作成し、そのグループにストレージアレイを追加します。ストレージグループでは、ボリュームを構成するストレージをどのドライブから提供するかを定義します。
+
+* 手順 *
+
+. 管理ページで、メニューからグループの管理[ストレージアレイグループの作成]を選択します。
+. [*名前*]フィールドに、新しいグループの名前を入力します。
+. 新しいグループに追加するストレージアレイを選択します。
+. [ 作成（ Create ） ] をクリックします。
+

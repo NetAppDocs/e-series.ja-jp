@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-launch-system-manager.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 単一のアレイを管理するには、Launchオプションを使用して、新しいブラウザウィンドウでSystem Managerを開きます。 
+---
+= System Manager を起動します
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+単一のアレイを管理するには、起動オプションを使用して、新しいブラウザウィンドウでSANtricity System Managerを開きます。
+
+System Managerは、ストレージアレイのコントローラに組み込まれたアプリケーションであり、イーサネット管理ポートを介してネットワークに接続されます。System Managerにはアレイベースのすべての機能が含まれています。System Managerにアクセスするには、Webブラウザを使用してネットワーク管理クライアントにアウトオブバンド接続する必要があります。
+
+.手順
+. [* Manage *（管理）]ページで、管理する1つ以上のストレージ・アレイを選択します。
+. [* 起動 * ] をクリックします。
++
+ブラウザに新しいタブが開き、System Managerのログインページが表示されます。
+
+. ユーザー名とパスワードを入力し、*ログイン*をクリックします。
+

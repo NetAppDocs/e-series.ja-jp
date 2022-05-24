@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-reset-management-certificates.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 管理証明書を工場出荷時の自己署名証明書の状態にリバートします。 
+---
+= 管理証明書をリセットします
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+vCenter向けストレージプラグインをホストしている管理システムでは、管理証明書を工場出荷時の自己署名証明書の状態に戻すことができます。
+
+このタスクでは、vCenter向けストレージプラグインを実行しているホストシステムから現在の管理証明書を削除します。証明書をリセットすると、ホストシステムでは自己署名証明書が再び使用されるようになります。
+
+.手順
+. [証明書管理]を選択します。
+. [*管理（* Management）]タブで、[*リセット（* Reset）]を選択します。
++
+管理証明書のリセットの確認ダイアログボックスが開きます。
+
+. フィールドにresetと入力し、* Reset *をクリックします。
++
+ブラウザをリフレッシュすると、デスティネーションサイトへのアクセスがブロックされ、サイトでHTTP Strict Transport Securityが使用されていると報告されることがあります。この状況は、自己署名証明書に切り替えると発生します。デスティネーションへのアクセスをブロックしている状態をクリアするには、ブラウザから参照データをクリアする必要があります。
+
+
+
+システムでサーバの自己署名証明書が再び使用されるようになります。そのため、セッションの自己署名証明書を手動で承認するように求められます。

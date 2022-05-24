@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-view-certificates.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 証明書を使用している組織、証明書を発行した機関、有効期間、フィンガープリント（一意の識別子）など、証明書の概要情報を表示する 
+---
+= 証明書を表示します
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+証明書を使用している組織、証明書を発行した機関、有効期間、フィンガープリント（一意の識別子）など、証明書の概要情報を表示できます。
+
+.手順
+. [証明書管理]を選択します。
+. 次のいずれかのタブを選択します。
++
+** *Management*--プラグインをホストしているシステムの証明書を表示します管理証明書には、自己署名の証明書と認証局（CA）によって承認された証明書があります。プラグインへのセキュアなアクセスを許可します。
+** *Trusted --プラグインがストレージアレイやLDAPサーバーなどの他のリモートサーバーにアクセスできる証明書を表示します認証局（CA）から発行された証明書と自己署名の証明書が含まれます。
+
+
+. 証明書の詳細を表示するには、その行を選択し、行の最後にある省略記号を選択して、*表示*または*エクスポート*をクリックします。
+

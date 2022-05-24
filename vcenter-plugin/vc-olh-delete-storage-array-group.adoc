@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-delete-storage-array-group.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 不要になった1つ以上のストレージアレイグループを削除します。 
+---
+= ストレージアレイグループを削除します
+:hardbreaks:
+:allow-uri-read: 
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+不要になった1つ以上のストレージアレイグループを削除することができます。
+
+この処理で削除されるのは、ストレージアレイグループだけです。削除したグループに関連付けられているストレージアレイには、Manage Allビューまたはそれに関連付けられているその他のグループからアクセスできます。
+
+.手順
+. 管理ページで、メニューからグループの管理[ストレージアレイグループの削除]を選択します。
+. 削除するストレージアレイグループを1つ以上選択します。
+. [ 削除（ Delete ） ] をクリックします。
+

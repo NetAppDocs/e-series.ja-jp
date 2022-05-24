@@ -24,13 +24,13 @@ vCenter Server Appliance からプラグインを削除し、アプリケーシ�
 
 vCenter Server Appliance からプラグインの登録を解除するには、次のいずれかの方法を選択します。
 
-* 方法 1: 登録スクリプトを実行する
-* 方法 2 ： vCenter Server のモブページを使用する
+* <<Method 1: Execute the registration script>>
+* <<Method 2: Use the vCenter Server Mob pages>>
 
 
 
 
-=== 方法 1: 登録スクリプトを実行する
+=== 方法1:登録スクリプトを実行します
 
 . コマンドラインでプロンプトを開き、次のディレクトリに移動します。
 +
@@ -57,7 +57,7 @@ vcenter-register.bat
 
 
 
-=== 方法 2 ： vCenter Server のモブページを使用する
+=== 方法2：vCenter Serverのモブページを使用する
 
 . Web ブラウザを開き、次の URL を入力します。
 +
@@ -74,11 +74,7 @@ vcenter-register.bat
 
 
 
-NOTE: この手順は、 vCenter Server Appliance からプラグインの登録を解除しますが、サーバからプラグインパッケージファイルを削除することはありません。パッケージファイルを削除するには、 SSH を使用して vCenter Server Appliance にアクセスし、次のディレクトリに移動します。
-
-/etc/vmware/vsphere-clientui/vc-packages/vsphere-client-serenity / です
-
-次に、プラグインに関連付けられているディレクトリを削除します。
+NOTE: この手順は、 vCenter Server Appliance からプラグインの登録を解除しますが、サーバからプラグインパッケージファイルを削除することはありません。パッケージファイルを削除するには、SSHを使用してvCenter Server Applianceにアクセスし、「etc/vmware/vsphere-clientui/vc-packages/vsphere-client-serenity」ディレクトリに移動します。次に、プラグインに関連付けられているディレクトリを削除します。
 
 
 

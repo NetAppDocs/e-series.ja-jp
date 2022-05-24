@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-array-groups-overview.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 一連のストレージアレイをグループ化して物理インフラと仮想インフラを管理します。 
+---
+= アレイグループの概要
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ストレージプラグインfor vCenterでは、一連のストレージアレイをグループ化して物理インフラや仮想インフラを管理することができます。ストレージアレイをグループ化すると、ジョブの監視やレポートが簡単になります。
+
+ストレージアレイグループのタイプ：
+
+* *すべてのグループ*--すべてのグループがデフォルトのグループで、組織内で検出されたすべてのストレージアレイが含まれます。Allグループには、メインビューからアクセスできます。
+* *ユーザーが作成したグループ*--ユーザーが作成したグループには'手動で選択してそのグループに追加するストレージアレイが含まれますユーザが作成したグループには、メインビューからアクセスできます。
+

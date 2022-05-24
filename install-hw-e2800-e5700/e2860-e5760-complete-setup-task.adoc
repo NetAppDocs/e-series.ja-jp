@@ -32,7 +32,7 @@ NOTE: AIX ® を使用している場合は、アレイに接続する前に、�
 
 
  a| 
-image:../media/trafford_direct.png[""]
+image:../media/4U_DirectTopology.png[""]
  a| 
 . 各ホストアダプタをコントローラのホストポートに直接接続します。
 
@@ -48,7 +48,7 @@ image:../media/trafford_direct.png[""]
 
 
  a| 
-image:../media/trafford_direct.png[""]
+image:../media/4U_FabricTopology.png[""]
  a| 
 . 各ホストアダプタをスイッチに直接接続します。
 . 各スイッチをコントローラのホストポートに直接接続します。

@@ -16,7 +16,11 @@ summary: SANtricity Storage Plugin for vCenter では、 VMware vSphere Client �
 [role="lead"]
 SANtricity Storage Plugin for vCenter では、 VMware vSphere Client セッションから E シリーズストレージアレイを統合管理できます。
 
-vCenter 向けプラグインでは、次の機能を使用できます。
+
+
+== 使用可能なタスク
+
+このプラグインを使用して、次のタスクを実行できます。
 
 * ネットワーク内で検出されたストレージアレイを表示および管理します。
 * 複数のストレージアレイのグループに対してバッチ処理を実行する。
@@ -27,7 +31,7 @@ vCenter 向けプラグインでは、次の機能を使用できます。
 
 
 
-NOTE: このプラグインは、 SANtricity System Manager ソフトウェアに代わるものではありません。1 つのアレイで特定のストレージ管理タスクを実行する場合も、 System Manager が必要です。
+NOTE: プラグインは、System Managerインターフェイスに直接代わるものではなく、ストレージアレイの各コントローラに組み込まれています。System Managerには管理機能が追加されています。必要に応じて、プラグインのメインビューでストレージアレイを選択し、* Launch *をクリックすると、System Managerを開くことができます。
 
 このプラグインを使用するには、 VMware 環境に導入された VMware vCenter Server Appliance と、プラグイン Web サーバをインストールして実行するアプリケーションホストが必要です。
 
@@ -37,7 +41,49 @@ image:../media/vcenter_communication.png[""]
 
 
 
+== インターフェイスの概要
+
+プラグインにログインすると、メインページが* Manage-All *に開きます。このページでは、ネットワークで検出されたすべてのストレージアレイを表示および管理できます。
+
+
+
+=== ナビゲーションサイドバー
+
+ナビゲーションサイドバーには、次の情報が表示されます。
+
+* *管理*--ネットワーク内のストレージアレイの検出、アレイのSystem Managerの起動、1つのアレイから複数のアレイへの設定のインポート、アレイグループの管理、SANtricity OSのアップグレード、ストレージのプロビジョニングを行います。
+* *証明書管理*--ブラウザとクライアント間の認証に使用する証明書を管理します
+* *オペレーション*--あるアレイから別のアレイへの設定のインポートなど'バッチ操作の進行状況を表示します
+
+
+
+NOTE: ストレージアレイのステータスが最適でない場合は、一部の処理は使用できません。
+
+* *サポート*--テクニカルサポートのオプション、リソース、連絡先を表示します。
+
+
+
+
+=== サポートされているブラウザ
+
+vCenter向けストレージプラグインには、いくつかの種類のブラウザからアクセスできます。サポートされるブラウザとバージョンを次に示します。
+
+* Google Chrome 79 以降
+* Mozilla Firefox 70 以降
+* Microsoft Edge 79 以降
+
+
+
+
+=== ユーザロールと権限
+
+vCenter向けストレージプラグインのタスクにアクセスするには、読み取り/書き込み権限が必要です。デフォルトでは、定義されているすべてのVMware vCenterユーザIDに、プラグインでタスクを実行する権限がありません。
+
+
+
 == 設定の概要
+
+設定には、次の手順が含まれます。
 
 . link:san-spvc-ic-installation.html["プラグインをインストールして登録します"]。
 . link:san-spvc-ic-user-access.html["プラグインアクセス権限を設定します"]。
@@ -50,6 +96,4 @@ image:../media/vcenter_communication.png[""]
 
 == 詳細については、こちらをご覧ください
 
-* オンラインヘルプについては、 Storage Plugin for vCenter のユーザインターフェイスを参照してください。
-* vSphere Client でのデータストアの管理の詳細については、を参照してください https://docs.vmware.com/en/VMware-vSphere/index.html["VMware vSphere のドキュメント"^]。
-
+vSphere Client でのデータストアの管理の詳細については、を参照してください https://docs.vmware.com/en/VMware-vSphere/index.html["VMware vSphere のドキュメント"^]。

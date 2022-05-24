@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-what-is-data-assurance.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: Data Assurance（DA）はT10 Protection Information（PI）標準を実装しています。I/Oパスでデータが転送される際に発生する可能性のあるエラーをチェックして修正することで、データの整合性が向上します。 
+---
+= Data Assuranceとは何ですか？
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Data Assurance（DA）はT10 Protection Information（PI）標準を実装しています。I/Oパスでデータが転送される際に発生する可能性のあるエラーをチェックして修正することで、データの整合性が向上します。
+
+Data Assurance機能の一般的な用途として、コントローラとドライブ間のI/Oパスがチェックされます。DA 機能はプールおよびボリュームグループのレベルで提供されます。
+
+この機能を有効にすると、ボリューム内の各データブロックに巡回冗長検査（CRC）と呼ばれるエラーチェック用のコードが付加されます。データブロックが移動されると、ストレージアレイはこれらのCRCコードを使用して、転送中にエラーが発生したかどうかを判断します。破損している可能性があるデータはディスクに書き込まれず、ホストにも返されません。DA機能を使用する場合は、新しいボリュームを作成するときにDAに対応したプールまたはボリュームグループを選択します（プールとボリュームグループの候補の表で、「* DA *」の横の「*はい」*を探します）。
+
+これらのDA対応ボリュームは、必ずDAに対応したI/Oインターフェイスを使用しているホストに割り当ててください。DAに対応したI/Oインターフェイスには、ファイバチャネル、SAS、iSCSI over TCP/IP、NVMe/FC、NVMe/IB、 NVMe/RoCEとiSER over InfiniBand（iSCSI Extensions for RDMA/IB）：SRP over InfiniBandではDAはサポートされていません。

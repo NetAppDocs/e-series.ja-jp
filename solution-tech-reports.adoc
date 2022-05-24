@@ -59,6 +59,12 @@ summary: E シリーズのテクニカルレポート
 
 
 | E シリーズアレイをビデオ監視環境に導入するためのベストプラクティスについて説明します。 | NetApp E シリーズストレージでビデオ管理システムを設計および導入する方法について説明します。 | ビデオ監視解決策アーキテクチャについて説明し、コンポーネントとストレージのベストプラクティスの詳細を示します。 
+
+
+| https://www.netapp.com/pdf.html?item=/media/19427-tr-4838.pdf&v=2020106216["* TR-4838：『E2800 and E5700 with Milestone XProtect VMS Certification Report』*"^] | https://www.netapp.com/media/17106-tr4771design.pdf["* TR-4771 -設計：NetApp EシリーズおよびGenetecビデオ管理ソフトウェア*"^] |  
+
+
+| NetApp E2800およびE5700ハイブリッドストレージアレイで実行される認定テストの結果について説明します。 | NetApp E2800およびE5700ハイブリッドストレージアレイでのGenetec Security Center Video Management Software（VM）の認定結果について説明します。 |  
 |===
 
 

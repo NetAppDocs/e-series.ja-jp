@@ -1,0 +1,17 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-why-would-i-need-to-create-a-host-cluster.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 複数のホストから同じボリュームセットにアクセスする場合は、ホストクラスタを作成する必要があります。 
+---
+= ホストクラスタを作成する必要があるのはどのような場合ですか？
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+複数のホストから同じボリュームセットにアクセスする場合は、ホストクラスタを作成する必要があります。通常、個々のホストには、ボリュームへのアクセスを調整するためのクラスタリングソフトウェアがインストールされています。
