@@ -6344,8 +6344,6 @@
   <block id="c6941703005adb7144c53a6fa1e9031b" category="section-title">手順 6 ：ストレージを設定する</block>
   <block id="9bc4dbdc4b0ba32e879477f6d380d1f2" category="paragraph">ストレージを設定するには、ブラウザにコントローラの IP アドレスを入力して、 Web ベースのインターフェイスである System Manager にアクセスします。セットアップウィザードを使用してシステムを設定できます。コマンドラインインターフェイス（ CLI ）を使用することもできます。</block>
   <block id="dc319fa18c0e449181d9af17b46cb41d" category="paragraph">使用するインターフェイスを選択します。</block>
-  <block id="e310bf04394efde500bf9f4c81acb37c" category="inline-link">SANtricity システムマネージャ 11.7x オンラインヘルプ</block>
-  <block id="cf7b3313bd605518202463f0e3fe1b45" category="inline-link">SANtricity システムマネージャオンラインヘルプの 11.6x 版</block>
   <block id="b099e1af7ef72f35c180ddc664299373" category="summary">E シリーズシステムに関するデモビデオが用意されています。</block>
   <block id="55a719e89f77dd4327ce93ddce72d2b3" category="doc">E シリーズのビデオ</block>
   <block id="8519014ad5d86d252a65a30b42df0919" category="section-title">E シリーズ：高速、シンプル、信頼性に優れたストレージ</block>
@@ -7126,8 +7124,6 @@
   <block id="738a8c736dcf0a5ae4920a6448ab8da7" category="paragraph">テクニカルサポートにお問い合わせください<block ref="2ff36e7792a0e0257d19a11dce8cade8" category="inline-link-rx"></block>RMA 番号を確認する場合は、日本国内サポート用電話番号：国内フリーダイヤル 0066-33-123-265 または 0066-33-821-274 （国際フリーフォン 800-800-80-800 も使用可能）までご連絡ください。</block>
   <block id="edb3c50e1624e1c64455cc9c6b567531" category="inline-link">SANtricity ソフトウェアドキュメントサイト</block>
   <block id="b4f5988f99b045705684a7692efed8d6" category="list-text">オンラインヘルプ。 System Manager ユーザインターフェイスまたはで参照できます<block ref="173d089ddf996dbd066dc04ffeb10dca" category="inline-link-rx"></block>。</block>
-  <block id="5c78b830f7bd834501154848ce310440" category="list-text"><block ref="5c78b830f7bd834501154848ce310440" category="inline-link-rx"></block></block>
-  <block id="553343f1040951376da0b5928b9f5ce6" category="list-text"><block ref="553343f1040951376da0b5928b9f5ce6" category="inline-link-rx"></block></block>
   <block id="829fea797e3072814f3b223d66b72f1a" category="inline-link">* TR-4838：『E2800 and E5700 with Milestone XProtect VMS Certification Report』*</block>
   <block id="bda3fde6fc7c495545a73026a8a05e44" category="cell"><block ref="af8284118427afcf1ac4e1e4465162e1" category="inline-link-rx"></block></block>
   <block id="10cd7a5a5e5e238ed0a260ca5ca1f4af" category="inline-link">* TR-4771 -設計：NetApp EシリーズおよびGenetecビデオ管理ソフトウェア*</block>
@@ -8802,4 +8798,8 @@
   <block id="239a8d1ddfc1ceae19ee25fea039a278" category="sidebar">E2800データシート</block>
   <block id="eecdfe99dab1ba77ed2b7b1d9b86256b" category="sidebar">SANtricity ソフトウェア</block>
   <block id="b9d208fcce9c26f3aacf7b49c9cdbaef" category="paragraph">パフォーマンス上の理由から IP SAN 内でジャンボフレームを使用している場合は、アレイ、スイッチ、およびホストでジャンボフレームを使用するように設定してください。ホストおよびスイッチでジャンボフレームを有効にする方法については、使用するオペレーティングシステムとスイッチのドキュメントを参照してください。アレイでジャンボフレームを有効にするには、の手順を実行します <block ref="16d4528e3823d381a97af6e1811e489a" category="inline-link-macro-rx"></block>。</block>
+  <block id="82c87a954533f4f73c4568a90d45d795" category="inline-link">SANtricity システムマネージャ11.7xヘルプ</block>
+  <block id="b6adf77a8fd2cb1ee566051ed64b7bbb" category="list-text"><block ref="b6adf77a8fd2cb1ee566051ed64b7bbb" category="inline-link-rx"></block></block>
+  <block id="73ea8f8143966cdb241af48e230354bb" category="inline-link">SANtricity System Managerのヘルプ：11.6x</block>
+  <block id="00f0cc59eb519b0e3ccef23f32fc3242" category="list-text"><block ref="00f0cc59eb519b0e3ccef23f32fc3242" category="inline-link-rx"></block></block>
 </blocks>
