@@ -5655,7 +5655,6 @@
   <block id="e5dcf520a1b25b17e87573413fb7bb6c" category="paragraph">iSCSI ネットワークに基本的な冗長性を設定するには、各ホストポートと各コントローラの 1 つのポートを別々のスイッチに接続し、ホストポートとコントローラポートの各セットを別々のネットワークセグメントまたは VLAN にパーティショニングします。</block>
   <block id="1374ba4a3b800b667c2d22bc12c95878" category="paragraph">送受信ハードウェアフロー制御 * エンドツーエンド * を有効にする必要があります。優先度フロー制御は無効にする必要があります。</block>
   <block id="7e37f4cc4c72af636a462f4562f809e5" category="inline-link-macro">アレイ側のネットワークを設定</block>
-  <block id="bfd77f2e9284c82bb0898c1fc8ee96a2" category="paragraph">パフォーマンス上の理由から IP SAN 内でジャンボフレームを使用している場合は、アレイ、スイッチ、およびホストでジャンボフレームを使用するように設定してください。ホストおよびスイッチでジャンボフレームを有効にする方法については、使用するオペレーティングシステムとスイッチのドキュメントを参照してください。アレイでジャンボフレームを有効にするには、の手順を実行します <block ref="2ed754c1ecdb6cf89d6f4fd9390a16d0" category="inline-link-macro-rx"></block>。</block>
   <block id="544de7ba1dbbebfb99a713dc8014fa98" category="admonition">多くのネットワークスイッチは 9 、 000 バイトを超える IP オーバーヘッドを設定する必要があります。詳細については、スイッチのマニュアルを参照してください。</block>
   <block id="2b430348ddae524592cd1c4207d8f170" category="summary">使用している SLES のバージョンに基づいて、デバイスターゲットに転送される I/O を設定します（ SUSE Linux バージョン）。</block>
   <block id="2760a5173fe84d55b4dfd0df17083b60" category="doc">仮想デバイスターゲットの NVMe ボリュームにアクセスします</block>
@@ -8802,4 +8801,5 @@
   <block id="ecc348240fe0031a456c147f13126f0c" category="sidebar">E5700データシート</block>
   <block id="239a8d1ddfc1ceae19ee25fea039a278" category="sidebar">E2800データシート</block>
   <block id="eecdfe99dab1ba77ed2b7b1d9b86256b" category="sidebar">SANtricity ソフトウェア</block>
+  <block id="b9d208fcce9c26f3aacf7b49c9cdbaef" category="paragraph">パフォーマンス上の理由から IP SAN 内でジャンボフレームを使用している場合は、アレイ、スイッチ、およびホストでジャンボフレームを使用するように設定してください。ホストおよびスイッチでジャンボフレームを有効にする方法については、使用するオペレーティングシステムとスイッチのドキュメントを参照してください。アレイでジャンボフレームを有効にするには、の手順を実行します <block ref="16d4528e3823d381a97af6e1811e489a" category="inline-link-macro-rx"></block>。</block>
 </blocks>
