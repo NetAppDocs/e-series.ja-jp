@@ -5822,10 +5822,8 @@
   <block id="7f02faf8a07269a5ab98e244f089148d" category="list-text">ホストで iSCSI サービスを有効にして開始します。</block>
   <block id="4578709b544309c3c129ddd77e647202" category="paragraph">* Red Hat Enterprise Linux 7 および 8 （ RHEL 7 および RHEL 8 ） *</block>
   <block id="03255405207be9e847f2d898e05048a4" category="paragraph">* SUSE Linux Enterprise Server 12 および 15 （ SLES 12 および SLES 15 ） *</block>
-  <block id="9f20bfce60dbc91ad764d37dadffc227" category="list-text">IPoIB ネットワークインターフェイスを設定します。</block>
   <block id="49688998ea00bb073d084abbb307e708" category="list-text">使用する InfiniBand ポートを特定します。各ポートのハードウェアアドレス（ MAC アドレス）を記録します。</block>
   <block id="6b4ef7dc778070c5ee2f7456ae2e252c" category="list-text">InfiniBand ネットワークインターフェイスデバイスの永続的な名前を設定します。</block>
-  <block id="713824554266fc9376f3db256933c6af" category="list-text">特定した IPoIB インターフェイスの IP アドレスとネットワーク情報を設定します。</block>
   <block id="4ecefee9b1283cd8f82d4b55f24122c7" category="paragraph">必要なインターフェイス設定は、使用するオペレーティングシステムによって異なる場合があります。具体的な実装方法については、ベンダーのオペレーティングシステムのドキュメントを参照してください。</block>
   <block id="61c924231a8595eeee332cc71a80361b" category="list-text">ネットワークサービスを再起動するか、各インターフェイスを手動で再起動して、 IB ネットワークインターフェイスを起動します。例：</block>
   <block id="ac1bbea8797a5c18374a7eb5a191169e" category="list-text">ターゲットポートへの接続を確認します。ネットワーク接続を設定したときに設定した IP アドレスにホストから ping を実行します。</block>
@@ -8802,4 +8800,6 @@
   <block id="b6adf77a8fd2cb1ee566051ed64b7bbb" category="list-text"><block ref="b6adf77a8fd2cb1ee566051ed64b7bbb" category="inline-link-rx"></block></block>
   <block id="73ea8f8143966cdb241af48e230354bb" category="inline-link">SANtricity System Managerのヘルプ：11.6x</block>
   <block id="00f0cc59eb519b0e3ccef23f32fc3242" category="list-text"><block ref="00f0cc59eb519b0e3ccef23f32fc3242" category="inline-link-rx"></block></block>
+  <block id="3bf3cbc109a52d0d37f5d3c9ecf3e14a" category="list-text">InfiniBandカードのネットワークインターフェイスを設定します。</block>
+  <block id="0360bd7f0d62ff5323000d0f25742cf3" category="list-text">特定したInfiniBandインターフェイスのIPアドレスとネットワーク情報を設定します。</block>
 </blocks>
