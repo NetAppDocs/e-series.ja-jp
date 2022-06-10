@@ -16,6 +16,9 @@ SANtricity Cloud Connector はホストベースの Linux アプリケーショ�
 SANtricity Cloud Connector は、 RedHat および SUSE の Linux プラットフォームにインストールできるパッケージ解決策（ .bin ファイル）です。SANtricity Cloud Connector のインストールが完了したら、 AltaVault アプライアンスや既存の Amazon S3 または StorageGRID アカウントへの E シリーズボリュームのバックアップジョブとリストアジョブを実行するように設定することができます。SANtricity Cloud Connector で実行されるすべてのジョブは REST ベースの API を使用します。
 
 
+NOTE: SANtricity Cloud Connectorツールは廃止され、ダウンロードできなくなりました。
+
+
 
 == 考慮事項
 

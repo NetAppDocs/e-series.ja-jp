@@ -8804,4 +8804,5 @@
   <block id="d601c251b180e2832efe894c46092431" category="list-text">iSCSIイニシエータとiSCSIターゲット間の接続を作成します。</block>
   <block id="f53443405a6562d0b3e4c7cf9bc15b23" category="admonition">上記のコマンドは、リブート後も維持されません。リブートのたびに'nvme connectコマンドを実行して'NVMe接続を再確立する必要があります</block>
   <block id="67abfdf061a5203871b27c16ec885ea9" category="list-text">レビュー <block ref="75c4b5f7794c0531679941f5aad7b091" category="inline-link-macro-rx"></block>。</block>
+  <block id="d29230a83d49c7722d815a3203b64bef" category="admonition">SANtricity Cloud Connectorツールは廃止され、ダウンロードできなくなりました。</block>
 </blocks>
