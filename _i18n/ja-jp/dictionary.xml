@@ -5988,14 +5988,8 @@
   <block id="f402a19f86f854f295aa371b9abbbb90" category="list-text">NVMe over RoCE の接続に使用されるイーサネットポートで、 IPv4 の IP アドレスを設定します。ネットワークインターフェイスごとに、そのインターフェイスに対応する変数を含む構成スクリプトを作成します。</block>
   <block id="a4e34f0c64fbeb3078a510eb36f68d56" category="paragraph">この手順で使用する変数は、サーバハードウェアとネットワーク環境に基づいています。変数には 'IPADDR' と 'gateway' が含まれます次に、 SLES および RHEL の例を示します。</block>
   <block id="111d867a53d45d2348ae37042fdb7310" category="paragraph">* SLES 12 および SLES 15 *</block>
-  <block id="f6514b428d1fd5726b92cca56eb95b3c" category="list-text">次のように '/etc/sysconfig/network/ifcfg-eth4' サンプルファイルを作成します</block>
-  <block id="d55ed1bf19b44803d0334a7a27528dc6" category="list-text">ファイル /etc/sysconfig/network/ifcfg-eth5' を次のように作成します。</block>
   <block id="931ff3112ed27bc061711c73637ae331" category="paragraph">* RHEL 7 および RHEL 8*</block>
-  <block id="5192cc69fe00a7c3a969c48a5e3aa2a6" category="list-text">次のように '/etc/sysconfig/network-scripts/ifcfg-eth4' サンプルファイルを作成します</block>
-  <block id="7a70ebfc3edf87c293a5e2122f53d20b" category="list-text">ファイル /etc/sysconfig/network-scripts/ifcfg-eth5' を次のように作成します。</block>
   <block id="28a17096963f5398d9b941a85c3ea321" category="list-text">ネットワークインターフェイスを有効にします。</block>
-  <block id="350bbc41930d958a772f9a6d5c8e35db" category="list-text">ホストで NVMe-oF レイヤを設定します。</block>
-  <block id="8197e84458a5343d64dab5ea199ec4ec" category="list-text">/etc/modules-load.d/ の下に次のファイルを作成して 'nvme-rdma' カーネルモジュールをロードし ' 再起動後もカーネルモジュールが常にオンになることを確認します</block>
   <block id="9a85d22d9e1c050e72e2e881a520bba5" category="summary">ホストでフェイルオーバーを実行するように設定します。</block>
   <block id="b0f1d70653db761a75c6f50a1fb48a15" category="doc">フェイルオーバーを設定</block>
   <block id="3ce256baf4fa848e508f4000c29e19a8" category="paragraph">ストレージアレイへのパスを冗長化するには、フェイルオーバーを実行するようにホストを設定します。</block>
@@ -8802,4 +8796,10 @@
   <block id="3bf3cbc109a52d0d37f5d3c9ecf3e14a" category="list-text">InfiniBandカードのネットワークインターフェイスを設定します。</block>
   <block id="0360bd7f0d62ff5323000d0f25742cf3" category="list-text">特定したInfiniBandインターフェイスのIPアドレスとネットワーク情報を設定します。</block>
   <block id="4df6b1c48c33c3735ab315bb52db5933" category="section-title">RHEL 8用のネイティブのNVMeマルチパスを設定します</block>
+  <block id="5536244c6a701b654692a01af6b8b81c" category="list-text">ホストのNQNを取得します。アレイに対してホストを設定する際に使用します。</block>
+  <block id="7811a322c7116bb2055841124b0d8911" category="paragraph">以下の内容を含むサンプル・ファイル'/etc/sysconfig/network/ifcfg-eth4'を作成します</block>
+  <block id="27a81685959fe491960811c61481c35d" category="paragraph">次に'/etc/sysconfig/network/ifcfg-eth5`のサンプルファイルを作成します</block>
+  <block id="f1d1c2a7d2a912bc6a5aa04e31b25d26" category="paragraph">以下の内容を含むサンプル・ファイル'/etc/sysconfig/network-scripts/ifcfg-eth4'を作成します</block>
+  <block id="51be39b7e050efbe3d29b5d8c0430aa5" category="paragraph">次に'/etc/sysconfig/network-scripts/ifcfg-eth5`のサンプルファイルを作成します</block>
+  <block id="ffbb9e9bc4bfe3481683088489b9c286" category="list-text">ホストで NVMe-oF レイヤを設定します。/etc/modules-load.d/ の下に次のファイルを作成して 'nvme-rdma' カーネルモジュールをロードし ' 再起動後もカーネルモジュールが常にオンになることを確認します</block>
 </blocks>
