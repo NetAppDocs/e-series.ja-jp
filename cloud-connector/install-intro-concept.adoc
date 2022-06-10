@@ -15,6 +15,9 @@ SANtricity Cloud Connector Packaged 解決策（ .bin ファイル）は、 RedH
 
 SANtricity Cloud Connector アプリケーションは、互換性がある Linux オペレーティングシステムにグラフィカルモードまたはコンソールモードを使用してインストールできます。インストール時に、 SANtricity Cloud Connector の非 SSL と SSL のポート番号を指定する必要があります。インストールが完了すると、 SANtricity Cloud Connector はデーモンプロセスとして実行されます。
 
+
+NOTE: SANtricity Cloud Connectorツールは廃止され、ダウンロードできなくなりました。
+
 次の注意事項を確認してください。
 
 * SANtricity Web Services Proxy が SANtricity Cloud Connector と同じサーバにすでにインストールされている場合は、非 SSL のポート番号と SSL のポート番号に競合が発生します。この場合は、 SANtricity Cloud Connector のインストール時に、非 SSL のポートと SSL のポートに適切な番号を選択してください。
