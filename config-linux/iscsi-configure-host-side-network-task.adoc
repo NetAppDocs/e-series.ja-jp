@@ -66,17 +66,29 @@ node.session.timeo.replacement_timeout=20
 NOTE: iSCSI イニシエータは、パブリックネットワークポートに加えて、別々のプライベートセグメントまたは VLAN 上で 2 つ以上の NIC を使用する必要があります。
 
 +
-.. 「 #ifconfig -a 」コマンドを使用して、 iSCSI ポート名を確認します。
+.. ifconfig -aコマンドを使用して'iSCSIポート名を確認します
 .. iSCSI イニシエータポートの IP アドレスを設定します。イニシエータポートは、 iSCSI ターゲットポートと同じサブネット上にあることが必要です。
 +
 [listing]
 ----
 # vim /etc/sysconfig/network-scripts/ifcfg-<NIC port>
-Edit:
+----
++
+編集：
+
++
+[listing]
+----
 BOOTPROTO=none
 ONBOOT=yes
 NM_CONTROLLED=no
-Add:
+----
++
+追加：
+
++
+[listing]
+----
 IPADDR=192.168.xxx.xxx
 NETMASK=255.255.255.0
 ----
@@ -93,30 +105,38 @@ NOTE: 必ず両方の iSCSI イニシエータポートのアドレスを設定�
 .. Linux サーバから iSCSI ターゲットポートのすべてに ping を実行できることを確認します。
 
 
-. iSCSI iface バインディングを 2 つ作成して iSCSI インターフェイスを設定します。
+. イニシエータとターゲットの間に iSCSI セッションを確立します（合計 4 つ）。
++
+.. ifaceを使用する場合は、iSCSI ifaceバインドを2つ作成してiSCSIインターフェイスを設定します。
 +
 [listing]
 ----
-iscsiadm -m iface -I iface0 -o new
-iscsiadm -m iface -I iface0 -o update -n iface.net_ifacename -v <NIC port1>
+# iscsiadm -m iface -I iface0 -o new
+# iscsiadm -m iface -I iface0 -o update -n iface.net_ifacename -v <NIC port1>
 ----
 +
 [listing]
 ----
-iscsiadm -m iface -I iface1 -o new
-iscsiadm -m iface -I iface1 -o update -n iface.net_ifacename -v <NIC port2>
+# iscsiadm -m iface -I iface1 -o new
+# iscsiadm -m iface -I iface1 -o update -n iface.net_ifacename -v <NIC port2>
 ----
 +
 
 NOTE: インタフェースを一覧表示するには 'iscsiadm -m iface を使用します
 
-. イニシエータとターゲットの間に iSCSI セッションを確立します（合計 4 つ）。
-+
 .. iSCSI ターゲットを検出します。次の手順のために、 IQN （各検出で同じ）をワークシートに保存します。
 +
 [listing]
 ----
-iscsiadm -m discovery -t sendtargets -p 192.168.0.1:3260 -I iface0 -P 1
+# iscsiadm -m discovery -t sendtargets -p 192.168.0.1:3260 -I iface0 -P 1
+----
++
+または
+
++
+[listing]
+----
+# iscsiadm -m discovery -t sendtargets -p 192.168.0.1:3260
 ----
 +
 
@@ -127,12 +147,20 @@ NOTE: IQN は次のような形式です。
 ----
 iqn.1992-01.com.netapp:2365.60080e50001bf1600000000531d7be3
 ----
-.. iface を使用して iSCSI イニシエータと iSCSI ターゲットの間に接続を作成します。
+.. iSCSIイニシエータとiSCSIターゲット間の接続を作成します。
 +
 [listing]
 ----
-iscsiadm -m node -T iqn.1992-01.com.netapp:2365.60080e50001bf1600000000531d7be3
+# iscsiadm -m node -T iqn.1992-01.com.netapp:2365.60080e50001bf1600000000531d7be3
 -p 192.168.0.1:3260 -I iface0 -l
+----
++
+または
+
++
+[listing]
+----
+# iscsiadm -m node -L all
 ----
 .. ホストで確立されている iSCSI セッションの一覧を表示します。
 +

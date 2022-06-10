@@ -6145,17 +6145,14 @@
   <block id="22573cb1d3a24e811b00be3cdf11ed07" category="list-text">ホスト IQN イニシエータ名を取得します。この名前は、アレイに対してホストを設定する際に使用します。</block>
   <block id="d707e35eeedda41c6a0cfa761fd2a07b" category="list-text">iSCSI ポートのネットワークを設定します。</block>
   <block id="d2ac38f00dee7d2a262b2bf0fa6f3b64" category="admonition">iSCSI イニシエータは、パブリックネットワークポートに加えて、別々のプライベートセグメントまたは VLAN 上で 2 つ以上の NIC を使用する必要があります。</block>
-  <block id="8e547ae67948248f9f4d0b6b7f0d1f40" category="list-text">「 #ifconfig -a 」コマンドを使用して、 iSCSI ポート名を確認します。</block>
   <block id="a055f9d8150408cf1633c42de1d3c847" category="list-text">iSCSI イニシエータポートの IP アドレスを設定します。イニシエータポートは、 iSCSI ターゲットポートと同じサブネット上にあることが必要です。</block>
   <block id="068968b47b209b5ab4b2bf2a892a53da" category="admonition">必ず両方の iSCSI イニシエータポートのアドレスを設定してください。</block>
   <block id="3ec57145ad99ba132ea5906182fa7d34" category="list-text">ネットワークサービスを再起動します。</block>
   <block id="3aa61be860f27f859aed628c7d7a8783" category="list-text">Linux サーバから iSCSI ターゲットポートのすべてに ping を実行できることを確認します。</block>
-  <block id="7d34b9feee6c2fc8bab1f6efe921cf88" category="list-text">iSCSI iface バインディングを 2 つ作成して iSCSI インターフェイスを設定します。</block>
   <block id="64adb9e225feb356ed6ec628cd40671f" category="admonition">インタフェースを一覧表示するには 'iscsiadm -m iface を使用します</block>
   <block id="a6575d77a64e40bfa8e81ab8ade7d7a1" category="list-text">イニシエータとターゲットの間に iSCSI セッションを確立します（合計 4 つ）。</block>
   <block id="ac8ddbbb791a17c089f8b72f6801a3dc" category="list-text">iSCSI ターゲットを検出します。次の手順のために、 IQN （各検出で同じ）をワークシートに保存します。</block>
   <block id="8329426ded9436d4fbff44b5e4b4c72c" category="admonition">IQN は次のような形式です。</block>
-  <block id="bac665002aa2ee48216bcd8d60fd7784" category="list-text">iface を使用して iSCSI イニシエータと iSCSI ターゲットの間に接続を作成します。</block>
   <block id="e6fa7633cc6e723b63becb0e5f1d6bb5" category="list-text">ホストで確立されている iSCSI セッションの一覧を表示します。</block>
   <block id="510c309ccc5b6c64d1c85d306a6a0f42" category="summary">アレイ側で iSCSI ネットワークを設定します。</block>
   <block id="0e5c9a9b399a5ffb43c453285a8e27f7" category="paragraph">このタスクでは、 System Manager のハードウェアページから iSCSI ポートの設定にアクセスする方法について説明します。設定には、 System （設定） &gt; Configure iSCSI Ports （ iSCSI ポートの設定）メニューからもアクセスできます。</block>
@@ -8802,4 +8799,9 @@
   <block id="51be39b7e050efbe3d29b5d8c0430aa5" category="paragraph">次に'/etc/sysconfig/network-scripts/ifcfg-eth5`のサンプルファイルを作成します</block>
   <block id="ffbb9e9bc4bfe3481683088489b9c286" category="list-text">ホストで NVMe-oF レイヤを設定します。/etc/modules-load.d/ の下に次のファイルを作成して 'nvme-rdma' カーネルモジュールをロードし ' 再起動後もカーネルモジュールが常にオンになることを確認します</block>
   <block id="ba5d5a8fa23f831ccd6827dc3b611469" category="paragraph">次に、/etc/sysconfig/network/ifcfg-ib1ファイルを作成します。</block>
+  <block id="ca77b43383ee68c3baec39cef81b151e" category="list-text">ifconfig -aコマンドを使用して'iSCSIポート名を確認します</block>
+  <block id="c13ee4fd00cee57d25631dda7a3afcfc" category="paragraph">編集：</block>
+  <block id="d43f0c1ac820c0cdc6a73e7a6f943df2" category="paragraph">追加：</block>
+  <block id="65c76cf8b4c172d7378f288e8af8a08c" category="list-text">ifaceを使用する場合は、iSCSI ifaceバインドを2つ作成してiSCSIインターフェイスを設定します。</block>
+  <block id="d601c251b180e2832efe894c46092431" category="list-text">iSCSIイニシエータとiSCSIターゲット間の接続を作成します。</block>
 </blocks>
