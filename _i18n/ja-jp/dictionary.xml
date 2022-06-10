@@ -5719,7 +5719,6 @@
   <block id="e180dcda700b7114bbf7cbdb821df4a6" category="list-text">IB ポートリンクがどちらも稼働しており、かつ State が Active であることを確認します。</block>
   <block id="22b4a25f95365479298f378bbf161e6f" category="list-text">IB ポートに IPv4 IP アドレスを設定します。</block>
   <block id="08fa0114b0d6dc928f4c7ac5eb67c374" category="paragraph">/etc/sysconfig/network/ifcfg-ib0 ファイルを次の内容で作成します。</block>
-  <block id="033848f8e5f29b66fa491a6133c35ab8" category="paragraph">次に、 /etc/sysconfig/network/ifcfg-ib1 ファイルを作成します。</block>
   <block id="736d155a06721b3c243a2d11dd71cf06" category="paragraph">/etc/sysconfig/network-scripts/ifcfg-ib0 ファイルを次の内容で作成します。</block>
   <block id="2ec96b50b65cad4cbdf3961da2c339d2" category="paragraph">次に、 /etc/sysconfig/network-scripts/ifcfg-ib1 ファイルを作成します。</block>
   <block id="9830a61f8841b6d0b5bd803cf5c60d44" category="list-text">「 ib 」インターフェイスを有効にします。</block>
@@ -8802,4 +8801,5 @@
   <block id="f1d1c2a7d2a912bc6a5aa04e31b25d26" category="paragraph">以下の内容を含むサンプル・ファイル'/etc/sysconfig/network-scripts/ifcfg-eth4'を作成します</block>
   <block id="51be39b7e050efbe3d29b5d8c0430aa5" category="paragraph">次に'/etc/sysconfig/network-scripts/ifcfg-eth5`のサンプルファイルを作成します</block>
   <block id="ffbb9e9bc4bfe3481683088489b9c286" category="list-text">ホストで NVMe-oF レイヤを設定します。/etc/modules-load.d/ の下に次のファイルを作成して 'nvme-rdma' カーネルモジュールをロードし ' 再起動後もカーネルモジュールが常にオンになることを確認します</block>
+  <block id="ba5d5a8fa23f831ccd6827dc3b611469" category="paragraph">次に、/etc/sysconfig/network/ifcfg-ib1ファイルを作成します。</block>
 </blocks>

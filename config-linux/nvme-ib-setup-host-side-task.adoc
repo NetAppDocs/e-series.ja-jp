@@ -45,11 +45,17 @@ InfiniBand 環境で NVMe イニシエータを設定するには、 InfiniBand 
 ----
 IPOIB_LOAD=yes
 ----
+. ホストのNQNを取得します。アレイに対してホストを設定する際に使用します。
++
+[listing]
+----
+# cat /etc/nvme/hostnqn
+----
 . IB ポートリンクがどちらも稼働しており、かつ State が Active であることを確認します。
 +
 [listing]
 ----
- # ibstat
+# ibstat
 ----
 +
 [listing]
@@ -93,34 +99,34 @@ CA 'mlx4_0'
 [listing]
 ----
 
-  BOOTPROTO='static'
-  BROADCAST=
-  ETHTOOL_OPTIONS=
-  IPADDR='10.10.10.100/24'
-  IPOIB_MODE='connected'
-  MTU='65520'
-  NAME=
-  NETWORK=
-  REMOTE_IPADDR=
-  STARTMODE='auto'
+BOOTPROTO='static'
+BROADCAST=
+ETHTOOL_OPTIONS=
+IPADDR='10.10.10.100/24'
+IPOIB_MODE='connected'
+MTU='65520'
+NAME=
+NETWORK=
+REMOTE_IPADDR=
+STARTMODE='auto'
 ----
 +
-次に、 /etc/sysconfig/network/ifcfg-ib1 ファイルを作成します。
+次に、/etc/sysconfig/network/ifcfg-ib1ファイルを作成します。
 
 +
 [listing]
 ----
 
-  BOOTPROTO='static'
-  BROADCAST=
-  ETHTOOL_OPTIONS=
-  IPADDR='11.11.11.100/24'
-  IPOIB_MODE='connected'
-  MTU='65520'
-  NAME=
-  NETWORK=
-  REMOTE_IPADDR=
-  STARTMODE='auto'
+BOOTPROTO='static'
+BROADCAST=
+ETHTOOL_OPTIONS=
+IPADDR='11.11.11.100/24'
+IPOIB_MODE='connected'
+MTU='65520'
+NAME=
+NETWORK=
+REMOTE_IPADDR=
+STARTMODE='auto'
 ----
 +
 * RHEL 7 または RHEL 8*
@@ -132,17 +138,17 @@ CA 'mlx4_0'
 [listing]
 ----
 
-  CONNECTED_MODE=no
-  TYPE=InfiniBand
-  PROXY_METHOD=none
-  BROWSER_ONLY=no
-  BOOTPROTO=static
-  IPADDR='10.10.10.100/24'
-  DEFROUTE=no
-  IPV4=FAILURE_FATAL=yes
-  IPV6INIT=no
-  NAME=ib0
-  ONBOOT=yes
+CONNECTED_MODE=no
+TYPE=InfiniBand
+PROXY_METHOD=none
+BROWSER_ONLY=no
+BOOTPROTO=static
+IPADDR='10.10.10.100/24'
+DEFROUTE=no
+IPV4=FAILURE_FATAL=yes
+IPV6INIT=no
+NAME=ib0
+ONBOOT=yes
 ----
 +
 次に、 /etc/sysconfig/network-scripts/ifcfg-ib1 ファイルを作成します。
@@ -151,17 +157,17 @@ CA 'mlx4_0'
 [listing]
 ----
 
-  CONNECTED_MODE=no
-  TYPE=InfiniBand
-  PROXY_METHOD=none
-  BROWSER_ONLY=no
-  BOOTPROTO=static
-  IPADDR='11.11.11.100/24'
-  DEFROUTE=no
-  IPV4=FAILURE_FATAL=yes
-  IPV6INIT=no
-  NAME=ib1
-  ONBOOT=yes
+CONNECTED_MODE=no
+TYPE=InfiniBand
+PROXY_METHOD=none
+BROWSER_ONLY=no
+BOOTPROTO=static
+IPADDR='11.11.11.100/24'
+DEFROUTE=no
+IPV4=FAILURE_FATAL=yes
+IPV6INIT=no
+NAME=ib1
+ONBOOT=yes
 ----
 . 「 ib 」インターフェイスを有効にします。
 +
