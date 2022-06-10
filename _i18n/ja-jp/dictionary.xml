@@ -3275,7 +3275,6 @@
   <block id="fbcedc805afedbeaf7664976b732371b" category="paragraph">E2800 コントローラキャニスターのベースボードホストポートにホストインターフェイスカード（ HIC ）を追加することができます。これにより、 E2800 ストレージアレイのホストポートの数が増え、追加のホストプロトコルが提供されます。</block>
   <block id="bae6747b03b066c55bb70405c284861b" category="paragraph">この手順では、ストレージアレイの電源をオフにし、 HIC を取り付けてから再度オンにする必要があります。</block>
   <block id="070240a094393a3e57b978aa2f566cb4" category="inline-link-macro">E2800 HIC の交換に際しての要件</block>
-  <block id="648ab45c7c16024229384da8a07faf88" category="list-text">レビュー <block ref="8b9a37c372cb06d9e349e5fcd6c7e362" category="inline-link-macro-rx"></block>。</block>
   <block id="8c5454e59d2a11219e2ce80369161ec1" category="list-text">スイッチや Host Bus Adapter （ HBA ；ホストバスアダプタ）など、新しいホストポートに必要なホストハードウェア。</block>
   <block id="df3446e765e5aa88b2f1ff570bce3220" category="paragraph">HIC を追加する準備として、ストレージアレイの構成データベースをバックアップし、サポートデータを収集し、ホスト I/O 処理を停止します。その後、コントローラシェルフの電源をオフにすることができます。</block>
   <block id="4a2f4579802cd4b78e234f0a8b277904" category="paragraph">新しいホストインターフェイスカードを追加できるように、コントローラキャニスターを取り外します。</block>
@@ -8804,4 +8803,5 @@
   <block id="65c76cf8b4c172d7378f288e8af8a08c" category="list-text">ifaceを使用する場合は、iSCSI ifaceバインドを2つ作成してiSCSIインターフェイスを設定します。</block>
   <block id="d601c251b180e2832efe894c46092431" category="list-text">iSCSIイニシエータとiSCSIターゲット間の接続を作成します。</block>
   <block id="f53443405a6562d0b3e4c7cf9bc15b23" category="admonition">上記のコマンドは、リブート後も維持されません。リブートのたびに'nvme connectコマンドを実行して'NVMe接続を再確立する必要があります</block>
+  <block id="67abfdf061a5203871b27c16ec885ea9" category="list-text">レビュー <block ref="75c4b5f7794c0531679941f5aad7b091" category="inline-link-macro-rx"></block>。</block>
 </blocks>
