@@ -69,9 +69,20 @@ NOTE: iSCSI イニシエータは、パブリックネットワークポート�
 .. ifconfig -aコマンドを使用して'iSCSIポート名を確認します
 .. iSCSI イニシエータポートの IP アドレスを設定します。イニシエータポートは、 iSCSI ターゲットポートと同じサブネット上にあることが必要です。
 +
+* Red Hat Enterprise Linux 7 および 8 （ RHEL 7 および RHEL 8 ） *
+
++
 [listing]
 ----
 # vim /etc/sysconfig/network-scripts/ifcfg-<NIC port>
+----
++
+* SUSE Linux Enterprise Server 12 および 15 （ SLES 12 および SLES 15 ） *
+
++
+[listing]
+----
+# vim /etc/sysconfig/network/ifcfg-<NIC port>
 ----
 +
 編集：
