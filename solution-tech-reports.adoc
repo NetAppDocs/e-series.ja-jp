@@ -12,14 +12,14 @@ summary: E シリーズのテクニカルレポート
 
 == Splunk
 
-[cols="9,1,9,1,9"]
+[cols="9,9,9"]
 |===
 
 
-| https://www.netapp.com/pdf.html?item=/media/16851-tr-4623pdf.pdf["* TR-4623 ：『 E5700 with Splunk Enterprise * 』"^] |  | https://www.netapp.com/media/57104-tr-4903.pdf["* TR-4903 ：『 EF300 with Splunk Enterprise * 』を参照してください"^] |  |  
+| https://www.netapp.com/pdf.html?item=/media/16851-tr-4623pdf.pdf["* TR-4623 ：『 E5700 with Splunk Enterprise * 』"^] | https://www.netapp.com/media/57104-tr-4903.pdf["* TR-4903 ：『 EF300 with Splunk Enterprise * 』を参照してください"^] | https://www.netapp.com/pdf.html?item=/media/72003-tr-4930.pdf["* TR-4930：Splunk Enterpriseを使用したEF600 *"^] 
 
 
-| E5700 システムと Splunk の設計を統合したアーキテクチャについて説明します。また、 Splunk のマシンログイベントシミュレーションツールから取得したパフォーマンステスト結果もまとめています。 |  | EF300 オールフラッシュアレイと Splunk 設計の統合アーキテクチャについて説明します。また、 Splunk のマシンログイベントシミュレーションツールから取得したパフォーマンステスト結果もまとめています。 |  |  
+| E5700 システムと Splunk の設計を統合したアーキテクチャについて説明します。また、 Splunk のマシンログイベントシミュレーションツールから取得したパフォーマンステスト結果もまとめています。 | EF300 オールフラッシュアレイと Splunk 設計の統合アーキテクチャについて説明します。また、 Splunk のマシンログイベントシミュレーションツールから取得したパフォーマンステスト結果もまとめています。 | EF600オールフラッシュアレイとSplunk設計の統合アーキテクチャについて説明します。また、 Splunk のマシンログイベントシミュレーションツールから取得したパフォーマンステスト結果もまとめています。 
 |===
 
 

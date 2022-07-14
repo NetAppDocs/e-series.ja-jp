@@ -8803,6 +8803,8 @@
   <block id="65c76cf8b4c172d7378f288e8af8a08c" category="list-text">ifaceを使用する場合は、iSCSI ifaceバインドを2つ作成してiSCSIインターフェイスを設定します。</block>
   <block id="d601c251b180e2832efe894c46092431" category="list-text">iSCSIイニシエータとiSCSIターゲット間の接続を作成します。</block>
   <block id="f53443405a6562d0b3e4c7cf9bc15b23" category="admonition">上記のコマンドは、リブート後も維持されません。リブートのたびに'nvme connectコマンドを実行して'NVMe接続を再確立する必要があります</block>
-  <block id="67abfdf061a5203871b27c16ec885ea9" category="list-text">レビュー <block ref="75c4b5f7794c0531679941f5aad7b091" category="inline-link-macro-rx"></block>。</block>
   <block id="d29230a83d49c7722d815a3203b64bef" category="admonition">SANtricity Cloud Connectorツールは廃止され、ダウンロードできなくなりました。</block>
+  <block id="273dcb16af41ba30a29aa8335c08a790" category="inline-link">* TR-4930：Splunk Enterpriseを使用したEF600 *</block>
+  <block id="d037693956f399ee3ef1299cb9175342" category="cell"><block ref="d037693956f399ee3ef1299cb9175342" category="inline-link-rx"></block></block>
+  <block id="709b2345a804dd3959ae288cc98408cf" category="cell">EF600オールフラッシュアレイとSplunk設計の統合アーキテクチャについて説明します。また、 Splunk のマシンログイベントシミュレーションツールから取得したパフォーマンステスト結果もまとめています。</block>
 </blocks>
