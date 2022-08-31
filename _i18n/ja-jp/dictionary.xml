@@ -7081,8 +7081,6 @@
   <block id="b71e2b4d6a1e1e3ddb1014777fc5a53c" category="doc">SANtricity OS の新機能</block>
   <block id="e9983c2bf51c9aa8f38dce44157b9a2a" category="paragraph">この 手順 環境 IOM12 および IOM12B ドライブシェルフを使用します。</block>
   <block id="2af3ffb0914986412fbce97033362ada" category="admonition">この手順 は、シェルフの IOM のホットスワップや交換に使用されます。つまり、 IOM12 モジュールを別の IOM12 モジュールに交換するか、 IOM12B モジュールを別の IOM12B モジュールに交換しなければなりません。（シェルフに IOM12 モジュールを 2 台搭載することも、 IOM12B モジュールを 2 つ使用することもできます）</block>
-  <block id="2dbe08d5683f7868502b2ae7bf0efe28" category="paragraph">この 手順 環境 IOM12 および IOM12B ドライブシェルフおよび DCM と DCM2 ドライブシェルフです</block>
-  <block id="6dc10b003bcb8e0cbbcf076e7dbcdf2f" category="paragraph">このタスクでは環境 DCM および DCM2 ドライブ・シェルフを使用します</block>
   <block id="acd1dcb9f4c3f9c9b28f9c1a4d234d1b" category="admonition">電源装置の交換用手順 は IOM の交換に適用されます。IOM を交換するには、電源装置交換用手順 を実行します。</block>
   <block id="f20b4bef1c485b65027bb64c40283577" category="paragraph"><block ref="f20b4bef1c485b65027bb64c40283577" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ebc31fad1cf84954196a7706294df684" category="paragraph">この 手順 環境 DCM および DCM2 ドライブ・シェルフ</block>
@@ -8807,4 +8805,7 @@
   <block id="273dcb16af41ba30a29aa8335c08a790" category="inline-link">* TR-4930：Splunk Enterpriseを使用したEF600 *</block>
   <block id="d037693956f399ee3ef1299cb9175342" category="cell"><block ref="d037693956f399ee3ef1299cb9175342" category="inline-link-rx"></block></block>
   <block id="709b2345a804dd3959ae288cc98408cf" category="cell">EF600オールフラッシュアレイとSplunk設計の統合アーキテクチャについて説明します。また、 Splunk のマシンログイベントシミュレーションツールから取得したパフォーマンステスト結果もまとめています。</block>
+  <block id="61f60d8a815e8676572295c4ba06ca47" category="admonition">IOM12BモジュールはSANtricity OS 11.07.02以降でのみサポートされています。IOM12Bをインストールまたはアップグレードする前に、コントローラのファームウェアが更新されていることを確認してください。</block>
+  <block id="b8de54c02bf690e0071da3924487271e" category="admonition">変換できるのは、E5700コントローラの光ベースポートのみです。</block>
+  <block id="59f90aba4c7b3944a7e31f23bff5d8a2" category="admonition">変換できるのは、E2800コントローラの16Gb FC / 10Gb iSCSI HICと光ベースポートのみです。</block>
 </blocks>
