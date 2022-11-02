@@ -129,7 +129,7 @@ image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout_maint-e2800
 NOTE: ファンキャニスターの交換後、ファンキャニスターが正しく取り付けられているかどうかがファームウェアで確認され、その間は黄色の警告 LED が点灯した状態になります。このプロセスが完了すると LED は消灯します。
 
 . SANtricity システムマネージャの Recovery Guru で「 * 再確認」を選択し、問題が解決されたことを確認します。
-. 引き続きファンキャニスターの障害が報告される場合は、の手順を繰り返します <<Step 2: Remove failed fan canister and install new one>>。問題が解決しない場合は、テクニカルサポートにお問い合わせください。
+. 引き続きファンキャニスターの障害が報告される場合は、の手順を繰り返します  2: Remove failed fan canister and install new one。問題が解決しない場合は、テクニカルサポートにお問い合わせください。
 . 静電気防止用の保護を外します。
 . SANtricity システムマネージャを使用してストレージアレイのサポートデータを収集します。
 +

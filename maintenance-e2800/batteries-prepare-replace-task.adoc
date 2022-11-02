@@ -14,8 +14,8 @@ summary: デュプレックスとシンプレックスのそれぞれに該当�
 [role="lead"]
 バッテリ交換準備の手順は、デュプレックス構成（コントローラが 2 台）とシンプレックス構成（コントローラが 1 台）で異なります。
 
-* デュプレックス構成については、を参照してください <<Place controller offline (duplex)>>。
-* シンプレックス構成の場合は、を参照してください <<Power down the controller shelf (simplex)>>。
+* デュプレックス構成については、を参照してください  controller offline (duplex)。
+* シンプレックス構成の場合は、を参照してください  down the controller shelf (simplex)。
 
 
 .作業を開始する前に

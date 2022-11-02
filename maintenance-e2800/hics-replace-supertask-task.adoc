@@ -36,8 +36,8 @@ HIC を交換するときは、コントローラをオフラインにし、コ�
 
 コントローラをオフラインにする手順は、コントローラが 1 台（シンプレックス）か 2 台（デュプレックス）かによって異なります。次の項目について、該当する手順を実行します。
 
-* <<Duplex: Place controller offline>>
-* <<Simplex: Power down the controller shelf>>
+*  Place controller offline
+*  Power down the controller shelf
 
 
 

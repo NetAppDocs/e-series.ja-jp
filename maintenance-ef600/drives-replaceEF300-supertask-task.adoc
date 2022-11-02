@@ -15,8 +15,8 @@ EF300 アレイのドライブを交換することができます。
 
 EF300 は、 24 ドライブおよび 60 ドライブシェルフの SAS 拡張をサポートしています。次の手順は、 24 ドライブシェルフと 60 ドライブシェルフのどちらを使用しているかによって異なります。
 
-* <<Replace drive in an EF300 (24-drive shelf)>>
-* <<Replace drive in an EF300 (60-drive shelf)>>
+*  drive in an EF300 (24-drive shelf)
+*  drive in an EF300 (60-drive shelf)
 
 
 

@@ -24,8 +24,8 @@ vCenter Server Appliance からプラグインを削除し、アプリケーシ�
 
 vCenter Server Appliance からプラグインの登録を解除するには、次のいずれかの方法を選択します。
 
-* <<Method 1: Execute the registration script>>
-* <<Method 2: Use the vCenter Server Mob pages>>
+*  1: Execute the registration script
+*  2: Use the vCenter Server Mob pages
 
 
 

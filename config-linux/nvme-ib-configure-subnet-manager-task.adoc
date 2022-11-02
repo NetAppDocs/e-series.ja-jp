@@ -13,6 +13,9 @@ summary: InfiniBand スイッチを使用してサブネットマネージャを
 [role="lead"]
 スイッチまたはホスト上の環境でサブネットマネージャが実行されている必要があります。ホスト側で実行する場合は、次の手順を使用してセットアップします。
 
+
+NOTE: サブネットマネージャを設定する前に、InfiniBand-diagsパッケージをインストールして、を通じてグローバル一意識別子（GUID）を取得する必要があります `ibstat -p` コマンドを実行しますを参照してください xref:nvme-ib-determine-host-port-guids-task.adoc[ホストポートの GUID を特定し、推奨設定を適用します] InfiniBand-diagsパッケージのインストール方法については、を参照してください。
+
 .手順
 . サブネット・マネージャを実行するすべてのホストに 'opensm' パッケージをインストールします
 . 「 ibstat -p 」コマンドを使用して、 HCA ポートの「 GUID0 」と「 GUID1 」を確認します。例：
@@ -23,17 +26,20 @@ summary: InfiniBand スイッチを使用してサブネットマネージャを
  0x248a070300a80a80
  0x248a070300a80a81
 ----
-. ホスト上の接続された HCA の各ポートでサブネットマネージャを有効にします。
-+
-* SLES の例 *
-
-+
-** /etc/rc.d/rc.after に次の 2 行を追加します。「 GUID0 」と「 GUID1 」の値は、手順 2 で確認した値に置き換えてください。「 P0 」と「 P1 」には、サブネットマネージャの優先順位を使用します。 1 は最低、 15 は最高です。
+. ブートプロセスの一部として一度実行するサブネットマネージャスクリプトを作成します。
 +
 [listing]
 ----
- opensm -B -g GUID0 -p P0 -f /var/log/opensm-ib0.log
- opensm -B -g GUID1 -p P1 -f /var/log/opensm-ib1.log
+# vim /usr/sbin/subnet-manager.sh
+----
+. 次の行を追加します。手順2で確認した値をに置き換えます `GUID0` および `GUID1`。の場合 `P0` および `P1`では、サブネットマネージャのプライオリティを使用します。1が最低、15が最高です。
++
+[listing]
+----
+#!/bin/bash
+
+opensm -B -g <GUID0> -p <P0> -f /var/log/opensm-ib0.log
+opensm -B -g <GUID1> -p <P1> -f /var/log/opensm-ib1.log
 ----
 +
 値を置き換えたコマンドの例を次に示します。
@@ -41,33 +47,42 @@ summary: InfiniBand スイッチを使用してサブネットマネージャを
 +
 [listing]
 ----
-# cat /etc/rc.d/rc.local
- opensm -B -g 0x248a070300a80a80 -p 15 -f /var/log/opensm-ib0.log
- opensm -B -g 0x248a070300a80a81 -p 1 -f /var/log/opensm-ib1.log
+#!/bin/bash
+
+opensm -B -g 0x248a070300a80a80 -p 15 -f /var/log/opensm-ib0.log
+opensm -B -g 0x248a070300a80a81 -p 1 -f /var/log/opensm-ib1.log
 ----
-
-
-+
-* RHEL の例 *
-
-+
-** /etc/rc.d/rc.local に次の 2 行を追加します。「 GUID0 」と「 GUID1 」の値は、手順 2 で確認した値に置き換えてください。「 P0 」と「 P1 」には、サブネットマネージャの優先順位を使用します。 1 は最低、 15 は最高です。
+. という名前のsystemdサービスユニットファイルを作成します `subnet-manager service`。
 +
 [listing]
 ----
-opensm -B -g GUID0 -p P0 -f /var/log/opensm-ib0.log
-opensm -B -g GUID1 -p P1 -f /var/log/opensm-ib1.log
+# vim /etc/systemd/system/subnet-manager.service
 ----
-+
-値を置き換えたコマンドの例を次に示します。
-
+. 次の行を追加します。
 +
 [listing]
 ----
-# cat /etc/rc.d/rc.local
- opensm -B -g 0x248a070300a80a80 -p 15 -f /var/log/opensm-ib0.log
- opensm -B -g 0x248a070300a80a81 -p 1 -f /var/log/opensm-ib1.log
+[Unit]
+Description=systemd service unit file for subnet manager
+
+[Service]
+Type=forking
+ExecStart=/bin/bash /usr/sbin/subnet-manager.sh
+
+[Install]
+WantedBy=multi-user.target
 ----
-
-
+. 新しいサービスをシステムに通知します。
++
+[listing]
+----
+# systemctl daemon-reload
+----
+. を有効にして開始します `subnet manager service`。
++
+[listing]
+----
+# systemctl enable subnet-manager.service
+# systemctl start subnet-manager.service
+----
 

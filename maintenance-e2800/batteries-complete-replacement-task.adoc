@@ -14,8 +14,8 @@ summary: バッテリの交換を完了します。
 [role="lead"]
 バッテリ交換後の手順は、デュプレックス構成（コントローラが 2 台）とシンプレックス構成（コントローラが 1 台）で異なります。
 
-* デュプレックス構成については、を参照してください <<Place controller online (duplex)>>。
-* シンプレックス構成の場合は、を参照してください <<Power up controller (simplex)>>。
+* デュプレックス構成については、を参照してください  controller online (duplex)。
+* シンプレックス構成の場合は、を参照してください  up controller (simplex)。
 
 
 

@@ -13,9 +13,9 @@ summary: コントローラのアップグレードでベンダー ID が LSI �
 [role="lead"]
 コントローラのアップグレードでベンダー ID が LSI から NETAPP に変わった場合は、ホストタイプに応じた適切な手順を実行します。
 
-* <<Remount volumes on an AIX host>>
-* <<Remount volumes on a VMware host>>
-* <<Remount volumes on a Windows host>>
+*  volumes on an AIX host
+*  volumes on a VMware host
+*  volumes on a Windows host
 
 
 

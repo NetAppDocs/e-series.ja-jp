@@ -794,9 +794,6 @@
   <block id="c540e1c2b74d6cd0488d7a85392bcce7" category="doc">ログインして、 Storage Plugin for vCenter に移動します</block>
   <block id="d757ce74b8b4beebd250f87703bb77a0" category="paragraph">vCenter 向けストレージプラグインにログインして、ユーザインターフェイスを操作できます。</block>
   <block id="fafafcacc0c7e56c42ed033a5079fec5" category="list-text">プラグインにログインする前に、次のいずれかのブラウザを使用していることを確認してください。</block>
-  <block id="08000d961df99d61f6c68808ab6f3e8e" category="list-text">Google Chrome 79 以降</block>
-  <block id="16aad70318d28e2da3f720e425920295" category="list-text">Mozilla Firefox 70 以降</block>
-  <block id="feaa9bcbbbd61235d4ed08a4258effc0" category="list-text">Microsoft Edge 79 以降</block>
   <block id="d0da619744a3e2a22622a4025e190ae4" category="list-text">プラグインの読み取り / 書き込み権限を持つユーザアカウントで vSphere Client にログインします。</block>
   <block id="16cd9ea1e85d6517d1275bb4ed04bc2f" category="list-text">vSphere Client のホームページで、 * SANtricity Storage Plugin for vCenter * をクリックします。</block>
   <block id="baeffe396fb6653c4e7e1188dd53c114" category="paragraph">vSphere Client ウィンドウにプラグインが開きます。プラグインのメインページが開き、 * Manage-All * が表示されます。</block>
@@ -810,11 +807,8 @@
   <block id="b343a8501c81a39ccd85e7ffcb042c9a" category="paragraph">vCenter 向けストレージプラグインをインストールし、プラグインの登録を確認できます。</block>
   <block id="f648da22c98e52c918faa560efe4f898" category="section-title">インストールの前提条件を確認する</block>
   <block id="3f2d2f00d799dde329a804cc37f26a7c" category="paragraph">システムが次の要件を満たしていることを確認します。</block>
-  <block id="ed19c109921c5c29f6da8270a6e0ebf7" category="list-text">VMware vCenter Server Appliance のサポートされるバージョン： 6.7U3J 、 7.0U1 、または 7 。0U2,</block>
   <block id="2ce43ab0f5d314b47dd9cb618dcc2844" category="list-text">NetApp SANtricity OS バージョン： 11.60.2 以降</block>
-  <block id="10b1615e46aa25019530e64f669f8006" category="list-text">サポートされるアプリケーションホストのバージョン： Windows 2016 または Windows 2019</block>
   <block id="85826baa206c427868f3feaff8a9870b" category="list-text">ホストシステムの CPU 要件：</block>
-  <block id="4e70f00d5663223429744a99f98d7a97" category="list-text">システムメモリ： 1.5GB</block>
   <block id="567b36d352655c36a5a725d1ebf33c0f" category="list-text">ストレージスペース： 275 MB + 200 MB （ロギング）</block>
   <block id="dc7364d3899f846fdf1224ed73fd1f69" category="section-title">プラグインソフトウェアをインストールします</block>
   <block id="77ceebed4c1a4af4acd87fb741a6c682" category="paragraph">プラグインソフトウェアをインストールするには：</block>
@@ -1422,8 +1416,6 @@
   <block id="1458d41ed1532a66aec83e0f005887a5" category="paragraph">ケーブル接続情報環境次のハードウェアモデル</block>
   <block id="bd5c641408f65aa18580861a6ce2400c" category="cell">* コントローラシェルフ *</block>
   <block id="0980e5858005022a7297657f3c4b364f" category="cell">* ドライブシェルフ *</block>
-  <block id="ae149e14affd7d147aaaac4e778a78b9" category="paragraph">EF600</block>
-  <block id="1727ed989c7f4287136d81d78aeb960e" category="paragraph">該当なし。</block>
   <block id="d50ce06b100342390b04b3af9e03c19c" category="paragraph">E5724 、 EF570 、 E2812 、 E2824 、 EF280</block>
   <block id="e2601a92435cce9fb17f276fae4332e9" category="paragraph">DE212C 、 DE224C</block>
   <block id="1c9e2fe8efd22ec76e7d02eb34d33b99" category="paragraph">E2860 、 E5760</block>
@@ -1553,9 +1545,6 @@
   <block id="aafac493f2e35b6f1c326279401ced51" category="paragraph">1 台以上の 60 ドライブシェルフにコントローラシェルフをケーブル接続できます。</block>
   <block id="9829150d11210fb5e6fc62e793db934e" category="section-title">コントローラシェルフと 60 ドライブシェルフ</block>
   <block id="b0c29970a72a5299c667300a0e5395b3" category="image-alt">60 ケーブル</block>
-  <block id="c09b2479232208dadee51c21afff6c13" category="section-title">EF300 のケーブル接続</block>
-  <block id="af68192c22e06c7d813d28700111551b" category="paragraph">以下の情報は、 EF300 コントローラシェルフを DE212C 、 DE224C 、または DE460 ドライブシェルフに接続する環境のケーブル接続方法です。</block>
-  <block id="b61a95e1240c6e12ebdce3c2918a7b76" category="paragraph">EF300 をケーブル接続する前に、ファームウェアが最新バージョンに更新されていることを確認します。ファームウェアを更新するには、の手順に従います <block ref="2834c74834ca1d1cb0e165f8c6e2c750" category="inline-link-macro-rx"></block>。</block>
   <block id="611e6715a131d9ea8207c202e4454e5c" category="image-alt">EF から DE224c の 4 台のシェルフ</block>
   <block id="8a208046a6b803359c25cc4e6428c75c" category="image-alt">EF から de460c</block>
   <block id="be194456d89fce8d64ec33f6aacd608e" category="summary">E シリーズシステムは、シンプルで高速な信頼性の高い SAN ストレージを必要とする、データ分析、ビデオ監視、ディスクベースのバックアップなど、広帯域を使用する専用アプリケーションに対応したハードウェアとソフトウェアを統合した解決策です。</block>
@@ -3982,7 +3971,6 @@
   <block id="46856129ff7b8487da67b53791b91914" category="list-text">有効な状態（最適）である必要があります。</block>
   <block id="5fb948998adfdac8e0f9af0fce4187c5" category="list-text">ボリュームコピー、 Snapshot コピー、非同期ミラーリング、同期ミラーリングの関係を確立することはできません。</block>
   <block id="5513710fb545a93c8c1b7cb7e2c3ffd8" category="list-text">再設定処理を実行できません：動的ボリューム拡張、動的容量拡張、動的セグメントサイズ、動的 RAID 移行、動的な容量削減、 最適化。</block>
-  <block id="112376f710d60f9bdb057b1f2719cd42" category="list-text">インポートを開始する前にホストにマッピングすることはできません（ただし、インポートの完了後にマッピングすることはできます）。</block>
   <block id="dc975b3034f82fb41f27bc8c632d1c90" category="list-text">Flash Read Cached （ FRC ）を有効にできません。</block>
   <block id="c905dd1bfaa4af0602293a252e3f90aa" category="paragraph">System Manager は、リモートストレージのインポートウィザードの一環として、これらの要件を自動的にチェックします。デスティネーションボリュームを選択する際には、すべての要件を満たすボリュームだけが表示されます。</block>
   <block id="e3e16bb73c0250a6a229fb457b4f957e" category="section-title">制限事項</block>
@@ -4511,18 +4499,13 @@
   <block id="74adca4d72e5e007d2c87aa7750faf32" category="paragraph">これで DIMM の交換は完了です。通常の運用を再開することができます。</block>
   <block id="8efc2bb6da7e629c408a29a1c453f118" category="summary">ホストのプロトコルを別のプロトコルに変換して互換性を確保したり、ホスト接続のプロトコルをインフラのニーズに合わせて別のプロトコルに変換したりできます。</block>
   <block id="4a3c8c03cdcb016f4690174be36a72be" category="summary">EF300 SAS 拡張カードを交換する前に、要件と考慮事項を確認してください。</block>
-  <block id="99cee295e97c436f94052b1fa0681a05" category="doc">EF300 SAS 拡張カードの交換に際しての要件</block>
-  <block id="30a31e634edf619d4889ff2de64f6fbf" category="paragraph">SAS 拡張カードを EF300 に追加する場合は、次の要件を確認します。</block>
   <block id="3d52e0419c7f8a010e6fc5f98c25da0f" category="list-text">次の手順に従う必要があります <block ref="333b8feab226020b2ee6e03f5e462ace" category="inline-link-macro-rx"></block> をクリックして、コントローラをセットアップします。</block>
   <block id="ae1aaca96a065fbfcfe3174c8cf8c2dd" category="list-text">ファームウェアを最新バージョンに更新する必要があります。ファームウェアを更新するには、の手順に従います <block ref="bf6a098eae1df274d91ef498db89d4bb" category="inline-link-macro-rx"></block>。</block>
   <block id="bcd1c6ce889403cac968c239f787194a" category="list-text">この手順のダウンタイムメンテナンス時間をスケジュールする必要があります。この手順が完了するまではストレージアレイのデータにアクセスできません。</block>
   <block id="e4005cc04ad30971023ff0ce6398ae8e" category="list-text">EF300 コントローラのポート 1 には、ドライブトレイを拡張するための SAS 拡張カードが取り付けられている場合があります。</block>
   <block id="c47ea49cacff0a65bf539a3d88d8a79d" category="list-text">SAS 拡張のケーブル接続については、を参照してください <block ref="a48890f0b8f43b924432692645604270" category="inline-link-macro-rx"></block> 手順については、を参照し</block>
   <block id="8af1af6830937a72d5cd88e0d6c25265" category="summary">ドライブトレイを拡張できるように、 EF300 コントローラに SAS 拡張カードを追加します。</block>
-  <block id="72665326c71824fb027639c3a39ce42f" category="doc">EF300 に SAS 拡張カードを追加します</block>
-  <block id="6966571f58170f7a2e6240467ccea895" category="paragraph">EF300 コントローラに SAS 拡張カードを追加して、ドライブトレイを拡張することができます。</block>
   <block id="76b6d67ba2d43b0e0d5354712cf5475c" category="paragraph">SAS 拡張カードを追加するには、ストレージアレイの電源をオフにし、新しい SAS 拡張カードを取り付けてから再度オンにする必要があります。</block>
-  <block id="246a0c933a57b2f744690422b191ba93" category="list-text">レビュー <block ref="eab64bf907e0db066a6f4d223bd36851" category="inline-link-macro-rx"></block>。</block>
   <block id="67bd69d1c6f17ed45863d20c2ffa895c" category="list-text">コントローラと互換性のある SAS 拡張カード。</block>
   <block id="5a9ac7fcdfe78893d8ddc29edd5ea74a" category="paragraph">SAS 拡張カードを安全に追加できるように、コントローラシェルフをオフラインにします。</block>
   <block id="058f06400fb3e1f0bea8c8d18a4c12fe" category="paragraph">新しい SAS 拡張カードを追加できるように、コントローラキャニスターを取り外します。</block>
@@ -5182,18 +5165,12 @@
   <block id="32d741d8645e6af7d809c5674d876755" category="admonition">サポートデータの収集時は、ストレージアレイのパフォーマンスに一時的に影響が及ぶことがあります。</block>
   <block id="746459dc6fbce120e006b20e2af77fc6" category="list-text">既存のストレージアレイのオペレーティングシステム（コントローラファームウェア）が現在のコントローラに対応する最新のバージョンに更新されていることを確認してください。SANtricity System Manager のメニューから、 Support [Upgrade Center] を選択して、ソフトウェアとファームウェアのインベントリを表示します。</block>
   <block id="057749e934272e52f7531107c174dd36" category="admonition">SANtricity OS バージョン 8.50 をサポートするコントローラにアップグレードする場合は、新しいコントローラを取り付けて電源をオンにしたあとに、最新バージョンの SANtricity OS と最新の NVSRAM をインストールする必要があります。このアップグレードを行わないと、ストレージアレイを自動ロードバランシング（ ALB ）の対象として設定できないことがあります。</block>
-  <block id="aac551b33e7212c83248dd33ba9dfdd9" category="list-text">コントローラを交換する際にドライブセキュリティ機能も使用している場合は、次の表に示すセキュリティタイプ（内部または外部）とドライブの状態に応じた手順を実行します。</block>
-  <block id="c25c41a16df0261f3b03820882c9e0e3" category="admonition">ドライブセキュリティは、 Full Disk Encryption （ FDE ）ドライブまたは連邦情報処理標準（ FIPS ）ドライブを使用してセキュリティを強化するストレージアレイの機能です。これらのドライブにドライブセキュリティ機能を使用すると、データにアクセスするためのセキュリティキーが必要になります。</block>
   <block id="e9c3e91cd342c6baba0bb5fbb8b4cc83" category="cell">セキュリティタイプとコンテキスト</block>
   <block id="684480da0a61b5fd6cf2e46b520c3351" category="paragraph">内部キー管理、 1 つ以上のドライブがロックされています</block>
-  <block id="a0d507d0d6214f4a31d8dfd392bfa45f" category="list-text">内部セキュリティキーファイルを管理クライアント（ System Manager へのアクセスに使用するブラウザを備えたシステム）の既知の場所にエクスポートします。「 export storageArray securityKey 」 CLI コマンドを使用します。セキュリティキーに関連付けられているパスフレーズを入力し、コマンドの保存場所を指定する必要があります。このコマンドの使用方法については、 _ コマンドラインリファレンス _ を参照してください。</block>
-  <block id="1422050f23c3d0abcdb3bd0b14c8fe43" category="list-text">内部セキュリティキーに関連付けられているパスフレーズを確認します。</block>
   <block id="c2c5a5e2eaae3a66cafeafd63fdafafb" category="paragraph">外部キー管理、すべてのドライブがロックされている、コントローラの交換時に一時的に内部キー管理に切り替えることができる（推奨）</block>
   <block id="183868d76b85de765e8fb5cdff8b83e9" category="paragraph">次の手順を順番に実行します。</block>
   <block id="cc0b85a30952319de472a358dbfa49b7" category="list-text">外部 KMS のサーバアドレスとポート番号を記録します。System Manager で、メニューの [ 設定 ] 、 [ システム ] 、 [ セキュリティキー管理 ] 、 [ キー管理サーバ設定の表示 / 編集 ] の順に選択します。</block>
-  <block id="80d5780ccb673e7edd1e8626c87f2e22" category="list-text">コントローラの交換後にストレージアレイとキー管理サーバが相互に認証できるように、クライアント証明書とサーバ証明書がローカルホストに保存されていることを確認します。証明書を保存するには、 'ave storageArray keyManagementCertificate' CLI コマンドを使用します。コマンドは必ず 2 回実行してください。 1 回は「 certificateType 」パラメータを「 client 」に設定し、もう 1 回はパラメータを「 server 」に設定して実行してください。このコマンドの使用方法については、 _ コマンドラインリファレンス _ を参照してください。</block>
   <block id="ea62a72ef7a4fd0d6569107b016ea8b9" category="list-text">「不可能な storageArray externalKeyManagement 」 CLI コマンドを実行して、内部キー管理に切り替えます。</block>
-  <block id="59cae0969356d095163e6b4ab9985152" category="paragraph">外部キー管理、すべてのドライブがロックされている、コントローラの交換時に一時的に内部キー管理に切り替えることはできない</block>
   <block id="6dac5529ca8369b34ee04d8dc13baa0d" category="paragraph">外部キー管理、一部のドライブがロックされています</block>
   <block id="adc86bc2b1821c7fd63f8f3234bebd08" category="paragraph">追加の手順は必要ありません。</block>
   <block id="e0a6db37b541fcba6242bac86b3c14cb" category="list-text">ストレージアレイのシリアル番号をメモします。</block>
@@ -5429,28 +5406,19 @@
   <block id="8ea2b4bc06e89226928ddc26ed1fe437" category="list-text">フォームの下部にある [*Submit*] ボタンをクリックします。</block>
   <block id="e132c06c8cd43f2b425851d8e72c728c" category="paragraph">コントローラのアップグレードでベンダー ID が LSI から NETAPP に変わった場合は、に進みます <block ref="53704f19de5bd903d9df498d42bdbe7a" category="inline-link-macro-rx"></block>; それ以外の場合は、コントローラのアップグレードが完了し、通常の操作を再開できます。</block>
   <block id="b5f6d401afe8de86cc5d4d7d2aacbf13" category="summary">E2800 および E5700 のコントローラをアップグレードする際にドライブセキュリティ機能が有効になっている場合は、ドライブのロックを手動で解除する必要があります。</block>
-  <block id="9c9f0ddf9eadbeacbc009c0c28e2677d" category="paragraph">E2800 および E5700 のコントローラをアップグレードする場合、それらのコントローラのドライブセキュリティ機能により、ドライブが部分的、外部、または内部でロックされます。ドライブセキュリティ機能が有効になっている場合は、それらのドライブのロックを手動で解除する必要があります。</block>
   <block id="1f70f07f8e4ec5ab7238fd5af593be19" category="paragraph">次の場合は、該当する手順に従います。</block>
   <block id="bac17238f1685a2fb47f34768a9cb871" category="list-text"><block ref="6b6e70d2a3cc0100509ee51e7050731c" category="inline-xref-macro-rx"></block></block>
   <block id="8c4bd0c1a96bcaf797782a18b54daf7a" category="list-text"><block ref="8640eb68a955f6f5591f0dd1a3bd30e7" category="inline-xref-macro-rx"></block></block>
   <block id="df8c85065effb5093bcc1889495b92f7" category="section-title">内部キー管理</block>
   <block id="8f0439a6f042ce457ec5d5faf91c28ea" category="paragraph">すべてのドライブがロックされている場合の内部キー管理の手順は、次のとおりです。</block>
-  <block id="ad8d2c986eff2547831bfe87f724aced" category="paragraph">新しくスワップしたコントローラは、デジタル表示ディスプレイにコード L5 が表示されてロックダウンされます。このロックダウンは、ストレージアレイのドライブで自動ノード同期（ ACS ）を実行できない場合に発生します。ACS は、セキュリティキーがインポートされると、新しいコントローラを再開して更新します。</block>
   <block id="e55e81df495444ffb2639e3a7f9ef86e" category="admonition">管理ポート 1 を使用していない場合は、他のデフォルト IP アドレスを使用してみてください。 +Ctrl A ポート 1 ： 192.168.128.101 + Ctrl A ポート 2 ： 192.168.128.102 + Ctrl B ポート 1 ： 192.168.129.101 + Ctrl B ポート 2 ： 192.168.129.102</block>
-  <block id="00c4bfa4b085fb71f178560371d3c082" category="list-text">手順 2 でアレイコントローラに直接接続するために使用するラップトップまたは PC に SANtricity クライアントをインストールします。</block>
-  <block id="b51273d65ac8122425fb296e1de63fd5" category="list-text">RJ45 イーサネットケーブルを使用して、ラップトップまたは PC をコントローラ A の管理ポート 1 に直接接続します。ラップトップの IP アドレスを同じサブネットに設定しなければならない場合もあります。</block>
-  <block id="667d5cb3d48e19f0bf9fde11f330d110" category="list-text">IP アドレス 192.168.128.101 （ username * admin * ）とパスワードブランクを使用して、「 import storageArray securityKey file 」 CLI コマンドを使用して内部キーをインポートし、からセキュリティキーを保存します <block ref="370683b601e29cfe5ec51edd9d49be09" category="inline-link-macro-rx"></block>。このコマンドの使用方法については、 _ コマンドラインリファレンス _ を参照してください。</block>
   <block id="451adf9dc612afcfa43e2c0797313ea1" category="paragraph">* 例： * `S MCLI 192.168.128.101 -u admin -c "import storageArray securityKey file=\"Directory&amp;filename\" passphrase="passasraseString\";"`</block>
   <block id="02626834a548b28e809c79cc3246fbf9" category="paragraph">コントローラはドライブから自動ノード同期プロセスを続行し、リブートします。リブート後は、元の IP 構成を使用してコントローラにアクセスできるようになります。</block>
   <block id="370c6dde461cc5827c330619a80ca24b" category="section-title">外部キー管理</block>
   <block id="9208cd3893f8fbd0715f391ac0195354" category="paragraph">すべてのドライブがロックされている場合の外部キー管理の手順は、次のとおりです。</block>
-  <block id="2476683a1fa558c58a96b1e243b9bd93" category="list-text">RJ45 イーサネットケーブルを使用して、ラップトップまたは PC をコントローラ A の管理ポート 1 に直接接続します。ラップトップの IP アドレスを同じサブネットに設定しなければならない場合もあります。</block>
-  <block id="d426dcac554b17b0ffa58b2c2059698d" category="list-text">デフォルトの IP アドレス 192.168.128.101 でユーザ名 * admin * とパスワードブランクを使用して 'et storageArray externalKeyManagement' CLI コマンドを使用して外部キー管理サーバを設定し 'ServerAddress' と 'erverPort' をから保存します <block ref="370683b601e29cfe5ec51edd9d49be09" category="inline-link-macro-rx"></block>。このコマンドの使用方法については、 _ コマンドラインリファレンス _ を参照してください。</block>
   <block id="203b2e157336601775297d64e8b01713" category="paragraph">* 例： * `S MCLI 192.168.128.101 -u admin -c "set storageArray externalKeyManagement serverAddress=&lt;ServerIPAddress&gt;ServerPort=&lt;ServerPort&gt;;"`</block>
-  <block id="23a9bcc70faf273e9531cc467fce40b9" category="list-text">デフォルトの IP アドレス 192.168.128.101 でユーザ名 *admin* とパスワードを空白にして、 'torageArray keyManagementCertificate' CLI コマンドを使用して証明書をダウンロードします。これは、クライアント証明書用に 1 回、サーバ証明書用に 2 回目です。このコマンドの使用方法については、 _ コマンドラインリファレンス _ を参照してください。</block>
   <block id="ff8ee4661fbac57cdf8a71747f69e4ed" category="paragraph">* 例 A ： * `S MCLI 192.168.128.101 -u admin -c "download storageArray keyManagementCertificate certificateType=client file=\"Directory&amp;filename\";"</block>
   <block id="0558f36aa79582296ec1f39019ce4f53" category="paragraph">* 例 B ： * `S MCLI 192.168.128.101 -u admin -c "download storageArray keyManagementCertificate certificateType=server file=\"Directory&amp;filename\";"</block>
-  <block id="b4dc6e5f08ce4751ab0c78b1ca428e80" category="list-text">から保存されたセキュリティキーを使用します <block ref="370683b601e29cfe5ec51edd9d49be09" category="inline-link-macro-rx"></block>を使用して、外部キーを IP アドレス 192.168.128.101 にインポートし、ユーザ名 * admin * とパスワードは空白のままにします。このコマンドの使用方法については、 _ コマンドラインリファレンス _ を参照してください。</block>
   <block id="854750d89bde7b9006e843874058e608" category="summary">E シリーズコントローラのアップグレードと交換に関する要件を確認します。</block>
   <block id="520dc026db4e88668c8c301bd1d52f89" category="paragraph">コントローラをアップグレードする前に、次の考慮事項を確認してください。</block>
   <block id="42eef425d97514d2a9e42ae0abebfde1" category="section-title">ハードウェアとファームウェアの要件</block>
@@ -5616,15 +5584,7 @@
   <block id="794a654f60052714db9eba2a7ff4b608" category="list-text">マルチパスサービスを開始します。</block>
   <block id="c0cc8ee2a0c43361edcb15edea63163e" category="list-text">uname -r コマンドを実行して ' カーネル・バージョンを保存します</block>
   <block id="c337e113727158cfe4fdbba2c30e4ce8" category="paragraph">この情報は、ホストにボリュームを割り当てるときに使用します。</block>
-  <block id="dbe6f9256adc4fa22b5959ef611567f7" category="list-text">起動時に「マルチパス」デーモンを有効にするには、次のいずれかの操作を行います。</block>
-  <block id="ed4b3f73d806d44b50bf78b3c81db12f" category="cell">使用する場合</block>
-  <block id="5e2ad6fd9deb412d871137094ee43ef0" category="cell">手順</block>
-  <block id="4a0bed0f7e4accae9bb8dbdb781c2738" category="paragraph">RHEL 7.x および 8.x システム：</block>
-  <block id="7d34f3326402c0ff0d7f264c515eba14" category="paragraph">'systemctl enable multipathd</block>
-  <block id="e83b87baf70b511c64fd07116caa707e" category="paragraph">SLES 12.x および 15.x システム：</block>
   <block id="4cb5bccf1f31e6b4f08f0f5237bf3b77" category="list-text">initramfs イメージまたは initrd イメージを /boot ディレクトリに再構築します</block>
-  <block id="e89611cf6fd57162d12b3332f0b5531d" category="paragraph">「 racut --force -- マルチパスの追加」</block>
-  <block id="1cf4d30b229d59f9ea9684345daf5e8e" category="list-text">オンラインヘルプの「 Create host manually 」手順を使用して、ホストが定義されているかどうかを確認します。自動ロードバランシング機能を有効にする場合は、各ホストタイプが * Linux DM-MP （カーネル 3.10 以降） * であること、自動ロードバランシング機能を無効にする場合は * Linux DM-MP （カーネル 3.9 以前） * であることを確認してください。必要に応じて、選択したホストタイプを適切な設定に変更します。</block>
   <block id="0b00ad813cc55dfd2e8ed72b5b7d3d4a" category="summary">ボリュームを I/O 処理に使用できるように、ホストまたはホストクラスタにボリューム（ネームスペース）を割り当てる必要があります。これにより、ストレージアレイの 1 つ以上のネームスペースへのアクセスがホストまたはホストクラスタに許可されます。</block>
   <block id="69f102dd47323f96a18a4b5f676d8b67" category="doc">ボリュームを割り当てます</block>
   <block id="5907d01f57bca756989cf1872feacb43" category="paragraph">ホストまたはホストクラスタにボリューム（ネームスペース）を割り当てて、そのボリュームを I/O 処理に使用できるようにする必要があります。これにより、ストレージアレイの 1 つ以上のネームスペースへのアクセスがホストまたはホストクラスタに許可されます。</block>
@@ -5684,7 +5644,6 @@
   <block id="108af92eae03d083f92285143921fa37" category="paragraph">この例では、コントローラ A がリブートしているときの、異なる時点からの「マルチパス -ll 」出力を示しています。名前空間 10 へのパスは「 failed faulty running 」と表示されます。 prio の値は 0 で、「 tatus 」の値は「 enabled 」です。</block>
   <block id="d6824df6c78161020f612be2cf0dd5ea" category="paragraph">'policy='service-time 0' prio=10 status=active</block>
   <block id="a602b51c709c08f2a0056a93c3f7347c" category="paragraph">「 active 」パスが「 nvme2 」を参照しているため、このパスでコントローラ B に I/O が転送されています</block>
-  <block id="a5974dd8ce70a548614c8d5d17a3d822" category="list-text">次のいずれかを実行して、ブート時に multipathd デーモンを有効にします。</block>
   <block id="ee916e0d414bc638aa03071c909609ac" category="list-text">ブート構成ファイルで、新しく作成した /boot/initrams-* イメージまたは /boot/initrd-* イメージが選択されていることを確認します。</block>
   <block id="46bcd2758b72eff5e80f3a63941f1254" category="paragraph">たとえば 'grub の場合は '/boot/grub/menu.lst' で 'grub2 の場合は '/boot/grub2/menu.cfg です</block>
   <block id="cfacf32d5f730b5bb16ae4c5d345f88e" category="summary">Fibre Channel スイッチ（ FC ）を設定すると、ホストがストレージアレイに接続できるようになり、パスの数が制限されます。スイッチのゾーニングはスイッチの管理インターフェイスで設定します。</block>
@@ -5698,11 +5657,7 @@
   <block id="abc3a0f4096e1945eba04983e252c362" category="list-text">SANtricity ソフトウェアリリースは、からダウンロードします<block ref="2ff36e7792a0e0257d19a11dce8cade8" category="inline-link-rx"></block>。Downloads * タブで、ダウンロード [E-Series SANtricity Storage Manager] に移動します。</block>
   <block id="97a3eb8ccb8953c4e693e0a18d5cab3d" category="summary">Linux のバージョンに基づいて、デバイスターゲットに転送される I/O を設定します。</block>
   <block id="74edfb8093c3393073b74b0c56ede7e1" category="doc">物理 NVMe デバイスターゲットの NVMe ボリュームにアクセスします</block>
-  <block id="50ffee4e99291a6caaf616f9e2f6769c" category="paragraph">RHEL 8 および SLES 15 の場合、 I/O は Linux ホストによって物理 NVMe デバイスターゲットに転送されます。ホストにはこのターゲットが単一の物理デバイスとして表示され、その物理パスはネイティブの NVMe マルチパス解決策で管理されます。</block>
-  <block id="f966e3eae36b74bb8976b80aae84e622" category="paragraph">/dev/nvme0n1 ではなく、 /dev/disk/by-id/ のリンクを使用することを推奨します。例：</block>
   <block id="cdd4271d15c07cc5753d0bf12b5c1239" category="section-title">物理 NVMe デバイスは I/O ターゲットです</block>
-  <block id="19f329bb748f07185cdd93291f39a9dd" category="paragraph">物理 NVMe デバイスのパスへ I/O を実行します。次の形式を使用して、ネームスペースごとに該当するデバイスを 1 つだけ指定します。</block>
-  <block id="5aa28c6a9a394b8380b5c0ea6d5bf26c" category="paragraph">すべてのパスがこのデバイスのネイティブのマルチパス解決策を使用して仮想化されます。</block>
   <block id="4d2213a9c28aae69f853e1a9e1039c9a" category="paragraph">パスを表示するには、次のコマンドを実行します。</block>
   <block id="8637d6c1f3e0436f7f2ec935b829bd22" category="paragraph">出力例：</block>
   <block id="828525ca8b1efb36cde84d36d90d300d" category="paragraph">「 nvme list-subsys 」コマンドにネームスペースデバイスを指定すると、そのネームスペースへのパスに関する追加情報が提供されます。</block>
@@ -5710,10 +5665,8 @@
   <block id="eb7aeb8aa3c5ccef0a1035b5df619fb4" category="admonition">パス情報を表示するには '/etc/multipath.conf で次のように設定する必要があります</block>
   <block id="5199a73d3ec25068a8e5789109022997" category="summary">InfiniBand 環境で NVMe イニシエータを設定するには、 InfiniBand パッケージ、 nvme-CLI パッケージ、および RDMA パッケージをインストールして設定し、イニシエータの IP アドレスを設定し、ホストで NVMe-oF レイヤを設定します。</block>
   <block id="9e54c935a03ff772bcf7612b86de79a1" category="doc">ホスト側で NVMe over InfiniBand を設定します</block>
-  <block id="2110905b63632314a973c76a08dfec96" category="paragraph">互換性のある最新の RHEL 7 、 RHEL 8 、 SUSE Linux Enterprise Server 12 または 15 サービスパックオペレーティングシステムが実行されている必要があります。を参照してください<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> をクリックして、最新の要件を確認してください。</block>
   <block id="c35fc67c4b5efd31552d96e3eec5e293" category="list-text">RDMA 、 nvme-CLI 、および InfiniBand パッケージをインストールします。</block>
   <block id="ddeec0610c6dfff21c284cac06924a6e" category="paragraph">* SLES 12 または SLES 15 *</block>
-  <block id="3babbb5880d0a0a22e662b27203c0dbe" category="paragraph">* RHEL 7 または RHEL 8*</block>
   <block id="76769149b150e336b1382f8eef619a50" category="list-text">IPoIB' を有効にします/etc/rdma/rdma.conf ファイルを編集し、「 IPoIB 」をロードするエントリを変更します。</block>
   <block id="e180dcda700b7114bbf7cbdb821df4a6" category="list-text">IB ポートリンクがどちらも稼働しており、かつ State が Active であることを確認します。</block>
   <block id="22b4a25f95365479298f378bbf161e6f" category="list-text">IB ポートに IPv4 IP アドレスを設定します。</block>
@@ -5749,12 +5702,7 @@
   <block id="53ff0f9470cfba9144606f2d37d0e938" category="paragraph">スイッチまたはホスト上の環境でサブネットマネージャが実行されている必要があります。ホスト側で実行する場合は、次の手順を使用してセットアップします。</block>
   <block id="142539265ad8550d4918fa9ba04c0977" category="list-text">サブネット・マネージャを実行するすべてのホストに 'opensm' パッケージをインストールします</block>
   <block id="c41e730f9f37056cb416306d96b426fa" category="list-text">「 ibstat -p 」コマンドを使用して、 HCA ポートの「 GUID0 」と「 GUID1 」を確認します。例：</block>
-  <block id="34f8b244e11b4390ee3338ff117ddca0" category="list-text">ホスト上の接続された HCA の各ポートでサブネットマネージャを有効にします。</block>
-  <block id="10612c07d02337ca01a3c46fc28548f1" category="paragraph">* SLES の例 *</block>
-  <block id="620f6614376195c8a778efb9d63452db" category="list-text">/etc/rc.d/rc.after に次の 2 行を追加します。「 GUID0 」と「 GUID1 」の値は、手順 2 で確認した値に置き換えてください。「 P0 」と「 P1 」には、サブネットマネージャの優先順位を使用します。 1 は最低、 15 は最高です。</block>
   <block id="01310ef017ef25d822f741c21c117a36" category="paragraph">値を置き換えたコマンドの例を次に示します。</block>
-  <block id="9f02febaba0653c0eaad0ff1bbaad908" category="paragraph">* RHEL の例 *</block>
-  <block id="ab3920ef337c66be846f600286085d4d" category="list-text">/etc/rc.d/rc.local に次の 2 行を追加します。「 GUID0 」と「 GUID1 」の値は、手順 2 で確認した値に置き換えてください。「 P0 」と「 P1 」には、サブネットマネージャの優先順位を使用します。 1 は最低、 15 は最高です。</block>
   <block id="cd811d566fa107f125fee827c9a97038" category="summary">SANtricity System Manager を使用して、ストレージアレイにデータを送信するホストを定義します。ホストの定義は、ストレージアレイが接続されているホストを認識して、ボリュームへの I/O アクセスを許可するために必要な手順の 1 つです。</block>
   <block id="de91602d965d3f24d55de1a618deaaff" category="doc">ホストを定義します</block>
   <block id="e05bf6d17d783fdea5d98847101f7fbc" category="paragraph">ホストを定義する際は、次のガイドラインに注意してください。</block>
@@ -5776,14 +5724,8 @@
   <block id="bc2a327cbf5067ba22b3f62235282061" category="paragraph">この手順を開始する前に、 HBA ユーティリティに関する次のガイドラインを確認してください。</block>
   <block id="3e59e5ab1adea8ed176d6a2c2a73cadf" category="paragraph">の「メモ」列を参照してください<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> を参照してください。</block>
   <block id="b3e50929a30cfc00afbc55d231a50cdc" category="summary">マルチパスデバイスにパーティションを作成し、必要に応じてネームスペースにファイルシステムを作成して、パーティションをマウントします。</block>
-  <block id="805eb1d81197f7063faa2748049cf91c" category="doc">ファイルシステムを作成します</block>
-  <block id="f9dea2d3c7f8af6583db29734dbffbb5" category="paragraph">ネームスペースまたはネイティブの NVMe デバイスにファイルシステムを作成し、ファイルシステムをマウントできます。</block>
   <block id="59c71eb9f304131ed908d87a5f9303f9" category="paragraph">RHEL 7 および SLES 12 の場合は、目的の DM デバイスにファイルシステムを作成し、ファイルシステムをマウントします。</block>
-  <block id="fe62cf3be519ba46aa9154f36e9ed31f" category="section-title">ファイルシステムの作成（ RHEL 8 および SLES 15 ）</block>
   <block id="a50e35ff2f76c0ac349de732916c537b" category="paragraph">RHEL 8 および SLES 15 の場合は、ネイティブの NVMe デバイスにファイルシステムを作成し、ファイルシステムをマウントします。</block>
-  <block id="2228cb557f787fa07a95687d51f4e507" category="list-text">multipath -ll コマンドを実行して、 /dev/nvme デバイスの一覧を表示します。</block>
-  <block id="3a13fe203d816730a5f1357720191e8a" category="paragraph">このコマンドの出力では、デバイス nvme0n6 が表示されます。</block>
-  <block id="5cc7c9b3b68ed8ae2859d858791a2dc5" category="list-text">/dev/nvme0n# デバイスごとに、パーティションにファイルシステムを作成します。</block>
   <block id="446e80fe7b2b546a067aa727557f83e0" category="paragraph">ファイルシステムの作成方法は、選択したファイルシステムによって異なります。この例では、 ext4 ファイルシステムを作成します。</block>
   <block id="975fd0c9892b022cfeeec8b2a371f30b" category="paragraph">使用するホストインターフェイスタイプを選択します。設定するアレイに使用可能なホストインターフェイスタイプが 1 つしかない場合は、この設定を選択できないことがあります。</block>
   <block id="365f3205f151d2c0162b586cda9fa899" category="paragraph">デフォルトのエイリアスは「 &lt;Hostname_Port number&gt;`` 」です。たとえば、「ホスト IPT 」用に作成される最初のポートのデフォルトのエイリアスは、 ipt_1 です。</block>
@@ -5802,11 +5744,7 @@
   <block id="be5555e7e670df8f8d0c725b9043fb16" category="summary">NVMe over RoCE に関するベンダーの推奨事項に従ってスイッチを設定します。これらの推奨事項には、設定の指示とコードの更新が含まれる場合があります。</block>
   <block id="f4959eb49cd0d468fb22d0fde13f93d1" category="doc">スイッチを設定します</block>
   <block id="1016395fecd4787707233fc026c56bb5" category="paragraph">NVMe over RoCE に関するベンダーの推奨事項に従ってスイッチを設定します。これらの推奨事項には、設定の指示とコードの更新が含まれる場合があります。</block>
-  <block id="9d1e5b0282d87f9cba0ae31481cedb4e" category="admonition">* データ損失のリスク。 * NVMe over RoCE 環境では、データ損失のリスクを排除するために、スイッチで優先度フロー制御またはグローバルポーズ制御を有効にする必要があります。</block>
   <block id="2947e68550fb96566fb0a799660394a2" category="list-text">ベストプラクティス構成として、イーサネットポーズフレームフロー制御 * エンドツーエンド * を有効にします。</block>
-  <block id="a1c89b566c2d2e717b8523f745beaac1" category="list-text">「 /dev/nvme 」デバイスのリストを表示するには、「 multipath -ll 」コマンドを実行してください。</block>
-  <block id="2867a29d02bf9d154a02e9752cb000b6" category="paragraph">このコマンドの出力結果には、デバイス「 nvme0n6` が表示されます。</block>
-  <block id="041c133d93a6779fe18d59b5eaba8a63" category="list-text">/dev/nvme0n# デバイスごとにパーティションにファイルシステムを作成します。</block>
   <block id="4ad231784e430dd56563b629268bfd40" category="summary">iSCSI に関するベンダーの推奨事項に従ってスイッチを設定します。</block>
   <block id="276fd56aafd5af50a7695b5ebfc17875" category="doc">スイッチを設定します</block>
   <block id="96c96fb4ee0561983f4efc9ea1daf975" category="paragraph">次の点を確認する必要があります。</block>
@@ -5818,7 +5756,6 @@
   <block id="f5468ecf76be3bb4cf77cf63a591d098" category="paragraph">iSER over InfiniBand プロトコルを使用する構成の場合は、このセクションの手順を実行します。</block>
   <block id="123fafa39d80ebd469e4bb58a4001fda" category="paragraph">ネットアップ推奨の OFED をシステムにインストールしておきます。詳細については、を参照してください<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block>。</block>
   <block id="7f02faf8a07269a5ab98e244f089148d" category="list-text">ホストで iSCSI サービスを有効にして開始します。</block>
-  <block id="4578709b544309c3c129ddd77e647202" category="paragraph">* Red Hat Enterprise Linux 7 および 8 （ RHEL 7 および RHEL 8 ） *</block>
   <block id="03255405207be9e847f2d898e05048a4" category="paragraph">* SUSE Linux Enterprise Server 12 および 15 （ SLES 12 および SLES 15 ） *</block>
   <block id="49688998ea00bb073d084abbb307e708" category="list-text">使用する InfiniBand ポートを特定します。各ポートのハードウェアアドレス（ MAC アドレス）を記録します。</block>
   <block id="6b4ef7dc778070c5ee2f7456ae2e252c" category="list-text">InfiniBand ネットワークインターフェイスデバイスの永続的な名前を設定します。</block>
@@ -5980,12 +5917,10 @@
   <block id="23a74793fff16ab173be124697fd7e64" category="paragraph">出力「 &lt;format&gt;` 」は、通常の形式（ -o を使用しない場合のデフォルト）、列、または JSON にすることができます。</block>
   <block id="c612d2b91ede7407a062457604df3133" category="summary">RoCE 環境で NVMe イニシエータを設定するには、 rdma-core および nvme-CLI パッケージをインストールして設定し、イニシエータの IP アドレスを設定し、ホストで NVMe-oF レイヤを設定します。</block>
   <block id="7962181454b192f5714ecc94bc40c37a" category="doc">ホスト側で NVMe over RoCE を設定します</block>
-  <block id="300600c41942943b67305db8cc1cf264" category="paragraph">RHEL 7 、 RHEL 8 、互換性のある最新の SUSE Linux Enterprise Server 12 および 15 サービスパックオペレーティングシステムが実行されている必要があります。を参照してください<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> をクリックして、最新の要件を確認してください。</block>
   <block id="5efb38dd01fabddcbff948ba98eb16ed" category="list-text">RDMA パッケージと nvme-CLI パッケージをインストールします。</block>
   <block id="f402a19f86f854f295aa371b9abbbb90" category="list-text">NVMe over RoCE の接続に使用されるイーサネットポートで、 IPv4 の IP アドレスを設定します。ネットワークインターフェイスごとに、そのインターフェイスに対応する変数を含む構成スクリプトを作成します。</block>
   <block id="a4e34f0c64fbeb3078a510eb36f68d56" category="paragraph">この手順で使用する変数は、サーバハードウェアとネットワーク環境に基づいています。変数には 'IPADDR' と 'gateway' が含まれます次に、 SLES および RHEL の例を示します。</block>
   <block id="111d867a53d45d2348ae37042fdb7310" category="paragraph">* SLES 12 および SLES 15 *</block>
-  <block id="931ff3112ed27bc061711c73637ae331" category="paragraph">* RHEL 7 および RHEL 8*</block>
   <block id="28a17096963f5398d9b941a85c3ea321" category="list-text">ネットワークインターフェイスを有効にします。</block>
   <block id="9a85d22d9e1c050e72e2e881a520bba5" category="summary">ホストでフェイルオーバーを実行するように設定します。</block>
   <block id="b0f1d70653db761a75c6f50a1fb48a15" category="doc">フェイルオーバーを設定</block>
@@ -5993,7 +5928,6 @@
   <block id="9e780c0c06dd0edf0f09bcc9516acc1c" category="list-text">Red Hat （ RHEL ）ホストの場合、パッケージがインストールされていることを確認するには、「 rpm -q device-mapper-multipath 」を実行します</block>
   <block id="2176d0eb1d2a0a5ab5201af565e0b30b" category="list-text">SLES ホストの場合 'rpm -q multipath-tools' を実行してパッケージがインストールされていることを確認します</block>
   <block id="7149b8af09961dfba911fe06ae6a3540" category="admonition">を参照してください <block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> マルチパスは GA バージョンの SLES または RHEL では正しく機能しないことがあるため、必要なアップデートがインストールされていることを確認してください。</block>
-  <block id="86fa68effebcb36d3c558702403af269" category="paragraph">RHEL 7 および SLES 12 では、 NVMe over InfiniBand を使用するマルチパスに Device Mapper Multipath （ DMMP ）を使用します。RHEL 8 および SLES 15 では、ネイティブの NVMe フェイルオーバーが組み込まれています。実行している OS に応じて、適切に実行するためにマルチパスを追加で設定する必要があります。</block>
   <block id="7cab16eb74754bbe232b8775c104e66a" category="section-title">RHEL 7 または SLES 12 の Device Mapper Multipath （ DMMP ）を有効にします</block>
   <block id="2c2e807f6a8822a2d088dfdcc394203e" category="paragraph">RHEL および SLES では、デフォルトでは DM-MP は無効になっています。ホストで DM-MP コンポーネントを有効にするには、次の手順を実行します。</block>
   <block id="95be6b7c132218bd8782b6a7b0b982ed" category="list-text">/etc/multipath.conf ファイルの devices セクションに、 NVMe E シリーズデバイスのエントリを次のように追加します。</block>
@@ -6008,7 +5942,6 @@
   <block id="288bd49c48bf59f751a074cbaac99cf0" category="list-text">ホストのブート後にネイティブの NVMe マルチパスが有効になっていることを確認します。</block>
   <block id="c694b074c8a7887bcd4ebbfc99adf268" category="list-text">コマンド出力が「 N 」の場合、ネイティブ NVMe マルチパスは無効のままです。</block>
   <block id="6a4d0dbc61fd816c20d68cb9db43dd53" category="list-text">コマンド出力が「 Y 」の場合は、ネイティブ NVMe マルチパスが有効になり、検出した NVMe デバイスでこのコマンドが使用されます。</block>
-  <block id="c6d2cbe524754a93e33c6a6214065d08" category="admonition">SLES 15 では、ネイティブの NVMe マルチパスはデフォルトで有効になるため、追加の設定は必要ありません。</block>
   <block id="210e6499642ef4cb56b0a0b8f858e5a6" category="summary">SRP over InfiniBand プロトコルを使用する構成の場合は、ここで説明する手順を実行します。</block>
   <block id="6ad990bbfc5964e82429678d558d6312" category="paragraph">Linux ホストをストレージアレイに接続するためには、該当するオプションで InfiniBand ドライバスタックを有効にする必要があります。具体的な設定は Linux ディストリビューションによって異なる場合があります。を確認します<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> 具体的な手順および解決策固有のその他の推奨設定については、を参照してください。</block>
   <block id="7ca26655b7b9ad8ac64151af48311ace" category="list-text">使用する OS に対応した OFED / RDMA ドライバスタックをインストールします。</block>
@@ -6067,7 +6000,6 @@
   <block id="257b40198f0083663eee051dc8899cd7" category="cell">ソフトウェアイニシエータの NQN</block>
   <block id="e7f0bd2c7ce5a2859d99775fd89bb0a2" category="summary">FC を使用する場合は、 Linux Unified Host Utilities をインストールします。</block>
   <block id="43256533b4d88b90a519151bb6b8744e" category="summary">ホストポートの GUID を特定します。</block>
-  <block id="68af6e141859c31c2fea1d91a1bde08e" category="paragraph">InfiniBand-diags パッケージには、各 InfiniBand （ IB ）ポートのグローバル一意識別子（ GUID ）を表示するためのコマンドが含まれています。付属のパッケージで OFED / RDMA がサポートされる Linux ディストリビューションのほとんどに InfiniBand-diags パッケージも付属しており、このパッケージに含まれるコマンドを使用して HCA に関する情報を表示できます。</block>
   <block id="5e8bb43a311db3e4eae61b5de50a3e70" category="list-text">オペレーティングシステムのパッケージ管理コマンドを使用して InfiniBand-diags パッケージをインストールします。</block>
   <block id="d405d36a5a07f387a8a07ebe6eeb8c55" category="list-text">「 ibstat 」コマンドを実行して、ポート情報を表示します。</block>
   <block id="9fd1ccf35b45152e10c1dcc3a278a357" category="inline-xref-macro">SRP ワークシート</block>
@@ -6082,7 +6014,6 @@
   <block id="f384907c3dd58bb2d8f3b9ac157c0414" category="section-title">スイッチの制限事項</block>
   <block id="3d46c28785301ae3ad29aa411d7f0358" category="section-title">NVMe over InfiniBand の制限事項を確認します</block>
   <block id="58d9983406bc12350a998273a03fa2cd" category="summary">使用している SLES のバージョンに基づいて、デバイスターゲットに転送される I/O を設定できます（ SUSE Linux バージョン \ ）。</block>
-  <block id="e5f2e97d358bd40bf390321fbe3531af" category="paragraph">「 nvme list-subsys 」コマンドにネームスペースデバイスを指定すると、そのネームスペースへのパスに関する追加情報が提供されます。</block>
   <block id="2d59c1932fb82d6e7c73a375ed97221d" category="summary">物理パスの 1 つが中断された場合に備えて、ストレージアレイへのパスを冗長化するようにマルチパスソフトウェアを設定します。</block>
   <block id="7974a85a6c6d440bbee88b27bf089223" category="summary">nvme-CLI パッケージに含まれている SMdevices ツールを使用して、現在ホストで認識されているボリュームを表示します。これは nvme list コマンドの代わりです。</block>
   <block id="9ba0e91b9dc1e138e7c9c64d8795890a" category="paragraph">E シリーズボリュームへの各 NVMe パスに関する情報を表示するには、「 nvme netapp smdevices [-o &lt;format&gt;] 」コマンドを使用します。出力「 &lt;format&gt;` 」は、通常の形式（ -o を使用しない場合のデフォルト）、列、または JSON にすることができます。</block>
@@ -6092,7 +6023,6 @@
   <block id="93e3eeaae5f141e57bcdccb6741d6cec" category="paragraph">使用するホストインターフェイスタイプを選択します。設定するアレイに使用可能なホストインターフェイスタイプが 1 つしかない場合は、この設定を選択できないことがあります。</block>
   <block id="96477deae8322871ba6c5133596fd5b1" category="doc">ホストでフェイルオーバーを設定します</block>
   <block id="816a290577d3afffcfc7b89e8312db70" category="admonition">を参照してください<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> マルチパスは GA バージョンの SLES または RHEL では正しく機能しない場合があるため、必要な更新がインストールされていることを確認する必要があります。</block>
-  <block id="430e338b43df2565d67585931c63d36e" category="paragraph">RHEL 7 および SLES 12 は、 NVMe over RoCE のマルチパスに Device Mapper Multipath （ DMMP ）を使用します。RHEL 8 および SLES 15 では、ネイティブの NVMe フェイルオーバーが組み込まれています。実行している OS に応じて、適切に実行するためにマルチパスを追加で設定する必要があります。</block>
   <block id="adfe61fc58186ce1f905fe93a482817f" category="list-text">次の例に示すように '/etc/multipath.conf ファイルの devices セクションに NVMe E シリーズデバイスのエントリを追加します</block>
   <block id="84fc3529eaf9395639e72cf55757289e" category="section-title">ネイティブの NVMe マルチパスを使用して RHEL 8 をセットアップします</block>
   <block id="6eb3dae42ad866cc5b55556a35f53013" category="paragraph">ネイティブの NVMe マルチパスは、 RHEL 8 ではデフォルトで無効になっており、次の手順を使用して有効にする必要があります。</block>
@@ -6109,13 +6039,11 @@
   <block id="05c6c8fb5e6bfdd350e3712f3c6fb7d6" category="paragraph">アレイの iSCSI アドレスは、 iSCSI セッションの作成に使用するホストポートと同じサブネットに配置します。アドレスについては、を参照してください <block ref="0a1a4238c86ce603a2c352fabafb1abf" category="inline-xref-macro-rx"></block>。</block>
   <block id="b4c0052af465e60e515dd89ce3a30501" category="list-text">IQN を記録します。</block>
   <block id="2a9360c5f25e96ff91adcbc48896848d" category="paragraph">この情報は、 SendTargets 検出をサポートしないオペレーティングシステムで iSER セッションを作成する際に必要となる場合があります。この情報をに入力します <block ref="0a1a4238c86ce603a2c352fabafb1abf" category="inline-xref-macro-rx"></block>。</block>
-  <block id="4d8c7109afb8533630e6b060d83f938e" category="paragraph">RHEL 7 および SLES 12 では、 NVMe over Fibre Channel を使用するマルチパスに Device Mapper Multipath （ DMMP ）を使用します。RHEL 8 および SLES 15 では、ネイティブの NVMe フェイルオーバーが組み込まれています。実行している OS に応じて、適切に実行するためにマルチパスを追加で設定する必要があります。</block>
   <block id="ce787f5529e569c07191ad09975c4a3f" category="list-text">新しい modprobe パラメータを使用して 'initramfs' を再作成します</block>
   <block id="0e550c6e0d7b33fb6681b0cab3069f86" category="list-text">サーバをリブートして、ネイティブの NVMe マルチパスを有効にします</block>
   <block id="dcb07d8ae16ab2bd4fcf3f16bb1e166b" category="summary">Fibre Channel 環境で NVMe イニシエータを設定するには、 nvme-CLI パッケージをインストールして設定し、ホストで NVMe/FC イニシエータを有効にします。</block>
   <block id="eee710143ae29bf272d75ad40d2ede5a" category="doc">ホスト側で NVMe over Fibre Channel を設定します</block>
   <block id="a273add3419b2d63bd738c3a4f1e5e3a" category="paragraph">Fibre Channel 環境で NVMe イニシエータを設定するには、 CLI パッケージをインストールして設定し、ホストで NVMe/FC イニシエータを有効にします。</block>
-  <block id="2235896888d61445f6eb8d993bea8ac5" category="paragraph">次の手順は、 Broadcom Emulex または QLogic NVMe/FC 対応の FC HBA を使用する RHEL 7 、 RHEL 8 、 SLES 12 、および SLES 15 用です。これらの OS または HBA のどのバージョンがサポートされているかについては、を参照してください<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block>。</block>
   <block id="6ba6a18088999d632ca174b9873a3b12" category="list-text">「 nvme-cli 」パッケージをインストールします。</block>
   <block id="969b64ee6a8c67d01b4cd1635a747bd2" category="inline-link">Broadcom の Web サイト</block>
   <block id="d55f94d596bbb6493b1bdec1808b9783" category="list-text">RHEL 7 の場合のみ、を介した NVMe/FC 接続用の外部 Broadcom Autoconnect スクリプトをダウンロードしてインストールします<block ref="54ac045dab92bf3efc1a15209419902d" category="inline-link-rx"></block>。Inbox NVMe over FC Drivers* のキーワード「 * Autoconnect Script File 」を入力し、お使いの OS に固有の最新バージョンを選択します。</block>
@@ -7084,13 +7012,11 @@
   <block id="acd1dcb9f4c3f9c9b28f9c1a4d234d1b" category="admonition">電源装置の交換用手順 は IOM の交換に適用されます。IOM を交換するには、電源装置交換用手順 を実行します。</block>
   <block id="f20b4bef1c485b65027bb64c40283577" category="paragraph"><block ref="f20b4bef1c485b65027bb64c40283577" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ebc31fad1cf84954196a7706294df684" category="paragraph">この 手順 環境 DCM および DCM2 ドライブ・シェルフ</block>
-  <block id="9fab40c340a50dc566e1060dd32e768d" category="admonition">クライアント証明書とサーバ証明書を取得するには、ストレージアレイが最適な状態である必要があります。証明書を取得できない場合は、新しい CSR を作成して署名し、 EKMS からサーバ証明書をダウンロードする必要があります。</block>
   <block id="86e856206affbccd36d96e0932a14510" category="paragraph">「 nvme-rdma 」カーネルモジュールがロードされていることを確認するには、次のコマンドを実行します。</block>
   <block id="dbf42093a0041931999943f18d3f0986" category="paragraph">E2800 、 E2800B 、 EF280 、 E5700 、 EF5700B の環境 のケーブル接続については、次の情報を参照してください。 または EF570 コントローラシェルフから DE212C 、 DE224C 、 DE460 の各ドライブシェルフに接続できます。</block>
   <block id="67b64abed949ae2b1a2626ebe211fd47" category="paragraph">ここで説明する 手順 環境 のホットアドで、 DE212C 、 DE224C 、 DE460C ドライブシェルフを E2800 、 E2800B 、 EF280 、 E5700 、 E5700B に追加 EF570 または EF300 コントローラシェルフ。</block>
   <block id="f2c505979298b93cfd8e71dc78ddd1b0" category="admonition">異なる電圧タイプの PSU を混在させないでください。いつものように同じように置換します。</block>
   <block id="b7b26f8fd8107cf68f2bc572008d19a7" category="admonition">交換用コントローラには 16GB のメモリがあらかじめ取り付けられています。コントローラで 64GB の構成が必要な場合は、交換用コントローラを取り付ける前に、付属のアップグレードキットを使用してください。</block>
-  <block id="103c35d06a9326cb406be18b9f01dd19" category="paragraph"><block ref="103c35d06a9326cb406be18b9f01dd19" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">著作権</block>
   <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
   <block id="126a02652da6de02962cf1b654fd6376" category="section-title">商標</block>
@@ -8520,7 +8446,6 @@
   <block id="1e378a7b5fff684817c3105f1e0e9acb" category="paragraph">セキュリティ対応</block>
   <block id="435543dd5b111649d2821616c83647ce" category="paragraph">プール候補がセキュリティ対応ドライブだけで構成されているかどうかを示します。セキュリティ対応ドライブには、Full Disk Encryption（FDE）ドライブと連邦情報処理標準（FIPS）ドライブがあります。</block>
   <block id="bfd689c2919bef8ea3bbcf8d503c6d34" category="list-text">プールはドライブセキュリティを使用して保護できますが、この機能を使用するには、すべてのドライブがセキュリティ対応である必要があります。</block>
-  <block id="6da70de51f5f1cd26dacf80567a4d967" category="list-text">FDEのみのプールを作成する場合は、SecureCapable列で「* Yes-fde」を検索してください。FIPSのみのプールを作成する場合は、セキュア対応列で「はい- FIPS *」を探します。</block>
   <block id="0216a158e72795d96c1d073fcfd6671d" category="list-text">セキュリティ対応かどうかがドライブによって異なるプールや、セキュリティレベルが異なるドライブが混在したプールを作成することもできます。プールにセキュリティ対応でないドライブが含まれている場合、プールをセキュリティ対応にすることはできません。</block>
   <block id="b75e12d3bf891eeff4e4a2f5289ab643" category="paragraph">セキュリティを有効化</block>
   <block id="85729c6c15dbbffe9072f1b86eac0746" category="paragraph">セキュリティ対応ドライブでドライブセキュリティ機能を有効にするオプションです。プールがセキュリティ対応で、セキュリティキーを作成している場合、チェックボックスを選択してセキュリティを有効にできます。</block>
@@ -8598,7 +8523,6 @@
   <block id="ed1a06a3349f801df7f8dc60fd207c5e" category="list-text">プールやボリュームグループはドライブセキュリティ機能を使用して保護できますが、この機能を使用するには、すべてのドライブがセキュリティ対応である必要があります。</block>
   <block id="0455355db1ae7ae64795d29e86c7508c" category="list-text">セキュリティ対応とセキュリティ対応でないドライブが混在したプールまたはボリュームグループを作成することは可能ですが、ドライブセキュリティ機能を有効にすることはできません。</block>
   <block id="ce763bd4f7575899bdc4bf65103b7654" category="list-text">すべてのセキュリティ対応ドライブを備えたプールまたはボリュームグループは、暗号化機能が使用されていない場合でも、スペアリングまたは拡張のために非セキュア対応ドライブを受け入れることはできません。</block>
-  <block id="ee73b90368c68fce233818cc3748850e" category="list-text">セキュリティ対応ドライブには、Full Disk Encryption（FDE）ドライブと連邦情報処理標準（FIPS）ドライブがあります</block>
   <block id="2437e7b5729be1d1d1d2028feb8574dc" category="paragraph">ドライブがData Assurance（DA）対応かどうかを示します。</block>
   <block id="aaeb09a40f9775414c6761b3be7f7b1e" category="list-text">DAに対応していないドライブを使用してDAに対応したプールまたはボリュームグループに容量を追加することは推奨されません。プールまたはボリュームグループのDA機能は無効になり、プールまたはボリュームグループに新たに作成したボリュームでDAを有効にすることもできなくなります。</block>
   <block id="234bef12bb34b9dbf16feca527a40e45" category="list-text">DA対応のドライブを使用してDAに対応していないプールまたはボリュームグループに容量を追加することは推奨されません。DA対応ドライブの機能をプールまたはボリュームグループで利用することはできないためです（ドライブの属性が一致しません）。DAに対応していないドライブの使用を検討してください。</block>
@@ -8746,7 +8670,6 @@
   <block id="9f815abac29ec844ad55f4d8a311f365" category="paragraph">ドライブを手動で選択するには、ドライブを手動で選択する*（アドバンスト）リンクをクリックします。クリックすると、ドライブが自動的に選択されます（アドバンスト）*。</block>
   <block id="eb142ad108a2399e9f5b1b76e4ffb2d9" category="paragraph">手動方式では、ボリュームグループを構成するドライブを選択できます。未割り当ての特定のドライブを選択して必要な容量を確保することができます。ストレージアレイにメディアタイプやインターフェイスタイプが異なるドライブが含まれている場合、新しいボリュームグループの作成用に選択できるのは1つのドライブタイプの未設定の容量のみです。</block>
   <block id="a0e1301bf3f6ad63d069da8822502821" category="list-text">表示されたドライブ特性に基づいて、ボリュームグループで使用するドライブを選択し、*作成*をクリックします。</block>
-  <block id="4ad6b740c7f78364ebdee3b255705adc" category="paragraph">表示されるドライブ特性は、自動方式と手動方式のどちらを選択したかによって異なります。</block>
   <block id="2afe183b896704c07136eb695f3307db" category="inline-link">System Managerのヘルプ</block>
   <block id="5b7e22fbd3a5668e77861533204c5375" category="list-text"><block ref="5b7e22fbd3a5668e77861533204c5375" category="inline-link-rx"></block></block>
   <block id="cf8a999b482df507a3f20c75b83f1ecf" category="inline-link">Unified Managerのヘルプ</block>
@@ -8805,7 +8728,108 @@
   <block id="273dcb16af41ba30a29aa8335c08a790" category="inline-link">* TR-4930：Splunk Enterpriseを使用したEF600 *</block>
   <block id="d037693956f399ee3ef1299cb9175342" category="cell"><block ref="d037693956f399ee3ef1299cb9175342" category="inline-link-rx"></block></block>
   <block id="709b2345a804dd3959ae288cc98408cf" category="cell">EF600オールフラッシュアレイとSplunk設計の統合アーキテクチャについて説明します。また、 Splunk のマシンログイベントシミュレーションツールから取得したパフォーマンステスト結果もまとめています。</block>
-  <block id="61f60d8a815e8676572295c4ba06ca47" category="admonition">IOM12BモジュールはSANtricity OS 11.07.02以降でのみサポートされています。IOM12Bをインストールまたはアップグレードする前に、コントローラのファームウェアが更新されていることを確認してください。</block>
   <block id="b8de54c02bf690e0071da3924487271e" category="admonition">変換できるのは、E5700コントローラの光ベースポートのみです。</block>
   <block id="59f90aba4c7b3944a7e31f23bff5d8a2" category="admonition">変換できるのは、E2800コントローラの16Gb FC / 10Gb iSCSI HICと光ベースポートのみです。</block>
+  <block id="f212760efdd1ee6ecc6a822f380627cd" category="paragraph">EF300、EF600</block>
+  <block id="a49b136089a95385ac24b13d585982b3" category="paragraph">DE212C、DE224C、DE460</block>
+  <block id="c5d218090776dbcf38627065b13e6caa" category="admonition">IOM12BモジュールはSANtricity OS 11.07.2以降でのみサポートされます。IOM12Bをインストールまたはアップグレードする前に、コントローラのファームウェアが更新されていることを確認してください。</block>
+  <block id="add241dc5ececee27088b6736250072e" category="section-title">EF300およびEF600のケーブル接続</block>
+  <block id="aa7f7f642f0f31272aec24455af2999f" category="paragraph">以下の情報は、EF300またはEF600コントローラシェルフをDE212C、DE224C、またはDE460の各ドライブシェルフに接続するための環境 ケーブル接続です。</block>
+  <block id="e20bd51b5e818feb7ae7162ff2a5040b" category="paragraph">EF300またはEF600のケーブル接続を行う前に、ファームウェアが最新バージョンに更新されていることを確認する必要があります。ファームウェアを更新するには、の手順に従います <block ref="2834c74834ca1d1cb0e165f8c6e2c750" category="inline-link-macro-rx"></block>。</block>
+  <block id="e9fc6b3246246d57c13f601aad6408d6" category="list-text">インポートを開始する前にホストにマッピングすることはできません（ただし、インポートの開始後にマッピングすることはできます）。</block>
+  <block id="cf505540e6b324232d096ecbbeb36457" category="doc">EF300およびEF600にSAS拡張カードを追加します</block>
+  <block id="a06914d93f698c6a8bb3f09a21efd671" category="paragraph">EF300またはEF600コントローラにSAS拡張カードを追加して、ドライブトレイを拡張することができます。</block>
+  <block id="b18049a57fbb2ec5fd47fae049bd965b" category="inline-link-macro">EF300およびEF600 SAS拡張カードの交換に際しての要件</block>
+  <block id="8cce61d9b8e3a90145210a9516fd4eb4" category="list-text">レビュー <block ref="171e03e043e11d80ccbb4c5420424ae5" category="inline-link-macro-rx"></block>。</block>
+  <block id="9f5dcc5008bfb9c123def7609109a915" category="paragraph">EF300またはEF600にSAS拡張カードを追加する場合は、次の要件を確認します。</block>
+  <block id="9f1734fc5e3e56de56de5feb0b21d81b" category="list-text">multipathdデーモンをブート時に有効にします。</block>
+  <block id="f0e0ce722ec3a3c41f0dbc73c527938e" category="inline-link">ホストを手動で作成する</block>
+  <block id="10f5dacfa6ac3fb3d44d134b3d8aa6b7" category="inline-xref">手順4.</block>
+  <block id="ba2591378a65f0c927a05da1af50afb3" category="list-text">を使用します<block ref="14f8440b35f7d1516604c69c142bce0a" category="inline-link-rx"></block> ホストが定義されているかどうかを確認するには、オンラインヘルプの手順 を参照してください。各ホストタイプの設定が、で収集したカーネル情報に基づいていることを確認します <block ref="fe91593b1a1221385d96e8bb5f09f386" category="inline-xref-macro-rx"></block>。</block>
+  <block id="0c3fecf1aae3fdfaeeaf18eba4ed3cfd" category="admonition">自動ロードバランシングは、カーネル3.9以前を実行しているホストにマップされているボリュームでは無効になります。</block>
+  <block id="3e0d4696992cb009b792ca52c4080196" category="admonition">サブネットマネージャを設定する前に、InfiniBand-diagsパッケージをインストールして、を通じてグローバル一意識別子（GUID）を取得する必要があります<block ref="db1fff1f41e48ae933f89caa6a9035c4" prefix=" " category="inline-code"></block> コマンドを実行しますを参照してください <block ref="33c9296cee3d3d5ec5f21b481b8c30ca" category="inline-xref-macro-rx"></block> InfiniBand-diagsパッケージのインストール方法については、を参照してください。</block>
+  <block id="7f055c1166dd665b0b44651bedc2cbc8" category="list-text">ブートプロセスの一部として一度実行するサブネットマネージャスクリプトを作成します。</block>
+  <block id="df45b26c6e6aa12c9a2da2dc8610745d" category="list-text">次の行を追加します。手順2で確認した値をに置き換えます<block ref="7804c104033334dfd1f4483b356e7e80" prefix=" " category="inline-code"></block> および<block ref="a343d59b38a9422b5e453e8b5ab007c0" prefix=" " category="inline-code"></block>。の場合<block ref="16a2e561c536a77cbfd10490ea398be6" prefix=" " category="inline-code"></block> および<block ref="5f2b9323c39ee3c861a7b382d205c3d3" prefix=" " category="inline-code"></block>では、サブネットマネージャのプライオリティを使用します。1が最低、15が最高です。</block>
+  <block id="233a179301cf4de0df435df2eb7e929a" category="list-text">という名前のsystemdサービスユニットファイルを作成します<block ref="c0248303a9c396ef63e7c8d1b55865fa" prefix=" " category="inline-code"></block>。</block>
+  <block id="a377bc45676f5d1c2a8f8219a09c9b83" category="list-text">次の行を追加します。</block>
+  <block id="4eb5da929a8b5274983c883ec977d36a" category="list-text">新しいサービスをシステムに通知します。</block>
+  <block id="053dd33688a35b5cefe88637ff4e2a16" category="list-text">を有効にして開始します<block ref="43be3ee7567c2cce7cc16a0555c90bf3" prefix=" " category="inline-code"></block>。</block>
+  <block id="941060fc12806a5c3d9302d2624cb774" category="paragraph">互換性のある最新のRHEL 7、RHEL 8、RHEL9、SUSE Linux Enterprise Server 12または15サービスパックオペレーティングシステムを実行している必要があります。を参照してください<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> をクリックして、最新の要件を確認してください。</block>
+  <block id="1f34187b1a209107eee63f82ab42cc05" category="paragraph">* RHEL 7、RHEL 8、またはRHEL 9*</block>
+  <block id="7965a5bdacca6ec4414d73846a2effc0" category="doc">ファイルシステムの作成（RHEL 8、RHEL 9、SLES 15）</block>
+  <block id="709e243fec7f9a41a7ff766bf8716ce5" category="paragraph">RHEL 8、RHEL 9、SLES 15の場合は、ネイティブのNVMeデバイスにファイルシステムを作成し、ファイルシステムをマウントします。</block>
+  <block id="8c986ed4d501b7f34013f1474891eb88" category="list-text">を実行します<block ref="3d80983fc82ff72fd51e5d1f7e90c56d" prefix=" " category="inline-code"></block> コマンドを使用して、NVMeデバイスのリストを表示できます。</block>
+  <block id="c2254fad4178ca4085391a6ac3fc163a" category="paragraph">このコマンドの結果を使用して、に関連付けられているデバイスを検索できます<block ref="324b592ebf16794a0c88511b40085a76" prefix=" " category="inline-code"></block> 場所。次の例では、これがになります<block ref="5873769649ae49105d6cefc7971b78c1" prefix=" " category="inline-code"></block>。</block>
+  <block id="3c13ae5aa52bded0c438a34b3cfaf588" category="list-text">場所を使用して、目的のNVMeデバイス用のパーティションにファイルシステムを作成します<block ref="68221a414d1be30f2d7ab0b100538ad1" prefix=" " category="inline-code"></block>。</block>
+  <block id="95aeb1de4d389845f041ab3587500dc3" category="paragraph">RHEL 8、RHEL 9、SLES 15の場合、I/OはLinuxホストによって物理NVMeデバイスターゲットに転送されます。ホストにはこのターゲットが単一の物理デバイスとして表示され、その物理パスはネイティブの NVMe マルチパス解決策で管理されます。</block>
+  <block id="3762f5d6da93d64fb2c80f51749495f7" category="paragraph">のリンクへのI/Oを実行することを推奨します<block ref="324b592ebf16794a0c88511b40085a76" prefix=" " category="inline-code"></block> 物理NVMeデバイスのパスに直接接続するのではなく<block ref="9378e8badf02c342286a3b9928e4df7c" prefix=" " category="inline-code"></block>。これら2つの場所間のリンクは、次のコマンドを使用して確認できます。</block>
+  <block id="cdd98f8f112f01967c6cf544d1185a31" category="paragraph">I/Oはに実行されます<block ref="324b592ebf16794a0c88511b40085a76" prefix=" " category="inline-code"></block> 直接渡されます<block ref="9378e8badf02c342286a3b9928e4df7c" prefix=" " category="inline-code"></block> このコンテナでは、ネイティブのNVMeマルチパス解決策 を使用して、その下にすべてのパスが仮想化されてい</block>
+  <block id="489b1f76dfc3d23f283bb56e173cfce5" category="paragraph">次の手順 は、Broadcom EmulexまたはQLogic NVMe/FC対応のFC HBAを使用したRHEL 7、RHEL 8、RHEL 9、SLES 12、およびSLES 15用です。これらの OS または HBA のどのバージョンがサポートされているかについては、を参照してください<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block>。</block>
+  <block id="efdd564b9ec4f2056fa78b410b589c82" category="paragraph">* RHEL 7、RHEL 8、RHEL 9 *</block>
+  <block id="08fb030e8ad0e09b4e56de467f54c0b0" category="paragraph">RHEL 7 および SLES 12 は、 NVMe over RoCE のマルチパスに Device Mapper Multipath （ DMMP ）を使用します。RHEL 8、RHEL 9、SLES 15では、組み込みのネイティブのNVMeフェイルオーバーを使用します。実行している OS に応じて、適切に実行するためにマルチパスを追加で設定する必要があります。</block>
+  <block id="0d1a0f91594280f9d49e074cc400230c" category="admonition">RHEL 9およびSLES 15では、ネイティブのNVMeマルチパスはデフォルトで有効になっており、追加の設定は必要ありません。</block>
+  <block id="b850731c1bffd8d6372e832c36232f3e" category="admonition">*データ損失のリスク。* NVMe over RoCE環境では、データ損失のリスクを排除するために、スイッチでグローバルポーズ制御とともにフロー制御を有効にする必要があります。</block>
+  <block id="52b757f8b32ea9abd11ade22593e1b87" category="paragraph">RHEL 7 および SLES 12 では、 NVMe over InfiniBand を使用するマルチパスに Device Mapper Multipath （ DMMP ）を使用します。RHEL 8、RHEL9、およびSLES 15では、組み込みのネイティブのNVMeフェイルオーバーを使用します。実行している OS に応じて、適切に実行するためにマルチパスを追加で設定する必要があります。</block>
+  <block id="d061a1419e660c90553f0a82e4f669dc" category="admonition">SLES 15およびRHEL 9では、ネイティブのNVMeマルチパスはデフォルトで有効になっており、追加の設定は必要ありません。</block>
+  <block id="1424a7cf2a070f7dd12d78a849490f2c" category="paragraph">RHEL 7 および SLES 12 では、 NVMe over Fibre Channel を使用するマルチパスに Device Mapper Multipath （ DMMP ）を使用します。RHEL 8、RHEL 9、SLES 15では、組み込みのネイティブのNVMeフェイルオーバーを使用します。実行している OS に応じて、適切に実行するためにマルチパスを追加で設定する必要があります。</block>
+  <block id="509b37f1b5674ea3fcdd6f53b4a83cb8" category="paragraph">InfiniBand-diagsパッケージには、各InfiniBand（IB）ポートのグローバル一意識別子（GUID）を表示するためのコマンドが含まれています。付属のパッケージで OFED / RDMA がサポートされる Linux ディストリビューションのほとんどに InfiniBand-diags パッケージも付属しており、このパッケージに含まれるコマンドを使用して HCA に関する情報を表示できます。</block>
+  <block id="6ee2d18851ba4498d7c9ba43881528c3" category="admonition">サブネットマネージャを設定する前に、InfiniBand-diagsパッケージをインストールして、を通じてグローバル一意識別子（GUID）を取得する必要があります<block ref="db1fff1f41e48ae933f89caa6a9035c4" prefix=" " category="inline-code"></block> コマンドを実行しますを参照してください <block ref="59608be4b8a68b7f95e7aa6a8924d39f" category="inline-xref-macro-rx"></block> InfiniBand-diagsパッケージのインストール方法については、を参照してください。</block>
+  <block id="44da8255024278223616706dabffdcf2" category="admonition">サブネットマネージャを設定する前に、InfiniBand-diagsパッケージをインストールして、を通じてグローバル一意識別子（GUID）を取得する必要があります<block ref="db1fff1f41e48ae933f89caa6a9035c4" prefix=" " category="inline-code"></block> コマンドを実行しますを参照してください <block ref="8968844fa75d7274ef053da34cb4323f" category="inline-xref-macro-rx"></block> InfiniBand-diagsパッケージのインストール方法については、を参照してください。</block>
+  <block id="7bfe6a8c2694c58155bcb8132f65ecd8" category="list-text">を有効にします<block ref="8732863da72605a20ed96b4eee87a5fb" prefix=" " category="inline-code"></block> デーモンが起動します。</block>
+  <block id="52430bef221dfe0288778cdfd54cab9b" category="paragraph">* Red Hat Enterprise Linux 7、8、9（RHEL 7、RHEL 8、およびRHEL9）*</block>
+  <block id="519a88244e86ab9ce17209c219a4969a" category="paragraph">「nvme list-subsys」コマンドに物理NVMeデバイスを指定すると、そのネームスペースへのパスに関する追加情報 が提供されます。</block>
+  <block id="b3e41b03ef621f7814aead1762d37e57" category="doc">ファイルシステムの作成（RHEL 8、RHEL 9、SLES 15）</block>
+  <block id="278d29980d384d87e03c8f99681b0980" category="paragraph">RHEL 8、RHEL 9、SLES 15の場合は、ネイティブのNVMeデバイスにファイルシステムを作成し、ファイルシステムをマウントします。</block>
+  <block id="8e11cf4b8ef8251a1517afd1c236dd0f" category="paragraph">このコマンドの結果を使用して、関連するデバイスを検索できます<block ref="324b592ebf16794a0c88511b40085a76" prefix=" " category="inline-code"></block> 場所。次の例では、これがになります<block ref="5873769649ae49105d6cefc7971b78c1" prefix=" " category="inline-code"></block>。</block>
+  <block id="1d17dd3572733d46cea446a1f0d4ef11" category="list-text">イニシエータの GUID をに記録します <block ref="c3a1c379b3d644ae20d101147cd0dfd9" category="inline-xref-macro-rx"></block>。</block>
+  <block id="cdbf7b73734bd4442fcc96a6195b7a15" category="paragraph">* Red Hat Enterprise Linux 7、8、9（RHEL 7、RHEL 8、RHEL 9）*</block>
+  <block id="04d05aed6c7b8c4bb3939966572e118e" category="paragraph">互換性のある最新のRHEL 7、RHEL 8、RHEL 9 SUSE Linux Enterprise Server 12および15サービスパックオペレーティングシステムが実行されている必要があります。を参照してください<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> をクリックして、最新の要件を確認してください。</block>
+  <block id="04595c79a616b5c392556737aaa7347d" category="paragraph">* RHEL 7、RHEL 8、RHEL 9 *</block>
+  <block id="2a5b109c10fe6e93caf3666c9854f292" category="list-text">multipath -llコマンドを実行して、NVMeデバイスの一覧を表示します。</block>
+  <block id="210c9515d4a1e9c78e2608d073aeef56" category="list-text">イニシエータの GUID をに記録します <block ref="00a1f89a34dac59e8a714860454ae51a" category="inline-xref-macro-rx"></block>。</block>
+  <block id="6dc10b003bcb8e0cbbcf076e7dbcdf2f" category="paragraph">このタスクでは環境 DCM および DCM2 ドライブ・シェルフを使用します</block>
+  <block id="6616a8dcc33e3e23ed86909a9a46376e" category="admonition">iSCSIのData Assurance機能は、SANtricity バージョン11.40以降でサポートされます。</block>
+  <block id="d8877bd06791feeb2257a189554b10c0" category="paragraph">これらの手順は、IOM12およびIOM12Bドライブシェルフに適用されます。</block>
+  <block id="9d5445db77f905ba92077d0b48806948" category="admonition">これらの手順は、同様のシェルフIOMのホットスワップや交換用です。つまり、 IOM12 モジュールを別の IOM12 モジュールに交換するか、 IOM12B モジュールを別の IOM12B モジュールに交換しなければなりません。（シェルフに IOM12 モジュールを 2 台搭載することも、 IOM12B モジュールを 2 つ使用することもできます）</block>
+  <block id="47d3211aa170795dac5249cedd4befb3" category="paragraph"><block ref="47d3211aa170795dac5249cedd4befb3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="63651a0b8ef66d63649c69f52dd02292" category="list-text">Google Chrome 89以降</block>
+  <block id="695a09770fa3da1385898775bfef82b9" category="list-text">Mozilla Firefox 80以降</block>
+  <block id="de651d67770cb856f4d13c0980010807" category="list-text">Microsoft Edge 90以降</block>
+  <block id="e3ef1fa2600da4921ead110fb0d1606b" category="paragraph">表示されるドライブ特性は、自動方式と手動方式のどちらを選択したかによって異なります。詳細については、SANtricity System Managerのドキュメントを参照してください。<block ref="a35ecfb4da00f746430c0cae02d730d0" category="inline-link-rx"></block>。</block>
+  <block id="30ec052a906564798e129e10f7d39ab0" category="list-text">VMware vCenter Server Applianceのサポートされるバージョン：6.7U3J、7.0U1、7.0U2、7.0U3、および8.0。</block>
+  <block id="35372cbcff3be2cc25be5129c31c81c6" category="list-text">サポートされるアプリケーションホストのバージョン：Windows 2016、Windows 2019、Windows 2022</block>
+  <block id="02e5141224b0a2ac9f9a2b07a05b90b3" category="list-text">システムメモリ：512 MB</block>
+  <block id="e3cf47c6cb2c608927e7de97ecbf20d2" category="list-text">セキュリティ対応ドライブには、Full Disk Encryption（FDE）ドライブと連邦情報処理標準（FIPS）ドライブがあります。FIPSドライブは、レベル140-2または140–3のいずれかで、レベル140-3がより高いセキュリティレベルです。140-2レベルと140-3レベルのドライブを組み合わせて選択した場合、プールまたはボリュームグループは下位のセキュリティレベル（140-2）で動作します。</block>
+  <block id="1974aafa112f63127faafcfced06eda0" category="list-text">FDEのみのプールを作成する場合は、SecureCapable列で「* Yes-fde」を検索してください。FIPSのみのプールを作成する場合は、「はい- FIPS *」または「はい- FIPS（混在）」を探します。「Mixed」は140-2と140-3レベルのドライブが混在していることを示します。これらのレベルを組み合わせて使用する場合は、プールが下位レベルのセキュリティ（140～2）で動作することに注意してください。</block>
+  <block id="b2d3e7c610f3962f9a7e3b9baa02c363" category="section-title">バージョン11.74の新機能</block>
+  <block id="158083b77acf87778347dd8cf3138b12" category="paragraph">FIPS 140-3をサポート</block>
+  <block id="93752d0e76882be98725c8b860259db3" category="paragraph">SASベースとNVMeベースの両方のSSDについて、特定のドライブでFIPS 140-3がサポートされるようになりました。FIPS 140-3レベルのSSDドライブは、すべてNVMeベースまたはすべてSASベースのドライブであれば、FIPS 140-2レベルのSSDドライブと共存できます。これらのレベルをボリュームグループとディスクプールで組み合わせて使用する場合は、グループまたはプールが下位レベルのセキュリティ（140 - 2）で動作することに注意してください。</block>
+  <block id="3f470942a1817eaa19da47ff83fd59ca" category="paragraph">MFAとSSHのサポート</block>
+  <block id="272f8c73e52dc0fe2c42cfc42fdbefc9" category="paragraph">SANtricity バージョン11.74以降では、リモートログイン機能を使用して、SSHキーやSSHパスワードの入力をユーザに求めることで多要素認証（MFA）を設定できます。ハードウェアセクションのメニューオプションが*リモートログインの変更*から*リモートログインの設定（SSH）*に変更されました。</block>
+  <block id="3b5b5feef66adc0768f35b724a334827" category="paragraph">アクセストークン</block>
+  <block id="e91c1fbb7ef80926929c6a0e87d2cea2" category="paragraph">このリリースには、アクセストークンを作成するための新機能が含まれています。これらのトークンを使用すると、ユーザ名やパスワードを公開することなく、REST APIまたはコマンドラインインターフェイス（CLI）で認証できます。この機能は、アクセス管理セクションで提供されています。</block>
+  <block id="8eb80b537576ff75cd5bd8c229446b07" category="paragraph">米国政府幹部の注文</block>
+  <block id="7b15a260552ea825bd80b5e7eee74344" category="paragraph">このリリースには、エグゼクティブオーダーに準拠するために、セキュリティ上のいくつかの変更が含まれています。</block>
+  <block id="a2eca216cb41a80426c839353357173b" category="list-text">セキュリティ有効ドライブが取り付けられている状況でコントローラを交換する場合は、次の表を参照して、セキュリティタイプ（内部または外部）およびドライブの状態に応じた適切な手順を実行します。セキュリティ有効ドライブが取り付けられていない場合は、この手順を省略して、表の下のステップ3に進むことができます。</block>
+  <block id="58d3a1b91b20c93e431800a59ecffea8" category="inline-link">コマンドラインインターフェイスリファレンス</block>
+  <block id="7ee6d87fe161d4b56a5ae818d36005c2" category="admonition">表の一部の手順には、コマンドラインインターフェイス（CLI）のコマンドが必要です。これらのコマンドの使用方法については、を参照してください<block ref="26a74644087a8cc4596955787ae55f1d" category="inline-link-rx"></block>。</block>
+  <block id="85c48cfb74af06db032bff9111d9f1bf" category="paragraph">内部セキュリティキーファイルを管理クライアント（ System Manager へのアクセスに使用するブラウザを備えたシステム）の既知の場所にエクスポートします。を使用します<block ref="2ccd87610f73906ee34956b568a9cf6a" prefix=" " category="inline-code"></block> CLIコマンド。セキュリティキーに関連付けられているパスフレーズを入力し、キーの保存場所を指定する必要があります。</block>
+  <block id="ec82f3000a1f272f3b52a6cb3a712565" category="list-text">コントローラの交換後にストレージアレイとキー管理サーバが相互に認証できるように、クライアント証明書とサーバ証明書がローカルホストに保存されていることを確認します。を使用します<block ref="54ece6d76b91cfb8106c5509aeb559ce" prefix=" " category="inline-code"></block> 証明書を保存するCLIコマンド。コマンドは、必ずを使用して2回実行してください<block ref="739d95452c2d9219acbe14532ab12dc9" prefix=" " category="inline-code"></block> パラメータをに設定します<block ref="62608e08adc29a8d6dbc9754e659f125" prefix=" " category="inline-code"></block>をクリックします。パラメータがに設定されているもう一方のが<block ref="cf1e8c14e54505f60aa10ceb8d5d8ab3" prefix=" " category="inline-code"></block>。</block>
+  <block id="7899232529cacb9c338bc512d9eaacb0" category="paragraph">外部キー管理、すべてのドライブがロックされている、コントローラの交換時に一時的に内部キー管理に切り替えることができない*。</block>
+  <block id="fe657b834891c023451265db43c3f8cd" category="admonition">クライアント証明書とサーバ証明書を取得するには、ストレージアレイが最適な状態である必要があります。証明書を取得できない場合は、新しいCSRを作成し、CSR署名を取得して、外部キー管理サーバ（EKMS）からサーバ証明書をダウンロードする必要があります。</block>
+  <block id="a5e794f462468fa21e970eb4785f8925" category="paragraph">E2800およびE5700のコントローラをアップグレードする場合、それらのコントローラのドライブセキュリティ機能によって、ドライブが部分的、外部、または内部的にロックされます。ドライブセキュリティ機能が有効になっている場合は、それらのドライブのロックを手動で解除する必要があります。</block>
+  <block id="cfbb469ee896c6d8312eac3cd3f10e34" category="paragraph">新しくスワップしたコントローラは、デジタル表示ディスプレイに*L5*というコードでロックダウンされます。このロックダウンは、ドライブが自動コード同期（ACS）を実行できない場合に発生します。セキュリティキーがインポートされると、ACSは新しいコントローラを再開して更新します。</block>
+  <block id="3ed7bb77bb34146d7096e92088802232" category="list-text">ストレージアレイとSANtricity クライアントのラップトップまたはPCを、直接、プライベートなイーサネット接続で接続します。これを行うには：</block>
+  <block id="c305cf92456cd4decb6725b96d759b94" category="list-text">RJ45イーサネットケーブルを使用して、ラップトップをコントローラAの管理ポート1に接続します</block>
+  <block id="e770dd108a378a501b36f5bbae01f82a" category="list-text">接続を完了するには、ラップトップをコントローラAと同じサブネット内のIPアドレスに割り当てる必要がありますコントローラのロックダウン中、コントローラAはデフォルトで192.168.128.101の管理アドレスになります。そのため、ラップトップを「192.168.128.201」などのサブネットに割り当てることができます。</block>
+  <block id="9d74567b7f3c3f33bbc54f827296074f" category="list-text">IPアドレス192.168.128.101（username * admin *）とパスワードブランクを使用して、を使用して内部キーをインポートします<block ref="a6f8118712fc2bcbe8cc4a0df3d41e92" prefix=" " category="inline-code"></block> からセキュリティキーを保存したCLIコマンド <block ref="370683b601e29cfe5ec51edd9d49be09" category="inline-link-macro-rx"></block>。このコマンドの使用方法については、を参照してください<block ref="26a74644087a8cc4596955787ae55f1d" category="inline-link-rx"></block>。</block>
+  <block id="fb86a1495e405ddd56a3a1c076f876aa" category="paragraph">また、次の呼び出しを使用して、REST APIから内部キーをインポートすることもできます。<block ref="758036d11568492285b8504fb55d4d9f" prefix=" " category="inline-code"></block></block>
+  <block id="7b9f327d01db82c07c36d41b777ae840" category="admonition">クライアント証明書とサーバ証明書を取得するには、ストレージアレイが最適な状態である必要があります。証明書を取得できない場合は、新しい証明書署名要求（CSR）を作成し、外部キー管理サーバからサーバ証明書をインポートする必要があります。</block>
+  <block id="4bbb422ffd22264952cbb6eeeda41faa" category="list-text">デフォルトのIPアドレス192.168.128.101、ユーザ名* admin *、パスワードを空白にして、を使用して外部キー管理サーバをセットアップします<block ref="15b894b6e4c06871df1e10de89d60168" prefix=" " category="inline-code"></block> CLIコマンドを実行し、を指定します<block ref="836c673259e51101a01e755a34f97359" prefix=" " category="inline-code"></block> および<block ref="83fdf6a03b86c7990e1460cdc7d81dd1" prefix=" " category="inline-code"></block> 保存元 <block ref="370683b601e29cfe5ec51edd9d49be09" category="inline-link-macro-rx"></block>。このコマンドの使用方法については、を参照してください<block ref="26a74644087a8cc4596955787ae55f1d" category="inline-link-rx"></block>。</block>
+  <block id="781b6e9f0e82576c9634ecfe8a61f455" category="paragraph">また、次の呼び出しによって、REST APIを使用して外部キー管理サーバをセットアップすることもできます。<block ref="03e0d1fcf5a43cf1714fcbfa1f856800" prefix=" " category="inline-code"></block></block>
+  <block id="157bc9956975fd17471f6bdcb9f966ee" category="list-text">デフォルトのIPアドレス192.168.128.101（ユーザ名*admin*およびパスワードブランク）を使用し、を使用して証明書をインポートします<block ref="872d2d44d951f842ae2823eb6febd102" prefix=" " category="inline-code"></block> CLIコマンド：クライアント証明書用に1回、サーバ証明書用に2回</block>
+  <block id="ebf132debe07a5cd0bc888dd5078033d" category="paragraph">また、次の呼び出しを使用して、REST API経由でキーサーバ証明書をインポートすることもできます。<block ref="640677ffae20a0401b505d0de933e391" prefix=" " category="inline-code"></block></block>
+  <block id="bc2848514b39d7125ea7f1e0192ff80f" category="list-text">から保存されたセキュリティキーを使用します <block ref="370683b601e29cfe5ec51edd9d49be09" category="inline-link-macro-rx"></block>を使用して、外部キーを IP アドレス 192.168.128.101 にインポートし、ユーザ名 * admin * とパスワードは空白のままにします。</block>
+  <block id="4097f6992eb560447325a703f31e2270" category="paragraph">また、次の呼び出しを使用してREST APIから外部キーをインポートすることもできます。<block ref="758036d11568492285b8504fb55d4d9f" prefix=" " category="inline-code"></block></block>
+  <block id="e2acb831b00c32f1c83710aa634a7625" category="admonition">IOM12BモジュールはSANtricity OS 11.07.2以降でのみサポートされます。IOM12Bをインストールまたはアップグレードする前に、コントローラのファームウェアがアップデートされていることを確認してください。</block>
 </blocks>

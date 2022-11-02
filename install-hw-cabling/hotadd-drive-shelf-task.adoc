@@ -24,7 +24,7 @@ summary: 他のコンポーネントに電源が投入されている状態で�
 この 手順 環境 IOM12 および IOM12B ドライブシェルフを使用します。
 
 
-NOTE: IOM12BモジュールはSANtricity OS 11.07.02以降でのみサポートされています。IOM12Bをインストールまたはアップグレードする前に、コントローラのファームウェアが更新されていることを確認してください。
+NOTE: IOM12BモジュールはSANtricity OS 11.07.2以降でのみサポートされます。IOM12Bをインストールまたはアップグレードする前に、コントローラのファームウェアが更新されていることを確認してください。
 
 
 NOTE: この手順 は、シェルフの IOM のホットスワップや交換に使用されます。つまり、 IOM12 モジュールを別の IOM12 モジュールに交換するか、 IOM12B モジュールを別の IOM12B モジュールに交換しなければなりません。（シェルフに IOM12 モジュールを 2 台搭載することも、 IOM12B モジュールを 2 つ使用することもできます）
@@ -109,8 +109,8 @@ NOTE: 物理的な設置と電源のケーブル接続については、使用�
 
 E2800 および E5700 ストレージシステムと EF300 ストレージシステムのどちらをケーブル接続するかに応じて、次のいずれかのオプションを選択します。
 
-* <<Option 1: Connect the drive shelf for E2800 and E5700>>
-* <<Option 2: Connect the drive shelf for EF300>>
+*  1: Connect the drive shelf for E2800 and E5700
+*  2: Connect the drive shelf for EF300
 
 
 古いコントローラシェルフを DE212C 、 DE224C 、または DE460 に接続する方法については、を参照してください https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057["IOM ドライブシェルフを既存の E27XX 、 E56XX 、または EF560 コントローラシェルフに追加"^]。

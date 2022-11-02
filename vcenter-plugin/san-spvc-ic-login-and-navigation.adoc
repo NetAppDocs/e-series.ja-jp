@@ -18,9 +18,9 @@ vCenter 向けストレージプラグインにログインして、ユーザイ
 
 . プラグインにログインする前に、次のいずれかのブラウザを使用していることを確認してください。
 +
-** Google Chrome 79 以降
-** Mozilla Firefox 70 以降
-** Microsoft Edge 79 以降
+** Google Chrome 89以降
+** Mozilla Firefox 80以降
+** Microsoft Edge 90以降
 
 
 . プラグインの読み取り / 書き込み権限を持つユーザアカウントで vSphere Client にログインします。

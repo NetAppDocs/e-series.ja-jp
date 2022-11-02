@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: replace EF300 SAS expansion card, replacing SAS card, drive tray expansion, expansion card 
 summary: ドライブトレイを拡張できるように、 EF300 コントローラに SAS 拡張カードを追加します。 
 ---
-= EF300 に SAS 拡張カードを追加します
+= EF300およびEF600にSAS拡張カードを追加します
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -12,12 +12,12 @@ summary: ドライブトレイを拡張できるように、 EF300 コントロ�
 
 
 [role="lead"]
-EF300 コントローラに SAS 拡張カードを追加して、ドライブトレイを拡張することができます。
+EF300またはEF600コントローラにSAS拡張カードを追加して、ドライブトレイを拡張することができます。
 
 SAS 拡張カードを追加するには、ストレージアレイの電源をオフにし、新しい SAS 拡張カードを取り付けてから再度オンにする必要があります。
 
 .作業を開始する前に
-* レビュー link:sas-overview-supertask-concept.html["EF300 SAS 拡張カードの交換に際しての要件"]。
+* レビュー link:sas-overview-supertask-concept.html["EF300およびEF600 SAS拡張カードの交換に際しての要件"]。
 * この手順のダウンタイムメンテナンス時間をスケジュールする必要があります。この手順が完了するまではストレージアレイのデータにアクセスできません。
 
 

@@ -1,5 +1,5 @@
 ---
-permalink: config-linux/nvme-ib-create-filesystems-sles-15-task.html 
+permalink: config-linux/nvme-fc-create-filesystems-sles-15-task.html 
 sidebar: sidebar 
 keywords: file systems, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: RHEL 8 および SLES 15 の場合は、ネイティブの NVMe デバイスにファイルシステムを作成し、ファイルシステムをマウントします。 
@@ -7,21 +7,21 @@ summary: RHEL 8 および SLES 15 の場合は、ネイティブの NVMe デバ�
 = ファイルシステムの作成（RHEL 8、RHEL 9、SLES 15）
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ../media
 
 
 [role="lead"]
 RHEL 8、RHEL 9、SLES 15の場合は、ネイティブのNVMeデバイスにファイルシステムを作成し、ファイルシステムをマウントします。
 
 .手順
-. を実行します `multipath -ll` コマンドを使用して、NVMeデバイスのリストを表示できます。
+. multipath -llコマンドを実行して、NVMeデバイスの一覧を表示します。
 +
 [listing]
 ----
 # multipath -ll
 ----
 +
-このコマンドの結果を使用して、に関連付けられているデバイスを検索できます `/dev/disk/by-id/nvme-eui.[uuid#]` 場所。次の例では、これがになります `/dev/disc/by-id/nvme-eui.000082dd5c05d39300a0980000a52225`。
+このコマンドの結果を使用して、関連するデバイスを検索できます `/dev/disk/by-id/nvme-eui.[uuid#]` 場所。次の例では、これがになります `/dev/disc/by-id/nvme-eui.000082dd5c05d39300a0980000a52225`。
 
 +
 [listing]
@@ -39,7 +39,7 @@ size=4194304 features='n/a' hwhandler='ANA' wp=rw
 ----
 . 場所を使用して、目的のNVMeデバイス用のパーティションにファイルシステムを作成します `/dev/disk/by-id/nvme-eui.[id#]`。
 +
-ファイルシステムの作成方法は、選択したファイルシステムによって異なります。この例は 'ext4 ファイル・システムを作成する方法を示しています
+ファイルシステムの作成方法は、選択したファイルシステムによって異なります。この例では、 ext4 ファイルシステムを作成します。
 
 +
 [listing]

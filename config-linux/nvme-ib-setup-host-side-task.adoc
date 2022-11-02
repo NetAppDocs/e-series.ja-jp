@@ -13,7 +13,7 @@ summary: InfiniBand 環境で NVMe イニシエータを設定するには、 In
 [role="lead"]
 InfiniBand 環境で NVMe イニシエータを設定するには、 InfiniBand パッケージ、 nvme-CLI パッケージ、および RDMA パッケージをインストールして設定し、イニシエータの IP アドレスを設定し、ホストで NVMe-oF レイヤを設定します。
 
-互換性のある最新の RHEL 7 、 RHEL 8 、 SUSE Linux Enterprise Server 12 または 15 サービスパックオペレーティングシステムが実行されている必要があります。を参照してください https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] をクリックして、最新の要件を確認してください。
+互換性のある最新のRHEL 7、RHEL 8、RHEL9、SUSE Linux Enterprise Server 12または15サービスパックオペレーティングシステムを実行している必要があります。を参照してください https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] をクリックして、最新の要件を確認してください。
 
 .手順
 . RDMA 、 nvme-CLI 、および InfiniBand パッケージをインストールします。
@@ -29,7 +29,7 @@ InfiniBand 環境で NVMe イニシエータを設定するには、 InfiniBand 
 # zypper install nvme-cli
 ----
 +
-* RHEL 7 または RHEL 8*
+* RHEL 7、RHEL 8、またはRHEL 9*
 
 +
 [listing]
@@ -129,7 +129,7 @@ REMOTE_IPADDR=
 STARTMODE='auto'
 ----
 +
-* RHEL 7 または RHEL 8*
+* RHEL 7、RHEL 8、またはRHEL 9*
 
 +
 /etc/sysconfig/network-scripts/ifcfg-ib0 ファイルを次の内容で作成します。

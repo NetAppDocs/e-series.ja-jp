@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: replace EF300 SAS expansion card, replacing SAS card, drive tray expansion, expansion card 
 summary: EF300 SAS 拡張カードを交換する前に、要件と考慮事項を確認してください。 
 ---
-= EF300 SAS 拡張カードの交換に際しての要件
+= EF300およびEF600 SAS拡張カードの交換に際しての要件
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-SAS 拡張カードを EF300 に追加する場合は、次の要件を確認します。
+EF300またはEF600にSAS拡張カードを追加する場合は、次の要件を確認します。
 
 * 次の手順に従う必要があります link:../install-hw-ef600/index.html["EF300 および EF600 ストレージシステムを設置してセットアップする"] をクリックして、コントローラをセットアップします。
 * ファームウェアを最新バージョンに更新する必要があります。ファームウェアを更新するには、の手順に従います link:../upgrade-santricity/index.html["SANtricity OS のアップグレード中です"]。

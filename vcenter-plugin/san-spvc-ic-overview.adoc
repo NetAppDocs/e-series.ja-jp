@@ -37,7 +37,7 @@ NOTE: プラグインは、System Managerインターフェイスに直接代わ
 
 vCenter 環境での通信の詳細については、次の図を参照してください。
 
-image:../media/vcenter_communication.png[""]
+image:../media/vcenter_communication2.png[""]
 
 
 
@@ -68,9 +68,9 @@ NOTE: ストレージアレイのステータスが最適でない場合は、�
 
 vCenter向けストレージプラグインには、いくつかの種類のブラウザからアクセスできます。サポートされるブラウザとバージョンを次に示します。
 
-* Google Chrome 79 以降
-* Mozilla Firefox 70 以降
-* Microsoft Edge 79 以降
+* Google Chrome 89以降
+* Mozilla Firefox 80以降
+* Microsoft Edge 90以降
 
 
 

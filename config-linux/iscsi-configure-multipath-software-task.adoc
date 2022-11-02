@@ -44,44 +44,23 @@ Linux 環境では、 Device Mapper Multipath （ DM-MP ）ツールを使用し
 +
 この情報は、ホストにボリュームを割り当てるときに使用します。
 
-. 起動時に「マルチパス」デーモンを有効にするには、次のいずれかの操作を行います。
+. を有効にします `multipathd` デーモンが起動します。
 +
-|===
-| 使用する場合 | 手順 
-
-
- a| 
-RHEL 7.x および 8.x システム：
- a| 
-'systemctl enable multipathd
-
-
-
- a| 
-SLES 12.x および 15.x システム：
- a| 
-'systemctl enable multipathd
-
-|===
+[listing]
+----
+systemctl enable multipathd
+----
 . initramfs イメージまたは initrd イメージを /boot ディレクトリに再構築します
 +
-|===
-| 使用する場合 | 手順 
-
-
- a| 
-RHEL 7.x および 8.x システム：
- a| 
-「 racut --force -- マルチパスの追加」
+[listing]
+----
+dracut --force --add multipath
+----
+. を使用します https://docs.netapp.com/us-en/e-series-santricity/sm-storage/create-host-manually.html["ホストを手動で作成する"] ホストが定義されているかどうかを確認するには、オンラインヘルプの手順 を参照してください。各ホストタイプの設定が、で収集したカーネル情報に基づいていることを確認します ,手順4.。
 
 
 
- a| 
-SLES 12.x および 15.x システム：
- a| 
-「 racut --force -- マルチパスの追加」
+NOTE: 自動ロードバランシングは、カーネル3.9以前を実行しているホストにマップされているボリュームでは無効になります。
 
-|===
-. オンラインヘルプの「 Create host manually 」手順を使用して、ホストが定義されているかどうかを確認します。自動ロードバランシング機能を有効にする場合は、各ホストタイプが * Linux DM-MP （カーネル 3.10 以降） * であること、自動ロードバランシング機能を無効にする場合は * Linux DM-MP （カーネル 3.9 以前） * であることを確認してください。必要に応じて、選択したホストタイプを適切な設定に変更します。
 . ホストをリブートします。
 
