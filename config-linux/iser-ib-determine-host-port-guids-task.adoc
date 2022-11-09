@@ -11,10 +11,10 @@ summary: ホストポートの GUID を特定します。
 
 
 [role="lead"]
-InfiniBand-diagsパッケージには、各InfiniBand（IB）ポートのグローバル一意識別子（GUID）を表示するためのコマンドが含まれています。付属のパッケージでOFED / RDMAがサポートされるLinuxディストリビューションのほとんどにInfiniBand-diagsパッケージも付属しており、このパッケージに含まれるコマンドを使用してHCAに関する情報を表示できます。
+InfiniBand-diagsパッケージには、各InfiniBand（IB）ポートのグローバル一意識別子（GUID）を表示するためのコマンドが含まれています。付属のパッケージで OFED / RDMA がサポートされる Linux ディストリビューションのほとんどに InfiniBand-diags パッケージも付属しており、このパッケージに含まれるコマンドを使用して HCA に関する情報を表示できます。
 
 .手順
-. をインストールします `infiniband-diags` オペレーティングシステムのパッケージ管理コマンドを使用してパッケージ化します。
+. オペレーティングシステムのパッケージ管理コマンドを使用して InfiniBand-diags パッケージをインストールします。
 . 「 ibstat 」コマンドを実行して、ポート情報を表示します。
 . イニシエータの GUID をに記録します xref:iser-ib-worksheet-concept.adoc[iSER over InfiniBand ワークシート]。
 . HBA ユーティリティで適切な設定を選択します。
