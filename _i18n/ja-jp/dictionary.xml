@@ -8832,4 +8832,6 @@
   <block id="e2acb831b00c32f1c83710aa634a7625" category="admonition">IOM12BモジュールはSANtricity OS 11.07.2以降でのみサポートされます。IOM12Bをインストールまたはアップグレードする前に、コントローラのファームウェアがアップデートされていることを確認してください。</block>
   <block id="5dd94bd0b7c84a6ccc9fc7c3a1fa82e6" category="paragraph">InfiniBand-diagsパッケージには、各InfiniBand（IB）ポートのグローバル一意識別子（GUID）を表示するためのコマンドが含まれています。付属のパッケージでOFED / RDMAがサポートされるLinuxディストリビューションのほとんどにInfiniBand-diagsパッケージも付属しており、このパッケージに含まれるコマンドを使用してHCAに関する情報を表示できます。</block>
   <block id="dfcfc178d6edc54d8706c59b747948d5" category="list-text">をインストールします<block ref="3b13fc847651d5be5c89aeab4722c099" prefix=" " category="inline-code"></block> オペレーティングシステムのパッケージ管理コマンドを使用してパッケージ化します。</block>
+  <block id="79c617afe97932f20f52d1217736d403" category="list-text">という名前のsystemdサービスユニットファイルを作成します<block ref="6bddfc9da80e7ef0195a324214877004" prefix=" " category="inline-code"></block>。</block>
+  <block id="d40e479d6bc1cf9824be2cfa7e837140" category="list-text">を有効にして開始します<block ref="6b64648adbe124ad96531f7f0dd977a4" prefix=" " category="inline-code"></block> サービス</block>
 </blocks>
