@@ -8808,8 +8808,6 @@
   <block id="272f8c73e52dc0fe2c42cfc42fdbefc9" category="paragraph">SANtricity バージョン11.74以降では、リモートログイン機能を使用して、SSHキーやSSHパスワードの入力をユーザに求めることで多要素認証（MFA）を設定できます。ハードウェアセクションのメニューオプションが*リモートログインの変更*から*リモートログインの設定（SSH）*に変更されました。</block>
   <block id="3b5b5feef66adc0768f35b724a334827" category="paragraph">アクセストークン</block>
   <block id="e91c1fbb7ef80926929c6a0e87d2cea2" category="paragraph">このリリースには、アクセストークンを作成するための新機能が含まれています。これらのトークンを使用すると、ユーザ名やパスワードを公開することなく、REST APIまたはコマンドラインインターフェイス（CLI）で認証できます。この機能は、アクセス管理セクションで提供されています。</block>
-  <block id="8eb80b537576ff75cd5bd8c229446b07" category="paragraph">米国政府幹部の注文</block>
-  <block id="7b15a260552ea825bd80b5e7eee74344" category="paragraph">このリリースには、エグゼクティブオーダーに準拠するために、セキュリティ上のいくつかの変更が含まれています。</block>
   <block id="a2eca216cb41a80426c839353357173b" category="list-text">セキュリティ有効ドライブが取り付けられている状況でコントローラを交換する場合は、次の表を参照して、セキュリティタイプ（内部または外部）およびドライブの状態に応じた適切な手順を実行します。セキュリティ有効ドライブが取り付けられていない場合は、この手順を省略して、表の下のステップ3に進むことができます。</block>
   <block id="58d3a1b91b20c93e431800a59ecffea8" category="inline-link">コマンドラインインターフェイスリファレンス</block>
   <block id="7ee6d87fe161d4b56a5ae818d36005c2" category="admonition">表の一部の手順には、コマンドラインインターフェイス（CLI）のコマンドが必要です。これらのコマンドの使用方法については、を参照してください<block ref="26a74644087a8cc4596955787ae55f1d" category="inline-link-rx"></block>。</block>
@@ -8832,4 +8830,6 @@
   <block id="bc2848514b39d7125ea7f1e0192ff80f" category="list-text">から保存されたセキュリティキーを使用します <block ref="370683b601e29cfe5ec51edd9d49be09" category="inline-link-macro-rx"></block>を使用して、外部キーを IP アドレス 192.168.128.101 にインポートし、ユーザ名 * admin * とパスワードは空白のままにします。</block>
   <block id="4097f6992eb560447325a703f31e2270" category="paragraph">また、次の呼び出しを使用してREST APIから外部キーをインポートすることもできます。<block ref="758036d11568492285b8504fb55d4d9f" prefix=" " category="inline-code"></block></block>
   <block id="e2acb831b00c32f1c83710aa634a7625" category="admonition">IOM12BモジュールはSANtricity OS 11.07.2以降でのみサポートされます。IOM12Bをインストールまたはアップグレードする前に、コントローラのファームウェアがアップデートされていることを確認してください。</block>
+  <block id="5dd94bd0b7c84a6ccc9fc7c3a1fa82e6" category="paragraph">InfiniBand-diagsパッケージには、各InfiniBand（IB）ポートのグローバル一意識別子（GUID）を表示するためのコマンドが含まれています。付属のパッケージでOFED / RDMAがサポートされるLinuxディストリビューションのほとんどにInfiniBand-diagsパッケージも付属しており、このパッケージに含まれるコマンドを使用してHCAに関する情報を表示できます。</block>
+  <block id="dfcfc178d6edc54d8706c59b747948d5" category="list-text">をインストールします<block ref="3b13fc847651d5be5c89aeab4722c099" prefix=" " category="inline-code"></block> オペレーティングシステムのパッケージ管理コマンドを使用してパッケージ化します。</block>
 </blocks>
