@@ -23,8 +23,8 @@ NOTE: サブネットマネージャを設定する前に、InfiniBand-diagsパ�
 [listing]
 ----
 # ibstat -p
- 0x248a070300a80a80
- 0x248a070300a80a81
+0x248a070300a80a80
+0x248a070300a80a81
 ----
 . ブートプロセスの一部として一度実行するサブネットマネージャスクリプトを作成します。
 +
@@ -52,7 +52,7 @@ opensm -B -g <GUID1> -p <P1> -f /var/log/opensm-ib1.log
 opensm -B -g 0x248a070300a80a80 -p 15 -f /var/log/opensm-ib0.log
 opensm -B -g 0x248a070300a80a81 -p 1 -f /var/log/opensm-ib1.log
 ----
-. という名前のsystemdサービスユニットファイルを作成します `subnet-manager service`。
+. という名前のsystemdサービスユニットファイルを作成します `subnet-manager.service`。
 +
 [listing]
 ----
@@ -78,7 +78,7 @@ WantedBy=multi-user.target
 ----
 # systemctl daemon-reload
 ----
-. を有効にして開始します `subnet manager service`。
+. を有効にして開始します `subnet-manager` サービス
 +
 [listing]
 ----
