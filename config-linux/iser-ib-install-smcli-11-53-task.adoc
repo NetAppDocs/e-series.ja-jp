@@ -31,6 +31,7 @@ NOTE: SANtricity ソフトウェア 11.60 以降を使用している場合は�
 
 
 
+.このタスクについて
 このタスクでは、 Windows と Linux の両方の OS プラットフォームに SANtricity Storage Manager をインストールする方法について説明します。データホストに Linux を使用する場合の管理ステーションプラットフォームは Windows と Linux の両方で共通です。
 
 .手順

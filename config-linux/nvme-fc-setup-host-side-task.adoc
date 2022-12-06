@@ -13,6 +13,7 @@ summary: Fibre Channel 環境で NVMe イニシエータを設定するには、
 [role="lead"]
 Fibre Channel 環境で NVMe イニシエータを設定するには、 CLI パッケージをインストールして設定し、ホストで NVMe/FC イニシエータを有効にします。
 
+.このタスクについて
 次の手順 は、Broadcom EmulexまたはQLogic NVMe/FC対応のFC HBAを使用したRHEL 7、RHEL 8、RHEL 9、SLES 12、およびSLES 15用です。これらの OS または HBA のどのバージョンがサポートされているかについては、を参照してください https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]。
 
 .手順

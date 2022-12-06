@@ -24,18 +24,18 @@ summary: ハードウェアをラックに設置します。
 
 
 
-== 2 ポストラック● 2U
+== 2ポストラック：2U
 
 にアクセスします https://mysupport.netapp.com/ecm/ecm_download_file/ECMM1280302["2 ポストラックへの 2U 装置の設置"^]。
 
 
 
-== 4 ポストラックまたはキャビネット— 2U
+== 4ポストラックまたはキャビネット-- 2U
 
 にアクセスします https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2484194["4 ポストラックまたはキャビネットに 2U 12 ドライブエンクロージャを設置する"^]。
 
 
 
-== 4 ポストラック— SuperRail
+== 4ポストラック-SuperRail
 
 にアクセスします https://docs.netapp.com/us-en/ontap-systems/platform-supplemental/superrail-install.html["4 ポストラックへの SuperRail の設置（ DE224C / DE460C シェルフ）"^]。

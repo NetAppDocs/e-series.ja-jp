@@ -24,6 +24,7 @@ NOTE: SANtricity Cloud Connector アプリケーションで表示されるバ�
 
 SANtricity Cloud Connector アプリケーションのリストアページの作成機能を使用して、イメージベースのリストアを新規作成できます。
 
+.作業を開始する前に
 SANtricity Cloud Connector で使用可能なイメージベースのバックアップがあることを確認してください。
 
 .手順
@@ -57,6 +58,7 @@ SANtricity Cloud Connector で使用可能なイメージベースのバック�
 
 SANtricity Cloud Connector アプリケーションのリストアページの作成機能を使用すると、ファイルベースのリストアを新規作成できます。
 
+.作業を開始する前に
 SANtricity Cloud Connector で使用可能なファイルベースのバックアップがあることを確認します。
 
 .手順
@@ -94,6 +96,7 @@ SANtricity Cloud Connector で使用可能なファイルベースのバック�
 
 削除機能を使用すると、選択したリストア・アイテムをリストア・ページの結果リスト・セクションから削除できます。
 
+.作業を開始する前に
 ステータスが「 Completed 」、「 Failed 」、または「 Cancelled 」のリストアジョブがあることを確認します。
 
 .手順

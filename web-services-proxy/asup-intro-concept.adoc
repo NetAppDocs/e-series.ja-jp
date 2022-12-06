@@ -106,7 +106,7 @@ AutoSupport 機能は Web サービスプロキシの初回インストール時
 次の手順に従って、 ASUPConfig.xml ファイルを使用して AutoSupport を有効または無効にできます。または、 * Configuration * および * POST/asup * を使用して API でこの機能を有効または無効にし、「 true 」または「 false 」を入力してもかまいません。
 
 . 作業ディレクトリで ASUPConfig.xml ファイルを開きます。
-. 「 <asupdata enabled="(boolean)" timestamp=>` 」の行を探します
+. <asupdata enable="Boolean_value" timestamp="timestamp"> の行を探します
 . 「 true 」（イネーブル）または「 false 」（ディセーブル）を入力します。例：
 +
 [listing]

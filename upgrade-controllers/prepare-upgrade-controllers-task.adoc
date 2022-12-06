@@ -159,4 +159,5 @@ NOTE: SAML を有効にした場合、 SANtricity System Manager インターフ
 
 
 
+.次の手順
 に進みます link:remove-controllers-task.html["コントローラを取り外します"]。

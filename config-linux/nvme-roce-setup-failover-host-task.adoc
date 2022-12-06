@@ -13,6 +13,7 @@ summary: ホストでフェイルオーバーを実行するように設定し�
 [role="lead"]
 ストレージアレイへのパスを冗長化するには、フェイルオーバーを実行するようにホストを設定します。
 
+.必要なもの
 必要なパッケージをシステムにインストールする必要があります。
 
 * Red Hat （ RHEL ）ホストの場合、パッケージがインストールされていることを確認するには、「 rpm -q device-mapper-multipath 」を実行します
@@ -22,6 +23,7 @@ summary: ホストでフェイルオーバーを実行するように設定し�
 
 NOTE: を参照してください https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] マルチパスは GA バージョンの SLES または RHEL では正しく機能しない場合があるため、必要な更新がインストールされていることを確認する必要があります。
 
+.このタスクについて
 RHEL 7 および SLES 12 は、 NVMe over RoCE のマルチパスに Device Mapper Multipath （ DMMP ）を使用します。RHEL 8、RHEL 9、SLES 15では、組み込みのネイティブのNVMeフェイルオーバーを使用します。実行している OS に応じて、適切に実行するためにマルチパスを追加で設定する必要があります。
 
 

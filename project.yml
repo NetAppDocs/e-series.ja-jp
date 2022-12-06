@@ -741,6 +741,8 @@ sidebar:
         url: "/vcenter-plugin/san-spvc-ic-overview.html"
       - title: はじめに
         entries:
+        - title: 要件を確認
+          url: "/vcenter-plugin/san-spvc-ic-reqs.html"
         - title: プラグインをインストールします
           url: "/vcenter-plugin/san-spvc-ic-installation.html"
         - title: アクセス権限を設定します

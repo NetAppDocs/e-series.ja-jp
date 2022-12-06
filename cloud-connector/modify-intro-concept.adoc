@@ -20,6 +20,7 @@ Settings オプションでは、 S3 アカウント、管理対象のストレ�
 
 SANtricity Cloud Connector アプリケーションの既存の S3 設定は、 S3 Account Settings ウィンドウで変更できます。
 
+.作業を開始する前に
 URL または S3 バケットラベルの設定を変更すると、 SANtricity Cloud Connector で設定された既存のバックアップへのアクセスに影響する点に注意してください。
 
 .手順
@@ -91,6 +92,7 @@ Settings - Storage Arrays （設定 - ストレージアレイ）画面が表示
 
 SANtricity Cloud Connector アプリケーションの既存の Web サービスプロキシ設定は、 Web Services Proxy Settings ウィンドウで変更できます。
 
+.作業を開始する前に
 SANtricity Cloud Connector で使用する Web サービスプロキシに適切なアレイが追加されていて、対応するパスワードが設定されている必要があります。
 
 .手順

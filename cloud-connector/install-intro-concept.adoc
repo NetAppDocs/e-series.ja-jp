@@ -18,6 +18,7 @@ SANtricity Cloud Connector アプリケーションは、互換性がある Linu
 
 NOTE: SANtricity Cloud Connectorツールは廃止され、ダウンロードできなくなりました。
 
+.作業を開始する前に
 次の注意事項を確認してください。
 
 * SANtricity Web Services Proxy が SANtricity Cloud Connector と同じサーバにすでにインストールされている場合は、非 SSL のポート番号と SSL のポート番号に競合が発生します。この場合は、 SANtricity Cloud Connector のインストール時に、非 SSL のポートと SSL のポートに適切な番号を選択してください。
@@ -45,6 +46,7 @@ SANtricity Cloud Connector は、 Linux オペレーティングシステムに�
 
 Linux オペレーティングシステムでグラフィカルモードを使用して SANtricity Cloud Connector をインストールできます。
 
+.作業を開始する前に
 SANtricity Cloud Connector をインストールするホストの場所を指定します。
 
 .手順
@@ -114,6 +116,7 @@ SANtricity Cloud Connector のインストールが開始され、 Webserver Dae
 
 Linux オペレーティングシステムでコンソールモードを使用して SANtricity Cloud Connector をインストールできます。
 
+.作業を開始する前に
 SANtricity Cloud Connector をインストールするホストの場所を指定します。
 
 .手順
@@ -192,6 +195,7 @@ NOTE: 以前のバージョンを維持したまま SANtricity Cloud Connector �
 
 ブラウザから SANtricity Cloud Connector ホストへのセキュアな https 接続を使用するには、 SANtricity Cloud Connector ホストからの自己署名証明書を受け入れるか、ブラウザと SANtricity Cloud Connector アプリケーションの両方で認識される証明書と信頼チェーンを追加します。
 
+.作業を開始する前に
 SANtricity Cloud Connector アプリケーションをホストにインストールする必要があります。
 
 .手順

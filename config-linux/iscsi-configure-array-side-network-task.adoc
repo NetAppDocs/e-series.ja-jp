@@ -19,6 +19,7 @@ SANtricity System Manager の GUI を使用して、アレイ側の iSCSI ネッ
 * System Manager GUI 、ロールベースアクセス制御（ RBAC ）、または LDAP のパスワード、およびストレージアレイへの適切なセキュリティアクセスのために設定されたディレクトリサービス。アクセス管理の詳細については、 SANtricity システムマネージャオンラインヘルプを参照してください。
 
 
+.このタスクについて
 このタスクでは、 System Manager のハードウェアページから iSCSI ポートの設定にアクセスする方法について説明します。設定には、 System （設定） > Configure iSCSI Ports （ iSCSI ポートの設定）メニューからもアクセスできます。
 
 .手順

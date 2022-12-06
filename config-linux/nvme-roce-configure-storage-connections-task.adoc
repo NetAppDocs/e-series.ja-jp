@@ -19,6 +19,7 @@ summary: コントローラに NVMe over RoCE 用の接続（ RDMA over Converge
 * ホスト接続の IP アドレス。
 
 
+.このタスクについて
 NVMe over RoCE 構成には、 * Hardware * ページまたはメニューからアクセスできます： Settings [ System ] 。このタスクでは、 Hardware ページからポートを設定する方法について説明します。
 
 

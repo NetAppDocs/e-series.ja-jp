@@ -559,4 +559,5 @@ image::../media/sam1130_ss_system_change_feature_pack_maint-e2800.gif[sam1130 ss
 
 
 
+.次の手順
 に進みます link:hpp-complete-protocol-conversion-task.html["ホストプロトコル変更後の処理"]。

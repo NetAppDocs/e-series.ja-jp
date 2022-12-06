@@ -2,16 +2,13 @@
 <blocks>
   <block id="50b44e77204c03afe37922911ec47676" category="summary">iSCSI プロトコルを使用する場合は、スイッチを設定し、アレイ側とホスト側でネットワークを設定します。その後、 IP ネットワーク接続を確認します。</block>
   <block id="1073617cb349d634023f3f6c0c581f80" category="doc">iSCSI 固有のタスクを実行</block>
-  <block id="7e43b51d16efc204bf64cbc8fd4839e4" category="section-title">手順 1 ：スイッチの設定（最初の iSCSI 、 VMware</block>
   <block id="3fc34abf379078547de4c6d755b1e4c5" category="paragraph">iSCSI に関するベンダーの推奨事項に従ってスイッチを設定します。これらの推奨事項には、設定の指示とコードの更新が含まれる場合があります。</block>
-  <block id="a711863513c11f3a6d86294acc7be0ba" category="list-title">必要なもの</block>
   <block id="d55a36a933d309c8f14fd52063711862" category="list-text">高可用性を実現するために、 2 つの独立したネットワークiSCSI トラフィックを別々のネットワークセグメントに分離してください。</block>
   <block id="f63ed564dfb8701d9a01a826ed8b7184" category="list-text">送受信ハードウェアフロー制御 * エンドツーエンド * を有効にしました。</block>
   <block id="8a15fc8cc90b121809398331bd4e3fcc" category="list-text">優先度フロー制御が無効になりました。</block>
   <block id="5c1f4c531be5dc78e029acb7423171cb" category="list-text">必要に応じて、ジャンボフレームを有効にします。</block>
   <block id="565c3a2d9c34937aa961e9ed85bb8ba7" category="admonition">コントローラのスイッチポートでは、ポートチャネル / LACP がサポートされません。ホスト側 LACP は推奨されません。マルチパスを使用すると、同等以上のメリットが得られます。</block>
   <block id="fa1a4bd3bc0839afda794c9adf85f500" category="paragraph">スイッチベンダーのマニュアルを参照してください。</block>
-  <block id="bb5b71b867bf5283ded7116e41b2e1f0" category="section-title">手順 2 ：ネットワークの設定—関係する iSCSI VMware</block>
   <block id="664f6e0bf6d6470056c04546c10ee78f" category="paragraph">iSCSI ネットワークは、データストレージの要件に応じて、さまざまな方法でセットアップできます。環境に最適な構成を選択するには、ネットワーク管理者に相談してください。</block>
   <block id="1040198bf6f7f968d14e3eb526c9e1f4" category="paragraph">パフォーマンス上の理由から IP SAN 内でジャンボフレームを使用している場合は、アレイ、スイッチ、およびホストでジャンボフレームを使用するように設定してください。ホストおよびスイッチでジャンボフレームを有効にする方法については、使用するオペレーティングシステムとスイッチのドキュメントを参照してください。アレイでジャンボフレームを有効にするには、手順 3 の手順を実行します。</block>
   <block id="0f2f72ef3f176b98134caf100a06cf5f" category="inline-link">VMware 構成の最大数</block>
@@ -22,7 +19,6 @@
   <block id="0995e93f2d32176a9594170326076188" category="paragraph">ベストプラクティスとして、 E シリーズストレージアレイではポートバインドを使用しないでください。</block>
   <block id="4d58b104819df733df379625cb1928bb" category="paragraph">適切なマルチパス構成を実現するために、 iSCSI ネットワークに複数のネットワークセグメントを使用します。ホスト側のポートと各アレイコントローラのポートを少なくとも 1 つずつ 1 つのネットワークセグメントに配置し、同じグループのホスト側とアレイ側のポートをもう 1 つのネットワークセグメントに配置します。可能であれば、複数のイーサネットスイッチを使用してさらに冗長性を確保します。</block>
   <block id="f15f906f7bea6ec29e2979d8f1f2fcfb" category="admonition">多くのネットワークスイッチは 9 、 000 バイトを超える IP オーバーヘッドを設定する必要があります。詳細については、スイッチのマニュアルを参照してください。</block>
-  <block id="f7455ef6422846d98816708b27dee294" category="section-title">手順 3 ：アレイ側のネットワーク設定—関係する iSCSI 、 VMware</block>
   <block id="e416e1de0c9f752b24a207ee8a149921" category="paragraph">SANtricity System Manager の GUI を使用して、アレイ側の iSCSI ネットワークを設定します。</block>
   <block id="abd85d61e0ca502e115118b250b321b5" category="list-text">いずれかのストレージアレイコントローラの IP アドレスまたはドメイン名。</block>
   <block id="7da05d75fd1c28b0ff4d04d30f85aa5b" category="list-text">System Manager GUI 、ロールベースアクセス制御（ RBAC ）、または LDAP のパスワード、およびディレクトリサービスを設定して、ストレージアレイへの適切なセキュリティアクセスを可能にします。アクセス管理の詳細については、 SANtricity システムマネージャオンラインヘルプを参照してください。</block>
@@ -72,7 +68,6 @@
   <block id="6f16a33ada2180c9fa2760228064e1ba" category="paragraph">このオプションを選択した場合は、フィールドに静的アドレスを入力します。IPv4 の場合は、ネットワークのサブネットマスクとゲートウェイも指定します。IPv6 の場合は、ルーティング可能な IP アドレスとルータの IP アドレスも指定します。</block>
   <block id="1859e92122e266181cafb9c13d7400a0" category="list-text">[ 完了 ] をクリックします。</block>
   <block id="ad3af221db79214a4f22ecdc2ee12d40" category="list-text">System Manager を終了します。</block>
-  <block id="d6982b7cb99590941b0d9dd21f85a639" category="section-title">手順 4 ：ホスト側のネットワーク設定—関係する iSCSI</block>
   <block id="07400b5d0c1cefb8324f4f04590f28e5" category="paragraph">ホスト側で iSCSI ネットワークを設定すると、 VMware iSCSI イニシエータがアレイとのセッションを確立できるようになります。</block>
   <block id="f5462cfa22506eb86e8f76429c946a72" category="paragraph">ホスト側で iSCSI ネットワークを設定するこのクイック方式では、 ESXi ホストから 4 つの冗長パスを経由してストレージに iSCSI トラフィックを伝送できるようにします。</block>
   <block id="130f3b7858a2c31d31c7f3dcd0d7db98" category="paragraph">このタスクが完了すると、ホストには、両方の VMkernel ポートと両方の VMNIC で構成される単一の vSwitch が設定されます。</block>
@@ -85,7 +80,6 @@
   <block id="05b5dfc4fb1314c8f84b1aa1f6716ac8" category="list-text">iSCSI トラフィックに 2 つの NIC ポートを使用します。</block>
   <block id="0e615d5b228749c24eb37ff17dbc56eb" category="list-text">vSphere Client または vSphere Web Client を使用して、ホスト側の設定を行います。</block>
   <block id="4f2551c8e6a460403dafc0762e48ee59" category="paragraph">インターフェイスの機能はそれぞれ異なり、ワークフローも完全に同じにはなりません。</block>
-  <block id="bed1d6d39d380a9f84c5ba4b6c11a167" category="section-title">手順 5 ： IP ネットワーク接続の確認—最初の iSCSI 、 VMware</block>
   <block id="1ff0b97fd27edfb22e4024dee03fa784" category="paragraph">インターネットプロトコル（ IP ）ネットワーク接続を確認するには、 ping テストを使用してホストとアレイが通信できることを確認します。</block>
   <block id="5b629af1ecdd34428fd106507876326b" category="list-text">ジャンボフレームが有効かどうかに応じて、ホストから次のいずれかのコマンドを実行します。</block>
   <block id="581ea1ede625cccd9a92ad8ae6b9c322" category="list-text">ジャンボフレームが有効になっていない場合は、次のコマンドを実行します。</block>
@@ -127,7 +121,6 @@
   <block id="1370546e4641b1ed39f05dc4be11d6dc" category="paragraph">これを行うには、ボリュームが Virtual Machine File System （ VMFS ）データストアとして使用されているか、または Raw デバイスマッピング（ RDM ）として VM に直接マッピングされていることを確認します。</block>
   <block id="4182da09b2e38e1306891b2c7db5433d" category="summary">SAS プロトコルの場合は、ホストポートアドレスを特定し、推奨設定を適用します。</block>
   <block id="782074a892923ea9433c10e2d684625e" category="doc">SAS 固有のタスクを実行</block>
-  <block id="31e25a16522d6e2086ecfa78b4821b3c" category="section-title">手順 1 ： SAS ホスト識別子を特定する—最初の VMware</block>
   <block id="e987e7fa5c9abc75335a066329ba6eaa" category="paragraph">HBA ユーティリティを使用して SAS アドレスを確認し、 HBA BIOS を使用して適切な設定を行います。</block>
   <block id="b769f2f457baf26b76c0285eaf26cac1" category="paragraph">HBA ユーティリティのガイドラインを確認します。</block>
   <block id="4191e9e13f8a201f560ff4eb7e03a2b8" category="list-text">ほとんどの HBA ベンダーは HBA ユーティリティを提供しています。</block>
@@ -262,7 +255,6 @@
   <block id="7c7869777c18f39124da389c81664a9e" category="list-text">新しいゾーンを作成し、 1 つ目のホストイニシエータポート、およびそのイニシエータと同じ FC スイッチに接続するすべてのターゲットポートを配置します。</block>
   <block id="1088b852c25195807c415eebd5e3c772" category="list-text">スイッチの FC ホストイニシエータごとにゾーンを作成します。</block>
   <block id="38b2faff78c86d10664d04002c0e6d64" category="list-text">ゾーンを保存し、新しいゾーニング設定をアクティブ化します。</block>
-  <block id="1a1c52b433357855334fa98cf2fbdd0f" category="section-title">手順 2 ：ホストポートの WWPN を特定する—最初の NVMe / FC VMware</block>
   <block id="47fe6177a7ca4fc05ab663890e75ee90" category="paragraph">FC ゾーニングを設定するためには、各イニシエータポートの World Wide Port Name （ WWPN ）を特定する必要があります。</block>
   <block id="f33f5a2f363be35d2aef36d0895f8c7d" category="list-text">SSH または ESXi シェルを使用して ESXi ホストに接続します。</block>
   <block id="337d79852891a37d41285c9101c3fff4" category="list-text">次のコマンドを実行します。</block>
@@ -294,9 +286,7 @@
   <block id="16e885987fa556e8919fa293fb8ba6ee" category="section-title">マッピングホスト</block>
   <block id="dc9a3adad931bcc95bb908edc1ca137c" category="summary">Fibre Channel プロトコルを使用する場合は、スイッチを設定し、ホストポート識別子を特定します。</block>
   <block id="500f35e1a49050d329695333eb443f53" category="doc">FC 固有のタスクを実行</block>
-  <block id="6e7cc21a437cf9286fc0875901a94774" category="section-title">手順 1 ：最初の FC スイッチ（必要な VMware ）を設定します</block>
   <block id="2996f0172f73e90304548255cfe1f7b8" category="paragraph">Fibre Channel （ FC ）スイッチを設定（ゾーニング）すると、ホストをストレージアレイに接続し、パスの数を制限できます。スイッチのゾーニングはスイッチの管理インターフェイスで設定します。</block>
-  <block id="00f995e1d9cfe3e72e90c3642382bae8" category="section-title">手順 2 ：ホストポートの WWPN （最初の FC ）を確認します</block>
   <block id="937eaba2c714abd2c87056b5288c7f8f" category="section-title">手順 3 ：設定を記録します</block>
   <block id="272063612c247d680dc6dcce09f932e0" category="paragraph">このページの PDF を生成して印刷し、次のワークシートを使用して FC ストレージの構成情報を記録できます。この情報は、プロビジョニングタスクを実行する際に必要になります。</block>
   <block id="600c6d3fd1229d63ffae79514c2f27e3" category="summary">SANtricity System Manager のセットアップウィザードを使用して、ストレージアレイを設定します。</block>
@@ -802,31 +792,14 @@
   <block id="9fb794be4150b7763c0a4833d06c9e31" category="list-text">* 証明書管理 * –ブラウザとクライアント間で認証するための証明書を管理します。</block>
   <block id="b2a734e63e69490e094f416eda4eeb72" category="list-text">* 操作 * - あるアレイから別のアレイへの設定のインポートなど、バッチ操作の進行状況を表示します。</block>
   <block id="c39f2962708144021250f1c1774ee46b" category="list-text">* サポート * –テクニカルサポートのオプション、リソース、連絡先を表示します。</block>
-  <block id="4f5e7bcbe41e887700d69a7347fc4ec4" category="summary">SANtricity Storage Plugin for vCenter をインストールします。</block>
-  <block id="480dbff7fe3f36c7e40bb55917ce4363" category="doc">vCenter 向けストレージプラグインをインストールします</block>
-  <block id="b343a8501c81a39ccd85e7ffcb042c9a" category="paragraph">vCenter 向けストレージプラグインをインストールし、プラグインの登録を確認できます。</block>
   <block id="f648da22c98e52c918faa560efe4f898" category="section-title">インストールの前提条件を確認する</block>
-  <block id="3f2d2f00d799dde329a804cc37f26a7c" category="paragraph">システムが次の要件を満たしていることを確認します。</block>
   <block id="2ce43ab0f5d314b47dd9cb618dcc2844" category="list-text">NetApp SANtricity OS バージョン： 11.60.2 以降</block>
-  <block id="85826baa206c427868f3feaff8a9870b" category="list-text">ホストシステムの CPU 要件：</block>
-  <block id="567b36d352655c36a5a725d1ebf33c0f" category="list-text">ストレージスペース： 275 MB + 200 MB （ロギング）</block>
   <block id="dc7364d3899f846fdf1224ed73fd1f69" category="section-title">プラグインソフトウェアをインストールします</block>
   <block id="77ceebed4c1a4af4acd87fb741a6c682" category="paragraph">プラグインソフトウェアをインストールするには：</block>
   <block id="96de9428e796ae7fd12aa7eb5f8c47eb" category="list-text">アプリケーションサーバとして使用するホストにインストーラファイルをコピーし、インストーラをダウンロードしたフォルダにアクセスします。</block>
   <block id="5615a5290f7916cea22366db3afe36ca" category="list-text">インストールファイルをダブルクリックします。</block>
   <block id="7bf75a37617fe76a3416d2424deced05" category="paragraph">'santricity _savcenterplugin -windows_x64 --nn.nn.nnnn.exe`</block>
   <block id="01eb9f6780fbba151f0f50844a4c1df7" category="paragraph">上記のファイル名の「 nn.nn.nn.nnnn 」はバージョン番号です。</block>
-  <block id="7cfae2e1d2ea7368589cf5db38e58545" category="list-text">インストールが開始されたら、画面の指示に従います。</block>
-  <block id="0a15cde063d5ad5f4517618505eec23e" category="paragraph">インストール時に、いくつかの設定パラメータを入力するように求められます。</block>
-  <block id="d820ee7ec02fc2a6d8be199849df9b2f" category="list-text">最初の画面で、ソフトウェアに使用する言語を選択し、 * OK * をクリックします。</block>
-  <block id="b989796b66ff1d9406ec1c531d469666" category="list-text">[ はじめに ] 画面で、 [ * 次へ * ] をクリックします。</block>
-  <block id="325b33ff6ecded6095d73d040e6a1fea" category="list-text">著作権画面で、 * 次へ * をクリックします。</block>
-  <block id="5c8aa03abd50920e0f0c126d643020ea" category="list-text">[ ライセンス契約 ] 画面で、条項に同意するボックスを選択し、 [ 次へ ] をクリックします。</block>
-  <block id="0b231efa0d0ec3e7d3e43cf4892ac5bf" category="list-text">ソフトウェアをインストールするフォルダを選択し、「 * 次へ * 」をクリックします。</block>
-  <block id="184a98dbb91e62e80b288dedf3c5a47b" category="list-text">プラグインとストレージアレイの間で証明書の検証を実行する場合は、証明書の検証画面でチェックボックスを選択したままにします。この適用では、ストレージアレイ証明書がプラグインに対して信頼されているかどうかがチェックされます。証明書が信頼されていない場合は、プラグインに追加できません。証明書の検証を無視する場合は、チェックボックスを選択解除して、すべてのストレージアレイを自己署名証明書を使用してプラグインに追加できるようにします。「 * 次へ * 」をクリックします。</block>
-  <block id="330978dd5354b46e213f942edf959eb0" category="paragraph">証明書の詳細については、プラグインインターフェイスから入手できるオンラインヘルプを参照してください。</block>
-  <block id="9cae702ab26aef3182168c3ef66b420a" category="list-text">HTTPS Web サービスポート画面で、デフォルトの設定を 8445 のままにするか、必要に応じてポート番号を変更します。「 * 次へ * 」をクリックします。</block>
-  <block id="116a92bc310fb5fa8eacab83ecfddf66" category="list-text">Pre-Installation Summary （インストール前の概要）画面で、 * Next （次へ） * をクリックしてファイルをインストールします。</block>
   <block id="9964b55b18c628445831aa8f480ccdc5" category="list-text">Webserver Started というメッセージが表示されたら、 * OK * をクリックしてインストールを完了します。</block>
   <block id="e13a15252a4dbf9779c44afe477e3343" category="list-text">[ 完了（ Done ） ] をクリックします。</block>
   <block id="4f64b1596007c92e3ab2a4bf215f3ab0" category="admonition">必要に応じて、インストール後に証明書の検証と Web サービスポートの設定を変更できます。インストールディレクトリから、 wsconfig.xml ファイルを開きます。ストレージ・アレイの証明書検証を削除するには 'env' キー 'trust.all.arrays' を 'true' に変更しますWeb Services ポートを変更するには 'slport' の値を 0 ～ 65535 の範囲の任意のポート値に変更します使用するポート番号が別のプロセスにバインドされていないことを確認します。完了したら、変更を保存してプラグイン Web サーバを再起動します。プラグインを vCSA に登録したあとにプラグイン Web サーバのポート値が変更された場合は、変更されたポートの vCSA がプラグインに通信するように、プラグインの登録を解除して再登録する必要があります。</block>
@@ -834,7 +807,6 @@
   <block id="220cd7bbad8213b2212fe72d054af003" category="list-text">アプリケーションサーバ（ VCP ）サービス * NetApp SANtricity Storage Plugin for vCenter * がインストールされ、サービスが開始されていることを確認します。</block>
   <block id="dd0f5711b4dbdc0f95aaf96b06c2d059" category="section-title">プラグインを vCenter Server Appliance に登録します</block>
   <block id="73d0e801912fc9ea82e6f5937e17c0cc" category="paragraph">プラグインソフトウェアをインストールしたら、 vCSA にプラグインを登録します。</block>
-  <block id="145e65fcacf3fc703ceb2a4eaedbf1c9" category="admonition">プラグインを登録できる vCSA は 1 つだけです。別の vCSA に登録するには、現在の vCSA からプラグインの登録を解除し、アプリケーションホストからアンインストールする必要があります。その後、プラグインを再インストールして他の vCSA に登録できます。</block>
   <block id="865ac329a03e52758709c3e8d2a3b6ee" category="list-text">コマンドラインでプロンプトを開き、次のディレクトリに移動します。</block>
   <block id="e198063891afa31e40cd534993e8bc3f" category="paragraph">`&lt; インストールディレクトリ &gt;\vcenter-register-bin'</block>
   <block id="6bb899b55f01bce9e8af1c2f60672bc3" category="list-text">vCenter の登録 .bat * ファイルを実行します。 vcenter-register.bat アクション registerPlugin^-vcenterHostname &lt;vCenter FQDN&gt;^-UserName &lt;Administrator username&gt;^`</block>
@@ -1223,12 +1195,9 @@
   <block id="3cd5d491ea9bf0d29c5ab9adf78cb96c" category="list-text">ドライブトレイの電源をオンにしたあと 30 秒待ち、キャビネットのすべてのコントローラドライブトレイの電源をオンにします。</block>
   <block id="34a41d4e3b538464e1138ee17196dbda" category="paragraph">キャビネットの設置が完了しました。通常の運用を再開することができます。</block>
   <block id="44fc66161e7a43ac157626f024173dde" category="paragraph">iSCSI プロトコルを使用する場合は、スイッチを設定し、アレイ側とホスト側でネットワークを設定してから、 IP ネットワーク接続を確認します。</block>
-  <block id="e21c632eff4dcb4c33312f2048c1bdfd" category="section-title">手順 1 ：スイッチを設定する—最初の iSCSI 、 Windows</block>
   <block id="9c8c6bc1dd1c6a33336d55ccb262a475" category="list-text">高可用性を実現するために、 2 つの独立したネットワークVLAN または 2 つの独立したネットワークを使用して、 iSCSI トラフィックを別々のネットワークセグメントに分離してください。</block>
-  <block id="96d6d5da6e7c9c318bc8a1f7571ca765" category="section-title">手順 2 ：ネットワークの設定—最初の iSCSI Windows</block>
   <block id="7a0cbf02537e0c5675240097a5e290c6" category="paragraph">iSCSI ネットワークに基本的な冗長性を効果的に設定するには、各ホストポートと各コントローラの 1 つのポートを別々のスイッチに接続し、ホストポートとコントローラポートの各セットを VLAN を使用して別々のネットワークセグメントに分離します。</block>
   <block id="193ade8f53ce0d3769717269d5021a04" category="paragraph">パフォーマンス上の理由から IP SAN 内でジャンボフレームを使用している場合は、アレイ、スイッチ、およびホストでジャンボフレームを使用するように設定してください。ホストおよびスイッチでジャンボフレームを有効にする方法については、使用するオペレーティングシステムとスイッチのドキュメントを参照してください。アレイでジャンボフレームを有効にするには、手順 3 の手順を実行します。</block>
-  <block id="71aa525f4580797cdff57e0dd639aa22" category="section-title">手順 3 ：アレイ側のネットワークを設定する—関係する iSCSI 、 Windows</block>
   <block id="7a44acba5c86f8f1ca8ef18dcb107358" category="list-text">System Manager GUI 、ロールベースアクセス制御（ RBAC ）、または LDAP のパスワード、およびストレージアレイへの適切なセキュリティアクセスのために設定されたディレクトリサービス。アクセス管理の詳細については、 SANtricity システムマネージャオンラインヘルプを参照してください。</block>
   <block id="79ea1ff8d5f0ec26c8c8cc72a7085a20" category="list-text">管理者パスワードの設定フィールドとパスワードの確認フィールドに管理者ロールの System Manager パスワードを入力し、パスワードの設定 * ボタンを選択します。</block>
   <block id="5967546ab7bb830bfd3596e874f087ef" category="paragraph">プール、ボリュームグループ、ワークロード、または通知が設定されていない状態で System Manager を開くと、セットアップウィザードが起動します。</block>
@@ -1259,7 +1228,6 @@
   <block id="11067f76259f391bcf91a2a3d2955b1e" category="list-text">[ ターゲットへの接続 * ] ダイアログボックスに戻ったら、再度「 * OK * 」を選択します。</block>
   <block id="385b4af64bde28fe3449616f51738066" category="list-text">ストレージアレイへの接続を確立する各イニシエータポートとセッション（論理パス）に対して、この手順を繰り返します。</block>
   <block id="15b6118a81aee81c1a1d53b3df6273bd" category="image-alt">2012 年 8 月 00 日</block>
-  <block id="1d67ee0bcd66df5d64d6595ef7f9d10e" category="section-title">手順 5 ： IP ネットワーク接続を確認する—最初の iSCSI 、 Windows</block>
   <block id="e67855cd7e9b1c8568edde29dc1e19d1" category="list-text">[ スタート ]&gt;[ すべてのプログラム ]&gt;[ アクセサリ ]&gt;[ コマンドプロンプト ] の順に選択し、ジャンボフレームが有効になっているかどうかに応じて、 Windows CLI を使用して次のいずれかのコマンドを実行します。</block>
   <block id="82b036dc1c9aac368948e60ed01a1cd4" category="list-text">ジャンボフレームが有効な場合は、ペイロードサイズに 8 、 972 バイトを指定して ping コマンドを実行します。IP と ICMP を組み合わせたヘッダーは 28 バイトで、これがペイロードに追加されて 9 、 000 バイトになります。f オプションを指定すると、「 do non fragment (DF) 」ビットが設定されます。l オプションを使用してサイズを設定できます。これらのオプションにより、 iSCSI イニシエータとターゲットの間で 9 、 000 バイトのジャンボフレームを正常に送信できます。</block>
   <block id="36495d85fdafce51c0c18d44dc824473" category="list-text">各ホストのイニシエータ・アドレス（ iSCSI に使用されるホスト・イーサネット・ポートの IP アドレス）から各コントローラの iSCSI ポートへの ping コマンド問題構成内の各ホストサーバから、必要に応じて IP アドレスを変更してこの操作を実行します。</block>
@@ -1298,7 +1266,6 @@
   <block id="fe2b572228681d85876f1c2ffc7023a9" category="admonition">または、 SANtricity SMdevices ユーティリティを使用して Unified Host Utility ツールと同じ機能を実行することもできます。SMdevices ユーティリティは SMutils パッケージに含まれています。SMutils パッケージは、ホストがストレージアレイから認識する内容を確認するためのユーティリティをまとめたパッケージです。SANtricity ソフトウェアのインストールに含まれています。</block>
   <block id="135d30ad6d2da4597cfa1d9690fba47a" category="summary">SAS プロトコルを使用する場合は、ホストポートアドレスを特定し、推奨設定を適用します。</block>
   <block id="d723a375133225f8e40ad6de1d56e805" category="paragraph">SAS プロトコルを使用する場合は、ホストポートのアドレスを特定し、適切に設定します。</block>
-  <block id="949def9e74c32b2d76220ef2a708fcd7" category="section-title">手順 1 ： SAS ホスト識別子を確認する—最初の Windows</block>
   <block id="bfcd4b5a45e2121dd605c54a4da4bd65" category="paragraph">HBA ユーティリティを使用して SAS アドレスを確認し、 HBA BIOS を使用して適切な設定を行います。</block>
   <block id="c06b839abd65c201b1c005767294828c" category="list-text">ほとんどの HBA ベンダーは HBA ユーティリティを提供しています。使用するホストオペレーティングシステムと CPU に応じて、 LSI-sas2flash （ 6G ）または sas3flash （ 12G ）のいずれかのユーティリティを使用します。</block>
   <block id="24e8d96ea66cd40afc07c55bd24a3685" category="list-text">HBA ベンダーの Web サイトから、 LSI-sas2flash （ 6G ）または sas3flash （ 12G ）ユーティリティをダウンロードします。</block>
@@ -1336,9 +1303,7 @@
   <block id="89bbddc36b93eaee6f01e5b193630385" category="summary">クイック方式を使用して E シリーズアレイと Windows ホストを設定するための要件を確認します。</block>
   <block id="07a9ec56be1ccc7dee886d04a8fedcfe" category="paragraph">Windows のクイック方式は、次の前提に基づいています。</block>
   <block id="3e8e0dd8758b207f979965536754d298" category="list-text">Windows を仮想ゲストとして使用しない。</block>
-  <block id="2f04e704a7a815c0e774ed659cc504c3" category="section-title">手順 1 ： FC スイッチを設定する—一時的な Windows</block>
   <block id="5192c4044ff1350931950a13c0344c96" category="paragraph">ゾーンは、物理ポートではなく WWPN に基づいて作成する必要があります。各イニシエータポートを別々のゾーンに配置し、各イニシエータに対応するターゲットポートをすべて配置する必要があります。スイッチのゾーニングの詳細については、スイッチベンダーのマニュアルを参照してください。</block>
-  <block id="cf835a04573e0610ec8897238c527f88" category="section-title">手順 2 ：ホストの WWPN を確認して推奨設定を適用する—必要な処理は FC 、 Windows</block>
   <block id="be45f039274998f659527af3c0750a6a" category="paragraph">FC HBA ユーティリティをインストールして、各ホストポートの World Wide Port Name （ WWPN ）を確認できるようにします。また、 HBA ユーティリティを使用して、の Notes 列に推奨される設定を変更することもできます<block ref="49d81d143d5c8b402603532056154481" category="inline-link-rx"></block> を参照してください。</block>
   <block id="726ce1b88701f14ff4fb2f28e5be2a4c" category="paragraph">HBA ユーティリティについては、次のガイドラインを確認してください。</block>
   <block id="93872d516824e8ba4bd0ef2fca5923bf" category="list-text">ほとんどの HBA ベンダーは HBA ユーティリティを提供しています。使用するホストオペレーティングシステムと CPU に対応した正しいバージョンの HBA が必要です。FC HBA ユーティリティには次のようなものがあります。</block>
@@ -1481,10 +1446,6 @@
   <block id="a001f7630ca6df494681b2daba776c8b" category="admonition">物理的な設置と電源のケーブル接続については、使用するモデルの設置手順書を参照手順してください。モデルの設置手順には、ドライブシェルフを安全に設置するために考慮する必要がある注意事項と警告が含まれています。</block>
   <block id="8e48f6475dbee2032869e2a0715b2460" category="list-text">新しいドライブシェルフの電源をオンにし、ドライブシェルフの黄色の警告 LED が点灯しないことを確認します。可能であれば、障害をすべて解決してからこの手順を続行してください。</block>
   <block id="e741aab45a4bd68c7c79e39d156c970e" category="section-title">手順 3 ：システムにケーブルを接続します</block>
-  <block id="f56eb649ef27dab12f2b4eb0a88a0d8a" category="paragraph">E2800 および E5700 ストレージシステムと EF300 ストレージシステムのどちらをケーブル接続するかに応じて、次のいずれかのオプションを選択します。</block>
-  <block id="6d1579b454943360f37cf77c92fdbd30" category="list-text"><block ref="d2d4be73706180bc7597d299c249d866" category="inline-xref-macro-rx"></block></block>
-  <block id="73a1596c6d50d92b7125c8d88323bace" category="list-text"><block ref="307f269e3c3fe9adffe68a2a198897ec" category="inline-xref-macro-rx"></block></block>
-  <block id="9831b6f8d53301f978e5645721ea5cc8" category="section-title">オプション 1 ： E2800 および E5700 のドライブシェルフを接続する</block>
   <block id="628770b160427a4fb650a632638d7a51" category="paragraph">ドライブシェルフをコントローラ A に接続し、 IOM のステータスを確認し、ドライブシェルフをコントローラ B に接続します</block>
   <block id="37d23d5b85350384fbdd960e5a148cb3" category="list-text">ドライブシェルフをコントローラ A に接続します</block>
   <block id="243467d3e3a9a5fe56202ff382d14981" category="paragraph">次の図では、追加のドライブシェルフをコントローラ A に接続する例を示しますモデル上のポートの位置を確認するには、を参照してください<block ref="5d49ffd87c57001d2b40191486fafc6a" category="inline-link-rx"></block>。</block>
@@ -1506,7 +1467,6 @@
   <block id="ebd1f3c2a319b70999092b11ab0edcb6" category="image-alt">Hot e5700 2.</block>
   <block id="7260d6d9ae9fe1625d41a3d42ae918f7" category="list-text">ESM / IOM * タブが選択されていない場合は、 * Shelf Component Settings * （シェルフコンポーネント設定 * ）ダイアログボックスで * ESM / IOM * タブを選択し、 * Show more options * （詳細オプションを表示）を選択します。カード通信が *YES* であることを確認します。</block>
   <block id="1eae9337ad28fcd392d68a768a69a453" category="admonition">「最適」ステータスは、新しいドライブシェルフに関連する冗長性の喪失エラーが解決され、ストレージシステムが安定していることを示しています。</block>
-  <block id="f4ff3b64fac713387048943adcb0bfb5" category="section-title">オプション 2 ：ドライブシェルフを EF300 に接続する</block>
   <block id="44358da7cef962731faab21103a86c3e" category="inline-link-macro">SANtricity OS のアップグレード中です</block>
   <block id="2e769f075fc7c30e7206b0cb5e2b8799" category="list-text">ファームウェアを最新バージョンに更新しました。ファームウェアを更新するには、の手順に従います <block ref="bf6a098eae1df274d91ef498db89d4bb" category="inline-link-macro-rx"></block>。</block>
   <block id="65983bbf5ef58a0867c94fb0138a7307" category="list-text">スタック内の以前の最後のシェルフから A 側のコントローラケーブルを両方とも IOM12 ポート 1 と 2 から外し、新しいシェルフの IOM12 ポート 1 と 2 に接続します。</block>
@@ -3322,7 +3282,6 @@
   <block id="16b6379630c69eca65ed1fd0904bcefc" category="list-text">現在取り付けられているコントローラキャニスターと同じパーツ番号の新しいコントローラキャニスター。（部品番号を確認するには、手順 1 を参照してください）。</block>
   <block id="fac8dec8997a2b6acc0da0c38c936391" category="list-text">ESD リストバンドを装着するか、静電気防止処置を施します。</block>
   <block id="4ac60dfd435aae167fae752e804adc62" category="list-text">新しいケーブルを識別するためのラベル。互換性のあるハードウェアについては、を参照してください<block ref="a3e2ed1651134ba8d782e5dc8287cbc1" category="inline-link-rx"></block> または<block ref="654b66baa180d1959dc74b2dcae2e81b" category="inline-link-rx"></block>。</block>
-  <block id="57e1256d4794c404d0c7bcf46a11428e" category="section-title">手順 1 ：新しいコントローラのパーツ番号を確認します</block>
   <block id="189edd72c022821058abae88a6795697" category="paragraph">新しいコントローラのパーツ番号が現在取り付けられているコントローラと同じであることを確認します。</block>
   <block id="b116bbca7c5a236cab561a14348c06cc" category="image-alt">28 DWG e2800 ラベル maint e2800</block>
   <block id="b6e156797ee2c8838880295fe99ef9f0" category="paragraph">*(1) *_MAC アドレス :_ 管理ポート 1 の MAC アドレス ("P1") 。元のコントローラの IP アドレスが DHCP を使用して取得したアドレスである場合は、新しいコントローラに接続する際にこのアドレスが必要になります。</block>
@@ -4049,13 +4008,10 @@
   <block id="7a0a9c41b30d67f285b02b6001f734dc" category="list-text">DE1600 または DE5600</block>
   <block id="6f90f0e892dcbad9cc3c5c7a2f71e22a" category="list-text">E2612 または E2624</block>
   <block id="e58072e70303cdd370fa9dc168dfa8e8" category="list-text">E5412 、 E5424 、 E5512 、または E5524</block>
-  <block id="10aa710125be51cc73af248b454958aa" category="section-title">2 ポストラック● 2U</block>
   <block id="6c9c9493e3710515edb0e087658e5c24" category="inline-link">2 ポストラックへの 2U 装置の設置</block>
   <block id="0413abfef8aae89542d15125dba4d96b" category="paragraph">にアクセスします<block ref="fc9b704cab109303261cec9768bb3291" category="inline-link-rx"></block>。</block>
-  <block id="b3e8b82dc764d0e6bd4fd78c3ecd968d" category="section-title">4 ポストラックまたはキャビネット— 2U</block>
   <block id="ae4141f22c2ed3b7878fa2ff3a1e6cfe" category="inline-link">4 ポストラックまたはキャビネットに 2U 12 ドライブエンクロージャを設置する</block>
   <block id="5eba68d12705561c14a5cf782039d9a6" category="paragraph">にアクセスします<block ref="790da98275795a97c8f97401754053cf" category="inline-link-rx"></block>。</block>
-  <block id="eef7cecc379e5c2c29880cbc37d1d2ad" category="section-title">4 ポストラック— SuperRail</block>
   <block id="10b221abe33d91a2165eab967641529e" category="inline-link">4 ポストラックへの SuperRail の設置（ DE224C / DE460C シェルフ）</block>
   <block id="9ec28cb381dd9edd5e1a4ad5641fba96" category="summary">コントローラキャニスターにホストインターフェイスカード（ HIC ）を取り付ける必要があります。EF600 コントローラには、オプションの HIC 上にホストポートがあります。HIC に搭載されたホストポートのことを HIC ポートと呼びます。</block>
   <block id="4340eb550bf9d82ec63ae6c684b4ce19" category="paragraph">ホストインターフェイスカード（ HIC ）はコントローラキャニスターに取り付ける必要があります。EF600 コントローラには、オプションの HIC 上にホストポートがあります。HIC に搭載されたホストポートのことを HIC ポートと呼びます。</block>
@@ -5048,9 +5004,7 @@
   <block id="c83a555962427b3fafdbf4afa3ef4e12" category="paragraph">ハードウェアリソース、障害データ、ファームウェアアップグレードを担当するユーザ。このユーザには、 support.admin と storage.monitor というロールが含まれています。このアカウントは、パスワードが設定されるまで無効になります。</block>
   <block id="08b5411f848a2581a41672a759c87380" category="paragraph">モニタ</block>
   <block id="7190d6a7c60ba57f0e040dd38d0f3840" category="paragraph">システムへの読み取り専用アクセス権を持つユーザ。このユーザには storage.monitor ロールのみが含まれています。このアカウントは、パスワードが設定されるまで無効になります。</block>
-  <block id="038c0dc8a958ffea17af047244fb6960" category="paragraph">RW</block>
   <block id="06389059e144364d36df5aa491caefa7" category="paragraph">rw （読み取り / 書き込み）ユーザには、 storage.admin 、 support.admin 、および storage.monitor というロールが含まれています。このアカウントは、パスワードが設定されるまで無効になります。</block>
-  <block id="3605c251087b88216c9bca890e07ad9c" category="paragraph">RO</block>
   <block id="f3b685b126aa5da84d79a12555b91220" category="paragraph">ro （読み取り専用）ユーザには、 storage.monitor ロールのみが含まれます。このアカウントは、パスワードが設定されるまで無効になります。</block>
   <block id="a7febdf14c9271294814ce07e57de3f2" category="section-title">パスワード暗号化</block>
   <block id="86e5da53020f59199dc5c88501bcd76b" category="paragraph">それぞれのパスワードに対して、既存の SHA256 パスワードエンコーディングを使用して暗号化プロセスを追加で適用できます。この追加の暗号化プロセスは、各 SHA256 ハッシュ暗号化の各パスワードにランダムなバイトセット（ソルト）を適用します。ソルトが付加された SHA256 暗号化は、新しく作成されるすべてのパスワードに適用されます。</block>
@@ -5121,7 +5075,6 @@
   <block id="f53c8aca4a29351426197b65cd5ebc4a" category="paragraph">AutoSupport 機能は Web サービスプロキシの初回インストール時に有効または無効になりますが、 ASUPConfig ファイルで設定を変更することができます。</block>
   <block id="0828dd7a23feb7374b137534d8ca660c" category="paragraph">次の手順に従って、 ASUPConfig.xml ファイルを使用して AutoSupport を有効または無効にできます。または、 * Configuration * および * POST/asup * を使用して API でこの機能を有効または無効にし、「 true 」または「 false 」を入力してもかまいません。</block>
   <block id="b1421bfcff007d81c137a2b1a26be812" category="list-text">作業ディレクトリで ASUPConfig.xml ファイルを開きます。</block>
-  <block id="feb82637a6c110761417be91fc1124d2" category="list-text">「 &lt;asupdata enabled="(boolean)" timestamp=&gt;` 」の行を探します</block>
   <block id="6d246a645a6d81f96b7b3d8250715fca" category="list-text">「 true 」（イネーブル）または「 false 」（ディセーブル）を入力します。例：</block>
   <block id="2f9941ce39306cfceb39a95b6bd40bfe" category="admonition">タイムスタンプエントリは必要ありません。</block>
   <block id="37d2d3abeb0c853792589ef5ef3ca6e2" category="section-title">AutoSupport の配信方法を設定する</block>
@@ -6000,7 +5953,6 @@
   <block id="257b40198f0083663eee051dc8899cd7" category="cell">ソフトウェアイニシエータの NQN</block>
   <block id="e7f0bd2c7ce5a2859d99775fd89bb0a2" category="summary">FC を使用する場合は、 Linux Unified Host Utilities をインストールします。</block>
   <block id="43256533b4d88b90a519151bb6b8744e" category="summary">ホストポートの GUID を特定します。</block>
-  <block id="5e8bb43a311db3e4eae61b5de50a3e70" category="list-text">オペレーティングシステムのパッケージ管理コマンドを使用して InfiniBand-diags パッケージをインストールします。</block>
   <block id="d405d36a5a07f387a8a07ebe6eeb8c55" category="list-text">「 ibstat 」コマンドを実行して、ポート情報を表示します。</block>
   <block id="9fd1ccf35b45152e10c1dcc3a278a357" category="inline-xref-macro">SRP ワークシート</block>
   <block id="e8377a168400202c4d751db31f2af66a" category="list-text">イニシエータの GUID をに記録します <block ref="637e124a730f0905ce6e480d5b773394" category="inline-xref-macro-rx"></block>。</block>
@@ -6150,7 +6102,6 @@
   <block id="dabaf1be0a9b702645c2034751bb93e4" category="paragraph">最大 96 本の SSD 2.5 インチドライブをサポートします</block>
   <block id="630bf7189f1f48a3d15afca1b43ffe75" category="section-title">EF300 モデル</block>
   <block id="d0b7c338ed0be5f3b1669af1d792b13b" category="paragraph">ドライブと HIC ：</block>
-  <block id="fd3993a989139216c6567b19ff6319e8" category="paragraph">コントローラ 1 台につきホストインターフェイスカード（ HIC ） 1 枚で、最大 24 本の NVMe SSD をサポートします。</block>
   <block id="c4b9deb88d9cf1b1a2160cb28a2c41ca" category="list-text">25Gb iSCSI です</block>
   <block id="caa2bae7a0bf9eeb472d0be37b3ddb33" category="list-text">32Gb NVMe/FC チャネル</block>
   <block id="ceec84279e4dcf98176b72979318c9cb" category="list-text">32GB SCSI/ ファイバチャネル</block>
@@ -6166,7 +6117,6 @@
   <block id="d5f44c6d91cc30efaab6d46dd6163d11" category="section-title">EF570 モデル</block>
   <block id="c28c25ae4438c2bd5f4ba6029ca86d13" category="paragraph">最大 120 本の SSD 2.5 インチドライブをサポートします</block>
   <block id="177e7abf37e275d36b66b48e65ce67fd" category="section-title">EF600 モデル</block>
-  <block id="167a31a7be26c9816ae2b5c7bec480cc" category="paragraph">コントローラ 1 台につき最大 24 本の NVMe SSD 、 2 枚のホストインターフェイスカード（ HIC ）を搭載できます。</block>
   <block id="02e7dbfc793e4b39dcedafabef1c51ea" category="list-text">200GB の iSER/IB</block>
   <block id="70b3564018ed1ee2f8101886edc0d765" category="list-text">200Gb NVMe/IB</block>
   <block id="3a01d70cdb33efe48884ef541815818b" category="list-text">200Gb NVMe/RoCE</block>
@@ -7014,7 +6964,6 @@
   <block id="ebc31fad1cf84954196a7706294df684" category="paragraph">この 手順 環境 DCM および DCM2 ドライブ・シェルフ</block>
   <block id="86e856206affbccd36d96e0932a14510" category="paragraph">「 nvme-rdma 」カーネルモジュールがロードされていることを確認するには、次のコマンドを実行します。</block>
   <block id="dbf42093a0041931999943f18d3f0986" category="paragraph">E2800 、 E2800B 、 EF280 、 E5700 、 EF5700B の環境 のケーブル接続については、次の情報を参照してください。 または EF570 コントローラシェルフから DE212C 、 DE224C 、 DE460 の各ドライブシェルフに接続できます。</block>
-  <block id="67b64abed949ae2b1a2626ebe211fd47" category="paragraph">ここで説明する 手順 環境 のホットアドで、 DE212C 、 DE224C 、 DE460C ドライブシェルフを E2800 、 E2800B 、 EF280 、 E5700 、 E5700B に追加 EF570 または EF300 コントローラシェルフ。</block>
   <block id="f2c505979298b93cfd8e71dc78ddd1b0" category="admonition">異なる電圧タイプの PSU を混在させないでください。いつものように同じように置換します。</block>
   <block id="b7b26f8fd8107cf68f2bc572008d19a7" category="admonition">交換用コントローラには 16GB のメモリがあらかじめ取り付けられています。コントローラで 64GB の構成が必要な場合は、交換用コントローラを取り付ける前に、付属のアップグレードキットを使用してください。</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">著作権</block>
@@ -8750,10 +8699,8 @@
   <block id="3e0d4696992cb009b792ca52c4080196" category="admonition">サブネットマネージャを設定する前に、InfiniBand-diagsパッケージをインストールして、を通じてグローバル一意識別子（GUID）を取得する必要があります<block ref="db1fff1f41e48ae933f89caa6a9035c4" prefix=" " category="inline-code"></block> コマンドを実行しますを参照してください <block ref="33c9296cee3d3d5ec5f21b481b8c30ca" category="inline-xref-macro-rx"></block> InfiniBand-diagsパッケージのインストール方法については、を参照してください。</block>
   <block id="7f055c1166dd665b0b44651bedc2cbc8" category="list-text">ブートプロセスの一部として一度実行するサブネットマネージャスクリプトを作成します。</block>
   <block id="df45b26c6e6aa12c9a2da2dc8610745d" category="list-text">次の行を追加します。手順2で確認した値をに置き換えます<block ref="7804c104033334dfd1f4483b356e7e80" prefix=" " category="inline-code"></block> および<block ref="a343d59b38a9422b5e453e8b5ab007c0" prefix=" " category="inline-code"></block>。の場合<block ref="16a2e561c536a77cbfd10490ea398be6" prefix=" " category="inline-code"></block> および<block ref="5f2b9323c39ee3c861a7b382d205c3d3" prefix=" " category="inline-code"></block>では、サブネットマネージャのプライオリティを使用します。1が最低、15が最高です。</block>
-  <block id="233a179301cf4de0df435df2eb7e929a" category="list-text">という名前のsystemdサービスユニットファイルを作成します<block ref="c0248303a9c396ef63e7c8d1b55865fa" prefix=" " category="inline-code"></block>。</block>
   <block id="a377bc45676f5d1c2a8f8219a09c9b83" category="list-text">次の行を追加します。</block>
   <block id="4eb5da929a8b5274983c883ec977d36a" category="list-text">新しいサービスをシステムに通知します。</block>
-  <block id="053dd33688a35b5cefe88637ff4e2a16" category="list-text">を有効にして開始します<block ref="43be3ee7567c2cce7cc16a0555c90bf3" prefix=" " category="inline-code"></block>。</block>
   <block id="941060fc12806a5c3d9302d2624cb774" category="paragraph">互換性のある最新のRHEL 7、RHEL 8、RHEL9、SUSE Linux Enterprise Server 12または15サービスパックオペレーティングシステムを実行している必要があります。を参照してください<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> をクリックして、最新の要件を確認してください。</block>
   <block id="1f34187b1a209107eee63f82ab42cc05" category="paragraph">* RHEL 7、RHEL 8、またはRHEL 9*</block>
   <block id="7965a5bdacca6ec4414d73846a2effc0" category="doc">ファイルシステムの作成（RHEL 8、RHEL 9、SLES 15）</block>
@@ -8772,7 +8719,6 @@
   <block id="52b757f8b32ea9abd11ade22593e1b87" category="paragraph">RHEL 7 および SLES 12 では、 NVMe over InfiniBand を使用するマルチパスに Device Mapper Multipath （ DMMP ）を使用します。RHEL 8、RHEL9、およびSLES 15では、組み込みのネイティブのNVMeフェイルオーバーを使用します。実行している OS に応じて、適切に実行するためにマルチパスを追加で設定する必要があります。</block>
   <block id="d061a1419e660c90553f0a82e4f669dc" category="admonition">SLES 15およびRHEL 9では、ネイティブのNVMeマルチパスはデフォルトで有効になっており、追加の設定は必要ありません。</block>
   <block id="1424a7cf2a070f7dd12d78a849490f2c" category="paragraph">RHEL 7 および SLES 12 では、 NVMe over Fibre Channel を使用するマルチパスに Device Mapper Multipath （ DMMP ）を使用します。RHEL 8、RHEL 9、SLES 15では、組み込みのネイティブのNVMeフェイルオーバーを使用します。実行している OS に応じて、適切に実行するためにマルチパスを追加で設定する必要があります。</block>
-  <block id="509b37f1b5674ea3fcdd6f53b4a83cb8" category="paragraph">InfiniBand-diagsパッケージには、各InfiniBand（IB）ポートのグローバル一意識別子（GUID）を表示するためのコマンドが含まれています。付属のパッケージで OFED / RDMA がサポートされる Linux ディストリビューションのほとんどに InfiniBand-diags パッケージも付属しており、このパッケージに含まれるコマンドを使用して HCA に関する情報を表示できます。</block>
   <block id="6ee2d18851ba4498d7c9ba43881528c3" category="admonition">サブネットマネージャを設定する前に、InfiniBand-diagsパッケージをインストールして、を通じてグローバル一意識別子（GUID）を取得する必要があります<block ref="db1fff1f41e48ae933f89caa6a9035c4" prefix=" " category="inline-code"></block> コマンドを実行しますを参照してください <block ref="59608be4b8a68b7f95e7aa6a8924d39f" category="inline-xref-macro-rx"></block> InfiniBand-diagsパッケージのインストール方法については、を参照してください。</block>
   <block id="44da8255024278223616706dabffdcf2" category="admonition">サブネットマネージャを設定する前に、InfiniBand-diagsパッケージをインストールして、を通じてグローバル一意識別子（GUID）を取得する必要があります<block ref="db1fff1f41e48ae933f89caa6a9035c4" prefix=" " category="inline-code"></block> コマンドを実行しますを参照してください <block ref="8968844fa75d7274ef053da34cb4323f" category="inline-xref-macro-rx"></block> InfiniBand-diagsパッケージのインストール方法については、を参照してください。</block>
   <block id="7bfe6a8c2694c58155bcb8132f65ecd8" category="list-text">を有効にします<block ref="8732863da72605a20ed96b4eee87a5fb" prefix=" " category="inline-code"></block> デーモンが起動します。</block>
@@ -8798,7 +8744,6 @@
   <block id="e3ef1fa2600da4921ead110fb0d1606b" category="paragraph">表示されるドライブ特性は、自動方式と手動方式のどちらを選択したかによって異なります。詳細については、SANtricity System Managerのドキュメントを参照してください。<block ref="a35ecfb4da00f746430c0cae02d730d0" category="inline-link-rx"></block>。</block>
   <block id="30ec052a906564798e129e10f7d39ab0" category="list-text">VMware vCenter Server Applianceのサポートされるバージョン：6.7U3J、7.0U1、7.0U2、7.0U3、および8.0。</block>
   <block id="35372cbcff3be2cc25be5129c31c81c6" category="list-text">サポートされるアプリケーションホストのバージョン：Windows 2016、Windows 2019、Windows 2022</block>
-  <block id="02e5141224b0a2ac9f9a2b07a05b90b3" category="list-text">システムメモリ：512 MB</block>
   <block id="e3cf47c6cb2c608927e7de97ecbf20d2" category="list-text">セキュリティ対応ドライブには、Full Disk Encryption（FDE）ドライブと連邦情報処理標準（FIPS）ドライブがあります。FIPSドライブは、レベル140-2または140–3のいずれかで、レベル140-3がより高いセキュリティレベルです。140-2レベルと140-3レベルのドライブを組み合わせて選択した場合、プールまたはボリュームグループは下位のセキュリティレベル（140-2）で動作します。</block>
   <block id="1974aafa112f63127faafcfced06eda0" category="list-text">FDEのみのプールを作成する場合は、SecureCapable列で「* Yes-fde」を検索してください。FIPSのみのプールを作成する場合は、「はい- FIPS *」または「はい- FIPS（混在）」を探します。「Mixed」は140-2と140-3レベルのドライブが混在していることを示します。これらのレベルを組み合わせて使用する場合は、プールが下位レベルのセキュリティ（140～2）で動作することに注意してください。</block>
   <block id="b2d3e7c610f3962f9a7e3b9baa02c363" category="section-title">バージョン11.74の新機能</block>
@@ -8834,4 +8779,73 @@
   <block id="dfcfc178d6edc54d8706c59b747948d5" category="list-text">をインストールします<block ref="3b13fc847651d5be5c89aeab4722c099" prefix=" " category="inline-code"></block> オペレーティングシステムのパッケージ管理コマンドを使用してパッケージ化します。</block>
   <block id="79c617afe97932f20f52d1217736d403" category="list-text">という名前のsystemdサービスユニットファイルを作成します<block ref="6bddfc9da80e7ef0195a324214877004" prefix=" " category="inline-code"></block>。</block>
   <block id="d40e479d6bc1cf9824be2cfa7e837140" category="list-text">を有効にして開始します<block ref="6b64648adbe124ad96531f7f0dd977a4" prefix=" " category="inline-code"></block> サービス</block>
+  <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">必要なもの</block>
+  <block id="6e45870f8629b562b79da969a290951f" category="section-title">手順2：ホストポートのWWPNを確認する- NVMe/FC VMware</block>
+  <block id="2f5a12ce7256b2085ffbd47c6ada5cab" category="section-title">手順1：FCスイッチを設定する- VMware</block>
+  <block id="8177490e8cadc7f4b772200e86180fb2" category="section-title">手順2：ホストポートのWWPNを特定する- FC</block>
+  <block id="20ce9a06abc9195bebe0e59b26293e21" category="section-title">手順1：スイッチを設定します（iSCSI、VMware）</block>
+  <block id="7ffd227cb5a9d8c313e27ae6d4060249" category="section-title">手順2：ネットワークを設定する-- iSCSI VMware</block>
+  <block id="c68a106f59b3a963f6045af07b07b0c6" category="section-title">手順3：アレイ側のネットワークを設定する- iSCSI、VMware</block>
+  <block id="d8055035001bdb0000b27f355301370e" category="section-title">手順4：ホスト側のネットワークを設定する- iSCSI</block>
+  <block id="6a767cf6bee4c3579f40439895fda2b7" category="section-title">手順5：IPネットワーク接続の確認-- iSCSI、VMware</block>
+  <block id="063b0df0c14bee863fd6d206304aaf27" category="section-title">手順1：SASホスト識別子を特定する-- vmware</block>
+  <block id="047294bc09f8ed4e396d9739a1462dab" category="section-title">手順1：FCスイッチを設定する- Windows</block>
+  <block id="e4211d8cdea679b81e26d9910d042052" category="section-title">手順2：ホストのWWPNを確認し、推奨設定を適用する- FC、Windows</block>
+  <block id="eec7a038ccdf3e900f836e0ad0064352" category="section-title">手順1：スイッチを設定します。iSCSI、Windows</block>
+  <block id="86809c62a485c6e1f1cd50f8a442bedc" category="section-title">手順2：ネットワークを設定する-- iSCSI Windows</block>
+  <block id="8d7771526174dcfe25e99ed7f2ec957b" category="section-title">手順3：アレイ側のネットワークを構成する-- iSCSI、Windows</block>
+  <block id="5628dcecfdc23242b9050ffd0f4e0ca8" category="section-title">手順5：IPネットワーク接続の確認-- iSCSI、Windows</block>
+  <block id="a26b6112f0f78db7ee6507f0fe0deaeb" category="section-title">手順 6 ：設定を記録します</block>
+  <block id="3e2fccfcb2c1e5332c5dbf8b36d7aa80" category="section-title">手順1：SASホスト識別子の特定-- Windows</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">結果</block>
+  <block id="a6157a9850788d9c0341e93d5f79de31" category="summary">vCenterプラグインのインストールとアップグレードの要件および考慮事項</block>
+  <block id="d4dbf4915d26814b90635132e02de3a1" category="paragraph">SANtricity Storage Plugin for vCenterをインストールまたはアップグレードする前に、インストール要件とアップグレード時の考慮事項を確認してください。</block>
+  <block id="dbb4458edca7c5733da82369529b938e" category="paragraph">WindowsホストシステムにvCenter向けストレージプラグインをインストールして設定できます。プラグインのインストールには次の要件が含まれています</block>
+  <block id="2e5d14f7919ff3c6138e7845aec4f915" category="paragraph">サポートされるバージョン</block>
+  <block id="b41bb59cbbaa2802af53d977c440f2c8" category="paragraph">互換性の詳細については、を参照してください<block ref="49d81d143d5c8b402603532056154481" category="inline-link-rx"></block>。</block>
+  <block id="361484a234b118c769c841cb7b8351d8" category="paragraph">WindowsホストにインストールできるvCenter向けStorage Pluginのインスタンスは1つだけで、1つのvCSAに登録できます。</block>
+  <block id="11b02af429676c3e4ef0b14f72c58b44" category="paragraph">vCenter向けストレージプラグインを実行してログを作成するために必要な十分なスペースがあります。使用可能なディスクスペースについて、システムが次の要件を満たしていることを確認してください。</block>
+  <block id="5f5fc15545b1dee5b3f1c2ee92f47de0" category="list-text">必要なインストールスペース：275MB</block>
+  <block id="9bcf5bd8266f8eea99112a520f67ad79" category="list-text">ストレージ容量：275 MB + 200 MB（ロギング）</block>
+  <block id="4cdb1974fd7f08cb281a8396b499d8f7" category="list-text">システムメモリ—512 MB</block>
+  <block id="206c0580c23a54528ad2d285e97454b4" category="paragraph">vCenter向けストレージプラグインは、ライセンスキーを必要としない、無償のスタンドアロン製品です。ただし、該当する著作権とサービス利用規約が適用されます。</block>
+  <block id="cdd47ce62ae0283ba81fbbfac98aa0be" category="paragraph">以前のバージョンからアップグレードする場合は、アップグレード前にプラグインをvCSAから登録解除する必要があります。</block>
+  <block id="167e9fb1b11b78bdc503cae6390a6818" category="list-text">アップグレード中は、プラグインの以前の構成設定のほとんどが保持されます。これには、ユーザパスワード、検出されたすべてのストレージシステム、サーバ証明書、信頼された証明書、サーバのランタイム設定などが含まれます。</block>
+  <block id="4dcf1264688d388f8c1ead31971aded6" category="list-text">アップグレードプロセスでは*。vcenter.properties*ファイルは保持されないため、アップグレード前にプラグインの登録を解除する必要があります。アップグレードが完了したら、プラグインをvCSAに再度登録できます。</block>
+  <block id="23d80e8f2ebb14976e8d910eea4d386b" category="list-text">リポジトリにロードされていたすべてのSANtricity OSファイルは、アップグレード中に削除されます。</block>
+  <block id="2e7d2097c91ceed4e818c5518afa994a" category="summary">SANtricity Storage Plugin for vCenterをインストールまたはアップグレードします。</block>
+  <block id="259aa472928a9297b2dc9f3f8b125b3b" category="doc">vCenter向けストレージプラグインをインストールまたはアップグレードします</block>
+  <block id="3b840adf9a5dcc09c69daab725b7c465" category="paragraph">Storage Plugin for vCenterをインストールし、プラグインの登録を確認する手順は、次のとおりです。これらの手順を使用してプラグインをアップグレードすることもできます。</block>
+  <block id="bda87156c434adbda0ab9a9dfdf4203c" category="paragraph">の要件をシステムが満たしていることを確認します <block ref="20ce28c64503bb775dd7ac22c0aadd0e" category="inline-link-macro-rx"></block>。</block>
+  <block id="84f59f102df96e2886b696e130b28443" category="admonition">アップグレードプロセスでは、*。vcenter.properties*ファイルは保持されません。アップグレードする場合は、アップグレード前にプラグインの登録を解除する必要があります。アップグレードが完了したら、プラグインをvCSAに再度登録できます。</block>
+  <block id="a2c33f0d50276fb56d5066c659a36281" category="list-text">インストールが開始されたら、画面の指示に従っていくつかの機能を有効にし、いくつかの設定パラメータを入力します。選択した内容は、必要に応じてあとで構成ファイルで変更できます。</block>
+  <block id="685fd8088c2b843b61f4afa2c0588163" category="admonition">アップグレードの実行中、構成パラメータの入力は求められません。</block>
+  <block id="5a71fa4a4c3dcb9f7fb7866f2d54b837" category="admonition">インストール時に、証明書の検証を求めるプロンプトが表示されます。プラグインとストレージアレイの間で証明書の検証を実施する場合は、このチェックボックスを選択したままにします。この適用では、ストレージアレイ証明書がプラグインに対して信頼されているかどうかがチェックされます。証明書が信頼されていない場合は、プラグインに追加できません。証明書の検証を無視する場合は、チェックボックスを選択解除して、すべてのストレージアレイを自己署名証明書を使用してプラグインに追加できるようにします。証明書の詳細については、プラグインインターフェイスから入手できるオンラインヘルプを参照してください。</block>
+  <block id="9aa965893e984bad2c9729b6444a575c" category="list-text">Webserver Startedというメッセージが表示されたら、* OK *をクリックしてインストールを完了し、* Done *をクリックします。</block>
+  <block id="127bf35b11d9e63d1023ec8556d4bcaf" category="admonition">プラグインを登録できる vCSA は 1 つだけです。別のvCSAに登録するには、現在のvCSAからプラグインの登録を解除し、アプリケーションホストからアンインストールする必要があります。その後、プラグインを再インストールして他のvCSAに登録できます。</block>
+  <block id="58eaebf972358f1cf03d386a4ade1a0f" category="paragraph-title">次の手順</block>
+  <block id="6d4f7aaea60249778cba2f48ab44265c" category="list-text">&lt;asupdata enable="Boolean_value" timestamp="timestamp"&gt; の行を探します</block>
+  <block id="9f8389aeec49fcf74df4811ae74671bb" category="paragraph">rw（古いアレイのレガシー）</block>
+  <block id="da4eb5c5c70275ba4c87430e9eb2caa1" category="paragraph">ro（レガシーアレイ）</block>
+  <block id="520ae3e14dc7dcddbce514f73ae5f9c9" category="doc">Web Services Proxyファイルをインストールまたはアップグレードします</block>
+  <block id="f036aa96cb85f83dc2dad71a70ca9ab9" category="paragraph">インストールを行うには、ファイルをダウンロードし、 Linux サーバまたは Windows サーバにプロキシパッケージをインストールします。これらの手順を使用してプロキシをアップグレードすることもできます。</block>
+  <block id="9ab5a43912057c3f252ae0aa5ffafa08" category="paragraph">では、次のドライブがコントローラごとに1つのホストインターフェイスカード（HIC）でサポートされます。</block>
+  <block id="d7873c5a31e9fb583fb911435316e255" category="list-text">NVMe SSDドライブ：コントローラシェルフに最大24本のNVMe SSDドライブを搭載できます。</block>
+  <block id="99017918290ad98fceaa8544139404ea" category="list-text">拡張シェルフを備えたNL-SASドライブ：DE212CシェルフとDE460Cシェルフを組み合わせても、DE212Cシェルフのみを使用しないかぎり、合計240台のNL-SASドライブスロットと4台の拡張シェルフを超えないようにします。その後、DE212Cシェルフを8台使用できます。たとえば、DE460Cシェルフ4台、DE212Cシェルフ8台、DE460Cシェルフ2台、DE212シェルフ2台などです。</block>
+  <block id="f7bdca5a10b1a8a32a0410aa51cc3658" category="list-text">拡張シェルフを備えたSAS SSDドライブ：DE212C、DE224C、およびDE460Cのシェルフが混在している場合、DE212Cシェルフのみを使用しないかぎりSAS SSDドライブスロット数96と拡張シェルフ4台の合計を超えないようにしてください。DE212Cシェルフを8台使用することも可能です。たとえば、DE460Cシェルフ1台とDE224Cシェルフ1台とDE212Cシェルフ1台、DE224Cシェルフ4台、DE212Cシェルフ8台などです。</block>
+  <block id="d4f4328db6f2e4f903874bc046fd613f" category="list-text">拡張シェルフを備えたNL-SASドライブ：DE212CシェルフとDE460Cシェルフが混在していても、DE212Cシェルフのみを使用しないかぎり、合計420台のNL-SASドライブスロットと7台の拡張シェルフを超えない場合は、DE212Cシェルフを8台使用できます。たとえば、DE460Cシェルフ7台、DE212Cシェルフ8台、DE460Cシェルフ5台、DE212シェルフ2台などです。</block>
+  <block id="538ff1eff5fd361d6f0b2adf6bbf0ed4" category="list-text">拡張シェルフを備えたSAS SSDドライブ：DE212C、DE224C、およびDE460Cのシェルフが混在している場合、DE212Cシェルフのみを使用しないかぎりSAS SSDドライブスロット数96と拡張シェルフ7台を超えないようにする必要があります。DE212Cシェルフを使用した場合は、DE212Cシェルフを8台使用できます。たとえば、DE460Cシェルフ1台とDE224Cシェルフ1台とDE212Cシェルフ1台、DE224Cシェルフ4台、DE212Cシェルフ8台などです。</block>
+  <block id="731e4c243221cff11b35e735d54a097c" category="section-title">2ポストラック：2U</block>
+  <block id="08e15a26eb1bed02ff476c90993bb81d" category="section-title">4ポストラックまたはキャビネット-- 2U</block>
+  <block id="f7e582702fa43947010600df41688562" category="section-title">4ポストラック-SuperRail</block>
+  <block id="88587640720455d00dd679a1ce9fe099" category="paragraph-title">例A：標準的なSAS構成のDE460Cディスクシェルフを2台搭載したE2860コントローラシェルフ</block>
+  <block id="5e2cc996382bb24824986ff473c63abc" category="paragraph-title">例B：標準的なSAS構成のDE460Cディスクシェルフ1台を搭載したE2860コントローラシェルフ</block>
+  <block id="7bb583eaeb72cab404957a32bf32e9fb" category="paragraph-title">例A：標準的なSAS構成のDE212C / DE224ディスクシェルフが3台搭載されたE5700コントローラシェルフ</block>
+  <block id="ab945691a98936597c2ea25ebe10559a" category="paragraph-title">例B：標準のSAS構成のDE212C / DE224ディスクシェルフが1台搭載されたE5700コントローラシェルフ</block>
+  <block id="45d7b912755be5cce50a63e39e38af8a" category="section-title">手順1：新しいコントローラのパーツ番号を確認する</block>
+  <block id="80517d3f6b5fb7efb65f606eaba16467" category="paragraph">ここで説明する 手順 環境 のホットアドで、DE212C、DE224C、DE460CドライブシェルフをE2800、E2800B、EF280、E5700、E5700Bに追加EF570、EF300、またはEF600コントローラシェルフ</block>
+  <block id="8a8126e8cdb353719a24e8201a310aee" category="list-text"><block ref="5b1d5e9837fad271f198b7479454fb9a" category="inline-xref-macro-rx"></block></block>
+  <block id="294b3397fedca884072c918fc613f61d" category="list-text"><block ref="b1d2c45bc75ed5d4a6faa0261f1569e8" category="inline-xref-macro-rx"></block></block>
+  <block id="04c5c6e14f0bbd925f3877a16bc2c6a5" category="section-title">オプション1：E2800またはE5700のドライブシェルフを接続する</block>
+  <block id="3519a93182c0883a5ee2951208ede7c9" category="section-title">オプション2：EF300またはEF600のドライブシェルフを接続する</block>
 </blocks>

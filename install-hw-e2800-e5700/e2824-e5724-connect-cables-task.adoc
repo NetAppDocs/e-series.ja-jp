@@ -45,6 +45,7 @@ image:../media/sas_cable.png[""]
 
 |===
 +
+.例A：標準的なSAS構成のDE212C / DE224ディスクシェルフが3台搭載されたE5700コントローラシェルフ
 image:../media/example_a_28_57.png[""]
 
 +
@@ -57,6 +58,7 @@ image:../media/example_a_28_57.png[""]
 
 
 +
+.例B：標準のSAS構成のDE212C / DE224ディスクシェルフが1台搭載されたE5700コントローラシェルフ
 image:../media/example_b_57_28.png[""]
 
 +

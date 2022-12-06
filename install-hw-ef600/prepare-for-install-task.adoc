@@ -13,6 +13,7 @@ summary: EF300 または EF600 を設置するには、アカウントを作成�
 [role="lead"]
 EF300 シリーズまたは EF600 シリーズストレージシステムの設置準備の方法について説明します。
 
+.作業を開始する前に
 SAS 拡張用に EF300 をケーブル接続する場合は、次の情報を確認します。
 
 * link:../maintenance-ef600/sas-add-supertask-task.html["SAS 拡張カードを追加します"^] SAS 拡張カードの取り付け

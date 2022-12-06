@@ -102,14 +102,14 @@ support.admin
 
 
  a| 
-RW
+rw（古いアレイのレガシー）
  a| 
 rw （読み取り / 書き込み）ユーザには、 storage.admin 、 support.admin 、および storage.monitor というロールが含まれています。このアカウントは、パスワードが設定されるまで無効になります。
 
 
 
  a| 
-RO
+ro（レガシーアレイ）
  a| 
 ro （読み取り専用）ユーザには、 storage.monitor ロールのみが含まれます。このアカウントは、パスワードが設定されるまで無効になります。
 
