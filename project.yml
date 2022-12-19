@@ -502,9 +502,9 @@ sidebar:
         - title: 概要と要件
           url: "/maintenance-ef600/drives-overview-supertask-concept.html"
         - title: EF300 ドライブを交換してください
-          url: "/maintenance-ef600/drives-replace-EF300-task.html"
+          url: "/maintenance-ef600/drives-replace-EF300-supertask-task.html"
         - title: EF600 ドライブを交換する
-          url: "/maintenance-ef600/drives-replace-supertask-task.html"
+          url: "/maintenance-ef600/drives-replace-EF600-supertask-task.html"
         - title: ドライブシェルフをホットアドします
           url: "/maintenance-ef600/drives-hotadd-drive-shelf-task.html"
       - title: ファン
