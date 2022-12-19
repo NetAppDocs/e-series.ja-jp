@@ -505,6 +505,8 @@ sidebar:
           url: "/maintenance-ef600/drives-replace-EF300-task.html"
         - title: EF600 ドライブを交換する
           url: "/maintenance-ef600/drives-replace-supertask-task.html"
+        - title: ドライブシェルフをホットアドします
+          url: "/maintenance-ef600/drives-hotadd-drive-shelf-task.html"
       - title: ファン
         pdf-filename: EF300 - EF600 はファンを維持します
         entries:
@@ -598,6 +600,8 @@ sidebar:
           url: "/maintenance-e2800/drives-60-replace-task.html"
         - title: ドライブドロワーの交換（ 60 ドライブ）
           url: "/maintenance-e2800/drives-60-supertask-task.html"
+        - title: ドライブシェルフをホットアドします
+          url: "/maintenance-e2800/drives-hotadd-drive-shelf-task.html"
       - title: ホストインターフェイスカード
         pdf-filename: E2800 では HIC が維持されます
         entries:
@@ -659,6 +663,8 @@ sidebar:
           url: "/maintenance-e5700/drives-60-replace-task.html"
         - title: ドライブドロワーの交換（ 60 ドライブ）
           url: "/maintenance-e5700/drives-drawer-supertask-task.html"
+        - title: ドライブシェルフをホットアドします
+          url: "/maintenance-e5700/drives-hotadd-drive-shelf-task.html"
       - title: ホストインターフェイスカード
         pdf-filename: E5700 では HIC が維持されます
         entries:
