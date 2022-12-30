@@ -14,7 +14,7 @@ summary: RoCE 環境で NVMe イニシエータを設定するには、 rdma-cor
 RoCE 環境で NVMe イニシエータを設定するには、 rdma-core および nvme-CLI パッケージをインストールして設定し、イニシエータの IP アドレスを設定し、ホストで NVMe-oF レイヤを設定します。
 
 .必要なもの
-互換性のある最新のRHEL 7、RHEL 8、RHEL 9 SUSE Linux Enterprise Server 12および15サービスパックオペレーティングシステムが実行されている必要があります。を参照してください https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] をクリックして、最新の要件を確認してください。
+互換性のある最新のRHEL 7、RHEL 8、RHEL 9、SUSE Linux Enterprise Server 12または15サービスパックオペレーティングシステムが実行されている必要があります。を参照してください https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] をクリックして、最新の要件を確認してください。
 
 .手順
 . RDMA パッケージと nvme-CLI パッケージをインストールします。
@@ -37,6 +37,23 @@ RoCE 環境で NVMe イニシエータを設定するには、 rdma-core およ�
 
 # yum install rdma-core
 # yum install nvme-cli
+----
+. RHEL 8およびRHEL 9の場合は、ネットワークスクリプトをインストールする。
++
+* RHEL 8 *
+
++
+[listing]
+----
+# yum install network-scripts
+----
++
+* RHEL 9*
+
++
+[listing]
+----
+# yum install NetworkManager-initscripts-updown
 ----
 . ホストのNQNを取得します。アレイに対してホストを設定する際に使用します。
 +
@@ -86,7 +103,7 @@ REMOTE_IPADDR=
 STARTMODE='auto'
 ----
 +
-* RHEL 7、RHEL 8、RHEL 9 *
+* RHEL 7 または RHEL 8*
 
 +
 以下の内容を含むサンプル・ファイル'/etc/sysconfig/network-scripts/ifcfg-eth4'を作成します
@@ -121,6 +138,61 @@ NAME='MT27800 Family [ConnectX-5]'
 NETWORK=
 REMOTE_IPADDR=
 STARTMODE='auto'
+----
++
+* RHEL 9*
+
++
+を使用します `nmtui` 接続を活動化および編集するためのツール。以下はサンプルファイルです `/etc/NetworkManager/system-connections/eth4.nmconnection` ツールは次のものを生成します。
+
++
+[listing]
+----
+
+[connection]
+id=eth4
+uuid=<unique uuid>
+type=ethernet
+interface-name=eth4
+
+[ethernet]
+mtu=4200
+
+[ipv4]
+address1=192.168.1.87/24
+method=manual
+
+[ipv6]
+addr-gen-mode=default
+method=auto
+
+[proxy]
+----
++
+以下はサンプルファイルです `/etc/NetworkManager/system-connections/eth5.nmconnection` ツールは次のものを生成します。
+
++
+[listing]
+----
+
+[connection]
+id=eth5
+uuid=<unique uuid>
+type=ethernet
+interface-name=eth5
+
+[ethernet]
+mtu=4200
+
+[ipv4]
+address1=192.168.2.87/24
+method=manual
+
+[ipv6]
+addr-gen-mode=default
+method=auto
+
+[proxy]
 ----
 . ネットワークインターフェイスを有効にします。
 +
