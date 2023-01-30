@@ -29,12 +29,10 @@ node.session.nr_sessions = 1
 +
 [listing]
 ----
-node.session.timeo.replacement_timeout=20
+node.session.timeo.replacement_timeout = 20
 ----
+. 必要に応じて、を設定できます `node.startup = automatic` /etc/iscsi/iscsid.confで、を実行する前にします `iscsiadm` セッションを保持するコマンドはリブート後も維持されます。
 . 'iscsid' および '(open-)iSCSI' サービスがオンであり ' ブートが有効になっていることを確認します
-+
-* Red Hat Enterprise Linux 7、8、9（RHEL 7、RHEL 8、およびRHEL9）*
-
 +
 [listing]
 ----
@@ -43,25 +41,13 @@ node.session.timeo.replacement_timeout=20
 # systemctl enable iscsi
 # systemctl enable iscsid
 ----
-+
-* SUSE Linux Enterprise Server 12 および 15 （ SLES 12 および SLES 15 ） *
-
-+
-[listing]
-----
-# systemctl start iscsid.service
-# systemctl enable iscsid.service
-----
-+
-オプションで '/etc/iscsi/iscsid.conf で 'node.startup=automatic' を設定してから 'iscsiadm コマンドを実行し ' 再起動後にセッションが持続するようにします
-
 . ホスト IQN イニシエータ名を取得します。この名前は、アレイに対してホストを設定する際に使用します。
 +
 [listing]
 ----
 # cat /etc/iscsi/initiatorname.iscsi
 ----
-. iSCSI ポートのネットワークを設定します。
+. iSCSIポートのネットワークを設定します。次に、RHELおよびSLESでの手順の例を示します。
 +
 
 NOTE: iSCSI イニシエータは、パブリックネットワークポートに加えて、別々のプライベートセグメントまたは VLAN 上で 2 つ以上の NIC を使用する必要があります。
@@ -70,39 +56,69 @@ NOTE: iSCSI イニシエータは、パブリックネットワークポート�
 .. ifconfig -aコマンドを使用して'iSCSIポート名を確認します
 .. iSCSI イニシエータポートの IP アドレスを設定します。イニシエータポートは、 iSCSI ターゲットポートと同じサブネット上にあることが必要です。
 +
-* Red Hat Enterprise Linux 7、8、9（RHEL 7、RHEL 8、およびRHEL9）*
+* Red Hat Enterprise Linux 7 および 8 （ RHEL 7 および RHEL 8 ） *
+
++
+サンプルファイルを作成します `/etc/sysconfig/network-scripts/ifcfg-<NIC port>` 次のコンテンツを含む。
 
 +
 [listing]
 ----
-# vim /etc/sysconfig/network-scripts/ifcfg-<NIC port>
+TYPE=Ethernet
+PROXY_METHOD=none
+BROWSER_ONLY=no
+BOOTPROTO=static
+DEFROUTE=yes
+IPV4_FAILURE_FATAL=no
+NAME=<NIC port>
+UUID=<unique UUID>
+DEVICE=<NIC port>
+ONBOOT=yes
+IPADDR=192.168.xxx.xxx
+PREFIX=24
+NETMASK=255.255.255.0
+NM_CONTROLLED=no
+MTU=
 ----
++
+IPv6に関するオプションの追加：
+
++
+[listing]
+----
+IPV6INIT=yes
+IPV6_AUTOCONF=no
+IPV6ADDR=fdxx::192:168:xxxx:xxxx/32
+IPV6_DEFROUTE=yes
+IPV6_FAILURE_FATAL=no
+IPV6_ADDR_GEN_MODE=eui64
+----
++
+* Red Hat Enterprise Linux 9（RHEL 9）*
+
++
+を使用します `nmtui` 接続を活動化および編集するためのツール。ツールによってが生成されます `<NIC port>.nmconnection` 内のファイル `/etc/NetworkManager/system-connections/`。
+
 +
 * SUSE Linux Enterprise Server 12 および 15 （ SLES 12 および SLES 15 ） *
 
 +
-[listing]
-----
-# vim /etc/sysconfig/network/ifcfg-<NIC port>
-----
-+
-編集：
+サンプルファイルを作成します `/etc/sysconfig/network/ifcfg-<NIC port>` 次のコンテンツを含む。
 
 +
 [listing]
 ----
-BOOTPROTO=none
-ONBOOT=yes
-NM_CONTROLLED=no
+IPADDR='192.168.xxx.xxx/24'
+BOOTPROTO='static'
+STARTMODE='auto'
 ----
 +
-追加：
+IPv6に関するオプションの追加：
 
 +
 [listing]
 ----
-IPADDR=192.168.xxx.xxx
-NETMASK=255.255.255.0
+IPADDR_0='fdxx::192:168:xxxx:xxxx/32'
 ----
 +
 
@@ -117,9 +133,9 @@ NOTE: 必ず両方の iSCSI イニシエータポートのアドレスを設定�
 .. Linux サーバから iSCSI ターゲットポートのすべてに ping を実行できることを確認します。
 
 
-. イニシエータとターゲットの間に iSCSI セッションを確立します（合計 4 つ）。
+. イニシエータとターゲットの間にiSCSIセッションを確立します（合計4つ）。確立する方法は2つあります。
 +
-.. ifaceを使用する場合は、iSCSI ifaceバインドを2つ作成してiSCSIインターフェイスを設定します。
+.. （オプション）ifaceを使用する場合は、iSCSI ifaceバインドを2つ作成してiSCSIインターフェイスを設定します。
 +
 [listing]
 ----
@@ -138,16 +154,21 @@ NOTE: インタフェースを一覧表示するには 'iscsiadm -m iface を使
 
 .. iSCSI ターゲットを検出します。次の手順のために、 IQN （各検出で同じ）をワークシートに保存します。
 +
-[listing]
-----
-# iscsiadm -m discovery -t sendtargets -p 192.168.0.1:3260 -I iface0 -P 1
-----
-+
-または
+*方法1（ifaceを使用）*
 
 +
 [listing]
 ----
+# iscsiadm -m discovery -t sendtargets -p <target_ip_address>:<target_tcp_listening_port> -I iface0
+# iscsiadm -m discovery -t sendtargets -p 192.168.0.1:3260 -I iface0
+----
++
+*方法2（ifaceなし）*
+
++
+[listing]
+----
+# iscsiadm -m discovery -t sendtargets -p <target_ip_address>:<target_tcp_listening_port>
 # iscsiadm -m discovery -t sendtargets -p 192.168.0.1:3260
 ----
 +
@@ -161,13 +182,16 @@ iqn.1992-01.com.netapp:2365.60080e50001bf1600000000531d7be3
 ----
 .. iSCSIイニシエータとiSCSIターゲット間の接続を作成します。
 +
+*方法1（ifaceを使用）*
+
++
 [listing]
 ----
-# iscsiadm -m node -T iqn.1992-01.com.netapp:2365.60080e50001bf1600000000531d7be3
--p 192.168.0.1:3260 -I iface0 -l
+# iscsiadm -m node -T <target_iqn> -p <target_ip_address>:<target_tcp_listening_port> -I iface0 -l
+# iscsiadm -m node -T iqn.1992-01.com.netapp:2365.60080e50001bf1600000000531d7be3 -p 192.168.0.1:3260 -I iface0 -l
 ----
 +
-または
+*方法2（ifaceなし）*
 
 +
 [listing]
