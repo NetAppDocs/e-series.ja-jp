@@ -14,7 +14,7 @@ summary: InfiniBand 環境で NVMe イニシエータを設定するには、 In
 InfiniBand 環境で NVMe イニシエータを設定するには、 InfiniBand パッケージ、 nvme-CLI パッケージ、および RDMA パッケージをインストールして設定し、イニシエータの IP アドレスを設定し、ホストで NVMe-oF レイヤを設定します。
 
 .必要なもの
-互換性のある最新のRHEL 7、RHEL 8、RHEL9、SUSE Linux Enterprise Server 12または15サービスパックオペレーティングシステムを実行している必要があります。を参照してください https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] をクリックして、最新の要件を確認してください。
+互換性のある最新のRHEL 7、RHEL 8、RHEL 9、SUSE Linux Enterprise Server 12または15サービスパックオペレーティングシステムが実行されている必要があります。を参照してください https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] をクリックして、最新の要件を確認してください。
 
 .手順
 . RDMA 、 nvme-CLI 、および InfiniBand パッケージをインストールします。
@@ -40,7 +40,24 @@ InfiniBand 環境で NVMe イニシエータを設定するには、 InfiniBand 
 # yum install rdma-core
 # yum install nvme-cli
 ----
-. IPoIB' を有効にします/etc/rdma/rdma.conf ファイルを編集し、「 IPoIB 」をロードするエントリを変更します。
+. RHEL 8またはRHEL 9の場合は、ネットワークスクリプトをインストールします。
++
+* RHEL 8 *
+
++
+[listing]
+----
+# yum install network-scripts
+----
++
+* RHEL 9*
+
++
+[listing]
+----
+# yum install NetworkManager-initscripts-updown
+----
+. RHEL 7の場合は、を有効にします `ipoib`。/etc/rdma/rdma.confファイルを編集し、をロードするためのエントリを変更する `ipoib`：
 +
 [listing]
 ----
@@ -52,7 +69,7 @@ IPOIB_LOAD=yes
 ----
 # cat /etc/nvme/hostnqn
 ----
-. IB ポートリンクがどちらも稼働しており、かつ State が Active であることを確認します。
+. IBポートリンクが両方とも稼働しており、かつStateがActiveであることを確認します。
 +
 [listing]
 ----
@@ -130,7 +147,7 @@ REMOTE_IPADDR=
 STARTMODE='auto'
 ----
 +
-* RHEL 7、RHEL 8、またはRHEL 9*
+* RHEL 7 または RHEL 8*
 
 +
 /etc/sysconfig/network-scripts/ifcfg-ib0 ファイルを次の内容で作成します。
@@ -169,6 +186,59 @@ IPV4=FAILURE_FATAL=yes
 IPV6INIT=no
 NAME=ib1
 ONBOOT=yes
+----
++
+* RHEL 9*
+
++
+を使用します `nmtui` 接続を活動化および編集するためのツール。以下はサンプルファイルです `/etc/NetworkManager/system-connections/ib0.nmconnection` ツールは次のものを生成します。
+
++
+[listing]
+----
+[connection]
+id=ib0
+uuid=<unique uuid>
+type=infiniband
+interface-name=ib0
+
+[infiniband]
+mtu=4200
+
+[ipv4]
+address1=10.10.10.100/24
+method=manual
+
+[ipv6]
+addr-gen-mode=default
+method=auto
+
+[proxy]
+----
++
+以下はサンプルファイルです `/etc/NetworkManager/system-connections/ib1.nmconnection` ツールは次のものを生成します。
+
++
+[listing]
+----
+[connection]
+id=ib1
+uuid=<unique uuid>
+type=infiniband
+interface-name=ib1
+
+[infiniband]
+mtu=4200
+
+[ipv4]
+address1=11.11.11.100/24'
+method=manual
+
+[ipv6]
+addr-gen-mode=default
+method=auto
+
+[proxy]
 ----
 . 「 ib 」インターフェイスを有効にします。
 +
