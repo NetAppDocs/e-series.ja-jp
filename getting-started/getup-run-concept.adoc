@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E-Series, eseries, E2800, E5700, EF300, EF600, 
 summary: E シリーズシステムの運用を開始するには、ハードウェアコンポーネントを設置し、ホストシステムを設定し、ストレージを設定します。 
 ---
-= E シリーズの運用を開始
+= Eシリーズのクイックスタートガイド
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -13,70 +13,61 @@ summary: E シリーズシステムの運用を開始するには、ハードウ
 [role="lead"]
 E シリーズシステムの運用を開始するには、ハードウェアコンポーネントを設置し、ホストシステムを設定し、ストレージを設定します。
 
-ストレージアレイを導入するためのワークフローは次のとおりです。
-
-image::../media/doccenterworkflow.gif[doccenterworkflow]
-
-
-
-== 手順 1 ：ハードウェアを設置する
-
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] ハードウェアを設置
+[role="quick-margin-para"]
 E シリーズハードウェアを設置する方法については、使用するストレージアレイとシェルフタイプに対応した設置とセットアップの手順書を参照してください。
 
+[role="quick-margin-list"]
 * link:../install-hw-ef600/index.html["24 ドライブシェルフの EF600 または EF300 シリーズ"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2842063["E2800 / EF280 または E5700 / EF570 シリーズ。 12 または 24 ドライブシェルフ構成です"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2842061["E2800 シリーズまたは E5700 シリーズ。 60 ドライブシェルフを搭載しています"^]
 
 
-
-
-== 手順 2 ：キャビネットをセットアップする
-
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] キャビネットをセットアップします
+[role="quick-margin-para"]
 ストレージアレイ用に新しいキャビネットをセットアップする場合は、キャビネットを設置場所に移動し、ハードウェアを設置して電源に接続する必要があります。キャビネットをセットアップするには、次の手順書を参照してください。
 
+[role="quick-margin-list"]
 * link:../install-hw-cabinet/index.html["3040 40U キャビネットを設置します"^]
 
 
-
-
-== 手順 3 ：レールを取り付ける
-
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] レールを取り付けます
+[role="quick-margin-para"]
 シェルフはラックマウントハードウェアとともに出荷されます。レールの詳しい取り付け手順については、使用するレールタイプを選択してください。
 
+[role="quick-margin-list"]
 * https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1652045["アジャスタブル支持レールを設置します"^]
 * https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2484194["4 ポストラックに 2U エンクロージャを設置します"^]
 * https://mysupport.netapp.com/ecm/ecm_download_file/ECMM1280302["2 ポストラックへの DE224C シェルフの設置"^]
 * http://docs.netapp.com/platstor/topic/com.netapp.doc.hw-rail-superrail/home.html["4 ポストラックへの SuperRail の設置（ DE224C / DE460C シェルフ）"^]
 
 
-
-
-== 手順 4 ：ケーブルを接続する
-
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] ケーブルを接続します
+[role="quick-margin-para"]
 設置とセットアップの手順（手順 1 ）には、ケーブルを接続する手順が記載されています。ただし、サポートされるケーブルとトランシーバのリスト、ケーブル接続のベストプラクティス、コントローラのホストポートに関する詳細情報が必要な場合は、次の手順を参照してください。
 
+[role="quick-margin-list"]
 * link:../install-hw-cabling/index.html["E シリーズハードウェアをケーブル接続"]
 
 
-
-
-== 手順 5 ：ホストを設定する
-
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"] ホストを設定
+[role="quick-margin-para"]
 ホストでストレージを使用できるようにするには、ホストのオペレーティングシステムタイプに対応するガイドを参照してください。
 
+[role="quick-margin-list"]
 * link:../config-linux/index.html["Linux の簡単な設定"]
 * link:../config-vmware/index.html["VMware の簡単な設定"]
 * link:../config-windows/index.html["Windows の簡単な設定"]
 
 
-
-
-== 手順 6 ：ストレージを設定する
-
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["6"] ストレージを設定する
+[role="quick-margin-para"]
 ストレージを設定するには、ブラウザにコントローラの IP アドレスを入力して、 Web ベースのインターフェイスである System Manager にアクセスします。セットアップウィザードを使用してシステムを設定できます。コマンドラインインターフェイス（ CLI ）を使用することもできます。
 
+[role="quick-margin-para"]
 使用するインターフェイスを選択します。
 
+[role="quick-margin-list"]
 * https://docs.netapp.com/us-en/e-series-santricity/system-manager/index.html["SANtricity システムマネージャ11.7xヘルプ"]
 * https://docs.netapp.com/us-en/e-series-santricity-116/index.html["SANtricity System Managerのヘルプ：11.6x"]
 
