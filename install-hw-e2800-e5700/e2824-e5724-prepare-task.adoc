@@ -14,7 +14,7 @@ summary: E5724 、 EF570 、 EF280 、 E2812 、 E2824 、または DE212C 、 D
 E5724 、 EF570 、 EF280 、 E2812 、 E2824 、または DE212C / DE224C シリーズストレージシステム。
 
 .手順
-. アカウントを作成し、でハードウェアを登録します http://mysupport.netapp.com/["mysupport.netapp.com"^]。
+. アカウントを作成し、でハードウェアを登録します http://mysupport.netapp.com/["ネットアップサポート"^]。
 . 次のものが同梱されていることを確認してください。
 +
 |===
@@ -130,11 +130,10 @@ image:../media/management_station_inst-hw-e2800-e5700_g60b3.png[""]
  a| 
 管理ソフトウェアでサポートされているブラウザ：
 
-** Google Chrome （バージョン 78 以降）
-** Microsoft Internet Explorer （バージョン 11 以降）
-** Microsoft Edge （ 88 以降）
-** Mozilla Firefox （バージョン 70 以降）
-** Safari （バージョン 12 以降）
+** Google Chrome（バージョン89以降）
+** Microsoft Edge（バージョン90以降）
+** Mozilla Firefox（バージョン80以降）
+** Safari（バージョン14以降）
 
 
 |===

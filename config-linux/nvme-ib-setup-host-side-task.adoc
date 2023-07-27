@@ -13,7 +13,7 @@ summary: InfiniBand 環境で NVMe イニシエータを設定するには、 In
 [role="lead"]
 InfiniBand 環境で NVMe イニシエータを設定するには、 InfiniBand パッケージ、 nvme-CLI パッケージ、および RDMA パッケージをインストールして設定し、イニシエータの IP アドレスを設定し、ホストで NVMe-oF レイヤを設定します。
 
-.必要なもの
+.作業を開始する前に
 互換性のある最新のRHEL 7、RHEL 8、RHEL 9、SUSE Linux Enterprise Server 12または15サービスパックオペレーティングシステムが実行されている必要があります。を参照してください https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] をクリックして、最新の要件を確認してください。
 
 .手順
@@ -282,16 +282,17 @@ method=auto
     inet6 fe80::202:c903:31:7851/64 scope link
        valid_lft forever preferred_lft forever
 ----
-. ホストで NVMe-oF レイヤを設定します。/etc/modules-load.d/ の下に次のファイルを作成して 'nvme-rdma' カーネルモジュールをロードし ' 再起動後もカーネルモジュールが常にオンになるようにします
+. ホストで NVMe-oF レイヤを設定します。/etc/modules-load.d/の下に次のファイルを作成して、 `nvme_rdma` カーネルモジュールと、再起動後もカーネルモジュールが常にオンになっていることを確認します。
 +
 [listing]
 ----
 
-# cat /etc/modules-load.d/nvme-rdma.conf
-  nvme-rdma
+# cat /etc/modules-load.d/nvme_rdma.conf
+  nvme_rdma
 ----
+. ホストをリブートします。
 +
-「 nvme-rdma 」カーネルモジュールがロードされていることを確認するには、次のコマンドを実行します。
+を確認するには `nvme_rdma` カーネルモジュールがロードされました。次のコマンドを実行します。
 
 +
 [listing]

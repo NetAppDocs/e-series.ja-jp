@@ -15,8 +15,11 @@ iSER over InfiniBand プロトコルを使用する構成の場合は、この�
 
 InfiniBand OFED ドライバスタックでは iSER と SRP の両方を同じポートで同時に実行できるため、追加のハードウェアは必要ありません。
 
-.必要なもの
-ネットアップ推奨の OFED をシステムにインストールしておきます。詳細については、を参照してください https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]。
+.作業を開始する前に
+次のものがあることを確認します。
+
+* ネットアップ推奨の OFED をシステムにインストールしておきます。詳細については、を参照してください https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]。
+
 
 .手順
 . ホストで iSCSI サービスを有効にして開始します。

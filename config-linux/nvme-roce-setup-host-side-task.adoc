@@ -13,7 +13,7 @@ summary: RoCE 環境で NVMe イニシエータを設定するには、 rdma-cor
 [role="lead"]
 RoCE 環境で NVMe イニシエータを設定するには、 rdma-core および nvme-CLI パッケージをインストールして設定し、イニシエータの IP アドレスを設定し、ホストで NVMe-oF レイヤを設定します。
 
-.必要なもの
+.作業を開始する前に
 互換性のある最新のRHEL 7、RHEL 8、RHEL 9、SUSE Linux Enterprise Server 12または15サービスパックオペレーティングシステムが実行されている必要があります。を参照してください https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] をクリックして、最新の要件を確認してください。
 
 .手順
@@ -202,16 +202,17 @@ method=auto
 # ifup eth4
 # ifup eth5
 ----
-. ホストで NVMe-oF レイヤを設定します。/etc/modules-load.d/ の下に次のファイルを作成して 'nvme-rdma' カーネルモジュールをロードし ' 再起動後もカーネルモジュールが常にオンになることを確認します
+. ホストで NVMe-oF レイヤを設定します。次のファイルを `/etc/modules-load.d/` をロードするには `nvme_rdma` カーネルモジュールと、再起動後もカーネルモジュールが常にオンになっていることを確認します。
 +
 [listing]
 ----
 
-# cat /etc/modules-load.d/nvme-rdma.conf
-  nvme-rdma
+# cat /etc/modules-load.d/nvme_rdma.conf
+  nvme_rdma
 ----
+. ホストをリブートします。
 +
-「 nvme-rdma 」カーネルモジュールがロードされていることを確認するには、次のコマンドを実行します。
+を確認するには `nvme_rdma` カーネルモジュールがロードされました。次のコマンドを実行します。
 
 +
 [listing]

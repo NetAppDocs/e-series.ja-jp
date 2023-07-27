@@ -102,6 +102,10 @@ image::../media/sam1130_ss_e2800_storage_array_profile_sn_smid_copy_maint-e2800.
 +
 .. [ サポートリソース ] タブで、 [* ストレージアレイプロファイル * ] リンクを探して選択します。
 .. テキストボックスに * feature pack サブモデル ID* と入力し、 * 検索 * をクリックします。
++
+
+NOTE: 「submodel」は「sub-model」と書くこともできる。
+
 .. 変更前の構成の機能パックサブモデル ID を確認します。
 +
 image::../media/storage_array_profile2_maint-e2800.gif[storage array profile2 maint e2800]

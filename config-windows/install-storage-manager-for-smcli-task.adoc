@@ -19,7 +19,9 @@ SANtricity Storage Manager には、管理タスクを実行するためのコ�
 
 NOTE: SANtricity ソフトウェア 11.60 以降を使用している場合は、次の手順は実行する必要はありません。SANtricity Secure CLI （ SMcli ）は SANtricity OS に含まれており、 SANtricity System Manager からダウンロードできます。SANtricity システムマネージャを使用して SMcli をダウンロードする方法の詳細については、 SANtricity システムマネージャオンラインヘルプの「ダウンロードコマンドラインインターフェイス（ CLI ） _ topic 」を参照してください。
 
-.必要なもの
+.作業を開始する前に
+次のものがあることを確認します。
+
 * SANtricity ソフトウェア 11.53 以前。
 * 適切な管理者権限またはスーパーユーザ権限です。
 * SANtricity Storage Manager クライアント用の、次の最小要件を持つシステム。

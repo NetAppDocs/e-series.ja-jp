@@ -14,7 +14,7 @@ summary: E2860 、 E5760 、または DE460 をインストールするには、
 E2860 、 E5760 、または DE460 シリーズのストレージシステムをインストールするための準備方法について説明します。
 
 .手順
-. アカウントを作成し、でハードウェアを登録します http://mysupport.netapp.com/["mysupport.netapp.com"^]。
+. アカウントを作成し、でハードウェアを登録します http://mysupport.netapp.com/["ネットアップサポート"^]。
 . 次のものが同梱されていることを確認してください。
 +
 |===
@@ -130,11 +130,10 @@ image:../media/management_station_inst-hw-e2800-e5700_g60b3.png[""]
  a| 
 管理ソフトウェアでサポートされているブラウザ：
 
-** Google Chrome （バージョン 47 以降）
-** Microsoft Internet Explorer （バージョン 11 以降）
-** Microsoft Edge （ EdgeHTML 12 以降）
-** Mozilla Firefox （バージョン 31 以降）
-** Safari （バージョン 9 以降）
+** Google Chrome（バージョン89以降）
+** Microsoft Edge（バージョン90以降）
+** Mozilla Firefox（バージョン80以降）
+** Safari（バージョン14以降）
 
 
 |===

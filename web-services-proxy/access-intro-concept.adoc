@@ -27,6 +27,7 @@ summary: セキュリティ対策として、 Web Services API と Unified Manag
 
 次の表に、各ロールの説明を示します。
 
+[cols="35h,~"]
 |===
 | ロール | 説明 
 
@@ -62,6 +63,7 @@ support.admin
 
 次の表に、 Web Services Proxy で使用可能なユーザログインを示します。
 
+[cols="35h,~"]
 |===
 | 事前定義されたユーザログイン | 説明 
 

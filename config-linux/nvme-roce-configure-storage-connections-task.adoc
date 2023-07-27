@@ -14,7 +14,9 @@ summary: コントローラに NVMe over RoCE 用の接続（ RDMA over Converge
 [role="lead"]
 コントローラに NVMe over RoCE （ RDMA over Converged Ethernet ）用の接続が含まれている場合は、 SANtricity System Manager のハードウェアページまたはシステムページで NVMe ポートを設定できます。
 
-.必要なもの
+.作業を開始する前に
+次のものがあることを確認します。
+
 * コントローラ上の NVMe over RoCE ホストポート。それ以外の場合、 System Manager では NVMe over RoCE 設定を使用できません。
 * ホスト接続の IP アドレス。
 

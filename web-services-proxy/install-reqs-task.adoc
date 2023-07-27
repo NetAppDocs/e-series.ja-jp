@@ -21,6 +21,7 @@ Web Services Proxy は Windows または Linux のホストシステムにイン
 
 プロキシインストールには次の要件があります。
 
+[cols="35h,~"]
 |===
 | 要件 | 説明 
 

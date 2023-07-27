@@ -20,4 +20,4 @@ summary: SANtricity ® OS アップグレードの概要
 * ドライブ -- ドライブのファームウェアをアップグレードする手順が含まれています
 
 
-アップグレードを開始する前に、を確認してください link:overview-upgrade-consider-task.html["アップグレード時の考慮事項"]。
+アップグレードを開始する前に、を確認してください  link:overview-upgrade-consider-task.html["アップグレード時の考慮事項"^]。

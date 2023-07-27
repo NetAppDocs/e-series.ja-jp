@@ -13,7 +13,7 @@ summary: マルチパスソフトウェアを設定します。これにより�
 [role="lead"]
 ストレージアレイへのパスを冗長化するには、マルチパスソフトウェアを設定します。
 
-.必要なもの
+.作業を開始する前に
 必要なパッケージをシステムにインストールする必要があります。
 
 * Red Hat （ RHEL ）ホストの場合、パッケージがインストールされていることを確認するには、「 rpm -q device-mapper-multipath 」を実行します。
@@ -59,8 +59,7 @@ systemctl enable multipathd
 dracut --force --add multipath
 ----
 . を使用します https://docs.netapp.com/us-en/e-series-santricity/sm-storage/create-host-manually.html["ホストを手動で作成する"] ホストが定義されているかどうかを確認するには、オンラインヘルプの手順 を参照してください。各ホストタイプの設定が、で収集したカーネル情報に基づいていることを確認します <<step4,手順4.>>。
-
-
++
 
 NOTE: 自動ロードバランシングは、カーネル3.9以前を実行しているホストにマップされているボリュームでは無効になります。
 

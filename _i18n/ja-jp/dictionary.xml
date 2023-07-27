@@ -341,7 +341,6 @@
   <block id="7664fe7044214c4315cb67d769e21a1a" category="summary">電源ケーブルを接続し、ドライブシェルフの電源をオンにします。</block>
   <block id="6113d267d99dfbff350dce7d26009671" category="doc">コントローラシェルフの電源をオンにします</block>
   <block id="d2bc0d64dd760b202ec2907fd44810aa" category="paragraph">電源ケーブルを接続してドライブシェルフの電源をオンにする方法について説明します。</block>
-  <block id="be957f4123963c8a3a4d8d8b36e8dc9e" category="paragraph">コントローラシェルフの電源を入れる前に、次の作業を行ってください。</block>
   <block id="5ceb28979bbe59f9cfcee59ae10968dd" category="list-text">ハードウェアを設置</block>
   <block id="672881f5c2cd0335072eb2cb47e8f2e5" category="list-text">静電気防止処置を施します。</block>
   <block id="c61d7b3418bd253d4dcd746096fe1266" category="list-text">各コントローラに 1 本ずつ電源ケーブルを接続します（下図の EF600 ）。</block>
@@ -370,9 +369,6 @@
   <block id="602581c7f4fef4e0ffc7c312b3efa341" category="summary">EF300 または EF600 を 2 ポストラックまたはネットアップシステムキャビネットに設置します。</block>
   <block id="923a86c9f908f09f61d33d7831905371" category="doc">ハードウェアを設置</block>
   <block id="d751bcfe66df83ffc12435f4dd821d73" category="paragraph">EF300 または EF600 ストレージシステムは、 2 ポストラックまたはネットアップシステムキャビネットに設置できます。</block>
-  <block id="a8c48c071808ad2651b915b013b97fef" category="paragraph">EF300 または EF600 ストレージシステムを設置する前に、次の作業を行ってください。</block>
-  <block id="0373910e51252c7b97dcbea9f4942604" category="inline-link">mysupport.netapp.com</block>
-  <block id="9d7ace3094547dba44a6a710e588173b" category="list-text">ハードウェアをに登録します<block ref="28649c93049a329043d206ec7fa0c6f8" category="inline-link-rx"></block>。</block>
   <block id="2d25dc407855f99aa2a0fe96d3aaffc7" category="list-text">静電気防止処置を施した平らな作業場所を準備します。</block>
   <block id="9ad20405ed7442681aff80b87cb2dba2" category="list-text">ハードウェアを開梱します。</block>
   <block id="ddaca6e351d1a3c9ab3d82db4c028ff5" category="list-text">箱から中身を取り出し、納品書と照合して確認します。</block>
@@ -400,7 +396,6 @@
   <block id="ed340a74210414952184f18bdea46abb" category="list-text"><block ref="59592944f1499a5ed0c513d73204b10a" category="inline-link-macro-rx"></block> SAS 拡張カードの取り付け</block>
   <block id="3b1d6e6330ca5bf54a0c22beaa407de9" category="inline-link-macro">ケーブル接続の概要</block>
   <block id="03d8927d2b1d15f40bf2f3ed72e44a9e" category="list-text"><block ref="cd760802de300bde5638960df8d1f993" category="inline-link-macro-rx"></block> SAS 拡張ケーブル接続の場合：</block>
-  <block id="9a1088df44acd632befae6a589d43474" category="list-text">アカウントを作成し、でハードウェアを登録します<block ref="28649c93049a329043d206ec7fa0c6f8" category="inline-link-rx"></block>。</block>
   <block id="eac0c4bdb6359eb499e188351f5a9f2d" category="list-text">次のものが同梱されていることを確認してください。</block>
   <block id="f63066afb77d7c003e18251ee221aefc" category="paragraph"><block ref="f63066afb77d7c003e18251ee221aefc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d6b6a1b586f8ed315e7d110da72191a0" category="paragraph">ドライブが取り付けられたシェルフ（ベゼルとエンドキャップは別に梱包）</block>
@@ -436,11 +431,6 @@
   <block id="900e4c394955e0720a8b42172aa18c8f" category="admonition">他社製のキャビネットを使用すると、電源ケーブルを原因で接続してコントローラへのアクセスを制限できます。</block>
   <block id="49fc51b075dc8edf1412b9c9514e429f" category="paragraph"><block ref="49fc51b075dc8edf1412b9c9514e429f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dcc887df0958a24f414c58b89298bc9b" category="paragraph">管理ソフトウェアでサポートされているブラウザ：</block>
-  <block id="4aed86ee8496175fd7faafa5c35fd6a1" category="list-text">Google Chrome （バージョン 78 以降）</block>
-  <block id="9471ea9488231b3eec10e1195279e441" category="list-text">Microsoft Internet Explorer （バージョン 11 以降）</block>
-  <block id="c3767efdeacb446b6fa6f38fb0ebcc8e" category="list-text">Microsoft Edge （ 88 以降）</block>
-  <block id="97cd5d08f3ac321127d6b56ff35b6274" category="list-text">Mozilla Firefox （バージョン 70 以降）</block>
-  <block id="412c6f332067d9b9f2a99e4bf825afdf" category="list-text">Safari （バージョン 12 以降）</block>
   <block id="4d3d862716fe69a21fb74abfd0035b2c" category="summary">コントローラをネットワークにケーブル接続して、ストレージシステムのセットアップと設定を行います。</block>
   <block id="6be903907d4a6ed0342253dd37020027" category="doc">ストレージシステムのセットアップと設定を完了</block>
   <block id="f1cb9cd9d8d75df1988e53e41e4dff92" category="paragraph">コントローラケーブルをネットワークに接続する方法と、セットアップと設定を実行する方法について説明します。</block>
@@ -510,33 +500,7 @@
   <block id="e278e6437347ba1b8b43475dafb1ed84" category="inline-link">11.50 リリースノート</block>
   <block id="7d69ef318412295725664b5711e60b81" category="list-text"><block ref="7d69ef318412295725664b5711e60b81" category="inline-link-rx"></block></block>
   <block id="7bf44c1a455e947396fedd5ddf411974" category="summary">SANtricity OS の新機能</block>
-  <block id="1a75366a6d4c821ee7e455bce4cffa25" category="section-title">バージョン 11.72 の新機能</block>
   <block id="824a3a83a007a97494ec5981cebf67a5" category="cell">新機能</block>
-  <block id="28b46397fb020adcaf0b119cbfa693b5" category="cell">SNMPv3 のサポート</block>
-  <block id="c2e4a04d91c5a3b8fe7446de157eb681" category="cell">複数のキーサーバへのキーのレプリケートをサポートする</block>
-  <block id="292510d91cd4366627aba2eec79ec942" category="cell">自己暗号化ドライブの外部キー管理の場合、外部キー管理の作成ダイアログに複数のキーサーバを追加するための新しいオプションが追加されました。</block>
-  <block id="68a7548c04bd5ae4d9d965b924cc722e" category="cell">ブラウザのバージョンを更新</block>
-  <block id="2d7d47101a0ad5c71e2101ebb7e5f475" category="cell">System Manager のブラウザの最小バージョンが更新されました。</block>
-  <block id="3c7e7b17dae4906b0da9248a0e7f39e2" category="section-title">バージョン 11.71 の新機能</block>
-  <block id="9f498a936b91eb825293b845ab4c4a34" category="cell">EF300 拡張</block>
-  <block id="e26cc7c9038cf4d3175e8bf30d816d86" category="cell">iSCSI 設定の fec モードオプション</block>
-  <block id="ea9c177239be0bc55bf551920e73ec9e" category="cell">リモートストレージボリューム</block>
-  <block id="ae376d8e855c99ce33d3f6e542edc956" category="cell">FDE 以外のドライブに追加された完全消去（消去）機能</block>
-  <block id="e85e5cd7a142a229a3e8752a4502bb6a" category="cell">E メールアラート用のセキュアな接続</block>
-  <block id="a98e92b119d04e5ca0c2e3a8c6cc6159" category="cell">AutoSupport の追加</block>
-  <block id="5994d3724fb50db3bc66184d3f47b830" category="cell">syslog アラートの形式が変更されました</block>
-  <block id="c91b20af8c08d49b519596d358be5e0f" category="section-title">バージョン 11.70 の新機能</block>
-  <block id="fd6d564757d9bebb4afdcbc6e49ae663" category="cell">新しいストレージシステムモデル– EF300</block>
-  <block id="c3164ba2335231fad0057dbe03d6e8dc" category="cell">新しいリソースプロビジョニング機能（ EF300 および EF600 のみ）</block>
-  <block id="86fffc443dc49ef49131fe738b172a29" category="cell">512e ブロックサイズの追加オプション（ EF300 および EF600 のみ）</block>
-  <block id="97815730af7a32b4bee2bd50133bcc3b" category="cell">AutoSupport ディスパッチをオンデマンドで送信するための新しいオプションです</block>
-  <block id="7648787a2f72ca73c563621d8f772039" category="cell">外部キー管理サーバの機能拡張</block>
-  <block id="5ce158a574155a1dbf2c52d1112ea5c9" category="list-text">バックアップ・キーを作成する機能を省略します。</block>
-  <block id="a83cf593b4f7f5cb340b9eb8c9b13daa" category="list-text">クライアント証明書とサーバ証明書に加えて、キー管理サーバの中間証明書を選択します。</block>
-  <block id="a41ead92ad6d32095eee6328103a4c8f" category="cell">証明書の機能拡張</block>
-  <block id="0d3d43e6247ef530e5466168527ca61c" category="cell">ボリュームグループの新しいオフライン初期化機能が追加されました</block>
-  <block id="0587e4aa2345855c1a604c02193816de" category="cell">構成データの収集機能が新しく追加されました</block>
-  <block id="fa255949f43078f9547e0b38d42d3df0" category="cell">12 ドライブケースのディスクプールのデフォルトの予約済み容量を変更</block>
   <block id="93abfbfe31ac8cb67502c94e622ee8a8" category="cell">SANtricity Unified Manager の略</block>
   <block id="98d8050fe87ace4e377bf1699943169c" category="summary">SANtricity Storage Plugin for vCenter では、 VMware vSphere Client セッションから E シリーズストレージアレイを統合管理できます。</block>
   <block id="0ea7e9962e3c0f9be7ab95c366381ed7" category="doc">vCenter 向けストレージプラグインの概要</block>
@@ -727,9 +691,7 @@
   <block id="958b076f7e1539852bedf91e5fe7a516" category="paragraph">システムは次の処理を実行します。</block>
   <block id="00c9f8995e9e372b1b21f15fc0c9001b" category="list-text">割り当てられたボリュームに次に使用可能な LUN 番号が受信されます。ホストはこの LUN 番号を使用してボリュームにアクセスします。</block>
   <block id="4faf06e0466760e50f45759abdf2041c" category="list-text">ホストに関連付けられているボリュームの一覧にユーザが指定したボリューム名が表示されます。該当する場合、ホストに関連付けられているボリュームの一覧には、工場出荷時に設定されたアクセスボリュームも表示されます。</block>
-  <block id="03fea832838d48ebb15f527aa6abd2cd" category="paragraph">vSphere Client でデータストアを作成する方法については、 VMware ドキュメントセンターで以下のトピックを参照してください。</block>
   <block id="7c7e75114a8c9222d975bdcf65b6e447" category="inline-link">vSphere Client で VMFS データストアを作成します</block>
-  <block id="23665d1daa8ffb139110bacef48d674f" category="list-text"><block ref="23665d1daa8ffb139110bacef48d674f" category="inline-link-rx"></block></block>
   <block id="3f6b953b35e3c46b4c78f3358ab087c5" category="section-title">ボリューム容量を増やして既存のデータストアの容量を増やします</block>
   <block id="9656b5c122337f9fc73cb071b360a0e6" category="paragraph">次の点を確認してください。</block>
   <block id="7cf61abe29c59213c314036c21f30dcc" category="list-text">ボリュームの関連付けられたプールまたはボリュームグループに十分な空き容量が必要です。</block>
@@ -747,11 +709,8 @@
   <block id="8ebea0904dbbd79829b4e8e18700fe35" category="list-text">レポート容量の拡張に使用できるレポート容量を追加するには、 * ボックスを使用します。メビバイト（ MiB ）、ギビバイト（ GiB ）、またはテビバイト（ TiB ）のいずれかで表示するように容量の値を変更できます。</block>
   <block id="47e3d95a3adbde336a43e0c9f80a08f6" category="list-text">[* 拡大（ * ） ] をクリックします</block>
   <block id="8eced8651ea7da59ed5fb12085b185c0" category="list-text">選択したボリュームで現在実行されている容量の拡張処理の進捗状況については、 Recent Tasks ペインを表示します。この処理には時間がかかることがあり、システムのパフォーマンスに影響する可能性があります。</block>
-  <block id="0315ca638646397d429dc910d02c61c1" category="list-text">ボリュームの容量が完了したら、次のトピックに示すように、 VMFS サイズを手動で拡張する必要があります。</block>
   <block id="9577a4dae7ff56da7f4a9a7339b5aeba" category="inline-link">vSphere Client で VMFS データストアの容量を増やします</block>
-  <block id="6732b2858e611126190f8b1ce8d187c4" category="list-text"><block ref="6732b2858e611126190f8b1ce8d187c4" category="inline-link-rx"></block></block>
   <block id="17771615949b8b68fe1647ab628a8c8b" category="section-title">ボリュームを追加して既存のデータストアの容量を拡張してください</block>
-  <block id="69e5b3af9cd470d8eb1ebb0fc532f6df" category="list-text">次に、ボリュームを目的のホストに割り当て、データストアの容量を増やします。次のトピックを参照してください。</block>
   <block id="b049a5a0784d0991375ef0cb4b388bca" category="summary">vCenter 向けプラグインインターフェイスを使用して、ネットワーク内のアレイの IP アドレスを検出します。</block>
   <block id="862879ef91eb9af9fb07069c01d3803b" category="doc">プラグインでストレージアレイを検出します</block>
   <block id="b4b29380bfb019afc0cd434b20d39182" category="paragraph">ストレージリソースを表示および管理するには、 Storage Plugin for vCenter インターフェイスを使用して、ネットワーク内のアレイの IP アドレスを検出する必要があります。</block>
@@ -1334,7 +1293,6 @@
   <block id="0a4fc9925721d0c06f330966916abde5" category="paragraph">適切な機能とサポートを確保するために、ドライバのインストールが必要になる場合があります。</block>
   <block id="278e7f4c390be32a319172d8f461e1dd" category="paragraph">ブートコードとファームウェアを更新する方法は、 HBA ベンダーごとに異なります。HBA のブートコードとファームウェアの更新に必要な手順書とソフトウェアの入手については、ベンダーの Web サイトでサポートセクションを参照してください。</block>
   <block id="267104c52d87eddcb4c3575796c3dba9" category="paragraph">ネットワークインターフェイスカード（ NIC ）のドライバ、ファームウェア、ブートコード</block>
-  <block id="89751b656ecdf8b63b8070935b0ff14a" category="paragraph">Microsoft Internet Explorer （ MSE ）</block>
   <block id="5a138d4de967691cc64add5999aa9ced" category="list-text">プールまたはボリュームグループが検出されていません。</block>
   <block id="0c3f79a0168a623515b2c693becc646f" category="paragraph">詳細については、 SANtricity System Manager のオンラインヘルプを参照してください。</block>
   <block id="cee6cea4420d7db9e86ff3dee8a886b3" category="summary">Windows の簡単な設定ワークフローを使用します。</block>
@@ -2580,8 +2538,6 @@
   <block id="110591307a30fe38d9a123895392650e" category="list-text">電源がオフになっている場合は、 5 つのうちのどのケーブルチェーンを取り外すかを手動で確認する必要があります。次の図は、ファンキャニスターを取り外したドライブシェルフの右側を示しています。ファンキャニスターを取り外してあるので、 5 つのケーブルチェーンと各ドロワーの垂直コネクタおよび水平コネクタを確認できます。</block>
   <block id="45cf6cdbf3770c81ac201cb107e00eaf" category="paragraph">一番上のケーブルチェーンがドライブドロワー 1 に接続され、一番下のケーブルチェーンがドライブドロワー 5 に接続されています。ドライブドロワー 1 を例に説明します。</block>
   <block id="893f37fd9fe04c8eed04d6e7e810b584" category="image-alt">トラフォードケーブルレール 1 保守 e5700</block>
-  <block id="ddb7e82d39051012ec7c4fa3f231186f" category="paragraph">* （ 1 ） * _ 垂直コネクタ（ミッドプレーンに接続） _</block>
-  <block id="6e0b9db3328f962af7c2596bee521640" category="paragraph">* （ 2 ） * _ ケーブルチェーン _</block>
   <block id="e66a45e25286ebd6f89b037f813d2d97" category="paragraph">* （ 3 ） * _ 水平コネクタ（引き出しに接続） _</block>
   <block id="d85c0e4b7f943005f1d369e2e79a43e5" category="list-text">簡単にアクセスできるように、右側のケーブルチェーンを指で左に動かします。</block>
   <block id="7a80980e0ab3c4a96cc4d5b19f3f93ff" category="list-text">右側のケーブルチェーンのいずれかを、対応する垂直ガイドレールから外します。</block>
@@ -4116,9 +4072,6 @@
   <block id="8165b3d8e6f4f4389b4387aad3bbe320" category="image-alt">ストレージアレイ profile2 maint ef600</block>
   <block id="9fbea7ff3b1d63ccc2388bf9de3b06eb" category="list-text">機能パックサブモデル ID を使用して、変更前の構成の対応するコントローラサブモデル ID を確認し、次の表から変更後の構成の Feature Activation Code を探します。次に、その Feature Activation Code をテキストファイルにコピーします。</block>
   <block id="13f3cf8c531952d72e5847c4183e6910" category="paragraph">443</block>
-  <block id="26bcb9f1cb6f391f4b2c18e676bb458d" category="paragraph">NVMe/FC</block>
-  <block id="e81c4e4f2b7b93b481e13a8553c2ae1b" category="paragraph">または</block>
-  <block id="bb0b9e255a3bf215a4f994ef912a5fd7" category="paragraph">NVMe/RoCE</block>
   <block id="550a141f12de6341fba65b0ad0433500" category="paragraph">444 番です</block>
   <block id="ec81c0ed52c5a94736046090d59f4c39" category="paragraph">DH5-HB4-ZK9QH</block>
   <block id="9b70e8fe62e40c570a322f1b0b659098" category="paragraph">448</block>
@@ -4137,7 +4090,6 @@
   <block id="a0b1bce25bf7a94aa21101339f6a3843" category="paragraph">LHS-RB4-ZDV29</block>
   <block id="e44d6de45bb7cb73e6a01a992336541f" category="paragraph">FH6-975-Z7Q7H</block>
   <block id="4d1e8fc0882f290c9e2561465e9e6c69" category="paragraph">0HI-Z75-Z4L5</block>
-  <block id="d7e5cfec25fe3fb66317ebf2e558a317" category="paragraph">NVMe/FC または NVMe/RoCE</block>
   <block id="8187d1a072ddc99fdb2f9f038025d4ad" category="paragraph">MHQ-M85-ZIJNT</block>
   <block id="706be4b242185f32a6c7d7a71d9fd4cb" category="paragraph">NVMe/FC または NVMe/IB</block>
   <block id="35b790bc7550e5221bca9853a4fb14f9" category="paragraph">4HS-685-ZJZ1U</block>
@@ -4170,7 +4122,6 @@
   <block id="666af42e109021e79993186039164ef0" category="paragraph">8HX-U95-Z5K6F</block>
   <block id="791acc53567cc150ccd705f42e68fd49" category="paragraph">UHZ-E95-Z71LH</block>
   <block id="dcc777a7b03231f109065e1444bb7a84" category="paragraph">SH2-X95-Z8IVS</block>
-  <block id="2a16fa59791f84533ec66e92db634cf7" category="paragraph">NVMe/FC または</block>
   <block id="7343cf71ac168e95ba7a9736d35e848d" category="paragraph">UH5-H95-Z9Z58</block>
   <block id="dd767b9b76063bd2d8539c97aba6c64e" category="paragraph">XH7-195-ZBGJC</block>
   <block id="b99d53e698fc9df4219b55fbbfda1a25" category="paragraph">FHA-K95-ZCXX0</block>
@@ -5505,7 +5456,6 @@
   <block id="aaff32263a368283058bd594add43c3a" category="doc">multipath.conf ファイルをセットアップします</block>
   <block id="c97b364c883793adf3d2520124580bcf" category="paragraph">multipath.conf ファイルは、マルチパスデーモン multipathd の構成ファイルです。</block>
   <block id="775309dc7f91ef62dc8e507c61e9ea84" category="admonition">SANtricity OS 8.30 以降では、デフォルト設定をそのまま使用することを推奨します。</block>
-  <block id="ad4806aee44ec3656193fc16283c1d1b" category="summary">安定した稼働を確保するために、導入計画を作成し、 NetApp Interoperability Matrix Tool （ IMT ）を使用して構成全体がサポートされていることを確認します。</block>
   <block id="658a1cfb9f949bb607568daa62dab461" category="doc">Linux 構成がサポートされていることを確認する</block>
   <block id="4da3965cf19b955b2ac32d45d1702ddf" category="list-text">にアクセスします<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block>。</block>
   <block id="f18c526fc5aa083d159dc96f771fc3ca" category="list-text">[ 検索（解決策 Search ） ] タイルをクリックします。</block>
@@ -5628,7 +5578,6 @@
   <block id="40efdf97c6552799245c0bb9c7156cae" category="list-text">アレイへの接続に使用する IP アドレスを確認します。「 ib0 」と「 ib1 」の両方に対してこのコマンドを実行します。</block>
   <block id="7895a100cce2fb9f671116c88a243a18" category="paragraph">次の例に示すように 'ib0' の IP アドレスは 10.10.10.255' です</block>
   <block id="0693aaa7965eda2507b31a871e54b133" category="paragraph">次の例に示すように 'ib1' の IP アドレスは '11.11.11.255' です</block>
-  <block id="1eab8c276623416692f2ab15fbfca861" category="list-text">ホストで NVMe-oF レイヤを設定します。/etc/modules-load.d/ の下に次のファイルを作成して 'nvme-rdma' カーネルモジュールをロードし ' 再起動後もカーネルモジュールが常にオンになるようにします</block>
   <block id="99954c29eb7aa9fda9be035a1b2f592d" category="summary">ボリュームを使用する前に、ホストがボリュームに対してデータの読み取りと書き込みを実行できることを確認します。</block>
   <block id="e2231e7db2c3293db0e8d72e2fcfe246" category="paragraph">ファイルシステムでフォーマットされた初期化済みボリューム。</block>
   <block id="6aa830600d297bbba2e711c0e55b6609" category="list-text">ホストで、 1 つ以上のファイルをディスクのマウントポイントにコピーします。</block>
@@ -5776,7 +5725,6 @@
   <block id="c3458af35a87b205befdafb97cfb818c" category="list-text">次のコマンドを使用して最初のパスで検出されたサブシステムに接続します。「 nvme connect -t rdma -n Discovered_sub_nqn -a target_ip_address -Q queue_depth_setting -l controller_loss_timeout_period</block>
   <block id="ecee470708b06c136afc8296235d59d1" category="admonition">システムがリブートしたりコントローラが長時間使用できない状態になった場合、 NVMe 接続は維持されません。</block>
   <block id="e11d5f2201c0be606810cbfc93d96891" category="admonition">コントローラ損失のタイムアウト時間として推奨される秒数は 3 、 600 秒（ 60 分）です。次の例に示すように '-l 3600 コマンド・ライン・オプションを使用して ' デフォルトの設定である 600 秒を 3600 秒でオーバーライドします</block>
-  <block id="f8110983d42b31fcea81a67a2d155ebd" category="list-text">現在接続されている NVMe デバイスのリストを表示するには 'nvme list' コマンドを使用します次の例では、「 nvme0n1 」が表示されています。</block>
   <block id="74d1b12d5ed308f971911d78804f8e6e" category="list-text">2 番目のパスで検出されたサブシステムに接続します。</block>
   <block id="f4aa860cb7f0d6983de8527030da8ac6" category="list-text">Linux の lsblk コマンドと grep コマンドを使用して、各ブロックデバイスに関する追加情報を表示します。</block>
   <block id="dd5b930833e0c8dd64b64e8f609f510e" category="list-text">現在接続されている NVMe デバイスの新しいリストを表示するには、「 nvme list 」コマンドを使用してください。次の例では、「 nvme0n1 」と「 nvme0n1 」が表示されています。</block>
@@ -6260,7 +6208,6 @@
   <block id="a879ee66e249fbeee1ae138438d18fe8" category="list-text">シングルコントローラ -- ストレージアレイのソフトウェア、およびオプションで IOM ファームウェアと不揮発性静的ランダムアクセスメモリ（ NVSRAM ）をアップグレードする手順を説明します。</block>
   <block id="46bc8576a7815e8eb9a10ff5d59cac56" category="list-text">複数のコントローラ -- 同じタイプの複数のストレージアレイ上の SANtricity OS ソフトウェアをアップグレードする手順について説明します</block>
   <block id="48c1ca5defe26b3e0c4d1e2e7368d701" category="list-text">ドライブ -- ドライブのファームウェアをアップグレードする手順が含まれています</block>
-  <block id="296e602ec8cd8c899029840a49ce97ab" category="paragraph">アップグレードを開始する前に、を確認してください <block ref="397a7b6697218a46323b6c580312f9dd" category="inline-link-macro-rx"></block>。</block>
   <block id="7c4a5891b1542263f11222fc188d8959" category="summary">単一の E シリーズコントローラのソフトウェアとファームウェアをアップグレードする。</block>
   <block id="d52a70488885ce444c9bb351cf8460ee" category="doc">単一のコントローラのソフトウェアとファームウェアをアップグレードします</block>
   <block id="fe284bcb126cdc7c6fd4a4151870094d" category="paragraph">コントローラを 1 台アップグレードすることで、最新の機能と修正をすべて利用できます。</block>
@@ -6530,7 +6477,6 @@
   <block id="cc54f468d2ac18e796e79f84a331074c" category="section-title">SANtricity リリース 11.4</block>
   <block id="bd2cfcab24475001dd81207ac244c8a1" category="summary">E2800 または E5700 を 2 ポストラックまたはネットアップシステムキャビネットに設置します。</block>
   <block id="448a97577ce7b342ad9a761abecb2e5e" category="paragraph">E5724 、 EF570 、 EF280 、 E2812 、 E2824 、または DE212C または DE224C のストレージシステムを 2 ポストラックまたはネットアップシステムキャビネットに搭載</block>
-  <block id="84d3553cd5edfee96bc4530427b049ec" category="paragraph">ハードウェアを設置する前に、次の作業を行ってください。</block>
   <block id="18d75254ebc527a2c996bf35fc9ae101" category="list-text">ESD リストバンドを装着し、静電気防止処置を施します。</block>
   <block id="802c4074203ba6ba97e2567d8b2e74c1" category="paragraph">以下の手順に進む前に、すべての手順を確認してください。</block>
   <block id="58483c487a48bff0ff470ac64f6bb18c" category="list-text">ハードウェアの中身を開封し、納品書と照合して確認します。</block>
@@ -6581,10 +6527,6 @@
   <block id="ee469072217f458e10d64df6379eca0a" category="paragraph">* 高さ *:6.87 インチ（ 17.46 cm ）</block>
   <block id="de886572d93cfb540958bcd9e52245d8" category="paragraph">* 最大重量 * ： 113 kg （ 250 ポンド）</block>
   <block id="9505009e6f019f71841892b4d68ccc72" category="paragraph"><block ref="9505009e6f019f71841892b4d68ccc72" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="781e38e727b5ccea6637b8f5ad2e7e6c" category="list-text">Google Chrome （バージョン 47 以降）</block>
-  <block id="d69d70a03d263bd459a54e45ce547a58" category="list-text">Microsoft Edge （ EdgeHTML 12 以降）</block>
-  <block id="ae6f094417120830192cad13d1b6c8cd" category="list-text">Mozilla Firefox （バージョン 31 以降）</block>
-  <block id="fc54174a9d1e55650ad7538d8b9506a0" category="list-text">Safari （バージョン 9 以降）</block>
   <block id="df943bc934853a93db409f62f2948398" category="summary">E2800 または E5700 アレイを設置してセットアップします。</block>
   <block id="c681e7dbbe1edec51b0f69b903121fe2" category="doc">E2800 および E5700 ストレージシステムをインストールしてセットアップする</block>
   <block id="5aa28b320260eb4f07464fe5ce083acc" category="paragraph">E2800 または E5700 ストレージシステムの設置とセットアップの方法について説明します。</block>
@@ -6948,7 +6890,6 @@
   <block id="acd1dcb9f4c3f9c9b28f9c1a4d234d1b" category="admonition">電源装置の交換用手順 は IOM の交換に適用されます。IOM を交換するには、電源装置交換用手順 を実行します。</block>
   <block id="f20b4bef1c485b65027bb64c40283577" category="paragraph"><block ref="f20b4bef1c485b65027bb64c40283577" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ebc31fad1cf84954196a7706294df684" category="paragraph">この 手順 環境 DCM および DCM2 ドライブ・シェルフ</block>
-  <block id="86e856206affbccd36d96e0932a14510" category="paragraph">「 nvme-rdma 」カーネルモジュールがロードされていることを確認するには、次のコマンドを実行します。</block>
   <block id="dbf42093a0041931999943f18d3f0986" category="paragraph">E2800 、 E2800B 、 EF280 、 E5700 、 EF5700B の環境 のケーブル接続については、次の情報を参照してください。 または EF570 コントローラシェルフから DE212C 、 DE224C 、 DE460 の各ドライブシェルフに接続できます。</block>
   <block id="f2c505979298b93cfd8e71dc78ddd1b0" category="admonition">異なる電圧タイプの PSU を混在させないでください。いつものように同じように置換します。</block>
   <block id="b7b26f8fd8107cf68f2bc572008d19a7" category="admonition">交換用コントローラには 16GB のメモリがあらかじめ取り付けられています。コントローラで 64GB の構成が必要な場合は、交換用コントローラを取り付ける前に、付属のアップグレードキットを使用してください。</block>
@@ -6974,37 +6915,6 @@
   <block id="228099d750c1289b9bfa62e7687ee971" category="cell"><block ref="228099d750c1289b9bfa62e7687ee971" category="inline-link-rx"></block></block>
   <block id="279a877b44d5476b61408bc38e5178f7" category="cell">NetApp E2800およびE5700ハイブリッドストレージアレイで実行される認定テストの結果について説明します。</block>
   <block id="bf37ab4daa569311ecb03e0f71cfe44e" category="cell">NetApp E2800およびE5700ハイブリッドストレージアレイでのGenetec Security Center Video Management Software（VM）の認定結果について説明します。</block>
-  <block id="09f15da1ede715dd9ce4f8fc402f6aa5" category="paragraph">次の表は、SANtricity OS 11.7で、EF300、EF600、E2800 / EF280、およびE5700 / EF570コントローラの管理が組み込まれた新機能を示しています。</block>
-  <block id="09ebea90b63074ba83d2ad844e89d70c" category="section-title">バージョン11.73の新機能</block>
-  <block id="36349de7ac0eb86303bed03895c1dcc2" category="paragraph">リソースプロビジョニングとDULBEのサポート</block>
-  <block id="16fb65d0cddfe2d4c247fdab06b8cc43" category="paragraph">このリリースでは'リソースプロビジョニング機能とDULBEドライブ機能が完全にサポートされるようになりましたこのサポートには、リソースでプロビジョニングされたボリュームでホストからのUNMAPをより幅広く使用できるようにすることも含まれています。</block>
-  <block id="e3b2852f4ef13c9d9eb1a41a50d744b5" category="paragraph">EF600 SAS（512e）の拡張</block>
-  <block id="299fb5bbb23387835d58bf5165cddeba" category="paragraph">このリリースでは、EF600ストレージシステム用にSAS-3エンクロージャへの拡張がサポートされます。この拡張では、 4KiB ブロックの NVMe SSD と 512e SAS SSD および HDD を共存させることができます。ただし、ブロックサイズが異なるドライブは、同じプールまたはボリュームグループに設定することはできません。</block>
-  <block id="c73d7f2c67532a6b036251cdeb908f76" category="paragraph">qlc SSDのサポート</block>
-  <block id="e7049769f502b79dadcc8c63383bd373" category="paragraph">このリリースでは、現在の世代のQLC SSDで、ドライブファームウェアでONTAP 機能が設定されていますが、Eシリーズ固有の全機能セットはサポートされていません。qlcドライブ（NVMeのみ）は低コストですが、書き込みパフォーマンスは低く、耐久性は低く、書き込みの多いワークロードには使用しないでください。</block>
-  <block id="854da640a0760b1616bb0284c5ac42aa" category="paragraph">TLS 1.3のサポート</block>
-  <block id="a1ebc729e73cec123d0c98336b6e1c01" category="paragraph">TLS 1.3の組み込み管理機能がサポートされるようになりました。この機能は、環境 System Managerと組み込みのWebサービスを有効または無効にする機能によってサポートされます。（TLS 1.3のサポートは、Web Services ProxyとUnified Managerの以前のリリースで追加されています）。</block>
-  <block id="f1f2fd644d915b365b5abb8c91c74bfa" category="paragraph">RAID 1 DDPは最低8ドライブ</block>
-  <block id="7b17410dd494661b52f2ac79eab0c721" category="paragraph">このリリースでは、プール内に少なくとも11本のSSDがRAID 1 DDPに必要ありません。この最小構成では、プールにRAID 1ボリュームしか作成されていない場合、8ドライブのSSDプールが許可されるようになりました。</block>
-  <block id="8b4b67bab63907548f025722a3d981e6" category="paragraph">EKMSキーの削除</block>
-  <block id="7aaef9b529c633049aca22e386a95abc" category="paragraph">ストレージ管理者は、古いキーを削除するために外部キー管理サーバ（EKMS）を要求できるようになりました。キーの削除は、設置されているドライブに新しいキーが追加されたあとのキーの再入力プロセスでのみ実行されます。</block>
-  <block id="a9ed1ee525d0d08488f9de3235270743" category="paragraph">SNMPv3がアラート通知にサポートされるようになりました。メニューで設定できます：[Settings][Alerts]。SNMPv3 は、強力な認証とデータ暗号化によってセキュリティを提供します。</block>
-  <block id="4cd824b82861a81d3a34355af5534978" category="cell">このリリースでは、 EF300 ストレージシステムの SAS-3 エンクロージャへの拡張がサポートされます。この拡張では、 4KiB ブロックの NVMe SSD と 512e SAS SSD および HDD を共存させることができます。ただし、ブロックサイズが異なるドライブは、同じプールまたはボリュームグループに設定することはできません。</block>
-  <block id="96d538d953209d533cee6c90da4de1a1" category="paragraph">25GB iSCSI ホストインターフェイスカードを使用するストレージアレイでは、 iSCSI ポートを設定するときに前方誤り訂正（ FEC ）モードを設定するための新しいオプションが追加されました。</block>
-  <block id="4c46d61572ef34b4dbdbc7690d745c3d" category="paragraph">オプションのリモートストレージボリューム機能を使用すると、 iSCSI 接続を使用してリモートストレージシステムからローカルの E シリーズストレージシステムにボリュームをインポートできます。リモートストレージには、 iSCSI でアクセス可能であれば、 E シリーズシステムと同じブランドを使用することも、別のストレージベンダーのストレージを使用することもできます。</block>
-  <block id="7113199ede26393de60c4e8d5222d08d" category="paragraph">ドライブ完全消去機能に FDE 以外手順のドライブが含まれるようになりました。ハードウェアページからドライブのコンテキストメニューを開いて「消去」を選択できます（以前は「 Secure Erase 」でした）。</block>
-  <block id="50c890918fa832fcbdebb84798840bcc" category="paragraph">暗号化された E メール通知を有効にするために、必要に応じて送信 E メール（アラート、 ASUP ディスパッチ）で認証クレデンシャルを指定できます。暗号化タイプには SMTPS および STARTTLS があります。</block>
-  <block id="31d5de0104fd289863adccff1475589e" category="paragraph">AutoSupport が有効になっていない場合、通知領域にアラートが表示されるようになりました。</block>
-  <block id="6972891f094c169717c1d2cc01a9c332" category="paragraph">syslog アラートの形式で RFC 5424 がサポートされるようになりました。</block>
-  <block id="1d9b013014a7b904368939502c5b6aad" category="paragraph">このリリースでは、低コストのオール NVMe フラッシュストレージシステム EF300 が導入されました。EF300 には、 NVMe SSD ドライブ × 24 、コントローラごとにホストインターフェイスカード（ HIC ） × 1 が搭載されています。サポートされる NVMe over Fabrics ホストインターフェイスには、 NVMe over IB 、 NVMe over RoCE 、 NVMe over FC があります。サポートされる SCSI インターフェイスには、 FC 、 IB over iSER 、 IB over SRP があります。複数の EF300 ストレージシステムやその他の E シリーズストレージシステムを Unified Manager で表示して管理することができます。</block>
-  <block id="43fc15888e6c15a34af56dfc2d49240a" category="paragraph">リソースプロビジョニング機能は、 EF300 および EF600 ストレージシステムで新たに導入されました。バックグラウンドの初期化プロセスを実行せずに、リソースでプロビジョニングしたボリュームをすぐに使用できます。</block>
-  <block id="34e8ca8f8da7ea96f1b8450def8131aa" category="paragraph">EF300 および EF600 ストレージシステムでは、ボリュームを設定して 512 バイトまたは 4KiB のブロックサイズをサポートすることができます。512e 機能が追加され、 iSCSI ホストインターフェイスと VMware OS がサポートされるようになりました。可能であれば、 System Manager から適切なデフォルト値が提示されます。</block>
-  <block id="caf318d779d33bdcaf1cb8e5ddefea9d" category="paragraph">新しい Send AutoSupport Dispatch 機能を使用すると、スケジュールされたディスパッチを待たずにテクニカルサポートにデータを送信できます。このオプションは、サポートセンターの [ サポート（ AutoSupport ） ] タブで使用できます。</block>
-  <block id="d71804131a489a34d629405530d25a01" category="paragraph">外部キー管理サーバに接続するための機能拡張は次のとおりです。</block>
-  <block id="734830643da23e9370e728f64d10f308" category="paragraph">このリリースでは、 OpenSSL などの外部ツールを使用して証明書署名要求（ CSR ）を生成できます。この場合、署名済み証明書とともに秘密鍵ファイルをインポートする必要があります。</block>
-  <block id="428d905bdf1b0c959591111aad19309d" category="paragraph">ボリュームの作成については、 System Manager でホストの割り当て手順をスキップする方法を使用して、新しく作成したボリュームをオフラインにすることができます。この機能は、SASドライブ上のRAIDボリュームグループにのみ該当します（動的ディスクプールや、EF300およびEF600ストレージシステムに含まれるNVMe SSDには該当しません）。この機能は、バックグラウンドで初期化を実行するのではなく、使用量が開始された時点でボリュームをフルパフォーマンスにする必要があるワークロードに対して利用されます。</block>
-  <block id="3caef3194845d0349b1fde3b790187bf" category="paragraph">この新機能は、ボリュームグループとディスクプールのすべてのデータを含む、コントローラからRAID構成データを保存します（「save storageArray dbmDatabase」のCLIコマンドと同じ情報）。この機能は、テクニカルサポートを支援するために追加され、サポートセンターの診断タブにあります。</block>
-  <block id="5a4dc582c4bbb046fe16599fb3458522" category="paragraph">以前は、 2 本のドライブに対応できる十分な予約済み（スペア）容量を備えた 12 ドライブのディスクプールが作成されていました。単一ドライブ障害に対応するようにデフォルトが変更され、よりコスト効率の高い小規模プールのデフォルトが提供されるようになりました。</block>
   <block id="3570beeead25c3023d709f9c9ee19c83" category="paragraph"><block ref="3570beeead25c3023d709f9c9ee19c83" category="inline-image-macro-rx" type="image"></block></block>
   <block id="594d2774cd1596c3aabeb365f5c0efb5" category="paragraph"><block ref="594d2774cd1596c3aabeb365f5c0efb5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1c59d0d383e44f01e66e32a395b91289" category="paragraph"><block ref="1c59d0d383e44f01e66e32a395b91289" category="inline-image-macro-rx" type="image"></block></block>
@@ -8651,7 +8561,6 @@
   <block id="27a81685959fe491960811c61481c35d" category="paragraph">次に'/etc/sysconfig/network/ifcfg-eth5`のサンプルファイルを作成します</block>
   <block id="f1d1c2a7d2a912bc6a5aa04e31b25d26" category="paragraph">以下の内容を含むサンプル・ファイル'/etc/sysconfig/network-scripts/ifcfg-eth4'を作成します</block>
   <block id="51be39b7e050efbe3d29b5d8c0430aa5" category="paragraph">次に'/etc/sysconfig/network-scripts/ifcfg-eth5`のサンプルファイルを作成します</block>
-  <block id="ffbb9e9bc4bfe3481683088489b9c286" category="list-text">ホストで NVMe-oF レイヤを設定します。/etc/modules-load.d/ の下に次のファイルを作成して 'nvme-rdma' カーネルモジュールをロードし ' 再起動後もカーネルモジュールが常にオンになることを確認します</block>
   <block id="ba5d5a8fa23f831ccd6827dc3b611469" category="paragraph">次に、/etc/sysconfig/network/ifcfg-ib1ファイルを作成します。</block>
   <block id="ca77b43383ee68c3baec39cef81b151e" category="list-text">ifconfig -aコマンドを使用して'iSCSIポート名を確認します</block>
   <block id="d601c251b180e2832efe894c46092431" category="list-text">iSCSIイニシエータとiSCSIターゲット間の接続を作成します。</block>
@@ -8725,13 +8634,6 @@
   <block id="35372cbcff3be2cc25be5129c31c81c6" category="list-text">サポートされるアプリケーションホストのバージョン：Windows 2016、Windows 2019、Windows 2022</block>
   <block id="e3cf47c6cb2c608927e7de97ecbf20d2" category="list-text">セキュリティ対応ドライブには、Full Disk Encryption（FDE）ドライブと連邦情報処理標準（FIPS）ドライブがあります。FIPSドライブは、レベル140-2または140–3のいずれかで、レベル140-3がより高いセキュリティレベルです。140-2レベルと140-3レベルのドライブを組み合わせて選択した場合、プールまたはボリュームグループは下位のセキュリティレベル（140-2）で動作します。</block>
   <block id="1974aafa112f63127faafcfced06eda0" category="list-text">FDEのみのプールを作成する場合は、SecureCapable列で「* Yes-fde」を検索してください。FIPSのみのプールを作成する場合は、「はい- FIPS *」または「はい- FIPS（混在）」を探します。「Mixed」は140-2と140-3レベルのドライブが混在していることを示します。これらのレベルを組み合わせて使用する場合は、プールが下位レベルのセキュリティ（140～2）で動作することに注意してください。</block>
-  <block id="b2d3e7c610f3962f9a7e3b9baa02c363" category="section-title">バージョン11.74の新機能</block>
-  <block id="158083b77acf87778347dd8cf3138b12" category="paragraph">FIPS 140-3をサポート</block>
-  <block id="93752d0e76882be98725c8b860259db3" category="paragraph">SASベースとNVMeベースの両方のSSDについて、特定のドライブでFIPS 140-3がサポートされるようになりました。FIPS 140-3レベルのSSDドライブは、すべてNVMeベースまたはすべてSASベースのドライブであれば、FIPS 140-2レベルのSSDドライブと共存できます。これらのレベルをボリュームグループとディスクプールで組み合わせて使用する場合は、グループまたはプールが下位レベルのセキュリティ（140 - 2）で動作することに注意してください。</block>
-  <block id="3f470942a1817eaa19da47ff83fd59ca" category="paragraph">MFAとSSHのサポート</block>
-  <block id="272f8c73e52dc0fe2c42cfc42fdbefc9" category="paragraph">SANtricity バージョン11.74以降では、リモートログイン機能を使用して、SSHキーやSSHパスワードの入力をユーザに求めることで多要素認証（MFA）を設定できます。ハードウェアセクションのメニューオプションが*リモートログインの変更*から*リモートログインの設定（SSH）*に変更されました。</block>
-  <block id="3b5b5feef66adc0768f35b724a334827" category="paragraph">アクセストークン</block>
-  <block id="e91c1fbb7ef80926929c6a0e87d2cea2" category="paragraph">このリリースには、アクセストークンを作成するための新機能が含まれています。これらのトークンを使用すると、ユーザ名やパスワードを公開することなく、REST APIまたはコマンドラインインターフェイス（CLI）で認証できます。この機能は、アクセス管理セクションで提供されています。</block>
   <block id="a2eca216cb41a80426c839353357173b" category="list-text">セキュリティ有効ドライブが取り付けられている状況でコントローラを交換する場合は、次の表を参照して、セキュリティタイプ（内部または外部）およびドライブの状態に応じた適切な手順を実行します。セキュリティ有効ドライブが取り付けられていない場合は、この手順を省略して、表の下のステップ3に進むことができます。</block>
   <block id="58d3a1b91b20c93e431800a59ecffea8" category="inline-link">コマンドラインインターフェイスリファレンス</block>
   <block id="7ee6d87fe161d4b56a5ae818d36005c2" category="admonition">表の一部の手順には、コマンドラインインターフェイス（CLI）のコマンドが必要です。これらのコマンドの使用方法については、を参照してください<block ref="26a74644087a8cc4596955787ae55f1d" category="inline-link-rx"></block>。</block>
@@ -8757,7 +8659,6 @@
   <block id="dfcfc178d6edc54d8706c59b747948d5" category="list-text">をインストールします<block ref="3b13fc847651d5be5c89aeab4722c099" prefix=" " category="inline-code"></block> オペレーティングシステムのパッケージ管理コマンドを使用してパッケージ化します。</block>
   <block id="79c617afe97932f20f52d1217736d403" category="list-text">という名前のsystemdサービスユニットファイルを作成します<block ref="6bddfc9da80e7ef0195a324214877004" prefix=" " category="inline-code"></block>。</block>
   <block id="d40e479d6bc1cf9824be2cfa7e837140" category="list-text">を有効にして開始します<block ref="6b64648adbe124ad96531f7f0dd977a4" prefix=" " category="inline-code"></block> サービス</block>
-  <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">必要なもの</block>
   <block id="6e45870f8629b562b79da969a290951f" category="section-title">手順2：ホストポートのWWPNを確認する- NVMe/FC VMware</block>
   <block id="2f5a12ce7256b2085ffbd47c6ada5cab" category="section-title">手順1：FCスイッチを設定する- VMware</block>
   <block id="8177490e8cadc7f4b772200e86180fb2" category="section-title">手順2：ホストポートのWWPNを特定する- FC</block>
@@ -8785,7 +8686,6 @@
   <block id="11b02af429676c3e4ef0b14f72c58b44" category="paragraph">vCenter向けストレージプラグインを実行してログを作成するために必要な十分なスペースがあります。使用可能なディスクスペースについて、システムが次の要件を満たしていることを確認してください。</block>
   <block id="5f5fc15545b1dee5b3f1c2ee92f47de0" category="list-text">必要なインストールスペース：275MB</block>
   <block id="9bcf5bd8266f8eea99112a520f67ad79" category="list-text">ストレージ容量：275 MB + 200 MB（ロギング）</block>
-  <block id="4cdb1974fd7f08cb281a8396b499d8f7" category="list-text">システムメモリ—512 MB</block>
   <block id="206c0580c23a54528ad2d285e97454b4" category="paragraph">vCenter向けストレージプラグインは、ライセンスキーを必要としない、無償のスタンドアロン製品です。ただし、該当する著作権とサービス利用規約が適用されます。</block>
   <block id="cdd47ce62ae0283ba81fbbfac98aa0be" category="paragraph">以前のバージョンからアップグレードする場合は、アップグレード前にプラグインをvCSAから登録解除する必要があります。</block>
   <block id="167e9fb1b11b78bdc503cae6390a6818" category="list-text">アップグレード中は、プラグインの以前の構成設定のほとんどが保持されます。これには、ユーザパスワード、検出されたすべてのストレージシステム、サーバ証明書、信頼された証明書、サーバのランタイム設定などが含まれます。</block>
@@ -8812,7 +8712,6 @@
   <block id="99017918290ad98fceaa8544139404ea" category="list-text">拡張シェルフを備えたNL-SASドライブ：DE212CシェルフとDE460Cシェルフを組み合わせても、DE212Cシェルフのみを使用しないかぎり、合計240台のNL-SASドライブスロットと4台の拡張シェルフを超えないようにします。その後、DE212Cシェルフを8台使用できます。たとえば、DE460Cシェルフ4台、DE212Cシェルフ8台、DE460Cシェルフ2台、DE212シェルフ2台などです。</block>
   <block id="f7bdca5a10b1a8a32a0410aa51cc3658" category="list-text">拡張シェルフを備えたSAS SSDドライブ：DE212C、DE224C、およびDE460Cのシェルフが混在している場合、DE212Cシェルフのみを使用しないかぎりSAS SSDドライブスロット数96と拡張シェルフ4台の合計を超えないようにしてください。DE212Cシェルフを8台使用することも可能です。たとえば、DE460Cシェルフ1台とDE224Cシェルフ1台とDE212Cシェルフ1台、DE224Cシェルフ4台、DE212Cシェルフ8台などです。</block>
   <block id="d4f4328db6f2e4f903874bc046fd613f" category="list-text">拡張シェルフを備えたNL-SASドライブ：DE212CシェルフとDE460Cシェルフが混在していても、DE212Cシェルフのみを使用しないかぎり、合計420台のNL-SASドライブスロットと7台の拡張シェルフを超えない場合は、DE212Cシェルフを8台使用できます。たとえば、DE460Cシェルフ7台、DE212Cシェルフ8台、DE460Cシェルフ5台、DE212シェルフ2台などです。</block>
-  <block id="538ff1eff5fd361d6f0b2adf6bbf0ed4" category="list-text">拡張シェルフを備えたSAS SSDドライブ：DE212C、DE224C、およびDE460Cのシェルフが混在している場合、DE212Cシェルフのみを使用しないかぎりSAS SSDドライブスロット数96と拡張シェルフ7台を超えないようにする必要があります。DE212Cシェルフを使用した場合は、DE212Cシェルフを8台使用できます。たとえば、DE460Cシェルフ1台とDE224Cシェルフ1台とDE212Cシェルフ1台、DE224Cシェルフ4台、DE212Cシェルフ8台などです。</block>
   <block id="731e4c243221cff11b35e735d54a097c" category="section-title">2ポストラック：2U</block>
   <block id="08e15a26eb1bed02ff476c90993bb81d" category="section-title">4ポストラックまたはキャビネット-- 2U</block>
   <block id="f7e582702fa43947010600df41688562" category="section-title">4ポストラック-SuperRail</block>
@@ -8867,6 +8766,74 @@
   <block id="4d34b8dd475537b31eded726b5f109a4" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> ホストを設定</block>
   <block id="e6fbc0b9673f8c86726688d7607fc8f5" category="inline-image-macro">6</block>
   <block id="8cb633130263590fcb215001ddbab715" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block> ストレージを設定する</block>
-  <block id="17fbe20fbbd5b537dbcef5b0ec0d1dea" category="section-title">バージョン11.75の新機能</block>
-  <block id="fc663b28a8d6054c2d97e0b897d7291f" category="paragraph">システムを11.80.x以降にアップグレードするには、11.70.5が実行されている必要があります。</block>
+  <block id="ddd0020a0684c14dbd50622f84d8917a" category="paragraph">次のものがあることを確認します。</block>
+  <block id="7647966b7343c29048673252e490f736" category="paragraph">八九</block>
+  <block id="8613985ec49eb8f757ae6439e879bb2a" category="paragraph">90</block>
+  <block id="f033ab37c30201f73f142449d037028d" category="paragraph">8時80分</block>
+  <block id="aab3238922bcc25a6f606eb525ffdc56" category="paragraph">14</block>
+  <block id="48302d2fba01b598c24ef8cb5486c530" category="list-text">ホストで NVMe-oF レイヤを設定します。/etc/modules-load.d/の下に次のファイルを作成して、<block ref="84210bdbe25e211d594fd7255d9817df" prefix=" " category="inline-code"></block> カーネルモジュールと、再起動後もカーネルモジュールが常にオンになっていることを確認します。</block>
+  <block id="bb648e7fc0d366deef63d637e0a76377" category="paragraph">を確認するには<block ref="84210bdbe25e211d594fd7255d9817df" prefix=" " category="inline-code"></block> カーネルモジュールがロードされました。次のコマンドを実行します。</block>
+  <block id="070e96bf6a4ddc9c8e8882425927de45" category="list-text">を使用します<block ref="f3d48156832e70ac41335c007fa76798" prefix=" " category="inline-code"></block> コマンドを実行して、現在接続されているNVMeデバイスのリストを表示します。</block>
+  <block id="3421354e6a9adde19a7c53b4efb8cb05" category="list-text">ホストで NVMe-oF レイヤを設定します。次のファイルを<block ref="5b084c473f7842460c228cc4f4e08f98" prefix=" " category="inline-code"></block> をロードするには<block ref="84210bdbe25e211d594fd7255d9817df" prefix=" " category="inline-code"></block> カーネルモジュールと、再起動後もカーネルモジュールが常にオンになっていることを確認します。</block>
+  <block id="9fe35a3f27c999e8d5bccf07e605e703" category="paragraph">次のものがあることを確認します。
+*ストレージ管理ポートと同じサブネット上にインストールおよび設定されたDHCPサーバ。</block>
+  <block id="1bdb35aa1d3b8abd63ef262600e1c9d9" category="list-text">システムメモリ—1.5 GB</block>
+  <block id="45c4e24bcbb96005a9f6413a6d3e8d61" category="paragraph">vSphere Clientでデータストアを作成するには、<block ref="1935085257ca6f59c3fa99634c576530" category="inline-link-rx"></block> VMwareドキュメントセンターのトピック。</block>
+  <block id="e1b44e87bdbcd1ae906703fecba966cf" category="list-text">ボリューム容量が完了したら、の説明に従ってVMFSサイズを手動で拡張する必要があります。<block ref="736c08ebbc8283f30abdffe8a802b25a" category="inline-link-rx"></block> VMwareドキュメントセンターのトピック。</block>
+  <block id="3e51eb8a98e37cd2bee48affec6b3f02" category="list-text">次に、ボリュームを目的のホストに割り当て、データストアの容量を増やします。</block>
+  <block id="d295d58115f15821d21734fad82dce5c" category="paragraph">を参照してください<block ref="05fc437e4ce8c739576db569ed487331" category="inline-link-rx"></block> 詳細については、VMwareドキュメントセンターのトピックを参照してください。</block>
+  <block id="8def14e5183fbb5677794536682b7d45" category="admonition">「submodel」は「sub-model」と書くこともできる。</block>
+  <block id="b4c31a3654f7f34af7d451e582bf910c" category="paragraph">*（1）*_ケーブルチェーン_</block>
+  <block id="4591a73cfd3cb0cf1a08402845480b71" category="list-text">SMclientコマンドを実行します。<block ref="66131a22d885314a8385d34d18407d77" prefix=" " category="inline-code"></block>。</block>
+  <block id="ed6ef0e289dde2b4b0d96e83a84886ed" category="list-text">両方のコントローラがリブートするまで待ちます。</block>
+  <block id="7b7a6e706bdcec884d822bcb95a94ff6" category="list-text">ハードウェアをに登録します<block ref="1a36b59ecae7684863b79a0f690b6840" category="inline-link-rx"></block>。</block>
+  <block id="9e03f2920bb645354640e8c3351f138b" category="list-text">アカウントを作成し、でハードウェアを登録します<block ref="1a36b59ecae7684863b79a0f690b6840" category="inline-link-rx"></block>。</block>
+  <block id="1592b862f4a1becd28d412c41f36cb11" category="list-text">Google Chrome（バージョン89以降）</block>
+  <block id="c7d212f9925e21aba22cc40abf3a28b1" category="list-text">Microsoft Edge（バージョン90以降）</block>
+  <block id="c6d379ca14207b822732863fc2d321b4" category="list-text">Mozilla Firefox（バージョン80以降）</block>
+  <block id="0e2cf8121bf46167d098bd693e028a06" category="list-text">Safari（バージョン14以降）</block>
+  <block id="ece376b7acc25f86ff2e09f80d38755c" category="paragraph">次の作業を行ってください。</block>
+  <block id="9be4f8ee760eeaa38f44e28753bb0c03" category="paragraph">次の表に、EF300、EF600、E2800 / EF280、およびE5700 / EF570コントローラの組み込みの管理用にSANtricity OS 11.8の新機能を示します。</block>
+  <block id="b88fbe45e9e75bdd6c5127ce8a22abe1" category="section-title">バージョン11.80の新機能</block>
+  <block id="8f407366493ebfbb4a6dec746e7c89f5" category="paragraph">強化されたボリュームパリティスキャン</block>
+  <block id="07c3c6708618172f589685373ed71a5d" category="paragraph">REST APIまたはCLIを使用して、ボリュームパリティスキャンをバックグラウンドプロセスとして起動できるようになりました。パリティスキャンは、スキャン処理を完了するために必要な限りバックグラウンドで実行されます。スキャン処理は、コントローラのリブートおよびフェイルオーバー処理の間も維持されます。</block>
+  <block id="b9a173a4a6a7b368e4cd4fde15879372" category="paragraph">Unified ManagerでのSAMLのサポート</block>
+  <block id="dc505118a542aefe283668ff60bf1633" category="paragraph">Unified ManagerでSecurity Assertion Markup Language（SAML）がサポートされるようになりました。Unified ManagerでSAMLを有効にすると、ユーザインターフェイスを操作するために、アイデンティティプロバイダに対して多要素認証を使用する必要があります。Unified ManagerでSAMLを有効にすると、IdPを経由せずにREST APIを使用して要求を認証することはできません。</block>
+  <block id="43a12a9165de329d02388e8e878f20ca" category="paragraph">自動構成機能</block>
+  <block id="ef6a29a31f9fb810c02278975cd6cd39" category="paragraph">アレイの初期セットアップ時に自動構成機能で使用するボリュームのブロックサイズパラメータを設定できるようになりました。この機能は、CLIでは「blocksize」パラメータとしてのみ使用できます。</block>
+  <block id="017965dda869643c4d632c18853208a2" category="paragraph">コントローラファームウェアの暗号化署名</block>
+  <block id="f9b1cc083f0890b8fff17a83a0360f47" category="paragraph">コントローラファームウェアは暗号署名されています。シグネチャは、初回ダウンロード時および各コントローラのブート時にチェックされます。エンドユーザへの影響はありません。署名は、CAによって発行された拡張検証証明書によって裏付けられます。</block>
+  <block id="637780f8b22fe474ce198ef516dd7d6f" category="paragraph">ドライブファームウェアの暗号化署名</block>
+  <block id="a8c2ab0b22d074faf460a15d6648a3e7" category="paragraph">ドライブファームウェアは暗号署名されています。署名は最初のダウンロード時にチェックされ、CAによって発行された拡張検証証明書によってバックアップされます。ドライブファームウェアの内容がZIPファイルとして提供されるようになりました。ZIPファイルには、署名済みの古いファームウェアと署名済みの新しいファームウェアが含まれています。ユーザーは、ターゲットシステムで実行されているコードのリリースバージョンに基づいて適切なファイルを選択する必要があります。</block>
+  <block id="3c65e3636111523111e45a49a80face3" category="paragraph">外部キーサーバ管理-証明書のキーサイズ</block>
+  <block id="406774a2d5f641d5566318ef7eb88033" category="paragraph">新しいデフォルトの証明書キーサイズは3072ビット（2048から）です。最大4096ビットのキーサイズがサポートされます。デフォルト以外のキーサイズをサポートするには、NVSRAMビットを変更する必要があります。</block>
+  <block id="710e42f1cedbf3e670aace3815d6e451" category="paragraph">ブロックサイズが512bのドライブを使用した、より大きなダイナミックディスクプールサイズのサポート</block>
+  <block id="7a4f6b11e091466663e9c7d3c9480717" category="paragraph">バージョン1プールバージョンタイプを使用しているお客様は、最大48 TBのディスクプールを使用できるようになりました。古いバージョンでは、最大24TBのディスクプールサイズがサポートされます。既存のディスクプールをより大きなサイズに変換する場合は、最初にすべてのボリュームを削除する必要があります。バージョン1のディスクプールが存在する場合、ダウングレード操作は制限されます。</block>
+  <block id="9a1c6a24950fba4eade84dc9952a77dd" category="paragraph">System ManagerとUnified Managerは、ブラウザの最小要件を満たしていないと起動しません。</block>
+  <block id="09a616fc9241625ec6003f2da3c0cff9" category="paragraph">System ManagerまたはUnified Managerを起動するには、少なくともバージョンのブラウザが必要です。サポートされる最小バージョンは次のとおりです。</block>
+  <block id="6cdb1f943282038a6441359c5c88f812" category="list-text">Firefoxの最小バージョン80</block>
+  <block id="773389fc57f11b52dbe4c622adc51a3b" category="list-text">Chrome最小バージョン89</block>
+  <block id="2ac44b1b15c0ea01cbb812f5c6cf9b1e" category="list-text">エッジ最小バージョン90</block>
+  <block id="3534d42485ecd595e87248bbb2c6fb1b" category="list-text">Safariの最小バージョン14</block>
+  <block id="bb4e0c918ecc32e775e010bc9f6eff59" category="paragraph">FIPS 140-3 NVMe SSDドライブのサポート</block>
+  <block id="eca8285b82a553e8fbe1803bfdeced3e" category="paragraph">NetApp認定のFIPS 140-3 NVMe SSDドライブがサポートされるようになりました。これらは、ストレージアレイプロファイルおよびSystem Managerで正しく識別されます。</block>
+  <block id="fb8aaa0a635cb460bcf41d9303fca571" category="paragraph">EF300およびEF600でのSSD読み取りキャッシュのサポート</block>
+  <block id="14d2cdc88c041d0313b6c691ee27338f" category="paragraph">SAS拡張構成のHDDを使用するEF300およびEF600コントローラでSSD読み取りキャッシュがサポートされるようになりました。</block>
+  <block id="8a00db0b101a6946d9caffef7979d8c4" category="paragraph">EF300およびEF600でのiSCSIとFibre Channelの非同期リモートミラーリングのサポート</block>
+  <block id="8ea61c04007ddc1b703be50a63a1b3ee" category="paragraph">NVMeおよびSASベースのボリュームを使用するEF300およびEF600コントローラで非同期リモートミラーリング（ARVM）がサポートされるようになりました。</block>
+  <block id="d99731ca7d5c671cea9d584100385335" category="paragraph">ベーストレイにドライブを搭載しないEF300およびEF600をサポート</block>
+  <block id="65c8d39e2e73985a77ff0c8a61c30608" category="paragraph">ベーストレイにNVMeドライブを搭載しないEF300およびEF600コントローラ構成がサポートされるようになりました。</block>
+  <block id="248bd33e5007bccdca76e9d0459df99c" category="paragraph">すべてのプラットフォームでUSBポートが無効になっている</block>
+  <block id="3ea3899fea5b85d0cc4b9b3bf6291d51" category="paragraph">すべてのプラットフォームでUSBポートが無効になりました。</block>
+  <block id="9a64b980fbe41aeaf8ecb2f99c2385a9" category="paragraph">NVMe/FC、NVMe/RoCE、またはiSCSI</block>
+  <block id="64f514f53e9a2ebedc121c63efdf12c0" category="paragraph">NVMe/FCまたはNVMe/IB</block>
+  <block id="41bdfc03cf6a112f92ffe96cc4938a68" category="paragraph">NVMe/IBまたはNVMe/FC</block>
+  <block id="6d7b18f9c306b8578ca261d6f6b6adee" category="paragraph">アップグレードを開始する前に、を確認してください  <block ref="dc69c58b5cd4f4fb6b0ef459d59315bd" category="inline-link-macro-rx"></block>。</block>
+  <block id="a5ff5d8396bab4e857d616fc9fa06b26" category="list-title">必要なもの</block>
+  <block id="75014b540a900a20abf83a06a6f23acc" category="paragraph">次のことを確認してください。</block>
+  <block id="d51a879a95a1f1b04438a7e672254378" category="list-text">Microsoft Edge（90以降）</block>
+  <block id="055c49f32e97721509c3ba8e800b7d0e" category="admonition">E2800、EF280、E5700、EF570、EF600では、すべてのUSBポートが無効になっています。 EF300アレイにも対応しています。</block>
+  <block id="9fed5991090e027f2348c873d605f4d6" category="admonition">EF300では、ベーストレイにドライブを搭載しない拡張シェルフ構成がサポートされます。この構成を使用する場合は、システムの電源をオンにする前に、ドライブが拡張シェルフに搭載され、ベーストレイに正しく接続されていることを確認してください。</block>
+  <block id="dae6baa86f1f6e4135f2552862c8b191" category="list-text">拡張シェルフを備えたSAS SSDドライブ：DE212C、DE224C、およびDE460Cのシェルフが混在している場合、DE212Cシェルフのみを使用しないかぎりSAS SSDドライブスロット数96と拡張シェルフ7台を超えないようにする必要があります。DE212Cシェルフを使用した場合は、DE212Cシェルフを8台使用できます。例：DE460Cシェルフ1台とDE224Cシェルフ1台とDE212Cシェルフ1台、DE224Cシェルフ4台、DE212Cシェルフ8台</block>
+  <block id="e1602ccaec81c1829eb2a83bd391bfb8" category="admonition">EF600では、ベーストレイにドライブを搭載しない拡張シェルフ構成がサポートされます。この構成を使用する場合は、システムの電源をオンにする前に、ドライブが拡張シェルフに搭載され、ベーストレイに正しく接続されていることを確認してください。</block>
 </blocks>

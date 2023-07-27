@@ -30,7 +30,7 @@ NOTE: 「 nvme discover 」コマンドでは、ホスト・アクセスに関�
 +
 [listing]
 ----
-# nvme discover -t rdma -a 10.10.10.100
+# nvme discover -t rdma -a 10.10.10.200
  Discovery Log Number of Records 2, Generation counter 0
  =====Discovery Log Entry 0======
  trtype:  rdma
@@ -40,7 +40,7 @@ NOTE: 「 nvme discover 」コマンドでは、ホスト・アクセスに関�
  portid:  0
  trsvcid: 4420
  subnqn:  nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be
- traddr: 10.10.10.100
+ traddr: 10.10.10.200
  rdma_prtype: infiniband
  rdma_qptype: connected
  rdma_cms:    rdma-cm
@@ -88,25 +88,9 @@ NOTE: コントローラ損失のタイムアウト時間として推奨され�
 +
 [listing]
 ----
-# nvme connect -t rdma -a 10.10.10.100 -n nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be -Q 1024 -l 3600
+# nvme connect -t rdma -a 10.10.10.200 -n nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be -Q 1024 -l 3600
 ----
-. 現在接続されている NVMe デバイスのリストを表示するには 'nvme list' コマンドを使用します次の例では、「 nvme0n1 」が表示されています。
-+
-[listing]
-----
- # nvme list
-
- Node          SN            Model             Namespace
- -------------------------------------------------------
- /dev/nvme0n1  021648023161  NetApp E-Series      1
-----
-+
-[listing]
-----
-Usage                 Format           FW Rev
---------------------------------------------------------------
-5.37 GB /5.37 GB      512 B + 0 B      0842XXXX
-----
+. を使用します `nvme list-subsys` コマンドを実行して、現在接続されているNVMeデバイスのリストを表示します。
 . 2 番目のパスで検出されたサブシステムに接続します。
 +
 [listing]
