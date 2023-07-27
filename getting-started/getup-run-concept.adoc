@@ -47,7 +47,7 @@ E シリーズハードウェアを設置する方法については、使用す
 設置とセットアップの手順（手順 1 ）には、ケーブルを接続する手順が記載されています。ただし、サポートされるケーブルとトランシーバのリスト、ケーブル接続のベストプラクティス、コントローラのホストポートに関する詳細情報が必要な場合は、次の手順を参照してください。
 
 [role="quick-margin-list"]
-* link:../install-hw-cabling/index.html["E シリーズハードウェアをケーブル接続"]
+* link:../install-hw-cabling/index.html["E シリーズハードウェアをケーブル接続"^]
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"] ホストを設定
@@ -55,9 +55,9 @@ E シリーズハードウェアを設置する方法については、使用す
 ホストでストレージを使用できるようにするには、ホストのオペレーティングシステムタイプに対応するガイドを参照してください。
 
 [role="quick-margin-list"]
-* link:../config-linux/index.html["Linux の簡単な設定"]
-* link:../config-vmware/index.html["VMware の簡単な設定"]
-* link:../config-windows/index.html["Windows の簡単な設定"]
+* link:../config-linux/index.html["Linux の簡単な設定"^]
+* link:../config-vmware/index.html["VMware の簡単な設定"^]
+* link:../config-windows/index.html["Windows の簡単な設定"^]
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["6"] ストレージを設定する
@@ -68,6 +68,7 @@ E シリーズハードウェアを設置する方法については、使用す
 使用するインターフェイスを選択します。
 
 [role="quick-margin-list"]
-* https://docs.netapp.com/us-en/e-series-santricity/system-manager/index.html["SANtricity システムマネージャ11.7xヘルプ"]
-* https://docs.netapp.com/us-en/e-series-santricity-116/index.html["SANtricity System Managerのヘルプ：11.6x"]
+* https://docs.netapp.com/us-en/e-series-santricity/system-manager/index.html["SANtricity System Manager 11.8xオンラインヘルプ"^]
+* https://docs.netapp.com/us-en/e-series-santricity-117/system-manager/index.html["SANtricity システムマネージャ 11.7x オンラインヘルプ"^]
+* https://docs.netapp.com/us-en/e-series-santricity-116/index.html["SANtricity システムマネージャオンラインヘルプの 11.6x 版"^]
 
