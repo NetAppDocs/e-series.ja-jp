@@ -50,4 +50,4 @@ https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
 
 通知ファイルには、ネットアップソフトウェアで使用されるサードパーティの著作権およびライセンスに関する情報が記載されています。
 
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874738["E シリーズ / EF シリーズ SANtricity OS に関する通知です"]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2885978["E シリーズ / EF シリーズ SANtricity OS に関する通知です"]
