@@ -8860,4 +8860,6 @@
   <block id="32e0b12538b4abe36e648446dbb8723b" category="paragraph">ディスクプールの改善</block>
   <block id="82faf4161a36aa8a69bd4c363e6b57cc" category="paragraph">11.80以降を実行しているコントローラで作成されたディスクプールは、_Version 0_poolsではなく_Version 1_poolsになります。_Version 1_diskプールが存在する場合、ダウングレード操作は制限されます。</block>
   <block id="45e56b98136f4292dd8c522edf38b3b2" category="paragraph">ストレージアレイプロファイルでディスクプールのバージョンを特定できます。</block>
+  <block id="82bf7451a207cfbac427edc3bb60fced" category="paragraph">ステップバイステップの手順と追加コンテンツへのライブリンクが記載された PDF 形式のガイドです。</block>
+  <block id="a2f0a23d015da77ff81697442b8f6aad" category="paragraph">これらは、このサイトで説明されているセットアップ手順です。</block>
 </blocks>
