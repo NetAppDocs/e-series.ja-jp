@@ -8817,10 +8817,7 @@
   <block id="a5ff5d8396bab4e857d616fc9fa06b26" category="list-title">必要なもの</block>
   <block id="75014b540a900a20abf83a06a6f23acc" category="paragraph">次のことを確認してください。</block>
   <block id="d51a879a95a1f1b04438a7e672254378" category="list-text">Microsoft Edge（90以降）</block>
-  <block id="055c49f32e97721509c3ba8e800b7d0e" category="admonition">E2800、EF280、E5700、EF570、EF600では、すべてのUSBポートが無効になっています。 EF300アレイにも対応しています。</block>
-  <block id="9fed5991090e027f2348c873d605f4d6" category="admonition">EF300では、ベーストレイにドライブを搭載しない拡張シェルフ構成がサポートされます。この構成を使用する場合は、システムの電源をオンにする前に、ドライブが拡張シェルフに搭載され、ベーストレイに正しく接続されていることを確認してください。</block>
   <block id="dae6baa86f1f6e4135f2552862c8b191" category="list-text">拡張シェルフを備えたSAS SSDドライブ：DE212C、DE224C、およびDE460Cのシェルフが混在している場合、DE212Cシェルフのみを使用しないかぎりSAS SSDドライブスロット数96と拡張シェルフ7台を超えないようにする必要があります。DE212Cシェルフを使用した場合は、DE212Cシェルフを8台使用できます。例：DE460Cシェルフ1台とDE224Cシェルフ1台とDE212Cシェルフ1台、DE224Cシェルフ4台、DE212Cシェルフ8台</block>
-  <block id="e1602ccaec81c1829eb2a83bd391bfb8" category="admonition">EF600では、ベーストレイにドライブを搭載しない拡張シェルフ構成がサポートされます。この構成を使用する場合は、システムの電源をオンにする前に、ドライブが拡張シェルフに搭載され、ベーストレイに正しく接続されていることを確認してください。</block>
   <block id="70a5ac954926edc08c5f6fc4c248a4a6" category="section-title">SANtricityリリース11.7</block>
   <block id="f7b52729af7c7aa177e09390f0afd194" category="list-text"><block ref="f7b52729af7c7aa177e09390f0afd194" category="inline-link-rx"></block></block>
   <block id="797222f106ff986b71e9f972dd342bc3" category="list-text"><block ref="797222f106ff986b71e9f972dd342bc3" category="inline-link-rx"></block></block>
@@ -8895,4 +8892,7 @@
   <block id="d7ffc2406b2b1f56267e389dcea17d16" category="paragraph">処置を必要としない公称温度および最大温度超過イベントに対して、ケース作成フラグが無効になりました。</block>
   <block id="746cf185d12f5492055c99b5dda9119d" category="paragraph">0x1209 Melイベントに対して有効なプライオリティケース作成フラグ</block>
   <block id="09c222edb73c49afd2e9ec9f75a2cd53" category="paragraph">これで、ケース作成フラグが<block ref="768a075a6d4dc734e5397ee50957d8d8" prefix=" " category="inline-code"></block> MELイベント。</block>
+  <block id="11f16f90266e9e59b05bab98913c351d" category="admonition">SANtricity OS 11.80GA以降では、E2800、EF280、E5700、EF570、EF600ではすべてのUSBポートが無効になっています。 EF300アレイにも対応しています。</block>
+  <block id="fad6f3761e69d291ccde3b2351a1c961" category="admonition">SANtricity OS 11.80GA以降では、拡張シェルフ構成でベーストレイにドライブを搭載しない構成がサポートされます。この構成を使用する場合は、システムの電源をオンにする前に、ドライブが拡張シェルフに搭載され、ベーストレイに正しく接続されていることを確認してください。</block>
+  <block id="cc1b53336ed5c926305dd7ad876ab1d2" category="admonition">SANtricity OS 11.80GA以降では、拡張シェルフ構成でベーストレイにドライブを搭載しない構成がサポートされます。この構成を使用する場合は、システムの電源をオンにする前に、ドライブが拡張シェルフに搭載され、ベーストレイに正しく接続されていることを確認してください。</block>
 </blocks>
