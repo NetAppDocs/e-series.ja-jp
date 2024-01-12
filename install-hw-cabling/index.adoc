@@ -70,6 +70,4 @@ E2760 、 E5660
 DE460C
 
 |===
-その他のケーブル接続オプションについては、を参照してください https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2773533["『 E-Series Hardware Cabling Guide 』を参照してください"^] 古いシステムの場合。
-
 ミラーリング機能をサポートするためのケーブル接続については、を参照してください https://www.netapp.com/us/media/tr-4656.pdf["同期および非同期ミラーリング機能の説明と導入ガイド"^]。
