@@ -1,7 +1,7 @@
 ---
 permalink: config-linux/nvme-roce-display-volumes-visible-host-task.html 
 sidebar: sidebar 
-keywords: display volumes host, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+keywords: display volumes host, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries, SMcli, SMdevices 
 summary: SMdevices ツールは nvme-CLI パッケージに含まれており、ホストで現在認識されているボリュームを表示できます。このツールは nvme list コマンドの代わりです。 
 ---
 = ホストが認識できるボリュームを表示する

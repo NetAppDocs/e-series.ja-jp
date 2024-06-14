@@ -1,7 +1,7 @@
 ---
 permalink: config-linux/nvme-ib-display-devices-visible-host-task.html 
 sidebar: sidebar 
-keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries, SMcli, SMdevices 
 summary: nvme-CLI パッケージに含まれている SMdevices ツールを使用して、現在ホストで認識されているボリュームを表示します。これは nvme list コマンドの代わりです。 
 ---
 = ホストが認識できるボリュームを表示する

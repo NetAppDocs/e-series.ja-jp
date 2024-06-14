@@ -16,6 +16,56 @@ summary: SANtricity OS の新機能
 
 
 
+== バージョン11.80.1の新機能
+
+[cols="35h,~"]
+|===
+| 新機能 | 説明 
+
+
+ a| 
+`-identifyDevices` パラメータ
+ a| 
+新しい `-identifyDevices` SMcliでパラメータを使用できるようになりました。この新しいパラメータを使用すると、ストレージアレイに関連付けられているすべてのSCSIネイティブブロックデバイスを検索できます。詳細については、https://docs.netapp.com/us-en/e-series-cli/get-started/downloadable-smcli-parameters.html#identify-Devices[Downloadable SMcliコマンドラインパラメータ^]を参照してください。
+
+
+
+ a| 
+イーサネットカーネル統計
+ a| 
+System Managerの[iSCSI統計パッケージの表示]ページに、新しい[イーサネットカーネル統計]オプションが追加されました。この新しいオプションを使用すると、iSCSIデバイスのプラットフォームカーネルドライバの統計を表示できます。詳細については、「https://docs.netapp.com/us-en/e-series-santricity/sm-support/view-iscsi-statistics-packages-support.html[View iSCSI統計パッケージ^]」を参照してください。
+
+
+
+ a| 
+System Managerでの未割り当てドライブとセキュリティ有効ドライブのフィルタリングの改善
+ a| 
+System Managerで手動ドライブを選択する際に、未割り当てのセキュリティ有効ドライブが除外されるようになりました。そのため、System Managerのドライブ選択数が、CLIおよびREST APIの自動ドライブ選択候補のリストと一致するようになりました。System Manager内の未割り当てドライブとセキュリティ有効ドライブに、一意のアイコンとマウスオーバーテキストが適用されるようになりました。
+
+
+
+ a| 
+REST APIエンドポイントを使用してIPアドレスをブロックする機能を追加
+ a| 
+[Settings]エンドポイントを使用して、特定のIPアドレスをブロックできるようになりました。 (`/devmgr/v2/settings`）。[Settings]エンドポイントで設定すると、ホワイトリストで指定したIPアドレスだけがストレージデバイスと通信できます。この新機能では、IPv4およびIPv6アドレスリストがサポートされます。
+
+
+
+ a| 
+vCenterストレージプラグイン
+ a| 
+vCenter Storageプラグインは、Eシリーズ11.80.1リリースとの互換性を考慮して更新されています。
+
+
+
+ a| 
+Web Services Proxyの使用方法
+ a| 
+Web Services Proxyは、Eシリーズ11.80.1リリースとの互換性を確保するためにバージョン6.1に更新されています。
+
+|===
+
+
 == バージョン11.80の新機能
 
 [cols="35h,~"]

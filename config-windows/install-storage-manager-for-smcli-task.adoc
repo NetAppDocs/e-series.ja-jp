@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: install Storage Manager Windows, install CLI Windows, install command line interface, install Host Context Agent, install HCA, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: CLI および HCA 用の Storage Manager を Windows の簡単な方法でインストールします。 
 ---
-= SMcli および Host Context Agent （ HCA ）を使用するための SANtricity Storage Manager のインストール
+= SMcli を使用するための SANtricity Storage Manager のインストール（ SANtricity ソフトウェアバージョン 11.53 以前）
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -17,7 +17,10 @@ SANtricity ソフトウェア 11.53 以前を使用している場合は、管�
 SANtricity Storage Manager には、管理タスクを実行するためのコマンドラインインターフェイス（ CLI ）と、 I/O パスを介してストレージアレイコントローラにホスト構成情報をプッシュするためのホストコンテキストエージェントがあります。
 
 
-NOTE: SANtricity ソフトウェア 11.60 以降を使用している場合は、次の手順は実行する必要はありません。SANtricity Secure CLI （ SMcli ）は SANtricity OS に含まれており、 SANtricity System Manager からダウンロードできます。SANtricity システムマネージャを使用して SMcli をダウンロードする方法の詳細については、 SANtricity システムマネージャオンラインヘルプの「ダウンロードコマンドラインインターフェイス（ CLI ） _ topic 」を参照してください。
+NOTE: SANtricity ソフトウェア 11.60 以降を使用している場合は、次の手順は実行する必要はありません。SANtricity Secure CLI （ SMcli ）は SANtricity OS に含まれており、 SANtricity System Manager からダウンロードできます。SANtricityシステムマネージャからSMcliをダウンロードする方法の詳細については、 link:https://docs.netapp.com/us-en/e-series-santricity/sm-settings/download-cli.html["SANtricity System Managerオンラインヘルプのコマンドラインインターフェイス（CLI）のダウンロードのトピック"^]
+
+
+NOTE: SANtricityソフトウェアバージョン11.80.1以降では、ホストコンテキストエージェントはサポートされなくなりました。
 
 .作業を開始する前に
 次のものがあることを確認します。

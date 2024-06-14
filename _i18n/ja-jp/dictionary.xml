@@ -16,7 +16,6 @@
   <block id="ecb3eae36555245dd97b57edf925b519" category="paragraph">iSCSI ポートバインドを使用していない場合、 VMware iSCSI ソフトウェアイニシエータによって iSCSI ターゲットごとに 1 つのセッションがデフォルトで作成されます。</block>
   <block id="84b339ef337149fb55dc73165dd441d4" category="inline-link">VMware のナレッジベース</block>
   <block id="bcf2befa67a21b602de7c9607a256fdd" category="admonition">VMware iSCSI ポートバインドは、バインドされているすべての VMkernel ポートを、設定されたネットワークセグメント上でアクセス可能なすべてのターゲットポートに強制的にログインさせる機能です。これは、 iSCSI ターゲットに単一のネットワークアドレスを提供するアレイで使用するためのものです。iSCSI ポートバインドは使用しないことを推奨します。追加情報の場合は、を参照してください<block ref="f51a555352ce97fa9606c6453ba145eb" category="inline-link-rx"></block> を参照してください。この記事では、 ESX / ESXi でソフトウェア iSCSI ポートバインドを使用する場合の考慮事項について説明しています。ESXi ホストを別のベンダーのストレージに接続している場合は、ポートバインドとの競合を避けるために、別の iSCSI VMkernel ポートを使用することを推奨します。</block>
-  <block id="0995e93f2d32176a9594170326076188" category="paragraph">ベストプラクティスとして、 E シリーズストレージアレイではポートバインドを使用しないでください。</block>
   <block id="4d58b104819df733df379625cb1928bb" category="paragraph">適切なマルチパス構成を実現するために、 iSCSI ネットワークに複数のネットワークセグメントを使用します。ホスト側のポートと各アレイコントローラのポートを少なくとも 1 つずつ 1 つのネットワークセグメントに配置し、同じグループのホスト側とアレイ側のポートをもう 1 つのネットワークセグメントに配置します。可能であれば、複数のイーサネットスイッチを使用してさらに冗長性を確保します。</block>
   <block id="f15f906f7bea6ec29e2979d8f1f2fcfb" category="admonition">多くのネットワークスイッチは 9 、 000 バイトを超える IP オーバーヘッドを設定する必要があります。詳細については、スイッチのマニュアルを参照してください。</block>
   <block id="e416e1de0c9f752b24a207ee8a149921" category="paragraph">SANtricity System Manager の GUI を使用して、アレイ側の iSCSI ネットワークを設定します。</block>
@@ -124,7 +123,6 @@
   <block id="e987e7fa5c9abc75335a066329ba6eaa" category="paragraph">HBA ユーティリティを使用して SAS アドレスを確認し、 HBA BIOS を使用して適切な設定を行います。</block>
   <block id="b769f2f457baf26b76c0285eaf26cac1" category="paragraph">HBA ユーティリティのガイドラインを確認します。</block>
   <block id="4191e9e13f8a201f560ff4eb7e03a2b8" category="list-text">ほとんどの HBA ベンダーは HBA ユーティリティを提供しています。</block>
-  <block id="8e23f53043423e6715229ae35c668a80" category="list-text">Host Context Agent がインストールされている場合、ホストの I/O ポートは自動的に登録されることがあります。</block>
   <block id="f839e1b7c3a21e269ed4802e2a8f478a" category="list-text">HBA ユーティリティを HBA ベンダーの Web サイトからダウンロードします。</block>
   <block id="32e3cf2b76364e5780ea7c673b668437" category="list-text">ユーティリティをインストールします。</block>
   <block id="87e85b9ea37f21226023282c05abc3b0" category="list-text">HBA BIOS を使用して構成に適した設定を選択します。</block>
@@ -640,24 +638,12 @@
   <block id="36a6c85baeb45ad7d6b182928148783d" category="cell">* 「 DA 」の横には、プールまたはボリュームグループのドライブで Data Assurance （ DA ）がサポートされている場合にのみ「 Yes 」と表示されます。DA を使用すると、ストレージシステム全体のデータの整合性が向上します。DA を使用すると、データがコントローラ経由でドライブに転送される際にストレージアレイがエラーの有無をチェックできます。新しいボリュームに DA を使用すると、すべてのエラーが検出されます。</block>
   <block id="ad2bbf8f4eaa2e5c1f2dc065812618ee" category="list-text">選択したアプリケーションのボリューム作成手順を続行するには、 * 次へ * をクリックします。</block>
   <block id="05ac61cded1d64877319e6fc3303a304" category="list-text">最後の手順で、作成するボリュームの概要を確認し、必要に応じて変更を加えます。変更するには、「 * 戻る」をクリックします。ボリューム構成に問題がなければ、「 * 完了 * 」をクリックします。</block>
-  <block id="6ce56c3d2a347e8eec31ca9a5f266cb2" category="paragraph">ホストは自動または手動で作成できます。</block>
-  <block id="3f6aae0d6b07b0c0c3753a29f5ea7bbb" category="list-text">* 自動 * -- (NVMe-oF ではなく ) SCSI ベースのホストの自動作成は、 Host Context Agent (HCA) によって開始されます。HCA は、ストレージアレイに接続されている各ホストにインストール可能なユーティリティです。HCA がインストールされている各ホストは、 I/O パスを経由してストレージアレイコントローラにホストの設定情報をプッシュします。コントローラは、ホスト情報に基づいてホストと関連するホストポートを自動的に作成し、ホストタイプを設定します。必要に応じて、ホストの設定を変更することもできます。HCA の自動検出が実行されると、ホストには次の属性が自動的に設定されます。</block>
-  <block id="f83da56133b643da9e77e51cd6c5bb60" category="list-text">ホストのシステム名から取得されたホスト名。</block>
-  <block id="ff355485c71c980dad7d2bcc738031e3" category="list-text">ホストに関連付けられたホストポート識別子。</block>
-  <block id="9216f53a8757b69a9763476f633bafcd" category="list-text">ホストのホストオペレーティングシステムタイプ。</block>
   <block id="8b261088a6c6ed749f082d5672940ffb" category="inline-link">ネットアップサポート - ダウンロード</block>
-  <block id="4954a64a167635ad19317842780fc1e2" category="admonition">Linux および Windows 用の Host Context Agent ソフトウェアは、から入手できます<block ref="d4d0bd08778a1eda2e214061987877dd" category="inline-link-rx"></block>。</block>
-  <block id="ce20270f9f59c29940789eed21ca0ad1" category="admonition">ホストはスタンドアロンホストとして作成されます。 HCA では、ホストクラスタの作成やホストクラスタへの追加が自動的に行われることはありません。</block>
   <block id="b4f69aa1a7313b31e977a8c463cdf13b" category="list-text">* 手動 * –ホストの手動作成中に、ホストポート識別子をリストから選択するか、手動で入力して関連付けます。ホストの作成後、ボリュームへのアクセスを共有する場合は、ボリュームをホストに割り当てたり、ホストクラスタに追加したりできます。</block>
-  <block id="97af09f89abd52bc4528726a62f75580" category="section-title">HCA を使用したホストの自動検出</block>
-  <block id="5f96931891fdfe6d097d700182501d44" category="paragraph">Host Context Agent （ HCA ）を使用してホストを自動的に検出し、検出された情報が正しいかを確認することができます。</block>
   <block id="2f3d16ae594f1458b2df0f43ad9132a5" category="list-text">Manage （管理）ページで、ホスト接続があるストレージアレイを選択します。</block>
   <block id="47369607937ea8b62ad0a5349cee6fb8" category="list-text">メニューを選択します。 Provisioning [ ホストの設定 ] 。</block>
   <block id="41dbd6041fd556f06750dc1495be7b10" category="paragraph">Configure Hosts ページが開きます。</block>
   <block id="0924796085f7df98cb7ab62924c6e73c" category="list-text">メニューから「 Storage [Hosts] 」を選択します。</block>
-  <block id="33c6b73b3842ba3a2a3c555bf1ce0cd6" category="paragraph">自動的に作成されたホストが表に表示されます。</block>
-  <block id="4519f1c84733049cbbfffe94fa4d88d1" category="list-text">HCA から提供された情報（名前、ホストタイプ、ホストポート識別子）が正しいことを確認します。</block>
-  <block id="b36dd028d4cc9fd23358d580eca639f1" category="list-text">いずれかの情報を変更する必要がある場合は、ホストを選択し、 * 表示 / 設定の編集 * をクリックします。</block>
   <block id="390c57ab50f691d4eb0f2ff4e5c42c23" category="section-title">ホストを手動で作成する</block>
   <block id="882cb68e5d863b419d0d4d5f61d4f0bf" category="paragraph">次のガイドラインを参照してください。</block>
   <block id="6ed30639f30e0f37f0053ee840f7df42" category="list-text">環境でストレージアレイを追加または検出しておく必要があります。</block>
@@ -1222,7 +1208,6 @@
   <block id="09ea0908fbfc4cde85bf416e35dc55c8" category="inline-link">ネットアップサポート</block>
   <block id="f64d5867fd911e2b14d8680010121759" category="list-text">から Unified Host Utilities をダウンロードします<block ref="2ff36e7792a0e0257d19a11dce8cade8" category="inline-link-rx"></block>。</block>
   <block id="59fbc26a1831942cb6ebf2d627aa2db8" category="admonition">このユーティリティパッケージは、 SANtricity ストレージマネージャインストーラを使用してインストールすることはできません。</block>
-  <block id="fe2b572228681d85876f1c2ffc7023a9" category="admonition">または、 SANtricity SMdevices ユーティリティを使用して Unified Host Utility ツールと同じ機能を実行することもできます。SMdevices ユーティリティは SMutils パッケージに含まれています。SMutils パッケージは、ホストがストレージアレイから認識する内容を確認するためのユーティリティをまとめたパッケージです。SANtricity ソフトウェアのインストールに含まれています。</block>
   <block id="135d30ad6d2da4597cfa1d9690fba47a" category="summary">SAS プロトコルを使用する場合は、ホストポートアドレスを特定し、推奨設定を適用します。</block>
   <block id="d723a375133225f8e40ad6de1d56e805" category="paragraph">SAS プロトコルを使用する場合は、ホストポートのアドレスを特定し、適切に設定します。</block>
   <block id="bfcd4b5a45e2121dd605c54a4da4bd65" category="paragraph">HBA ユーティリティを使用して SAS アドレスを確認し、 HBA BIOS を使用して適切な設定を行います。</block>
@@ -1274,10 +1259,8 @@
   <block id="a8342f05171838958a785b1d2d1db93b" category="paragraph">次の図では、 2 つのゾーンでホストが E シリーズストレージアレイに接続されています。一方のゾーンは青い線で示され、もう一方のゾーンは赤い線で示されます。いずれのポートにもストレージへのパスが 2 つ（各コントローラへのパスが 1 つ）あります。</block>
   <block id="c110df1be6e0c274e5b6190b197bcabe" category="image-alt">ポート識別子ホストとターゲットを設定する必要があります</block>
   <block id="7baddc80f2f90c28721d910489b197cb" category="summary">CLI および HCA 用の Storage Manager を Windows の簡単な方法でインストールします。</block>
-  <block id="dc3fbfd52a78c903e6de09d05ddfc27d" category="doc">SMcli および Host Context Agent （ HCA ）を使用するための SANtricity Storage Manager のインストール</block>
   <block id="ef71c4d60b721871a9a1acefb72e13e4" category="paragraph">SANtricity ソフトウェア 11.53 以前を使用している場合は、管理ステーションに SANtricity Storage Manager ソフトウェアをインストールして、アレイの管理に役立てることができます。</block>
   <block id="501a2ad13300e0aa28ebe2f8b5f896f5" category="paragraph">SANtricity Storage Manager には、管理タスクを実行するためのコマンドラインインターフェイス（ CLI ）と、 I/O パスを介してストレージアレイコントローラにホスト構成情報をプッシュするためのホストコンテキストエージェントがあります。</block>
-  <block id="5d2dd026d83ed1ae31b7c46f98cd9d34" category="admonition">SANtricity ソフトウェア 11.60 以降を使用している場合は、次の手順は実行する必要はありません。SANtricity Secure CLI （ SMcli ）は SANtricity OS に含まれており、 SANtricity System Manager からダウンロードできます。SANtricity システムマネージャを使用して SMcli をダウンロードする方法の詳細については、 SANtricity システムマネージャオンラインヘルプの「ダウンロードコマンドラインインターフェイス（ CLI ） _ topic 」を参照してください。</block>
   <block id="333a1ae397172ffa7f074eb82c021e4e" category="list-text">SANtricity ソフトウェア 11.53 以前。</block>
   <block id="2f42837cf7042dcd613c4776cd821f9b" category="list-text">SANtricity Storage Manager クライアント用の、次の最小要件を持つシステム。</block>
   <block id="f8dc05e90027ef9e4b77e8ab41d012c6" category="list-text">*RAM*: Java Runtime Engine 用に 2GB</block>
@@ -1349,7 +1332,6 @@
   <block id="de79e6b334ef3f5c38431ae360ff09f6" category="paragraph">E2712 、 E2724 、 E5612 、 E5624 、 EF560</block>
   <block id="f2a12ad5f52528054619d431dc7c3054" category="paragraph">E2760 、 E5660</block>
   <block id="15ced0ef88b79c27417b95cc4a6474e1" category="inline-link">『 E-Series Hardware Cabling Guide 』を参照してください</block>
-  <block id="588ea625981b26f278d5da4ff8ceb15d" category="paragraph">その他のケーブル接続オプションについては、を参照してください<block ref="b81b0da72978e2b90766cbfae5ed2466" category="inline-link-rx"></block> 古いシステムの場合。</block>
   <block id="5c8edef9c398c6792341850977901070" category="inline-link">同期および非同期ミラーリング機能の説明と導入ガイド</block>
   <block id="9696fa6d39ba9aab453fe1ba80da0669" category="paragraph">ミラーリング機能をサポートするためのケーブル接続については、を参照してください<block ref="ecbdbcda2695048a35af4e9c40e978db" category="inline-link-rx"></block>。</block>
   <block id="f9bcb67d08f727c5a322f1f2c7b1e5c5" category="summary">アウトオブバンド管理のためにストレージシステムをイーサネットネットワークに接続します。</block>
@@ -1937,10 +1919,8 @@
   <block id="e93d2afef215287e7ea403b7d93a1042" category="admonition">* データアクセスが失われる可能性 * - 取り付けたコントローラでこれらのいずれかのコードが表示される場合、もう一方のコントローラが何らかの理由でリセットされると、 2 台目のコントローラもロックダウン状態になる可能性があります。</block>
   <block id="81511c16ac1c696901257fc0136ae1d1" category="list-text">コントローラがオンラインに戻ったら、ステータスが「最適」になっていることを確認し、コントローラシェルフの警告 LED を確認します。</block>
   <block id="e11265286d3acc7518f4d458373d21d2" category="paragraph">ステータスが「最適」でない場合やいずれかの警告 LED が点灯している場合は、すべてのケーブルが正しく装着され、コントローラキャニスターが正しく取り付けられていることを確認します。必要に応じて、コントローラキャニスターを取り外して再度取り付けます。</block>
-  <block id="79985a6d5d752cdcbb9bbb8340fa510f" category="list-text">必要に応じて、すべてのボリュームを再配置して優先所有者に戻します。</block>
   <block id="bbf46f9beb7cca84a6bd9b9ad7a9d701" category="list-text">選択メニュー： Storage [Volumes]</block>
   <block id="cd836d5607a72e58c28486ef83128f85" category="list-text">メニューを選択します。 More [redistribute volumes （ボリュームの再配置） ]</block>
-  <block id="09a5aa9209154ff3bed809e609a7760d" category="list-text">[ メニュー ] 、 [ ハードウェア ] 、 [ サポート ] 、 [ アップグレードセンター ] の順にクリックして、 SANtricity OS ソフトウェア（コントローラファームウェア）の最新バージョンがインストールされていることを確認します。</block>
   <block id="c65491c8c7503c1a6db7cfd16113b72a" category="paragraph">必要に応じて、最新バージョンをインストールします。</block>
   <block id="f64ac56cef1f5e4f7896043e6750dc53" category="paragraph">これでコントローラの交換は完了です。通常の運用を再開することができます。</block>
   <block id="6fcb8b9672441ca691f4d85d1836833b" category="summary">E5700 ハードウェアの保守</block>
@@ -3415,7 +3395,6 @@
   <block id="28c74601cab51ec0f572b112f7aee948" category="list-text">を使用します<block ref="a3e2ed1651134ba8d782e5dc8287cbc1" category="inline-link-rx"></block> iSCSI ホストを構成するためのツール。</block>
   <block id="84a0100270817ab949ead0850e5c7934" category="list-text">ホストパーティションを編集し、 iSCSI ホストポート ID を追加して FC ホストポート ID を削除します。</block>
   <block id="e13345f5a8fed2baefb676e54c837f9b" category="list-text">iSCSI ホストのリブート後、ボリュームを登録してオペレーティングシステムで使用できるようにするための手順を各ホストで実行します。</block>
-  <block id="dc11132834c12745a593ada748aa2908" category="list-text">オペレーティングシステムに応じて、ストレージ管理ソフトウェアには 2 つのユーティリティ（ hot_add と SMdevices ）が含まれています。これらのユーティリティを使用してボリュームをホストに登録できるほか、ボリュームに該当するデバイス名を確認することもできます。</block>
   <block id="1ee6a2654832926bb18e15e40f4d7110" category="list-text">オペレーティングシステムに付属の特定のツールやオプションを使用して、ボリュームを使用できるようにする（ドライブレターの割り当て、マウントポイントの作成など）必要がある場合があります。詳細については、ホストオペレーティングシステムのドキュメントを参照してください。</block>
   <block id="9728e1a98137d35970e4f40061b6f1b6" category="section-title">iSCSI から FC / iSCSI への変換を完了します</block>
   <block id="016bce178ce0362a322d720a4763b0cd" category="paragraph">iSCSI ホストポートのみを使用していた環境で、そのうちの一部のポートを FC に変換した場合は、 FC をサポートするために既存の設定の変更が必要になることがあります。</block>
@@ -5316,13 +5295,9 @@
   <block id="df8c85065effb5093bcc1889495b92f7" category="section-title">内部キー管理</block>
   <block id="8f0439a6f042ce457ec5d5faf91c28ea" category="paragraph">すべてのドライブがロックされている場合の内部キー管理の手順は、次のとおりです。</block>
   <block id="e55e81df495444ffb2639e3a7f9ef86e" category="admonition">管理ポート 1 を使用していない場合は、他のデフォルト IP アドレスを使用してみてください。 +Ctrl A ポート 1 ： 192.168.128.101 + Ctrl A ポート 2 ： 192.168.128.102 + Ctrl B ポート 1 ： 192.168.129.101 + Ctrl B ポート 2 ： 192.168.129.102</block>
-  <block id="451adf9dc612afcfa43e2c0797313ea1" category="paragraph">* 例： * `S MCLI 192.168.128.101 -u admin -c "import storageArray securityKey file=\"Directory&amp;filename\" passphrase="passasraseString\";"`</block>
   <block id="02626834a548b28e809c79cc3246fbf9" category="paragraph">コントローラはドライブから自動ノード同期プロセスを続行し、リブートします。リブート後は、元の IP 構成を使用してコントローラにアクセスできるようになります。</block>
   <block id="370c6dde461cc5827c330619a80ca24b" category="section-title">外部キー管理</block>
   <block id="9208cd3893f8fbd0715f391ac0195354" category="paragraph">すべてのドライブがロックされている場合の外部キー管理の手順は、次のとおりです。</block>
-  <block id="203b2e157336601775297d64e8b01713" category="paragraph">* 例： * `S MCLI 192.168.128.101 -u admin -c "set storageArray externalKeyManagement serverAddress=&lt;ServerIPAddress&gt;ServerPort=&lt;ServerPort&gt;;"`</block>
-  <block id="ff8ee4661fbac57cdf8a71747f69e4ed" category="paragraph">* 例 A ： * `S MCLI 192.168.128.101 -u admin -c "download storageArray keyManagementCertificate certificateType=client file=\"Directory&amp;filename\";"</block>
-  <block id="0558f36aa79582296ec1f39019ce4f53" category="paragraph">* 例 B ： * `S MCLI 192.168.128.101 -u admin -c "download storageArray keyManagementCertificate certificateType=server file=\"Directory&amp;filename\";"</block>
   <block id="854750d89bde7b9006e843874058e608" category="summary">E シリーズコントローラのアップグレードと交換に関する要件を確認します。</block>
   <block id="520dc026db4e88668c8c301bd1d52f89" category="paragraph">コントローラをアップグレードする前に、次の考慮事項を確認してください。</block>
   <block id="42eef425d97514d2a9e42ae0abebfde1" category="section-title">ハードウェアとファームウェアの要件</block>
@@ -6466,7 +6441,6 @@
   <block id="b54e5effb0684297a425f4b4d27a0901" category="inline-link">E2600 および E2700 に 2 台目のコントローラを追加します</block>
   <block id="8873c4daaa79b4f2a0a76d2d60e0f4d2" category="list-text"><block ref="8873c4daaa79b4f2a0a76d2d60e0f4d2" category="inline-link-rx"></block></block>
   <block id="cc2c4e05a565a41e24830b8e20a407fa" category="inline-link">ホストプロトコルを変更または追加する</block>
-  <block id="6ef4b2f0ae71e9e178116859d849d637" category="list-text"><block ref="6ef4b2f0ae71e9e178116859d849d637" category="inline-link-rx"></block></block>
   <block id="4a24ac39c4082dcb978a418e7c412751" category="inline-link">AC 電源から DC 電源に変換します</block>
   <block id="60d69132ac18e209751d2055249f9499" category="list-text"><block ref="60d69132ac18e209751d2055249f9499" category="inline-link-rx"></block></block>
   <block id="8538359cd0d88b60011df2ea127fcda4" category="section-title">以前のリリースのソフトウェアドキュメント</block>
@@ -7206,8 +7180,6 @@
   <block id="bd965e38a0c9cf27aa1bde099308e23f" category="list-title">完了後</block>
   <block id="9c9c42da70924dff53917fd5752cd0a9" category="list-text">vSphere Clientで、ボリューム用のデータストアを作成します。</block>
   <block id="27288924eb00279da6258f216a826ce6" category="list-text">アプリケーションがボリュームを使用できるように、アプリケーションホストのオペレーティングシステムに対して必要な変更を行います。</block>
-  <block id="f4c48f2383ce25f158cf33df12dc65ee" category="list-text">ホスト・ベースのhhot_add'ユーティリティまたはオペレーティング・システム固有のユーティリティ（サード・パーティ・ベンダーから入手可能）を実行し'SMdevicesユーティリティを実行して'ボリューム名とホスト・ストレージ・アレイ名を関連付けます</block>
-  <block id="fc689e3fec7436f0795ba215ddaea02c" category="paragraph">hot addユーティリティと'smdevicesユーティリティは'SMutilsパッケージの一部として含まれています「SMutils」パッケージは、ホストがストレージアレイから認識する内容を検証するためのユーティリティの集合です。SANtricity ソフトウェアのインストールに含まれています。</block>
   <block id="4db4ceee2891d65f714f908305bf69f5" category="summary">Storage Plug-in for vCenterをホストしている管理システムへのセキュアなアクセスを確立するために、CA署名証明書を取得してインポートします。</block>
   <block id="07d971b4a5a654450d917b608d4ec4f8" category="doc">CA署名証明書を使用する</block>
   <block id="020e8003add330567e5f0d10609d0973" category="paragraph">Storage Plug-in for vCenterをホストしている管理システムへのセキュアなアクセスを確立するために、CA署名証明書を取得してインポートできます。</block>
@@ -7269,14 +7241,12 @@
   <block id="6f77c9c07c72d4718892ec422f4427bc" category="doc">ホストポートをホストに一致させるにはどうすればよいですか？</block>
   <block id="e3603ec100f890e2ef8684fc0f32d90c" category="paragraph">この情報を確認したら、Create Hostダイアログのリストから、ストレージアレイにログインしているホストポート識別子を選択します。</block>
   <block id="2bba3e0602cd7a130a9a940ee66aefad" category="admonition">作成するホストに適したホストポート識別子を選択してください。誤ったホストポート識別子を関連付けると、別のホストからこのデータへの原因 の意図しないアクセスが発生する可能性があります。</block>
-  <block id="805b5a8d335604839f980870f92238c2" category="paragraph">各ホストにインストールされているHost Context Agent（HCA）を使用してホストを自動的に作成する場合は、HCAによって各ホストにホストポート識別子が自動的に関連付けられ、適宜設定されます。</block>
   <block id="490911223ced9bd35d325330312a99b5" category="summary">パスフレーズは、ローカルの管理クライアントに格納されているセキュリティキーファイルの暗号化と復号化に使用されます。</block>
   <block id="7e2fd80391cbb19f61be6028669d1143" category="doc">パスフレーズを定義する必要があるのはなぜですか？</block>
   <block id="2f42cd01026066a070aa52e53e4d963f" category="paragraph">パスフレーズは、ローカルの管理クライアントに格納されているセキュリティキーファイルの暗号化と復号化に使用されます。パスフレーズがないとセキュリティキーを復号化できず、セキュリティ有効ドライブが別のストレージアレイに再設置された場合、データのロック解除にセキュリティキーを使用できません。</block>
   <block id="2da87ae0f783e9cc7ac8f36a7af697e4" category="summary">デフォルトクラスタはシステム定義のエンティティです。ストレージアレイにログインしたホストポート識別子が関連付けられていない場合、そのポートはデフォルトクラスタに割り当てられているボリュームにアクセスできます。</block>
   <block id="b8d724212008baee7a5c6030da8fa5bc" category="doc">デフォルトクラスタとは何ですか？</block>
   <block id="9624dccf17eb4cce07a5a0013616c0f9" category="paragraph">関連付けられていないホストポート識別子は、特定のホストに論理的に関連付けられておらず、ホストに物理的に搭載されてストレージアレイにログインしているホストポートです。</block>
-  <block id="b4c67a8296dafaccaed924668fa901da" category="admonition">ホストがストレージアレイ内の特定のボリュームにアクセスできるようにする場合は、デフォルトクラスタを使用しないでください。代わりに、ホストポート識別子を対応するホストに関連付ける必要があります。このタスクは、ホストの作成時に手動で実行することも、各ホストにインストールされているHost Context Agent（HCA）を使用して自動的に実行することもできます。その後、ボリュームを個々のホストまたはホストクラスタに割り当てます。</block>
   <block id="854135f279202e145fddcf81f6d69dab" category="paragraph">デフォルトクラスタは、外部ストレージ環境がすべてのホストにアクセスできるようにし、ストレージアレイに接続されているすべてのログイン済みホストポート識別子がすべてのボリュームにアクセスできるようにする（フルアクセスモード）場合にのみ使用してください。 特にストレージアレイやユーザインターフェイスでホストが認識されないようにする必要があります。</block>
   <block id="c167b87ad97a717ca19e8302324a61d6" category="paragraph">最初にボリュームをデフォルトクラスタに割り当てる際には、コマンドラインインターフェイス（CLI）を使用する必要があります。ただし、ボリュームを少なくとも1つデフォルトクラスタに割り当てると、このエンティティを管理できるユーザインターフェイスに表示されます（デフォルトクラスタ）。</block>
   <block id="369faeb4aa443a86445a9cdfb023bb83" category="summary">Add/Discover機能を使用して、組織のネットワークで管理するストレージアレイを検索および追加します。</block>
@@ -7445,7 +7415,6 @@
   <block id="2f405cc1b427d24720c2cc7d7dda7e2c" category="list-text">メインビューで、* Manage *を選択し、ストレージ・アレイを追加するグループを選択します。</block>
   <block id="78d46085734b1546832159391eb2b467" category="list-text">選択メニュー：グループの管理[グループへのストレージアレイの追加]。</block>
   <block id="875510c22480d2f647cff890742474ab" category="list-text">グループに追加するストレージアレイを選択します。</block>
-  <block id="158015df88d990434f1a9d713f772baa" category="summary">Host Operating System Typeフィールドには、ホストのオペレーティングシステムが表示されます。推奨されるホストタイプをドロップダウンリストから選択するか、Host Context Agent（HCA）でホストおよび適切なホストオペレーティングシステムのタイプを設定することができます。</block>
   <block id="c99be05276e49867c3c82a7022f31b32" category="doc">正しいホストオペレーティングシステムタイプを特定するにはどうすればよいですか？</block>
   <block id="e13be85800aed175412a62f5b2b23406" category="paragraph">ドロップダウンリストに表示されるホストタイプは、ストレージアレイのモデルとファームウェアバージョンによって異なります。最新バージョンでは、最も一般的なオプションが最初に表示されますが、これは最も適切なオプションです。このリストに表示されるオプションが完全にサポートされているとは限りません。</block>
   <block id="d11b94f400203a9104d040cb12cd7ca1" category="admonition">ホストのサポートの詳細については、を参照してください<block ref="49d81d143d5c8b402603532056154481" category="inline-link-rx"></block>。</block>
@@ -7478,8 +7447,6 @@
   <block id="02677c9d7a9295a0b7ff23da80ed17c2" category="cell">Device Mapper Multipathのフェイルオーバー解決策 と3.9以前のカーネルを使用するLinuxオペレーティングシステムをサポートします。</block>
   <block id="e9745a54dc083bc4c6e7adb0ba4a88bf" category="cell">Windowsクラスタ（廃止）</block>
   <block id="ee99f98925e229fb230a1fca830d5dd4" category="cell">ホストオペレーティングシステムのタイプがこの値に設定されている場合は、代わりにWindows（クラスタまたは非クラスタ）の設定を使用します。</block>
-  <block id="c4a63ba39b5ca841704abea6cb2fb44a" category="paragraph">HCAがインストールされ、ストレージがホストに接続されると、HCAはI/Oパス経由でホストトポロジをストレージコントローラに送信します。ホストトポロジに基づいて、ストレージコントローラはホストと関連するホストポートを自動的に定義し、ホストタイプを設定します。</block>
-  <block id="1ddb6810aa8c1c6572287f48e53a765f" category="admonition">推奨されるホストタイプがHCAで選択されない場合は、ホストタイプを手動で設定する必要があります。</block>
   <block id="e28ca758b5b6384ff2daa36accced63c" category="summary">ボリュームの作成中に、ワークロードの使用状況に関する情報を入力するように求められます。</block>
   <block id="b5a3b95a88ff3f89275ca18c4736d4b8" category="doc">選択したワークロードはボリュームの作成にどのように影響しますか？</block>
   <block id="0c6710fd70e8f6dfb7dc7c5ef665fd39" category="paragraph">ボリュームの作成中に、ワークロードの使用状況に関する情報を入力するように求められます。この情報に基づいて最適なボリューム構成が作成されるため、必要に応じて編集することができます。必要に応じて、ボリューム作成のこの手順をスキップできます。</block>
@@ -8097,8 +8064,6 @@
   <block id="2c7bb5c0c4cf1c8a98580db96306828f" category="summary">vCenter向けストレージプラグインを使用してストレージを管理するには、ネットワーク内の各ホストを検出または定義する必要があります。</block>
   <block id="3377964f846f087c85bfa55b8e435603" category="doc">ホスト作成の概要</block>
   <block id="dd4be5e22b2713a377fc88babf216418" category="paragraph">vCenter向けストレージプラグインを使用してストレージを管理するには、ネットワーク内の各ホストを検出または定義する必要があります。ホストは、ストレージアレイ上のボリュームにI/Oを送信するサーバです。</block>
-  <block id="14e74c56c083745010899e49908977f0" category="section-title">ホストの自動作成と手動作成</block>
-  <block id="ae1c3c63ab898ce42b5595fdbc2e91fc" category="paragraph">ホストの作成は、ストレージアレイが接続されているホストを認識して、ボリュームへのI/Oアクセスを許可するために必要な手順の1つです。ホストは自動または手動で作成できます。</block>
   <block id="ed871627754400dea09f1a125da2eff2" category="list-text">*手動*--ホストを手動で作成するときに'ホスト・ポート識別子をリストから選択するか'手動で入力することによって'それらを関連付けますホストの作成後、ボリュームへのアクセスを共有する場合は、ボリュームをホストに割り当てたり、ホストクラスタに追加したりできます。</block>
   <block id="cf9a49f1bff1d19decdde49cdbdae169" category="section-title">ボリュームの割り当て方法</block>
   <block id="e82214f920b58da315913ddaf6ee6c4a" category="paragraph">ホストからボリュームにI/Oを送信するには、ボリュームをボリュームに割り当てる必要があります。ボリュームの作成時にホストまたはホストクラスタを選択するか、あとからボリュームをホストまたはホストクラスタに割り当てることができます。ホストクラスタはホストのグループです。ホストクラスタを作成すると、同じボリュームを複数のホストに簡単に割り当てることができます。</block>
@@ -8302,7 +8267,6 @@
   <block id="4b5189c89fc982fea1db0f47f6bca6ac" category="list-text">4k -- 4,096バイト</block>
   <block id="9df105cfb95359552740abf1d9863ac1" category="doc">ホストアクセスを作成</block>
   <block id="3c6c09b90537af17f7537af5bcbf33f8" category="paragraph">ホストを作成すると、ストレージアレイへの接続とボリュームへのI/Oアクセスを提供するホストパラメータを定義できます。</block>
-  <block id="69517bdc763a3da40b243d4bb6b4875c" category="paragraph">Host Context Agent（HCA）を使用してホストを自動的に検出し、ホストの設定ページで「*View/Edit Settings」を選択して情報が正しいことを確認することができます。ただし、HCAはサポートされているすべてのオペレーティングシステムで使用できるわけではなく、ホストを手動で作成する必要があります。</block>
   <block id="e2fb84e873c35950636aa48dbab40f62" category="paragraph">ホストを作成する際は、次のガイドラインに注意してください。</block>
   <block id="5d79fe33f11555546005cfbd02dcc6b8" category="list-text">*手動追加*--ホストポート識別子がリストに表示されない場合は'ホストポートがログインしていないことを意味しますHBA ユーティリティまたは iSCSI イニシエータユーティリティを使用して、ホストポート識別子を検索してホストに関連付けることができます。ホストポート識別子を手動で入力するか、ユーティリティから（一度に 1 つずつ）ホストポートフィールドにコピーして貼り付けることができます。ホストポート識別子は、一度に 1 つずつ選択してホストに関連付ける必要がありますが、ホストに関連付けられている識別子をいくつでも選択することができます。各識別子はホストポートフィールドに表示されます。必要に応じて、横の * X * を選択して識別子を削除することもできます。</block>
   <block id="a7a6bda88008827c24afa07e951218a9" category="paragraph">（オプション）iSCSI IQNを使用してホストポートを選択または手動で入力し、ストレージアレイにアクセスしてCHAP（Challenge Handshake Authentication Protocol）を使用して認証するホストを必要とする場合は、[Set CHAP initiator secret]チェックボックスをオンにします。選択または手動で入力した iSCSI ホストポートごとに、次の手順を実行します。</block>
@@ -8643,7 +8607,6 @@
   <block id="ebf132debe07a5cd0bc888dd5078033d" category="paragraph">また、次の呼び出しを使用して、REST API経由でキーサーバ証明書をインポートすることもできます。<block ref="640677ffae20a0401b505d0de933e391" prefix=" " category="inline-code"></block></block>
   <block id="bc2848514b39d7125ea7f1e0192ff80f" category="list-text">から保存されたセキュリティキーを使用します <block ref="370683b601e29cfe5ec51edd9d49be09" category="inline-link-macro-rx"></block>を使用して、外部キーを IP アドレス 192.168.128.101 にインポートし、ユーザ名 * admin * とパスワードは空白のままにします。</block>
   <block id="4097f6992eb560447325a703f31e2270" category="paragraph">また、次の呼び出しを使用してREST APIから外部キーをインポートすることもできます。<block ref="758036d11568492285b8504fb55d4d9f" prefix=" " category="inline-code"></block></block>
-  <block id="5dd94bd0b7c84a6ccc9fc7c3a1fa82e6" category="paragraph">InfiniBand-diagsパッケージには、各InfiniBand（IB）ポートのグローバル一意識別子（GUID）を表示するためのコマンドが含まれています。付属のパッケージでOFED / RDMAがサポートされるLinuxディストリビューションのほとんどにInfiniBand-diagsパッケージも付属しており、このパッケージに含まれるコマンドを使用してHCAに関する情報を表示できます。</block>
   <block id="dfcfc178d6edc54d8706c59b747948d5" category="list-text">をインストールします<block ref="3b13fc847651d5be5c89aeab4722c099" prefix=" " category="inline-code"></block> オペレーティングシステムのパッケージ管理コマンドを使用してパッケージ化します。</block>
   <block id="79c617afe97932f20f52d1217736d403" category="list-text">という名前のsystemdサービスユニットファイルを作成します<block ref="6bddfc9da80e7ef0195a324214877004" prefix=" " category="inline-code"></block>。</block>
   <block id="d40e479d6bc1cf9824be2cfa7e837140" category="list-text">を有効にして開始します<block ref="6b64648adbe124ad96531f7f0dd977a4" prefix=" " category="inline-code"></block> サービス</block>
@@ -8895,4 +8858,53 @@
   <block id="11f16f90266e9e59b05bab98913c351d" category="admonition">SANtricity OS 11.80GA以降では、E2800、EF280、E5700、EF570、EF600ではすべてのUSBポートが無効になっています。 EF300アレイにも対応しています。</block>
   <block id="fad6f3761e69d291ccde3b2351a1c961" category="admonition">SANtricity OS 11.80GA以降では、拡張シェルフ構成でベーストレイにドライブを搭載しない構成がサポートされます。この構成を使用する場合は、システムの電源をオンにする前に、ドライブが拡張シェルフに搭載され、ベーストレイに正しく接続されていることを確認してください。</block>
   <block id="cc1b53336ed5c926305dd7ad876ab1d2" category="admonition">SANtricity OS 11.80GA以降では、拡張シェルフ構成でベーストレイにドライブを搭載しない構成がサポートされます。この構成を使用する場合は、システムの電源をオンにする前に、ドライブが拡張シェルフに搭載され、ベーストレイに正しく接続されていることを確認してください。</block>
+  <block id="f9c81137922296691747f3cff9a92105" category="list-text"><block ref="f9c81137922296691747f3cff9a92105" category="inline-link-rx"></block></block>
+  <block id="c68dfa9143daa0b2c3c80d2545e2410c" category="inline-link">SANtricity System Managerオンラインヘルプのコマンドラインインターフェイス（CLI）のダウンロードのトピック</block>
+  <block id="0c229260a68aeca566d73a23ad233dcd" category="admonition">また、SMcliコマンドを使用することもできます。<block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix=" " category="inline-code"></block> Unified Host Utilityツールと同じ機能を実行します。SMcliはSANtricity OSに含まれており、SANtricityシステムマネージャからダウンロードできます。SANtricityシステムマネージャからSMcliをダウンロードする方法の詳細については、<block ref="a9fe8fbe4d692fa7e3dc0b66710307cd" category="inline-link-rx"></block>。</block>
+  <block id="ffc3de562db3aaacf94180bc367bf157" category="admonition">SANtricity ソフトウェア 11.60 以降を使用している場合は、次の手順は実行する必要はありません。SANtricity Secure CLI （ SMcli ）は SANtricity OS に含まれており、 SANtricity System Manager からダウンロードできます。SANtricityシステムマネージャからSMcliをダウンロードする方法の詳細については、 <block ref="07ba191255ffe5607ddf4202e3c76da7" category="inline-link-macro-rx"></block></block>
+  <block id="fc4f413bbdc13c9d07bb87f1f0e4b5bc" category="admonition">SANtricityソフトウェアバージョン11.80.1以降では、ホストコンテキストエージェントはサポートされなくなりました。</block>
+  <block id="5f0e6cffb0f871fd63ee412b0867faa5" category="admonition">SANtricity 11.60以降を実行しているプラットフォームでは、デフォルトのサブネットマスクは255.255.0.0です。</block>
+  <block id="b62cb85461ac6e99d68c9332f3dcd4fc" category="paragraph">InfiniBand-diagsパッケージには、各InfiniBand（IB）ポートのグローバル一意識別子（GUID）を表示するためのコマンドが含まれています。付属のパッケージでOFED / RDMAがサポートされているほとんどのLinuxディストリビューションには、InfiniBand -diagsパッケージも含まれています。このパッケージには、ホストチャネルアダプタ（HCA）に関する情報を表示するコマンドが含まれています。</block>
+  <block id="e2c48d6f7dc54c69caaee62695c56d1b" category="paragraph">InfiniBand-diagsパッケージには、各InfiniBand（IB）ポートのグローバル一意識別子（GUID）を表示するためのコマンドが含まれています。付属のパッケージでOFED / RDMAがサポートされているほとんどのLinuxディストリビューションには、InfiniBand -diagsパッケージも含まれています。このパッケージには、ホストチャネルアダプタ（HCA）に関する情報を表示するコマンドが含まれています。</block>
+  <block id="4fef884c45e5beb8a0176970f056d2b1" category="admonition">または、これらの結果を<block ref="3d80983fc82ff72fd51e5d1f7e90c56d" prefix=" " category="inline-code"></block> コマンドを実行します</block>
+  <block id="38be852a7469b47a9544ad44f92c4a87" category="list-text">コントローラがオンラインに戻ったら、Recovery GuruでNVSRAMの不一致が報告されていないかどうかを確認します。</block>
+  <block id="835e1e289164a83cd62a957064a6d333" category="list-text">NVSRAMの不一致が報告された場合は、次のSMcliコマンドを使用してNVSRAMをアップグレードします。</block>
+  <block id="188409731f46449038b85e358a882871" category="paragraph">。<block ref="ff2bddd61609f26dc3255408781890ad" prefix=" " category="inline-code"></block> アレイがhttpsで保護されていない場合は、パラメータが必要です。</block>
+  <block id="898884f576d3c785b2b6fb9b78fc56d8" category="inline-link">NetAppテクニカルサポート</block>
+  <block id="be078623b1a43475081fe909e7280f94" category="admonition">SMcliコマンドを完了できない場合は、<block ref="0116d50fc8feadbb0d1b3f97da5f8144" category="inline-link-rx"></block> または、<block ref="fcc52edac3ce57829c48ee35d97a295d" category="inline-link-rx"></block> ケースを作成します。</block>
+  <block id="29ff5c5c99e35fef2700d4d5f0f036de" category="list-text">システムのステータスが「最適」になっていることを確認し、コントローラシェルフの警告LEDを確認します。</block>
+  <block id="447181afc701fd84c26bf3596e763049" category="list-text">メニュー：[ハードウェア][サポート]&gt;[アップグレードセンター]をクリックして、システムのファームウェアとNVSRAMのバージョンが適切なレベルになっていることを確認します。</block>
+  <block id="815fe3ef7733928259b45b99a5ecfc49" category="admonition">コントローラの黄色の警告LEDは、交換時に次の状況が発生すると消灯します。</block>
+  <block id="d6a28a344ee78ec0d5fd738bc338db3f" category="list-text">代替ドライブパスで障害が発生しました</block>
+  <block id="2f9cb3ec0fe7cfbcedfda207100269a8" category="list-text">ドロワーが開いている/見つからない</block>
+  <block id="c33de3a09d49fe0c9f425a18bc68b004" category="list-text">ファンに障害が発生している/見つからない</block>
+  <block id="cbf7b24ce0d93efff84abb6dca91dc9e" category="list-text">電源装置がありません</block>
+  <block id="07ed085acfb4f203e63427ca4494f863" category="section-title">バージョン11.80.1の新機能</block>
+  <block id="65e6e49c7d0840983a93edfc482a4650" category="paragraph"><block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix="" category="inline-code"></block> パラメータ</block>
+  <block id="f853f0f729e70cf8d4d12c4bb6b0dbfc" category="paragraph">新しい<block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix=" " category="inline-code"></block> SMcliでパラメータを使用できるようになりました。この新しいパラメータを使用すると、ストレージアレイに関連付けられているすべてのSCSIネイティブブロックデバイスを検索できます。詳細については、https://docs.netapp.com/us-en/e-series-cli/get-started/downloadable-smcli-parameters.html#identify-Devices[Downloadable SMcliコマンドラインパラメータ^]を参照してください。</block>
+  <block id="907ce89001794064fd8d544a753cf6cf" category="paragraph">イーサネットカーネル統計</block>
+  <block id="d1c09bea07e8eb52df56a18fb41d1ba1" category="paragraph">System Managerの[iSCSI統計パッケージの表示]ページに、新しい[イーサネットカーネル統計]オプションが追加されました。この新しいオプションを使用すると、iSCSIデバイスのプラットフォームカーネルドライバの統計を表示できます。詳細については、「https://docs.netapp.com/us-en/e-series-santricity/sm-support/view-iscsi-statistics-packages-support.html[View iSCSI統計パッケージ^]」を参照してください。</block>
+  <block id="bf4fed8d63aecfc1a30be488a115892c" category="paragraph">System Managerでの未割り当てドライブとセキュリティ有効ドライブのフィルタリングの改善</block>
+  <block id="22d3d7b49042c93caf0303e50dd503e1" category="paragraph">System Managerで手動ドライブを選択する際に、未割り当てのセキュリティ有効ドライブが除外されるようになりました。そのため、System Managerのドライブ選択数が、CLIおよびREST APIの自動ドライブ選択候補のリストと一致するようになりました。System Manager内の未割り当てドライブとセキュリティ有効ドライブに、一意のアイコンとマウスオーバーテキストが適用されるようになりました。</block>
+  <block id="8aa767f8b92cfb3b4eab1f415d112646" category="paragraph">REST APIエンドポイントを使用してIPアドレスをブロックする機能を追加</block>
+  <block id="676be4f62b5637bef1c26018afa904d4" category="paragraph">[Settings]エンドポイントを使用して、特定のIPアドレスをブロックできるようになりました。 <block ref="4b697cabc8d99483a2ddfc38c4cb6766" prefix="(" category="inline-code"></block>）。[Settings]エンドポイントで設定すると、ホワイトリストで指定したIPアドレスだけがストレージデバイスと通信できます。この新機能では、IPv4およびIPv6アドレスリストがサポートされます。</block>
+  <block id="c55dbb17c221990804802e322335dc65" category="paragraph">vCenter Storageプラグインは、Eシリーズ11.80.1リリースとの互換性を考慮して更新されています。</block>
+  <block id="e536634a787591dd23dbc618cd207ba6" category="paragraph">Web Services Proxyの使用方法</block>
+  <block id="b2fe36d045fcd0262e37faca678d17c8" category="paragraph">Web Services Proxyは、Eシリーズ11.80.1リリースとの互換性を確保するためにバージョン6.1に更新されています。</block>
+  <block id="c89b00da7202a9a153f3761208e9c04b" category="inline-link">TR-4789：『VMware Configuration Guide for E-Series SANtricity iSCSI Integration with ESXi 6.x and 7.x』</block>
+  <block id="d449697e3f0e2e82550c5b9a353fbb21" category="paragraph">ベストプラクティスとして、 E シリーズストレージアレイではポートバインドを使用しないでください。を参照してください<block ref="b18137069ebac12afacac28918c3703b" category="inline-link-rx"></block> を参照してください。</block>
+  <block id="d94b2476c52b9269fb71e09f2c273b3f" category="paragraph">* 例： *<block ref="55629997c44d8d81fce2f6296c8a341d" prefix=" " category="inline-code"></block></block>
+  <block id="ecac0776d163be45b9926de55b835ec4" category="paragraph">* 例： *<block ref="2c35a6e97cb5b6b552dd737031188e4c" prefix=" " category="inline-code"></block></block>
+  <block id="8afb7a80484f4a0c97a4ca2b1dd4f7a9" category="paragraph">*例A：*<block ref="5f6fe0e54ad0da0581f1c921b9d0d2ce" prefix=" " category="inline-code"></block></block>
+  <block id="1f30cbc7228c9c1478541fac65592fdd" category="paragraph">*例B：*<block ref="ce9fafaa9a800b6d0168143573308013" prefix=" " category="inline-code"></block></block>
+  <block id="a3cd72e3a5590e7769cb2590ecd015eb" category="section-title">ホストの手動作成</block>
+  <block id="9a3eb00d2d24e24125d1dfecb99a47e1" category="paragraph">ホストの作成は、ストレージアレイが接続されているホストを認識して、ボリュームへのI/Oアクセスを許可するために必要な手順の1つです。ホストは手動で作成できます。</block>
+  <block id="8cb031b774a78de2f6be4db3058da109" category="list-text">オペレーティングシステム固有のユーティリティ（サードパーティベンダーから入手可能）を実行してから、SMcliコマンドを実行します。<block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix=" " category="inline-code"></block> ボリューム名をホストストレージアレイ名に関連付けるには、次の手順を実行します。</block>
+  <block id="4f939d909de82f0b6db329c93f1bf479" category="paragraph">SMcliはSANtricity OSに含まれており、SANtricityシステムマネージャからダウンロードできます。SANtricityシステムマネージャからSMcliをダウンロードする方法の詳細については、<block ref="a9fe8fbe4d692fa7e3dc0b66710307cd" category="inline-link-rx"></block>。</block>
+  <block id="a543598a03d2f4a4c65c995fe07c12e1" category="summary">Host Operating System Typeフィールドには、ホストのオペレーティングシステムが表示されます。推奨されるホストタイプをドロップダウンリストから選択できます。</block>
+  <block id="e93513455b64fd664d3f89e3161de3ae" category="paragraph">ホストは手動で作成できます。</block>
+  <block id="2ff8f9ab0a5cf81ee962ea6fda131b40" category="admonition">ホストがストレージアレイ内の特定のボリュームにアクセスできるようにする場合は、デフォルトクラスタを使用しないでください。代わりに、ホストポート識別子を対応するホストに関連付ける必要があります。このタスクは、ホスト作成処理中に手動で実行できます。その後、ボリュームを個々のホストまたはホストクラスタに割り当てます。</block>
+  <block id="e5a4a8069ad5713adce4d473829f3108" category="admonition">コントローラの黄色の警告LEDは、交換時に次の状況が発生すると消灯します。</block>
+  <block id="a425ad1782379ad30aed42d2cca2a9de" category="list-text">Alt電源装置で障害が発生しました</block>
+  <block id="197afe3e4b0fdccae7f0384e342bb289" category="list-text">smcliコマンドを使用できます。<block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix=" " category="inline-code"></block> をクリックして、ボリュームに適用可能なデバイス名を表示します。SMcliはSANtricity OSに含まれており、SANtricityシステムマネージャからダウンロードできます。SANtricityシステムマネージャからSMcliをダウンロードする方法の詳細については、<block ref="a9fe8fbe4d692fa7e3dc0b66710307cd" category="inline-link-rx"></block>。</block>
 </blocks>

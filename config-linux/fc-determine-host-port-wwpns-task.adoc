@@ -24,7 +24,6 @@ HBA ユーティリティについては、次のガイドラインを確認し�
 ** QLogic HBA 用の QLogic QConverge コンソール
 
 
-* Host Context Agent がインストールされている場合、ホストの I/O ポートは自動的に登録されることがあります。
 
 
 .手順

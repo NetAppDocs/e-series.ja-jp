@@ -1,7 +1,7 @@
 ---
 permalink: config-windows/install-configure-host-utilities-task.html 
 sidebar: sidebar 
-keywords: Windows Unified Host Utilities, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
+keywords: Windows Unified Host Utilities, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries, SMcli, SMdevices 
 summary: Windows の簡単な方法で Windows Unified Host Utilities をインストールする。 
 ---
 = Windows Unified Host Utilities をインストールして設定します
@@ -28,6 +28,6 @@ NOTE: このユーティリティパッケージは、 SANtricity ストレー�
 
 +
 
-NOTE: または、 SANtricity SMdevices ユーティリティを使用して Unified Host Utility ツールと同じ機能を実行することもできます。SMdevices ユーティリティは SMutils パッケージに含まれています。SMutils パッケージは、ホストがストレージアレイから認識する内容を確認するためのユーティリティをまとめたパッケージです。SANtricity ソフトウェアのインストールに含まれています。
+NOTE: また、SMcliコマンドを使用することもできます。 `-identifyDevices` Unified Host Utilityツールと同じ機能を実行します。SMcliはSANtricity OSに含まれており、SANtricityシステムマネージャからダウンロードできます。SANtricityシステムマネージャからSMcliをダウンロードする方法の詳細については、 https://docs.netapp.com/us-en/e-series-santricity/sm-settings/download-cli.html["SANtricity System Managerオンラインヘルプのコマンドラインインターフェイス（CLI）のダウンロードのトピック"^]。
 
 

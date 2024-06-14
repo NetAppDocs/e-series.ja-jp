@@ -21,7 +21,7 @@ E シリーズハードウェアおよび SANtricity ソフトウェアの以前
 * https://mysupport.netapp.com/info/web/ECMP11392380.html["古いシステムをインストールします"^]
 * https://mysupport.netapp.com/info/web/ECMP11751516.html["古いシステムを維持します"^]
 * https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1394872["E2600 および E2700 に 2 台目のコントローラを追加します"^]
-* https://mysupport.netapp.com/info/web/ECMP11750309.html["ホストプロトコルを変更または追加する"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2353447["ホストプロトコルを変更または追加する"^]
 * https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1656638["AC 電源から DC 電源に変換します"^]
 
 
