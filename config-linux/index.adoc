@@ -42,5 +42,5 @@ Linux のクイック方式で実行する手順は次のとおりです。
 * オンラインヘルプ -- SANtricity System Manager を使用して構成とストレージ管理タスクを実行する方法について説明します製品内で使用できます。
 * https://kb.netapp.com/["ネットアップナレッジベース"^] （記事のデータベース） - トラブルシューティング情報、 FAQ 、ネットアップのさまざまな製品とテクノロジの説明を掲載しています。
 * http://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] -- ネットアップが指定した基準と要件を満たすネットアップの製品とコンポーネントの構成を検索できます
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2547936["『 Linux Unified Host Utilities 7.1 Installation Guide 』"^] -- Linux Unified Host Utilities 7.1 の使用方法について説明します。
+* https://docs.netapp.com/us-en/ontap-sanhost/hu_luhu_71.html#recommended-driver-settings-with-linux-kernel["Linux Unified Host Utilities 7.1のインストール"^] -- Linux Unified Host Utilities 7.1のインストール方法について説明します。
 

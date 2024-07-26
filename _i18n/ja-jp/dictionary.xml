@@ -5674,8 +5674,6 @@
   <block id="65194545b4f99b4476c642dfa457deb6" category="list-text">NVMe over InfiniBand</block>
   <block id="551aa3d31c165957ccd88122b7fe01be" category="list-text">NVMe over RoCE</block>
   <block id="77535417313be931c13402d84092a8f6" category="list-text"><block ref="18f041f08534fbeb53ae160ad78cfbc4" category="inline-link-rx"></block> （記事のデータベース） - トラブルシューティング情報、 FAQ 、ネットアップのさまざまな製品とテクノロジの説明を掲載しています。</block>
-  <block id="838cc8ab1454bd7f8f1150dacfe96313" category="inline-link">『 Linux Unified Host Utilities 7.1 Installation Guide 』</block>
-  <block id="f059eb99e984ac5d9db818726aea63a2" category="list-text"><block ref="234e662716f52704759847c738e409ad" category="inline-link-rx"></block> -- Linux Unified Host Utilities 7.1 の使用方法について説明します。</block>
   <block id="b672e0a91ab26c755c6523b52301f265" category="summary">このワークシートを使用して、 NVMe over Fibre Channel ストレージの構成情報を記録します。</block>
   <block id="0adabebb059206d194f1093271694dfb" category="doc">NVMe over FC の設定を記録します</block>
   <block id="5f73d116847f62f320bdb4dcf043099d" category="section-title">直接接続トポロジ</block>
@@ -8884,8 +8882,6 @@
   <block id="f853f0f729e70cf8d4d12c4bb6b0dbfc" category="paragraph">新しい<block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix=" " category="inline-code"></block> SMcliでパラメータを使用できるようになりました。この新しいパラメータを使用すると、ストレージアレイに関連付けられているすべてのSCSIネイティブブロックデバイスを検索できます。詳細については、https://docs.netapp.com/us-en/e-series-cli/get-started/downloadable-smcli-parameters.html#identify-Devices[Downloadable SMcliコマンドラインパラメータ^]を参照してください。</block>
   <block id="907ce89001794064fd8d544a753cf6cf" category="paragraph">イーサネットカーネル統計</block>
   <block id="d1c09bea07e8eb52df56a18fb41d1ba1" category="paragraph">System Managerの[iSCSI統計パッケージの表示]ページに、新しい[イーサネットカーネル統計]オプションが追加されました。この新しいオプションを使用すると、iSCSIデバイスのプラットフォームカーネルドライバの統計を表示できます。詳細については、「https://docs.netapp.com/us-en/e-series-santricity/sm-support/view-iscsi-statistics-packages-support.html[View iSCSI統計パッケージ^]」を参照してください。</block>
-  <block id="bf4fed8d63aecfc1a30be488a115892c" category="paragraph">System Managerでの未割り当てドライブとセキュリティ有効ドライブのフィルタリングの改善</block>
-  <block id="22d3d7b49042c93caf0303e50dd503e1" category="paragraph">System Managerで手動ドライブを選択する際に、未割り当てのセキュリティ有効ドライブが除外されるようになりました。そのため、System Managerのドライブ選択数が、CLIおよびREST APIの自動ドライブ選択候補のリストと一致するようになりました。System Manager内の未割り当てドライブとセキュリティ有効ドライブに、一意のアイコンとマウスオーバーテキストが適用されるようになりました。</block>
   <block id="8aa767f8b92cfb3b4eab1f415d112646" category="paragraph">REST APIエンドポイントを使用してIPアドレスをブロックする機能を追加</block>
   <block id="676be4f62b5637bef1c26018afa904d4" category="paragraph">[Settings]エンドポイントを使用して、特定のIPアドレスをブロックできるようになりました。 <block ref="4b697cabc8d99483a2ddfc38c4cb6766" prefix="(" category="inline-code"></block>）。[Settings]エンドポイントで設定すると、ホワイトリストで指定したIPアドレスだけがストレージデバイスと通信できます。この新機能では、IPv4およびIPv6アドレスリストがサポートされます。</block>
   <block id="c55dbb17c221990804802e322335dc65" category="paragraph">vCenter Storageプラグインは、Eシリーズ11.80.1リリースとの互換性を考慮して更新されています。</block>
@@ -8907,4 +8903,9 @@
   <block id="e5a4a8069ad5713adce4d473829f3108" category="admonition">コントローラの黄色の警告LEDは、交換時に次の状況が発生すると消灯します。</block>
   <block id="a425ad1782379ad30aed42d2cca2a9de" category="list-text">Alt電源装置で障害が発生しました</block>
   <block id="197afe3e4b0fdccae7f0384e342bb289" category="list-text">smcliコマンドを使用できます。<block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix=" " category="inline-code"></block> をクリックして、ボリュームに適用可能なデバイス名を表示します。SMcliはSANtricity OSに含まれており、SANtricityシステムマネージャからダウンロードできます。SANtricityシステムマネージャからSMcliをダウンロードする方法の詳細については、<block ref="a9fe8fbe4d692fa7e3dc0b66710307cd" category="inline-link-rx"></block>。</block>
+  <block id="d699daec8de3b69e6a41a8c5e1e7f44e" category="inline-link">Linux Unified Host Utilities 7.1のインストール</block>
+  <block id="7c4ed11037f1ffa580c5462fde3a9a9c" category="list-text"><block ref="5a6c0185dc13c38c5945f8fa47c41898" category="inline-link-rx"></block> -- Linux Unified Host Utilities 7.1のインストール方法について説明します。</block>
+  <block id="28af2c239fc893bd1a2013f2e8b4b941" category="section-title">バージョン11.80.1R1の新機能</block>
+  <block id="5769aac2d83733db3bf7507b56dd86e9" category="paragraph">新しい自己署名およびCA署名管理証明書のキーサイズが拡張されました。</block>
+  <block id="8545f755b4f7a99afe330df57699f365" category="paragraph">SANtricity System ManagerおよびUnified Managerアプリケーションの自己署名証明書の管理証明書キーサイズが、2、048ビットから3、072ビットに変更されました。この変更は、SANtricityアプリケーションから新しく生成された自己署名証明書とCA署名証明書に適用されます。キーの長さは固定であり、NVSRAMのデフォルトのキーサイズ定義の影響を受けません。</block>
 </blocks>
