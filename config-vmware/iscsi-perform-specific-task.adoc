@@ -60,7 +60,7 @@ iSCSI ポートバインドを使用していない場合、 VMware iSCSI ソフ
 
 NOTE: VMware iSCSI ポートバインドは、バインドされているすべての VMkernel ポートを、設定されたネットワークセグメント上でアクセス可能なすべてのターゲットポートに強制的にログインさせる機能です。これは、 iSCSI ターゲットに単一のネットワークアドレスを提供するアレイで使用するためのものです。iSCSI ポートバインドは使用しないことを推奨します。追加情報の場合は、を参照してください http://kb.vmware.com/["VMware のナレッジベース"] を参照してください。この記事では、 ESX / ESXi でソフトウェア iSCSI ポートバインドを使用する場合の考慮事項について説明しています。ESXi ホストを別のベンダーのストレージに接続している場合は、ポートバインドとの競合を避けるために、別の iSCSI VMkernel ポートを使用することを推奨します。
 
-ベストプラクティスとして、 E シリーズストレージアレイではポートバインドを使用しないでください。を参照してください https://www.netapp.com/media/17017-tr4789.pdf["TR-4789：『VMware Configuration Guide for E-Series SANtricity iSCSI Integration with ESXi 6.x and 7.x』"] を参照してください。
+ベストプラクティスとして、 E シリーズストレージアレイではポートバインドを使用しないでください。詳細については、を参照してください https://www.netapp.com/media/17017-tr4789.pdf["TR-4789：『VMware Configuration Guide for E-Series SANtricity iSCSI Integration with ESXi 6.x and 7.x』"^] 。
 
 適切なマルチパス構成を実現するために、 iSCSI ネットワークに複数のネットワークセグメントを使用します。ホスト側のポートと各アレイコントローラのポートを少なくとも 1 つずつ 1 つのネットワークセグメントに配置し、同じグループのホスト側とアレイ側のポートをもう 1 つのネットワークセグメントに配置します。可能であれば、複数のイーサネットスイッチを使用してさらに冗長性を確保します。
 
@@ -87,7 +87,7 @@ SANtricity System Manager の GUI を使用して、アレイ側の iSCSI ネッ
 このタスクでは、ハードウェアページから iSCSI ポート設定にアクセスする方法について説明します。設定には、 System （設定） > Configure iSCSI Ports （ iSCSI ポートの設定）メニューからもアクセスできます。
 
 
-NOTE: VMware 構成でアレイ側のネットワークをセットアップする方法については、次のテクニカルレポートを参照してください。追加情報 https://www.netapp.com/us/media/tr-4789.pdf["『 VMware Configuration Guide for E Series SANtricity iSCSI Integration with ESXi 6.x and 7.x 』"]。
+NOTE: VMware構成でアレイ側のネットワークを設定する方法の詳細については、次のテクニカルレポートを参照してください。 https://www.netapp.com/pdf.html?item=/media/17017-tr4789pdf.pdf["『 VMware Configuration Guide for E Series SANtricity iSCSI Integration with ESXi 6.x and 7.x 』"^]
 
 .手順
 . ブラウザで、「 + https://<DomainNameOrIPAddress>+` 」という URL を入力します

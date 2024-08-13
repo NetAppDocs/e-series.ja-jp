@@ -105,4 +105,4 @@ IP アドレス
 
 
 |===
-これらの前提条件に該当しない場合や、背景にある概念について詳しく学びたい場合は、次のテクニカルレポートを参照してください。 https://www.netapp.com/us/media/tr-4789.pdf["『 VMware Configuration Guide for E-Series SANtricity iSCSI Integration with ESXi 6.X 』"^]
+これらの前提条件に該当しない場合や、背景にある概念について詳しく知りたい場合は、次のテクニカルレポートを参照してください。 https://www.netapp.com/pdf.html?item=/media/17017-tr4789pdf.pdf["『 VMware Configuration Guide for E-Series SANtricity iSCSI Integration with ESXi 6.X 』"^]
