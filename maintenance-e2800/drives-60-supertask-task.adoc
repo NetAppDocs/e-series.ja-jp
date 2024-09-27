@@ -48,6 +48,9 @@ CAUTION: * データアクセスが失われる可能性 * - ボリュームが�
 
 
 
+NOTE: EシリーズDE460c拡張シェルフの交換方法については、を参照してください https://kb.netapp.com/on-prem/E-Series/Hardware-KBs/How_to_replace_an_E_Series_DE460c_controller_expansion_shelf["NetAppナレッジベース"^]。
+
+
 
 == 手順 1 ：ドライブドロワーを交換する準備を行います
 
