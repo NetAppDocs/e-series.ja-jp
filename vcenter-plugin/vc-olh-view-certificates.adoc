@@ -10,7 +10,7 @@ summary: 証明書を使用している組織、証明書を発行した機関�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

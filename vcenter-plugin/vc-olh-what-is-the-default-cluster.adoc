@@ -10,7 +10,7 @@ summary: デフォルトクラスタはシステム定義のエンティティ�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

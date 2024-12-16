@@ -37,7 +37,7 @@ SANtricity System Manager を使用して、搭載されている SFP トラン�
 . テキストボックスに「 * SFP * 」と入力し、「 * 検索」をクリックします。
 . ストレージアレイプロファイルにリストされている各 SFP について、サポートされているデータ速度 * のエントリを探します。
 +
-image::../media/sam1130_ss_e2800_unified_spf_maint-e5700.gif[sam1130 ss e2800 Unified spf maint e5700]
+image::../media/sam1130_ss_e2800_unified_spf_maint-e5700.gif[サポートされるデータ速度]
 
 . 次の表を参照して、 SFP を再利用できるかどうかを確認します。
 +
@@ -102,7 +102,7 @@ NOTE: E28xx コントローラまたは E57xx コントローラでは、 8Gbps 
 .. Support Resources * タブを選択した状態で、 * View top storage array properties * セクションまでスクロールします。
 .. シャーシのシリアル番号 * を探し、この値をテキストファイルにコピーします。
 +
-image::../media/sam1130_ss_e2800_storage_array_profile_sn_smid_copy_maint-e5700.gif[sam1130 ss e2800 storage array profile snsmid copy maint e5700 という名前のストレージアレイプロファイル]
+image::../media/sam1130_ss_e2800_storage_array_profile_sn_smid_copy_maint-e5700.gif[シャーシのシリアル番号]
 
 
 
@@ -118,7 +118,7 @@ NOTE: 「submodel」は「sub-model」と書くこともできる。
 
 .. 変更前の構成の機能パックサブモデル ID を確認します。
 +
-image::../media/storage_array_profile2_maint-e5700.gif[ストレージアレイ profile2 maint e5700]
+image::../media/storage_array_profile2_maint-e5700.gif[機能パックサブモデルID]
 
 
 
@@ -1088,7 +1088,7 @@ NOTE: この表にコントローラサブモデル ID が記載されていな�
 .. * 機能パックの変更 * で、 * 機能有効識別子 * を探します。
 .. この 32 桁の番号をコピーしてテキストファイルに貼り付けます。
 +
-image::../media/sam1130_ss_e2800_change_feature_pack_feature_enable_identifier_copy_maint-e5700.gif[sam1130 ss e2800 変更機能パックのイネーブル ID コピー maint e5700 機能]
+image::../media/sam1130_ss_e2800_change_feature_pack_feature_enable_identifier_copy_maint-e5700.gif[機能パックの変更]
 
 
 
@@ -1133,7 +1133,7 @@ CAUTION: * データ損失の可能性 * - I/O 処理の実行中にこの手順
 . ストレージアレイでミラー関係が確立されている場合は、セカンダリストレージアレイのすべてのホスト I/O 処理を停止します。
 . キャッシュメモリ内のデータがドライブに書き込まれるまで待ちます。
 +
-キャッシュされたデータをドライブに書き込む必要がある場合は、各コントローラの背面にある緑のキャッシュアクティブ LED * （ 1 ） * が点灯します。この LED が消灯するまで待つ必要があります。image:../media/e5700_ib_hic_w_cache_led_callouts_maint-e5700.gif[""]
+キャッシュされたデータをドライブに書き込む必要がある場合は、各コントローラの背面にある緑のキャッシュアクティブ LED * （ 1 ） * が点灯します。このLEDが消灯するまで待つ必要があります。image:../media/e5700_ib_hic_w_cache_led_callouts_maint-e5700.gif["E5700コントローラのキャッシュアクティブLED"]
 
 . SANtricity システムマネージャのホームページで、「 * 進行中の操作を表示」を選択します。
 . すべての処理が完了するまで待ってから、次の手順に進みます。
@@ -1149,7 +1149,7 @@ CAUTION: * データ損失の可能性 * - I/O 処理の実行中にこの手順
 . SANtricity システムマネージャで、 [MENU: Settings （メニュー：設定） ] [System] （システム）を選択します。
 . [ * アドオン * ] で、 [ * 機能パックの変更 * ] を選択します。
 +
-image::../media/sam1130_ss_system_change_feature_pack_maint-e5700.gif[sam1130 ss system change feature pack maint e5700]
+image::../media/sam1130_ss_system_change_feature_pack_maint-e5700.gif[機能パックの変更]
 
 . [ * 参照 ] をクリックし、適用する機能パックを選択します。
 . フィールドに「 * CHANGE * 」と入力します。

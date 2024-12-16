@@ -11,7 +11,7 @@ summary: セキュリティキーは、ストレージアレイ内のコント�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -18,7 +18,7 @@ summary: 新しいバッテリを取り付けたら、コントローラキャ�
 . 取り外し可能なカバーが下になるようにコントローラキャニスターを裏返します。
 . カムハンドルを開いた状態でコントローラキャニスターをスライドし、コントローラシェルフに最後まで挿入します。
 +
-image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[28 dwg e2824 controller キャニスタ maint e2800 を削除します]
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[24ドライブコントローラの再取り付け]
 
 +
 * （ 1 ） * _ コントローラキャニスター _
@@ -27,7 +27,7 @@ image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[28 dwg e
 * （ 2 ） * _CAM ハンドル _
 
 +
-image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[28 dwg e2860 add controller キャニスタ maint e2800]
+image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[60ドライブコントローラの再取り付け]
 
 +
 * （ 1 ） * _ コントローラキャニスター _

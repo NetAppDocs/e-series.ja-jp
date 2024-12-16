@@ -10,7 +10,7 @@ summary: 一連のストレージアレイをグループ化して物理イン�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

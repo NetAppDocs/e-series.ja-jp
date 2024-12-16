@@ -11,7 +11,7 @@ summary: ホストアプリケーションのI/Oが新しいパス経由で転�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

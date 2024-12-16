@@ -90,7 +90,7 @@ CAUTION: パフォーマンスの低下を防ぐために、ケーブルをね�
 . コントローラの背面にあるキャッシュアクティブ LED が消灯していることを確認します。
 . コントローラの両側にあるハンドルをつかみ、シェルフから外れるまで引き出します。
 +
-image::../media/remove_controller_5.png[コントローラ 5 を取り外します]
+image::../media/remove_controller_5.png[ハンドルを押してコントローラを取り外します。]
 
 . 両手でハンドルをつかみ、コントローラキャニスターをスライドしてシェルフから引き出します。コントローラの前面がエンクロージャの外に出たら、両手で完全に引き出します。
 +
@@ -98,7 +98,7 @@ image::../media/remove_controller_5.png[コントローラ 5 を取り外しま�
 CAUTION: コントローラキャニスターは重いので、必ず両手で支えながら作業してください。
 
 +
-image::../media/remove_controller_6.png[コントローラ 6 を取り外します]
+image::../media/remove_controller_6.png[取り外すときは、コントローラの重量を両手で支えながら作業します。]
 
 . コントローラキャニスターを静電気防止処置を施した平らな場所に置きます。
 
@@ -117,7 +117,7 @@ image::../media/remove_controller_6.png[コントローラ 6 を取り外しま�
 
 . 障害が発生したファンをコントローラからそっと持ち上げます。
 +
-image::../media/fan_2.png[ファン 2.]
+image::../media/fan_2.png[ファンを取り外します。]
 
 
 
@@ -130,10 +130,10 @@ image::../media/fan_2.png[ファン 2.]
 .手順
 . 交換用ファンをスライドしてシェルフの奥まで押し込みます。
 +
-image::../media/fan_3.png[ファン 3.]
+image::../media/fan_3.png[コントローラへのファンの取り付け]
 
 +
-image::../media/fan_3_a.png[ファン 3 A]
+image::../media/fan_3_a.png[コントローラへのファンの取り付け]
 
 
 
@@ -151,7 +151,7 @@ image::../media/fan_3_a.png[ファン 3 A]
 NOTE: コントローラがシェルフに正しく取り付けられると、カチッという音がします。
 
 +
-image::../media/remove_controller_7.png[コントローラ 7 を取り外します]
+image::../media/remove_controller_7.png[シェルフへのコントローラの設置]
 
 
 

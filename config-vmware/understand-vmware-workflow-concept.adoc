@@ -13,4 +13,4 @@ summary: WVMware の簡単な設定ワークフローを使用します。
 [role="lead"]
 このワークフローは、ストレージアレイと SANtricity System Manager を設定して VMware ホストでストレージを使用できるようにするための簡単な方法を示しています。
 
-image::../media/1130_flw_sys_mgr_vmware_express_guide_all_protocols.png[1130 Flw sys mgr VMware エクスプレスガイドすべてのプロトコル]
+image::../media/1130_flw_sys_mgr_vmware_express_guide_all_protocols.png[VMwareエクスプレスガイドのワークフロー]

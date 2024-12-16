@@ -19,7 +19,7 @@ summary: このワークシートを使用して、 NVMe over Fibre Channel ス�
 
 直接接続トポロジでは、 1 つ以上のホストをコントローラに直接接続します。
 
-image::../media/nvme_fc_direct_topology.png[NVMe FC 直接トポロジ]
+image::../media/nvme_fc_direct_topology.png[直接接続トポロジの例]
 
 * ホスト 1 の HBA ポート 1 とコントローラ A のホストポート 1
 * ホスト 1 の HBA ポート 2 とコントローラ B のホストポート 1
@@ -37,7 +37,7 @@ image::../media/nvme_fc_direct_topology.png[NVMe FC 直接トポロジ]
 
 ファブリックトポロジでは、 1 つ以上のスイッチを使用します。を参照してください https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] を参照してください。
 
-image::../media/nvme_fc_fabric_topology.png[NVMe FC ファブリックトポロジ]
+image::../media/nvme_fc_fabric_topology.png[スイッチ接続トポロジの例]
 
 
 

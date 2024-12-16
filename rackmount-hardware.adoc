@@ -6,6 +6,8 @@ summary: ハードウェアをラックに設置します。
 ---
 = ラックマウントハードウェア
 :allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
 
 
 [role="lead"]

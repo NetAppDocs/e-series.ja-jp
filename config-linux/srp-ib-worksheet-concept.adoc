@@ -13,7 +13,7 @@ summary: このワークシートを使用して、 SRP over InfiniBand スト�
 [role="lead"]
 このページの PDF を生成して印刷し、次のワークシートを使用して SRP over InfiniBand ストレージの設定情報を記録できます。この情報は、プロビジョニングタスクを実行する際に必要になります。
 
-image::../media/port_identifiers_ib_srp.gif[port identifiers ib srp]
+image::../media/port_identifiers_ib_srp.gif[SRB over IBポート識別子]
 
 
 

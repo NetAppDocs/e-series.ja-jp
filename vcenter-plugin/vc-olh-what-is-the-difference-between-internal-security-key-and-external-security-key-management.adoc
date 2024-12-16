@@ -10,7 +10,7 @@ summary: ドライブセキュリティ機能を実装している場合は、�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

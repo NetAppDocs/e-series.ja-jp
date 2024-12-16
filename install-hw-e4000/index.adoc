@@ -1,0 +1,49 @@
+---
+permalink: install-hw-e4000/index.html 
+sidebar: sidebar 
+keywords:  
+summary: E4000ストレージシステムを設置してセットアップするには、次の手順に従います。 
+---
+= E4000システムのインストールとセットアップ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+E4000ストレージシステムを設置してセットアップするには、次の手順に従います。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]設置の準備
+[role="quick-margin-para"]
+E4000シリーズストレージシステムの仕様を満たすように設置場所を準備する必要があります。
+
+[role="quick-margin-list"]
+* link:../install-hw-e4000/prepare-installation.html["設置を準備"^]
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"]ハードウェアの設置
+[role="quick-margin-para"]
+E4012、E4060、DE212C、またはDE460CストレージシステムをラックまたはNetAppシステムキャビネットに設置する方法について説明します。
+
+[role="quick-margin-list"]
+* link:../install-hw-e4000/install-hardware-12.html["E4012ハードウェアの設置"^]
+* link:../install-hw-e4000/install-hardware-60.html["E4060ハードウェアの設置"^]
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]ハードウェアシェルフをケーブル接続
+[role="quick-margin-para"]
+E4000ストレージシステムの電源ケーブルを接続し、ドライブシェルフの電源をオンにする方法について説明します。
+
+[role="quick-margin-list"]
+* link:../install-hw-e4000/connect-cables-12.html["E4012ハードウェアのケーブル接続"^]
+* link:../install-hw-e4000/connect-cables-60.html["E4060ハードウェアをケーブル接続"^]
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["4."]ストレージシステムのセットアップの完了
+[role="quick-margin-para"]
+コントローラをネットワークに接続する方法と、ストレージシステムのセットアップと設定を実行する方法について説明します。
+
+[role="quick-margin-list"]
+* link:../install-hw-e4000/complete-setup-12.html["E4012セットアップの完了"^]
+* link:../install-hw-e4000/complete-setup-60.html["E4060セットアップを完了"^]
+

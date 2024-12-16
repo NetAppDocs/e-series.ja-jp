@@ -17,5 +17,5 @@ ESXi 6.x および 7.x のすべてのバージョンで、 VMFS バージョン
 
 .手順
 . ESXi ホストにマッピングされたボリュームが正しく検出されていることを確認してください。
-. vSphere Client または vSphere Web Client で VMFS データストアを作成する手順、またはボリュームを RDM として使用する手順については、を参照してください https://www.vmware.com/support/pubs/["VMware のドキュメント Web サイト"^]。
+. vSphere ClientまたはvSphere Web ClientでVMFSデータストアを作成したり、ボリュームをRDMとして使用したりする手順については、を参照して https://docs.vmware.com/index.html["VMware のドキュメント Web サイト"^]ください。
 

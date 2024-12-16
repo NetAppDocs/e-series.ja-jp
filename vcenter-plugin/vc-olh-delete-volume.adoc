@@ -11,7 +11,7 @@ summary: プールまたはボリュームグループの空き容量を増や�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

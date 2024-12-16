@@ -15,7 +15,7 @@ summary: このワークシートを使用して、 FC ストレージの構成�
 
 次の図では、 2 つのゾーンでホストが E シリーズストレージアレイに接続されています。一方のゾーンは青い線で示され、もう一方のゾーンは赤い線で示されます。いずれのポートにもストレージへのパスが 2 つ（各コントローラへのパスが 1 つ）あります。
 
-image::../media/port_identifiers_host_and_target_conf-lin.gif[ポート識別子ホストとターゲットの conf LIN]
+image::../media/port_identifiers_host_and_target_conf-lin.gif[FC のネットワーク構成]
 
 
 

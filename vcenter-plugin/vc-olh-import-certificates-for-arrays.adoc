@@ -11,7 +11,7 @@ summary: ストレージアレイがvCenter向けストレージプラグイン�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

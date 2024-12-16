@@ -36,7 +36,7 @@ NOTE: 電源装置の交換用手順 は IOM の交換に適用されます。IO
 
 次の図は、電源装置（電源 / ファンキャニスター）を 2 台搭載した E5724 コントローラシェルフの例を示したものです。DE224C ドライブシェルフも同様ですが、コントローラキャニスターの代わりに I/O モジュール（ IOM ）が搭載されています。
 
-image::../media/e5700_power_supply_callout.png[e5700 電源モジュール番号]
+image::../media/e5700_power_supply_callout.png[E5700コントローラ電源装置]
 
 * （ 1 ） * _ コントローラキャニスターの下に電源装置（電源 / ファンキャニスター）を 2 台搭載したコントローラシェルフ。 _
 
@@ -82,11 +82,11 @@ NOTE: シェルフのもう一方の電源装置（電源 / ファンキャニ�
 
 次の図は、電源キャニスターを 2 台搭載した DE460C ドライブシェルフの背面を示したものです。
 
-image::../media/28_dwg_de460c_rear_no_callouts_maint-e5700.gif[28 dwg de460c rear no callouts maint e5700]
+image::../media/28_dwg_de460c_rear_no_callouts_maint-e5700.gif[DE460C（電源キャニスター×2）]
 
 電源キャニスターを次の図に示します。
 
-image::../media/28_dwg_e2860_de460c_psu_maint-e5700.gif[28 dwg e2860 de460c PSU maint e5700]
+image::../media/28_dwg_e2860_de460c_psu_maint-e5700.gif[電源キャニスター]
 
 
 
@@ -130,11 +130,11 @@ NOTE: シェルフのもう一方の電源キャニスターのステータス�
 
 ファンキャニスターを次の図に示します。
 
-image::../media/28_dwg_e2860_de460c_single_fan_canister_no_callouts_maint-e5700.gif[28 dwg e2860 de460c single fan キャニスタ no callouts e5700]
+image::../media/28_dwg_e2860_de460c_single_fan_canister_no_callouts_maint-e5700.gif[ファンキャニスター]
 
 次の図は、ファンキャニスターを 2 台搭載した DE460C シェルフの背面を示したものです。
 
-image::../media/28_dwg_de460c_rear_no_callouts_maint-e5700.gif[28 dwg de460c rear no callouts maint e5700]
+image::../media/28_dwg_de460c_rear_no_callouts_maint-e5700.gif[DE460C（ファンキャニスター×2）]
 
 
 CAUTION: * 機器の破損の可能手順性 * - 電源をオンにした状態でファンキャニスターを交換する場合は、機器の過熱を防ぐために 30 分以内に完了する必要があります。

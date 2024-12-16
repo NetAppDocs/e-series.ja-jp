@@ -11,7 +11,7 @@ summary: ホストまたはホストクラスタを削除して、ボリュー�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

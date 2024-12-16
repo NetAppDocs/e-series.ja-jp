@@ -67,7 +67,7 @@ NOTE: ソフトウェアイニシエータの NQN はタスクの実行中に特
 
 直接接続トポロジでは、 1 つ以上のホストをサブシステムに直接接続します。SANtricity OS 11.50 リリースでは、次の図のように、各ホストからサブシステムコントローラへの単一の接続がサポートされます。この構成では、各ホストの一方の HCA （ホストチャネルアダプタ）ポートを、接続先の E シリーズコントローラポートと同じサブネット（ただしもう一方の HCA ポートとは別のサブネット）に配置する必要があります。
 
-image::../media/nvmeof_direct_connect.gif[nvmeof 直接接続があります]
+image::../media/nvmeof_direct_connect.gif[NVMe over InfiniBandの直接接続の例]
 
 
 

@@ -10,7 +10,7 @@ summary: パスフレーズは、ローカルの管理クライアントに格�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -19,7 +19,7 @@ Web Services API では、 HTTP 通信に要求と応答のサイクルが含ま
 
 使用するプログラミング言語やツールに関係なく、 Web Services API の各呼び出しは、 URL 、 HTTP 動詞、および Accept ヘッダーを含む同様の構造を持ちます。
 
-image::../media/web_services_proxy_api.gif[Web サービスプロキシ API]
+image::../media/web_services_proxy_api.gif[Web Services APIの呼び出し図]
 
 すべての要求には次の例のような URL が含まれ、次の表に示す要素で構成されます。
 

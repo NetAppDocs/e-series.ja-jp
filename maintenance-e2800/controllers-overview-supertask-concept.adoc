@@ -36,9 +36,9 @@ NOTE: これらの手順は、同様のシェルフIOMのホットスワップ�
 
 この図は、 2 台目のコントローラを追加する前（ 1 台のコントローラキャニスターとブランクカバー）と 2 台目のコントローラを追加したあとのコントローラシェルフの例を示したものです。
 
-image::../media/28_dwg_2800_controller_simplex.gif[28 DWG 2800 コントローラシンプレックス]
+image::../media/28_dwg_2800_controller_simplex.gif[E2800シンフレツクスコウセイ]
 
-image::../media/28_dwg_2800_controller_duplex.gif[28 DWG 2800 コントローラデュプレックス]
+image::../media/28_dwg_2800_controller_duplex.gif[E2800デュプレックス構成]
 
 
 NOTE: この図はコントローラキャニスターの例を示したものです。コントローラキャニスターのホストポートは、この図と異なる場合があります。
@@ -91,7 +91,7 @@ NOTE: コントローラの黄色の警告LEDは、交換時に次の状況が�
 ====
 
 
-image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[28 DWG 2800 controller Attn led maint e2800]
+image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[E2800警告LED]
 
 * （ 1 ） * _Attention LED_
 

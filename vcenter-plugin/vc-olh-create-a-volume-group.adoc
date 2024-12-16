@@ -11,7 +11,7 @@ summary: ホストからアクセス可能な1つ以上のボリュームのボ�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: EF300システムとEF600システムの場合は、ボリュームを�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

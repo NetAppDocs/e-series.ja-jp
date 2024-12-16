@@ -10,7 +10,7 @@ summary: ボリュームの作成中に、ワークロードの使用状況に�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

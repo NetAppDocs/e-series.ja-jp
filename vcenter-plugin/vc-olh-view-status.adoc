@@ -10,7 +10,7 @@ summary: ストレージプラグインfor vCenterまたはvSphere Clientから�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

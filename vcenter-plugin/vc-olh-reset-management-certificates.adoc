@@ -10,7 +10,7 @@ summary: 管理証明書を工場出荷時の自己署名証明書の状態に�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

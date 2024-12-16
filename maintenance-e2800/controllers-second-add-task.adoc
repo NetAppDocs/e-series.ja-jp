@@ -39,7 +39,7 @@ E2800 アレイには 2 台目のコントローラキャニスターを追加�
 . 新しいコントローラキャニスターを開封し、静電気防止処置を施した平らな場所に置きます。
 . コントローラキャニスターの背面にある MAC アドレスと FRU パーツ番号のラベルを確認します。
 +
-image::../media/28_dwg_e2800_labels_maint-e2800.gif[28 DWG e2800 ラベル maint e2800]
+image::../media/28_dwg_e2800_labels_maint-e2800.gif[E2800コントローラのMACアドレスとFRUパーツ番号]
 
 +
 *(1) *_MAC アドレス :_ 管理ポート 1 の MAC アドレス ("P1") 。元のコントローラの IP アドレスが DHCP を使用して取得したアドレスである場合は、新しいコントローラに接続する際にこのアドレスが必要になります。
@@ -50,7 +50,7 @@ image::../media/28_dwg_e2800_labels_maint-e2800.gif[28 DWG e2800 ラベル maint
 . SANtricity System Manager で、取り付けられているコントローラキャニスターの交換パーツ番号を確認します。
 +
 .. 「 * ハードウェア * 」を選択します。
-.. コントローラアイコンが付いたコントローラシェルフを探します image:../media/sam1130_ss_hardware_controller_icon_maint-e2800.gif[""]。
+.. コントローラアイコンが表示されたコントローラシェルフを探しimage:../media/sam1130_ss_hardware_controller_icon_maint-e2800.gif["コントローラアイコン"]ます。
 .. コントローラアイコンをクリックします。
 .. コントローラを選択し、 * 次へ * をクリックします。
 .. [*Base] タブで、コントローラの交換パーツ番号 * をメモします。
@@ -88,7 +88,7 @@ HIC の底面やコントローラカードの表面のコンポーネントを�
 CAUTION: * 機器の破損の可能性 * -- HIC と取り付けネジの間にあるコントローラ LED の金色のリボンコネクタをはさまないように十分に注意してください。
 
 +
-image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[28 dwg e2800 HIC 蝶ネジ maint e2800]
+image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[コントローラへのHICの取り付け]
 
 +
 * （ 1 ） * _ ホスト・インターフェイス・カード _
@@ -102,7 +102,7 @@ image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[28 dwg e2800 HIC �
 
 . 新しい HIC カバーをコントローラキャニスターに取り付け、前の手順で外した 4 本のネジで No.1 プラスドライバを使用して固定します。
 +
-image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[28 DWG e2800 HIC の前面取り付けネジ maint e2800]
+image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[前面プレートの取り付け]
 
 . カチッという音がしてボタンが固定されるまでカバーを前方から後方にスライドして、コントローラキャニスターにカバーを再度取り付けます。
 . 取り付け準備ができるまで、コントローラキャニスターを脇に置きます。
@@ -286,7 +286,7 @@ reset controller [a];
 . 取り外し可能なカバーが下になるようにコントローラキャニスターを裏返します。
 . カムハンドルを開いた状態でコントローラキャニスターをスライドし、コントローラシェルフに最後まで挿入します。
 +
-image::../media/28_dwg_e2824_add_controller_canister.gif[28 dwg e2824 ：コントローラキャニスターを追加します]
+image::../media/28_dwg_e2824_add_controller_canister.gif[2台目のコントローラキャニスターの取り付け]
 
 +
 * （ 1 ） * _ コントローラキャニスター _
@@ -312,7 +312,7 @@ image::../media/28_dwg_e2824_add_controller_canister.gif[28 dwg e2824 ：コン�
 +
 ** デジタル表示ディスプレイの表示が、コントローラがオフラインになっていることを示す連続した * OS * 、 * OL * 、 * _ blank_ * と表示されます。
 ** 黄色の警告 LED が点灯した状態になります。
-** ホストリンク LED は、ホストインターフェイスに応じて、点灯、点滅、消灯のいずれかになります。image:../media/28_dwg_attn_led_7s_display_maint-e2800.gif[""]
+** ホストリンクLEDは、ホストインターフェイスに応じて、点灯、点滅、消灯のいずれかになります。image:../media/28_dwg_attn_led_7s_display_maint-e2800.gif["E2800コントローラのLED"]
 +
 * （ 1 ） * _Attention LED （アンバー） _
 
@@ -380,7 +380,7 @@ NOTE: SANtricity System Manager を使用して新しい NVSRAM ファイルを�
 
 .. 再配布するボリュームごとに、 [* Preferred Owner* （優先所有者 * ） ] リストから [* Controller B* （コントローラ B * ） ] を選択します。
 +
-image::../media/sam1130_ss_change_volume_ownership.gif[sam1130 ss ：ボリューム所有権の変更]
+image::../media/sam1130_ss_change_volume_ownership.gif[ボリューム所有権の変更のSystem Manager画面]
 
 .. [ 所有権の変更 ] をクリックします。
 +

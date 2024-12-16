@@ -10,7 +10,7 @@ summary: 証明書をエクスポートして詳細を表示します。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

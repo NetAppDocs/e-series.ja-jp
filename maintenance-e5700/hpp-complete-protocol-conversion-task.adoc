@@ -50,7 +50,7 @@ NOTE: ホストまたはホストクラスタを追加する手順を確認す�
 
 .. [ ホストポート *] タブをクリックします。
 +
-image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e5700.gif[sam1130 ss ホスト設定ダイアログポートタブ maint e5700]
+image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e5700.gif[[Host Settings]ダイアログ]
 
 .. [ * 追加 ] をクリックし、 [ * ホスト・ポートの追加 * ] ダイアログ・ボックスを使用して、新しいホスト・ポート識別子をホストに関連付けます。
 +
@@ -96,7 +96,7 @@ image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e5700.gif[sam113
 
 .. [ ホストポート *] タブをクリックします。
 +
-image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e5700.gif[sam1130 ss ホスト設定ダイアログポートタブ maint e5700]
+image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e5700.gif[[Host Settings]ダイアログ]
 
 .. [ * 追加 ] をクリックし、 [ * ホスト・ポートの追加 * ] ダイアログ・ボックスを使用して、新しいホスト・ポート識別子をホストに関連付けます。
 +

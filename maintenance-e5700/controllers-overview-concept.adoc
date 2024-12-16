@@ -41,7 +41,7 @@ NOTE: コントローラの黄色の警告LEDは、交換時に次の状況が�
 ====
 
 
-image::../media/e5700_attention_led_callout.png[e5700 警告 LED コールアウト]
+image::../media/e5700_attention_led_callout.png[E5700コントローラ警告LED]
 
 * （ 1 ） * _Attention LED_
 

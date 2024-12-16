@@ -37,7 +37,7 @@ NOTE: プラグインは、System Managerインターフェイスに直接代わ
 
 vCenter 環境での通信の詳細については、次の図を参照してください。
 
-image:../media/vcenter_communication2.png[""]
+image:../media/vcenter_communication2.png["vCenterの通信環境"]
 
 
 

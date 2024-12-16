@@ -28,14 +28,14 @@ SAS 拡張用に EF300 をケーブル接続する場合は、次の情報を確
 
 
  a| 
-image:../media/ef600_w_faceplate.png[""]
+image:../media/ef600_w_faceplate.png["ドライブとベゼルが取り付けられたシェルフ"]
  a| 
 ドライブが取り付けられたシェルフ（ベゼルとエンドキャップは別に梱包）
 
 
 
  a| 
-image:../media/superrails_inst-hw-ef600.png[""]
+image:../media/superrails_inst-hw-ef600.png["ラックマウントハードウェア"]
  a| 
 ラックマウントハードウェア
 
@@ -49,7 +49,7 @@ image:../media/superrails_inst-hw-ef600.png[""]
 
 
  a| 
-image:../media/cable_ethernet_inst-hw-ef600.png[""]
+image:../media/cable_ethernet_inst-hw-ef600.png["RJ-45イーサネットケーブル"]
  a| 
 RJ-45 イーサネットケーブル（発注した場合）
  a| 
@@ -58,7 +58,7 @@ RJ-45 イーサネットケーブル（発注した場合）
 
 
  a| 
-image:../media/cable_io_inst-hw-ef600.png[""]
+image:../media/cable_io_inst-hw-ef600.png["I/Oケーブル"]
  a| 
 I/O ケーブル（発注した場合）
  a| 
@@ -67,7 +67,7 @@ I/O ケーブル（発注した場合）
 
 
  a| 
-image:../media/cable_power_inst-hw-ef600.png[""]
+image:../media/cable_power_inst-hw-ef600.png["電源ケーブル"]
  a| 
 電源ケーブル（発注した場合）
  a| 
@@ -80,28 +80,28 @@ image:../media/cable_power_inst-hw-ef600.png[""]
 
 
  a| 
-image:../media/screwdriver_inst-hw-ef600.png[""]
+image:../media/screwdriver_inst-hw-ef600.png["No.2 プラスドライバ"]
  a| 
 No.2 プラスドライバ
 
 
 
  a| 
-image:../media/flashlight_inst-hw-ef600.png[""]
+image:../media/flashlight_inst-hw-ef600.png["懐中電灯"]
  a| 
 懐中電灯
 
 
 
  a| 
-image:../media/wrist_strap_inst-hw-ef600.png[""]
+image:../media/wrist_strap_inst-hw-ef600.png["静電気防止用ストラップ"]
  a| 
 静電気防止用ストラップ
 
 
 
  a| 
-image:../media/2u_rackspace_inst-hw-ef600.png[""]
+image:../media/2u_rackspace_inst-hw-ef600.png["2Uラック"]
  a| 
 2U ラックスペース： 48.3cm の標準搭載。48.30cm （ 19 インチ）ラック
 
@@ -121,7 +121,7 @@ NOTE: 他社製のキャビネットを使用すると、電源ケーブルを�
 
 
  a| 
-image:../media/management_station_inst-hw-ef600_g60b3.png[""]
+image:../media/management_station_inst-hw-ef600_g60b3.png["管理ソフトウェアでサポートされているブラウザを使用した管理ステーション"]
  a| 
 管理ソフトウェアでサポートされているブラウザ：
 

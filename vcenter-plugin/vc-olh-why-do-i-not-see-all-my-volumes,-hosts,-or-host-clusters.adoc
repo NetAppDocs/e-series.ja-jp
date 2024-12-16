@@ -10,7 +10,7 @@ summary: ベースボリュームでData Assurance（DA）が有効なSnapshot�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

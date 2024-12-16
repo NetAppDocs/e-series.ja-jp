@@ -10,7 +10,7 @@ summary: 設定のインポート処理の際、ターゲットの選択ダイ�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

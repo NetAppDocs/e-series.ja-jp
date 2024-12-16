@@ -44,7 +44,7 @@ NOTE: 推奨：インポートプロセスを開始する前にリモートソ�
 
 次の図は、 iSCSI 接続を介してリモートストレージボリューム操作を実行するようにシステムをケーブル接続する方法の例を示しています。
 
-image:../media/remote_target_volumes_iscsi_use_case_1.png[""] image:../media/remote_target_volumes_iscsi_use_case_2.png[""]
+image:../media/remote_target_volumes_iscsi_use_case_1.png["iSCSIストレージのケーブル接続"] image:../media/remote_target_volumes_iscsi_use_case_2.png["iSCSIストレージのケーブル接続"]
 
 
 

@@ -11,7 +11,7 @@ summary: ボリュームの再配置：ボリュームを優先コントロー�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

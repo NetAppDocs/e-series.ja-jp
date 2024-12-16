@@ -11,7 +11,7 @@ summary: I/O処理に使用できるように、ボリュームをホストま�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

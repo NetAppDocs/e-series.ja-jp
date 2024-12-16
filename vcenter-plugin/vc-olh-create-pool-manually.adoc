@@ -11,7 +11,7 @@ summary: プールの自動構成の要件を満たしていない場合は、�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

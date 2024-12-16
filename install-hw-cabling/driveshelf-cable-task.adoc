@@ -1,7 +1,7 @@
 ---
 permalink: install-hw-cabling/driveshelf-cable-task.html 
 sidebar: sidebar 
-keywords: cabling, cables, drive shelf cabling, controller shelf cabling, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C 
+keywords: cabling, cables, drive shelf cabling, controller shelf cabling, E-Series, eseries, E2800, E5700, EF300, EF600, E4000, DE212C, DE224C, DE460C 
 summary: コントローラシェルフの各コントローラをドライブシェルフの I/O モジュール（ IOM ）に接続します。 
 ---
 = ドライブシェルフのケーブル接続
@@ -29,34 +29,27 @@ NOTE: この手順 は、シェルフの IOM のホットスワップや交換�
 
 E2800 、 E2800B 、 EF280 、 E5700 、 EF5700B の環境 のケーブル接続については、次の情報を参照してください。 または EF570 コントローラシェルフから DE212C 、 DE224C 、 DE460 の各ドライブシェルフに接続できます。
 
-
-
-=== 12 ドライブまたは 24 ドライブシェルフのケーブル接続
-
+[role="tabbed-block"]
+====
+.12ドライブまたは24ドライブシェルフ
+--
 1 台以上の 12 ドライブまたは 24 ドライブシェルフにコントローラシェルフをケーブル接続できます。
 
 次の図は、コントローラシェルフとドライブシェルフを示しています。モデル上のポートの位置を確認するには、を参照してください https://hwu.netapp.com/Controller/Index?platformTypeId=2357027["Hardware Universe"^]。
 
+image::../media/12_24_cabling.png[コントローラシェルフと 12 ドライブまたは 24 ドライブシェルフ]
 
-
-==== コントローラシェルフと 12 ドライブまたは 24 ドライブシェルフ
-
-image::../media/12_24_cabling.png[12 24 ケーブル配線]
-
-
-
-=== 60 ドライブシェルフのケーブル接続
-
+--
+.60ドライブシェルフ
+--
 1 台以上の 60 ドライブシェルフにコントローラシェルフをケーブル接続できます。
 
 次の図は、コントローラシェルフとドライブシェルフを示しています。モデル上のポートの位置を確認するには、を参照してください https://hwu.netapp.com/Controller/Index?platformTypeId=2357027["Hardware Universe"^]。
 
+image::../media/60_cabling.png[コントローラシェルフと 60 ドライブシェルフ]
 
-
-==== コントローラシェルフと 60 ドライブシェルフ
-
-image::../media/60_cabling.png[60 ケーブル]
-
+--
+====
 
 
 == EF300およびEF600のケーブル接続
@@ -66,30 +59,47 @@ image::../media/60_cabling.png[60 ケーブル]
 .作業を開始する前に
 EF300またはEF600のケーブル接続を行う前に、ファームウェアが最新バージョンに更新されていることを確認する必要があります。ファームウェアを更新するには、の手順に従います link:../upgrade-santricity/index.html["SANtricity OS のアップグレード中です"^]。
 
-
-
-=== 12 ドライブまたは 24 ドライブシェルフのケーブル接続
-
+[role="tabbed-block"]
+====
+.12ドライブまたは24ドライブシェルフ
+--
 1 台以上の 12 ドライブまたは 24 ドライブシェルフにコントローラシェルフをケーブル接続できます。
 
 次の図は、コントローラシェルフとドライブシェルフを示しています。モデル上のポートの位置を確認するには、を参照してください https://hwu.netapp.com/Controller/Index?platformTypeId=2357027["Hardware Universe"^]。
 
+image::../media/ef_to_de224c_four_shelves.png[コントローラシェルフと 12 ドライブまたは 24 ドライブシェルフ]
 
-
-==== コントローラシェルフと 12 ドライブまたは 24 ドライブシェルフ
-
-image::../media/ef_to_de224c_four_shelves.png[EF から DE224c の 4 台のシェルフ]
-
-
-
-=== 60 ドライブシェルフのケーブル接続
-
+--
+.60ドライブシェルフ
+--
 1 台以上の 60 ドライブシェルフにコントローラシェルフをケーブル接続できます。
 
 次の図は、コントローラシェルフとドライブシェルフを示しています。モデル上のポートの位置を確認するには、を参照してください https://hwu.netapp.com/Controller/Index?platformTypeId=2357027["Hardware Universe"^]。
 
+image::../media/ef_to_de460c.png[コントローラシェルフと 60 ドライブシェルフ]
+
+--
+====
 
 
-==== コントローラシェルフと 60 ドライブシェルフ
+== E4000のケーブル接続
 
-image::../media/ef_to_de460c.png[EF から de460c]
+以下の情報は、 E4000 コントローラシェルフを DE212C 、 DE224C 、または DE460 ドライブシェルフに接続する環境のケーブル接続方法です。
+
+[role="tabbed-block"]
+====
+.12ドライブシェルフ
+--
+1台以上の12ドライブシェルフにコントローラシェルフをケーブル接続できます。
+
+image::../media/e4012_cabling.png[コントローラシェルフと12ドライブシェルフ]
+
+--
+.60ドライブシェルフ
+--
+1 台以上の 60 ドライブシェルフにコントローラシェルフをケーブル接続できます。
+
+image::../media/e4060_cabling.png[コントローラシェルフと 60 ドライブシェルフ]
+
+--
+====

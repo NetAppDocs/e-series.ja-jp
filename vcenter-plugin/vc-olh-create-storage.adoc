@@ -11,7 +11,7 @@ summary: 最初に特定のアプリケーションタイプのワークロー�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

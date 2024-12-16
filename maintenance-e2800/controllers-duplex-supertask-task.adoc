@@ -46,7 +46,7 @@ summary: デュプレックス構成でのコントローラキャニスター�
 
 . コントローラキャニスターの背面にある MAC アドレスと FRU パーツ番号のラベルを確認します。
 +
-image::../media/28_dwg_e2800_labels_maint-e2800.gif[28 DWG e2800 ラベル maint e2800]
+image::../media/28_dwg_e2800_labels_maint-e2800.gif[E2800コントローラのMACアドレスとFRUパーツ番号]
 
 +
 *(1) *_MAC アドレス :_ 管理ポート 1 の MAC アドレス ("P1") 。元のコントローラの IP アドレスが DHCP を使用して取得したアドレスである場合は、新しいコントローラに接続する際にこのアドレスが必要になります。
@@ -60,7 +60,7 @@ image::../media/28_dwg_e2800_labels_maint-e2800.gif[28 DWG e2800 ラベル maint
 
 +
 .. 「 * ハードウェア * 」を選択します。
-.. コントローラアイコンが付いたコントローラシェルフを探します image:../media/sam1130_ss_hardware_controller_icon_maint-e2800.gif[""]。
+.. コントローラアイコンが表示されたコントローラシェルフを探しimage:../media/sam1130_ss_hardware_controller_icon_maint-e2800.gif["コントローラアイコン"]ます。
 .. コントローラアイコンをクリックします。
 .. コントローラを選択し、 * 次へ * をクリックします。
 .. [*Base] タブで、コントローラの交換パーツ番号 * をメモします。
@@ -166,7 +166,7 @@ CAUTION: パフォーマンスの低下を防ぐために、ケーブルをね�
 次の図は、 E2812 コントローラシェルフ、 E2824 コントローラシェルフ、または EF280 フラッシュアレイの例です。
 
 +
-image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[28 dwg e2824 controller キャニスタ maint e2800 を削除します]
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[コントローラキャニスターを取り外します]
 
 +
 * （ 1 ） * _ コントローラキャニスター _
@@ -178,7 +178,7 @@ image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[28 dwg e
 次の図は、 E2860 のコントローラシェルフの例です。
 
 +
-image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[28 dwg e2860 add controller キャニスタ maint e2800]
+image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[コントローラキャニスターを取り外します]
 
 +
 * （ 1 ） * _ コントローラキャニスター _
@@ -211,7 +211,7 @@ E2812 コントローラシェルフ、 E2824 コントローラシェルフ、�
 この緑の LED が点灯している場合は、コントローラがまだバッテリ電源を使用しています。この LED が消灯するのを待ってから、コンポーネントを取り外す必要があります。
 
 +
-image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif[28 dwg e2800 内部キャッシュアクティブ LED maint e2800]
+image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif[内部キャッシュアクティブ LED]
 
 +
 * （ 1 ） * _ 内部キャッシュアクティブ LED_
@@ -222,7 +222,7 @@ image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif[28 dwg e2
 . バッテリの青色のリリースラッチの位置を確認します。
 . バッテリをリリースラッチを押し下げながら引き出し、コントローラキャニスターから外します。
 +
-image::../media/28_dwg_e2800_remove_battery_maint-e2800.gif[28 dwg e2800 バッテリメンテナンス e2800 を取り外します]
+image::../media/28_dwg_e2800_remove_battery_maint-e2800.gif[コントローラキャニスターからのバッテリの取り外し]
 
 +
 * （ 1 ） * _ バッテリリリースラッチ _
@@ -245,7 +245,7 @@ image::../media/28_dwg_e2800_remove_battery_maint-e2800.gif[28 dwg e2800 バッ�
 ネジは 4 本あります。 1 本は上部に、もう 1 本は側面に、 2 本は前面にあります。
 
 +
-image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[28 DWG e2800 HIC の前面取り付けネジ maint e2800]
+image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[前面プレートの取り外し]
 
 . HIC カバーを取り外します。
 . コントローラカードに HIC を固定している 3 本の取り付けネジを手またはプラスドライバで緩めます。
@@ -255,7 +255,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[28 DWG e2800 H
 CAUTION: HIC の底面やコントローラカードの表面のコンポーネントをこすったりぶつけたりしないように注意してください。
 
 +
-image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[28 dwg e2800 HIC 蝶ネジ maint e2800]
+image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[コントローラカードからのHICの取り外し]
 
 +
 * （ 1 ） * _ ホストインターフェイスカード（ HIC ） _
@@ -291,7 +291,7 @@ image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[28 dwg e2800 HIC �
 カチッという音がしてラッチが固定されると、ラッチの下部がシャーシの金属製のスロットに収まります。
 
 +
-image::../media/28_dwg_e2800_insert_battery_maint-e2800.gif[28 DWG e2800 INSERT BATTERY maint e2800]
+image::../media/28_dwg_e2800_insert_battery_maint-e2800.gif[バッテリの再取り付け]
 
 +
 * （ 1 ） * _ バッテリリリースラッチ _
@@ -309,14 +309,14 @@ CAUTION: * ハードウェアの破損の可能性 * - バッテリ前部の金�
 
 
 +
-image:../media/28_dwg_e2800_battery_flange_ok_maint-e2800.gif[""]
+image:../media/28_dwg_e2800_battery_flange_ok_maint-e2800.gif["正しい金属フランジ"]
 
 +
 ** * 不正解 * - バッテリの金属製のフランジがコントローラのスロットに挿入されていません：
 
 
 +
-image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif[""]
+image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif["不適切な金属フランジ"]
 
 
 
@@ -338,7 +338,7 @@ HIC の底面やコントローラカードの表面のコンポーネントを�
 CAUTION: * 機器の破損の可能性 * -- HIC と取り付けネジの間にあるコントローラ LED の金色のリボンコネクタをはさまないように十分に注意してください。
 
 +
-image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[28 dwg e2800 HIC 蝶ネジ maint e2800]
+image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[コントローラにHICを再度取り付けます。]
 
 +
 * （ 1 ） * _ ホストインターフェイスカード（ HIC ） _
@@ -352,7 +352,7 @@ image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[28 dwg e2800 HIC �
 
 . 元のコントローラキャニスターから取り外した HIC カバーを新しいコントローラキャニスターに取り付け、 No.1 プラスドライバを使用して 4 本のネジで固定します。
 +
-image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[28 DWG e2800 HIC の前面取り付けネジ maint e2800]
+image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[前面プレートの取り付け]
 
 
 
@@ -367,7 +367,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[28 DWG e2800 H
 . 取り外し可能なカバーが下になるようにコントローラキャニスターを裏返します。
 . カムハンドルを開いた状態でコントローラキャニスターをスライドし、コントローラシェルフに最後まで挿入します。
 +
-image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[28 dwg e2824 controller キャニスタ maint e2800 を削除します]
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[コントローラキャニスターの再取り付け]
 
 +
 * （ 1 ） * _ コントローラキャニスター _
@@ -376,7 +376,7 @@ image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[28 dwg e
 * （ 2 ） * _CAM ハンドル _
 
 +
-image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[28 dwg e2860 add controller キャニスタ maint e2800]
+image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[コントローラキャニスターの再取り付け]
 
 +
 * （ 1 ） * _ コントローラキャニスター _
@@ -410,7 +410,7 @@ NOTE: 元のコントローラの IP アドレスが DHCP を使用して取得�
 +
 ** デジタル表示ディスプレイの表示が、コントローラがオフラインになっていることを示す連続した * OS * 、 * OL * 、 * _ blank_ * と表示されます。
 ** 黄色の警告 LED が点灯した状態になります。
-** ホストリンク LED は、ホストインターフェイスに応じて、点灯、点滅、消灯のいずれかになります。image:../media/28_dwg_attn_led_7s_display_maint-e2800.gif[""]
+** ホストリンクLEDは、ホストインターフェイスに応じて、点灯、点滅、消灯のいずれかになります。image:../media/28_dwg_attn_led_7s_display_maint-e2800.gif["E2800コントローラのLED"]
 +
 * （ 1 ） * _Attention LED （アンバー） _
 

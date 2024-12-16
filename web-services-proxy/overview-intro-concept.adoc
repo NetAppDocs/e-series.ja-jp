@@ -28,13 +28,13 @@ Web Services API を使用してストレージシステムを管理するには
 
 Web Services には次の 2 つの実装があります。
 
-* * 組み込み * - NetApp SANtricity 11.30 以降のバージョンを実行する E2800 / EF280 ストレージシステム、 SANtricity 11.40 以降のバージョンを実行する E5700 / EF570 ストレージシステム、および SANtricity 11.60 以降のバージョンを実行する EF300 または EF600 ストレージシステムには、各コントローラに RESTful API サーバが組み込まれています。インストールは不要です。
+* *組み込み*- NetApp SANtricity 11.30以降のバージョンを実行するE2800 / EF280ストレージシステム、SANtricity 11.40以降のバージョンを実行するE5700 / EF570ストレージシステム、SANtricity 11.60以降のバージョンを実行するEF300またはEF600ストレージシステム、およびSANtricity 11.90以降のバージョンを実行するE4000ストレージシステムには、各コントローラにRESTful APIサーバが組み込まれています。インストールは不要です。
 * * プロキシ * -- SANtricity Web サービスプロキシは、 Windows または Linux サーバーに別途インストールされる RESTful API サーバーです。このホストベースのアプリケーションでは、数百台規模の新旧の NetApp E シリーズストレージシステムを管理できます。一般に、ストレージシステムが 10 台を超えるネットワークではプロキシを使用します。プロキシは、多数の要求を組み込みの API よりも効率的に処理できます。
 
 
 中核となる API はどちらの実装でも使用できます。
 
-image::../media/web_services_proxy_overview.gif[Web サービスプロキシの概要]
+image::../media/web_services_proxy_overview.gif[Web Services Proxyの概要]
 
 次の表に、プロキシと組み込みバージョンの比較を示します。
 

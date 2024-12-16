@@ -1,7 +1,7 @@
 ---
 permalink: getting-started/learn-software-concept.html 
 sidebar: sidebar 
-keywords: E-Series, eseries, E2800, E5700, EF300, EF600, SANtricity, E-Series software, E-Series user interface 
+keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, SANtricity, E-Series software, E-Series user interface 
 summary: E シリーズシステムには、ストレージプロビジョニングとその他のタスクを行うための SANtricity ソフトウェアが搭載されています。 
 ---
 = SANtricity ソフトウェアの概要
@@ -36,56 +36,56 @@ System Manager には、次のようなさまざまな管理機能がありま�
 
 
  a| 
-image:../media/sam1130_icon_performance.gif[""] * パフォーマンス *
+image:../media/sam1130_icon_performance.gif["パフォーマンス"]*パフォーマンス*
  a| 
 I/O レイテンシ、 IOPS 、 CPU 利用率、スループットなど、最大 30 日分のパフォーマンスデータを表示します。
 
 
 
  a| 
-image:../media/sam1130_icon_volumes.gif[""] * ストレージ *
+image:../media/sam1130_icon_volumes.gif["ストレージ"]*ストレージ*
  a| 
 プールまたはボリュームグループを使用してストレージをプロビジョニングし、アプリケーションワークロードを作成
 
 
 
  a| 
-image:../media/sam1130_icon_async_mirroring.gif[""] * データ保護 *
+image:../media/sam1130_icon_async_mirroring.gif["データ保護"]*データ保護*
  a| 
 Snapshot 、ボリュームコピー、リモートミラーリングを使用してバックアップやディザスタリカバリを実行できます。
 
 
 
  a| 
-image:../media/sam1130_icon_controllers.gif[""] * ハードウェア *
+image:../media/sam1130_icon_controllers.gif["ハードウェア"]*ハードウェア*
  a| 
 コンポーネントのステータスを確認し、ホットスペアドライブの割り当てなど、コンポーネントに関連するいくつかの機能を実行します。
 
 
 
  a| 
-image:../media/sam1130_icon_alerts.gif[""] * アラート *
+image:../media/sam1130_icon_alerts.gif["アラート"]*アラート*
  a| 
 ストレージアレイで発生する重要なイベントを管理者に通知します。アラートは E メール、 SNMP トラップ、 syslog を通じて送信できます。
 
 
 
  a| 
-image:../media/sam1140_icon_active_directory.gif[""] * アクセス管理 *
+image:../media/sam1140_icon_active_directory.gif["'アクセス管理\""]*アクセス管理*
  a| 
 ユーザ認証を設定し、ユーザがシステムにログインする際に割り当てられたクレデンシャルの入力を求めます。
 
 
 
  a| 
-image:../media/sam1130_icon_settings.gif[""] * システム設定 *
+image:../media/sam1130_icon_settings.gif["システム設定"]*システム設定*
  a| 
 SSD キャッシュや自動ロードバランシングなど、その他のシステムパフォーマンス機能を設定します。
 
 
 
  a| 
-image:../media/sam1130_icon_support.gif[""] * サポート *
+image:../media/sam1130_icon_support.gif["サポート"]*サポート*
  a| 
 診断データを表示し、アップグレードを管理します。また、ストレージアレイの健常性を監視してテクニカルサポートに自動ディスパッチを送信する AutoSupport を設定します。
 
@@ -94,7 +94,7 @@ image:../media/sam1130_icon_support.gif[""] * サポート *
 
 == SANtricity Unified Manager の略
 
-Unified Manager は、ドメイン全体の管理に使用する Web ベースのソフトウェアです。E2800 、 EF280 、 EF300 、 E5700 、 EF570 など、すべての新しい E シリーズおよび EF シリーズアレイのステータスをまとめて表示できます。 および EF600 ：選択したストレージアレイに対してバッチ処理を実行することもできます。
+Unified Manager は、ドメイン全体の管理に使用する Web ベースのソフトウェアです。EシリーズおよびEFシリーズの新しいすべてのアレイ（E4000、E2800、EF280、EF300、E5700、EF570、EF600など）のステータスをまとめて確認できます。選択したストレージアレイに対してバッチ処理を実行することもできます。
 
 Unified Manager は、 Web Services Proxy とともに管理サーバにインストールされます。Unified Manager にアクセスするには、ブラウザを開き、 Web Services Proxy がインストールされているサーバの URL を入力します。
 
@@ -104,56 +104,56 @@ Unified Manager には、次のようなさまざまな管理機能がありま�
 
 
  a| 
-image:../media/artboard_9.png[""] * ストレージ・アレイの検出 *
+image:../media/artboard_9.png["ストレージアレイを検出"]*ストレージアレイの検出*
  a| 
 組織のネットワークで管理対象のストレージアレイを検索および追加します。1 つのページですべてのストレージアレイのステータスを確認できます。
 
 
 
  a| 
-image:../media/artboard_11.png[""] * 起動 *
+image:../media/artboard_11.png["キドウ"]*発売開始*
  a| 
 System Manager のインスタンスを開き、特定のストレージアレイについての管理操作を個別に実行します。
 
 
 
  a| 
-image:../media/sam1130_icon_system.gif[""] * 設定のインポート *
+image:../media/sam1130_icon_system.gif["設定のインポート"]*設定のインポート*
  a| 
 アラート、 AutoSupport 、ディレクトリサービスなどの設定を 1 つのストレージアレイから複数のアレイに一括でインポートします。
 
 
 
  a| 
-image:../media/sam1130_icon_async_mirroring.gif[""] * ミラーリング *
+image:../media/sam1130_icon_async_mirroring.gif["ミラーリング"]*ミラーリング*
  a| 
 2 つのストレージアレイ間の非同期ミラーペアまたは同期ミラーペアを設定します。
 
 
 
  a| 
-image:../media/artboard_10.png[""] * グループの管理 *
+image:../media/artboard_10.png["グループの管理"]*グループの管理*
  a| 
 ストレージアレイを管理しやすくするためにグループにまとめます。
 
 
 
  a| 
-image:../media/sam1130_icon_upgrade_center.gif[""] * アップグレードセンター *
+image:../media/sam1130_icon_upgrade_center.gif["アップグレードセンター"]*アップグレードセンター*
  a| 
 複数のストレージアレイの SANtricity OS ソフトウェアをアップグレードします。
 
 
 
  a| 
-image:../media/sam1140_icon_certs.gif[""] * 証明書 *
+image:../media/sam1140_icon_certs.gif["証明書"]*証明書*
  a| 
 複数のストレージアレイについて、証明書署名要求（ CSR ）の作成、証明書のインポート、既存の証明書の管理を行います。
 
 
 
  a| 
-image:../media/sam1140_icon_active_directory.gif[""] * アクセス管理 *
+image:../media/sam1140_icon_active_directory.gif["アクセス管理"]*アクセス管理*
  a| 
 ユーザ認証を設定し、ユーザが Unified Manager にログインする際に割り当てられたクレデンシャルの入力を求めます。
 

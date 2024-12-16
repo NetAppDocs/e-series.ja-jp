@@ -11,7 +11,7 @@ summary: 信頼されていない証明書を解決するには、ストレー�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

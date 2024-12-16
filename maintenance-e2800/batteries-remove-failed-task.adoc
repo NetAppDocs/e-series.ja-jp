@@ -20,7 +20,7 @@ summary: コントローラキャニスターをコントローラシェルフ�
 この緑の LED が点灯している場合は、コントローラがまだバッテリ電源を使用しています。この LED が消灯するのを待ってから、コンポーネントを取り外す必要があります。
 
 +
-image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif[28 dwg e2800 内部キャッシュアクティブ LED maint e2800]
+image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif[内部キャッシュアクティブLED]
 
 +
 * （ 1 ） * _ 内部キャッシュアクティブ _
@@ -31,7 +31,7 @@ image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif[28 dwg e2
 . バッテリの青色のリリースラッチの位置を確認します。
 . バッテリをリリースラッチを押し下げながら引き出し、コントローラキャニスターから外します。
 +
-image::../media/28_dwg_e2800_remove_battery_maint-e2800.gif[28 dwg e2800 バッテリメンテナンス e2800 を取り外します]
+image::../media/28_dwg_e2800_remove_battery_maint-e2800.gif[コントローラからのバッテリの取り外し]
 
 +
 * （ 1 ） * _ バッテリリリースラッチ _

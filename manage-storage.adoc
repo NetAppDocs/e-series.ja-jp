@@ -6,6 +6,8 @@ summary: ストレージを管理します
 ---
 = ストレージを管理します
 :allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
 
 
 [role="lead"]

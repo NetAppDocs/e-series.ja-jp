@@ -11,7 +11,7 @@ summary: 管理対象のストレージアレイを特定のストレージグ�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

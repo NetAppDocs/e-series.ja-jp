@@ -10,7 +10,7 @@ summary: ボリュームの容量を拡張した場合、その拡張した容�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

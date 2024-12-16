@@ -127,7 +127,7 @@ CAUTION: パフォーマンスの低下を防ぐために、ケーブルをね�
 次の図は、 E5724 のコントローラシェルフの例です。
 
 +
-image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[28 dwg e2824 ：コントローラキャニスター maint e5700 を削除します]
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[コントローラキャニスターを取り外します]
 
 +
 * （ 1 ） * _ コントローラキャニスター _
@@ -139,7 +139,7 @@ image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[28 dwg e
 E5760 コントローラシェルフの例は次のとおりです。
 
 +
-image::../media/28_dwg_e2860_add_controller_canister_maint-e5700.gif[28 dwg e2860 ：コントローラキャニスター maint e5700 を追加します]
+image::../media/28_dwg_e2860_add_controller_canister_maint-e5700.gif[コントローラキャニスターを取り外します]
 
 +
 * （ 1 ） * _ コントローラキャニスター _
@@ -172,7 +172,7 @@ E5724 コントローラシェルフでは、コントローラキャニスタ�
 この緑の LED が点灯している場合は、コントローラがまだバッテリ電源を使用しています。この LED が消灯するのを待ってから、コンポーネントを取り外す必要があります。
 
 +
-image::../media/28_dwg_e2800_internal_cache_active_led_maint-e5700.gif[28 dwg e2800 内部キャッシュアクティブ LED maint e5700]
+image::../media/28_dwg_e2800_internal_cache_active_led_maint-e5700.gif[内部キャッシュアクティブLED]
 
 +
 * （ 1 ） * _ 内部キャッシュアクティブ LED_
@@ -183,7 +183,7 @@ image::../media/28_dwg_e2800_internal_cache_active_led_maint-e5700.gif[28 dwg e2
 . バッテリの青色のリリースラッチの位置を確認します。
 . バッテリをリリースラッチを押し下げながら引き出し、コントローラキャニスターから外します。
 +
-image::../media/28_dwg_e2800_remove_battery_maint-e5700.gif[28 dwg e2800 バッテリメンテナンス e5700 を取り外します]
+image::../media/28_dwg_e2800_remove_battery_maint-e5700.gif[バッテリの取り外し]
 
 +
 * （ 1 ） * _ バッテリリリースラッチ _
@@ -221,7 +221,7 @@ NOTE: IATA 安全規則に準拠するため、交換用バッテリは 30% 以�
 カチッという音がしてラッチが固定されると、ラッチの下部がシャーシの金属製のスロットに収まります。
 
 +
-image::../media/28_dwg_e2800_insert_battery_maint-e5700.gif[28 DWG e2800 INSERT BATTERY maint e5700]
+image::../media/28_dwg_e2800_insert_battery_maint-e5700.gif[バッテリの取り付け]
 
 +
 * （ 1 ） * _ バッテリリリースラッチ _
@@ -237,11 +237,11 @@ CAUTION: * ハードウェアの破損の可能性 * - バッテリ前部の金�
 +
 ** * 正解 * - バッテリの金属製のフランジがコントローラのスロットにしっかりと挿入されています。
 +
-image:../media/28_dwg_e2800_battery_flange_ok_maint-e5700.gif[""]
+image:../media/28_dwg_e2800_battery_flange_ok_maint-e5700.gif["正しいバッテリーフランジ"]
 
 ** * 不正解 * - バッテリの金属製のフランジがコントローラのスロットに挿入されていません：
 +
-image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e5700.gif[""]
+image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e5700.gif["バッテリフランジが不適正"]
 
 
 
@@ -258,7 +258,7 @@ image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e5700.gif[""]
 . 取り外し可能なカバーが下になるようにコントローラキャニスターを裏返します。
 . カムハンドルを開いた状態でコントローラキャニスターをスライドし、コントローラシェルフに最後まで挿入します。
 +
-image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[28 dwg e2824 ：コントローラキャニスター maint e5700 を削除します]
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[コントローラキャニスターの再取り付け]
 
 +
 * （ 1 ） * _ コントローラキャニスター _
@@ -267,7 +267,7 @@ image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[28 dwg e
 * （ 2 ） * _CAM ハンドル _
 
 +
-image::../media/28_dwg_e2860_add_controller_canister_maint-e5700.gif[28 dwg e2860 ：コントローラキャニスター maint e5700 を追加します]
+image::../media/28_dwg_e2860_add_controller_canister_maint-e5700.gif[コントローラキャニスターの再取り付け]
 
 +
 * （ 1 ） * _ コントローラキャニスター _
@@ -300,7 +300,7 @@ NOTE: この図はコントローラキャニスターの例を示したもの�
 +
 ** デジタル表示ディスプレイの表示が、コントローラがオフラインになっていることを示す連続した * OS * 、 * OL * 、 * _ blank_ * と表示されます。
 ** 黄色の警告 LED が点灯したままになります。
-** ホストリンク LED は、ホストインターフェイスに応じて、点灯、点滅、消灯のいずれかになります。image:../media/e5700_hic_3_callouts_maint-e5700.gif[""]
+** ホストリンクLEDは、ホストインターフェイスに応じて、点灯、点滅、消灯のいずれかになります。image:../media/e5700_hic_3_callouts_maint-e5700.gif["E5700コントローラのLED"]
 +
 * （ 1 ） * _ ホストリンク LED _
 

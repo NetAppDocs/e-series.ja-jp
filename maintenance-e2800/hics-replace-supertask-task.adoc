@@ -204,7 +204,7 @@ CAUTION: パフォーマンスの低下を防ぐために、ケーブルをね�
 キャッシュされたデータをドライブに書き込む必要がある場合は、コントローラの背面にある緑のキャッシュアクティブ LED が点灯します。この LED が消灯するのを待ってから、コントローラキャニスターを取り外す必要があります。
 
 +
-image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[28 DWG 2800 controller Attn led maint e2800]
+image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[E2800コントローラのキャッシュアクティブLED]
 
 +
 * （ 1 ） * _ キャッシュアクティブ LED_
@@ -214,7 +214,7 @@ image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[28 DWG 2800 cont
 次の図は、 E2812 コントローラシェルフ、 E2824 コントローラシェルフ、または EF280 フラッシュアレイの例です。
 
 +
-image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[28 dwg e2824 controller キャニスタ maint e2800 を削除します]
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[コントローラキャニスターを取り外します]
 
 +
 * （ 1 ） * _ コントローラキャニスター _
@@ -226,7 +226,7 @@ image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[28 dwg e
 次の図は、 E2860 のコントローラシェルフの例です。
 
 +
-image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[28 dwg e2860 add controller キャニスタ maint e2800]
+image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[コントローラキャニスターを取り外します]
 
 +
 * （ 1 ） * _ コントローラキャニスター _
@@ -263,7 +263,7 @@ CAUTION: * データアクセスが失われる可能性 * - 別の E シリー�
 この緑の LED が点灯している場合は、コントローラがまだバッテリ電源を使用しています。この LED が消灯するのを待ってから、コンポーネントを取り外す必要があります。
 
 +
-image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif[28 dwg e2800 内部キャッシュアクティブ LED maint e2800]
+image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif[内部キャッシュアクティブLED]
 
 +
 * （ 1 ） * _ 内部キャッシュアクティブ LED_
@@ -282,7 +282,7 @@ HIC の底面やコントローラカードの表面のコンポーネントを�
 CAUTION: * 機器の破損の可能性 * -- HIC と取り付けネジの間にあるコントローラ LED の金色のリボンコネクタをはさまないように十分に注意してください。
 
 +
-image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[28 dwg e2800 HIC 蝶ネジ maint e2800]
+image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[コントローラカードにHICを再度取り付けます。]
 
 +
 * （ 1 ） * _ ホスト・インターフェイス・カード _
@@ -296,7 +296,7 @@ image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[28 dwg e2800 HIC �
 
 . 新しい HIC カバーをコントローラキャニスターに取り付け、前の手順で外した 4 本のネジで No.1 プラスドライバを使用して固定します。
 +
-image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[28 DWG e2800 HIC の前面取り付けネジ maint e2800]
+image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[前面プレートをコントローラに再度取り付けます。"]
 
 
 
@@ -313,7 +313,7 @@ HIC を取り付けたら、コントローラキャニスターをコントロ�
 次の図は、 E2824 コントローラシェルフまたは EF280 フラッシュアレイの例です。
 
 +
-image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[28 dwg e2824 controller キャニスタ maint e2800 を削除します]
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[コントローラ キャニスターの再取り付け]
 
 +
 * （ 1 ） * _ コントローラキャニスター _
@@ -325,7 +325,7 @@ image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[28 dwg e
 次の図は、 E2860 のコントローラシェルフの例です。
 
 +
-image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[28 dwg e2860 add controller キャニスタ maint e2800]
+image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif['コントローラキャニスターの再取り付け"]
 
 +
 * （ 1 ） * _ コントローラキャニスター _
@@ -369,7 +369,7 @@ NOTE: この図はコントローラキャニスターの例を示したもの�
 +
 ** デジタル表示ディスプレイの表示が、コントローラがオフラインになっていることを示す連続した * OS * 、 * OL * 、 * _ blank_ * と表示されます。
 ** 黄色の警告 LED が点灯したままになります。
-** ホストリンク LED は、ホストインターフェイスに応じて、点灯、点滅、消灯のいずれかになります。image:../media/28_dwg_attn_led_7s_display_maint-e2800.gif[""]
+** ホストリンクLEDは、ホストインターフェイスに応じて、点灯、点滅、消灯のいずれかになります。image:../media/28_dwg_attn_led_7s_display_maint-e2800.gif["E2800コントロオラLED\""]
 +
 * （ 1 ） * _Attention LED （アンバー） _
 
@@ -463,7 +463,7 @@ NOTE: このタスクは、コントローラが 1 台のストレージアレ�
 NOTE: この図はコントローラキャニスターの例を示したものです。ホストポートの数やタイプは、コントローラによって異なる場合があります。
 
 +
-image::../media/28_dwg_attn_led_7s_display_maint-e2800.gif[28 DWG Attn が 7 s を表示し、 maint e2800 を表示した]
+image::../media/28_dwg_attn_led_7s_display_maint-e2800.gif[E2800コントロオラLED"]
 
 +
 * （ 1 ） * _Attention LED （アンバー） _

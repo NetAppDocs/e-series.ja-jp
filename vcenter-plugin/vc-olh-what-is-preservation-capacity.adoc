@@ -10,7 +10,7 @@ summary: 予約済み容量は、ドライブ障害に備えてプール内に�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

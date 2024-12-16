@@ -89,7 +89,7 @@ serviceAllowedIndicator=forceOnWarning;"
 ** コマンドが成功した場合は、ホストの I/O アクティビティを停止する必要はありません。ドロワー内のすべてのドライブがドロワー損失の保護が有効なプールまたはボリュームグループに含まれています。に進みます <<手順 2 ：ケーブルチェーンを取り外す>>。
 +
 
-CAUTION: * ドライブの破損の可能性 * -- コマンドが完了してからドライブドロワーを開くまで、 30 秒待ちます。30 秒待つとドライブがスピンダウンし、ハードウェアの破損を防ぐことができます。
+CAUTION: * ドライブの破損の可能性 * -- コマンドが完了してからドライブドロワーを開くまで、 60 秒待ちます。60 秒待つとドライブがスピンダウンし、ハードウェアの破損を防ぐことができます。
 
 ** このコマンドを完了できなかったことを示す警告が表示された場合は、ドロワーを取り外す前にホストの I/O アクティビティを停止する必要があります。この警告は、該当するドロワー内の 1 つ以上のドライブがドロワー損失の保護が有効になっていないプールまたはボリュームグループに含まれている場合に表示されます。データ損失を防ぐには、次の手順を実行して、ホストの I/O アクティビティを停止し、ドライブシェルフとコントローラシェルフの電源をオフにする必要があります。
 
@@ -115,7 +115,7 @@ CAUTION: * データ損失の可能性 * - I/O 処理の実行中にこの手順
 キャッシュされたデータをドライブに書き込む必要がある場合は、各コントローラの背面にある緑のキャッシュアクティブ LED が点灯します。この LED が消灯するまで待つ必要があります。
 
 +
-image::../media/e5700_ib_hic_w_cache_led_callouts_maint-e5700.gif[e5700 ib HIC w cache led callouts maint e5700]
+image::../media/e5700_ib_hic_w_cache_led_callouts_maint-e5700.gif[E5700コントローラのキャッシュアクティブLED]
 
 +
 * （ 1 ） * _ キャッシュアクティブ LED_
@@ -174,7 +174,7 @@ CAUTION: * ハードウェアの破損の可能性 * -- ドライブトレイの
 次の図は、ファンキャニスターのハンドルを伸ばして左側のオレンジのタブから外した状態を示しています。
 
 +
-image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout_maint-e5700.gif[28 dwg e2860 de460c ファンキャニスターハンドル（引き出し線 maint e5700 を使用]
+image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout_maint-e5700.gif[ファンキャニスターのハンドルを外すためのオレンジ色のタン]
 
 +
 * （ 1 ） * _ ファンキャニスターハンドル _
@@ -195,7 +195,7 @@ CAUTION: * 過熱による機器の破損の可能性 * -- トレイの電源が
 一番上のケーブルチェーンがドライブドロワー 1 に接続され、一番下のケーブルチェーンがドライブドロワー 5 に接続されています。ドライブドロワー 1 を例に説明します。
 
 +
-image::../media/trafford_cable_rail_1_maint-e5700.gif[トラフォードケーブルレール 1 保守 e5700]
+image::../media/trafford_cable_rail_1_maint-e5700.gif[ドライブドロワーのケーブルチェーンとコネクタ]
 
 +
 *（1）*_ケーブルチェーン_
@@ -213,7 +213,7 @@ image::../media/trafford_cable_rail_1_maint-e5700.gif[トラフォードケー�
 +
 .. 懐中電灯で内部を照らし、エンクロージャの垂直ガイドレールに接続されているケーブルチェーン先端のオレンジのリングの位置を確認します。
 +
-image::../media/trafford_cable_rail_3_maint-e5700.gif[トラフォードケーブルレール 3 保守 e5700]
+image::../media/trafford_cable_rail_3_maint-e5700.gif[ドライブドロワーの垂直レールとケーブルチェーンのオレンジのリング]
 
 +
 * （ 1 ） * 垂直ガイドレールのオレンジリング _
@@ -232,7 +232,7 @@ image::../media/trafford_cable_rail_3_maint-e5700.gif[トラフォードケー�
 次の図は、右側の水平コネクタとケーブルチェーンを外し、左側を途中まで引き出した状態を示しています。
 
 +
-image::../media/trafford_cable_rail_2_maint-e5700.gif[トラフォードケーブルレール 2 保守 e5700]
+image::../media/trafford_cable_rail_2_maint-e5700.gif[水平レール用のオレンジのリングとドライブドロワー用のケーブルチェーン]
 
 +
 * （ 1 ） * _ 水平ガイドレールのオレンジリング _
@@ -309,7 +309,7 @@ CAUTION: * データアクセスが失われる可能性 * -- 磁場によって
 . 伸ばしたレバーを使用して、ドライブドロワーを停止するところまで慎重に引き出します。ドライブドロワーをドライブシェルフから完全には取り外さないでください。
 . ボリュームがすでに作成されて割り当てられている場合は、各ドライブの場所を油性ペンで記入します。たとえば、次の図のように、各ドライブの上に適切なスロット番号を書いておきます。
 +
-image::../media/dwg_trafford_drawer_with_hdds_callouts_maint-e5700.gif[DWG トラフォードドロワー（ HDD の寸法テキストが maint e5700 で表示]
+image::../media/dwg_trafford_drawer_with_hdds_callouts_maint-e5700.gif[ドライブのスロット番号]
 
 +
 
@@ -321,7 +321,7 @@ CAUTION: * データアクセスが失われる可能性 * -- 各ドライブを
 .. ドライブのハンドルを垂直な位置まで持ち上げます。
 .. ハンドルをつかんでドライブドロワーからドライブを持ち上げます。
 +
-image::../media/92_dwg_de6600_install_or_remove_drive_maint-e5700.gif[92 dwg de6600 は、 drive maint e5700 をインストールまたは削除します]
+image::../media/92_dwg_de6600_install_or_remove_drive_maint-e5700.gif[カムハンドルを使用してドライブを取り外します]
 
 .. ドライブを磁気デバイスとは別の、静電気防止処置を施した平らな場所に置きます。
 
@@ -330,7 +330,7 @@ image::../media/92_dwg_de6600_install_or_remove_drive_maint-e5700.gif[92 dwg de6
 +
 .. ドライブドロワーの両側にあるプラスチック製のリリースレバーの位置を確認します。
 +
-image::../media/92_pht_de6600_drive_drawer_release_lever_maint-e5700.gif[92 PHT de6600 ドライブドロワーリリースレバー maint e5700]
+image::../media/92_pht_de6600_drive_drawer_release_lever_maint-e5700.gif[レバーを放してドロワーを取り外します。]
 
 +
 * （ 1 ） * _ ドライブドロワーリリースレバー _
@@ -355,7 +355,7 @@ image::../media/92_pht_de6600_drive_drawer_release_lever_maint-e5700.gif[92 PHT 
 ロックつまみは、一度に複数のドライブドロワーを開くことを防ぐための安全装置です。
 
 +
-image::../media/92_pht_de6600_lock_out_tumbler_detail_maint-e5700.gif[92 PHT de6600 lock tumbler detail maint e5700]
+image::../media/92_pht_de6600_lock_out_tumbler_detail_maint-e5700.gif[ロックつまみとドロワーガイド]
 
 +
 * （ 1 ） * _ ロックつまみ _
@@ -416,7 +416,7 @@ CAUTION: * 機器の故障のリスク * -- コネクタをガイドレールに
 次の図は、エンクロージャ内の 2 台目のドライブドロワー用の水平ガイドレールと垂直ガイドレールを示しています。
 
 +
-image::../media/2860_dwg_both_guide_rails_maint-e5700.gif[2860 DWG 両方のガイドレール maint e5700]
+image::../media/2860_dwg_both_guide_rails_maint-e5700.gif[水平ガイドレールと垂直ガイドレール]
 
 +
 * （ 1 ） * _ 水平ガイドレール _
@@ -481,7 +481,7 @@ CAUTION: * データアクセスが失われる可能性 * -- 各ドライブを
 .. 伸ばしたレバーを使用して、ドライブドロワーを停止するところまで慎重に引き出します。ドライブドロワーをドライブシェルフから完全には取り外さないでください。
 .. ドライブを取り外したときのメモを使用して、各スロットに取り付けるドライブを確認します。
 +
-image::../media/dwg_trafford_drawer_with_hdds_callouts_maint-e5700.gif[DWG トラフォードドロワー（ HDD の寸法テキストが maint e5700 で表示]
+image::../media/dwg_trafford_drawer_with_hdds_callouts_maint-e5700.gif[ドライブのスロット番号]
 
 .. ドライブのハンドルを垂直な位置まで持ち上げます。
 .. ドライブの両側にある 2 つの突起ボタンをドロワーのくぼみに合わせます。
@@ -489,14 +489,14 @@ image::../media/dwg_trafford_drawer_with_hdds_callouts_maint-e5700.gif[DWG ト�
 次の図は、ドライブの右側の突起ボタンの位置を示したものです。
 
 +
-image::../media/28_dwg_e2860_de460c_drive_cru_maint-e5700.gif[28 dwg e2860 de460c drive CRU maint e5700]
+image::../media/28_dwg_e2860_de460c_drive_cru_maint-e5700.gif[ドライブキャリアの突起ボタンがドライブドロワーのドライブチャネルと一致している必要があります。]
 
 +
 * （ 1 ） * _ ドライブの右側の突起ボタン _
 
 .. ドライブを真上から下ろしてベイに最後まで押し込み、ドライブが完全に固定されるまでドライブのハンドルを下に回転させます。
 +
-image::../media/92_dwg_de6600_install_or_remove_drive_maint-e5700.gif[92 dwg de6600 は、 drive maint e5700 をインストールまたは削除します]
+image::../media/92_dwg_de6600_install_or_remove_drive_maint-e5700.gif[ハンドルを使ってドライブをドロワーに下ろします。]
 
 .. 同じ手順を繰り返して、すべてのドライブを取り付けます。
 

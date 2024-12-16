@@ -59,7 +59,7 @@ E5700 アレイの電源装置を 24 ドライブシェルフに交換するこ�
 . SANtricity System Manager で、障害が発生した電源装置を特定します。この情報は、 Recovery Guru の詳細領域に表示されるか、シェルフについて表示される情報を確認できます。
 +
 .. 「 * ハードウェア * 」を選択します。
-.. 電源を確認します image:../media/sam1130_ss_hardware_power_icon_maint-e5700.gif[""] ファンもあります image:../media/sam1130_ss_hardware_fan_icon_maint-e5700.gif[""] [*Shelf-*] ドロップダウン・リストの右側にあるアイコンを使用して、電源装置に障害が発生したシェルフを特定できます。
+.. [シェルフ]*ドロップダウンリストの右側にある電源とファンのimage:../media/sam1130_ss_hardware_fan_icon_maint-e5700.gif["ファンアイコン"]アイコンを確認しimage:../media/sam1130_ss_hardware_power_icon_maint-e5700.gif["電源アイコン"]て、障害が発生した電源装置が搭載されているシェルフを特定します。
 +
 コンポーネントで障害が発生した場合、一方または両方のアイコンが赤色で表示されます。
 
@@ -80,12 +80,12 @@ CAUTION: シェルフのもう一方の電源装置のステータスが「最�
 交換する必要があるのは、警告 LED が点灯している電源装置です。
 
 +
-image::../media/28_dwg_913w_power_supply_back_view_maint-e5700.gif[28 DWG 913w 電源ユニット背面図 maint e5700]
+image::../media/28_dwg_913w_power_supply_back_view_maint-e5700.gif[電源装置警告LED]
 
 +
-** 電源 LED の場合 image:../media/drw_sas_power_icon_maint-e5700.gif[""] は * 緑色に点灯 * 、電源装置は正常に機能しています。消灯している場合は、電源装置に障害が発生しているか、 AC スイッチがオフになっているか、 AC 電源コードが正しく取り付けられていないか、 AC 電源コードの入力電圧が範囲内にない（ AC 電源コードの供給側に問題がある）かのいずれかの状態になっています。
+** 電源LEDが緑色*に点灯している場合、image:../media/drw_sas_power_icon_maint-e5700.gif["電源LEDアイコン"]電源装置は正常に機能しています。消灯している場合は、電源装置に障害が発生しているか、 AC スイッチがオフになっているか、 AC 電源コードが正しく取り付けられていないか、 AC 電源コードの入力電圧が範囲内にない（ AC 電源コードの供給側に問題がある）かのいずれかの状態になっています。
 +
-警告 LED が点灯している場合 image:../media/drw_sas_fault_icon_maint-e5700.gif[""] は * オレンジに点灯 * 、電源装置または内蔵ファンに障害があります。
+警告LEDが*黄色*で点灯している場合image:../media/drw_sas_fault_icon_maint-e5700.gif["障害アイコン"]は、電源装置または一体型ファンで障害が発生しています。
 
 
 
@@ -111,7 +111,7 @@ image::../media/28_dwg_913w_power_supply_back_view_maint-e5700.gif[28 DWG 913w �
 
 . 電源装置のカムハンドルのラッチを押し、カムハンドルを最大まで開いて電源装置をミッドプレーンから外します。
 +
-image::../media/drw_2600_psu_maint-e5700.gif[DRW 2600 PSU maint e5700]
+image::../media/drw_2600_psu_maint-e5700.gif[ラッチを使用して、ミッドプレーンから電源装置を取り外します。]
 
 . カムハンドルをつかみ、電源装置をスライドしてシステムから引き出します。
 +

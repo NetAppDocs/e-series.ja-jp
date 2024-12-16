@@ -10,7 +10,7 @@ summary: ボリューム作成プロセスの速度を上げる場合は、ホ�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

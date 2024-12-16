@@ -10,7 +10,7 @@ summary: vCenter 向けプラグインを削除します。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

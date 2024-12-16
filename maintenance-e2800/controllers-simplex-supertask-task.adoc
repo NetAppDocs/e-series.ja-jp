@@ -151,14 +151,14 @@ CAUTION: パフォーマンスの低下を防ぐために、ケーブルをね�
 NOTE: この図はコントローラキャニスターの例を示したものです。ホストポートの数やタイプは、コントローラによって異なる場合があります。
 
 +
-image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[28 DWG 2800 controller Attn led maint e2800]
+image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[E2800キャッシュアクティブLED]
 
 +
 * （ 1 ） * _ キャッシュアクティブ LED_
 
 . カムハンドルのラッチを外れるまで押し、カムハンドルを右側に開いてコントローラキャニスターをミッドプレーンから外します。
 +
-image::../media/28_dwg_e2824_remove_controller_canister_simplex_maint-e2800.gif[28 dwg e2824 ：コントローラキャニスターのシンプレックス maint e2800 の取り外し]
+image::../media/28_dwg_e2824_remove_controller_canister_simplex_maint-e2800.gif[コントローラキャニスターを取り外します]
 
 +
 * （ 1 ） * _ コントローラキャニスター _
@@ -191,7 +191,7 @@ CAUTION: コントローラキャニスターは重いので、必ず両手で�
 この緑の LED が点灯している場合は、コントローラがまだバッテリ電源を使用しています。この LED が消灯するのを待ってから、コンポーネントを取り外す必要があります。
 
 +
-image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif[28 dwg e2800 内部キャッシュアクティブ LED maint e2800]
+image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif[内部キャッシュアクティブLED]
 
 +
 * （ 1 ） * _ 内部キャッシュアクティブ _
@@ -202,7 +202,7 @@ image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif[28 dwg e2
 . バッテリの青色のリリースラッチの位置を確認します。
 . バッテリをリリースラッチを押し下げながら引き出し、コントローラキャニスターから外します。
 +
-image::../media/28_dwg_e2800_remove_battery_maint-e2800.gif[28 dwg e2800 バッテリメンテナンス e2800 を取り外します]
+image::../media/28_dwg_e2800_remove_battery_maint-e2800.gif[コントローラキャニスターからのバッテリの取り外し]
 
 +
 * （ 1 ） * _ バッテリリリースラッチ _
@@ -225,7 +225,7 @@ image::../media/28_dwg_e2800_remove_battery_maint-e2800.gif[28 dwg e2800 バッ�
 ネジは 4 本あります。 1 本は上部に、もう 1 本は側面に、 2 本は前面にあります。
 
 +
-image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[28 DWG e2800 HIC の前面取り付けネジ maint e2800]
+image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[コントローラキャニスターからカバーを取り外します。]
 
 . HIC カバーを取り外します。
 . コントローラカードに HIC を固定している 3 本の取り付けネジを手またはプラスドライバで緩めます。
@@ -235,7 +235,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[28 DWG e2800 H
 CAUTION: HIC の底面やコントローラカードの表面のコンポーネントをこすったりぶつけたりしないように注意してください。
 
 +
-image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[28 dwg e2800 HIC 蝶ネジ maint e2800]
+image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[コントローラカードからのHICの取り外し]
 
 +
 * （ 1 ） * _ ホスト・インターフェイス・カード _
@@ -274,7 +274,7 @@ image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[28 dwg e2800 HIC �
 カチッという音がしてラッチが固定されると、ラッチの下部がシャーシの金属製のスロットに収まります。
 
 +
-image::../media/28_dwg_e2800_insert_battery_maint-e2800.gif[28 DWG e2800 INSERT BATTERY maint e2800]
+image::../media/28_dwg_e2800_insert_battery_maint-e2800.gif['コントローラキャニスターへのバッテリの再取り付け"]
 
 +
 * （ 1 ） * _ バッテリリリースラッチ _
@@ -290,11 +290,11 @@ CAUTION: * ハードウェアの破損の可能性 * - バッテリ前部の金�
 +
 ** * 正解 * - バッテリの金属製のフランジがコントローラのスロットにしっかりと挿入されています。
 +
-image:../media/28_dwg_e2800_battery_flange_ok_maint-e2800.gif[""]
+image:../media/28_dwg_e2800_battery_flange_ok_maint-e2800.gif["正しい金属フランジ"]
 
 ** * 不正解 * - バッテリの金属製のフランジがコントローラのスロットに挿入されていません：
 +
-image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif[""]
+image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif["不適切な金属フランジ"]
 
 
 
@@ -318,7 +318,7 @@ HIC の底面やコントローラカードの表面のコンポーネントを�
 CAUTION: * 機器の破損の可能性 * -- HIC と取り付けネジの間にあるコントローラ LED の金色のリボンコネクタをはさまないように十分に注意してください。
 
 +
-image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[28 dwg e2800 HIC 蝶ネジ maint e2800]
+image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[コントローラへのHICの再取り付け]
 
 +
 * （ 1 ） * _ ホスト・インターフェイス・カード _
@@ -332,7 +332,7 @@ image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[28 dwg e2800 HIC �
 
 . 元のコントローラキャニスターから取り外した HIC カバーを新しいコントローラキャニスターに取り付け、 No.1 プラスドライバを使用して 4 本のネジで固定します。
 +
-image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[28 DWG e2800 HIC の前面取り付けネジ maint e2800]
+image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[コントローラに前面プレートを再度取り付けます"]
 
 
 
@@ -347,7 +347,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[28 DWG e2800 H
 . 取り外し可能なカバーが下になるようにコントローラキャニスターを裏返します。
 . カムハンドルを開いた状態でコントローラキャニスターをスライドし、コントローラシェルフに最後まで挿入します。
 +
-image::../media/28_dwg_e2824_remove_controller_canister_simplex_maint-e2800.gif[28 dwg e2824 ：コントローラキャニスターのシンプレックス maint e2800 の取り外し]
+image::../media/28_dwg_e2824_remove_controller_canister_simplex_maint-e2800.gif[コントローラキャニスターをコントローラシェルフに再度取り付けます。]
 
 +
 * （ 1 ） * _ コントローラキャニスター _
@@ -426,7 +426,7 @@ image::../media/28_dwg_e2824_remove_controller_canister_simplex_maint-e2800.gif[
 NOTE: この図はコントローラキャニスターの例を示したものです。ホストポートの数やタイプは、コントローラによって異なる場合があります。
 
 +
-image::../media/28_dwg_attn_led_7s_display_maint-e2800.gif[28 DWG Attn が 7 s を表示し、 maint e2800 を表示した]
+image::../media/28_dwg_attn_led_7s_display_maint-e2800.gif[E2800コントローラのLED]
 
 +
 * （ 1 ） * _Attention LED （アンバー） _

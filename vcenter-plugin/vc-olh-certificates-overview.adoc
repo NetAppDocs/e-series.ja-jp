@@ -10,7 +10,7 @@ summary: 証明書管理では、証明書署名要求（CSR）の作成、証�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

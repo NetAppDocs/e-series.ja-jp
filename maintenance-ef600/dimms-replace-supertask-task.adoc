@@ -111,7 +111,7 @@ CAUTION: パフォーマンスの低下を防ぐために、ケーブルをね�
 . コントローラの背面にあるキャッシュアクティブ LED が消灯していることを確認します。
 . コントローラの両側にあるハンドルをつかみ、シェルフから外れるまで引き出します。
 +
-image::../media/remove_controller_5.png[コントローラ 5 を取り外します]
+image::../media/remove_controller_5.png[ハンドルを押してコントローラを取り外します。]
 
 . 両手でハンドルをつかみ、コントローラキャニスターをスライドしてシェルフから引き出します。コントローラの前面がエンクロージャの外に出たら、両手で完全に引き出します。
 +
@@ -119,7 +119,7 @@ image::../media/remove_controller_5.png[コントローラ 5 を取り外しま�
 CAUTION: コントローラキャニスターは重いので、必ず両手で支えながら作業してください。
 
 +
-image::../media/remove_controller_6.png[コントローラ 6 を取り外します]
+image::../media/remove_controller_6.png[取り外すときは、コントローラの重量を両手で支えながら作業します。]
 
 . コントローラキャニスターを静電気防止処置を施した平らな場所に置きます。
 
@@ -144,10 +144,10 @@ NOTE: DIMM の下部にある切り欠きを使用して DIMM の位置を合わ
 
 . DIMM の両側にある 2 つのツメをゆっくり押し開いて DIMM をスロットから外し、スライドしてスロットから取り出します。
 +
-image::../media/dimm_2.png[DIMM 2.]
+image::../media/dimm_2.png[DIMMスロットのイジェクタタブを押し下げます。]
 
 +
-image::../media/dimim_3.png[ディム 3]
+image::../media/dimim_3.png[DIMMを取り外します]
 
 +
 
@@ -183,7 +183,7 @@ NOTE: DIMM がスロットにまっすぐ差し込まれていることを目で
 NOTE: DIMM がしっかりと装着されます。場合によっては、片側ずつそっと押して、それぞれのタブで個別に固定する必要があります。
 
 +
-image::../media/dimm_5.png[DIMM 5.]
+image::../media/dimm_5.png[DIMMをスロットに挿入し、タブで固定します。]
 
 
 
@@ -201,7 +201,7 @@ image::../media/dimm_5.png[DIMM 5.]
 NOTE: コントローラがシェルフに正しく取り付けられると、カチッという音がします。
 
 +
-image::../media/remove_controller_7.png[コントローラ 7 を取り外します]
+image::../media/remove_controller_7.png[コントローラのスロットへのDIMMの取り付け]
 
 . すべてのケーブルを再接続します。
 

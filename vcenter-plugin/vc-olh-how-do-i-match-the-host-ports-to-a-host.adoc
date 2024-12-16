@@ -10,7 +10,7 @@ summary: ホストを手動で作成する場合は、まずホストで利用�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

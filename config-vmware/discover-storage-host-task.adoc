@@ -19,5 +19,5 @@ summary: ホストにボリュームを割り当てたら、ホストがボリ�
 . 1 つ以上のボリュームを作成して ESXi ホストに割り当てます。
 . vCenter Server を使用している場合は、ホストをサーバのインベントリに追加します。
 . vSphere Client または vSphere Web Client を使用して、 vCenter Server または ESXi ホストに直接接続します。
-. ESXi ホストでストレージの再スキャンを実行する方法については、を検索してください https://kb.vmware.com/s/["VMware のナレッジベース"^] このトピックの記事です。
+. ESXiホストでストレージの再スキャンを実行する方法については、このトピックに関する記事を検索して https://support.broadcom.com/["VMware のナレッジベース"^]ください。
 

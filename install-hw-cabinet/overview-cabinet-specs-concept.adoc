@@ -23,7 +23,7 @@ summary: キャビネット設置の概要と仕様を確認
 
 次の図は、キャビネットの前面図（左）と背面図（右）を示しています。
 
-image::../media/83000_07_dwg_3040_cabinet_with_callouts.gif[83000 07 DWG 3040 キャビネット（引き出し線付き]
+image::../media/83000_07_dwg_3040_cabinet_with_callouts.gif[3040キャビネットの概要]
 
 |===
 

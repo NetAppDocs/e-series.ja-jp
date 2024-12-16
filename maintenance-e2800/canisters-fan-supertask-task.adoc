@@ -56,7 +56,7 @@ CAUTION: * 機器の破損の可能性 * - この手順の電源をオンにし�
 . SANtricity System Manager で、障害が発生したファンキャニスターを特定します。
 +
 .. 「 * ハードウェア * 」を選択します。
-.. ファンを確認します image:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif[""] 「 * Shelf * 」ドロップダウン・リストの右側にあるアイコンをクリックして、ファン・キャニスターで障害が発生したシェルフを特定します。
+.. [シェルフ]*ドロップダウンリストの右側にあるファンのアイコンを確認しimage:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif["ファンアイコン"]て、障害が発生したファンキャニスターが搭載されているシェルフを特定します。
 +
 コンポーネントで障害が発生している場合、このアイコンは赤色で表示されます。
 
@@ -80,7 +80,7 @@ NOTE: シェルフのもう一方のファンキャニスターのステータ�
 交換する必要があるのは、警告 LED が点灯しているファンキャニスターです。
 
 +
-image::../media/28_dwg_e2860_de460c_single_fan_canister_with_led_callout_maint-e2800.gif[28 dwg e2860 de460c single fan キャニスタ、 led callout maint e2800]
+image::../media/28_dwg_e2860_de460c_single_fan_canister_with_led_callout_maint-e2800.gif[ファンキャニスターLED]
 
 +
 * （ 1 ） * _Attention LED_ 。この LED が「 * アンバーで点灯」と表示される場合は、ファンに障害が発生しています。
@@ -103,14 +103,14 @@ CAUTION: ストレージアレイの電源をオフにしない場合は、シ�
 
 . オレンジのタブを押してファンキャニスターのハンドルを外します。
 +
-image::../media/28_dwg_e2860_de460c_single_fan_canister_with_orange_tab_callout_maint-e2800.gif[28 dwg e2860 de460c single fan キャニスタ、オレンジのタブコールアウト maint e2800]
+image::../media/28_dwg_e2860_de460c_single_fan_canister_with_orange_tab_callout_maint-e2800.gif[]
 
 +
 * （ 1 ） * _ ファンキャニスターハンドルを外すときに押すタブ
 
 . ファンキャニスターのハンドルをつかんで、ファンキャニスターをシェルフから引き出します。
 +
-image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout_maint-e2800.gif[28 dwg e2860 de460c ファンキャニスターハンドル（引き出し線 maint e2800 を使用]
+image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout_maint-e2800.gif[ファンキャニスターのプルハンドル]
 
 +
 * （ 1 ） * _ ハンドル：ファンキャニスターを引き出します _

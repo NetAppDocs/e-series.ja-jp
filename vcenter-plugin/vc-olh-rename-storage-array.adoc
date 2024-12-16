@@ -10,7 +10,7 @@ summary: Manage（管理）ページに表示されるストレージアレイ�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

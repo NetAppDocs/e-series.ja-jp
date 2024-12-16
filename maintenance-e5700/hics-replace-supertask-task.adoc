@@ -126,7 +126,7 @@ CAUTION: パフォーマンスの低下を防ぐために、ケーブルをね�
 キャッシュされたデータをドライブに書き込む必要がある場合は、コントローラの背面にある緑のキャッシュアクティブ LED が点灯します。この LED が消灯するのを待ってから、コントローラキャニスターを取り外す必要があります。
 
 +
-image::../media/e5700_ib_hic_w_cache_led_callouts_maint-e5700.gif[e5700 ib HIC w cache led callouts maint e5700]
+image::../media/e5700_ib_hic_w_cache_led_callouts_maint-e5700.gif[E5700コントローラのキャッシュアクティブLED]
 
 +
 * （ 1 ） * _ キャッシュアクティブ LED_
@@ -136,7 +136,7 @@ image::../media/e5700_ib_hic_w_cache_led_callouts_maint-e5700.gif[e5700 ib HIC w
 次の図は、 E5724 のコントローラシェルフの例です。
 
 +
-image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[28 dwg e2824 ：コントローラキャニスター maint e5700 を削除します]
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[コントローラキャニスターを取り外します]
 
 +
 * （ 1 ） * _ コントローラキャニスター _
@@ -148,7 +148,7 @@ image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[28 dwg e
 E5760 コントローラシェルフの例は次のとおりです。
 
 +
-image::../media/28_dwg_e2860_add_controller_canister_maint-e5700.gif[28 dwg e2860 ：コントローラキャニスター maint e5700 を追加します]
+image::../media/28_dwg_e2860_add_controller_canister_maint-e5700.gif[コントローラキャニスターを取り外します]
 
 +
 * （ 1 ） * _ コントローラキャニスター _
@@ -185,7 +185,7 @@ CAUTION: * データアクセスが失われる可能性 * - E5700 コントロ�
 この緑の LED が点灯している場合は、コントローラがまだバッテリ電源を使用しています。この LED が消灯するのを待ってから、コンポーネントを取り外す必要があります。
 
 +
-image::../media/28_dwg_e2800_internal_cache_active_led_maint-e5700.gif[28 dwg e2800 内部キャッシュアクティブ LED maint e5700]
+image::../media/28_dwg_e2800_internal_cache_active_led_maint-e5700.gif[内部キャッシュアクティブLED]
 
 +
 * （ 1 ） * _ 内部キャッシュアクティブ LED_
@@ -204,7 +204,7 @@ HIC の底面やコントローラカードの表面のコンポーネントを�
 CAUTION: * 機器の破損の可能性 * -- HIC と取り付けネジの間にあるコントローラ LED の金色のリボンコネクタをはさまないように十分に注意してください。
 
 +
-image::../media/28_dwg_e2800_hic_thumbscrews_maint-e5700.gif[28 dwg e2800 HIC 蝶ネジ maint e5700]
+image::../media/28_dwg_e2800_hic_thumbscrews_maint-e5700.gif[コントローラカードへのHICの取り付け]
 
 +
 * （ 1 ） * _ ホスト・インターフェイス・カード _
@@ -218,7 +218,7 @@ image::../media/28_dwg_e2800_hic_thumbscrews_maint-e5700.gif[28 dwg e2800 HIC �
 
 . 新しい HIC カバーをコントローラキャニスターに取り付け、前の手順で外した 4 本のネジで No.1 プラスドライバを使用して固定します。
 +
-image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e5700.gif[28 DWG e2800 HIC の前面取り付けネジ maint e5700 を取り付けます]
+image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e5700.gif[コントローラへの前面プレートの取り付け]
 
 
 
@@ -235,7 +235,7 @@ HIC を取り付けたら、コントローラキャニスターをコントロ�
 次の図は、 E5724 のコントローラシェルフの例です。
 
 +
-image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[28 dwg e2824 ：コントローラキャニスター maint e5700 を削除します]
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[コントローラキャニスターの取り付け]
 
 +
 * （ 1 ） * _ コントローラキャニスター _
@@ -247,7 +247,7 @@ image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[28 dwg e
 E5760 コントローラシェルフの例は次のとおりです。
 
 +
-image::../media/28_dwg_e2860_add_controller_canister_maint-e5700.gif[28 dwg e2860 ：コントローラキャニスター maint e5700 を追加します]
+image::../media/28_dwg_e2860_add_controller_canister_maint-e5700.gif[コントローラキャニスターの取り付け]
 
 +
 * （ 1 ） * _ コントローラキャニスター _
@@ -285,7 +285,7 @@ NOTE: この図はコントローラキャニスターの例を示したもの�
 +
 ** デジタル表示ディスプレイの表示が、コントローラがオフラインになっていることを示す連続した * OS * 、 * OL * 、 * _ blank_ * と表示されます。
 ** 黄色の警告 LED が点灯したままになります。
-** ホストリンク LED は、ホストインターフェイスに応じて、点灯、点滅、消灯のいずれかになります。image:../media/e5700_hic_3_callouts_maint-e5700.gif[""]
+** ホストリンクLEDは、ホストインターフェイスに応じて、点灯、点滅、消灯のいずれかになります。image:../media/e5700_hic_3_callouts_maint-e5700.gif["E5700コントローラのLED"]
 +
 * （ 1 ） * _ ホストリンク LED_
 

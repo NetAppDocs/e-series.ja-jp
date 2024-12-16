@@ -10,7 +10,7 @@ summary: 使用可能なすべての容量でボリュームを作成した場�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

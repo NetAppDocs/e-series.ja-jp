@@ -11,7 +11,7 @@ summary: 読み取り、書き込み、キャッシュヒット、キャッシ�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

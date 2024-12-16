@@ -11,7 +11,7 @@ summary: 名前、容量アラートの設定、変更の優先順位、予約�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

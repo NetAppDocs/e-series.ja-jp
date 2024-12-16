@@ -10,7 +10,7 @@ summary: 単一のアレイを管理するには、Launchオプションを使�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

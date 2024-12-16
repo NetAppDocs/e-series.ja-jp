@@ -11,7 +11,7 @@ summary: システムパフォーマンスを向上させるために、SSDキ�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

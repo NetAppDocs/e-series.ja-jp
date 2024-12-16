@@ -125,7 +125,7 @@ NOTE: タイムスタンプエントリは必要ありません。
 
 === AutoSupport の配信方法を設定する
 
-AutoSupport 機能で HTTPS 、 HTTP 、または SMTP の配信方法を使用するように設定できます。デフォルトの配信方法は HTTPS です。
+HTTPSまたはSMTPの配信方法を使用するようにAutoSupport機能を設定できます。デフォルトの配信方法はHTTPSです。
 
 . 作業ディレクトリ内の ASUPConfig.xml ファイルにアクセスします。
 . 文字列「 <delivery type="n">` 」に、表の説明に従って 1 、 2 、または 3 を入力します。
@@ -146,15 +146,6 @@ AutoSupport 機能で HTTPS 、 HTTP 、または SMTP の配信方法を使用�
 
  a| 
 2.
- a| 
-* HTTP *
-
-<delivery type="2"> 」を参照してください
-
-
-
- a| 
-3.
  a| 
 *smtp* -- AutoSupport 配信タイプを SMTP に正しく設定するには、次の例のように、 SMTP メールサーバのアドレスと、送信者と受信者のユーザの E メールアドレスを含める必要があります。
 

@@ -6,7 +6,12 @@ summary: E シリーズのテクニカルレポート
 ---
 = プラットフォームのテクニカルレポートを参照できます
 :allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
 
+
+[role="lead"]
+以下のリンクを参照して、Eシリーズプラットフォームに関連するテクニカルレポートにアクセスしてください。リンクをクリックすると、別のドキュメントサイトにアクセスできます。
 
 
 
@@ -28,8 +33,8 @@ summary: E シリーズのテクニカルレポート
 |  |  |  
 
 
-| https://www.netapp.com/pdf.html?item=/media/17009-tr4800pdf.pdf["* TR-4800 ： EF600 アレイ機能の概要 *"] |  |  
+| https://www.netapp.com/pdf.html?item=/media/17009-tr4800pdf.pdf["* TR-4800 ： EF600 アレイ機能の概要 *"] | https://www.netapp.com/pdf.html?item=/media/116236-tr-5001-intro-to-netapp-e4000-arrays-with-santricity.pdf["* TR-5001 ： E4000 アレイ機能の概要 *"^] |  
 
 
-| EF600 オールフラッシュアレイのハードウェアおよびソフトウェア機能と SANtricity OS の新機能について説明します。 |  |  
+| EF600 オールフラッシュアレイのハードウェアおよびソフトウェア機能と SANtricity OS の新機能について説明します。 | E4000 ハイブリッドアレイのハードウェアとソフトウェアの機能、および SANtricity OS の最新機能について説明します。 |  
 |===

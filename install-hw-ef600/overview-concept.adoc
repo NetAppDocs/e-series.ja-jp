@@ -13,4 +13,4 @@ summary: EF300 または EF600 をインストールしてセットアップす�
 [role="lead"]
 新しいストレージシステムを設置してセットアップする前に、設置プロセスを確認してください。
 
-image::../media/ef600_isi_workflow_v_2_inst-hw-ef600.bmp[ef600 isi ワークフロー v 2 inst hwef600]
+image::../media/ef600_isi_workflow_v_2_inst-hw-ef600.bmp[EF600 / EF300のインストールプロセスワークフロー]

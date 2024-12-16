@@ -11,7 +11,7 @@ summary: ボリュームのサイズを変更してレポート容量を拡張�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

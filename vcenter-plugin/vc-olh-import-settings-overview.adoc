@@ -10,7 +10,7 @@ summary: 設定のインポート機能は、単一のストレージアレイ�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

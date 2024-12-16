@@ -10,7 +10,7 @@ summary: FDE / FIPSセキュリティとは、一意の暗号化キーを使用�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -36,7 +36,7 @@ NOTE: IATA 安全規則に準拠するため、交換用バッテリは 30% 以�
 カチッという音がしてラッチが固定されると、ラッチの下部がシャーシの金属製のスロットに収まります。
 
 +
-image::../media/28_dwg_e2800_insert_battery_maint-e2800.gif[28 DWG e2800 INSERT BATTERY maint e2800]
+image::../media/28_dwg_e2800_insert_battery_maint-e2800.gif[E2800インサートバッテリ]
 
 +
 * （ 1 ） * _ バッテリリリースラッチ _
@@ -54,10 +54,10 @@ CAUTION: * ハードウェアの破損の可能性 * - バッテリ前部の金�
 
 
 +
-image:../media/28_dwg_e2800_battery_flange_ok_maint-e2800.gif[""]
+image:../media/28_dwg_e2800_battery_flange_ok_maint-e2800.gif["正しいバッテリーフランジインサート"]
 
 +
-** * 不正解 * - バッテリの金属製のフランジがコントローラのスロットに挿入されていません： +image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif[""]
+** *不正解*--バッテリの金属製フランジがコントローラのスロットに挿入されていません:+image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif["バッテリフランジインサートが不適正"]
 
 
 . に進みます link:batteries-reinstall-controller-canister-task.html["E2800 コントローラキャニスターを再度取り付けます"]。

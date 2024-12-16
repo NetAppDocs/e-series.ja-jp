@@ -10,7 +10,7 @@ summary: 容量の追加ダイアログで、既存のプールまたはボリ�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

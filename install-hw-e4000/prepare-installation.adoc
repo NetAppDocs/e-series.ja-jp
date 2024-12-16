@@ -1,0 +1,148 @@
+---
+permalink: install-hw-e4000/prepare-installation.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= 設置を準備
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+E4000シリーズストレージシステムの仕様を満たすように設置場所を準備する必要があります。
+
+.手順
+. アカウントを作成し、でハードウェアを登録します http://mysupport.netapp.com/["ネットアップサポート"^]。
+. 次のアイテムが同梱されていることを確認します。
++
+[role="tabbed-block"]
+====
+.E4012
+--
+ドライブが取り付けられたシェルフ（ベゼルは別に梱包）::
++
+--
+image:../media/trafford_overview.png["ドライブが取り付けられたシェルフ"]
+
+--
+ラックマウントハードウェア::
++
+--
+image:../media/superrails_inst-hw-e2800-e5700.png["ラックマウントハードウェア"]
+
+--
+管理接続用イーサネットケーブル（発注した場合）::
++
+--
+image:../media/cable_ethernet_inst-hw-e2800-e5700.png["管理接続用イーサネットケーブル"]
+
+--
+データホストのケーブル接続用I/Oケーブル::
++
+--
+image:../media/cable_io_inst-hw-e2800-e5700.png["データホストのケーブル接続用I/Oケーブル"]
+
+--
+電源ケーブル::
++
+--
+image:../media/cable_power_inst-hw-e2800-e5700.png["電源ケーブル"]
+
+--
+SAS ケーブル::
++
+--
+image:../media/sas_cable.png["SAS ケーブル"]
+
+--
+
+
+--
+.E4060
+--
+シェルフ、ベゼル、およびラックマウントハードウェア::
++
+--
+image:../media/trafford_overview.png["シェルフ、ベゼル、およびラックマウントハードウェア"]
+
+--
+シェルフハンドル×4:: image:../media/handles_counted.png["シェルフハンドル×4"]
+管理接続用イーサネットケーブル（発注した場合）::
++
+--
+image:../media/cable_ethernet_inst-hw-e2800-e5700.png["管理接続用イーサネットケーブル"]
+
+--
+データホストのケーブル接続用I/Oケーブル::
++
+--
+image:../media/cable_io_inst-hw-e2800-e5700.png["データホストのケーブル接続用I/Oケーブル"]
+
+--
+電源ケーブル::
++
+--
+image:../media/cable_power_inst-hw-e2800-e5700.png["電源ケーブル"]
+
+--
+SAS ケーブル::
++
+--
+image:../media/sas_cable.png["SAS ケーブル"]
+
+--
+
+
+--
+====
+. インストールに必要な追加アイテムを入手します。
++
+** Philips #2ドライバ
+** 懐中電灯
+** ESDストラップ
+** キャビネットまたはラックには、次のサイズのシェルフを取り付けることができます。
++
+[role="tabbed-block"]
+====
+.E4012
+--
+*奥行き*：53.59 cm（21.1インチ）
+
+*幅*：44.8インチ（17.64インチ）
+
+*高さ*：8.64cm（3.4インチ）
+
+* 最大重量 * ： 29.6kg （ 65.25 ポンド）
+
+--
+.E4060
+--
+*奥行き*：92.2 cm（36.3インチ）
+
+*幅*：44.8 cm（17.64インチ）
+
+*高さ*：17.78cm（7.0インチ）
+
+* 最大重量 * ： 114.91kg （ 253.33 ポンド）
+
+--
+====
+** 正しいAC電源電圧を供給する場所：
++
+*** E4012：120～240 V AC
+*** E4060：240ボルトAC
+
+
+** 管理ソフトウェアでサポートされているブラウザ：
++
+*** Google Chrome（バージョン89以降）
+*** Microsoft Edge（バージョン90以降）
+*** Mozilla Firefox（バージョン80以降）
+*** Safari（バージョン14以降）
+
+
+
+
+

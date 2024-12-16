@@ -10,7 +10,7 @@ summary: vCenter向けストレージプラグインでストレージリソー�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

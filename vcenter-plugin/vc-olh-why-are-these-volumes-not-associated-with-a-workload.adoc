@@ -10,7 +10,7 @@ summary: ボリュームをコマンドラインインターフェイス（CLI�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

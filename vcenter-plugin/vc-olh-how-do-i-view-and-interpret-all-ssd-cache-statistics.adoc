@@ -11,7 +11,7 @@ summary: SSDキャッシュについては、一般統計と詳細統計を表�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

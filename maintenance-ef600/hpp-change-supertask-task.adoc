@@ -27,7 +27,7 @@ EF300 または EF600 アレイのホストポートプロトコルを変更す�
 .. Support Resources * タブを選択した状態で、 * View top storage array properties * セクションまでスクロールします。
 .. シャーシのシリアル番号 * を探し、この値をテキストファイルにコピーします。
 +
-image::../media/sam1130_ss_e2800_storage_array_profile_sn_smid_copy_maint-ef600.gif[sam1130 ss e2800 storage array profile snsmid copy maint ef600]
+image::../media/sam1130_ss_e2800_storage_array_profile_sn_smid_copy_maint-ef600.gif[シャーシのシリアル番号]
 
 
 
@@ -39,7 +39,7 @@ image::../media/sam1130_ss_e2800_storage_array_profile_sn_smid_copy_maint-ef600.
 .. テキストボックスに * feature pack サブモデル ID* と入力し、 * 検索 * をクリックします。
 .. 変更前の構成の機能パックサブモデル ID を確認します。
 +
-image::../media/storage_array_profile2_maint-ef600.gif[ストレージアレイ profile2 maint ef600]
+image::../media/storage_array_profile2_maint-ef600.gif[ストレージアレイプロファイル]
 
 
 
@@ -596,7 +596,7 @@ NOTE: この表にコントローラサブモデル ID が記載されていな�
 .. * 機能パックの変更 * で、 * 機能有効識別子 * を探します。
 .. この 32 桁の番号をコピーしてテキストファイルに貼り付けます。
 +
-image::../media/sam1130_ss_e2800_change_feature_pack_feature_enable_identifier_copy_maint-ef600.gif[sam1130 ss e2800 変更機能パックのイネーブル ID コピー maint 600]
+image::../media/sam1130_ss_e2800_change_feature_pack_feature_enable_identifier_copy_maint-ef600.gif[[機能パックの変更]ダイアログ]
 
 
 
@@ -652,7 +652,7 @@ CAUTION: * データ損失の可能性 * - I/O 処理の実行中にこの手順
 . SANtricity システムマネージャで、 [MENU: Settings （メニュー：設定） ] [System] （システム）を選択します。
 . [ * アドオン * ] で、 [ * 機能パックの変更 * ] を選択します。
 +
-image::../media/sam1130_ss_system_change_feature_pack_maint-ef600.gif[sam1130 ss system change feature pack maint 600]
+image::../media/sam1130_ss_system_change_feature_pack_maint-ef600.gif[機能パックの変更]
 
 . [ * 参照 ] をクリックし、適用する機能パックを選択します。
 . フィールドに「 * CHANGE * 」と入力します。

@@ -1,19 +1,62 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: whats new, new features, SANtricity 11.73 
+keywords: whats new, new features, SANtricity 11.90 
 summary: SANtricity OS の新機能 
 ---
 = SANtricity OS の新機能
 :allow-uri-read: 
 :experimental: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]
-次の表に、EF300、EF600、E2800 / EF280、およびE5700 / EF570コントローラの組み込みの管理用にSANtricity OS 11.8の新機能を示します。
+次の表に、E4000、EF300、EF600、E2800 / EF280、およびE5700 / EF570コントローラの組み込み管理向けに、最新のSANtricity OSリリースの新機能を示します。
 
+
+
+== バージョン11.90の新機能
+
+[cols="35h,~"]
+|===
+| 新機能 | 説明 
+
+
+ a| 
+新しいストレージシステムモデル– E4000
+ a| 
+このリリースでは、E4000低コストストレージシステムが導入されています。E4000は、コントローラごとに12本と60本のドライブと1つのホストインターフェイスカード（HIC）をサポートします。初期リリースでは、サポートされるホストインターフェイスカードにはiSCSIとFibre Channelがあります。E4000ストレージシステムとその他のEシリーズストレージシステムは、Unified Managerで表示および管理できます。
+
+
+
+ a| 
+Dynamic Disk Poolsの容量の拡張
+ a| 
+プール内の個 々 のドライブの容量が23TBを超えるたびに、Dynamic Disk Pools（DDP）の容量が12PBに拡張されました。個 々 のドライブの容量が23TB未満の場合、DDPの容量は6PBになります。
+
+
+
+ a| 
+デフォルトのメディアスキャン設定の拡張
+ a| 
+デフォルトのメディアスキャン速度が120日に引き上げられました。
+
+
+
+ a| 
+外部キー管理で秘密鍵を承認
+ a| 
+秘密鍵と公開鍵のペアから外部で生成された証明書署名要求（CSR）ファイルを、System Managerからインポートできるようになりました。
+
+
+
+ a| 
+Web Servicesでログインロックアウト機能を使用できるようになりました
+ a| 
+REST APIでのみ設定可能で、組み込みWebサービスとプロキシWebサービスで新しいログインロックアウト設定を使用できるようになりました。
+
+|===
 
 
 == バージョン11.80.1R1の新機能

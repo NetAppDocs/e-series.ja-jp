@@ -11,7 +11,7 @@ summary: 健全性チェックはアップグレードプロセスの一環と�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -11,7 +11,7 @@ summary: 名前やRAIDレベルなど、ボリュームグループの設定を�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

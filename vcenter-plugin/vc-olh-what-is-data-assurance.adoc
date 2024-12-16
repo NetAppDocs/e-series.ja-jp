@@ -10,7 +10,7 @@ summary: Data Assurance（DA）はT10 Protection Information（PI）標準を実
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

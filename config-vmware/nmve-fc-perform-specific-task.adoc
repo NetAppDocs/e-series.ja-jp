@@ -98,7 +98,7 @@ esxcfg-module -s "ql2xnvmesupport=1" qlnativefc
 
 次の図では、 2 つのゾーンでホストが E シリーズストレージアレイに接続されています。一方のゾーンは青い線で示され、もう一方のゾーンは赤い線で示されます。各ゾーンには、 1 つのイニシエータポートとすべてのターゲットポートが含まれます。
 
-image::../media/port_identifiers_host_and_target_conf-vmw.gif[ポート識別子 host および target conf vmw]
+image::../media/port_identifiers_host_and_target_conf-vmw.gif[NVMe over Fibre Channelポート識別子」]
 
 
 

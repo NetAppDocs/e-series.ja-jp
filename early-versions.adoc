@@ -6,6 +6,8 @@ summary: 以前のバージョンのドキュメント
 ---
 = 以前のバージョン
 :allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
 
 
 [role="lead"]
@@ -23,11 +25,20 @@ E シリーズハードウェアおよび SANtricity ソフトウェアの以前
 * https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1394872["E2600 および E2700 に 2 台目のコントローラを追加します"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2353447["ホストプロトコルを変更または追加する"^]
 * https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1656638["AC 電源から DC 電源に変換します"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2589397["コントローラアップグレードガイド-レガシーコントローラモデル"^]
 
 
 
 
 == 以前のリリースのソフトウェアドキュメント
+
+
+
+=== SANtricityリリース11.8
+
+* https://docs.netapp.com/us-en/e-series-santricity-118/index.html["System Managerのヘルプ"^]
+* https://docs.netapp.com/us-en/e-series-santricity-118/index.html["Unified Managerのヘルプ"^]
+
 
 
 

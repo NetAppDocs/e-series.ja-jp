@@ -11,7 +11,7 @@ summary: ボリュームへのI/Oアクセスが不要になった場合は、�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

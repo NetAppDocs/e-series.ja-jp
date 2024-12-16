@@ -51,7 +51,7 @@ NOTE: 交換用コントローラには 16GB のメモリがあらかじめ取�
 
 . コントローラキャニスターの背面にある MAC アドレスと FRU パーツ番号のラベルを確認します。
 +
-image::../media/e5700_mac_address_and_fru_part_number.png[e5700 MAC アドレスと FRU パーツ番号]
+image::../media/e5700_mac_address_and_fru_part_number.png[E5700コントローラのMACアドレスとFRUパーツ番号]
 
 +
 *(1) *_MAC アドレス :_ 管理ポート 1 の MAC アドレス ("P1") 。元のコントローラの IP アドレスが DHCP を使用して取得したアドレスである場合は、新しいコントローラに接続する際にこのアドレスが必要になります。
@@ -65,7 +65,7 @@ image::../media/e5700_mac_address_and_fru_part_number.png[e5700 MAC アドレス
 
 +
 .. 「 * ハードウェア * 」を選択します。
-.. コントローラアイコンが付いたコントローラシェルフを探します image:../media/sam1130_ss_hardware_controller_icon_maint-e5700.gif[""]。
+.. コントローラアイコンが表示されたコントローラシェルフを探しimage:../media/sam1130_ss_hardware_controller_icon_maint-e5700.gif["コントローラアイコン"]ます。
 .. コントローラアイコンをクリックします。
 .. コントローラを選択し、 * 次へ * をクリックします。
 .. [*Base] タブで、コントローラの交換パーツ番号 * をメモします。
@@ -165,7 +165,7 @@ CAUTION: パフォーマンスの低下を防ぐために、ケーブルをね�
 次の図は、 E5724 のコントローラシェルフの例です。
 
 +
-image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[28 dwg e2824 ：コントローラキャニスター maint e5700 を削除します]
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[コントローラキャニスターを取り外します]
 
 +
 * （ 1 ） * _ コントローラキャニスター _
@@ -177,7 +177,7 @@ image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[28 dwg e
 E5760 コントローラシェルフの例は次のとおりです。
 
 +
-image::../media/28_dwg_e2860_add_controller_canister_maint-e5700.gif[28 dwg e2860 ：コントローラキャニスター maint e5700 を追加します]
+image::../media/28_dwg_e2860_add_controller_canister_maint-e5700.gif[コントローラキャニスターを取り外します]
 
 +
 * （ 1 ） * _ コントローラキャニスター _
@@ -210,7 +210,7 @@ E5724 コントローラシェルフでは、コントローラキャニスタ�
 この緑の LED が点灯している場合は、コントローラがまだバッテリ電源を使用しています。この LED が消灯するのを待ってから、コンポーネントを取り外す必要があります。
 
 +
-image::../media/28_dwg_e2800_internal_cache_active_led_maint-e5700.gif[28 dwg e2800 内部キャッシュアクティブ LED maint e5700]
+image::../media/28_dwg_e2800_internal_cache_active_led_maint-e5700.gif[内部キャッシュアクティブLED]
 
 +
 * （ 1 ） * _ 内部キャッシュアクティブ LED_
@@ -221,7 +221,7 @@ image::../media/28_dwg_e2800_internal_cache_active_led_maint-e5700.gif[28 dwg e2
 . バッテリの青色のリリースラッチの位置を確認します。
 . バッテリをリリースラッチを押し下げながら引き出し、コントローラキャニスターから外します。
 +
-image::../media/28_dwg_e2800_remove_battery_maint-e5700.gif[28 dwg e2800 バッテリメンテナンス e5700 を取り外します]
+image::../media/28_dwg_e2800_remove_battery_maint-e5700.gif[バッテリの取り外し]
 
 +
 * （ 1 ） * _ バッテリリリースラッチ _
@@ -244,7 +244,7 @@ image::../media/28_dwg_e2800_remove_battery_maint-e5700.gif[28 dwg e2800 バッ�
 ネジは 4 本あります。 1 本は上部に、もう 1 本は側面に、 2 本は前面にあります。
 
 +
-image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e5700.gif[28 DWG e2800 HIC の前面取り付けネジ maint e5700 を取り付けます]
+image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e5700.gif[コントローラからのカバーの取り外し]
 
 . HIC カバーを取り外します。
 . コントローラカードに HIC を固定している 3 本の取り付けネジを手またはプラスドライバで緩めます。
@@ -254,7 +254,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e5700.gif[28 DWG e2800 H
 NOTE: HIC の底面やコントローラカードの表面のコンポーネントをこすったりぶつけたりしないように注意してください。
 
 +
-image::../media/28_dwg_e2800_hic_thumbscrews_maint-e5700.gif[28 dwg e2800 HIC 蝶ネジ maint e5700]
+image::../media/28_dwg_e2800_hic_thumbscrews_maint-e5700.gif[コントローラカードからのHICの取り外し]
 
 +
 * （ 1 ） * _ ホストインターフェイスカード（ HIC ） _
@@ -284,7 +284,7 @@ image::../media/28_dwg_e2800_hic_thumbscrews_maint-e5700.gif[28 dwg e2800 HIC �
 カチッという音がしてラッチが固定されると、ラッチの下部がシャーシの金属製のスロットに収まります。
 
 +
-image::../media/28_dwg_e2800_insert_battery_maint-e5700.gif[28 DWG e2800 INSERT BATTERY maint e5700]
+image::../media/28_dwg_e2800_insert_battery_maint-e5700.gif[バッテリの再取り付け]
 
 +
 * （ 1 ） * _ バッテリリリースラッチ _
@@ -300,11 +300,11 @@ CAUTION: * ハードウェアの破損の可能性 * - バッテリ前部の金�
 +
 ** * 正解 * - バッテリの金属製のフランジがコントローラのスロットにしっかりと挿入されています。
 +
-image:../media/28_dwg_e2800_battery_flange_ok_maint-e5700.gif[""]
+image:../media/28_dwg_e2800_battery_flange_ok_maint-e5700.gif["正しい金属フランジ"]
 
 ** * 不正解 * - バッテリの金属製のフランジがコントローラのスロットに挿入されていません：
 +
-image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e5700.gif[""]
+image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e5700.gif["不適切な金属フランジ"]
 
 
 
@@ -328,7 +328,7 @@ HIC の底面やコントローラカードの表面のコンポーネントを�
 CAUTION: * 機器の破損の可能性 * -- HIC と取り付けネジの間にあるコントローラ LED の金色のリボンコネクタをはさまないように十分に注意してください。
 
 +
-image::../media/28_dwg_e2800_hic_thumbscrews_maint-e5700.gif[28 dwg e2800 HIC 蝶ネジ maint e5700]
+image::../media/28_dwg_e2800_hic_thumbscrews_maint-e5700.gif['コントローラカードへのHICの再取り付け"]
 
 +
 * （ 1 ） * _ ホストインターフェイスカード（ HIC ） _
@@ -342,7 +342,7 @@ image::../media/28_dwg_e2800_hic_thumbscrews_maint-e5700.gif[28 dwg e2800 HIC �
 
 . 元のコントローラキャニスターから取り外した HIC カバーを新しいコントローラキャニスターに取り付け、 No.1 プラスドライバを使用して 4 本のネジで固定します。
 +
-image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e5700.gif[28 DWG e2800 HIC の前面取り付けネジ maint e5700 を取り付けます]
+image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e5700.gif[前面プレートを取り付け直します。]
 
 
 
@@ -357,7 +357,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e5700.gif[28 DWG e2800 H
 . 取り外し可能なカバーが下になるようにコントローラキャニスターを裏返します。
 . カムハンドルを開いた状態でコントローラキャニスターをスライドし、コントローラシェルフに最後まで挿入します。
 +
-image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[28 dwg e2824 ：コントローラキャニスター maint e5700 を削除します]
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[コントローラキャニスターの取り付け]
 
 +
 * （ 1 ） * _ コントローラキャニスター _
@@ -366,7 +366,7 @@ image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[28 dwg e
 * （ 2 ） * _CAM ハンドル _
 
 +
-image::../media/28_dwg_e2860_add_controller_canister_maint-e5700.gif[28 dwg e2860 ：コントローラキャニスター maint e5700 を追加します]
+image::../media/28_dwg_e2860_add_controller_canister_maint-e5700.gif[コントローラキャニスターの取り付け]
 
 +
 * （ 1 ） * _ コントローラキャニスター _
@@ -400,7 +400,7 @@ NOTE: 元のコントローラの IP アドレスが DHCP を使用して取得�
 +
 ** デジタル表示ディスプレイの表示が、コントローラがオフラインになっていることを示す連続した * OS * 、 * OL * 、 * _ blank_ * と表示されます。
 ** 黄色の警告 LED が点灯した状態になります。
-** ホストリンク LED は、ホストインターフェイスに応じて、点灯、点滅、消灯のいずれかになります。image:../media/e5700_hic_3_callouts_maint-e5700.gif[""]
+** ホストリンクLEDは、ホストインターフェイスに応じて、点灯、点滅、消灯のいずれかになります。image:../media/e5700_hic_3_callouts_maint-e5700.gif["E5700コントローラのLED"]
 +
 * （ 1 ） * _ ホストリンク LED _
 

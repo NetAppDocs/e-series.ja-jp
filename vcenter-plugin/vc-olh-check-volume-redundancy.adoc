@@ -11,7 +11,7 @@ summary: プールまたはボリュームグループ内のボリュームの�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

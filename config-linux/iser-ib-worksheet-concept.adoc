@@ -67,7 +67,7 @@ NOTE: ソフトウェアイニシエータの IQN は、タスクの実行中に
 
 推奨構成は、 2 つのホスト（イニシエータ）ポートと 4 つのターゲットポートで構成されます。
 
-image::../media/port_identifiers_ib_iser.gif[ポート識別子 ib iSER]
+image::../media/port_identifiers_ib_iser.gif[iSER over IBネットワーク構成]
 
 
 

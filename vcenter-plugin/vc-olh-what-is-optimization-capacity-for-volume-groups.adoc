@@ -10,7 +10,7 @@ summary: SSDドライブでは、その容量の一部が未割り当ての場�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

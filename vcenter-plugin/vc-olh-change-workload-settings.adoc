@@ -11,7 +11,7 @@ summary: ワークロードの名前を変更し、関連付けられている�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

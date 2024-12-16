@@ -27,11 +27,11 @@ E2800 ドライブを交換する前に、要件と考慮事項を確認して�
 
 * E2812 コントローラシェルフまたは DE212C ドライブシェルフのドライブ番号： *
 
-image::../media/28_dwg_e2812_de212c_drive_numbering.gif[28 dwg e2812 de212c ドライブの番号付け]
+image::../media/28_dwg_e2812_de212c_drive_numbering.gif[12トライフシエルフノトライフハンコウ]
 
 * E2824 コントローラシェルフ、 EF280 フラッシュアレイ、 DE224C ドライブシェルフのドライブ番号： *
 
-image::../media/28_dwg_e2824_de224c_drive_numbering_maint-e2800.gif[28 dwg e2824 de224c ドライブ番号が maint e2800 になっている]
+image::../media/28_dwg_e2824_de224c_drive_numbering_maint-e2800.gif[24トライフシエルフノトライフハンコウ]
 
 
 NOTE: E2812 、 E2824 、または EF280 のストレージアレイには、 DE1600 12 ドライブトレイ、 DE5600 24 ドライブトレイ、 DE6600 60 ドライブトレイなど、従来の SAS-2 拡張ドライブトレイが搭載されている場合がありますいずれかのドライブトレイのドライブを交換する手順については、を参照してください link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2577975["E2660 、 E2760 、 E5460 、 E5560 、または E5660 トレイのドライブの交換"^] および link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2577971["E2600 、 E2700 、 E5400 、 E5500 、および E5600 の 12 ドライブトレイまたは 24 ドライブトレイのドライブの交換"^]。
@@ -42,11 +42,11 @@ NOTE: E2812 、 E2824 、または EF280 のストレージアレイには、 DE
 
 E2860 コントローラシェルフと DE460C ドライブシェルフは、それぞれ 12 個のドライブスロットを搭載した 5 台のドロワーで構成されています。ドライブドロワーの番号は、一番上が 1 で一番下が 5 です。
 
-image::../media/28_dwg_e2860_de460c_front_no_callouts_maint-e2800.gif[28 dwg e2860 de460c front no callouts e2800]
+image::../media/28_dwg_e2860_de460c_front_no_callouts_maint-e2800.gif[60ドライブドロワー]
 
 E2860 コントローラシェルフと DE460C ドライブシェルフの各ドロワーでは、ドライブに 0~11 の番号が付けられています。
 
-image::../media/dwg_trafford_drawer_with_hdds_callouts_maint-e2800.gif[DWG トラフォードドロワー（ HDD の寸法テキストが maint e2800]
+image::../media/dwg_trafford_drawer_with_hdds_callouts_maint-e2800.gif[ドライブのスロット番号]
 
 
 NOTE: E2860 ストレージアレイには、 DE1600 12 ドライブトレイ、 DE5600 24 ドライブトレイ、 DE6600 60 ドライブトレイなど、従来の SAS-2 拡張ドライブトレイが搭載されている場合がありますいずれかのドライブトレイのドライブを交換する手順については、を参照してください link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2577975["E2660 、 E2760 、 E5460 、 E5560 、または E5660 トレイのドライブの交換"^] および link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2577971["E2600 、 E2700 、 E5400 、 E5500 、および E5600 の 12 ドライブトレイまたは 24 ドライブトレイのドライブの交換"^]。
@@ -57,11 +57,11 @@ NOTE: E2860 ストレージアレイには、 DE1600 12 ドライブトレイ、
 
 E2860 コントローラシェルフおよび DE460C ドライブシェルフに搭載されたドライブドロワーを交換することができます。これらの 60 ドライブシェルフには、それぞれ 5 つのドライブドロワーが搭載されています。
 
-image::../media/28_dwg_e2860_de460c_front_no_callouts_maint-e2800.gif[28 dwg e2860 de460c front no callouts e2800]
+image::../media/28_dwg_e2860_de460c_front_no_callouts_maint-e2800.gif[60ドライブドロワー"]
 
 5 台の各ドロワーに最大 12 本のドライブを搭載できます。
 
-image:../media/92_dwg_de6600_drawer_with_hdds_no_callouts_maint-e2800.gif[""]
+image:../media/92_dwg_de6600_drawer_with_hdds_no_callouts_maint-e2800.gif["ドライブが取り付けられたドロワー"]
 
 
 
@@ -91,7 +91,7 @@ ESD バッグを手で開けるか、バッグの上部をハサミで切り落�
 ** ドライブをシェルフに取り付けるときは、無理に押し込まず、ドライブラッチにしっかりと固定されるまでそっと押し込んでください。
 ** ドライブはやわらかい場所に置き、他のドライブと重ねて置かないでください。
 ** ドライブをぶつけないでください。
-** ドライブをシェルフから取り外すときは、ハンドルを外し、ドライブがスピンダウンするまで 30 秒待ってください。
+** ドライブをシェルフから取り外すときは、ハンドルを外し、ドライブがスピンダウンするまで 60 秒待ってください。
 ** ドライブを発送するときは、必ず承認された梱包材を使用し
 
 

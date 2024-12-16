@@ -39,14 +39,14 @@ NOTE: この手順 は、シェルフの IOM のホットスワップや交換�
 
 
  a| 
-image:../media/sas_cable.png[""]
+image:../media/sas_cable.png["SASケーブル"]
  a| 
 * SAS ケーブル *
 
 |===
 +
 .例A：標準的なSAS構成のDE212C / DE224ディスクシェルフが3台搭載されたE5700コントローラシェルフ
-image:../media/example_a_28_57.png[""]
+image:../media/example_a_28_57.png["SAS構成のE5700コントローラ"]
 
 +
 .. コントローラ A を最初のドライブシェルフの IOM A にケーブル接続します。
@@ -59,7 +59,7 @@ image:../media/example_a_28_57.png[""]
 
 +
 .例B：標準のSAS構成のDE212C / DE224ディスクシェルフが1台搭載されたE5700コントローラシェルフ
-image:../media/example_b_57_28.png[""]
+image:../media/example_b_57_28.png["SAS構成のE5700コントローラ"]
 
 +
 .. コントローラ A を IOM A にケーブル接続します
@@ -75,7 +75,7 @@ image:../media/example_b_57_28.png[""]
 
 
  a| 
-image:../media/power_cable_inst-hw-e2800-e5700.png[""]
+image:../media/power_cable_inst-hw-e2800-e5700.png["電源ケーブル"]
  a| 
 * 電源ケーブル *
 
@@ -99,7 +99,7 @@ CAUTION: ドライブシェルフの電源スイッチがオフになってい�
 
 
  a| 
-* 例：電源接続はシェルフ背面にあります。 *image:../media/trafford_power.png[""]
+*例：電源接続はシェルフの背面にあります。*image:../media/trafford_power.png["電源シェルフの接続"]
 
 |===
 

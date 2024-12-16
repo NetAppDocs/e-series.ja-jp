@@ -1,7 +1,7 @@
 ---
 permalink: upgrade-controllers/prepare-upgrade-controllers-task.html 
 sidebar: sidebar 
-keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, upgrade controller requirements, upgrade controller key management, prepare upgrade controller, upgrade controller preparation, preparing controller upgrade 
+keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, upgrade controller requirements, upgrade controller key management, prepare upgrade controller, upgrade controller preparation, preparing controller upgrade 
 summary: ドライブセキュリティキーを保存し、サポートデータを収集し、コントローラをオフラインにして、コントローラをアップグレードする準備をします。 
 ---
 = コントローラをアップグレードする準備をします
@@ -94,10 +94,9 @@ NOTE: クライアント証明書とサーバ証明書を取得するには、�
 
 . GUI または CLI のいずれかを使用して、ストレージアレイに関するサポートデータを収集します。
 +
-** Storage Manager の System Manager または Array Management Window で、ストレージアレイのサポートバンドルを収集して保存します。
+** System Managerを使用して、ストレージアレイのサポートバンドルを収集して保存します。
 +
 *** System Manager で、次のメニューを選択します。 Support [Support Center] > [Diagnostics （診断） ] タブ。次に、 [ サポートデータの収集 ] を選択し、 [ * 収集 ] をクリックします。
-*** Array Management Window ツールバーから、次のメニューを選択します。 Monitor [Health] （ヘルス） > Collect Support Data Manually （サポートデータを手動で収集）。次に、名前を入力し、サポートバンドルを保存するシステム上の場所を指定します。
 +
 ブラウザの Downloads フォルダに、「 upport-data.7z 」という名前でファイルが保存されます。
 
@@ -133,7 +132,7 @@ CAUTION: * データ損失の可能性 * - I/O 処理の実行中にこの手順
 +
 [ キャッシュ設定の変更 ] ダイアログボックスが表示されます。このダイアログボックスには、ストレージアレイ上のすべてのボリュームが表示されます。
 
-.. [*Basic*] タブを選択し、リード・キャッシュとライト・キャッシュの設定を変更します。
+.. [基本]*タブを選択し、読み取りキャッシュと書き込みキャッシュの設定を無効にします。
 .. [ 保存（ Save ） ] をクリックします。
 .. キャッシュメモリ内のデータがディスクにフラッシュされるまで 5 分待ちます。
 

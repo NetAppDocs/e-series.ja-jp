@@ -10,7 +10,7 @@ summary: Add/Discover機能を使用して、組織のネットワークで管�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

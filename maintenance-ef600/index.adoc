@@ -11,58 +11,79 @@ summary: EF300 および EF600 ハードウェアをメンテナンスします
 
 
 [role="lead"]
+ハードウェアのメンテナンス手順が必要になる場合があります。ここでは、EF300またはEF600システムコンポーネントのメンテナンスに固有の手順について説明します。
+
+このセクションの手順は、EF300またはEF600システムがEシリーズ環境にすでに導入されていることを前提としています。
+
+
+
+== システムコンホオネント
+
 EF300 および EF600 ストレージシステムの場合は、次のコンポーネントのメンテナンス手順を実行できます。
 
+[cols="25,65"]
+|===
 
 
-== 電池
-
+ a| 
+https://docs.netapp.com/us-en/e-series/maintenance-ef600/batteries-overview-requirements-concept.html["電池"]
+ a| 
 バッテリはコントローラに搭載されており、 AC 電源で障害が発生した場合にキャッシュデータを保持します。
 
 
 
-== コントローラ
-
+ a| 
+https://docs.netapp.com/us-en/e-series/maintenance-ef600/controllers-overview-supertask-concept.html["コントローラ"]
+ a| 
 コントローラは、ボード、ファームウェア、ソフトウェアで構成されます。ドライブを制御し、 SANtricity System Manager の機能を実装します。
 
 
 
-== DIMM
-
+ a| 
+https://docs.netapp.com/us-en/e-series/maintenance-ef600/dimms-overview-supertask-concept.html["DIMM"]
+ a| 
 メモリサイズが異なる場合や DIMM に障害がある場合は、 DIMM （デュアルインラインメモリモジュール）を交換する必要があります。
 
 
 
-== ドライブ
-
+ a| 
+https://docs.netapp.com/us-en/e-series/maintenance-ef600/drives-overview-supertask-concept.html["ドライブ"]
+ a| 
 ドライブは、データの物理ストレージメディアとして使用されるデバイスです。
 
 
 
-== ファン
-
+ a| 
+https://docs.netapp.com/us-en/e-series/maintenance-ef600/fans-overview-requirements-replacing2-concept.html["ファン"]
+ a| 
 EF300 または EF600 のコントローラシェルフまたはドライブシェルフには、コントローラを冷却するためのファンが 5 台ずつ搭載されています。
 
 
 
-== ホストインターフェイスカード（ HIC ）
-
+ a| 
+https://docs.netapp.com/us-en/e-series/maintenance-ef600/hics-overview-supertask-concept.html["ホストインターフェイスカード（ HIC ）"]
+ a| 
 ホストインターフェイスカード（ HIC ）はコントローラキャニスターに取り付ける必要があります。EF600 コントローラには、オプションの HIC 上にホストポートがあります。HIC に搭載されたホストポートのことを HIC ポートと呼びます。
 
 
 
-== ホストポートプロトコル
-
+ a| 
+https://docs.netapp.com/us-en/e-series/maintenance-ef600/hpp-overview-supertask-concept.html["ホストポートプロトコル"]
+ a| 
 互換性と通信の確立のために、ホストのプロトコルを別のプロトコルに変換することができます。
 
 
 
-== 電源装置
-
+ a| 
+https://docs.netapp.com/us-en/e-series/maintenance-ef600/power-overview-requirements2-concept.html["電源装置"]
+ a| 
 電源装置は、コントローラシェルフに電源の冗長性を提供します。
 
 
 
-== SAS 拡張カード
-
+ a| 
+https://docs.netapp.com/us-en/e-series/maintenance-ef600/sas-overview-supertask-concept.html["SAS 拡張カード"]
+ a| 
 SAS 拡張カードは、コントローラキャニスターに取り付けることができます。EF300 コントローラは SAS 拡張をサポートします。
+
+|===

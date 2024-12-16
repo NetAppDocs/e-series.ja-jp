@@ -11,7 +11,7 @@ summary: 保留中のバージョンがあとで誤ってアクティブ化さ�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

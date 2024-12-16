@@ -11,7 +11,7 @@ summary: 複数のホストが同じボリュームへのI/Oアクセスを必�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

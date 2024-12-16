@@ -10,7 +10,7 @@ summary: アプリケーション固有のワークロードのボリューム�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

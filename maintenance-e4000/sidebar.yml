@@ -1,0 +1,44 @@
+---
+section: maintenance-e4000
+title: E4000
+entries:
+- title: 電池
+  url: "/maintenance-e4000/replace-battery-e4000.html"
+- title: コントローラ
+  entries:
+  - title: 考慮事項と要件
+    url: "/maintenance-e4000/replace-controller-requirements-e4000.html"
+  - title: 2 台目のコントローラキャニスターを追加します
+    url: "/maintenance-e4000/replace-controller-second-e4000.html"
+  - title: コントローラを交換してください
+    url: "/maintenance-e4000/replace-controller-e4000.html"
+- title: キャニスター
+  entries:
+  - title: 電源装置の交換（E4012）
+    url: "/maintenance-e4000/replace-power-supply.html"
+  - title: 電源キャニスターの交換（E4060）
+    url: "/maintenance-e4000/replace-power-canister.html"
+  - title: ファンキャニスターの交換（E4060）
+    url: "/maintenance-e4000/replace-fan-canister.html"
+- title: DIMM
+  url: "/maintenance-e4000/replace-dimms-e4000.html"
+- title: ドライブ
+  entries:
+  - title: 考慮事項と要件
+    url: "/maintenance-e4000/replace-drive-e4000.html"
+  - title: ドライブの交換
+    entries:
+    - title: 12ドライブまたは24ドライブ
+      url: "/maintenance-e4000/replace-drives-12-24.html"
+    - title: 60ドライブ
+      url: "/maintenance-e4000/replace-drives-60.html"
+  - title: ドライブドロワーの交換（4060）
+    url: "/maintenance-e4000/drive-drawer-60.html"
+  - title: ドライブシェルフをホットアドします
+    url: "/maintenance-e4000/replace-drives-hotadd-drive-shelf.html"
+- title: ホストインターフェイスカード
+  entries:
+  - title: HICのアップグレード
+    url: "/maintenance-e4000/replace-hic-upgrade-e4000.html"
+  - title: 障害が発生したHICの交換
+    url: "/maintenance-e4000/replace-hic-e4000.html"

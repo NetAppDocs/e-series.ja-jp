@@ -21,14 +21,14 @@ E5724 、 EF570 、 EF280 、 E2812 、 E2824 、または DE212C / DE224C シ�
 
 
  a| 
-image:../media/trafford_overview.png[""]
+image:../media/trafford_overview.png["ドライブとベゼルが取り付けられたシェルフ"]
  a| 
 ドライブが取り付けられたシェルフ（ベゼルは別に梱包）
 
 
 
  a| 
-image:../media/superrails_inst-hw-e2800-e5700.png[""]
+image:../media/superrails_inst-hw-e2800-e5700.png["ラックマウントハードウェア"]
  a| 
 ラックマウントハードウェア
 
@@ -42,7 +42,7 @@ image:../media/superrails_inst-hw-e2800-e5700.png[""]
 
 
  a| 
-image:../media/cable_ethernet_inst-hw-e2800-e5700.png[""]
+image:../media/cable_ethernet_inst-hw-e2800-e5700.png["イーサネットケーブル"]
  a| 
 イーサネットケーブル
 
@@ -53,7 +53,7 @@ image:../media/cable_ethernet_inst-hw-e2800-e5700.png[""]
 
 
  a| 
-image:../media/cable_io_inst-hw-e2800-e5700.png[""]
+image:../media/cable_io_inst-hw-e2800-e5700.png["I/O ケーブル"]
  a| 
 I/O ケーブル
 
@@ -64,7 +64,7 @@ I/O ケーブル
 
 
  a| 
-image:../media/cable_power_inst-hw-e2800-e5700.png[""]
+image:../media/cable_power_inst-hw-e2800-e5700.png["電源ケーブル"]
  a| 
 電源ケーブル
 
@@ -75,7 +75,7 @@ image:../media/cable_power_inst-hw-e2800-e5700.png[""]
 
 
  a| 
-image:../media/sas_cable.png[""]
+image:../media/sas_cable.png["SAS ケーブル"]
  a| 
 SAS ケーブルはドライブシェルフにのみ付属しています
  a| 
@@ -88,28 +88,28 @@ SAS ケーブル
 
 
  a| 
-image:../media/screwdriver_inst-hw-e2800-e5700.png[""]
+image:../media/screwdriver_inst-hw-e2800-e5700.png["No.2 プラスドライバ"]
  a| 
 No.2 プラスドライバ
 
 
 
  a| 
-image:../media/flashlight_inst-hw-e2800-e5700.png[""]
+image:../media/flashlight_inst-hw-e2800-e5700.png["懐中電灯"]
  a| 
 懐中電灯
 
 
 
  a| 
-image:../media/wrist_strap_inst-hw-e2800-e5700.png[""]
+image:../media/wrist_strap_inst-hw-e2800-e5700.png["静電気防止用ストラップ"]
  a| 
 静電気防止用ストラップ
 
 
 
  a| 
-image:../media/2u_rackspace_inst-hw-e2800-e5700.png[""]
+image:../media/2u_rackspace_inst-hw-e2800-e5700.png["2Uラックインチ"]
  a| 
 2U ラックスペース： 48.3cm の標準搭載。48.30cm （ 19 インチ）ラック
 
@@ -126,7 +126,7 @@ image:../media/2u_rackspace_inst-hw-e2800-e5700.png[""]
 
 
  a| 
-image:../media/management_station_inst-hw-e2800-e5700_g60b3.png[""]
+image:../media/management_station_inst-hw-e2800-e5700_g60b3.png["管理ソフトウェアでサポートされているブラウザを使用した管理ステーション"]
  a| 
 管理ソフトウェアでサポートされているブラウザ：
 

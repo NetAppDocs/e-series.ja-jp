@@ -11,7 +11,7 @@ summary: ストレージグループでは、ボリュームを構成するス�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

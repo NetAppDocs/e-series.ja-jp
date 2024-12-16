@@ -32,7 +32,7 @@ NOTE: AIX ® を使用している場合は、アレイに接続する前に、�
 
 
  a| 
-image:../media/4U_DirectTopology.png[""]
+image:../media/4U_DirectTopology.png["直接接続トポロジのケーブル接続"]
  a| 
 . 各ホストアダプタをコントローラのホストポートに直接接続します。
 
@@ -48,7 +48,7 @@ image:../media/4U_DirectTopology.png[""]
 
 
  a| 
-image:../media/4U_FabricTopology.png[""]
+image:../media/4U_FabricTopology.png["Fabrixトポロジのケーブル接続"]
  a| 
 . 各ホストアダプタをスイッチに直接接続します。
 . 各スイッチをコントローラのホストポートに直接接続します。
@@ -79,7 +79,7 @@ DHCP サーバを使用して管理ポートを設定する方法について説
 
 
  a| 
-image:../media/cable_ethernet_inst-hw-e2800-e5700.png[""]
+image:../media/cable_ethernet_inst-hw-e2800-e5700.png["イーサネットケーブル"]
  a| 
 イーサネットケーブル（発注した場合）
 
@@ -92,11 +92,11 @@ image:../media/cable_ethernet_inst-hw-e2800-e5700.png[""]
 
 
  a| 
-image:../media/e2800_mgmt_ports.png[""]
+image:../media/e2800_mgmt_ports.png["E2800ノカンリホオト"]
 
 E2800 コントローラ P1 の管理ポート
  a| 
-image:../media/e5700_mgmt_ports.png[""]
+image:../media/e5700_mgmt_ports.png["E5700の管理ポート"]
 
 E5700 コントローラ P1 の管理ポート
 
@@ -122,7 +122,7 @@ IP アドレスとサブネットマスクを入力して、管理ポートを�
 
 
  a| 
-image:../media/cable_ethernet_inst-hw-e2800-e5700.png[""]
+image:../media/cable_ethernet_inst-hw-e2800-e5700.png["イーサネットケーブル"]
  a| 
 イーサネットケーブル（発注した場合）
 
@@ -135,11 +135,11 @@ image:../media/cable_ethernet_inst-hw-e2800-e5700.png[""]
 
 
  a| 
-image:../media/e2800_mgmt_ports.png[""]
+image:../media/e2800_mgmt_ports.png["E2800ノカンリホオト"]
 
 E2800 コントローラ P1 の管理ポート
  a| 
-image:../media/e5700_mgmt_ports.png[""]
+image:../media/e5700_mgmt_ports.png["E5700の管理ポート"]
 
 E5700 コントローラ P1 の管理ポート
 
@@ -199,7 +199,7 @@ NOTE: コントローラ B との接続が失われた場合は、前の手順�
 
 
  a| 
-image:../media/management_s_g2285tation_inst-hw-e2800-e5700_g2285.png[""]
+image:../media/management_s_g2285tation_inst-hw-e2800-e5700_g2285.png["System Managerにアクセスして管理ポートを設定する"]
  a| 
 System Manager にアクセスするには、管理ポートの設定に使用した IP アドレスを使用します。
 

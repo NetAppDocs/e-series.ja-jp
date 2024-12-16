@@ -7,7 +7,7 @@ summary: RHEL 8 および SLES 15 の場合は、ネイティブの NVMe デバ�
 = ファイルシステムの作成（RHEL 8、RHEL 9、SLES 15）
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media
+:imagesdir: ../media/
 
 
 [role="lead"]

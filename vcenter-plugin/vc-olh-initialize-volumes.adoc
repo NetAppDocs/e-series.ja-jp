@@ -11,7 +11,7 @@ summary: 特定の障害状況からリカバリするために、ボリュー�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

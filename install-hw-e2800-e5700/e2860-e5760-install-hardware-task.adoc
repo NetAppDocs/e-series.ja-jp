@@ -37,7 +37,7 @@ NOTE: 角穴キャビネットの場合は、最初に付属のケージナッ�
 
 
  a| 
-image:../media/install_rails_inst-hw-e2800-e5700.png[""]
+image:../media/install_rails_inst-hw-e2800-e5700.png["レールを取り付けます"]
 
 |===
 . シェルフを設置します。
@@ -51,14 +51,14 @@ CAUTION: 空のシェルフの重量は、約 60kg （ 132 ポンド）です。
 
 
 +
-image:../media/4_person_lift_source.png[""]
+image:../media/4_person_lift_source.png["キャビネットにシェルフを持ち上げるには4人必要"]
 
 . シェルフを固定します。
 +
 .. シェルフの両側の上部から 1 番目と 3 番目の穴にネジを差し込み、キャビネットの前面に固定します。
 .. シェルフの背面上部の両側に 2 つの後部ブラケットを配置します。各ブラケットの 1 番目と 3 番目の穴にネジを差し込み、キャビネットの背面を固定します。
 +
-image:../media/trafford_secure.png[""]
+image:../media/trafford_secure.png["ブラケットをシェルフ背面に固定します。"]
 
 
 
@@ -92,7 +92,7 @@ image:../media/trafford_secure.png[""]
 
 
  a| 
-image:../media/trafford_overview.png[""]
+image:../media/trafford_overview.png["前面プレートの取り付け"]
 
 
 

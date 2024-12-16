@@ -11,7 +11,7 @@ summary: ドライブを検索して、選択したプール、ボリューム�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

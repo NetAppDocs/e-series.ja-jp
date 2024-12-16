@@ -11,7 +11,7 @@ summary: 不要になった1つ以上のストレージアレイグループを�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

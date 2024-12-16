@@ -19,7 +19,7 @@ summary: このワークシートを使用して、 iSCSI ストレージの構�
 
 推奨構成は、 2 つのイニシエータポートと 4 つのターゲットポートを 1 つ以上の VLAN で接続した構成です。
 
-image::../media/50001_01_conf-lin.gif[50001 01 conf LIN]
+image::../media/50001_01_conf-lin.gif[iSCSIネットワーク構成]
 
 
 

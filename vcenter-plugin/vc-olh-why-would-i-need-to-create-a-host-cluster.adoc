@@ -10,7 +10,7 @@ summary: 複数のホストから同じボリュームセットにアクセス�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

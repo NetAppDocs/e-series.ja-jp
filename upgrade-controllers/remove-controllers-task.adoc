@@ -1,7 +1,7 @@
 ---
 permalink: upgrade-controllers/remove-controllers-task.html 
 sidebar: sidebar 
-keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, remove controller, removing controller, remove battery, removing battery 
+keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, remove controller, removing controller, remove battery, removing battery 
 summary: コントローラをアップグレードする前に、古いコントローラとオプションでバッテリを取り外す必要があります。 
 ---
 = コントローラを取り外します
@@ -51,7 +51,7 @@ CAUTION: パフォーマンスの低下を防ぐために、ケーブルをね�
 次の図は、コントローラモデルのリリースハンドルの一般的な場所の例です。リリースハンドルは、コントローラシェルフとコントローラドライブトレイで似た構成になっています。
 
 +
-image:../media/28_dwg_e2824_remove_controller_canister_upg-hw.gif[""]
+image:../media/28_dwg_e2824_remove_controller_canister_upg-hw.gif["コントローラキャニスターを取り外します"]
 
 +
 * （ 1 ） * _ コントローラキャニスター _
@@ -75,12 +75,7 @@ image:../media/28_dwg_e2824_remove_controller_canister_upg-hw.gif[""]
 
 .手順
 . 古いコントローラキャニスターの上部カバーの両方のラッチボタンを押し下げながら、上部カバーをキャニスターの背面方向にスライドします。
-. コントローラドライブトレイのモデルに応じて、次のいずれかの方法で古いバッテリを取り外します。
-+
-** E2600 または E2700 コントローラドライブトレイの場合は、バッテリをコントローラキャニスターに固定している取り付けネジを外します。
-** E5400 、 EF540 、 E5500 、 EF550 、 E5600 の場合は、 または EF600 コントローラドライブトレイから、バッテリをコントローラキャニスターに固定しているタブを外します。
-
-
+. コントローラドライブトレイのモデルで、バッテリをコントローラキャニスターに固定しているタブを外して古いバッテリを取り外します。
 . バッテリを古いコントローラキャニスターの背面方向にスライドして取り外します。
 
 

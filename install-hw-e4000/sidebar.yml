@@ -1,0 +1,26 @@
+---
+section: install-hw-e4000
+title: E4000
+entries:
+- title: インストールの概要
+  url: "/install-hw-e4000/index.html"
+- title: インストールの準備
+  url: "/install-hw-e4000/prepare-installation.html"
+- title: ハードウェアを設置
+  entries:
+  - title: E4012
+    url: "/install-hw-e4000/install-hardware-12.html"
+  - title: E4060
+    url: "/install-hw-e4000/install-hardware-60.html"
+- title: シェルフをケーブル接続
+  entries:
+  - title: E4012
+    url: "/install-hw-e4000/connect-cables-12.html"
+  - title: E4060
+    url: "/install-hw-e4000/connect-cables-60.html"
+- title: ストレージシステムのセットアップを完了
+  entries:
+  - title: E4012
+    url: "/install-hw-e4000/complete-setup-12.html"
+  - title: E4060
+    url: "/install-hw-e4000/complete-setup-60.html"
