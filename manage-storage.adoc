@@ -15,15 +15,15 @@ summary: ストレージを管理します
 
 
 
-== System Manager 11.7 のオンラインヘルプ
+== System Managerのオンラインヘルプ
 
-にアクセスします https://docs.netapp.com/us-en/e-series-santricity/system-manager/index.html["SANtricity System Manager 11.7 オンラインヘルプ"^]では、ストレージアレイの計画、設定、管理、トラブルシューティングに関する情報を参照できます。
+にアクセスし https://docs.netapp.com/us-en/e-series-santricity/system-manager/index.html["SANtricity System Managerオンラインヘルプ"^]ます。ここでは、ストレージアレイの計画、設定、管理、およびトラブルシューティングの方法に関する情報を参照できます。
 
 
 
-== Unified Manager 5 のオンラインヘルプ
+== Unified Managerオンラインヘルプ
 
-にアクセスします https://docs.netapp.com/us-en/e-series-santricity/unified-manager/index.html["SANtricity Unified Manager 5 オンラインヘルプ"^]では、複数のネットワークストレージアレイでストレージ管理コマンドを実行する方法について説明します。
+にアクセスします https://docs.netapp.com/us-en/e-series-santricity/unified-manager/index.html["SANtricity Unified Managerオンラインヘルプ"^]。ここでは、複数のネットワークストレージアレイに対してストレージ管理コマンドを実行する方法を確認できます。
 
 
 
