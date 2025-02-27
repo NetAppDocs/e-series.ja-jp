@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/hics-overview-supertask-concept.html 
 sidebar: sidebar 
-keywords: replace EF600 HIC, replace EF300 HIC, host interface card failed, HIC failure 
+keywords: EF300, EF600, EF300C, EF600C, replace HIC, replace HIC, host interface card failed, HIC failure 
 summary: EF300 または EF600 の HIC を交換する前に、要件と考慮事項を確認します。 
 ---
 = EF300 または EF600 の HIC をアップグレードするための要件
@@ -11,7 +11,7 @@ summary: EF300 または EF600 の HIC を交換する前に、要件と考慮�
 
 
 [role="lead"]
-EF300 または EF600 アレイのホストインターフェイスカード（ HIC ）をアップグレードまたは交換する前に、次の要件を確認します。
+EF300、EF600、EF300C、またはEF600Cアレイのホストインターフェイスカード（HIC）をアップグレードまたは交換する前に、次の要件を確認してください。
 
 * この手順でダウンタイムのメンテナンス時間をスケジュールしておきます。この手順が完了するまではストレージアレイのデータにアクセスできません。電源がオンになっているときは両方のコントローラで HIC の構成が同じである必要があるため、 HIC の構成を変更したときは電源をオフにする必要があります。HIC が一致していないと、交換用 HIC を搭載したコントローラをオンラインにしたときにロックダウン状態になります。
 * 新しいホストポートの接続に必要なすべてのケーブル、トランシーバ、スイッチ、ホストバスアダプタ（ HBA ）を用意しておきます。

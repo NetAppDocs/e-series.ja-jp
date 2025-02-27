@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/hpp-change-supertask-task.html 
 sidebar: sidebar 
-keywords: host protocol change, EF300 host protocol, EF600 host protocol 
+keywords: host protocol change, EF300, EF600, EF600C, EF300C 
 summary: EF300 または EF600 アレイのホストポートプロトコルを変更する。 
 ---
 = EF300 または EF600 のホストプロトコルを変更する
@@ -12,7 +12,7 @@ summary: EF300 または EF600 アレイのホストポートプロトコルを�
 
 
 [role="lead"]
-EF300 または EF600 アレイのホストポートプロトコルを変更する場合は、この手順に従います。この手順は、 Infiniband （ IB ）または Fibre Channel （ FC ）を使用するホストインターフェイスカード（ HIC ）にのみ適用されます。
+EF300、EF600、EF300C、またはEF600Cアレイのホストポートプロトコルを変更する手順は、次のとおりです。この手順は、 Infiniband （ IB ）または Fibre Channel （ FC ）を使用するホストインターフェイスカード（ HIC ）にのみ適用されます。
 
 
 

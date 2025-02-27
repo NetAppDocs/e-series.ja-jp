@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/dimms-replace-supertask-task.html 
 sidebar: sidebar 
-keywords: replace EF300 DIMM, replace EF600 DIMM 
+keywords: EF300, EF600, EF300C, EF600C, replace DIMM 
 summary: EF300 または EF600 アレイ内の DIMM を交換します。 
 ---
 = EF300 または EF600 の DIMM を交換します
@@ -12,7 +12,7 @@ summary: EF300 または EF600 アレイ内の DIMM を交換します。
 
 
 [role="lead"]
-EF300 または EF600 アレイの DIMM は交換できます。
+EF300、EF600、EF300C、またはEF600CアレイのDIMMを交換することができます。
 
 .このタスクについて
 DIMM を交換するには、コントローラのキャッシュサイズを確認し、コントローラをオフラインにします。次にコントローラ、 DIMM を取り外し、新しい DIMM をコントローラに取り付けます。その後、コントローラをオンラインに戻し、ストレージアレイが正常に動作していることを確認します。

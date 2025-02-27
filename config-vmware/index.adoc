@@ -39,7 +39,7 @@ VMware の簡単な方法でストレージアレイをインストールして 
 * https://kb.netapp.com/["ネットアップナレッジベース"^] （記事のデータベース） - トラブルシューティング情報、 FAQ 、ネットアップのさまざまな製品とテクノロジの説明を掲載しています。
 * http://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] -- ネットアップが指定した基準と要件を満たすネットアップの製品とコンポーネントの構成を検索できます
 * https://www.netapp.com/pdf.html?item=/media/17017-tr4789pdf.pdf["『 VMware Configuration Guide for E-Series SANtricity iSCSI Integration with ESXi 6.X 』"^] -- iSCSIとVMwareの統合に関する技術的な詳細情報を提供します
-* https://configmax.vmware.com/home["VMware 構成の最大数"^] -- 仮想ストレージと物理ストレージを構成して、 ESX / ESXi でサポートされる最大値の範囲内に収める方法について説明します。
+* https://configmax.broadcom.com/home["VMware 構成の最大数"^]-- ESX / ESXiでサポートされる最大値の範囲内に収まるように、仮想ストレージと物理ストレージを構成する方法について説明します。
 * https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-9AEE5F4D-0CB8-4355-BF89-BB61C5F30C70.html["VMware NVMe ストレージの要件と制限事項"^]。
 * https://docs.vmware.com/en/VMware-vSphere/index.html["VMware vSphere のドキュメント"^] -- ESXi vCenter Server のドキュメントを提供します
 

@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/dimms-overview-supertask-concept.html 
 sidebar: sidebar 
-keywords: replace EF300 DIMM, replace EF600 DIMM, 
+keywords: EF300, EF600, replace DIMM, EF300C, EF600C 
 summary: EF300 または EF600 DIMM を交換する前に、要件と考慮事項を確認します。 
 ---
 = EF300 または EF600 DIMM の交換に際しての要件
@@ -11,9 +11,9 @@ summary: EF300 または EF600 DIMM を交換する前に、要件と考慮事�
 
 
 [role="lead"]
-EF300 または EF600 ストレージアレイの DIMM を交換する前に、要件と考慮事項を確認してください。
+EF300、EF600、EF600C、またはEF300CストレージアレイのDIMMを交換する前に、要件と考慮事項を確認してください。
 
-メモリサイズが異なる場合や DIMM に障害がある場合は、 DIMM を交換する必要があります。EF300 または EF600 コントローラの構成を確認して、正しいサイズの DIMM に交換されていることを確認します。
+メモリサイズが異なる場合や DIMM に障害がある場合は、 DIMM を交換する必要があります。EF300、EF600、EF300C、またはEF600Cコントローラの構成を確認し、正しいDIMMサイズが交換されたことを確認してください。
 
 
 CAUTION: ストレージアレイの DIMM は壊れやすいので注意してください。適切に取り扱わないと破損するおそれがあります。

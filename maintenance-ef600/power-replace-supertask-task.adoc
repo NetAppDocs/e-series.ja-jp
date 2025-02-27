@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/power-replace-supertask-task.html 
 sidebar: sidebar 
-keywords: replace EF300 power supply, replace EF600 power supply, 
+keywords: replace power supply, EF300, EF600, EF300C, EF600C 
 summary: EF300 または EF600 コントローラの電源装置で障害が発生した場合は、交換します。 
 ---
 = EF300 または EF600 の電源装置を交換します
@@ -12,7 +12,7 @@ summary: EF300 または EF600 コントローラの電源装置で障害が発�
 
 
 [role="lead"]
-EF300 または EF600 コントローラの電源装置で障害が発生した場合、電源装置を交換することができます。
+EF300、EF600、EF300C、またはEF600Cコントローラの電源装置で障害が発生した場合は、交換できます。
 
 電源装置で障害が発生した場合は、コントローラシェルフの電源の冗長性を維持するために、できるだけ早く交換する必要があります。
 

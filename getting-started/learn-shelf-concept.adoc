@@ -58,7 +58,7 @@ image:../media/de460c.gif["DE460C"]
 
 * 2u24 （ 2 ラックユニット、 24 ドライブ）
 * 2.5 インチ NVMe SSD
-* EF300 および EF600 コントローラ
+* EF300、EF600：EF300CおよびEF600Cコントローラ
 
  a| 
 image:../media/ne224.gif["NE224"]

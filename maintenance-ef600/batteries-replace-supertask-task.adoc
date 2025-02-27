@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/batteries-replace-supertask-task.html 
 sidebar: sidebar 
-keywords: replace EF300 battery, replace EF600 battery, EF300 battery fail, EF600 battery fail 
+keywords: replace battery, battery fail, EF300C, EF600C, EF300, EF600 
 summary: EF300 または EF600 アレイのバッテリを交換します。 
 ---
 = EF300 または EF600 バッテリを交換します
@@ -12,7 +12,7 @@ summary: EF300 または EF600 アレイのバッテリを交換します。
 
 
 [role="lead"]
-EF300 または EF600 ストレージシステムのバッテリを交換することができます。
+EF300、EF600、EF300C、またはEF600Cストレージシステムのバッテリを交換することができます。
 
 .このタスクについて
 各コントローラキャニスターには、 AC 電源で障害が発生した場合にキャッシュデータを保持するバッテリが搭載されています。SANtricity System Manager の Recovery Guru から「バッテリで障害が発生しました」または「バッテリの交換が必要です」のいずれかのステータスが報告された場合は、該当するバッテリを交換する必要があります。

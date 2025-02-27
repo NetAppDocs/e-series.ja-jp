@@ -213,8 +213,3 @@ Web Services Proxy では、要求されたストレージシステムに現在�
 いいえ
 
 |===
-
-
-== サンプルスクリプト
-
-GitHub に、 NetApp SANtricity Web サービス API の使用方法を示すサンプルスクリプトをまとめたリポジトリが用意されています。リポジトリにアクセスするには、を参照してください https://github.com/NetApp/webservices-samples["ネットアップ Web Services のサンプル"^]。

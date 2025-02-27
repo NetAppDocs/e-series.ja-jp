@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/fans-replace-supertask-task.html 
 sidebar: sidebar 
-keywords: replace EF300 fan, replace EF600 fan, fan fail 
+keywords: EF600, EF300, EF600C, EF300C, replace fan, fan fail 
 summary: EF300 または EF600 のファンを交換します。 
 ---
 = EF300 または EF600 ファンを交換します
@@ -12,7 +12,7 @@ summary: EF300 または EF600 のファンを交換します。
 
 
 [role="lead"]
-EF300 または EF600 アレイのファンは交換できます。
+EF300、EF600、EF300C、またはEF600Cアレイのファンを交換することができます。
 
 .このタスクについて
 EF300 および EF600 コントローラシェルフまたはドライブシェルフには、ファンが 5 台ずつ搭載されています。ファンで障害が発生した場合は、シェルフの冷却が適切に行われるように、できるだけ早く交換する必要があります。

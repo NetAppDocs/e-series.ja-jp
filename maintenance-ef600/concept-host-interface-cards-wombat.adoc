@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/concept-host-interface-cards-wombat.html 
 sidebar: sidebar 
-keywords: host, interface, card, hic, install, controller, canister, ef600, port 
+keywords: host, interface, card, hic, install, controller, canister, ef600, EF300, EF300C, EF600C, port 
 summary: コントローラキャニスターにホストインターフェイスカード（ HIC ）を取り付ける必要があります。EF600 コントローラには、オプションの HIC 上にホストポートがあります。HIC に搭載されたホストポートのことを HIC ポートと呼びます。 
 ---
 = ホストインターフェイスカード

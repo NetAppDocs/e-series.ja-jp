@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/hpp-overview-supertask-concept.html 
 sidebar: sidebar 
-keywords: convert EF300 host protocol, convert EF600 host protocol, 
+keywords: convert host protocol, EF600, EF300, EF600C, EF300C 
 summary: EF300 または EF600 ホストプロトコルを変更する前に、要件と考慮事項を確認してください。 
 ---
 = EF300 または EF600 ホストプロトコル変更の要件
@@ -11,7 +11,7 @@ summary: EF300 または EF600 ホストプロトコルを変更する前に、�
 
 
 [role="lead"]
-EF300 または EF600 アレイのホストプロトコルを変更する前に、次の要件を確認してください。
+EF300、EF600、EF300C、またはEF600Cアレイのホストプロトコルを変更する前に、次の要件を確認してください。
 
 * この手順でダウンタイムのメンテナンス時間をスケジュールしておきます。
 * 変更を実行するときは、ホスト I/O 処理を停止する必要があります。変更が完了するまではストレージアレイのデータにアクセスできません。

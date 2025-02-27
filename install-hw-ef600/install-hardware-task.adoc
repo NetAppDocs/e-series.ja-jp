@@ -1,7 +1,7 @@
 ---
 permalink: install-hw-ef600/install-hardware-task.html 
 sidebar: sidebar 
-keywords: EF300, EF600, installation, 
+keywords: EF300, EF600, EF300C, EF600C installation, 
 summary: EF300 または EF600 を 2 ポストラックまたはネットアップシステムキャビネットに設置します。 
 ---
 = ハードウェアを設置
@@ -11,7 +11,7 @@ summary: EF300 または EF600 を 2 ポストラックまたはネットアッ�
 
 
 [role="lead"]
-EF300 または EF600 ストレージシステムは、 2 ポストラックまたはネットアップシステムキャビネットに設置できます。
+EF300、EF600、EF300C、またはEF600Cストレージシステムは、2ポストラックまたはNetAppシステムキャビネットに設置できます。
 
 .作業を開始する前に
 次の作業を行ってください。

@@ -30,7 +30,6 @@ Web Services Proxy をインストールして設定するには、次の手順�
 == 詳細については、こちらをご覧ください
 
 * Unified Manager -- プロキシインストールには、新しい E シリーズおよび EF シリーズストレージシステムへの設定アクセスを提供する Web ベースのインターフェイス、 SANtricity Unified Manager が含まれます。詳細については、 Unified Manager のオンラインヘルプを参照してください。このヘルプはユーザインターフェイスまたはから入手できます https://docs.netapp.com/us-en/e-series-santricity/index.html["SANtricity ソフトウェアドキュメントサイト"^]。
-* GitHub リポジトリ -- GitHub には、 NetApp SANtricity Web サービス API の使用方法を示すサンプルスクリプトをまとめ、整理するためのリポジトリが用意されています。リポジトリにアクセスするには、を参照してください https://github.com/NetApp/webservices-samples["ネットアップ Web Services のサンプル"^]。
 * Representational State Transfer （ REST ）： Web Services は実質的にすべての SANtricity 管理機能へのアクセスを提供する RESTful API であるため、 REST の概念を理解しておく必要があります。詳細については、を参照してください http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm["アーキテクチャスタイルとネットワークベースのソフトウェアアーキテクチャの設計"^]。
 * JavaScript Object Notation （ JSON ）： Web Services のデータは JSON でエンコードされているため、 JSON のプログラミング概念を理解しておく必要があります。詳細については、を参照してください http://www.json.org["JSON の概要"^]。
 

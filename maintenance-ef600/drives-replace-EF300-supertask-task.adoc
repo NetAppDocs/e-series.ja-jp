@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/drives-replace-EF300-supertask-task.html 
 sidebar: sidebar 
-keywords: replace EF300 drive, replace EF600 drive, drive failure 
+keywords: EF300, EF300C, replace drive, drive failure 
 summary: EF300 アレイのドライブを交換します 
 ---
 = EF300 アレイのドライブを交換します
@@ -11,9 +11,9 @@ summary: EF300 アレイのドライブを交換します
 
 
 [role="lead"]
-EF300 アレイのドライブを交換することができます。
+EF300またはEF300Cアレイのドライブを交換することができます。
 
-EF300 は、 24 ドライブおよび 60 ドライブシェルフの SAS 拡張をサポートしています。次の手順は、 24 ドライブシェルフと 60 ドライブシェルフのどちらを使用しているかによって異なります。
+EF300およびEF300Cでは、24ドライブおよび60ドライブシェルフでのSAS拡張がサポートされます。次の手順は、 24 ドライブシェルフと 60 ドライブシェルフのどちらを使用しているかによって異なります。
 
 * <<EF300 （ 24 ドライブシェルフ）のドライブの交換>>
 * <<EF300 （ 60 ドライブシェルフ）のドライブの交換>>
