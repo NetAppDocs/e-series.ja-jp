@@ -1242,9 +1242,6 @@
   <block id="ba00ed6645f6f61df5121b8522a892a6" category="paragraph">ホストは直接コントローラに接続することも（直接接続トポロジ）、スイッチを使用してコントローラに接続することもできます。</block>
   <block id="adfce61987579370b99617a05cdb796d" category="section-title">直接接続トポロジでのケーブル接続</block>
   <block id="5b4c9deaadbde82584c00c9a4b53caa3" category="paragraph">直接接続トポロジでは、ホストアダプタをストレージシステムのコントローラに直接接続します。</block>
-  <block id="c06fc8a512ed8b80d194c0da0a6684c3" category="paragraph">次の図に接続例を示します。パフォーマンスが最大になるように、使用可能なすべてのホストアダプタポートを使用してください。</block>
-  <block id="860c8d8991038a1aa365aeb7a602e700" category="image-title">2 台のホストと 2 台のコントローラ</block>
-  <block id="5657524a813a7a96374170f5c9d4e577" category="paragraph">* （ 1 ） * _ 各ホストアダプタポートをコントローラのホストポートに直接接続します。 _</block>
   <block id="0b26276cf7e580bcffb9356cffc5beb3" category="section-title">スイッチトポロジでのケーブル接続</block>
   <block id="ff3742d36338fb61499d562cd3e0228f" category="paragraph">スイッチトポロジは、スイッチを使用して、ストレージシステムのコントローラにホストを接続します。スイッチは、ホストとコントローラの間で使用される接続タイプをサポートしている必要があります。</block>
   <block id="2d057e5ead6a8fb0ff410d15d34dcdb3" category="paragraph">次の図に接続例を示します。プロビジョニング機能を備えたスイッチの場合は、イニシエータとターゲットの各ペアを分離する必要があります。</block>
@@ -3909,7 +3906,6 @@
   <block id="401d2a131f9727761f1407aca186c35a" category="paragraph">SHH-TA5-ZZYHS</block>
   <block id="c8bb878843cfc619e78e60f6997e3e30" category="admonition">この表にコントローラサブモデル ID が記載されていない場合は、にお問い合わせください<block ref="4ce7a3cde07b85b80ee4fe046584534d" category="inline-link-rx"></block>。</block>
   <block id="8fc48164adaa0cce79cc215fef244e00" category="list-text">シャーシのシリアル番号</block>
-  <block id="8de24a1721d0c0fb0c39756c86d1e5da" category="list-text">機能有効識別子注意：プレミアム機能有効化 Web サイトには、「プレミアム機能有効化手順」へのリンクがあります。 この手順では、この手順を使用しないでください。</block>
   <block id="31a599b44c93cb34f76edd48160898be" category="section-title">手順 2 ：ホスト I/O を停止します</block>
   <block id="c09719b9c164ac95eda10fbee1bb4658" category="paragraph">ホストポートのプロトコルを変更する前に、ホストからの I/O 処理をすべて停止します。</block>
   <block id="a1b7af0f21ad6f7da3f61feb2a734667" category="paragraph">変更が完了するまではストレージアレイのデータにアクセスできません。</block>
@@ -4949,7 +4945,6 @@
   <block id="8c4bd0c1a96bcaf797782a18b54daf7a" category="list-text"><block ref="8640eb68a955f6f5591f0dd1a3bd30e7" category="inline-xref-macro-rx"></block></block>
   <block id="df8c85065effb5093bcc1889495b92f7" category="section-title">内部キー管理</block>
   <block id="8f0439a6f042ce457ec5d5faf91c28ea" category="paragraph">すべてのドライブがロックされている場合の内部キー管理の手順は、次のとおりです。</block>
-  <block id="e55e81df495444ffb2639e3a7f9ef86e" category="admonition">管理ポート 1 を使用していない場合は、他のデフォルト IP アドレスを使用してみてください。 +Ctrl A ポート 1 ： 192.168.128.101 + Ctrl A ポート 2 ： 192.168.128.102 + Ctrl B ポート 1 ： 192.168.129.101 + Ctrl B ポート 2 ： 192.168.129.102</block>
   <block id="02626834a548b28e809c79cc3246fbf9" category="paragraph">コントローラはドライブから自動ノード同期プロセスを続行し、リブートします。リブート後は、元の IP 構成を使用してコントローラにアクセスできるようになります。</block>
   <block id="370c6dde461cc5827c330619a80ca24b" category="section-title">外部キー管理</block>
   <block id="9208cd3893f8fbd0715f391ac0195354" category="paragraph">すべてのドライブがロックされている場合の外部キー管理の手順は、次のとおりです。</block>
@@ -5907,7 +5902,6 @@
   <block id="e9bca9e6b8ba7a48330d28818e51fa42" category="list-text">* コントローラ NVSRAM * -- コントローラ NVSRAM は、コントローラのデフォルト設定を指定するコントローラファイルです。NVSRAM のアップグレード手順は、コントローラのアップグレード手順に含まれています。</block>
   <block id="fdf816b9ac642abd689fd8ace0784e27" category="list-text">* ドライブファームウェア * -- を参照してください <block ref="44cf75faaf9d0b93b6ab0672c27e324d" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="3165318c5aca56aaa4c1430b7938435e" category="list-text">* マルチパス / フェイルオーバードライバ * -- アップグレードプロセスの一環として、ホストがコントローラと正しく連携するように、ホストのマルチパス / フェイルオーバードライバのアップグレードも必要になる場合があります。Microsoft Windows 以外のオペレーティングシステムを実行するホストがストレージシステムに I/O 接続されている場合は、それらのホストのマルチパスドライバをアップグレードします。互換性の情報については、を参照してください<block ref="a3e2ed1651134ba8d782e5dc8287cbc1" category="inline-link-rx"></block>。アップグレード手順については、を参照してください <block ref="584ba4e1f9de8bb64deb26d3ff20be27" category="inline-link-macro-rx"></block>、 <block ref="2cd2251585c7977d833c133e2d86f6ab" category="inline-link-macro-rx"></block>または <block ref="52cf6d66e3232b062c766727a3dc70bb" category="inline-link-macro-rx"></block>。</block>
-  <block id="a573c59164533ab1f5f929a3f6fc773a" category="list-text">* SANtricity Unified Manager* -- Unified Manager は、 E2800 、 E5700 、 EF300 、 EF600 モデルを含む複数のストレージシステムを管理するソフトウェアです。Unified Manager は SANtricity Web サービスプロキシの一部です。 RESTful API サーバをホストシステムに別途インストールして、数百台規模の新旧の NetApp E シリーズストレージシステムを管理します。詳細については、を参照してください <block ref="c92032fad30345308610610a1d1083db" category="inline-link-macro-rx"></block>。</block>
   <block id="4ee891d0ff1650fa6825828fa1b6c6d3" category="list-text">* ユーティリティー * -- SANtricity Windows ホスト・ユーティリティー、 SANtricity Linux ホスト・ユーティリティー、 SANtricity Windows DSM など、他の管理ユーティリティーを個別にアップグレードする必要があります。これらのユーティリティの詳細については、を参照してください <block ref="584ba4e1f9de8bb64deb26d3ff20be27" category="inline-link-macro-rx"></block>、 <block ref="2cd2251585c7977d833c133e2d86f6ab" category="inline-link-macro-rx"></block>または <block ref="52cf6d66e3232b062c766727a3dc70bb" category="inline-link-macro-rx"></block>。</block>
   <block id="076ca2f85d1676972e577d65bc826cc1" category="list-text">* レガシーシステム * -- 古いストレージ・システムを含むストレージ・ネットワークにストレージ・システムが含まれている場合 ' 従来の SANtricity ストレージ・マネージャのエンタープライズ管理ウィンドウ（ EMW ）を使用して ' すべてのストレージ・システムのエンタープライズ・ビューを提供する必要がありますこの場合は、 SANtricity Storage Manager の新しいメンテナンスリリースがないかどうかを確認してください。</block>
   <block id="06746f611c63e10213aac3b7dcbd69bd" category="section-title">デュアルコントローラと I/O 処理</block>
@@ -8141,15 +8135,7 @@
   <block id="cfbb469ee896c6d8312eac3cd3f10e34" category="paragraph">新しくスワップしたコントローラは、デジタル表示ディスプレイに*L5*というコードでロックダウンされます。このロックダウンは、ドライブが自動コード同期（ACS）を実行できない場合に発生します。セキュリティキーがインポートされると、ACSは新しいコントローラを再開して更新します。</block>
   <block id="3ed7bb77bb34146d7096e92088802232" category="list-text">ストレージアレイとSANtricity クライアントのラップトップまたはPCを、直接、プライベートなイーサネット接続で接続します。これを行うには：</block>
   <block id="c305cf92456cd4decb6725b96d759b94" category="list-text">RJ45イーサネットケーブルを使用して、ラップトップをコントローラAの管理ポート1に接続します</block>
-  <block id="e770dd108a378a501b36f5bbae01f82a" category="list-text">接続を完了するには、ラップトップをコントローラAと同じサブネット内のIPアドレスに割り当てる必要がありますコントローラのロックダウン中、コントローラAはデフォルトで192.168.128.101の管理アドレスになります。そのため、ラップトップを「192.168.128.201」などのサブネットに割り当てることができます。</block>
-  <block id="9d74567b7f3c3f33bbc54f827296074f" category="list-text">IPアドレス192.168.128.101（username * admin *）とパスワードブランクを使用して、を使用して内部キーをインポートします<block ref="a6f8118712fc2bcbe8cc4a0df3d41e92" prefix=" " category="inline-code"></block> からセキュリティキーを保存したCLIコマンド <block ref="370683b601e29cfe5ec51edd9d49be09" category="inline-link-macro-rx"></block>。このコマンドの使用方法については、を参照してください<block ref="26a74644087a8cc4596955787ae55f1d" category="inline-link-rx"></block>。</block>
   <block id="fb86a1495e405ddd56a3a1c076f876aa" category="paragraph">また、次の呼び出しを使用して、REST APIから内部キーをインポートすることもできます。<block ref="758036d11568492285b8504fb55d4d9f" prefix=" " category="inline-code"></block></block>
-  <block id="7b9f327d01db82c07c36d41b777ae840" category="admonition">クライアント証明書とサーバ証明書を取得するには、ストレージアレイが最適な状態である必要があります。証明書を取得できない場合は、新しい証明書署名要求（CSR）を作成し、外部キー管理サーバからサーバ証明書をインポートする必要があります。</block>
-  <block id="4bbb422ffd22264952cbb6eeeda41faa" category="list-text">デフォルトのIPアドレス192.168.128.101、ユーザ名* admin *、パスワードを空白にして、を使用して外部キー管理サーバをセットアップします<block ref="15b894b6e4c06871df1e10de89d60168" prefix=" " category="inline-code"></block> CLIコマンドを実行し、を指定します<block ref="836c673259e51101a01e755a34f97359" prefix=" " category="inline-code"></block> および<block ref="83fdf6a03b86c7990e1460cdc7d81dd1" prefix=" " category="inline-code"></block> 保存元 <block ref="370683b601e29cfe5ec51edd9d49be09" category="inline-link-macro-rx"></block>。このコマンドの使用方法については、を参照してください<block ref="26a74644087a8cc4596955787ae55f1d" category="inline-link-rx"></block>。</block>
-  <block id="781b6e9f0e82576c9634ecfe8a61f455" category="paragraph">また、次の呼び出しによって、REST APIを使用して外部キー管理サーバをセットアップすることもできます。<block ref="03e0d1fcf5a43cf1714fcbfa1f856800" prefix=" " category="inline-code"></block></block>
-  <block id="157bc9956975fd17471f6bdcb9f966ee" category="list-text">デフォルトのIPアドレス192.168.128.101（ユーザ名*admin*およびパスワードブランク）を使用し、を使用して証明書をインポートします<block ref="872d2d44d951f842ae2823eb6febd102" prefix=" " category="inline-code"></block> CLIコマンド：クライアント証明書用に1回、サーバ証明書用に2回</block>
-  <block id="ebf132debe07a5cd0bc888dd5078033d" category="paragraph">また、次の呼び出しを使用して、REST API経由でキーサーバ証明書をインポートすることもできます。<block ref="640677ffae20a0401b505d0de933e391" prefix=" " category="inline-code"></block></block>
-  <block id="bc2848514b39d7125ea7f1e0192ff80f" category="list-text">から保存されたセキュリティキーを使用します <block ref="370683b601e29cfe5ec51edd9d49be09" category="inline-link-macro-rx"></block>を使用して、外部キーを IP アドレス 192.168.128.101 にインポートし、ユーザ名 * admin * とパスワードは空白のままにします。</block>
   <block id="4097f6992eb560447325a703f31e2270" category="paragraph">また、次の呼び出しを使用してREST APIから外部キーをインポートすることもできます。<block ref="758036d11568492285b8504fb55d4d9f" prefix=" " category="inline-code"></block></block>
   <block id="dfcfc178d6edc54d8706c59b747948d5" category="list-text">をインストールします<block ref="3b13fc847651d5be5c89aeab4722c099" prefix=" " category="inline-code"></block> オペレーティングシステムのパッケージ管理コマンドを使用してパッケージ化します。</block>
   <block id="79c617afe97932f20f52d1217736d403" category="list-text">という名前のsystemdサービスユニットファイルを作成します<block ref="6bddfc9da80e7ef0195a324214877004" prefix=" " category="inline-code"></block>。</block>
@@ -8202,7 +8188,6 @@
   <block id="da4eb5c5c70275ba4c87430e9eb2caa1" category="paragraph">ro（レガシーアレイ）</block>
   <block id="520ae3e14dc7dcddbce514f73ae5f9c9" category="doc">Web Services Proxyファイルをインストールまたはアップグレードします</block>
   <block id="f036aa96cb85f83dc2dad71a70ca9ab9" category="paragraph">インストールを行うには、ファイルをダウンロードし、 Linux サーバまたは Windows サーバにプロキシパッケージをインストールします。これらの手順を使用してプロキシをアップグレードすることもできます。</block>
-  <block id="9ab5a43912057c3f252ae0aa5ffafa08" category="paragraph">では、次のドライブがコントローラごとに1つのホストインターフェイスカード（HIC）でサポートされます。</block>
   <block id="d7873c5a31e9fb583fb911435316e255" category="list-text">NVMe SSDドライブ：コントローラシェルフに最大24本のNVMe SSDドライブを搭載できます。</block>
   <block id="99017918290ad98fceaa8544139404ea" category="list-text">拡張シェルフを備えたNL-SASドライブ：DE212CシェルフとDE460Cシェルフを組み合わせても、DE212Cシェルフのみを使用しないかぎり、合計240台のNL-SASドライブスロットと4台の拡張シェルフを超えないようにします。その後、DE212Cシェルフを8台使用できます。たとえば、DE460Cシェルフ4台、DE212Cシェルフ8台、DE460Cシェルフ2台、DE212シェルフ2台などです。</block>
   <block id="f7bdca5a10b1a8a32a0410aa51cc3658" category="list-text">拡張シェルフを備えたSAS SSDドライブ：DE212C、DE224C、およびDE460Cのシェルフが混在している場合、DE212Cシェルフのみを使用しないかぎりSAS SSDドライブスロット数96と拡張シェルフ4台の合計を超えないようにしてください。DE212Cシェルフを8台使用することも可能です。たとえば、DE460Cシェルフ1台とDE224Cシェルフ1台とDE212Cシェルフ1台、DE224Cシェルフ4台、DE212Cシェルフ8台などです。</block>
@@ -8317,7 +8302,6 @@
   <block id="a5ff5d8396bab4e857d616fc9fa06b26" category="list-title">必要なもの</block>
   <block id="75014b540a900a20abf83a06a6f23acc" category="paragraph">次のことを確認してください。</block>
   <block id="d51a879a95a1f1b04438a7e672254378" category="list-text">Microsoft Edge（90以降）</block>
-  <block id="dae6baa86f1f6e4135f2552862c8b191" category="list-text">拡張シェルフを備えたSAS SSDドライブ：DE212C、DE224C、およびDE460Cのシェルフが混在している場合、DE212Cシェルフのみを使用しないかぎりSAS SSDドライブスロット数96と拡張シェルフ7台を超えないようにする必要があります。DE212Cシェルフを使用した場合は、DE212Cシェルフを8台使用できます。例：DE460Cシェルフ1台とDE224Cシェルフ1台とDE212Cシェルフ1台、DE224Cシェルフ4台、DE212Cシェルフ8台</block>
   <block id="70a5ac954926edc08c5f6fc4c248a4a6" category="section-title">SANtricityリリース11.7</block>
   <block id="f7b52729af7c7aa177e09390f0afd194" category="list-text"><block ref="f7b52729af7c7aa177e09390f0afd194" category="inline-link-rx"></block></block>
   <block id="797222f106ff986b71e9f972dd342bc3" category="list-text"><block ref="797222f106ff986b71e9f972dd342bc3" category="inline-link-rx"></block></block>
@@ -8328,7 +8312,6 @@
   <block id="2000cb1e7de82e823717ad308e491d64" category="list-text"><block ref="2000cb1e7de82e823717ad308e491d64" category="inline-link-macro-rx"></block></block>
   <block id="872316f2e40e5f7164acd94c4ac49c16" category="list-text"><block ref="872316f2e40e5f7164acd94c4ac49c16" category="inline-link-macro-rx"></block></block>
   <block id="7cac9f30e199e7ecb1c7454e8193ea25" category="inline-link">SANtricity System Manager 11.8xオンラインヘルプ</block>
-  <block id="f96ffc1296cfb22e1010ea2a5c153c7d" category="list-text"><block ref="f96ffc1296cfb22e1010ea2a5c153c7d" category="inline-link-rx"></block></block>
   <block id="e310bf04394efde500bf9f4c81acb37c" category="inline-link">SANtricity システムマネージャ 11.7x オンラインヘルプ</block>
   <block id="57ceabd1bd2acd18e97acd2a27a09688" category="list-text"><block ref="57ceabd1bd2acd18e97acd2a27a09688" category="inline-link-rx"></block></block>
   <block id="cf7b3313bd605518202463f0e3fe1b45" category="inline-link">SANtricity システムマネージャオンラインヘルプの 11.6x 版</block>
@@ -8389,7 +8372,6 @@
   <block id="d7ffc2406b2b1f56267e389dcea17d16" category="paragraph">処置を必要としない公称温度および最大温度超過イベントに対して、ケース作成フラグが無効になりました。</block>
   <block id="746cf185d12f5492055c99b5dda9119d" category="paragraph">0x1209 Melイベントに対して有効なプライオリティケース作成フラグ</block>
   <block id="09c222edb73c49afd2e9ec9f75a2cd53" category="paragraph">これで、ケース作成フラグが<block ref="768a075a6d4dc734e5397ee50957d8d8" prefix=" " category="inline-code"></block> MELイベント。</block>
-  <block id="11f16f90266e9e59b05bab98913c351d" category="admonition">SANtricity OS 11.80GA以降では、E2800、EF280、E5700、EF570、EF600ではすべてのUSBポートが無効になっています。 EF300アレイにも対応しています。</block>
   <block id="fad6f3761e69d291ccde3b2351a1c961" category="admonition">SANtricity OS 11.80GA以降では、拡張シェルフ構成でベーストレイにドライブを搭載しない構成がサポートされます。この構成を使用する場合は、システムの電源をオンにする前に、ドライブが拡張シェルフに搭載され、ベーストレイに正しく接続されていることを確認してください。</block>
   <block id="cc1b53336ed5c926305dd7ad876ab1d2" category="admonition">SANtricity OS 11.80GA以降では、拡張シェルフ構成でベーストレイにドライブを搭載しない構成がサポートされます。この構成を使用する場合は、システムの電源をオンにする前に、ドライブが拡張シェルフに搭載され、ベーストレイに正しく接続されていることを確認してください。</block>
   <block id="f9c81137922296691747f3cff9a92105" category="list-text"><block ref="f9c81137922296691747f3cff9a92105" category="inline-link-rx"></block></block>
@@ -8424,10 +8406,6 @@
   <block id="e536634a787591dd23dbc618cd207ba6" category="paragraph">Web Services Proxyの使用方法</block>
   <block id="b2fe36d045fcd0262e37faca678d17c8" category="paragraph">Web Services Proxyは、Eシリーズ11.80.1リリースとの互換性を確保するためにバージョン6.1に更新されています。</block>
   <block id="c89b00da7202a9a153f3761208e9c04b" category="inline-link">TR-4789：『VMware Configuration Guide for E-Series SANtricity iSCSI Integration with ESXi 6.x and 7.x』</block>
-  <block id="d94b2476c52b9269fb71e09f2c273b3f" category="paragraph">* 例： *<block ref="55629997c44d8d81fce2f6296c8a341d" prefix=" " category="inline-code"></block></block>
-  <block id="ecac0776d163be45b9926de55b835ec4" category="paragraph">* 例： *<block ref="2c35a6e97cb5b6b552dd737031188e4c" prefix=" " category="inline-code"></block></block>
-  <block id="8afb7a80484f4a0c97a4ca2b1dd4f7a9" category="paragraph">*例A：*<block ref="5f6fe0e54ad0da0581f1c921b9d0d2ce" prefix=" " category="inline-code"></block></block>
-  <block id="1f30cbc7228c9c1478541fac65592fdd" category="paragraph">*例B：*<block ref="ce9fafaa9a800b6d0168143573308013" prefix=" " category="inline-code"></block></block>
   <block id="a3cd72e3a5590e7769cb2590ecd015eb" category="section-title">ホストの手動作成</block>
   <block id="9a3eb00d2d24e24125d1dfecb99a47e1" category="paragraph">ホストの作成は、ストレージアレイが接続されているホストを認識して、ボリュームへのI/Oアクセスを許可するために必要な手順の1つです。ホストは手動で作成できます。</block>
   <block id="8cb031b774a78de2f6be4db3058da109" category="list-text">オペレーティングシステム固有のユーティリティ（サードパーティベンダーから入手可能）を実行してから、SMcliコマンドを実行します。<block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix=" " category="inline-code"></block> ボリューム名をホストストレージアレイ名に関連付けるには、次の手順を実行します。</block>
@@ -8581,8 +8559,6 @@
   <block id="e63d49fe11023df550eb4a2b6be77e84" category="paragraph">1台以上の12ドライブシェルフにコントローラシェルフをケーブル接続できます。</block>
   <block id="37684c22af451e0c6390d46e13acdfbf" category="image-alt">コントローラシェルフと12ドライブシェルフ</block>
   <block id="632ca86f36c69ae91aee0bebdff85617" category="admonition">EF300、EF600、およびE4000には、アウトオブバンドイーサネット管理ポートが1つだけあります。</block>
-  <block id="f32b2376c6d50ab1fbf88f2ea80d04ed" category="image-alt">2台のホストと2台のコントローラのケーブル接続</block>
-  <block id="a9b737d914f22bddefbbd571f66e428a" category="admonition">E4000の場合は、ホストポートe0aとe0bに接続します。</block>
   <block id="d2204ecb6283608047831fca303cc5c1" category="image-alt">2台のホストと2台のスイッチのケーブル接続</block>
   <block id="23d2013304f308363439909fd006bd4e" category="paragraph">E5724 、 EF570 、 E4012 、 E2812 、 E2824 、 EF280</block>
   <block id="6048408dac10f3e88fd732617c9d0ef5" category="paragraph">E4060、E2860、E5760</block>
@@ -8655,10 +8631,8 @@
   <block id="7b875024c467f9ec81be78fd845e34d3" category="doc">ストレージ・システムのセットアップの完了（E4012）</block>
   <block id="9388df48e85777aba8981c9e79739824" category="inline-image-macro">E4012直接トポロジ、幅= 1000px</block>
   <block id="9dcbe6d474a3385e1258eeebe1d96cfa" category="paragraph"><block ref="9dcbe6d474a3385e1258eeebe1d96cfa" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="605b7ce026d54baac2f33c8eee6e4572" category="list-text">拡張シェルフが設置されていない場合は、各ホストアダプタをコントローラのホストポートe0aとe0bに直接接続します。</block>
   <block id="e5115f367ddc4b23f2a5a9dce410d220" category="inline-image-macro">E4012ファブリックトポロジ、幅= 1000px</block>
   <block id="fe5422a7f743c4750aa826cb030729eb" category="paragraph"><block ref="fe5422a7f743c4750aa826cb030729eb" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="643f201ee98aff8102118f79400d167d" category="list-text">各スイッチをコントローラのホストポートe0aとe0bに直接接続します。</block>
   <block id="2f998d3759a46f941c16045d05799b20" category="inline-image-macro">E4000コントローラ管理ポート</block>
   <block id="419c5b2edef00ba85d62682d5ff0138c" category="paragraph"><block ref="419c5b2edef00ba85d62682d5ff0138c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f530fae0a98563bf22e6ee7a23163588" category="list-text">ブラウザの指示に従って、 SANtricity System Manager を起動します。接続を確立できない場合は、 DHCP サーバからネットワーク設定を受け取っていないことを確認してください。</block>
@@ -8668,7 +8642,6 @@
   <block id="33013c1fc439b91737e74be863a12160" category="doc">ストレージ・システムのセットアップの完了（E4060）</block>
   <block id="ed82e034d7d377cc12aa1d89cea33d43" category="inline-image-macro">E4060直接トポロジ、幅= 1000px</block>
   <block id="98e6536dfa926f6bd4a1900657c27282" category="paragraph"><block ref="98e6536dfa926f6bd4a1900657c27282" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="895ec80e8ba95818a8a89dfffdc5f62b" category="list-text">各ホストアダプタをコントローラのホストポートe0aとe0bに直接接続します。</block>
   <block id="427b3e2ab20960e704a22e39fbcda634" category="inline-image-macro">E4060ファブリックトポロジ、幅= 1000px</block>
   <block id="72c6889744a45c86c32b640c76b2138a" category="paragraph"><block ref="72c6889744a45c86c32b640c76b2138a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="872d1df52706490eb75a1a60b57c747c" category="doc">ケーブルの接続（E4012）</block>
@@ -9387,7 +9360,6 @@
   <block id="eac74c5d17668cb0c341a5f18a69d72f" category="image-alt">Web Services APIの呼び出し図</block>
   <block id="95985e1a0f17b754899abdad9230ee3f" category="list-text">*組み込み*- NetApp SANtricity 11.30以降のバージョンを実行するE2800 / EF280ストレージシステム、SANtricity 11.40以降のバージョンを実行するE5700 / EF570ストレージシステム、SANtricity 11.60以降のバージョンを実行するEF300またはEF600ストレージシステム、およびSANtricity 11.90以降のバージョンを実行するE4000ストレージシステムには、各コントローラにRESTful APIサーバが組み込まれています。インストールは不要です。</block>
   <block id="72c3d75b0f0ad96704b8c5fc1e8252e5" category="image-alt">Web Services Proxyの概要</block>
-  <block id="d680389e96802ed400beaec0b7cba3a6" category="paragraph">次の表に、E4000、EF300、EF600、E2800 / EF280、およびE5700 / EF570コントローラの組み込み管理向けに、最新のSANtricity OSリリースの新機能を示します。</block>
   <block id="a9ce161f80e5e22b8b95f7f9ca5f67ed" category="section-title">バージョン11.90の新機能</block>
   <block id="0d49c2d5fa6db45e427d9c6ca6839ac7" category="paragraph">新しいストレージシステムモデル– E4000</block>
   <block id="f79f2d98fb02cd051399681f3101fbb8" category="paragraph">このリリースでは、E4000低コストストレージシステムが導入されています。E4000は、コントローラごとに12本と60本のドライブと1つのホストインターフェイスカード（HIC）をサポートします。初期リリースでは、サポートされるホストインターフェイスカードにはiSCSIとFibre Channelがあります。E4000ストレージシステムとその他のEシリーズストレージシステムは、Unified Managerで表示および管理できます。</block>
@@ -9435,10 +9407,7 @@
   <block id="8a7e170acd5f2688800925b2b4a8d261" category="list-text"><block ref="537606410175a12a150f722cd71e55fb" category="inline-link-rx"></block>-- ESX / ESXiでサポートされる最大値の範囲内に収まるように、仮想ストレージと物理ストレージを構成する方法について説明します。</block>
   <block id="d088dea69b1345c1729f1c0d46d8053d" category="list-text">*コントローラのタイプ*- E4000、E2800、EF280、EF300、E5700、EF570、EF600、EF300、EF600C、EF300Cの全モデル</block>
   <block id="4720d0b863e013bea6899b10e0989bda" category="list-text">EF600C シリーズ - ミッドレンジオールフラッシュ、オール NVMe</block>
-  <block id="b9f7cef2dc8f05405c94daa2cb4fa6ae" category="list-text">EF300C シリーズ - ミッドレンジオールフラッシュ、オール NVMe</block>
   <block id="5ca6952c7c9ae5d4b8be61e6386f0222" category="open-title">EF300C モデル</block>
-  <block id="595f8cc3ac0c1f12a0f83c3b1dad7c19" category="list-text">30TBおよび60TBの容量を備えたNVMe SSDドライブをサポート</block>
-  <block id="f8a3ff8be0bd051ecc8c3ec31daa0195" category="admonition">SANtricity OS 11.80GA以降では、拡張シェルフ構成でベーストレイにドライブを搭載しない構成がサポートされます。この構成を使用する場合は、システムの電源をオンにする前に、ドライブが拡張シェルフに搭載され、ベーストレイに正しく接続されていることを確認してください。*</block>
   <block id="14a2fa7582e1084e3800dde50d8cde03" category="open-title">EF600C モデル</block>
   <block id="0db8edfb04068c99ae28246efebb6d4d" category="list-text">12gb SAS</block>
   <block id="689052b8726f00a4623e9ada4d36af90" category="list-text">EF300、EF600：EF300CおよびEF600Cコントローラ</block>
@@ -9478,4 +9447,52 @@
   <block id="7c4ed7bb875e7af6303e23e1e7df86c3" category="paragraph">このリリースでは、EF300CおよびEF600CオールフラッシュNVMeストレージシステムが導入されました。EF300CとEF600Cは、既存のEF300およびEF600ストレージシステムの大容量フラッシュバージョンです。EF300CおよびEF600Cでは、30TBと60TBの大容量NVMe SSDドライブがサポートされます。</block>
   <block id="c4c050a1cbe127eb24c705844a070872" category="paragraph">EF4000での12Gb SASインターフェイスのサポート</block>
   <block id="e8b3561f4b15fa164cdd5717ae511188" category="paragraph">E4000コントローラで12Gb SASホストインターフェイスカードがサポートされるようになりました。</block>
+  <block id="892b365a22314b2852ca18025911d1be" category="list-text">必要に応じて、コマンドを実行し<block ref="3e0e995eb29f6805a04d4b3ac859bc4b" prefix=" " category="inline-code"></block>てDSMパッケージのインストールを確認します。</block>
+  <block id="fb00ee175135cc78e49e873e41c6e6ad" category="admonition">コマンドを実行するには、MPIO機能がWindowsサーバにインストールされている必要があります<block ref="3e0e995eb29f6805a04d4b3ac859bc4b" prefix=" " category="inline-code"></block>。</block>
+  <block id="5f3ab4e439fcf2e4683f430d57044b3a" category="inline-link">SANtricity System Manager 11.9xオンラインヘルプ</block>
+  <block id="e51c0393968b3aeac9a8857a4efc2e03" category="list-text"><block ref="e51c0393968b3aeac9a8857a4efc2e03" category="inline-link-rx"></block></block>
+  <block id="25d302c40995ad55c0ad7701261d1310" category="list-text"><block ref="25d302c40995ad55c0ad7701261d1310" category="inline-link-rx"></block></block>
+  <block id="718416bdd384ea0f59ab3278846e588d" category="list-text">EF300C シリーズ -- エントリレベルのオールフラッシュ、オール NVMe</block>
+  <block id="2d782dd4047faa435e8a21598b64a8f9" category="admonition">SANtricity OS 11.80GA以降では、E2800、EF280、E5700、EF570、EF600 / EF600C、およびEF300 / EF300Cのアレイでは、すべてのUSBポートが無効になります。</block>
+  <block id="145e67dd5fe93c51c814f0945a64eadf" category="list-text">オプションのSAS拡張カードをサポートし、SAS拡張シェルフ接続を可能にします。</block>
+  <block id="d0becf074be26c6d978c288daba24ca4" category="list-text">コントローラごとに1つのホストインターフェイスカードがサポートされます。</block>
+  <block id="346a8501979327018cc0ee11a3d0f1cf" category="list-text">30TBまたは60TBの容量NVMe SSDドライブをサポートします。</block>
+  <block id="af501aae034a5ca029c9b2b363c0f07b" category="list-text">Dynamic Disk Poolsとの互換性は、従来のRAIDはサポートされていません。</block>
+  <block id="1525ad0ecd8f2d9b577c446044aa629c" category="list-text">拡張シェルフ構成はサポートされません。</block>
+  <block id="b571ba80794df2a8fca4803fbae00b53" category="list-text">システムブート時に未割り当てのドライブが十分にない場合は、単一のディスクプールが自動的に作成されます。</block>
+  <block id="538ff1eff5fd361d6f0b2adf6bbf0ed4" category="list-text">拡張シェルフを備えたSAS SSDドライブ：DE212C、DE224C、およびDE460Cのシェルフが混在している場合、DE212Cシェルフのみを使用しないかぎりSAS SSDドライブスロット数96と拡張シェルフ7台を超えないようにする必要があります。DE212Cシェルフを使用した場合は、DE212Cシェルフを8台使用できます。たとえば、DE460Cシェルフ1台とDE224Cシェルフ1台とDE212Cシェルフ1台、DE224Cシェルフ4台、DE212Cシェルフ8台などです。</block>
+  <block id="c80c70457709e71cfb1acdcad7d813f2" category="list-text">コントローラごとに2枚のホストインターフェイスカードがサポートされます。</block>
+  <block id="f68ca88c11d5a4dbeed850ba81248db6" category="list-text">または、コントローラ1台につき200Gb IBホストインターフェイスカードを1枚サポートします。</block>
+  <block id="7a26624f7fb7a22e34a299b1cb6df6c1" category="list-text">SAS拡張は、コントローラごとに1つのホストインターフェイスカードを使用する構成でのみサポートされます。</block>
+  <block id="f72413fb6640f9198331e4ddac42a1b4" category="paragraph">最大限のパフォーマンスを確保するには、使用可能なすべてのホストアダプタポートを使用してください。</block>
+  <block id="599b309fb45a54aef0306d417582a4ad" category="paragraph-title">1台のホストと2つのHBA</block>
+  <block id="547b769f7de7cea07ea8e1809f6b68e1" category="paragraph">次の図は、2つのHBAがインストールされた1つのホストの例を示しています。</block>
+  <block id="c2daf72836844565f5f371269f79e909" category="image-alt">1台のホスト/ 2つのHBAと2台のコントローラのケーブル接続</block>
+  <block id="15c64c1bde30a480800d35c9ca63702a" category="paragraph-title">1台のホストに2つのHBAを搭載（代替ケーブル接続）</block>
+  <block id="0a189e49a12a656d00d97d420aceb46f" category="image-alt">1台のホスト/ 2つのHBAと2つのコントローラのケーブル接続（別のケーブル接続）</block>
+  <block id="d31563f45b72dae0e523c10c401bb20d" category="paragraph-title">ホストごとに2つのHBAを搭載した2台のホスト</block>
+  <block id="a71c7f479c0caedb0629383f7ac5efeb" category="paragraph">次の図は、それぞれ2つのHBAがインストールされた2つのホストの例を示しています。</block>
+  <block id="de1ab736ca66f10e42336f12175adfbb" category="image-alt">ホスト×2 / HBA×4、コントローラ×2のケーブル接続</block>
+  <block id="9ccebbb91ae504287ed8c313aab6d4fa" category="admonition">コントローラの左下（e1a、e1b、e1c、e1d）と右上（e0aとe0b）にあるホストポートを、データホストのケーブル接続に使用できます。</block>
+  <block id="e6f073e83b4d2d59e85f27a8f76329ce" category="list-text">各ホストHBAポートをコントローラのホストポート（e1a、e1b、e1c、e1dまたはe0aとe0b）に接続します。</block>
+  <block id="b445e22177e0e8f24243dcf4b44a6b65" category="inline-link">ホストのケーブル接続</block>
+  <block id="ef3aa833ef985acdcdf1a9815ed086e2" category="admonition">その他のケーブル配線図の例については、を参照してください<block ref="ac6f2dcd3a5364bce3c8b8b61a1abdb1" category="inline-link-rx"></block>。</block>
+  <block id="b60f0a96b3917b423c024c47968b1e95" category="list-text">各スイッチをコントローラのホストポート（e1a、e1b、e1c、e1dまたはe0aとe0b）に直接接続します。</block>
+  <block id="26f63d2be4d7f427507e07522f2bc27e" category="list-text">HICの3本の取り付けネジを手で締めます。</block>
+  <block id="b561bc9ed41a67af832ede09e0c66855" category="list-text">*アクセスボリュームを使用したインバンド管理*</block>
+  <block id="d95bb44a7a9bb7de3384211db9209371" category="list-text">E4000では、Accessボリュームを使用したインバンド管理はサポートされていません。</block>
+  <block id="3051db29d3e01aace9b71736b6906cb5" category="paragraph">E4000コントローラにアップグレードする前に、定義済みのすべてのホストおよびホストクラスタからアクセスボリュームのマッピングを解除します。</block>
+  <block id="d771f234da984ad1422ec8ffc796cf49" category="paragraph">カスタマーサポートにお問い合わせください。</block>
+  <block id="b8166fddcc8a9bc53fb34ba8b6b40c74" category="admonition">管理ポート 1 を使用していない場合は、他のデフォルト IP アドレスを使用してみてください。 +Ctrl A ポート 1 ： 169.254.128.101 + Ctrl A ポート 2 ： 169.254.128.102 + Ctrl B ポート 1 ： 169.254.128.101 + Ctrl B ポート 2 ： 169.254.128.102</block>
+  <block id="072d06a0d6f5c5e1085353a74332c241" category="list-text">接続を完了するには、ラップトップをコントローラAと同じサブネット内のIPアドレスに割り当てなければならない場合があります。コントローラAのロックダウン時には、コントローラAのデフォルトの管理アドレスは169.254.128.101です。そのため、ラップトップを「169.254.128.201」などのサブネットに割り当てることができます。</block>
+  <block id="71bde2f5f345db499289a50db32f08f7" category="list-text">IPアドレス169.254.128.101、ユーザ名* admin *、パスワードを空白にして、から保存したセキュリティキーを使用して、CLIコマンドを使用して内部キーをインポートし<block ref="a6f8118712fc2bcbe8cc4a0df3d41e92" prefix=" " category="inline-code"></block><block ref="370683b601e29cfe5ec51edd9d49be09" category="inline-link-macro-rx"></block>ます。このコマンドの使用方法については、を参照して<block ref="26a74644087a8cc4596955787ae55f1d" category="inline-link-rx"></block>ください。</block>
+  <block id="49896b1b2fdda00188714463295ad34c" category="paragraph">*例：*<block ref="9dfe80936c8f3826fa0f1b99e4a88b06" prefix=" " category="inline-code"></block></block>
+  <block id="31e27b7c3a23da037324302ef6196af9" category="list-text">で保存したセキュリティキーを使用して<block ref="370683b601e29cfe5ec51edd9d49be09" category="inline-link-macro-rx"></block>、ユーザ名* admin *、パスワードは空白のまま、IPアドレス169.254.128.101に外部キーをインポートします。</block>
+  <block id="c591c8c3a8e8fbcf4843d55451e5745e" category="list-text">（オプション）必要に応じて、次の手順を実行してドライブのキーを変更できます。</block>
+  <block id="0b9601abb9585618affd66f5798a16b2" category="paragraph">*例：*<block ref="b77e774fa880afa2bd8c8ca91507d0ce" prefix=" " category="inline-code"></block></block>
+  <block id="73c97dd158942ee4b15d19f135952d89" category="list-text">* SANtricity Unified Manager *：Unified Managerは、E4000、E2800、E5700、EF300、EF600モデルなど、複数のストレージシステムを管理するソフトウェアです。Unified Manager は SANtricity Web サービスプロキシの一部です。 RESTful API サーバをホストシステムに別途インストールして、数百台規模の新旧の NetApp E シリーズストレージシステムを管理します。詳細については、を参照してください <block ref="c92032fad30345308610610a1d1083db" category="inline-link-macro-rx"></block>。</block>
+  <block id="e5a4c2aea29b525342429c88518c7f73" category="paragraph">E4000、EF300 / EF300C、EF600 / EF600C、E2800 / EF280、およびE5700 / EF570コントローラの組み込み管理向けに、最新のSANtricity OSリリースの新機能を次の表に示します。</block>
+  <block id="baee5b8c18b240b4edfcc1ae3fe154f0" category="section-title">バージョン11.90R1の新機能</block>
+  <block id="0b2fb9383075b5994701c94b27e4b6ee" category="paragraph">このリリースでは、EF300CおよびEF600CオールフラッシュNVMeストレージシステムが導入されました。EF300CおよびEF600Cは、既存のEF300およびEF600ストレージシステムの大容量フラッシュバージョンです。EF300CおよびEF600Cでは、30TBまたは60TBの大容量NVMe SSDドライブがサポートされます。EF300C / EF600Cは、従来のRAIDをサポートしていない場合にのみ、Dynamic Disk Poolsと互換性があります。</block>
+  <block id="8af7f744c39ae6285a380b6eb402fcb2" category="paragraph">E4000コントローラでの12Gb SASインターフェイスのサポート</block>
 </blocks>

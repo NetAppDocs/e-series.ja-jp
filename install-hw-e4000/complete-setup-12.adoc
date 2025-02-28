@@ -19,6 +19,9 @@ summary: コントローラをネットワークに接続する方法と、ス�
 
 ネットワークトポロジに応じてシステムをケーブル接続します。
 
+
+NOTE: コントローラの左下（e1a、e1b、e1c、e1d）と右上（e0aとe0b）にあるホストポートを、データホストのケーブル接続に使用できます。
+
 [role="tabbed-block"]
 ====
 .オプション 1 ：直接接続トポロジ
@@ -27,8 +30,11 @@ summary: コントローラをネットワークに接続する方法と、ス�
 
 image:../media/drw_e4012_direct_topology_ieops-2047.svg["E4012直接トポロジ、幅= 1000px"]
 
-. 拡張シェルフが設置されていない場合は、各ホストアダプタをコントローラのホストポートe0aとe0bに直接接続します。
+. 各ホストHBAポートをコントローラのホストポート（e1a、e1b、e1c、e1dまたはe0aとe0b）に接続します。
 
+
+
+NOTE: その他のケーブル配線図の例については、を参照してください https://docs.netapp.com/us-en/e-series/install-hw-cabling/host-cable-task.html#cabling-for-a-direct-attached-topology["ホストのケーブル接続"^]。
 
 --
 .オプション 2 ：ファブリックトポロジ
@@ -38,7 +44,7 @@ image:../media/drw_e4012_direct_topology_ieops-2047.svg["E4012直接トポロジ
 image:../media/drw_e4012_fabric_topology_ieops-2046.svg["E4012ファブリックトポロジ、幅= 1000px"]
 
 . 各ホストアダプタをスイッチに直接接続します。
-. 各スイッチをコントローラのホストポートe0aとe0bに直接接続します。
+. 各スイッチをコントローラのホストポート（e1a、e1b、e1c、e1dまたはe0aとe0b）に直接接続します。
 
 
 --

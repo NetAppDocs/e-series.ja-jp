@@ -29,18 +29,18 @@ summary: E2800 および E5700 のコントローラをアップグレードす�
 新しくスワップしたコントローラは、デジタル表示ディスプレイに*L5*というコードでロックダウンされます。このロックダウンは、ドライブが自動コード同期（ACS）を実行できない場合に発生します。セキュリティキーがインポートされると、ACSは新しいコントローラを再開して更新します。
 
 
-NOTE: 管理ポート 1 を使用していない場合は、他のデフォルト IP アドレスを使用してみてください。 +Ctrl A ポート 1 ： 192.168.128.101 + Ctrl A ポート 2 ： 192.168.128.102 + Ctrl B ポート 1 ： 192.168.129.101 + Ctrl B ポート 2 ： 192.168.129.102
+NOTE: 管理ポート 1 を使用していない場合は、他のデフォルト IP アドレスを使用してみてください。 +Ctrl A ポート 1 ： 169.254.128.101 + Ctrl A ポート 2 ： 169.254.128.102 + Ctrl B ポート 1 ： 169.254.128.101 + Ctrl B ポート 2 ： 169.254.128.102
 
 .手順
 . ストレージアレイとSANtricity クライアントのラップトップまたはPCを、直接、プライベートなイーサネット接続で接続します。これを行うには：
 +
 .. RJ45イーサネットケーブルを使用して、ラップトップをコントローラAの管理ポート1に接続します
-.. 接続を完了するには、ラップトップをコントローラAと同じサブネット内のIPアドレスに割り当てる必要がありますコントローラのロックダウン中、コントローラAはデフォルトで192.168.128.101の管理アドレスになります。そのため、ラップトップを「192.168.128.201」などのサブネットに割り当てることができます。
+.. 接続を完了するには、ラップトップをコントローラAと同じサブネット内のIPアドレスに割り当てなければならない場合があります。コントローラAのロックダウン時には、コントローラAのデフォルトの管理アドレスは169.254.128.101です。そのため、ラップトップを「169.254.128.201」などのサブネットに割り当てることができます。
 
 
-. IPアドレス192.168.128.101（username * admin *）とパスワードブランクを使用して、を使用して内部キーをインポートします `import storageArray securityKey file` からセキュリティキーを保存したCLIコマンド link:prepare-upgrade-controllers-task.html["コントローラをアップグレードする準備をします"]。このコマンドの使用方法については、を参照してください https://docs.netapp.com/us-en/e-series-cli/index.html["コマンドラインインターフェイスリファレンス"]。
+. IPアドレス169.254.128.101、ユーザ名* admin *、パスワードを空白にして、から保存したセキュリティキーを使用して、CLIコマンドを使用して内部キーをインポートし `import storageArray securityKey file`link:prepare-upgrade-controllers-task.html["コントローラをアップグレードする準備をします"]ます。このコマンドの使用方法については、を参照して https://docs.netapp.com/us-en/e-series-cli/index.html["コマンドラインインターフェイスリファレンス"]ください。
 +
-* 例： * `SMcli 192.168.128.101 -u admin -p "" -c "import storageArray securityKey file=\"Directory&FileName\" passPhrase=\"passPhraseString\";"`
+*例：* `SMcli 169.254.128.101 -k -u admin -p "" -c "import storageArray securityKey file=\"Directory&FileName\" passPhrase=\"passPhraseString\";"`
 
 +
 また、次の呼び出しを使用して、REST APIから内部キーをインポートすることもできます。 `/storage-systems/{system-id}/security-key/import`
@@ -58,40 +58,25 @@ NOTE: 管理ポート 1 を使用していない場合は、他のデフォル�
 .このタスクについて
 新しくスワップしたコントローラは、デジタル表示ディスプレイに*L5*というコードでロックダウンされます。このロックダウンは、ドライブが自動コード同期（ACS）を実行できない場合に発生します。セキュリティキーがインポートされると、ACSは新しいコントローラを再開して更新します。
 
-
-NOTE: クライアント証明書とサーバ証明書を取得するには、ストレージアレイが最適な状態である必要があります。証明書を取得できない場合は、新しい証明書署名要求（CSR）を作成し、外部キー管理サーバからサーバ証明書をインポートする必要があります。
-
 .手順
 . ストレージアレイとSANtricity クライアントのラップトップまたはPCを、直接、プライベートなイーサネット接続で接続します。これを行うには：
 +
 .. RJ45イーサネットケーブルを使用して、ラップトップをコントローラAの管理ポート1に接続します
-.. 接続を完了するには、ラップトップをコントローラAと同じサブネット内のIPアドレスに割り当てる必要がありますコントローラのロックダウン中、コントローラAはデフォルトで192.168.128.101の管理アドレスになります。そのため、ラップトップを「192.168.128.201」などのサブネットに割り当てることができます。
+.. 接続を完了するには、ラップトップをコントローラAと同じサブネット内のIPアドレスに割り当てなければならない場合があります。コントローラAのロックダウン時には、コントローラAのデフォルトの管理アドレスは169.254.128.101です。そのため、ラップトップを「169.254.128.201」などのサブネットに割り当てることができます。
 
 
-. デフォルトのIPアドレス192.168.128.101、ユーザ名* admin *、パスワードを空白にして、を使用して外部キー管理サーバをセットアップします `set storageArray externalKeyManagement` CLIコマンドを実行し、を指定します `serverAddress` および `serverPort` 保存元 link:prepare-upgrade-controllers-task.html["コントローラをアップグレードする準備をします"]。このコマンドの使用方法については、を参照してください https://docs.netapp.com/us-en/e-series-cli/index.html["コマンドラインインターフェイスリファレンス"]。
+. で保存したセキュリティキーを使用してlink:prepare-upgrade-controllers-task.html["コントローラをアップグレードする準備をします"]、ユーザ名* admin *、パスワードは空白のまま、IPアドレス169.254.128.101に外部キーをインポートします。
 +
-* 例： * `SMcli 192.168.128.101 -u admin -p "" -c "set storageArray externalKeyManagement serverAddress=<ServerIPAddress> serverPort=<serverPort>;"`
-
-+
-また、次の呼び出しによって、REST APIを使用して外部キー管理サーバをセットアップすることもできます。 `/storage-systems/{system-id}/external-key-server`
-
-. デフォルトのIPアドレス192.168.128.101（ユーザ名*admin*およびパスワードブランク）を使用し、を使用して証明書をインポートします `storageArray keyManagementCertificate` CLIコマンド：クライアント証明書用に1回、サーバ証明書用に2回
-+
-*例A：* `SMcli 192.168.128.101 -u admin -p "" -c "download storageArray keyManagementCertificate certificateType=client file=\"Directory&FileName\";"`
-
-+
-*例B：* `SMcli 192.168.128.101 -u admin -p "" -c "download storageArray keyManagementCertificate certificateType=server file=\"Directory&FileName\";"`
-
-+
-また、次の呼び出しを使用して、REST API経由でキーサーバ証明書をインポートすることもできます。 `/storage-systems/{system-id}/external-key-server/certificate`
-
-. から保存されたセキュリティキーを使用します link:prepare-upgrade-controllers-task.html["コントローラをアップグレードする準備をします"]を使用して、外部キーを IP アドレス 192.168.128.101 にインポートし、ユーザ名 * admin * とパスワードは空白のままにします。
-+
-* 例： * `SMcli 192.168.128.101 -u admin -p "" -c "import storageArray securityKey file=\"Directory&FileName\" passPhrase=\"passPhraseString\";"`
+*例：* `SMcli 169.254.128.101 -k -u admin -p "" -c "import storageArray securityKey file=\"Directory&FileName\" passPhrase=\"passPhraseString\";"`
 
 +
 また、次の呼び出しを使用してREST APIから外部キーをインポートすることもできます。 `/storage-systems/{system-id}/security-key/import`
 
-
-
++
 コントローラはドライブから自動ノード同期プロセスを続行し、リブートします。リブート後は、元の IP 構成を使用してコントローラにアクセスできるようになります。
+
+. （オプション）必要に応じて、次の手順を実行してドライブのキーを変更できます。
++
+*例：* `SMcli <original_controller _ip> -u admin -p "<original_array_password>" -c "create storageArray securityKey" passPhrase=\"passPhraseString\" file=\"filename\";”`
+
+

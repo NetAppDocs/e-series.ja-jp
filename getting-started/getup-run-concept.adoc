@@ -69,7 +69,8 @@ E シリーズハードウェアを設置する方法については、使用す
 使用するインターフェイスを選択します。
 
 [role="quick-margin-list"]
-* https://docs.netapp.com/us-en/e-series-santricity/system-manager/index.html["SANtricity System Manager 11.8xオンラインヘルプ"^]
+* https://docs.netapp.com/us-en/e-series-santricity/system-manager/index.html["SANtricity System Manager 11.9xオンラインヘルプ"^]
+* https://docs.netapp.com/us-en/e-series-santricity-118/system-manager/index.html["SANtricity System Manager 11.8xオンラインヘルプ"^]
 * https://docs.netapp.com/us-en/e-series-santricity-117/system-manager/index.html["SANtricity システムマネージャ 11.7x オンラインヘルプ"^]
 * https://docs.netapp.com/us-en/e-series-santricity-116/index.html["SANtricity システムマネージャオンラインヘルプの 11.6x 版"^]
 

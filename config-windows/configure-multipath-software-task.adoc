@@ -28,4 +28,14 @@ Windows のインストール環境では、フェイルオーバーにネイテ
 . から * SANtricity * Windows DSM * パッケージをダウンロードします https://mysupport.netapp.com/site/products/all/details/eseries-santricityos/downloads-tab["SANtricity OS ソフトウェアのページ"^]。ソフトウェアバージョン SANtricity を選択し、ライセンス契約に同意して、 [ 追加ダウンロード ] の下の [*Windows DSM*] を選択します。
 . SANtricity * Windows DSM * インストーラーを実行します。実行するインストールパッケージをダブルクリックします。
 . インストールウィザードを使用して、管理ステーションにパッケージをインストールします。
+. 必要に応じて、コマンドを実行し `mpclaim`てDSMパッケージのインストールを確認します。
++
+[source, cli]
+----
+C:\Users\Administrator>mpclaim -s -d
+----
++
+
+NOTE: コマンドを実行するには、MPIO機能がWindowsサーバにインストールされている必要があります `mpclaim`。
+
 
