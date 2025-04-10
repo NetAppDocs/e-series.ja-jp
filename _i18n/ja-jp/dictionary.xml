@@ -1371,7 +1371,6 @@
   <block id="aafac493f2e35b6f1c326279401ced51" category="paragraph">1 台以上の 60 ドライブシェルフにコントローラシェルフをケーブル接続できます。</block>
   <block id="9829150d11210fb5e6fc62e793db934e" category="section-title">コントローラシェルフと 60 ドライブシェルフ</block>
   <block id="be194456d89fce8d64ec33f6aacd608e" category="summary">E シリーズシステムは、シンプルで高速な信頼性の高い SAN ストレージを必要とする、データ分析、ビデオ監視、ディスクベースのバックアップなど、広帯域を使用する専用アプリケーションに対応したハードウェアとソフトウェアを統合した解決策です。</block>
-  <block id="d3852022ece859a54c514fe09a6eef63" category="summary">ホストインターフェイスカード（ HIC ）は、コントローラキャニスターにオプションで取り付けることができます。E5700 コントローラには、コントローラカード自体に搭載されたホストポートとオプションの HIC に搭載されたホストポートがあります。コントローラに搭載されたホストポートのことをベースボードホストポートと呼び、HIC に搭載されたホストポートのことを HIC ポートと呼びます。</block>
   <block id="bb8c12c938368d891c8a41b75b8dbff5" category="doc">ホストインターフェイスカード</block>
   <block id="7a4a43ed3b8a4107c8b5916a80b9e5bf" category="paragraph">ホストインターフェイスカード（ HIC ）は、コントローラキャニスターにオプションで取り付けることができます。E5700 コントローラには、コントローラカード自体に搭載されたホストポートとオプションの HIC に搭載されたホストポートがあります。コントローラに搭載されたホストポートのことをベースボードホストポートと呼び、HIC に搭載されたホストポートのことを HIC ポートと呼びます。</block>
   <block id="b10f1122a2ac0ae08f749f3130b4f503" category="summary">E5700 コントローラのタイプと要件を確認します。</block>
@@ -2291,7 +2290,6 @@
   <block id="c4ced9489374169918af91eed3c23af3" category="list-text">ベースボードポートと HIC ポート（「 'sot 1' 」というラベルが付いたポート）の詳細を確認し、各タイプのポートのプロトコルが想定したプロトコルになっていることを確認します。</block>
   <block id="58dc8f8b596835dda6ee537004b83559" category="inline-link-macro">ホストプロトコル変更後の処理</block>
   <block id="7698e6f3e6142fc3c6d002cd43d50079" category="paragraph">に進みます <block ref="96616e2404f8fb711fbdc45541d51b7a" category="inline-link-macro-rx"></block>。</block>
-  <block id="e977f6bbcbae61c33920c421cdc41ec2" category="summary">コントローラは、ボード、ファームウェア、ソフトウェアで構成されます。ドライブを制御し、 System Manager の機能を実装します。ここでは、デュプレックス構成でのコントローラの交換方法について説明します。</block>
   <block id="d43460ed98dddc7d1125dc3a1388420a" category="summary">E5700 バッテリの交換に関する要件と考慮事項を確認してください。</block>
   <block id="20ae0dc9cc9bf6f23e568a27d2486a04" category="paragraph">E5700 バッテリを交換する前に、要件と考慮事項を確認してください。</block>
   <block id="c9c7042a9b556f47d31274b878a991fe" category="paragraph">各コントローラキャニスターには、 AC 電源で障害が発生した場合にキャッシュデータを保持するバッテリが搭載されています。</block>
@@ -2902,7 +2900,6 @@
   <block id="57ec4cf3cc5be7dd648af31f42d44ab6" category="section-title">コンソールモードを使用してをアンインストールします</block>
   <block id="f4fa4e2722da41144d590e07aea03e14" category="paragraph">Linux オペレーティングシステムでコンソールモードを使用して SANtricity Cloud Connector をアンインストールできます。</block>
   <block id="531ec4a162500310fa8d7ec0a705c0ee" category="list-text">アンインストールウィンドウで *Enter * を押して、 SANtricity Cloud Connector のアンインストールに進みます。</block>
-  <block id="00f9ce66241621004c58b2e973a895fd" category="summary">ホストインターフェイスカード（ HIC ）は、コントローラキャニスターにオプションで取り付けることができます。E2800 コントローラには、コントローラカード自体に搭載されたホストポートとオプションの HIC に搭載されたホストポートがあります。コントローラに搭載されたホストポートのことをベースボードホストポートと呼び、HIC に搭載されたホストポートのことを HIC ポートと呼びます。</block>
   <block id="fcbb93bbfdd8447e24085518b94cfeb8" category="paragraph">ホストインターフェイスカード（ HIC ）は、コントローラキャニスターにオプションで取り付けることができます。E2800 コントローラには、コントローラカード自体に搭載されたホストポートとオプションの HIC に搭載されたホストポートがあります。コントローラに搭載されたホストポートのことをベースボードホストポートと呼び、HIC に搭載されたホストポートのことを HIC ポートと呼びます。</block>
   <block id="aa657af1c24d669e18366e849c6f5421" category="summary">シンプレックス構成では、障害が発生したコントローラキャニスターを交換することができます。</block>
   <block id="b0e58cde3661a34fc3fe3d6efcd66e08" category="doc">E2800 シンプレックス構成でのコントローラの交換</block>
@@ -3384,7 +3381,6 @@
   <block id="80a8676f82f84aa12d1fd18325f53c56" category="list-text">E2860 コントローラシェルフ</block>
   <block id="61b77c506ee4a3b451b35fc8416667c4" category="paragraph">電源キャニスターを交換する手順では、コントローラシェルフに接続された DE6600 ドライブトレイの電源キャニスターで障害が発生した場合の交換方法については説明していません。</block>
   <block id="d9ebe2785a9ada6fd8f18a154ff332a2" category="paragraph">ファンキャニスターを交換する手順では、コントローラシェルフに接続された DE6600 ドライブトレイのファンキャニスターで障害が発生した場合の交換方法については説明していません。</block>
-  <block id="a3c03452327012e5141c33e5726e73c7" category="summary">キャニスターは 3 つのタイプに分類されます。電源 / ファンキャニスター \ （電源装置 \ ）は冗長な電源を提供し、 12 ドライブまたは 24 ドライブのコントローラシェルフまたはドライブシェルフで適切な冷却を行います。 60 ドライブのコントローラシェルフまたはドライブシェルフで電源の冗長性を確保するために使用される電源キャニスターです。 および 60 ドライブのコントローラシェルフまたはドライブシェルフの冷却に使用されるファンキャニスター。</block>
   <block id="fb4cf09c196596d5c6d69783aa59f055" category="summary">デュプレックスとシンプレックスのそれぞれに該当する手順に従って、 E2800 バッテリを交換する準備をします。</block>
   <block id="f51438f6c07d86b8b1be3ab7591ffd96" category="doc">E2800 バッテリを交換する準備をします</block>
   <block id="5d7b64427533316f72376413b14cba00" category="paragraph">バッテリ交換準備の手順は、デュプレックス構成（コントローラが 2 台）とシンプレックス構成（コントローラが 1 台）で異なります。</block>
@@ -3499,7 +3495,6 @@
   <block id="989d08712715d693bb0bdb8694f3c7c2" category="cell">ホストポートのタイプ</block>
   <block id="116e44cf6296c08b95202ed848067a08" category="paragraph">キャッシュアクティブ LED</block>
   <block id="7487bd6e9c92c62043628395d6a8f517" category="list-text">フィールドに「 CHANGE 」と入力します。</block>
-  <block id="98c3987fb58d5d61350074733f52ec4f" category="summary">コントローラは、ボード、ファームウェア、ソフトウェアで構成されます。ドライブを制御し、 System Manager の機能を実装します。ここでは、 2 台目のコントローラを追加してデュプレックス構成に変換する方法と、シンプレックス構成およびデュプレックス構成でコントローラを交換する方法について説明します。</block>
   <block id="b27b1feddcd0e6980fd142d167ad4000" category="summary">新しいバッテリを取り付けます。</block>
   <block id="0d9172186f7ee4d9c0f105bc4d0ac733" category="doc">新しい E2800 バッテリを取り付けます</block>
   <block id="19a40e57f7257d4edddda3d9bdc15b5c" category="paragraph">障害が発生したバッテリを取り外したあと、新しいバッテリを取り付けることができます。</block>
@@ -3749,7 +3744,6 @@
   <block id="ae4141f22c2ed3b7878fa2ff3a1e6cfe" category="inline-link">4 ポストラックまたはキャビネットに 2U 12 ドライブエンクロージャを設置する</block>
   <block id="5eba68d12705561c14a5cf782039d9a6" category="paragraph">にアクセスします<block ref="790da98275795a97c8f97401754053cf" category="inline-link-rx"></block>。</block>
   <block id="10b221abe33d91a2165eab967641529e" category="inline-link">4 ポストラックへの SuperRail の設置（ DE224C / DE460C シェルフ）</block>
-  <block id="9ec28cb381dd9edd5e1a4ad5641fba96" category="summary">コントローラキャニスターにホストインターフェイスカード（ HIC ）を取り付ける必要があります。EF600 コントローラには、オプションの HIC 上にホストポートがあります。HIC に搭載されたホストポートのことを HIC ポートと呼びます。</block>
   <block id="4340eb550bf9d82ec63ae6c684b4ce19" category="paragraph">ホストインターフェイスカード（ HIC ）はコントローラキャニスターに取り付ける必要があります。EF600 コントローラには、オプションの HIC 上にホストポートがあります。HIC に搭載されたホストポートのことを HIC ポートと呼びます。</block>
   <block id="04a3d4071a9450f7356dbc04b8b8747c" category="summary">SAS 拡張カードは、コントローラキャニスターに取り付けることができます。EF300 コントローラは SAS 拡張をサポートします。</block>
   <block id="e00394e86e0897378bd874e271fcd82c" category="doc">SAS 拡張カード</block>
@@ -3911,7 +3905,6 @@
   <block id="a1b7af0f21ad6f7da3f61feb2a734667" category="paragraph">変更が完了するまではストレージアレイのデータにアクセスできません。</block>
   <block id="6ee8ffec654d692808d3c18bb0e2d3b9" category="section-title">手順 3 ：機能パックを変更する</block>
   <block id="7e1eb07ee4fa34bdf6f3cff4a27c0ce0" category="paragraph">機能パックを変更してホストポートのホストプロトコルを変更します。</block>
-  <block id="9e82bbc678cd60ca1e23c9306295675e" category="summary">メモリサイズが異なる場合や DIMM に障害がある場合は、 DIMM を交換する必要があります。</block>
   <block id="4ec1b0ed9e4f78833f020b2b7ed423ce" category="doc">DIMM</block>
   <block id="e9e795fffc66424c5fceeda72cc6702b" category="summary">EF300 または EF600 コントローラシェルフの単一のコントローラを交換する。</block>
   <block id="317ae44d33c81077bc69598e4bf59e9f" category="doc">EF300 または EF600 コントローラを交換します</block>
@@ -4068,7 +4061,6 @@
   <block id="9ba44d804b4659e108d69ba4db8377f5" category="paragraph">EF300 または EF600 のコントローラシェルフまたはドライブシェルフには、コントローラを冷却するためのファンが 5 台ずつ搭載されています。</block>
   <block id="620e2edf2db0c3c3cad57aeb246c6bfe" category="section-title">電源装置</block>
   <block id="963fa086e22d0159155d22af7dbcbb0a" category="paragraph">電源装置は、コントローラシェルフに電源の冗長性を提供します。</block>
-  <block id="51255c5d39d4b9a43a7f800db3b8a431" category="doc">電源装置</block>
   <block id="0473e45a7d7f9557ae9f5ca07ab2315a" category="summary">障害が発生した EF300 または EF600 のホストインターフェイスカード（ HIC ）を交換します。</block>
   <block id="821d24c9ba446ee4c7b02961af65c2df" category="doc">EF300 または EF600 の障害が発生したホストインターフェイスカード（ HIC ）を交換します</block>
   <block id="862acd5892fdfacc876441454483bc88" category="paragraph">障害が発生した HIC を交換するには、ストレージアレイの電源をオフにし、 HIC を交換してから再度オンにする必要があります。</block>
@@ -4100,7 +4092,6 @@
   <block id="bf6487095e5ecccd756382367b6c5383" category="list-text">変換に必要なハードウェアを入手しておきます。これには、新しい HIC や SFP のセットが含まれている場合があります。必要なハードウェアやパーツについて確認が必要な場合は、ネットアップの営業担当者にお問い合わせください。</block>
   <block id="b3f772795168df63454dec0c3e4c3e3b" category="list-text">デュアルプロトコル SFP トランシーバは、 16Gb と 8Gb の FC に加え、 10Gb iSCSI をサポートしています。そのため、デュアルプロトコルを使用していて、 FC と iSCSI のどちらか一方を切り替えている場合は、 SFP の変更が必要ないことがあります。</block>
   <block id="5e7a01eefac15f1a88cbf08e764f5398" category="list-text">ホストポートプロトコルの変換によっては、ホストインターフェイスカードの追加やアップグレードが必要になる場合があります。</block>
-  <block id="f35307ec092e89906d40c7e7580fd73e" category="summary">コントローラは、ボード、ファームウェア、ソフトウェアで構成されます。ドライブを制御し、 System Manager の機能を実装します。このセクションでは、 EF300 または EF600 コントローラシェルフ内の 1 台または両方のコントローラを交換する方法について説明します。</block>
   <block id="571b1ead863e404cb63de04e9e14c21d" category="summary">EF300 または EF600 バッテリの交換に関する要件と考慮事項</block>
   <block id="e71146224fd64a6c76e83e431678c8ba" category="paragraph">以下は、 EF300 または EF600 コントローラのバッテリを交換する手順の概要です。</block>
   <block id="9cfc11d4ef06463002ddc3a0df54fee8" category="list-text">コントローラをオフラインにします。</block>
@@ -4134,7 +4125,6 @@
   <block id="a5df91b4b8dbc86494c1ea39cec2456d" category="list-text">DIMM を交換したコントローラを選択します。</block>
   <block id="d755fb949d94fb21eb05693749f9b364" category="list-text">Recovery Guru がない場合、または Recovery Guru の手順に従ってもボリュームが優先所有者に戻らない場合は、サポートに問い合わせてください。</block>
   <block id="74adca4d72e5e007d2c87aa7750faf32" category="paragraph">これで DIMM の交換は完了です。通常の運用を再開することができます。</block>
-  <block id="8efc2bb6da7e629c408a29a1c453f118" category="summary">ホストのプロトコルを別のプロトコルに変換して互換性を確保したり、ホスト接続のプロトコルをインフラのニーズに合わせて別のプロトコルに変換したりできます。</block>
   <block id="4a3c8c03cdcb016f4690174be36a72be" category="summary">EF300 SAS 拡張カードを交換する前に、要件と考慮事項を確認してください。</block>
   <block id="3d52e0419c7f8a010e6fc5f98c25da0f" category="list-text">次の手順に従う必要があります <block ref="333b8feab226020b2ee6e03f5e462ace" category="inline-link-macro-rx"></block> をクリックして、コントローラをセットアップします。</block>
   <block id="ae1aaca96a065fbfcfe3174c8cf8c2dd" category="list-text">ファームウェアを最新バージョンに更新する必要があります。ファームウェアを更新するには、の手順に従います <block ref="bf6a098eae1df274d91ef498db89d4bb" category="inline-link-macro-rx"></block>。</block>
@@ -4994,8 +4984,6 @@
   <block id="0a82582b4bba9e052f69c0f2c36eac1a" category="summary">既存のコントローラを交換することでストレージアレイをアップグレードすることができます。コントローラは、ボード、ファームウェア、ソフトウェアで構成されます。ドライブを制御し、管理ソフトウェアの機能を実装します。</block>
   <block id="e3516c86194201deb982fe92e4fb83a3" category="doc">E シリーズコントローラをアップグレードする</block>
   <block id="9ca4f852cb231d38c7cf2bb9053a2245" category="summary">Dynamic Host Configuration Protocol\ （ DHCP ；動的ホスト構成プロトコル）を使用して IP アドレスを提供する。</block>
-  <block id="041b8a1391f923a8043830be4a716cdd" category="summary">NVMe は InfiniBand ネットワークプロトコルで使用できます。</block>
-  <block id="97cdaaff2a74763683828420ccda083e" category="doc">NVMe over InfiniBand のクイックセットアップ</block>
   <block id="e889c393ff8c52f357be63d353ebf65a" category="summary">RHEL 7 および SLES 12 の場合は、ネームスペースにファイルシステムを作成し、ファイルシステムをマウントします。</block>
   <block id="da6e8accbd9a7e86c32239135f1ffed2" category="doc">ファイルシステムの作成（ RHEL 7 および SLES 12 ）</block>
   <block id="facbcb2fa38d6402945c5fd2c6fcf386" category="list-text">「 multipath -ll 」コマンドを実行して '/dev/mapper/dm' デバイスのリストを取得します</block>
@@ -5188,7 +5176,6 @@
   <block id="902bc0f0e4bf7414bb5a92ff0daa7055" category="list-text">「 IFF 」コマンドを実行して、コピーしたファイルを元のファイルと比較します。</block>
   <block id="86cd25e1b1566d77f5af83eb0ffcd3f0" category="paragraph">コピーしたファイルとフォルダを削除します。</block>
   <block id="c60c64d662d0e7a5a446c9f7d86d1e12" category="summary">multipath.conf ファイルは、マルチパスデーモン multipathd の構成ファイルです。</block>
-  <block id="1914877215ade75b06ba34ce70bb51dd" category="summary">SAS のクイックセットアップ</block>
   <block id="3a12d0edc81531758f12c83024fbc77e" category="summary">iSER を使用する場合は、 Linux Unified Host Utilities をインストールします。</block>
   <block id="fb9768f2275e2783037a700050fe8579" category="doc">Linux Unified Host Utilities をインストールして設定します</block>
   <block id="6cfa91f7028db85237c0770258925d8e" category="paragraph">Linux Unified Host Utilities ツールを使用して、フェイルオーバーポリシーや物理パスなど、ネットアップストレージを管理できます。</block>
@@ -5357,9 +5344,6 @@
   <block id="cb121353aea01717373d69731917df7f" category="paragraph">ファイルシステムの作成方法は、選択したファイルシステムによって異なります。</block>
   <block id="964adc6b43969a5b7141a5a158c2ce8a" category="list-text">新しいパーティションをマウントするフォルダを作成します。</block>
   <block id="351f29f80415002be3da2130495dbbf2" category="list-text">パーティションをマウントします。</block>
-  <block id="7e9eed90ab06645af09e14e4688144a5" category="summary">NVMe は RDMA over Converged Ethernet / （ RoCE ）ネットワークプロトコルで使用できます。</block>
-  <block id="e5acd4f564771f3dbba3bdeb6b6bcfe5" category="doc">NVMe over RoCE のクイックセットアップ</block>
-  <block id="d94efd3fa425e38d7761fba32eb7bc67" category="paragraph">NVMe は RDMA over Converged Ethernet （ RoCE ）ネットワークプロトコルで使用できます。</block>
   <block id="4147efbdc6fd2e6dc90c466022cf7306" category="summary">インターネットプロトコル（ IP ）ネットワーク接続を確認するには、 ping テストを使用してホストとアレイが通信できることを確認します。</block>
   <block id="9ef047e8a276866717244a3af9c729b9" category="doc">IP ネットワーク接続を確認します</block>
   <block id="0e6bf59e4893d4e4be6dcab27d206e90" category="list-text">ジャンボフレームが有効な場合は、ペイロードサイズに 8 、 972 バイトを指定して ping コマンドを実行します。IP と ICMP を組み合わせたヘッダーは 28 バイトで、これがペイロードに追加されて 9 、 000 バイトになります。-s スイッチは 'packet size ビットを設定しますd オプションはデバッグオプションを設定します。これらのオプションにより、 iSCSI イニシエータとターゲットの間で 9 、 000 バイトのジャンボフレームを正常に送信できます。</block>
@@ -5457,7 +5441,6 @@
   <block id="c0e80cdff7e17bef2e455fab906a94bf" category="list-text">SRP デーモンをすぐに開始する場合：</block>
   <block id="f954d52b7d356b7898493ef1309b32ba" category="list-text">SRP 設定を変更する必要がある場合は、次のコマンドを入力して「 /etc/modprobe.d/ib_srp.conf 」を作成します。</block>
   <block id="64ae2d65559b78b214cb7c6aeb856d9b" category="list-text">/etc/srp_daemon.conf の下に次の行を追加します</block>
-  <block id="fe4b136586896fd70617258689052356" category="summary">SRP over InfiniBand のクイックセットアップ</block>
   <block id="9565db23c5cf63228425a87e81f6ae0d" category="summary">コントローラに NVMe over RoCE 用の接続（ RDMA over Converged Ethernet ）が含まれている場合は、 SANtricity System Manager のハードウェアページまたはシステムページから NVMe ポートを設定できます。</block>
   <block id="f1d9125917e57e2251bb507c05a232c1" category="doc">ストレージアレイの NVMe over RoCE 接続を設定します</block>
   <block id="0d31f17993ecf74bf74442f4f7a3f7d0" category="paragraph">コントローラに NVMe over RoCE （ RDMA over Converged Ethernet ）用の接続が含まれている場合は、 SANtricity System Manager のハードウェアページまたはシステムページで NVMe ポートを設定できます。</block>
@@ -5500,7 +5483,6 @@
   <block id="9fd1ccf35b45152e10c1dcc3a278a357" category="inline-xref-macro">SRP ワークシート</block>
   <block id="e8377a168400202c4d751db31f2af66a" category="list-text">イニシエータの GUID をに記録します <block ref="637e124a730f0905ce6e480d5b773394" category="inline-xref-macro-rx"></block>。</block>
   <block id="045974d2f2f790a851a04cb91a6f273f" category="doc">SANtricity System Manager にアクセスし、セットアップウィザードを使用します</block>
-  <block id="c96c96aa9e9942faabac2551c9847a4a" category="doc">iSER over InfiniBand のクイックセットアップ</block>
   <block id="bd97f9e0585f1ab3a70a824e4f5ffe79" category="summary">Linux Unified Host Utilities 7.1 には、フェイルオーバーポリシーや物理パスなど、ネットアップストレージを管理するツールが含まれています。</block>
   <block id="b03d32ba1901ea3dd22914caff790143" category="doc">Linux Host Utilities をインストールして設定する</block>
   <block id="c4a120813372f7f07d6de687ff0fc6a6" category="paragraph">Linux Unified Host Utilities パッケージには、フェイルオーバーポリシーや物理パスなど、ネットアップストレージを管理するツールが含まれています。</block>
@@ -5512,9 +5494,6 @@
   <block id="2d59c1932fb82d6e7c73a375ed97221d" category="summary">物理パスの 1 つが中断された場合に備えて、ストレージアレイへのパスを冗長化するようにマルチパスソフトウェアを設定します。</block>
   <block id="7974a85a6c6d440bbee88b27bf089223" category="summary">nvme-CLI パッケージに含まれている SMdevices ツールを使用して、現在ホストで認識されているボリュームを表示します。これは nvme list コマンドの代わりです。</block>
   <block id="9ba0e91b9dc1e138e7c9c64d8795890a" category="paragraph">E シリーズボリュームへの各 NVMe パスに関する情報を表示するには、「 nvme netapp smdevices [-o &lt;format&gt;] 」コマンドを使用します。出力「 &lt;format&gt;` 」は、通常の形式（ -o を使用しない場合のデフォルト）、列、または JSON にすることができます。</block>
-  <block id="f849cbf8f2231f3f35d369655c870a3e" category="doc">iSCSI のクイックセットアップ</block>
-  <block id="eade6022b2fef6a4e03ff35469374cb0" category="summary">NVMe は Fibre Channel プロトコルで使用できます。</block>
-  <block id="62896be8239b3396f0ed277cf184b062" category="doc">NVMe over Fibre Channel のクイックセットアップ</block>
   <block id="93e3eeaae5f141e57bcdccb6741d6cec" category="paragraph">使用するホストインターフェイスタイプを選択します。設定するアレイに使用可能なホストインターフェイスタイプが 1 つしかない場合は、この設定を選択できないことがあります。</block>
   <block id="96477deae8322871ba6c5133596fd5b1" category="doc">ホストでフェイルオーバーを設定します</block>
   <block id="816a290577d3afffcfc7b89e8312db70" category="admonition">を参照してください<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> マルチパスは GA バージョンの SLES または RHEL では正しく機能しない場合があるため、必要な更新がインストールされていることを確認する必要があります。</block>
@@ -6049,9 +6028,6 @@
   <block id="a5de3e8b40f487e6069eec82667104bd" category="list-text">オプションのドライブシェルフがある場合は、エンドキャップの穴がシェルフの左側にあるファスナーに揃うように、左側のエンドキャップをドライブシェルフの前面に配置します。</block>
   <block id="70e85bbe4f70fb42276c14a4911a013c" category="list-text">エンドキャップを所定の位置にはめ込みます。</block>
   <block id="20743f255dc99f7c25751ab4970cf40b" category="list-text">右側のエンドキャップについて、上記の手順を繰り返します。</block>
-  <block id="efe6d51a14336eb7344b08061d81c223" category="summary">ここでは、新しいストレージシステムを設置してセットアップする方法について説明し、追加コンテンツへのリンクを記載します。</block>
-  <block id="01a6b4e59365da6ed554e20bb2ab5362" category="doc">E2860 、 E5760 、および DE460C のインストールおよびセットアップ手順</block>
-  <block id="098f41693365f8de503868e97f04f4c4" category="doc">E5724 、 EF570 、 EF280 、 E2812 、 E2824 、または DE212C 、 DE224C のいずれかに該当します</block>
   <block id="04b5e92ac5655763e56e78e89fde93c5" category="summary">E2860 、 E5760 、または DE460 をインストールするには、アカウントを作成してハードウェアを登録します。</block>
   <block id="ccccb6142ca7603eed3fc0a275176b3a" category="paragraph">E2860 、 E5760 、または DE460 シリーズのストレージシステムをインストールするための準備方法について説明します。</block>
   <block id="670969e220ef24008903984f9b57acbd" category="paragraph">シェルフ、ベゼル、およびラックマウントハードウェア</block>
@@ -8336,8 +8312,6 @@
   <block id="32e0b12538b4abe36e648446dbb8723b" category="paragraph">ディスクプールの改善</block>
   <block id="82faf4161a36aa8a69bd4c363e6b57cc" category="paragraph">11.80以降を実行しているコントローラで作成されたディスクプールは、_Version 0_poolsではなく_Version 1_poolsになります。_Version 1_diskプールが存在する場合、ダウングレード操作は制限されます。</block>
   <block id="45e56b98136f4292dd8c522edf38b3b2" category="paragraph">ストレージアレイプロファイルでディスクプールのバージョンを特定できます。</block>
-  <block id="82bf7451a207cfbac427edc3bb60fced" category="paragraph">ステップバイステップの手順と追加コンテンツへのライブリンクが記載された PDF 形式のガイドです。</block>
-  <block id="a2f0a23d015da77ff81697442b8f6aad" category="paragraph">これらは、このサイトで説明されているセットアップ手順です。</block>
   <block id="746ff5a72ad1791e39c47dc0abcdffe3" category="paragraph">System ManagerまたはUnified Managerを起動するには、少なくともバージョンのブラウザが必要です。</block>
   <block id="488c35a42ee48966247c5cc643d96708" category="paragraph">サポートされる最小バージョンは次のとおりです。</block>
   <block id="5f7273b60d2186e7b7a65eb2cee83294" category="paragraph">SSD読み取りキャッシュの最大数の拡張</block>
@@ -8440,19 +8414,14 @@
   <block id="6a177f60e2c78aeead82deed1b7f79bd" category="image-alt">ドライブシェルフのケーブル接続の例</block>
   <block id="97d8dba52fc751664d17d634de384761" category="open-title">E4000のドライブシェルフの接続</block>
   <block id="5d48bd8c60ef301164497e794ae727ca" category="image-alt">IOMハードウェアアイコン</block>
-  <block id="c5f2c8e37ae34577d9aa27dc0a6d9d6a" category="summary">Fibre Channelプロトコルは、EシリーズシステムのLinuxホストで使用できます。</block>
   <block id="a51352079fbf62de5b216fbcf5f8547f" category="image-alt">FC のネットワーク構成</block>
-  <block id="2c14a3be6c3b57db7707ac6ae99aeb97" category="summary">iSCSIプロトコルは、EシリーズシステムのLinuxホストで使用できます。</block>
   <block id="035b18714bc5d7aa7c3b19a557b2784d" category="image-alt">iSCSIネットワーク構成</block>
-  <block id="279607469d0ed6f0d6a8dfabbc5b63e2" category="summary">iSER over InfiniBandプロトコルは、EシリーズシステムのLinuxホストで使用できます。</block>
   <block id="f6d2572a98e17f547b50d07bd60a4357" category="image-alt">iSER over IBネットワーク構成</block>
   <block id="e25b62b71db71b440f775e632a958e5e" category="image-alt">直接接続トポロジの例</block>
   <block id="3d673c4735715944ce52ebdb6281a20d" category="image-alt">スイッチ接続トポロジの例</block>
   <block id="5a60c0d89257784a23a8dd439204f7f1" category="image-alt">NVMe over InfiniBandの直接接続の例</block>
   <block id="37370b7d172047a016f376cc6b5258c9" category="image-alt">NVMe over RoCE直接接続の例</block>
   <block id="65311bced825a83f85718b09cc4ab673" category="image-alt">NVMe over RoCEスイッチの接続例</block>
-  <block id="846fb8d171e9dfcce4fd56289d380608" category="summary">SASプロトコルは、EシリーズシステムのLinuxホストで使用できます。</block>
-  <block id="ecf0c5c7f835375b8d9275312b470c82" category="summary">SRP over InfiniBandプロトコルは、EシリーズシステムのLinuxホストで使用できます。</block>
   <block id="025f0fcb18e01db2892910a53d657f57" category="image-alt">SRB over IBポート識別子</block>
   <block id="a9a8836056eb3cc8d01f51eb5c6e7eec" category="list-text">vSphere ClientまたはvSphere Web ClientでVMFSデータストアを作成したり、ボリュームをRDMとして使用したりする手順については、を参照して<block ref="b15a5268225569436f01a761f08cccf7" category="inline-link-rx"></block>ください。</block>
   <block id="ebaab7c3245c99578b7dd1e67138cccf" category="list-text">ESXiホストでストレージの再スキャンを実行する方法については、このトピックに関する記事を検索して<block ref="151d2130fd8b5e8e7d0d3b596c1bdeb5" category="inline-link-rx"></block>ください。</block>
@@ -8889,7 +8858,6 @@
   <block id="2f2564b7bd12fa4c137f3761c14d73a3" category="paragraph">E4060 コントローラシェルフまたは DE460C ドライブシェルフに搭載されたドライブドロワーを交換することができます。</block>
   <block id="3748f377726945770a9a282453272357" category="paragraph">E4060 コントローラシェルフまたは DE460C ドライブシェルフの障害が発生したドライブドロワーを交換する手順は、ドロワー内のボリュームがドロワー損失の保護で保護されているかどうかによって異なります。ドライブドロワー内のすべてのボリュームがドロワー損失の保護が有効なディスクプールまたはボリュームグループに含まれている場合は、この手順をオンラインで実行できます。それ以外の場合は、ドライブドロワーを交換する前に、ホストの I/O アクティビティをすべて停止し、シェルフの電源をオフにする必要があります。</block>
   <block id="1103b7e629028daaccac02c0a8fc98d2" category="doc">E4000のバッテリの交換</block>
-  <block id="543025215967bae569d97988a7e97cbc" category="paragraph">SANtricity System ManagerのRecovery Guruに「バッテリで障害が発生しました」または「バッテリの交換が必要です」というステータスが表示された場合は、E4000アプライアンスのバッテリを交換する必要があります。データを保護するには、できるだけ早くバッテリを交換する必要があります。</block>
   <block id="9af92606abb4b31a8818023a6515b3ec" category="list-text">コントローラの SANtricity System Manager にアクセスできるブラウザを備えた管理ステーション。（System Managerインターフェイスを開くには、コントローラのドメイン名またはIPアドレスをブラウザで指定します）。</block>
   <block id="ec6e5e75653734bb428b87afb93f7f41" category="section-title">手順1：バッテリを交換する準備をする</block>
   <block id="3df752ee7e92a3dba58c1061c5d0a4a6" category="list-text">SANtricity System Managerを使用してストレージアレイの構成データベースをバックアップします。</block>
@@ -8929,15 +8897,7 @@
   <block id="7eed6664ecacefe81e2b660f47a5cfaf" category="list-text">コントローラキャニスターのカバーを再度取り付け、所定の位置にロックします。</block>
   <block id="aa4ecd2631b0a57f27425bbdf9cc91b7" category="paragraph">コントローラキャニスターのコンポーネントを交換したら、シャーシに再度取り付けます。</block>
   <block id="954c99d35fff8ed108602add34a47b93" category="list-text">コントローラキャニスターのカバーを取り付けます（まだ取り付けていない場合）。</block>
-  <block id="9c17c595e56b6b01c7d703a94b943e71" category="list-text">コントローラキャニスターを裏返し、端をシャーシの開口部に合わせます。</block>
-  <block id="44df050c94969c9c5f783babbd55fb7e" category="list-text">コントローラキャニスターの端をシャーシの開口部に合わせ、コントローラキャニスターをシステムの半分までそっと押し込みます。</block>
-  <block id="40d0d24050f8aac90dc03655f2738fb3" category="admonition">指示があるまでコントローラキャニスターをシャーシに完全に挿入しないでください。</block>
-  <block id="4e4cd7bd59f82bab02590366f27be3e5" category="list-text">必要に応じてシステムにケーブルを再接続します。</block>
   <block id="7bfce735a4505a06fb1c4b7a2d076c1e" category="list-text">光ファイバケーブルを使用する場合は、メディアコンバータ（QSFPまたはSFP）を取り外したあとに再度取り付けてください。</block>
-  <block id="5d971d684708429fbfc1d12fc0823b1c" category="list-text">コントローラキャニスターの再取り付けが完了します。</block>
-  <block id="b34c1b37f135bc5b382d7862f82e025c" category="list-text">カムハンドルを開いた状態で、コントローラキャニスターをミッドプレーンまでしっかりと押し込んで完全に装着し、カムハンドルをロック位置まで閉じます。</block>
-  <block id="69008785977983cf8a33f9f78ff2b7c9" category="admonition">コネクタの破損を防ぐため、コントローラキャニスターをスライドしてシャーシに挿入する際に力を入れすぎないように注意してください。</block>
-  <block id="0332f86520cc7552e1fb152e32977600" category="paragraph">コントローラは、シャーシに装着されるとすぐにブートを開始します。</block>
   <block id="1245c13fabc810ad6fbb6f05277ad356" category="list-text">ケーブルマネジメントデバイスを再度取り付けます（まだ取り付けていない場合）。</block>
   <block id="82cd534d691845f1af190a9df38d753d" category="list-text">フックとループストラップを使用して、ケーブルをケーブルマネジメントデバイスにバインドします。</block>
   <block id="91418c565341bd8a889226a195dd2fa2" category="section-title">手順5：バッテリ交換後の処理</block>
@@ -9010,10 +8970,7 @@
   <block id="f4d6345a40a4387a35c3eb6ef8f51b15" category="section-title">手順 8 ：コントローラの交換後の処理</block>
   <block id="a7c932e7525739cefdfd19d17123207c" category="paragraph">コントローラシェルフへの接続を再確立し、サポートデータを収集して、処理を再開します。</block>
   <block id="62241759bfd404c01951d43ae57f4bbe" category="open-title">コントローラシェルフの電源をオンにする（シンプレックス）</block>
-  <block id="04803538074d9bd9b55f9adc380717f2" category="list-text">交換用コントローラをアプライアンスに取り付けます。</block>
   <block id="fe69546640a5330ecd9f461f1cdbd1ee" category="list-text">取り外し可能なカバーが下になるようにコントローラを裏返します。</block>
-  <block id="f5b18529473e7fbcbdcf4601ffe30597" category="list-text">カムハンドルを開いた状態でコントローラをスライドし、アプライアンスに最後まで挿入します。</block>
-  <block id="0dc7aaae2ab89a4fa299f4f2e42c1646" category="list-text">カムハンドルを左側に動かして、コントローラを所定の位置にロックします。</block>
   <block id="85caa39a88f7091fb2db841ad6b83ffd" category="list-text">ケーブルを交換します。</block>
   <block id="2afc7927e5f45cc2a3ef83b60ea186cd" category="list-text">コントローラシェルフの電源をオンにします。</block>
   <block id="4b55c79852e2203088ca03f4c8fb4b3c" category="list-text">E4000コントローラが再起動するまで待ちます。</block>
@@ -9103,7 +9060,6 @@
   <block id="1ea4267c90825f4bf9c52932b0bd8e1a" category="list-text">コントローラキャニスターのカバーを再度取り付けます。</block>
   <block id="48a57bdd7334ad13cd1585ba2a663c46" category="section-title">手順5：コントローラキャニスターを再度取り付ける</block>
   <block id="af32241ae4a2afd71e33a8646b775b1f" category="paragraph">コントローラキャニスターをシャーシに再度取り付けます。</block>
-  <block id="0a5704c96cc972ac4c49e76417f83282" category="list-text">コントローラキャニスターをシステムの途中までそっと押し込みます。コントローラキャニスターの端をシャーシの開口部に合わせ、コントローラキャニスターをシステムの半分までそっと押し込みます。</block>
   <block id="660a0f2c7dddd5ead3b175899a5d429c" category="section-title">手順6：DIMM交換後の処理</block>
   <block id="315927c4ed1f1d8b1d0b704a5a67026e" category="list-text">コントローラがオンラインに戻ったら、ステータスが「最適」になっていることを確認し、コントローラシェルフの警告LEDを確認します。</block>
   <block id="805863d0c877d6358a86a2607e79ed0d" category="paragraph">ステータスが「最適」でない場合やいずれかの警告LEDが点灯している場合は、すべてのケーブルが正しく装着され、コントローラキャニスターが正しく取り付けられていることを確認します。必要に応じて、コントローラキャニスターを取り外して再度取り付けます。注：問題が解決しない場合は、テクニカルサポートにお問い合わせください。</block>
@@ -9146,7 +9102,6 @@
   <block id="fe831c9a1ec5f0798f7d995bb682d1af" category="list-text">HICの取り付けネジを緩めて真上に持ち上げます。</block>
   <block id="cb588a37aac0cb396a69cd9c6fa260a7" category="list-text">HICを再度取り付けます。</block>
   <block id="eef513f5198b93971d313eb80e4da6fb" category="list-text">コントローラモジュールのカバーを再度取り付け、所定の位置にロックします。</block>
-  <block id="528b8ab8a2997d60c930f6610d03301f" category="paragraph">デュプレックス構成の場合、コントローラはシャーシに装着されるとすぐにブートを開始します。</block>
   <block id="613ffef3aed34fbf482f6ca198dbe765" category="section-title">手順 5 ： HIC の交換を完了します</block>
   <block id="fd3355f16365c925e530b446f01146af" category="paragraph">コントローラの電源をオンにする（シンプレックス）かコントローラをオンラインにする（デュプレックス）か、サポートデータを収集して、処理を再開します。</block>
   <block id="3e741422cd2bc3082e4d5328242d9d60" category="doc">E4000でのHICのアップグレード</block>
@@ -9419,7 +9374,6 @@
   <block id="04ec4caf2b80e886c69cd8966d5f5c92" category="paragraph">EF300、EF600、EF300C、またはEF600Cシリーズストレージシステムの設置の準備方法について説明します。</block>
   <block id="a466a396cacf21d3516a87d8639c5255" category="paragraph">EF300、EF600、EF300C、またはEF600Cバッテリを交換する前に、要件と考慮事項を確認してください。</block>
   <block id="0b5565f493a40cc2e5ace8909a568f68" category="paragraph">EF300、EF600、EF300C、またはEF600Cストレージシステムのバッテリを交換することができます。</block>
-  <block id="a3ec65b7c9b468046fdbe7dc19f94299" category="paragraph">コントローラは、ボード、ファームウェア、ソフトウェアで構成されます。ドライブを制御し、System Managerの機能を実装します。このセクションでは、EF300、EF600、EF300C、またはEF600Cコントローラシェルフの1台または両方のコントローラを交換する方法について説明します。</block>
   <block id="89e4ff051c9e9c60c1d21fddb84ec42a" category="paragraph">EF300、EF600を交換する前に、EF300CまたはEF600Cコントローラについて、要件と考慮事項を確認します。</block>
   <block id="e0b68b674b62dc6569b4275513ebdb8f" category="paragraph">EF300、EF600、EF300C、またはEF600Cコントローラシェルフに搭載された1台のコントローラを交換することができます。</block>
   <block id="136b14c506b51c3fdb848576b81df5a9" category="paragraph">EF300、EF600、EF600C、またはEF300CストレージアレイのDIMMを交換する前に、要件と考慮事項を確認してください。</block>
@@ -9495,4 +9449,7 @@
   <block id="baee5b8c18b240b4edfcc1ae3fe154f0" category="section-title">バージョン11.90R1の新機能</block>
   <block id="0b2fb9383075b5994701c94b27e4b6ee" category="paragraph">このリリースでは、EF300CおよびEF600CオールフラッシュNVMeストレージシステムが導入されました。EF300CおよびEF600Cは、既存のEF300およびEF600ストレージシステムの大容量フラッシュバージョンです。EF300CおよびEF600Cでは、30TBまたは60TBの大容量NVMe SSDドライブがサポートされます。EF300C / EF600Cは、従来のRAIDをサポートしていない場合にのみ、Dynamic Disk Poolsと互換性があります。</block>
   <block id="8af7f744c39ae6285a380b6eb402fcb2" category="paragraph">E4000コントローラでの12Gb SASインターフェイスのサポート</block>
+  <block id="7a3a71e57296fe130d591f2dd4a7a06c" category="paragraph">SANtricity System ManagerのRecovery Guruでステータスが「バッテリで障害が発生しました」または「バッテリの交換が必要です」と表示された場合は、E4000のバッテリを交換する必要があります。データを保護するには、できるだけ早くバッテリを交換する必要があります。</block>
+  <block id="8c34b0fdf9a967369992b78c08820091" category="list-text">カムハンドルを開いた状態で、コントローラをスライドしてシェルフに最後まで押し込みます。</block>
+  <block id="1b6c46128dc1faef9365a16d700d5e74" category="list-text">交換用コントローラをシェルフに取り付けます。</block>
 </blocks>
