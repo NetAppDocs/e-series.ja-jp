@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: whats new, new features, SANtricity 11.90 
+keywords: whats new, new features, SANtricity 11.90, SANtricity 11.80 
 summary: SANtricity OS の新機能 
 ---
 = SANtricity OS の新機能
@@ -85,6 +85,12 @@ Web Servicesでログインロックアウト機能を使用できるように�
 REST APIでのみ設定可能で、組み込みWebサービスとプロキシWebサービスで新しいログインロックアウト設定を使用できるようになりました。
 
 |===
+
+
+== バージョン11.80.1R4の新機能
+
+このバージョンにはマイナーな変更のみが含まれており、新機能や制限事項はありません。このリリースの変更点の詳細については、READMEファイルを参照してください。
+
 
 
 == バージョン11.80.1R3の新機能

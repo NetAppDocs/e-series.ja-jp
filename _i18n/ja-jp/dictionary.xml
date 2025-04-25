@@ -9396,10 +9396,7 @@
   <block id="5f8f97ec195542ed337bbddedab32598" category="paragraph">EF300、EF600、EF300C、またはEF600Cコントローラの電源装置で障害が発生した場合は、交換できます。</block>
   <block id="64c37d5d57b631b9fb2968c7586932f3" category="paragraph">EF300、EF600、EF300C、EF600CコントローラにSAS拡張カードを追加して、ドライブトレイを拡張することができます。</block>
   <block id="0e7081ec1cfc70b91c941e13e9fa52c5" category="paragraph">EF300、EF600、EF300C、またはEF600CにSAS拡張カードを追加する場合は、次の要件を確認してください。</block>
-  <block id="0b2035b979e0933fbb24230f41a4faa9" category="section-title">バージョン11.90.1の新機能</block>
   <block id="efe2c9d7be92af10ac48d790dd8ccfed" category="paragraph">新しいストレージシステムモデル–EF300CおよびEF600C</block>
-  <block id="7c4ed7bb875e7af6303e23e1e7df86c3" category="paragraph">このリリースでは、EF300CおよびEF600CオールフラッシュNVMeストレージシステムが導入されました。EF300CとEF600Cは、既存のEF300およびEF600ストレージシステムの大容量フラッシュバージョンです。EF300CおよびEF600Cでは、30TBと60TBの大容量NVMe SSDドライブがサポートされます。</block>
-  <block id="c4c050a1cbe127eb24c705844a070872" category="paragraph">EF4000での12Gb SASインターフェイスのサポート</block>
   <block id="e8b3561f4b15fa164cdd5717ae511188" category="paragraph">E4000コントローラで12Gb SASホストインターフェイスカードがサポートされるようになりました。</block>
   <block id="892b365a22314b2852ca18025911d1be" category="list-text">必要に応じて、コマンドを実行し<block ref="3e0e995eb29f6805a04d4b3ac859bc4b" prefix=" " category="inline-code"></block>てDSMパッケージのインストールを確認します。</block>
   <block id="fb00ee175135cc78e49e873e41c6e6ad" category="admonition">コマンドを実行するには、MPIO機能がWindowsサーバにインストールされている必要があります<block ref="3e0e995eb29f6805a04d4b3ac859bc4b" prefix=" " category="inline-code"></block>。</block>
@@ -9455,4 +9452,5 @@
   <block id="bd720a6ead0034815d9206b7292e06e5" category="section-title">バージョン11.90R2の新機能</block>
   <block id="15829e6cc8b585193d8f6910a672107c" category="inline-link">Eシリーズ11.90リリースノート</block>
   <block id="a4c34f83987821dd1d99ef73febdd962" category="paragraph">このバージョンにはマイナーな変更のみが含まれており、新機能はありません。このリリースの変更点の詳細については、を参照してください<block ref="1f7d7124974a1c2e3017c1729625e686" category="inline-link-rx"></block>。</block>
+  <block id="c3d9022959f5cf3a3d385e7a2bd0bf3a" category="section-title">バージョン11.80.1R4の新機能</block>
 </blocks>
