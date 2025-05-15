@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-create-ssd-cache.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: システムパフォーマンスを向上させるために、SSDキャッシュ機能を使用して、アクセス頻度が特に高いデータ（「ホット」データ）を低レイテンシのソリッドステートドライブ（SSD）にキャッシュすることができます。 
 ---
-= SSDキャッシュを作成する
+= vCenter向けSANtricityストレージプラグインでのSSDキャッシュの作成
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

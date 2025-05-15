@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: NVMe volumes virtual, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: Linux のバージョンに基づいて、デバイスターゲットに転送される I/O を設定できます。DM-MP は、これらの仮想ターゲットへの物理パスを管理します。 
 ---
-= 仮想デバイスターゲットの NVMe ボリュームにアクセスします
+= Eシリーズ- Linux（NVMe over FC）の仮想デバイスターゲットのNVMeボリュームにアクセスする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

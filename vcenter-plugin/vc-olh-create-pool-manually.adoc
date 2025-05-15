@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-create-pool-manually.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: プールの自動構成の要件を満たしていない場合は、プールを手動で作成できます。プールは、論理的にグループ化された一連のドライブです。 
 ---
-= プールを手動で作成する
+= vCenter向けSANtricityストレージプラグインでのプールの手動作成
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

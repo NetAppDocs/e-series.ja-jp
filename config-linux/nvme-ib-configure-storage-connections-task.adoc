@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: コントローラに NVMe over InfiniBand ポートが搭載されている場合は、 SANtricity System Manager を使用して各ポートの IP アドレスを設定できます。 
 ---
-= ストレージアレイの NVMe over InfiniBand 接続を設定します
+= EシリーズでのストレージアレイのNVMe over InfiniBand接続の設定- Linux
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

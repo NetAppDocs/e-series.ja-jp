@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: NVMe volume physical, SLES 15, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 使用している SLES のバージョンに基づいて、デバイスターゲットに転送される I/O を設定できます（ SUSE Linux バージョン \ ）。 
 ---
-= 物理 NVMe デバイスターゲットの NVMe ボリュームにアクセスします
+= Eシリーズ- Linux（NVMe over InfiniBand）の物理NVMeデバイスターゲット用のNVMeボリュームにアクセスする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

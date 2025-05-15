@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-perform-pre-upgrade-health-check.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 健全性チェックはアップグレードプロセスの一環として実行されますが、開始前に別途実行することもできます。 
 ---
-= アップグレード前の健常性チェックを実行
+= vCenter向けSANtricityストレージプラグインでアップグレード前の健常性チェックを実行
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

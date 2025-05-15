@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SAS worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: このワークシートを使用して、 SAS ストレージの構成情報を記録します。 
 ---
-= SAS の設定を記録します
+= Eシリーズ- LinuxでのSAS構成の記録
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

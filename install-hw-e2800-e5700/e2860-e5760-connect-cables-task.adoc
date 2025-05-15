@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800, E5700, connect power cables 
 summary: 電源ケーブルを接続し、ドライブシェルフの電源をオンにします。 
 ---
-= シェルフをケーブル接続
+= 電源ケーブルの接続- E2860、E5760、およびDE460
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

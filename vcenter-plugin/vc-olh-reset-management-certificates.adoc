@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-reset-management-certificates.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 管理証明書を工場出荷時の自己署名証明書の状態にリバートします。 
 ---
-= 管理証明書をリセットします
+= vCenter向けSANtricityストレージプラグインでの管理証明書のリセット
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

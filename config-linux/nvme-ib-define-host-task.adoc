@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: define Linux host, express linux configuration, linux host, 
 summary: SANtricity System Manager を使用して、ストレージアレイにデータを送信するホストを定義します。ホストの定義は、ストレージアレイが接続されているホストを認識して、ボリュームへの I/O アクセスを許可するために必要な手順の 1 つです。 
 ---
-= ホストを定義します
+= SANtricity System Managerを使用したホストの作成- Linux（NVMe over InfiniBand）
 :allow-uri-read: 
 :experimental: 
 :icons: font

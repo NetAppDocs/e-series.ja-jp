@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Web Services, WSP, SANtricity API, 
 summary: Web Services API について説明します 
 ---
-= API の基礎
+= SANtricity WebサービスプロキシAPIの基本情報
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

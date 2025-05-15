@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800 maintenance, E2800 repair, replace E2800 components, replacing E2800 components, 
 summary: E2800 コンポーネントのメンテナンスを実施する。 
 ---
-= E2800 ハードウェアのメンテナンス
+= ハードウェアのメンテナンス- E2800
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

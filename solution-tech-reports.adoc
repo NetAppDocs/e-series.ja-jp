@@ -4,7 +4,7 @@ permalink: solution-tech-reports.html
 keywords: solution technical reports, e-series, hardware, santricity, os 
 summary: E シリーズのテクニカルレポート 
 ---
-= 解決策テクニカルレポートを参照できます
+= ソリューションのテクニカルレポートを参照（Eシリーズ）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-turn-on-locator-lights.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: ドライブを検索して、選択したプール、ボリュームグループ、またはSSDキャッシュを構成するすべてのドライブを物理的に特定できます。選択したプール、ボリュームグループ、またはSSDキャッシュ内の各ドライブのLEDインジケータが点灯します。 
 ---
-= ロケーターライトを点灯します
+= vCenter向けSANtricityストレージプラグインでドライブのLEDインジケータライトを点灯
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

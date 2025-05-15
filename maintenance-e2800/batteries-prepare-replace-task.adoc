@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800 battery fail, E2800 battery, E2800 battery replacement, replace E2800 battery, replacing E2800 battery, E2800, E-Series, eseries 
 summary: デュプレックスとシンプレックスのそれぞれに該当する手順に従って、 E2800 バッテリを交換する準備をします。 
 ---
-= E2800 バッテリを交換する準備をします
+= バッテリを交換する準備- E2800
 :allow-uri-read: 
 :experimental: 
 :icons: font

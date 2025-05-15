@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-resolve-untrusted-certificates.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 信頼されていない証明書を解決するには、ストレージアレイから自己署名証明書をインポートするか、信頼できる第三者機関から発行された認証局（CA）証明書をインポートします。 
 ---
-= 信頼されていない証明書を
+= vCenter向けSANtricityストレージプラグインでの信頼されていない証明書の解決
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

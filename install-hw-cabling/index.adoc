@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: cabling, cables, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C 
 summary: ホストをコントローラに直接接続するか、スイッチを使用します。 
 ---
-= ケーブル接続の概要
+= ストレージシステムのケーブル接続（Eシリーズ）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

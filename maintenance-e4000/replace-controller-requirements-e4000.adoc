@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= E4000 コントローラの交換に際しての要件
+= コントローラの交換要件- E4000
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

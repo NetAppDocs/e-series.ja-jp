@@ -4,7 +4,7 @@ permalink: rackmount-hardware.html
 keywords: rackmount, rack-mount, install in rack, rails 
 summary: ハードウェアをラックに設置します。 
 ---
-= ラックマウントハードウェア
+= ラックマウントハードウェア（Eシリーズ）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

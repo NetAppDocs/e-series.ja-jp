@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-create-a-volume-group.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: ホストからアクセス可能な1つ以上のボリュームのボリュームグループを作成できます。 
 ---
-= ボリュームグループを作成します
+= vCenter向けSANtricityストレージプラグインでのボリュームグループの作成
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, unlock drives, key management, Drive Security, 
 summary: E2800 および E5700 のコントローラをアップグレードする際にドライブセキュリティ機能が有効になっている場合は、ドライブのロックを手動で解除する必要があります。 
 ---
-= ドライブのロックを解除する
+= Eシリーズドライブのロック解除
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

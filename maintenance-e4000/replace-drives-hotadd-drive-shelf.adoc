@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E4000 replace drive, replacing E4000 drive, E4000 replace drive, replacing E4000 drive, E4000, E-Series, eseries 
 summary: E4000 のドライブを 12 ドライブまたは 24 ドライブシェルフと交換します。 
 ---
-= ドライブシェルフのホットアド
+= ドライブシェルフのホットアド- IOM12またはIOM12Bモジュール- E4000
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

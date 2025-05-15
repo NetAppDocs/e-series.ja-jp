@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800 replace 60-drive power canister, replacing E2800 power canister, E2800, E-Series, eseries 
 summary: 電源の冗長性を確保するために電源キャニスターを 2 つ搭載した 60 ドライブのコントローラシェルフまたはドライブシェルフを交換します。 
 ---
-= E2800 電源キャニスターの交換（ 60 ドライブ）
+= 電源キャニスターの交換- E2800（60ドライブ）
 :allow-uri-read: 
 :experimental: 
 :icons: font

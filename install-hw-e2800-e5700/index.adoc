@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800, E5700, installation 
 summary: E2800 または E5700 アレイを設置してセットアップします。 
 ---
-= E2800 および E5700 ストレージシステムをインストールしてセットアップする
+= 設置とセットアップ- E2800およびE5700ストレージシステム
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-import-certificates-for-arrays.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: ストレージアレイがvCenter向けストレージプラグインをホストするシステムで認証できるように、ストレージアレイの証明書をインポートします。 
 ---
-= アレイの証明書をインポートします
+= vCenter向けSANtricityストレージプラグインでのアレイの証明書のインポート
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

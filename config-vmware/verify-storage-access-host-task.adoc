@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: verify storage ESXi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: ボリュームを使用する前に、ホストがボリュームに対してデータの読み取りと書き込みを実行できることを確認します。 
 ---
-= ホストでストレージアクセスを確認
+= Eシリーズのホストでのストレージアクセスの確認- VMware
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

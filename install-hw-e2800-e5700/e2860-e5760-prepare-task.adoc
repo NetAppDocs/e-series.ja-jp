@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2860, E5760, DE460, installation 
 summary: E2860 、 E5760 、または DE460 をインストールするには、アカウントを作成してハードウェアを登録します。 
 ---
-= 設置を準備
+= 設置の準備- E2860、E5760、DE460
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

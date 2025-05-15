@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-change-controller-ownership-of-a-volume.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: ホストアプリケーションのI/Oが新しいパス経由で転送されるように、ボリュームの優先コントローラ所有権を変更する。 
 ---
-= ボリュームのコントローラ所有権を変更する
+= vCenter向けSANtricityストレージプラグインでボリュームのコントローラ所有権を変更する
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

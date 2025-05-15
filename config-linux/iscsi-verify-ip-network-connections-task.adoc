@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: インターネットプロトコル（ IP ）ネットワーク接続を確認するには、 ping テストを使用してホストとアレイが通信できることを確認します。 
 ---
-= IP ネットワーク接続を確認します
+= Eシリーズ- Linux（iSCSI）でのIPネットワーク接続の確認
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

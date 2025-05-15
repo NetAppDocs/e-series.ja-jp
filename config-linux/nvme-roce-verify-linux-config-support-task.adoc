@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 安定した稼働を確保するために、導入計画を作成し、 NetApp Interoperability Matrix Tool （ IMT ）を使用して構成全体がサポートされることを確認します。 
 ---
-= Linux のサポートを確認し、制限事項を確認します
+= Linux構成のサポート状況を確認し、Eシリーズの制限事項を確認（NVMe over RoCE）
 :allow-uri-read: 
 :experimental: 
 :icons: font

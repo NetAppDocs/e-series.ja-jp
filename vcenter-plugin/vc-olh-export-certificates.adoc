@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-export-certificates.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 証明書をエクスポートして詳細を表示します。 
 ---
-= 証明書をエクスポートします
+= vCenter向けSANtricityストレージプラグインでの証明書のエクスポート
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

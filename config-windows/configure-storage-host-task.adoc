@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: LUNs, configure LUNs, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: Windows の簡単な方法でホストのストレージを設定します。 
 ---
-= ホストでストレージを設定します
+= Eシリーズでのホストでのストレージの設定- Windows
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800, E5700, installation process overview 
 summary: E2800 および E5700 のインストールとセットアップのプロセスを確認します。 
 ---
-= 概要
+= ストレージシステムの設置の詳細- E2800およびE5700
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

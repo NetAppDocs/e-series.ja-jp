@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= 設置を準備
+= 設置の準備- E4012およびE4060
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: ボリュームを使用する前に、ホストがボリュームに対してデータの読み取りと書き込みを実行できることを確認します。 
 ---
-= ホストでストレージアクセスを確認
+= Eシリーズ- Linux（iSER over InfiniBand）のホストでのストレージアクセスの確認
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

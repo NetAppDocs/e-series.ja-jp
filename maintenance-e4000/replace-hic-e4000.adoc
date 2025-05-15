@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= E4000のHICの交換
+= ホストインターフェイスカード（HIC）を交換してください- E4000
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

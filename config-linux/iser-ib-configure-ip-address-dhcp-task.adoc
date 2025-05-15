@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: IP address, DHCP, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: Dynamic Host Configuration Protocol\ （ DHCP ；動的ホスト構成プロトコル）を使用して IP アドレスを提供する。 
 ---
-= DHCP を使用して IP アドレスを設定する
+= Eシリーズ- LinuxでのDHCPを使用したIPアドレスの設定（iSER over InfiniBand）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

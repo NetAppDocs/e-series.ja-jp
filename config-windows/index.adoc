@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: E シリーズシステムを使用する Windows ホストの簡単な設定を使用します。 
 ---
-= Windows の簡単な設定の概要
+= EシリーズでのWindowsの簡単な設定- Windows
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

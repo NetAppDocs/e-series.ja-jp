@@ -4,7 +4,7 @@ permalink: vcenter-plugin/san-spvc-ic-storage-array-discovery.html
 keywords: discover arrays vCenter plugin, discover storage resources Plugin for vCenter, resolve certificates vCenter plugin 
 summary: vCenter 向けプラグインインターフェイスを使用して、ネットワーク内のアレイの IP アドレスを検出します。 
 ---
-= プラグインでストレージアレイを検出します
+= vCenter向けSANtricityストレージプラグインでのストレージアレイの検出
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: partitions, file systems, express linux configuration, software configuration, linux host, 
 summary: Linux ホストで初めて検出された時点では、新しい LUN にはパーティションやファイルシステムは設定されていません。LUN を使用できるようにするにはフォーマットする必要があります。 
 ---
-= パーティションとファイルシステムを作成します
+= Eシリーズでのパーティションとファイルシステムの作成- Linux（FC）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

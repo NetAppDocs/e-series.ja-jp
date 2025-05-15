@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF300, EF600, EF300C, EF600C, replace DIMM 
 summary: EF300 または EF600 アレイ内の DIMM を交換します。 
 ---
-= EF300 または EF600 の DIMM を交換します
+= DIMMの交換- EF300またはEF600
 :allow-uri-read: 
 :experimental: 
 :icons: font

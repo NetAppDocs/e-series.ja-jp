@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-change-the-settings-for-a-host.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: ホストまたはホストクラスタの名前、ホストのオペレーティングシステムタイプ、および関連付けられているホストクラスタを変更できます。 
 ---
-= ホストの設定を変更します
+= vCenter向けSANtricityストレージプラグインでのホストの設定の変更
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

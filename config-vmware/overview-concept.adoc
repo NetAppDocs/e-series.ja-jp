@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: クイック方式を使用して E シリーズアレイと VMware ホストを設定する際の要件を確認します。 
 ---
-= 前提条件
+= 前提条件（EシリーズとVMware）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

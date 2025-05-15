@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Remote Storage Volumes, RTV, remote volumes, remote storage E-Series 
 summary: リモートストレージボリューム機能を使用して、リモートストレージデバイスからローカルの E シリーズボリュームにデータを直接インポートします。 
 ---
-= Remote Storage Volumes の概要
+= SANtricity Remote Storage Volumesの詳細
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

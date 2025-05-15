@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: uninstall Web Services Proxy, remove WSP, 
 summary: Web Services Proxy と Unified Manager を削除する際は、インストール時に使用した方法に関係なく、任意のモード（グラフィカル、コンソール、サイレント、または RPM ファイル）を使用できます。 
 ---
-= Web Services Proxy をアンインストールする
+= SANtricity Webサービスプロキシのアンインストール
 :allow-uri-read: 
 :experimental: 
 :icons: font

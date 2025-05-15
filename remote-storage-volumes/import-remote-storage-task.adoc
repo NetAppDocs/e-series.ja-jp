@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: import Remote Storage Volumes, RTV import, import remote volumes, remote storage E-Series 
 summary: リモートストレージデバイスのインポートは、 SANtricity システムマネージャのリモートストレージのインポートウィザードを使用して実行します。リモートストレージのインポート機能を使用すると、リモートストレージデバイスからローカルの E シリーズアレイにデータを移動できます。 
 ---
-= リモートストレージをインポートします
+= SANtricityリモートストレージボリューム用のリモートストレージのインポート
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

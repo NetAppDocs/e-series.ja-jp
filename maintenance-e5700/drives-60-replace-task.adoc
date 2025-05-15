@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E5700 60-drive, replace E5700 60-drive, failed E5700 60-drive 
 summary: E5700 60 ドライブシェルフのドライブを交換します。 
 ---
-= E5700 のドライブの交換（ 60 ドライブシェルフ）
+= ドライブの交換- E5700（60ドライブシェルフ）
 :allow-uri-read: 
 :experimental: 
 :icons: font

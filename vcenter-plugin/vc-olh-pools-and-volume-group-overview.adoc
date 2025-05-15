@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-pools-and-volume-group-overview.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: ストレージをプロビジョニングするには、ストレージアレイで使用するハードディスクドライブ（HDD）またはソリッドステートディスク（SSD）ドライブを含むプールまたはボリュームグループを作成します。 
 ---
-= プールとボリュームグループの概要
+= vCenter向けSANtricityストレージプラグインのストレージプールとボリュームグループについて
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

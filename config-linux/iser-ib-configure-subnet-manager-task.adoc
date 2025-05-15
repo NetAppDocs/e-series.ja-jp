@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: subnet manager, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: InfiniBand スイッチを使用してサブネットマネージャを実行する場合、負荷が高いときに原因でパスが予期せず失われる可能性があります。パスの損失を防ぐには、 opensm を使用して 1 つ以上のホストにサブネットマネージャを設定します。 
 ---
-= サブネットマネージャを設定します
+= EシリーズLinuxでのサブネットマネージャの設定（iSER over InfiniBand）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

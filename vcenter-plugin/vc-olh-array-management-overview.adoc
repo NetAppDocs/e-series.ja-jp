@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-array-management-overview.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: Add/Discover機能を使用して、組織のネットワークで管理するストレージアレイを検索および追加します。 
 ---
-= アレイ管理の概要
+= vCenter向けSANtricity Storage Pluginでのストレージアレイの管理について
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

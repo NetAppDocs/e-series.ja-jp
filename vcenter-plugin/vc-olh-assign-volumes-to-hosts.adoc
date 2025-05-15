@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-assign-volumes-to-hosts.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: I/O処理に使用できるように、ボリュームをホストまたはホストクラスタに割り当てる必要があります。 
 ---
-= ホストにボリュームを割り当てます
+= vCenter向けSANtricityストレージプラグインでのホストへのボリュームの割り当て
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

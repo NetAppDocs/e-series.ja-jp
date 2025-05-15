@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: FC switch, zoning, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: Fibre Channel スイッチ（ FC ）を設定すると、ホストがストレージアレイに接続できるようになり、パスの数が制限されます。スイッチのゾーニングはスイッチの管理インターフェイスで設定します。 
 ---
-= FC スイッチを設定
+= Eシリーズ- LinuxでのFCスイッチの設定（NVMe over FC）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

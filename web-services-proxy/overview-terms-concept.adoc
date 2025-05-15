@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Web Services terms, WSP concepts 
 summary: Web Services API について説明します 
 ---
-= 用語と概念
+= SANtricity Web Services Proxyの用語
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-certificates-overview.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 証明書管理では、証明書署名要求（CSR）の作成、証明書のインポート、および既存の証明書の管理を行うことができます。 
 ---
-= 証明書の概要
+= vCenter向けSANtricityストレージプラグインでの証明書の管理について
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

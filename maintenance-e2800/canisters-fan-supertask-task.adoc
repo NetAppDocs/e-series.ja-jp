@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800 replace 60-drive fan canister, replacing E2800 fan canister, E2800 replace fan, E2800, E-Series, eseries 
 summary: 60 ドライブのコントローラシェルフまたはドライブシェルフのファンキャニスターを交換します。 
 ---
-= E2800 ファンキャニスターの交換（ 60 ドライブ）
+= ファンキャニスターを交換- E2800（60ドライブ）
 :allow-uri-read: 
 :experimental: 
 :icons: font

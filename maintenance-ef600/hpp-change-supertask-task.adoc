@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: host protocol change, EF300, EF600, EF600C, EF300C 
 summary: EF300 または EF600 アレイのホストポートプロトコルを変更する。 
 ---
-= EF300 または EF600 のホストプロトコルを変更する
+= ホストプロトコルの変更- EF300およびEF600
 :allow-uri-read: 
 :experimental: 
 :icons: font

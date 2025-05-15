@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: 3040 40U cabinet specs, cabinet installation, drive tray installation, controller installation, shelf installation, E2800, E5700, EF300, EF600, 
 summary: キャビネット設置の概要と仕様を確認 
 ---
-= キャビネットの仕様
+= 3040 40Uキャビネット（Eシリーズ）のキャビネット仕様
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

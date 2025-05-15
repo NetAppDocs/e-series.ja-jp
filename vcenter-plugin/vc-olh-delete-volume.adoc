@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-delete-volume.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: プールまたはボリュームグループの空き容量を増やすには、1つ以上のボリュームを削除してください。 
 ---
-= ボリュームを削除します
+= vCenter向けSANtricityストレージプラグインでのボリュームの削除
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

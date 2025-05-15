@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: 'E2800 convert host port protocol, convert E2800 FC iSCSI, Fibre Channel protocol, iSCSI protocol, convert HPP, converting host port protocol, SFP+ (optical) host ports, E2800, E-Series, eseries' 
 summary: E2800 アレイでホストポートプロトコルの変換を実行します。 
 ---
-= E2800 のホストプロトコル変更後の処理
+= ホストプロトコル変更後の処理- E2800
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, software configuration, linux host, 
 summary: Linux 構成がサポートされていることを確認します。 
 ---
-= Linux 構成がサポートされていることを確認する
+= Eシリーズ（FC）でのLinux構成のサポートの確認
 :allow-uri-read: 
 :experimental: 
 :icons: font

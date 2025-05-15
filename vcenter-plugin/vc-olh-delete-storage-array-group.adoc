@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-delete-storage-array-group.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 不要になった1つ以上のストレージアレイグループを削除します。 
 ---
-= ストレージアレイグループを削除します
+= vCenter向けSANtricityストレージプラグインでストレージアレイグループを削除する
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

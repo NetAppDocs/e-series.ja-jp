@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: FC worksheet Linux, express linux configuration, software configuration, linux host, 
 summary: このワークシートを使用して、 FC ストレージの構成情報を記録します。 
 ---
-= FC の設定を記録します
+= Eシリーズ- LinuxでのFC構成の記録
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

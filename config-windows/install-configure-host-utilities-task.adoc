@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Windows Unified Host Utilities, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries, SMcli, SMdevices 
 summary: Windows の簡単な方法で Windows Unified Host Utilities をインストールする。 
 ---
-= Windows Unified Host Utilities をインストールして設定します
+= EシリーズでのLinux Unified Host Utilitiesのインストールと設定- Windows
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

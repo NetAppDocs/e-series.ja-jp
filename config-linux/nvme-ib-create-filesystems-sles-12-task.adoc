@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: file systems, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: RHEL 7 および SLES 12 の場合は、ネームスペースにファイルシステムを作成し、ファイルシステムをマウントします。 
 ---
-= ファイルシステムの作成（ RHEL 7 および SLES 12 ）
+= Eシリーズでのファイルシステムの作成- Linux RHEL 7およびSLES 12（NVMe over InfiniBand）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

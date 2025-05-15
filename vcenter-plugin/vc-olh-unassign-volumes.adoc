@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-unassign-volumes.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: ボリュームへのI/Oアクセスが不要になった場合は、ホストまたはホストクラスタへの割り当てを解除できます。 
 ---
-= ボリュームの割り当てを解除する
+= vCenter向けSANtricityストレージプラグインでのボリュームの割り当て解除
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-delete-host-or-host-cluster.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: ホストまたはホストクラスタを削除して、ボリュームがそのホストに関連付けられないようにすることができます。 
 ---
-= ホストまたはホストクラスタを削除
+= vCenter向けSANtricity Storage Pluginでホストまたはホストクラスタを削除する
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

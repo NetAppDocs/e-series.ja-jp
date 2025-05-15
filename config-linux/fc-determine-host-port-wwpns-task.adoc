@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: host wwpn, HBA utility, express linux configuration, software configuration, linux host, 
 summary: FC HBA ユーティリティをインストールして、各ホストポートの World Wide Port Name （ WWPN ；ワールドワイドポート名）を確認します。また、 HBA ユーティリティを使用して、サポートされる構成の NetApp Interoperability Matrix Tool の Notes 列に推奨される設定を変更することもできます。 
 ---
-= ホストの WWPN を特定し、推奨設定を適用します
+= Eシリーズ- Linux（FC）でのホストのWorld Wide Port Name（WWPN；ワールドワイドポート名）を特定する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

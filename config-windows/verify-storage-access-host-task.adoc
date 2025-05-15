@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: ホストが LUN に対してデータを読み取りおよび書き込みできることを確認します。 
 ---
-= ホストでストレージアクセスを確認
+= Eシリーズでのホストでのストレージアクセスの確認- Windows
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

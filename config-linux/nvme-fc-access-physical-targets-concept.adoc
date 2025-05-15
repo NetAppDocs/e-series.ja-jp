@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: NVMe volumes physical, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: Linux のバージョンに基づいて、デバイスターゲットに転送される I/O を設定します。 
 ---
-= 物理 NVMe デバイスターゲットの NVMe ボリュームにアクセスします
+= Eシリーズ- Linux（NVMe over FC）の物理NVMeデバイスターゲット用のNVMeボリュームにアクセスする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

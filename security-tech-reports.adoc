@@ -4,7 +4,7 @@ permalink: security-tech-reports.html
 keywords: security technical reports, e-series, hardware, santricity, os 
 summary: E シリーズのテクニカルレポート 
 ---
-= セキュリティに関するテクニカルレポートを参照できます
+= セキュリティテクニカルレポートを参照（Eシリーズ）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

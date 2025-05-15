@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Cloud Connector restore, 
 summary: SANtricity Cloud Connector アプリケーションの左側のナビゲーションパネルで、リストアオプションにアクセスできます。Restore （復元）オプションを選択すると、 Restore （復元）ページが表示されます。このページでは、イメージベースまたはファイルベースの復元ジョブを新規作成できます。 
 ---
-= リストアします
+= SANtricity Cloud Connectorでイメージベースまたはファイルベースの新しいリストアを作成
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

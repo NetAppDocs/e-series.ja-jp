@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800 replace drive drawer, replacing E2800 drive drawer, E2800 replace drive drawer, replacing E2800 drive drawer, E2800, E-Series, eseries 
 summary: E2860 コントローラシェルフまたは DE460C ドライブシェルフに搭載されたドライブドロワーを交換する。 
 ---
-= E2800 のドライブドロワーの交換（ 60 ドライブシェルフ）
+= ドライブドロワーの交換- E2800（60ドライブシェルフ）
 :allow-uri-read: 
 :experimental: 
 :icons: font

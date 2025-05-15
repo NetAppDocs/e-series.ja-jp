@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800 battery fail, E2800 battery, E2800 battery replacement, replace E2800 battery, replacing E2800 battery, E2800, E-Series, eseries 
 summary: コントローラキャニスターをコントローラシェルフから取り外したら、バッテリを取り外すことができます。 
 ---
-= 障害が発生した E2800 バッテリを取り外します
+= 障害が発生したバッテリの取り外し- E2800
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

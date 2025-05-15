@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF300, EF600, EF300C, EF600C installation 
 summary: EF300 および EF600 アレイを設置してセットアップします。 
 ---
-= EF300、EF600、EF300C、EF600Cストレージシステムを設置してセットアップ
+= 設置とセットアップ- EF300、EF600、EF300C、EF600C
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

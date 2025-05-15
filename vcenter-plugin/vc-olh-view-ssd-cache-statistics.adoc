@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-view-ssd-cache-statistics.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 読み取り、書き込み、キャッシュヒット、キャッシュ割り当て率、 キャッシュ使用率です。 
 ---
-= SSDキャッシュの統計を表示します
+= vCenter向けSANtricityストレージプラグインでのSSDキャッシュ統計の表示
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

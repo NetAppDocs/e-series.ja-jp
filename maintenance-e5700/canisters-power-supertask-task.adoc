@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E5700 power supply, repair E5700 power supply, replace E5700 power supply, failed E5700 power supply 
 summary: E5700 60 ドライブ電源装置を交換します。 
 ---
-= E5700 電源キャニスターの交換（ 60 ドライブ）
+= 電源キャニスターの交換- E5700（60ドライブ）
 :allow-uri-read: 
 :experimental: 
 :icons: font

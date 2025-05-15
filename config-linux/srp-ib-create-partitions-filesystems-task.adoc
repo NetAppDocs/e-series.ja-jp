@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: partitions, file systems, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: Linux ホストで初めて検出された時点では、新しい LUN にはパーティションやファイルシステムは設定されていません。LUN を使用できるようにするにはフォーマットする必要があります。必要に応じて、 LUN にファイルシステムを作成できます。 
 ---
-= パーティションとファイルシステムを作成します
+= Eシリーズ- Linuxでのパーティションとファイルシステムの作成（SRP over InfiniBand）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-enable-security-for-a-pool-or-volume-group.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: プールまたはボリュームグループのドライブセキュリティを有効にして、プールまたはボリュームグループに含まれているドライブ上のデータへの不正アクセスを防止できます。 
 ---
-= プールまたはボリュームグループのセキュリティを有効にします
+= vCenter向けSANtricityストレージプラグインでプールまたはボリュームグループのセキュリティを有効にする
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

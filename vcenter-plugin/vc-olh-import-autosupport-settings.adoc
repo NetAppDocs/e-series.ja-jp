@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-import-autosupport-settings.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: ストレージアレイから別のストレージアレイにAutoSupport 構成をインポートします。 
 ---
-= AutoSupport 設定をインポートします
+= vCenter向けSANtricityストレージプラグインでのAutoSupport設定のインポート
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

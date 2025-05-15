@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: polling Web Services Proxy, WSP statistics, poll WSP, 
 summary: 検出されたストレージシステム上のすべてのディスクおよびボリュームの統計に対して自動ポーリングを設定できます。 
 ---
-= Web Services Proxy 統計の自動ポーリングを管理します
+= SANtricity Web Services Proxy統計の自動ポーリングを管理します。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

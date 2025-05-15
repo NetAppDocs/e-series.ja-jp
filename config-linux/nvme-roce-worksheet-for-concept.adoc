@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: NVMe over RoCE worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: このワークシートを使用して、 NVMe over RoCE ストレージの構成情報を記録します。 
 ---
-= NVMe over RoCE の設定を記録します
+= Eシリーズ- LinuxでのNVMe over RoCE構成の記録
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

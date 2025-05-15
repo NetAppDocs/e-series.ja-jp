@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF300, EF300C, replace drive, drive failure 
 summary: EF300 アレイのドライブを交換します 
 ---
-= EF300 アレイのドライブを交換します
+= ドライブの交換- EF300
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

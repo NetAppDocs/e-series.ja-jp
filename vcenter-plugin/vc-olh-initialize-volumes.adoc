@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-initialize-volumes.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 特定の障害状況からリカバリするために、ボリュームを手動で初期化します。 
 ---
-= ボリュームを初期化
+= vCenter向けSANtricityストレージプラグインでのボリュームの初期化
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

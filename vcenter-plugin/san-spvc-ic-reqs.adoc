@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: upgrade vCenter 
 summary: vCenterプラグインのインストールとアップグレードの要件および考慮事項 
 ---
-= インストールとアップグレードの要件を確認
+= vCenter向けSANtricityストレージプラグインのインストールとアップグレードの要件
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

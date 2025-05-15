@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: E4012 、 DE212C 、または DE224C の各ストレージシステムを 2 ポストラックまたはネットアップシステムキャビネットにインストールする方法について説明します。 
 ---
-= ハードウェア（ E4012 ）を設置
+= ハードウェアの設置- E4012
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-change-configuration-settings-for-a-volume-grou
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 名前やRAIDレベルなど、ボリュームグループの設定を編集します。 
 ---
-= ボリュームグループの設定を変更します
+= vCenter向けSANtricityストレージプラグインでのボリュームグループの設定の変更
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF300, EF600, EF300C, EF600C, replace EF600 power supply, 
 summary: EF300 または EF600 の電源装置を交換する前に、要件と考慮事項を確認します。 
 ---
-= EF300 または EF600 電源装置の交換に際しての要件
+= 電源装置の交換要件- EF300またはEF600
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

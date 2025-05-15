@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: RoCE 環境で NVMe イニシエータを設定するには、 rdma-core および nvme-CLI パッケージをインストールして設定し、イニシエータの IP アドレスを設定し、ホストで NVMe-oF レイヤを設定します。 
 ---
-= ホスト側で NVMe over RoCE を設定します
+= Eシリーズ- LinuxのホストでのRoCE経由のNVMeイニシエータの設定
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

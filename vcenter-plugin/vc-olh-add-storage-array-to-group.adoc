@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-add-storage-array-to-group.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: ユーザが作成したグループにストレージアレイを追加します。 
 ---
-= ストレージアレイをグループに追加します
+= vCenter向けSANtricityストレージプラグインでのグループへのストレージアレイの追加
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries, SMcli, SMdevices 
 summary: SMdevices ツールは nvme-CLI パッケージに含まれており、ホストで現在認識されているボリュームを表示できます。このツールは nvme list コマンドの代わりです。 
 ---
-= ホストが認識できるボリュームを表示する
+= Eシリーズ- Linux（NVMe over FC）でホストが認識できるボリュームを表示する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

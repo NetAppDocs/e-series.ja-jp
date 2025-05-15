@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: installation, download, install proxy, 
 summary: Web Services Proxy のインストールとアップグレードの要件と考慮事項 
 ---
-= インストールとアップグレードの要件を確認
+= SANtricity Webサービスプロキシのインストール要件とアップグレード要件を確認します。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

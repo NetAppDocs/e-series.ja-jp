@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF300, EF600, replace DIMM, EF300C, EF600C 
 summary: EF300 または EF600 DIMM を交換する前に、要件と考慮事項を確認します。 
 ---
-= EF300 または EF600 DIMM の交換に際しての要件
+= DIMMの交換要件- EF300およびEF600
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

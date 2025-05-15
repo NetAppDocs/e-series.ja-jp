@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-import-settings-overview.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 設定のインポート機能は、単一のストレージアレイ（ソース）の設定を複数のアレイ（ターゲット）にレプリケートするためのバッチ処理です。 
 ---
-= 設定のインポートの概要
+= vCenter向けSANtricityストレージプラグインの設定のインポート機能について
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

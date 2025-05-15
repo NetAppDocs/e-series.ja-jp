@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, assign volume, assign namespace, 
 summary: ボリュームを I/O 処理に使用できるように、ホストまたはホストクラスタにボリューム（ネームスペース）を割り当てる必要があります。これにより、ストレージアレイの 1 つ以上のネームスペースへのアクセスがホストまたはホストクラスタに許可されます。 
 ---
-= ボリュームを割り当てます
+= SANtricity System Managerを使用したボリュームの割り当て- Linux（NVMe over InfiniBand）
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-add-capacity-to-a-pool-or-volume-group.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: ドライブを追加して、既存のプールまたはボリュームグループの空き容量を拡張します。 
 ---
-= プールまたはボリュームグループに容量を追加します
+= vCenter向けSANtricityストレージプラグインでプールまたはボリュームグループに容量を追加する
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

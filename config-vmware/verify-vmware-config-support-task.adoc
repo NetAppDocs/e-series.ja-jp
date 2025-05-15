@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: VMware 構成がサポートされていることを確認します。 
 ---
-= VMware 構成がサポートされていることを確認する
+= EシリーズでのVMware構成のサポートを確認する
 :allow-uri-read: 
 :experimental: 
 :icons: font

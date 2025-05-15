@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Remote Storage Volumes, RTV, remote volumes, remote storage E-Series 
 summary: 各リモートストレージのインポートのステータスは、 SANtricity システムマネージャのリモートストレージ画面の結果リストセクションに表示されます。 
 ---
-= インポートの進捗を管理します
+= SANtricityリモートストレージボリュームのインポートの進捗状況を管理します。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

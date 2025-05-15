@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: installation, download, install proxy, 
 summary: インストールを行うには、ファイルをダウンロードし、 Linux サーバまたは Windows サーバにプロキシパッケージをインストールします。 
 ---
-= Web Services Proxyファイルをインストールまたはアップグレードします
+= SANtricity Webサービスプロキシファイルのインストールまたはアップグレード
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

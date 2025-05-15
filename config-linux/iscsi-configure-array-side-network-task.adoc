@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: configure iSCSI networking, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: アレイ側で iSCSI ネットワークを設定します。 
 ---
-= アレイ側のネットワークを設定
+= Eシリーズ- Linuxでのアレイ側のネットワークの設定（iSCSI）
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800 replace canister, replacing E2800 canister, E2800 replace power supply, replacing E2800 power supply, E2800 replace fan, replacing E2800 fan, E2800, E-Series, eseries 
 summary: E2800 キャニスターのタイプと要件を確認する。 
 ---
-= E2800 キャニスターの交換に際しての要件
+= キャニスター- E2800の交換要件
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

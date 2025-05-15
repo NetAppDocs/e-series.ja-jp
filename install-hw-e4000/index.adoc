@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: E4000ストレージシステムを設置してセットアップするには、次の手順に従います。 
 ---
-= E4000システムのインストールとセットアップ
+= インストールとセットアップ- E4000ストレージシステム
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

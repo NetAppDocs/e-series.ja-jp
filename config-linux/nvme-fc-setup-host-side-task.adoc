@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: NVMe over Fibre Channel, host side, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: Fibre Channel 環境で NVMe イニシエータを設定するには、 nvme-CLI パッケージをインストールして設定し、ホストで NVMe/FC イニシエータを有効にします。 
 ---
-= ホスト側で NVMe over Fibre Channel を設定します
+= Eシリーズ- LinuxのホストでのNVMe over FCイニシエータの設定
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

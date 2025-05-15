@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: log in API, log in Unified Manager 
 summary: Web Services API と Unified Manager にアクセスしてログインします。 
 ---
-= API と Unified Manager にログインします
+= SANtricity WebサービスプロキシAPIとUnified Managerにログインします。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

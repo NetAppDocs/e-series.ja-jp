@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: cabling, cables, host cabling, direct-attached topology, switch topology, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C, 
 summary: ホストはコントローラに直接ケーブル接続することも、スイッチを使用することもできます。 
 ---
-= ホストのケーブル接続
+= ホストをコントローラまたはスイッチに接続するためのケーブル接続（Eシリーズ）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

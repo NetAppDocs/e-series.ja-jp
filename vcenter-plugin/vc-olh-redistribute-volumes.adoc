@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-redistribute-volumes.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: ボリュームの再配置：ボリュームを優先コントローラ所有者に戻す 
 ---
-= ボリュームを再配置する
+= vCenter向けSANtricityストレージプラグインでのボリュームの再配置
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

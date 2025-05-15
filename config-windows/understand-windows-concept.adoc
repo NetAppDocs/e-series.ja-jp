@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: Windows の簡単な設定ワークフローを使用します。 
 ---
-= Windows のワークフローを理解する
+= EシリーズのWindowsワークフローを理解する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

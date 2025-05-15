@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: convert host protocol, EF600, EF300, EF600C, EF300C 
 summary: EF300 または EF600 ホストプロトコルを変更する前に、要件と考慮事項を確認してください。 
 ---
-= EF300 または EF600 ホストプロトコル変更の要件
+= ホストプロトコルの変換要件- EF300またはEF600
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

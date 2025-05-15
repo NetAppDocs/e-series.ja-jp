@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-array-groups-overview.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 一連のストレージアレイをグループ化して物理インフラと仮想インフラを管理します。 
 ---
-= アレイグループの概要
+= vCenter向けSANtricityストレージプラグインでのアレイグループの管理について
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

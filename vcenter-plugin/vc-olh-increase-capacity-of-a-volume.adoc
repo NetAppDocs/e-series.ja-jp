@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-increase-capacity-of-a-volume.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: ボリュームのサイズを変更してレポート容量を拡張します。 
 ---
-= ボリュームの容量を拡張します
+= vCenter向けSANtricityストレージプラグインでのボリュームの容量の拡張
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

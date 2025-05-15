@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Web Services, WSP, roles WSP, user access WSP 
 summary: セキュリティ対策として、 Web Services API と Unified Manager へのユーザアクセスを管理することができます。 
 ---
-= Web Services Proxy でユーザアクセスを管理します
+= SANtricity Webサービスプロキシでのユーザアクセスの管理
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

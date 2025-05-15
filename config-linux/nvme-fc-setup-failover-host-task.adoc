@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: failover, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: ホストでフェイルオーバーを実行するように設定します。 
 ---
-= ホストでフェイルオーバーを設定します
+= EシリーズLinuxのホストでのフェイルオーバーの設定（NVMe over FC）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: configure subnet manager Linux, path loss, subnet manager, opensm, express linux configuration, linux host, 
 summary: InfiniBand スイッチを使用してサブネットマネージャを実行する場合、負荷が高いときに原因でパスが予期せず失われる可能性があります。パスの損失を防ぐには、 opensm を使用して 1 つ以上のホストにサブネットマネージャを設定します。 
 ---
-= サブネットマネージャを設定します
+= Eシリーズでのサブネットマネージャの設定- Linux（NVMe over InfiniBand）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

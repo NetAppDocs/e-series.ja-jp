@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Web Services Proxy, WSP, 
 summary: SANtricity ® Web Services Proxy 、 Web Services API 、 REST API の概要 
 ---
-= SANtricity Web Services Proxy の概要
+= SANtricity Web Services Proxyの詳細
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

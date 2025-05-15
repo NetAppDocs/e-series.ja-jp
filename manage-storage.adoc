@@ -4,7 +4,7 @@ permalink: manage-storage.html
 keywords: online help, System Manager, Unified Manager 
 summary: ストレージを管理します 
 ---
-= ストレージを管理します
+= Eシリーズストレージシステムを管理
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: access System Manager Linux, express linux configuration, software configuration, linux host, 
 summary: SANtricity System Manager のセットアップウィザードを使用して、ストレージアレイを設定します。 
 ---
-= SANtricity System Manager にアクセスし、セットアップウィザードを使用します
+= SANtricity System Managerを使用したストレージの設定- Linux（FC）
 :allow-uri-read: 
 :experimental: 
 :icons: font

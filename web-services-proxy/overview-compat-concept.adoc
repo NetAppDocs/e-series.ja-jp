@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Web Services, WSP, SANtricity API, 
 summary: WSP の互換性と制限事項 
 ---
-= 互換性と制限事項
+= SANtricity Webサービスプロキシの互換性と制限事項
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

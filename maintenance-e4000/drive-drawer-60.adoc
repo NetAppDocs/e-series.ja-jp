@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E4000 replace drive drawer, replacing E4000 drive drawer, E4000 replace drive drawer, replacing E4000 drive drawer, E4000, E-Series, eseries 
 summary: E2860 コントローラシェルフまたは DE460C ドライブシェルフに搭載されたドライブドロワーを交換する。 
 ---
-= E4000 のドライブドロワーの交換（ 60 ドライブシェルフ）
+= ドライブドロワーの交換- E4000（60ドライブシェルフ）
 :allow-uri-read: 
 :experimental: 
 :icons: font

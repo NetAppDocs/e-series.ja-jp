@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: multipath software for Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: マルチパスソフトウェアを設定します。これにより、物理パスの 1 つが中断された場合にストレージアレイへのパスが冗長化されます。 
 ---
-= マルチパスソフトウェアを設定します
+= Eシリーズ- Linuxでのマルチパスソフトウェアの設定（iSER over InfiniBand）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-activate-staged-os-software.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: ソフトウェアファイルをより便利なタイミングでアクティブ化することもできます。 
 ---
-= ステージング済みOSソフトウェアをアクティブ化します
+= vCenter向けSANtricityストレージプラグインでのステージング済みOSソフトウェアのアクティブ化
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: multipath software for Windows, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: Windows 用のマルチパスソフトウェアを含む DSM パッケージをインストールします。 
 ---
-= マルチパスソフトウェアを設定します
+= Eシリーズでのマルチパスソフトウェアの設定- Windows
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

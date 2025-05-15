@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: replace controller, replace canister, EF300, EF600, EF300C, EF600C 
 summary: EF300 または EF600 コントローラシェルフの単一のコントローラを交換する。 
 ---
-= EF300 または EF600 コントローラを交換します
+= コントローラの交換- EF300とEF600
 :allow-uri-read: 
 :experimental: 
 :icons: font

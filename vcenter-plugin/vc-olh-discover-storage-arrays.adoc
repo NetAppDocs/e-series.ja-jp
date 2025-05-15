@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-discover-storage-arrays.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: vCenter向けストレージプラグインでストレージリソースを表示および管理するには、ネットワーク内のアレイのIPアドレスを検出する必要があります。 
 ---
-= ストレージアレイを検出
+= vCenter向けSANtricityストレージプラグインでのストレージアレイの検出
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

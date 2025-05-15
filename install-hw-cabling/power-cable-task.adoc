@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: cabling, cables, power cable, power cabling, power supply cabling, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C 
 summary: 各コンポーネントの電源装置を別々の電源回路に接続します。 
 ---
-= 電源のケーブル接続
+= ストレージシステムの電源ケーブル接続（Eシリーズ）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

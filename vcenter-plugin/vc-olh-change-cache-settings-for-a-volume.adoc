@@ -4,7 +4,7 @@ summary: 読み取りキャッシュと書き込みキャッシュの設定を�
 permalink: vcenter-plugin/vc-olh-change-cache-settings-for-a-volume.html 
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 ---
-= ボリュームのキャッシュ設定を変更します
+= vCenter向けSANtricityストレージプラグインでのボリュームのキャッシュ設定の変更
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

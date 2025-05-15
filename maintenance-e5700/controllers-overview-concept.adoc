@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E5700 controller, repair E5700 controller, replace E5700 controller, failed E5700 controller 
 summary: E5700 コントローラのタイプと要件を確認します。 
 ---
-= E5700 コントローラの交換に際しての要件
+= コントローラの交換要件- E5700
 :allow-uri-read: 
 :experimental: 
 :icons: font

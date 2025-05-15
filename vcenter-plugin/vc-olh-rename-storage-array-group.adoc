@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-rename-storage-array-group.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 現在の名前が適切でない場合はストレージアレイグループの名前を変更します。 
 ---
-= ストレージアレイグループの名前を変更します
+= SANtricity vCenter向けストレージプラグインでストレージアレイグループの名前を変更する
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: コントローラをネットワークに接続する方法と、ストレージシステムのセットアップと設定を実行する方法について説明します。 
 ---
-= ストレージ・システムのセットアップの完了（E4060）
+= ストレージシステムのセットアップの完了- E4060
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

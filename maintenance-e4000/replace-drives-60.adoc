@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E4000 replace drive, replacing E4000 drive, E4000 replace drive, replacing E4000 drive, E4000 
 summary: E2800 のドライブを 60 ドライブシェルフと交換する。 
 ---
-= E4000 のドライブの交換（ 60 ドライブシェルフ）
+= ドライブの交換- E4000（60ドライブシェルフ）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

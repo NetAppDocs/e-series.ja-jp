@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF300, EF600, EF600C, EF300C, replace drive, 
 summary: EF300 または EF600 のドライブを交換する前に、要件と考慮事項を確認します。 
 ---
-= EF300 または EF600 ドライブの交換に際しての要件
+= ドライブの交換要件- EF300またはEF600
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

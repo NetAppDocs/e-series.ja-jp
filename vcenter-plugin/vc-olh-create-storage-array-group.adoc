@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-create-storage-array-group.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: ストレージグループでは、ボリュームを構成するストレージをどのドライブから提供するかを定義します。 
 ---
-= ストレージアレイグループを作成します
+= vCenter向けSANtricityストレージプラグインでストレージアレイグループを作成
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

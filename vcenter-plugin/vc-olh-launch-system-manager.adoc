@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-launch-system-manager.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 単一のアレイを管理するには、Launchオプションを使用して、新しいブラウザウィンドウでSystem Managerを開きます。 
 ---
-= System Manager を起動します
+= vCenter向けSANtricityストレージプラグインからSystem Managerを起動
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

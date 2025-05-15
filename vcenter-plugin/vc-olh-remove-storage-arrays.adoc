@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-remove-storage-arrays.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: vCenter向けストレージプラグインでストレージアレイを管理する必要がなくなった場合は、削除してください。 
 ---
-= ストレージアレイを削除します
+= vCenter向けSANtricity Storage Pluginでのストレージアレイの削除
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-check-volume-redundancy.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: プールまたはボリュームグループ内のボリュームの冗長性をチェックして、そのボリューム上のデータに整合性があるかどうかを確認できます。冗長性データは、プールまたはボリュームグループ内のいずれかのドライブで障害が発生した場合に、交換用ドライブに迅速に情報を再構築するために使用されます。 
 ---
-= ボリュームの冗長性をチェックします
+= vCenter向けSANtricityストレージプラグインでのボリュームの冗長性チェック
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

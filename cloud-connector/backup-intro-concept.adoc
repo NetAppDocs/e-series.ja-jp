@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Cloud Connector backup 
 summary: SANtricity Cloud Connector アプリケーションの左側のナビゲーションパネルで、バックアップオプションにアクセスできます。Backups オプションを使用すると、 Backups ページが表示され、イメージベースまたはファイルベースのバックアップジョブを新たに作成することができます。 
 ---
-= バックアップ
+= SANtricity Cloud Connectorを使用してEシリーズボリュームのバックアップを作成、管理
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

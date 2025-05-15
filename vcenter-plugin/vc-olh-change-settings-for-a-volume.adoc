@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-change-settings-for-a-volume.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: ボリュームの名前、ホストの割り当て、セグメントサイズ、変更の優先順位、キャッシュ、 など。 
 ---
-= ボリュームの設定を変更します
+= vCenter向けSANtricityストレージプラグインでのボリュームの設定の変更
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

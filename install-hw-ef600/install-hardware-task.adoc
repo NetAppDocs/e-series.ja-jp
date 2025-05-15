@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF300, EF600, EF300C, EF600C installation, 
 summary: EF300 または EF600 を 2 ポストラックまたはネットアップシステムキャビネットに設置します。 
 ---
-= ハードウェアを設置
+= ハードウェアの設置- EF300、EF600、EF300C、EF600C
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

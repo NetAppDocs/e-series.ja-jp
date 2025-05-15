@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: SAS プロトコルを使用する場合は、 HBA ユーティリティを使用して SAS アドレスを確認し、 HBA BIOS を使用して適切な設定を行います。 
 ---
-= SAS ホスト識別子の特定 - Linux
+= Eシリーズ- Linux（SAS）でのSASホスト識別子の特定
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: iSCSI ネットワークを設定 
 ---
-= ネットワークを設定します
+= Eシリーズ- Linuxでのネットワークの設定（iSCSI）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

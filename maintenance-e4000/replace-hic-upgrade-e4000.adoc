@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= E4000でのHICのアップグレード
+= ホストインターフェイスカード（HIC）をアップグレード- E4000
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

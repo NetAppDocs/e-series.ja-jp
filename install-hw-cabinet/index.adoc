@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: 3040 40U cabinet, cabinet installation, drive tray installation, controller installation, shelf installation, E2800, E5700, EF300, EF600, 
 summary: E シリーズ 3040 40U キャビネットにドライブトレイを取り付ける方法の概要 
 ---
-= 3040 40U キャビネットにトレイを取り付けます
+= 3040 40Uキャビネットへのトレイの設置（Eシリーズ）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

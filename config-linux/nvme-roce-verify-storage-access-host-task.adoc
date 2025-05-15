@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: ネームスペースを使用する前に、ホストがネームスペースに対してデータの読み取りと書き込みを実行できることを確認します。 
 ---
-= ホストでストレージアクセスを確認
+= Eシリーズ- Linuxでのホストでのストレージアクセスの確認（NVMe over RoCE）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

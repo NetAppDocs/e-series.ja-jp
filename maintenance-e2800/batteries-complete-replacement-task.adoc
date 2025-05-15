@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800 battery fail, E2800 battery, E2800 battery replacement, replace E2800 battery, replacing E2800 battery, E2800, E-Series, eseries 
 summary: バッテリの交換を完了します。 
 ---
-= E2800 バッテリの交換後の処理
+= バッテリ交換後の処理- E2800
 :allow-uri-read: 
 :experimental: 
 :icons: font

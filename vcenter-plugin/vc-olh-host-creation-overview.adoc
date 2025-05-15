@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-host-creation-overview.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: vCenter向けストレージプラグインを使用してストレージを管理するには、ネットワーク内の各ホストを検出または定義する必要があります。 
 ---
-= ホスト作成の概要
+= vCenter向けSANtricityストレージプラグインでのホスト作成について
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

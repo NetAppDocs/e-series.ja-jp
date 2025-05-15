@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF300, EF600, installation, host cabling, direct-attach topology, fabric topology, System Manager connection, management host connection, port configuration, configuring ports, DHCP, static IP 
 summary: コントローラをネットワークにケーブル接続して、ストレージシステムのセットアップと設定を行います。 
 ---
-= ストレージシステムのセットアップと設定を完了
+= ストレージシステムのセットアップと設定の完了- EF300、EF600、EF300C、EF600C
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

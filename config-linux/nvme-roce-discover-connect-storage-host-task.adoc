@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: discover storage, host, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: SANtricity System Manager で各ホストを定義する前に、ホストからターゲットコントローラポートを検出し、 NVMe 接続を確立する必要があります。 
 ---
-= ホストからストレージを検出して接続します
+= EシリーズLinuxのホストからストレージを検出して接続（NVMe over RoCE）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= E4000のDIMMの交換
+= DIMMを交換してください- E4000
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

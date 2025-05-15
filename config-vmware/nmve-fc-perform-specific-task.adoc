@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Nvme over FC, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: NVMe over Fibre Channel プロトコルを使用する場合は、スイッチを設定し、ホストポート識別子を特定します。 
 ---
-= NVMe over FC 固有のタスクを実行する
+= Eシリーズ- VMwareでのNVMe over FC固有のタスクの実行
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

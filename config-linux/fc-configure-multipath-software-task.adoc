@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: multipath software for Linux, express linux configuration, software configuration, linux host, 
 summary: マルチパスソフトウェアを設定します。これにより、物理パスの 1 つが中断された場合にストレージアレイへのパスが冗長化されます。 
 ---
-= マルチパスソフトウェアを設定します
+= Eシリーズでのマルチパスソフトウェアの設定- Linux（FC）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

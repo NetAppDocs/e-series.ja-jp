@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-delete-pool-or-volume-group.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: プールまたはボリュームグループを削除して未割り当て容量を増やし、アプリケーションのストレージニーズを満たすように再構成することができます 
 ---
-= プールまたはボリュームグループを削除します
+= vCenter向けSANtricityストレージプラグインでプールまたはボリュームグループを削除する
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

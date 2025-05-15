@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: upgrading E2800 HIC, upgrade E2800 HIC, upgrade host interface card, E2800, E-Series, eseries 
 summary: E2800 アレイのホストインターフェイスカード（ HIC ）をアップグレードします。 
 ---
-= E2800 ホストインターフェイスカード（ HIC ）のアップグレード
+= ホストインターフェイスカード（HIC）をアップグレード- E2800
 :allow-uri-read: 
 :experimental: 
 :icons: font

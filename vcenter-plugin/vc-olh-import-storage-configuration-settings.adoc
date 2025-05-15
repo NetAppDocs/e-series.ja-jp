@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-import-storage-configuration-settings.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: ストレージアレイから別のストレージアレイにストレージ構成をインポートします。 
 ---
-= ストレージ構成の設定をインポートします
+= vCenter向けSANtricityストレージプラグインでのストレージ構成設定のインポート
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Web Services, WSP, SANtricity API, 
 summary: Web Services API について説明します 
 ---
-= Web Services と Unified Manager の概要
+= SANtricity Web ServicesとUnified Managerの詳細
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

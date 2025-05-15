@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-create-host-cluster.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 複数のホストが同じボリュームへのI/Oアクセスを必要とする場合は、ホストクラスタを作成できます。 
 ---
-= ホストクラスタを作成する
+= vCenter向けSANtricityストレージプラグインでのホストクラスタの作成
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 
