@@ -4557,7 +4557,6 @@
   <block id="69388a3aa77fde6c6db723db24c07886" category="paragraph">RPM パッケージ管理システムと互換性がある Linux システムでは、オプションの RPM ファイルを使用して Web Services Proxy をインストールできます。</block>
   <block id="44fdd30cd930ac3164eb732ccfc71839" category="list-text">プロキシと Unified Manager をインストールするサーバに RPM ファイルをダウンロードします。</block>
   <block id="6dcd1ebf4390170868ab9bcdfd967581" category="list-text">次のコマンドを入力します。</block>
-  <block id="832e1d3c786f0b6f9f452d072f2d4b27" category="paragraph">「 rpm -u SANtricity_webservices-nn.nn.nnnn -n x86_64 」 rpm を指定します</block>
   <block id="e90cc19871614d9efbaffbaffd7e2d47" category="admonition">上記コマンドの「 nn.nn.nn.nnnn 」はバージョン番号です。</block>
   <block id="52877d65c00b08b2ad200ece4bbb448f" category="summary">セキュリティ対策として、 Web Services API と Unified Manager へのユーザアクセスを管理することができます。</block>
   <block id="0cac4d311d45b98b5398187d39484757" category="section-title">アクセス管理の概要</block>
@@ -6269,10 +6268,7 @@
   <block id="39a9002fa4dcf0afc27b1355c1567969" category="cell">ロールベースアクセス制御（ RBAC ）、 Lightweight Directory Access Protocol （ LDAP ）、 Security Assertion Markup Language （ SAML ）などのアクセス管理の設定方法について説明します。</block>
   <block id="82e361f392a68c54a4e7d72ceec97843" category="sidebar">ネットワーク接続の設定 - SRPoverInfiniBand での必要な SRP の実行中です</block>
   <block id="b71e2b4d6a1e1e3ddb1014777fc5a53c" category="doc">SANtricity OS の新機能</block>
-  <block id="e9983c2bf51c9aa8f38dce44157b9a2a" category="paragraph">この 手順 環境 IOM12 および IOM12B ドライブシェルフを使用します。</block>
-  <block id="2af3ffb0914986412fbce97033362ada" category="admonition">この手順 は、シェルフの IOM のホットスワップや交換に使用されます。つまり、 IOM12 モジュールを別の IOM12 モジュールに交換するか、 IOM12B モジュールを別の IOM12B モジュールに交換しなければなりません。（シェルフに IOM12 モジュールを 2 台搭載することも、 IOM12B モジュールを 2 つ使用することもできます）</block>
   <block id="acd1dcb9f4c3f9c9b28f9c1a4d234d1b" category="admonition">電源装置の交換用手順 は IOM の交換に適用されます。IOM を交換するには、電源装置交換用手順 を実行します。</block>
-  <block id="ebc31fad1cf84954196a7706294df684" category="paragraph">この 手順 環境 DCM および DCM2 ドライブ・シェルフ</block>
   <block id="dbf42093a0041931999943f18d3f0986" category="paragraph">E2800 、 E2800B 、 EF280 、 E5700 、 EF5700B の環境 のケーブル接続については、次の情報を参照してください。 または EF570 コントローラシェルフから DE212C 、 DE224C 、 DE460 の各ドライブシェルフに接続できます。</block>
   <block id="f2c505979298b93cfd8e71dc78ddd1b0" category="admonition">異なる電圧タイプの PSU を混在させないでください。いつものように同じように置換します。</block>
   <block id="b7b26f8fd8107cf68f2bc572008d19a7" category="admonition">交換用コントローラには 16GB のメモリがあらかじめ取り付けられています。コントローラで 64GB の構成が必要な場合は、交換用コントローラを取り付ける前に、付属のアップグレードキットを使用してください。</block>
@@ -6362,7 +6358,6 @@
   <block id="c0e8c7e46cae3f0c9b9c738bc76c9ea8" category="paragraph">レポート容量の拡張ダイアログボックスが表示されます。このダイアログボックスには、ボリュームの現在のレポート容量と、ボリュームの関連付けられたプールまたはボリュームグループ内で使用可能な空き容量が表示されます。</block>
   <block id="5c82f6a54733344cb7eec2765ac13712" category="paragraph">選択に基づいて、ボリュームの容量が拡張されます。この処理には時間がかかることがあり、システムのパフォーマンスに影響する可能性があります。</block>
   <block id="4068dcbd83689810385f5bd61994998b" category="paragraph">ボリュームの容量を拡張したら、それに応じてファイルシステムのサイズを手動で拡張する必要があります。方法は、使用しているファイルシステムによって異なります。詳細については、ホストオペレーティングシステムのドキュメントを参照してください。</block>
-  <block id="27ff4e5987307be95b847357578a7d2c" category="summary">冗長性チェックでは、プールまたはボリュームグループ内のボリューム上のデータに整合性があるかどうかが判別されます。</block>
   <block id="dbdb64210af00cba98b2ae65e68fc433" category="doc">冗長性チェックとは何ですか？</block>
   <block id="527686381caf5b91f8b2570f0b90f7e1" category="paragraph">冗長性チェックでは、プールまたはボリュームグループ内のボリューム上のデータに整合性があるかどうかが判別されます。冗長性データは、プールまたはボリュームグループ内のいずれかのドライブで障害が発生した場合に、交換用ドライブに迅速に情報を再構築するために使用されます。</block>
   <block id="ceb78409571f58fc00f9f8b5b24b8937" category="paragraph">このチェックは、一度に1つのプールまたはボリュームグループでのみ実行できます。ボリュームの冗長性チェックでは、次の処理が実行されます。</block>
@@ -6648,7 +6643,6 @@
   <block id="6f77c9c07c72d4718892ec422f4427bc" category="doc">ホストポートをホストに一致させるにはどうすればよいですか？</block>
   <block id="e3603ec100f890e2ef8684fc0f32d90c" category="paragraph">この情報を確認したら、Create Hostダイアログのリストから、ストレージアレイにログインしているホストポート識別子を選択します。</block>
   <block id="2bba3e0602cd7a130a9a940ee66aefad" category="admonition">作成するホストに適したホストポート識別子を選択してください。誤ったホストポート識別子を関連付けると、別のホストからこのデータへの原因 の意図しないアクセスが発生する可能性があります。</block>
-  <block id="490911223ced9bd35d325330312a99b5" category="summary">パスフレーズは、ローカルの管理クライアントに格納されているセキュリティキーファイルの暗号化と復号化に使用されます。</block>
   <block id="7e2fd80391cbb19f61be6028669d1143" category="doc">パスフレーズを定義する必要があるのはなぜですか？</block>
   <block id="2f42cd01026066a070aa52e53e4d963f" category="paragraph">パスフレーズは、ローカルの管理クライアントに格納されているセキュリティキーファイルの暗号化と復号化に使用されます。パスフレーズがないとセキュリティキーを復号化できず、セキュリティ有効ドライブが別のストレージアレイに再設置された場合、データのロック解除にセキュリティキーを使用できません。</block>
   <block id="2da87ae0f783e9cc7ac8f36a7af697e4" category="summary">デフォルトクラスタはシステム定義のエンティティです。ストレージアレイにログインしたホストポート識別子が関連付けられていない場合、そのポートはデフォルトクラスタに割り当てられているボリュームにアクセスできます。</block>
@@ -6844,8 +6838,6 @@
   <block id="961886d373243f3f3f779b008441b5d2" category="cell">ATTO Technology、Inc.のマルチパスドライバを使用するMac OSバージョンをサポートします。</block>
   <block id="d93a7355c7e5ae529cbbd1c7386ef236" category="cell">Windows（ATTO）</block>
   <block id="1cef5a0ae504a39c3c685c81bb227bcc" category="cell">ATTO Technology、Inc.のマルチパスドライバを使用するWindowsオペレーティングシステムをサポートします。</block>
-  <block id="fae9863ad38cf7cb4abba55837a6958e" category="cell">FlexArray （ALUA）</block>
-  <block id="80a4b6a6aea0733712df8ece7feeb565" category="cell">マルチパスにALUAを使用するNetApp FlexArray システムをサポートします。</block>
   <block id="448462a9364fed0f780b5871c1332348" category="cell">IBM SVCの場合</block>
   <block id="ba5b374a9253be7b2e7ff414763a91ee" category="cell">IBM SAN Volume Controller構成をサポートします。</block>
   <block id="fb83a625e5852c1ba47fe358f2d50ffc" category="cell">工場出荷時のデフォルト</block>
@@ -6854,7 +6846,6 @@
   <block id="02677c9d7a9295a0b7ff23da80ed17c2" category="cell">Device Mapper Multipathのフェイルオーバー解決策 と3.9以前のカーネルを使用するLinuxオペレーティングシステムをサポートします。</block>
   <block id="e9745a54dc083bc4c6e7adb0ba4a88bf" category="cell">Windowsクラスタ（廃止）</block>
   <block id="ee99f98925e229fb230a1fca830d5dd4" category="cell">ホストオペレーティングシステムのタイプがこの値に設定されている場合は、代わりにWindows（クラスタまたは非クラスタ）の設定を使用します。</block>
-  <block id="e28ca758b5b6384ff2daa36accced63c" category="summary">ボリュームの作成中に、ワークロードの使用状況に関する情報を入力するように求められます。</block>
   <block id="b5a3b95a88ff3f89275ca18c4736d4b8" category="doc">選択したワークロードはボリュームの作成にどのように影響しますか？</block>
   <block id="0c6710fd70e8f6dfb7dc7c5ef665fd39" category="paragraph">ボリュームの作成中に、ワークロードの使用状況に関する情報を入力するように求められます。この情報に基づいて最適なボリューム構成が作成されるため、必要に応じて編集することができます。必要に応じて、ボリューム作成のこの手順をスキップできます。</block>
   <block id="a9b6571e3fb4b307db1e9aeb13903f33" category="list-text">ビデオ監視アプリケーション</block>
@@ -7010,7 +7001,6 @@
   <block id="25d294940d1800f4d27d4ba80d924e94" category="section-title">機能の有効化と無効化</block>
   <block id="e8ce4dc5c23425001ae843ebfc09d20d" category="paragraph">DULBEがサポートされているシステムでは、リソースプロビジョニングがデフォルトで有効になっています。このデフォルト設定は、プールとボリュームグループで無効にできます。リソースプロビジョニングの無効化は、既存のボリュームに対する永続的な処理であり、元に戻すことはできません（つまり、これらのボリュームグループおよびプールのリソースプロビジョニングを再度有効にすることはできません）。</block>
   <block id="4435efc77a278305c3367a9af9389977" category="paragraph">新しいボリュームのリソースプロビジョニングを再度有効にするには、[設定][システム]メニューを使用します。リソースのプロビジョニングを再度有効にすると、新しく作成したボリュームグループとプールのみに影響する点に注意してください。既存のボリュームグループおよびプールは変更されません。必要に応じて、[設定][システム]メニューからリソースプロビジョニングを再度無効にすることもできます。</block>
-  <block id="e995e7f7f68380b2da6f062d6f736236" category="summary">EF300システムとEF600システムの場合は、ボリュームを設定して512バイトまたは4KiBのブロックサイズ（「セクターサイズ」とも呼ばれる）をサポートすることができます。ボリュームの作成時に正しい値を設定する必要があります。</block>
   <block id="fb5754cb7d8aec1ca725e7242d365730" category="doc">ホストブロックサイズの要件について、どのような点に注意する必要がありますか？</block>
   <block id="e5e425d8ab1cbef0e34a067f0d88d470" category="paragraph">EF300システムとEF600システムの場合は、ボリュームを設定して512バイトまたは4KiBのブロックサイズ（「セクターサイズ」とも呼ばれる）をサポートすることができます。ボリュームの作成時に正しい値を設定する必要があります。可能であれば、適切なデフォルト値が推奨されます。</block>
   <block id="f4aa667b118a0a334c4fa467de995fc8" category="paragraph">ボリュームのブロックサイズを設定する前に、次の制限事項とガイドラインを確認してください。</block>
@@ -7020,7 +7010,6 @@
   <block id="bfa50d7e23cedec28f3a7c786ec7a651" category="list-text">4KiBブロックに書き込むドライブを使用してボリュームグループを作成する場合は、512バイトまたは4KiBブロックでボリュームを作成します。</block>
   <block id="e131265d769e1bc2ac0e9288abe59c73" category="list-text">アレイにiSCSIホストインターフェイスカードが搭載されている場合、すべてのボリュームは（ボリュームグループのブロックサイズに関係なく）512バイトブロックに制限されます。これは、特定のハードウェアの実装が原因です。</block>
   <block id="714ec5306252a0c2268088a5e79bd8d2" category="list-text">一度設定したブロックサイズは変更できません。ブロックサイズを変更する必要がある場合は、ボリュームを削除して再作成する必要があります。</block>
-  <block id="968c500c45a669526a5ae69ef252eb12" category="summary">複数のホストから同じボリュームセットにアクセスする場合は、ホストクラスタを作成する必要があります。</block>
   <block id="36ba1dd2062be041e65d76f318fc9563" category="doc">ホストクラスタを作成する必要があるのはどのような場合ですか？</block>
   <block id="605c94544e16797cd75e903049c8c75f" category="paragraph">複数のホストから同じボリュームセットにアクセスする場合は、ホストクラスタを作成する必要があります。通常、個々のホストには、ボリュームへのアクセスを調整するためのクラスタリングソフトウェアがインストールされています。</block>
   <block id="25158e36dca2975554827639d80d3724" category="summary">ソフトウェアリポジトリを表示および管理することができます。このリポジトリには、vCenter向けストレージプラグインに関連付けられているすべてのソフトウェアファイルが表示されます。</block>
@@ -7071,7 +7060,6 @@
   <block id="6ddafd51962fda13ede773e9d6350dd2" category="list-text">Manage *ページで、ストレージ・アレイ名の左にあるチェックボックスを選択します。</block>
   <block id="374fea5b262769323b08b3962c808a45" category="list-text">行の右端にある省略記号を選択し、ポップアップ・メニューから*ストレージ・アレイ名の変更*を選択します。</block>
   <block id="96f8be2a5d55d9a167ed06cc1a5f9694" category="list-text">新しい名前を入力し、*保存*をクリックします。</block>
-  <block id="c7f22d49f002f26198a719f2496c2e98" category="summary">設定のインポート機能は、1つのストレージアレイから複数のストレージアレイに構成をロードするバッチ処理です。この処理でインポートされる設定は、System Managerでソースストレージアレイがどのように設定されているかによって異なります。</block>
   <block id="6aa467b445a7d222ea7a821c8df54a08" category="doc">どの設定がインポートされますか？</block>
   <block id="5a336d7c8bb4d9fb626af7c0fffe68af" category="paragraph">設定のインポート機能は、1つのストレージアレイから複数のストレージアレイに構成をロードするバッチ処理です。</block>
   <block id="5f54df5b09ce6e5e7ccff3fed9aea673" category="paragraph">この処理でインポートされる設定は、System Managerでソースストレージアレイがどのように設定されているかによって異なります。複数のストレージアレイにインポートできる設定は次のとおりです。</block>
@@ -7084,7 +7072,6 @@
   <block id="1aa660524e4f7281ec5e49498a4718df" category="list-text">*システム設定*--ボリュームのメディアスキャン設定、コントローラのSSDキャッシュ、および自動ロードバランシングが含まれます(ホスト接続レポートは含まれません)。</block>
   <block id="95ddff89f7e76cf544c140d3f049b138" category="summary">ボリュームをコマンドラインインターフェイス（CLI）を使用して作成した場合や別のストレージアレイから移行（インポート/エクスポート）した場合、それらのボリュームはワークロードに関連付けられません。</block>
   <block id="184ee7795269728284ddf4700779c94b" category="doc">これらのボリュームがワークロードに関連付けられていないのはなぜですか？</block>
-  <block id="a755886af9ddc52625c98ff0c2403d42" category="summary">セキュリティキーは、ストレージアレイ内のコントローラとセキュリティ有効ドライブによって共有されます。</block>
   <block id="2a0d49e5c65d1c328eea1427c45f821e" category="doc">セキュリティキーを作成するときは、どのような点に注意する必要がありますか？</block>
   <block id="eb8e4643855758b3255653b9508bfb4a" category="paragraph">セキュリティキーは、ストレージアレイ内のコントローラとセキュリティ有効ドライブによって共有されます。セキュリティ有効ドライブをストレージアレイから取り外すと、セキュリティキーによってデータが不正アクセスから保護されます。</block>
   <block id="41f869dddf7c6279ec6063ce284c3e8e" category="paragraph">セキュリティキーは次のいずれかの方法で作成および管理できます。</block>
@@ -7189,7 +7176,6 @@
   <block id="5177a22291a0479f014a4c628e8c39bf" category="list-text">初期化されたボリュームからすべてのデータが消去されます。</block>
   <block id="fc9997eb02932a98d6282e5da3bf886e" category="list-text">ブロックインデックスがクリアされます。これにより、書き込み前のブロックはゼロで埋められているかのように読み取られます（ボリュームは完全に空のように表示されます）。</block>
   <block id="0b74908e48cc1d1d0b3056cb2126fb0a" category="paragraph">この処理には時間がかかることがあり、システムのパフォーマンスに影響する可能性があります。</block>
-  <block id="4599f147525488978c059ab5443c5a94" category="summary">このワークロード内のボリュームはアプリケーション固有のワークロードに関連付けられていないため、ワークロードを削除することはできません。</block>
   <block id="cc41a400b6ddab31b3cc4c347ea5b96a" category="doc">選択したワークロードを削除できないのはなぜですか？</block>
   <block id="3bfd2179043341e09a4fc1cfd720d6ff" category="paragraph">このワークロードは、コマンドラインインターフェイス（CLI）を使用して作成されたボリューム、または別のストレージアレイから移行（インポート/エクスポート）されたボリュームのグループで構成されています。そのため、このワークロード内のボリュームはアプリケーション固有のワークロードに関連付けられておらず、ワークロードを削除することはできません。</block>
   <block id="bff2ada202630bbc11f607cc5ffa0e29" category="summary">未割り当てのドライブが11本以上検出された場合、または既存のプールに対応する未割り当てのドライブが1本検出された場合、プールを自動的に作成できます。</block>
@@ -7223,7 +7209,6 @@
   <block id="b19ae07679153c8839dce79280a9b977" category="paragraph">インポートされる設定には、LDAP（Lightweight Directory Access Protocol）サーバのドメイン名とURL、およびLDAPサーバのユーザグループとストレージアレイの事前定義されたロールとのマッピングが含まれます。</block>
   <block id="e79c0c6f8d005d753d2037c9281755c5" category="list-text">設定の選択ダイアログで、*ディレクトリサービス*を選択し、*次へ*をクリックします。</block>
   <block id="178bcda3e7560e5a5b5e8fa2c4f3b069" category="paragraph">ターゲットストレージアレイのディレクトリサービスがソースアレイと同じに設定されます。</block>
-  <block id="4618a10c402a86f34f74700b56034c0f" category="summary">プールまたはボリュームグループのシェルフ損失およびドロワー損失の保護を維持します</block>
   <block id="8a3f4e59944403d76cf4ffb618284325" category="doc">シェルフ損失およびドロワー損失の保護を維持するにはどうすればよいですか？</block>
   <block id="5f18e254e37bfef58483cda02161565b" category="paragraph">プールまたはボリュームグループのシェルフ損失およびドロワー損失の保護を維持するには、次の表の基準を使用します。</block>
   <block id="a0db49ba470c1c9ae2128c3470339153" category="cell">レベル</block>
@@ -7341,7 +7326,6 @@
   <block id="5e9ab766ec08679ade0079d0bb739b2e" category="list-text">[*統合（Consolidate）]をクリックし</block>
   <block id="310125557218a86df977fea54f7f1144" category="paragraph">ボリュームグループの空き容量領域の統合（デフラグ）が開始され、以降のストレージ設定タスク用に1つの連続した容量になります。</block>
   <block id="8b923050d3190a365119cba36abd83c1" category="paragraph">ナビゲーションサイドバーで、* Operations *を選択して、空き容量の統合操作の進行状況を表示します。この処理には時間がかかることがあり、システムのパフォーマンスに影響する可能性があります。</block>
-  <block id="8289ad2daf4149715a39ad8d6af619b8" category="summary">ベースボリュームでData Assurance（DA）が有効なSnapshotボリュームを、DA対応でないホストに割り当てることはできません。</block>
   <block id="a75d3526ba8cd40a248e9da80d0ba8d2" category="doc">ボリューム、ホスト、またはホストクラスタが一部表示されないのはなぜですか？</block>
   <block id="f956e41235aa6de0ef7cf1901fa9a994" category="paragraph">ベースボリュームでData Assurance（DA）が有効なSnapshotボリュームを、DA対応でないホストに割り当てることはできません。DA対応でないホストにSnapshotボリュームを割り当てるには、ベースボリュームのDAを無効にする必要があります。</block>
   <block id="92fc66f9534d94b4859793638454d6ee" category="paragraph">Snapshotボリュームを割り当てるホストについては、次のガイドラインを考慮してください。</block>
@@ -7906,7 +7890,6 @@
   <block id="77019701522f222bf26ade1b8082a1ee" category="sidebar">OSソフトウェアをアップグレードします</block>
   <block id="ce3948f2b44ee14a18d362f994260727" category="sidebar">ホストを設定</block>
   <block id="f0ba1c2df528f80a7b9482044ac9d46b" category="sidebar">プールとボリュームグループを設定</block>
-  <block id="483a5da192f46e3cfe8391d3ef234fc4" category="sidebar">よくある質問です</block>
   <block id="3ffd36cf4afe86c690f4b57be234a2ff" category="sidebar">EFシリーズのデータシート</block>
   <block id="ecc348240fe0031a456c147f13126f0c" category="sidebar">E5700データシート</block>
   <block id="239a8d1ddfc1ceae19ee25fea039a278" category="sidebar">E2800データシート</block>
@@ -7974,10 +7957,7 @@
   <block id="04595c79a616b5c392556737aaa7347d" category="paragraph">* RHEL 7、RHEL 8、RHEL 9 *</block>
   <block id="2a5b109c10fe6e93caf3666c9854f292" category="list-text">multipath -llコマンドを実行して、NVMeデバイスの一覧を表示します。</block>
   <block id="210c9515d4a1e9c78e2608d073aeef56" category="list-text">イニシエータの GUID をに記録します <block ref="00a1f89a34dac59e8a714860454ae51a" category="inline-xref-macro-rx"></block>。</block>
-  <block id="6dc10b003bcb8e0cbbcf076e7dbcdf2f" category="paragraph">このタスクでは環境 DCM および DCM2 ドライブ・シェルフを使用します</block>
   <block id="6616a8dcc33e3e23ed86909a9a46376e" category="admonition">iSCSIのData Assurance機能は、SANtricity バージョン11.40以降でサポートされます。</block>
-  <block id="d8877bd06791feeb2257a189554b10c0" category="paragraph">これらの手順は、IOM12およびIOM12Bドライブシェルフに適用されます。</block>
-  <block id="9d5445db77f905ba92077d0b48806948" category="admonition">これらの手順は、同様のシェルフIOMのホットスワップや交換用です。つまり、 IOM12 モジュールを別の IOM12 モジュールに交換するか、 IOM12B モジュールを別の IOM12B モジュールに交換しなければなりません。（シェルフに IOM12 モジュールを 2 台搭載することも、 IOM12B モジュールを 2 つ使用することもできます）</block>
   <block id="63651a0b8ef66d63649c69f52dd02292" category="list-text">Google Chrome 89以降</block>
   <block id="695a09770fa3da1385898775bfef82b9" category="list-text">Mozilla Firefox 80以降</block>
   <block id="de651d67770cb856f4d13c0980010807" category="list-text">Microsoft Edge 90以降</block>
@@ -8059,7 +8039,6 @@
   <block id="7bb583eaeb72cab404957a32bf32e9fb" category="paragraph-title">例A：標準的なSAS構成のDE212C / DE224ディスクシェルフが3台搭載されたE5700コントローラシェルフ</block>
   <block id="ab945691a98936597c2ea25ebe10559a" category="paragraph-title">例B：標準のSAS構成のDE212C / DE224ディスクシェルフが1台搭載されたE5700コントローラシェルフ</block>
   <block id="45d7b912755be5cce50a63e39e38af8a" category="section-title">手順1：新しいコントローラのパーツ番号を確認する</block>
-  <block id="f2ad0f8f286ab81e3d2722fa3c383e9b" category="admonition">IOM12BモジュールはSANtricity OS 11.70.2以降でのみサポートされます。IOM12Bをインストールまたはアップグレードする前に、コントローラのファームウェアが更新されていることを確認してください。</block>
   <block id="fe52478447b1fa9a4c7ec89de67fdf4d" category="sidebar">ドライブシェルフをホットアドします</block>
   <block id="83af49c7a44a4352fd5c07a021524fea" category="paragraph">互換性のある最新のRHEL 7、RHEL 8、RHEL 9、SUSE Linux Enterprise Server 12または15サービスパックオペレーティングシステムが実行されている必要があります。を参照してください<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> をクリックして、最新の要件を確認してください。</block>
   <block id="889869e1d3bab19951bb91f386d721de" category="list-text">RHEL 8およびRHEL 9の場合は、ネットワークスクリプトをインストールする。</block>
@@ -8481,9 +8460,7 @@
   <block id="5835021a0e70e0a13bc60ddff4162aca" category="paragraph"><block ref="5835021a0e70e0a13bc60ddff4162aca" category="inline-image-macro-rx" type="image"></block></block>
   <block id="17360156c8ceaa57309077e605e88697" category="image-alt">E2800およびE5700のインストールプロセスワークフロー</block>
   <block id="9388df48e85777aba8981c9e79739824" category="inline-image-macro">E4012直接トポロジ、幅= 1000px</block>
-  <block id="9dcbe6d474a3385e1258eeebe1d96cfa" category="paragraph"><block ref="9dcbe6d474a3385e1258eeebe1d96cfa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e5115f367ddc4b23f2a5a9dce410d220" category="inline-image-macro">E4012ファブリックトポロジ、幅= 1000px</block>
-  <block id="fe5422a7f743c4750aa826cb030729eb" category="paragraph"><block ref="fe5422a7f743c4750aa826cb030729eb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2f998d3759a46f941c16045d05799b20" category="inline-image-macro">E4000コントローラ管理ポート</block>
   <block id="419c5b2edef00ba85d62682d5ff0138c" category="paragraph"><block ref="419c5b2edef00ba85d62682d5ff0138c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f530fae0a98563bf22e6ee7a23163588" category="list-text">ブラウザの指示に従って、 SANtricity System Manager を起動します。接続を確立できない場合は、 DHCP サーバからネットワーク設定を受け取っていないことを確認してください。</block>
@@ -8491,9 +8468,7 @@
   <block id="05f07938d9743df4b9673ac6e16d5eaf" category="list-text">前の手順で設定したパスワードを使用してログインします。ネットワーク設定ウィザードが表示されます。</block>
   <block id="61c8d556c74bbd20f07d7c1565d11a11" category="list-text">最もシンプルなネットワーク構成では、コントローラをWebブラウザに接続し、SANtricityシステムマネージャを使用して単一のE4000シリーズストレージアレイを管理します。System Manager にアクセスするには、管理ポートの設定に使用した IP アドレスを使用します。</block>
   <block id="ed82e034d7d377cc12aa1d89cea33d43" category="inline-image-macro">E4060直接トポロジ、幅= 1000px</block>
-  <block id="98e6536dfa926f6bd4a1900657c27282" category="paragraph"><block ref="98e6536dfa926f6bd4a1900657c27282" category="inline-image-macro-rx" type="image"></block></block>
   <block id="427b3e2ab20960e704a22e39fbcda634" category="inline-image-macro">E4060ファブリックトポロジ、幅= 1000px</block>
-  <block id="72c6889744a45c86c32b640c76b2138a" category="paragraph"><block ref="72c6889744a45c86c32b640c76b2138a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ab2bd875f2f303555807a3b13a6b64bb" category="paragraph"><block ref="ab2bd875f2f303555807a3b13a6b64bb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ff2e827a53ef25671ffc7469bb5208a2" category="list-title">例A：E4000コントローラシェルフとDE212C / DE224Cディスクシェルフを3台搭載した標準のSAS構成。</block>
   <block id="ecf826f3b05c4b630ca5e118d6536932" category="list-title">例B：標準のSAS構成のDE212C / DE224Cディスクシェルフが1台搭載されたE4000コントローラシェルフ</block>
@@ -9711,4 +9686,22 @@
   <block id="ed389a9acb72de33be78325f147d7d8c" category="doc">SANtricity Web ServicesとUnified Managerの詳細</block>
   <block id="f14a1a04aab620524ee87bd0fd002ab1" category="doc">SANtricity Web Services Proxyの用語</block>
   <block id="abf831fd1f3fab9981530f2ea36177b2" category="doc">SANtricity Web Services Proxy統計の自動ポーリングを管理します。</block>
+  <block id="dce708315880727f8ba7e84bab86b168" category="paragraph">この手順は、IOM12、IOM12B、および IOM12C ドライブ シェルフに適用されます。</block>
+  <block id="3f457ff9c17714d64ba75fd9d6d618f2" category="admonition">IOM12C モジュールは、SANtricity OS 11.90R3 以降でのみサポートされます。IOM12Cをインストールまたはアップグレードする前に、コントローラのファームウェアが更新されていることを確認してください。</block>
+  <block id="8d93e2013316d1241b304432f0103be5" category="admonition">この手順 は、シェルフの IOM のホットスワップや交換に使用されます。つまり、 IOM12 モジュールを別の IOM12 モジュールに交換するか、 IOM12C モジュールを別の IOM12C モジュールに交換しなければなりません。（シェルフに IOM12 モジュールを 2 台搭載することも、 IOM12C モジュールを 2 つ使用することもできます）</block>
+  <block id="e0f75caa67759a6c5e34cbad6ae84d57" category="admonition">IOM12CモジュールはSANtricity OS 11.70.2以降でのみサポートされます。IOM12Cをインストールまたはアップグレードする前に、コントローラのファームウェアが更新されていることを確認してください。</block>
+  <block id="bbfd15448c83d50ee0a4a62cc152d856" category="paragraph"><block ref="bbfd15448c83d50ee0a4a62cc152d856" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f7178ecd56d859f9f7e4878779a236ea" category="paragraph"><block ref="f7178ecd56d859f9f7e4878779a236ea" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="949ca69f081f10e2fc1938e0e24759c8" category="paragraph"><block ref="949ca69f081f10e2fc1938e0e24759c8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="142dc71d06d08da442f6fe84d80e526d" category="paragraph"><block ref="142dc71d06d08da442f6fe84d80e526d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dea137ce87e98617e1e7f9c6f97eeeff" category="admonition">これらの手順は、同様のシェルフIOMのホットスワップや交換用です。つまり、 IOM12 モジュールを別の IOM12 モジュールに交換するか、 IOM12C モジュールを別の IOM12C モジュールに交換しなければなりません。（シェルフに IOM12 モジュールを 2 台搭載することも、 IOM12C モジュールを 2 つ使用することもできます）</block>
+  <block id="88db80c02306ca8e9bac2283b0d2f6bf" category="paragraph">この手順は、DCM、DCM2、および DCM3 ドライブ シェルフに適用されます。</block>
+  <block id="b2d2940e83701ff478975b36d255b487" category="paragraph">このタスクは、DCM、DCM2、および DCM3 ドライブ シェルフに適用されます。</block>
+  <block id="b1151aae9531d2f5e85d085e8878cea6" category="summary">この FAQ は、質問に対する簡単な回答を探している場合に役立ちます。</block>
+  <block id="a318c851f3d3c0a7eeb1313f1422c3b3" category="doc">vCenter 用 SANtricity ストレージ プラグインに関する FAQ</block>
+  <block id="33f3664698fdab78efe7579f9849af32" category="paragraph"><block ref="b6ee0733cf8f7004d998d8fc49cc2022" prefix="" category="inline-code"></block></block>
+  <block id="a10a0fef1a8b50d16443976fedae1e16" category="section-title">バージョン11.90R3の新機能</block>
+  <block id="c78544d43a065eb825edb9e16bf0e9ad" category="paragraph">IOM12CおよびDCM3のSANtricity OSサポート</block>
+  <block id="94d90ce4793f949687897ec062d97b9c" category="paragraph">IOM12CおよびDCM3 SAS-3シェルフのサポートは、コントローラファームウェア11.90R3以降で利用可能になりました。IOM12CおよびDCM3シェルフは、IOM12BおよびDCM2シェルフの後継機種です。</block>
+  <block id="3a2a69a35a4560167d4c0478029a3f70" category="sidebar">vCenter 用ストレージプラグインに関する FAQ</block>
 </blocks>

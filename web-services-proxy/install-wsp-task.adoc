@@ -134,7 +134,7 @@ RPM パッケージ管理システムと互換性がある Linux システムで
 . ターミナルウィンドウを開きます。
 . 次のコマンドを入力します。
 +
-「 rpm -u SANtricity_webservices-nn.nn.nnnn -n x86_64 」 rpm を指定します
+`rpm -U santricity_webservices-nn.nn.nn.nnnn-n.x86_64.rpm`
 
 +
 

@@ -45,7 +45,7 @@ image::../media/2hosts_4hbas_ieops-2146.svg[ホスト×2 / HBA×4、コントロ
 次の図に接続例を示します。プロビジョニング機能を備えたスイッチの場合は、イニシエータとターゲットの各ペアを分離する必要があります。
 
 .2 台のホストと 2 台のスイッチ
-image::../media/topology_host_fabric_generic.png[2台のホストと2台のスイッチのケーブル接続]
+image::../media/topology_host_fabric_generic_ieops-2152.svg[2台のホストと2台のスイッチのケーブル接続]
 
 * （ 1 ） * _ 各ホストアダプタをスイッチに直接接続します。 _
 

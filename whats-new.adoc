@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: whats new, new features, SANtricity 11.90, SANtricity 11.80 
+keywords: whats new, new features, SANtricity, 11.9, 11.8 
 summary: SANtricity OS の新機能 
 ---
 = SANtricity OS の新機能
@@ -14,6 +14,21 @@ summary: SANtricity OS の新機能
 [role="lead"]
 E4000、EF300 / EF300C、EF600 / EF600C、E2800 / EF280、およびE5700 / EF570コントローラの組み込み管理向けに、最新のSANtricity OSリリースの新機能を次の表に示します。
 
+
+
+== バージョン11.90R3の新機能
+
+[cols="35h,~"]
+|===
+| 新機能 | 説明 
+
+
+ a| 
+IOM12CおよびDCM3のSANtricity OSサポート
+ a| 
+IOM12CおよびDCM3 SAS-3シェルフのサポートは、コントローラファームウェア11.90R3以降で利用可能になりました。IOM12CおよびDCM3シェルフは、IOM12BおよびDCM2シェルフの後継機種です。
+
+|===
 
 
 == バージョン11.90R2の新機能

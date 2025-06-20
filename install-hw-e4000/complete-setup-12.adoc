@@ -28,7 +28,7 @@ NOTE: コントローラの左下（e1a、e1b、e1c、e1d）と右上（e0aとe0
 --
 次の例は、直接接続トポロジを使用したデータホストへのケーブル接続を示しています。
 
-image:../media/drw_e4012_direct_topology_ieops-2047.svg["E4012直接トポロジ、幅= 1000px"]
+image:../media/drw_e4012_direct_topology_ieops-2156.svg["E4012直接トポロジ、幅= 1000px"]
 
 . 各ホストHBAポートをコントローラのホストポート（e1a、e1b、e1c、e1dまたはe0aとe0b）に接続します。
 
@@ -41,7 +41,7 @@ NOTE: その他のケーブル配線図の例については、を参照して�
 --
 次の例は、ファブリックトポロジを使用したデータホストへのケーブル接続を示しています。
 
-image:../media/drw_e4012_fabric_topology_ieops-2046.svg["E4012ファブリックトポロジ、幅= 1000px"]
+image:../media/drw_e4012_fabric_topology_ieops-2157.svg["E4012ファブリックトポロジ、幅= 1000px"]
 
 . 各ホストアダプタをスイッチに直接接続します。
 . 各スイッチをコントローラのホストポート（e1a、e1b、e1c、e1dまたはe0aとe0b）に直接接続します。
