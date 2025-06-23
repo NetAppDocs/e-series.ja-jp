@@ -58,7 +58,6 @@ SANtricity System Manager の Recovery Guru で詳細を確認し、問題にバ
 
 +
 ** * SANtricity System Manager （バージョン 11.60 以降） * - System Manager から CLI パッケージ（ zip ファイル）をダウンロードします。[ 設定 ] 、 [ システム ] 、 [ アドオン ] 、 [ コマンドラインインターフェイス ] の順に選択します。次に、 DOS C ：プロンプトなどのオペレーティングシステムプロンプトから問題 CLI コマンドを実行します。
-** * SANtricity Storage Manager/Enterprise Management Window （ EMW ）：ソフトウェアをダウンロードしてインストールするには ' エクスプレス・ガイドの指示に従ってくださいEMW から CLI コマンドを実行するには、次のメニューを選択します： Tools [Execute Script]
 
 
 

@@ -1132,15 +1132,7 @@
   <block id="093eba936291bd32a865bdc3cedc6822" category="list-text">ターゲット ID を検索します。</block>
   <block id="13461e28dcd114adac2af3049403e6ed" category="admonition">dsmUtil ユーティリティでは大文字と小文字が区別されます。</block>
   <block id="31e6725ea9038f80c84ea9073561cdaf" category="list-text">LUN へのパスを表示し、パスの数が想定どおりであることを確認します。コマンドの「 &lt;target ID&gt;` 」部分で、前の手順で見つかったターゲット ID を使用します。</block>
-  <block id="cade4234340dbc4fee36a7571946fd32" category="summary">Windows の簡単な方法で Windows Unified Host Utilities をインストールする。</block>
-  <block id="b98d11fdfd34118f790a089b09e3367d" category="paragraph">Windows Unified Host Utilities ツールを使用して、ホストコンピュータをネットアップストレージシステムに接続し、ホストコンピュータで必要なパラメータを設定できます。また、ネットアップストレージとの間で最適な読み取り / 書き込みパフォーマンスを達成するために、適切なディスクタイムアウトを設定することもできます。</block>
-  <block id="45010da5958c7fc3d60c5414c380bb70" category="inline-link">ネットアップのマニュアル： Host Utilities</block>
-  <block id="6726b8f82b27b4eca9bba6dc03228ab6" category="admonition">詳細については、の「 _Windows Host Utilities Installation Guide 」を参照してください<block ref="5a703dc316d0405f2b69548f35177839" category="inline-link-rx"></block>。</block>
-  <block id="e711e1dd664e14a77c4bff5ab909a662" category="list-text">を使用します<block ref="49d81d143d5c8b402603532056154481" category="inline-link-rx"></block> をクリックして、インストールする Unified Host Utilities の適切なバージョンを確認します。</block>
-  <block id="d7b565023737aad44d6724a49bd2b673" category="paragraph">サポートされる構成ごとに対応するバージョンが表示されます。</block>
   <block id="09ea0908fbfc4cde85bf416e35dc55c8" category="inline-link">ネットアップサポート</block>
-  <block id="f64d5867fd911e2b14d8680010121759" category="list-text">から Unified Host Utilities をダウンロードします<block ref="2ff36e7792a0e0257d19a11dce8cade8" category="inline-link-rx"></block>。</block>
-  <block id="59fbc26a1831942cb6ebf2d627aa2db8" category="admonition">このユーティリティパッケージは、 SANtricity ストレージマネージャインストーラを使用してインストールすることはできません。</block>
   <block id="135d30ad6d2da4597cfa1d9690fba47a" category="summary">SAS プロトコルを使用する場合は、ホストポートアドレスを特定し、推奨設定を適用します。</block>
   <block id="d723a375133225f8e40ad6de1d56e805" category="paragraph">SAS プロトコルを使用する場合は、ホストポートのアドレスを特定し、適切に設定します。</block>
   <block id="bfcd4b5a45e2121dd605c54a4da4bd65" category="paragraph">HBA ユーティリティを使用して SAS アドレスを確認し、 HBA BIOS を使用して適切な設定を行います。</block>
@@ -1153,7 +1145,6 @@
   <block id="49bf621d794c6d35fdd6c9c6ba005c75" category="paragraph">クイック方式で実行する手順は次のとおりです。も参照してください <block ref="e728cc7e5761cb01fff7213fb14bd2b8" category="inline-link-macro-rx"></block>。</block>
   <block id="5903a917b575023b60264c602c220771" category="inline-link-macro">Fibre Channel （ FC ；ファイバチャネル）</block>
   <block id="73f3e7e865d667420a49e86f5dd4e62e" category="list-text"><block ref="73f3e7e865d667420a49e86f5dd4e62e" category="inline-link-macro-rx"></block></block>
-  <block id="99958fd8a8267b3560ce1c363b5be7e7" category="list-text"><block ref="f8c7ff95c6f2730c965212cb5ee95d98" category="inline-link-rx"></block> -- 現在の Windows Unified Host Utilities バージョンのマニュアルを提供します。</block>
   <block id="a899d9da954027e694f26a36852504c1" category="summary">Windows 用のマルチパスソフトウェアを含む DSM パッケージをインストールします。</block>
   <block id="1ba6b3a85eafdf73a826758f36c2adf8" category="paragraph">ストレージアレイへのパスを冗長化するには、 SANtricity Windows DSM パッケージをインストールし、 Windows 向けのマルチパスパッケージを使用します。</block>
   <block id="d1a338bb4fb19498373011fca875f51f" category="paragraph">適切な管理者権限またはスーパーユーザ権限です。</block>
@@ -1369,7 +1360,6 @@
   <block id="12cb93ac5470b7b9ed9a176553005bef" category="list-text">コントローラの SANtricity System Manager にアクセスできるブラウザを備えた管理ステーション。（ System Manager インターフェイスを開くには、ブラウザでコントローラのドメイン名または IP アドレスを指定します）。</block>
   <block id="3a35aeaf167e71373e4f42c63fa412a6" category="paragraph">必要に応じて、コマンドラインインターフェイス（ CLI ）を使用して一部の手順を実行できます。CLI にアクセスできない場合は、次のいずれかを実行できます。</block>
   <block id="31380923165d24c4bc7be3835c03f97d" category="list-text">* SANtricity System Manager （バージョン 11.60 以降） * - System Manager から CLI パッケージ（ zip ファイル）をダウンロードします。[ 設定 ] 、 [ システム ] 、 [ アドオン ] 、 [ コマンドラインインターフェイス ] の順に選択します。次に、 DOS C ：プロンプトなどのオペレーティングシステムプロンプトから問題 CLI コマンドを実行します。</block>
-  <block id="d4e243a780f83aeb7aba4ed3ddb02aab" category="list-text">* SANtricity Storage Manager/Enterprise Management Window （ EMW ）：ソフトウェアをダウンロードしてインストールするには ' エクスプレス・ガイドの指示に従ってくださいEMW から CLI コマンドを実行するには、次のメニューを選択します： Tools [Execute Script]</block>
   <block id="b9d4867c50ac20e2b2f9a49c74311526" category="section-title">デュプレックス構成の要件</block>
   <block id="ee745daf1ff11c64756223bf483ff385" category="paragraph">コントローラシェルフにコントローラを 2 台搭載したデュプレックス構成の場合は、次の条件を満たしていれば、ストレージアレイの電源をオンにした状態でホスト I/O 処理を継続したままコントローラキャニスターを交換できます。</block>
   <block id="57c68021dbcd118e7d2ccece06f119da" category="list-text">シェルフのもう一方のコントローラキャニスターのステータスが「最適」である。</block>
@@ -3053,7 +3043,6 @@
   <block id="61f02e2c84e5b52874127600576222a5" category="list-text">ハードウェアページに移動し、すべてのコンポーネントが表示されることを確認します。</block>
   <block id="4c1edfa8a9683e5a7cf6c1058c397f26" category="list-text">[Software and Firmware Inventory] ダイアログボックス（ [Support [Upgrade Center] メニューに移動し、 [* Software and Firmware Inventory] のリンクをクリックします）。新しいソフトウェアとファームウェアのバージョンを確認します。</block>
   <block id="9923033ddd1d0d8a8cf07d6215998241" category="list-text">コントローラ NVSRAM をアップグレードする場合、既存の NVSRAM に適用されていたカスタム設定はアクティブ化のプロセスで失われます。カスタム設定は、アクティブ化のプロセスの完了後に NVSRAM に再度適用する必要があります。</block>
-  <block id="788d3c503714b3eb6632371a82cc20b5" category="list-text">CLI コマンドを使用してストレージアレイの設定をデュプレックスに変更します。CLI を使用するには、 CLI パッケージをダウンロードした場合はコマンドプロンプトを、 Storage Manager がインストールされている場合は Enterprise Management Window （ EMW ）を開くことができます。</block>
   <block id="a05448d81309432cf8e25da48e5e1c90" category="list-text">コマンドプロンプトから、次の手順を実行します</block>
   <block id="b837c5d8d4c1034fca14d84eff94c0d9" category="list-text">次のコマンドを使用して、アレイをシンプレックスからデュプレックスに切り替えます。</block>
   <block id="6a66f87eeb104bf47e94bbe8480ce241" category="list-text">コントローラをリセットするには、次のコマンドを使用します。</block>
@@ -5087,10 +5076,6 @@
   <block id="902bc0f0e4bf7414bb5a92ff0daa7055" category="list-text">「 IFF 」コマンドを実行して、コピーしたファイルを元のファイルと比較します。</block>
   <block id="86cd25e1b1566d77f5af83eb0ffcd3f0" category="paragraph">コピーしたファイルとフォルダを削除します。</block>
   <block id="c60c64d662d0e7a5a446c9f7d86d1e12" category="summary">multipath.conf ファイルは、マルチパスデーモン multipathd の構成ファイルです。</block>
-  <block id="3a12d0edc81531758f12c83024fbc77e" category="summary">iSER を使用する場合は、 Linux Unified Host Utilities をインストールします。</block>
-  <block id="6cfa91f7028db85237c0770258925d8e" category="paragraph">Linux Unified Host Utilities ツールを使用して、フェイルオーバーポリシーや物理パスなど、ネットアップストレージを管理できます。</block>
-  <block id="8a761de12813fd81d6a6c12a762a07f1" category="list-text">を使用します<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> をクリックして、インストールする Unified Host Utilities の適切なバージョンを確認します。</block>
-  <block id="f4011c90372ee12814aefc97e4debb36" category="list-text">から Unified Host Utilities をダウンロードします<block ref="4ce7a3cde07b85b80ee4fe046584534d" category="inline-link-rx"></block>。</block>
   <block id="d3f57efe528790f599c0cc28cb9e9853" category="paragraph">最初の手順として、 Linux 構成がサポートされていることを確認し、コントローラ、ホスト、およびリカバリの制限事項を確認する必要があります。</block>
   <block id="1680224fdb838ac81966da41faeeb7ba" category="section-title">NVMe over FC の制限事項を確認します</block>
   <block id="176e6208df895306e7b0758c31537a3e" category="section-title">ストレージとディザスタリカバリの制限事項</block>
@@ -5271,7 +5256,6 @@
   <block id="3b5c5ae54533da138be94559c533a510" category="list-text">[*Configure*] をクリックします。</block>
   <block id="d9c20a4f4eb3b39c23e7abe09762149f" category="list-text">使用する他の HIC ポートに対して手順 5 と 6 を繰り返します。</block>
   <block id="532217e36a41f25d96ffca7947284f5c" category="paragraph">iSCSI を使用している場合は、 iSCSI を設定する際にセットアップウィザードを閉じています。</block>
-  <block id="6e66b862960ebd7ec3afa00536df9e2b" category="summary">iSCSI を使用する場合は、 Linux Unified Host Utilities をインストールします。</block>
   <block id="5dd9d62ce4e8e03736012f8834a6e4fd" category="summary">Linux のバージョンに基づいて、デバイスターゲットに転送される I/O を設定できます。DM-MP は、これらの仮想ターゲットへの物理パスを管理します。</block>
   <block id="23a1a118541ab0d1766faa1805b06432" category="paragraph">これらのブロック・デバイスには '`dev/mapper-における `d`deviceまたは 'ymlink` からアクセスできますたとえば ' 次のようになります</block>
   <block id="0c6af110b63e1c65cc44419feea8f957" category="summary">クイック方式を使用して E シリーズアレイと Linux ホストを設定するための要件を確認します。</block>
@@ -5375,13 +5359,10 @@
   <block id="decdd7cb14919e61d850e61099b2b701" category="list-text">サブネット 4 ：ホスト 2 の HCA ポート 2 とコントローラ 2 のホストポート 2</block>
   <block id="c318d779fc072ffe72c7c3dd1e42553c" category="paragraph">ファブリックトポロジでは、 1 つ以上のスイッチを使用します。を参照してください<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> を参照してください。</block>
   <block id="257b40198f0083663eee051dc8899cd7" category="cell">ソフトウェアイニシエータの NQN</block>
-  <block id="e7f0bd2c7ce5a2859d99775fd89bb0a2" category="summary">FC を使用する場合は、 Linux Unified Host Utilities をインストールします。</block>
   <block id="43256533b4d88b90a519151bb6b8744e" category="summary">ホストポートの GUID を特定します。</block>
   <block id="d405d36a5a07f387a8a07ebe6eeb8c55" category="list-text">「 ibstat 」コマンドを実行して、ポート情報を表示します。</block>
   <block id="9fd1ccf35b45152e10c1dcc3a278a357" category="inline-xref-macro">SRP ワークシート</block>
   <block id="e8377a168400202c4d751db31f2af66a" category="list-text">イニシエータの GUID をに記録します <block ref="637e124a730f0905ce6e480d5b773394" category="inline-xref-macro-rx"></block>。</block>
-  <block id="bd97f9e0585f1ab3a70a824e4f5ffe79" category="summary">Linux Unified Host Utilities 7.1 には、フェイルオーバーポリシーや物理パスなど、ネットアップストレージを管理するツールが含まれています。</block>
-  <block id="c4a120813372f7f07d6de687ff0fc6a6" category="paragraph">Linux Unified Host Utilities パッケージには、フェイルオーバーポリシーや物理パスなど、ネットアップストレージを管理するツールが含まれています。</block>
   <block id="fa74964c5c74c111309afef2dec3ccb9" category="paragraph">最初に、 Linux 構成がサポートされていることを確認し、コントローラ、スイッチ、ホスト、およびリカバリの制限事項を確認する必要があります。</block>
   <block id="c6179d2fb67eca2c2f51c1dd8a357e71" category="section-title">NVMe over RoCE の制限事項を確認します</block>
   <block id="f384907c3dd58bb2d8f3b9ac157c0414" category="section-title">スイッチの制限事項</block>
@@ -5967,8 +5948,6 @@
   <block id="cbb059200dfb7db372e5958a687a7f40" category="list-text">SANtricity ソフトウェアを使用して、ストレージアレイを設定および管理します。</block>
   <block id="20a131c60e6c405bb973f52c70e6d104" category="list-text">最もシンプルなネットワーク構成では、コントローラを Web ブラウザに接続し、 SANtricity System Manager を使用して E2800 シリーズまたは E5700 シリーズの単一のストレージアレイを管理します。</block>
   <block id="005889eb2bd1ad96c577fc46302784e4" category="list-text">シェルフをケーブル接続</block>
-  <block id="c0775f0da6502a62c364501a8afa66ed" category="paragraph">構成に応じてシステムをケーブル接続します。この例よりも多くのケーブル接続オプションが必要な場合は、を参照してください <block ref="d28b440e6afa4df86a4a85820e62c38b" category="inline-link-macro-rx"></block>。</block>
-  <block id="1984650e2174e4cd6e72f937ef372c57" category="paragraph">この例では、次のケーブルが必要です。</block>
   <block id="6bb39a0f441f51677398fb4553a6f0c1" category="paragraph">* SAS ケーブル *</block>
   <block id="597bde72a3d1602b00297a27da8f77e0" category="list-text">コントローラ A を最初のドライブシェルフの IOM A にケーブル接続します。</block>
   <block id="7f1c18457c9760a1f48d05d01c28a563" category="list-text">最初のドライブシェルフの IOM A を 2 番目のドライブシェルフの IOM A にケーブル接続します。</block>
@@ -6009,8 +5988,6 @@
   <block id="4aef9ac85da2801779223aa21342d5bd" category="paragraph">ドライブが取り付けられたシェルフ（ベゼルは別に梱包）</block>
   <block id="74a14e251e7e1bd23c324b4b1a8cd242" category="paragraph">SAS ケーブルはドライブシェルフにのみ付属しています</block>
   <block id="37d313349fe563ae8b848d2dedc9b49d" category="paragraph">SAS ケーブル</block>
-  <block id="ba51d8b064560c05234bcb7cf908140c" category="paragraph">構成に応じてシステムをケーブル接続します。この項で示す例よりも多くのケーブル接続オプションが必要な場合は、を参照してください <block ref="d28b440e6afa4df86a4a85820e62c38b" category="inline-link-macro-rx"></block>。</block>
-  <block id="825f1bce0ca9afca4f9d03067ac55692" category="paragraph">このセクションの例では、次のケーブルが必要です。</block>
   <block id="8595fe2de42408ab312cb1a2d109d144" category="list-text">コントローラ B を 2 台目のドライブシェルフの IOM B にケーブル接続します。</block>
   <block id="56aa775b7b016485421d08de547d716b" category="summary">E2800 および E5700 のインストールとセットアップのプロセスを確認します。</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="doc">概要</block>
@@ -6035,7 +6012,6 @@
   <block id="cbcf19ef40f1b61a63478c8e22c42099" category="sidebar">イーサネットケーブル接続</block>
   <block id="c5d1e465274381bca5df236c2a5a7d57" category="sidebar">ソフトウェアを導入</block>
   <block id="18471c1ff811bd0bcb293d2453b59771" category="sidebar">Linux 構成を確認</block>
-  <block id="a44a6c0b1372610fbe5ce8ba27e0e377" category="sidebar">Host Utilities をインストールして設定する</block>
   <block id="b7d6b71801787e9bb9cabee39a18d4be" category="sidebar">SANtricity Storage Manager をインストールします</block>
   <block id="511bc26995332ccd1bc373f2533ac9e7" category="sidebar">SANtricity システムマネージャにアクセスします</block>
   <block id="4fa43a5f70872c9934e31e9e40e565f9" category="sidebar">マルチパスソフトウェアを設定する</block>
@@ -6076,7 +6052,6 @@
   <block id="f937177c870063d921c3b04fc46d70e9" category="sidebar">FC 固有のタスクを使用して NMVe を実行します</block>
   <block id="b847c90a690d3ed6ab537da4170e75ce" category="sidebar">ホストでストレージを設定する</block>
   <block id="51db7ba6619e3142a5523bc5debfd5ad" category="sidebar">Windows 設定を確認します</block>
-  <block id="4c3d64befec3af3f83707e126e8b1880" category="sidebar">Unified Host Utilities をインストールして設定する</block>
   <block id="cfd5a063d93f48df8b64774d28254314" category="sidebar">ホストでストレージを検出します</block>
   <block id="55c745a83eb000156fff568d7b93fa8c" category="sidebar">システムをアップグレードする</block>
   <block id="cf14c2021274780551c926622b5fa48e" category="sidebar">コントローラハードウェアのアップグレード</block>
@@ -8034,10 +8009,6 @@
   <block id="731e4c243221cff11b35e735d54a097c" category="section-title">2ポストラック：2U</block>
   <block id="08e15a26eb1bed02ff476c90993bb81d" category="section-title">4ポストラックまたはキャビネット-- 2U</block>
   <block id="f7e582702fa43947010600df41688562" category="section-title">4ポストラック-SuperRail</block>
-  <block id="88587640720455d00dd679a1ce9fe099" category="paragraph-title">例A：標準的なSAS構成のDE460Cディスクシェルフを2台搭載したE2860コントローラシェルフ</block>
-  <block id="5e2cc996382bb24824986ff473c63abc" category="paragraph-title">例B：標準的なSAS構成のDE460Cディスクシェルフ1台を搭載したE2860コントローラシェルフ</block>
-  <block id="7bb583eaeb72cab404957a32bf32e9fb" category="paragraph-title">例A：標準的なSAS構成のDE212C / DE224ディスクシェルフが3台搭載されたE5700コントローラシェルフ</block>
-  <block id="ab945691a98936597c2ea25ebe10559a" category="paragraph-title">例B：標準のSAS構成のDE212C / DE224ディスクシェルフが1台搭載されたE5700コントローラシェルフ</block>
   <block id="45d7b912755be5cce50a63e39e38af8a" category="section-title">手順1：新しいコントローラのパーツ番号を確認する</block>
   <block id="fe52478447b1fa9a4c7ec89de67fdf4d" category="sidebar">ドライブシェルフをホットアドします</block>
   <block id="83af49c7a44a4352fd5c07a021524fea" category="paragraph">互換性のある最新のRHEL 7、RHEL 8、RHEL 9、SUSE Linux Enterprise Server 12または15サービスパックオペレーティングシステムが実行されている必要があります。を参照してください<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> をクリックして、最新の要件を確認してください。</block>
@@ -8212,7 +8183,6 @@
   <block id="cc1b53336ed5c926305dd7ad876ab1d2" category="admonition">SANtricity OS 11.80GA以降では、拡張シェルフ構成でベーストレイにドライブを搭載しない構成がサポートされます。この構成を使用する場合は、システムの電源をオンにする前に、ドライブが拡張シェルフに搭載され、ベーストレイに正しく接続されていることを確認してください。</block>
   <block id="f9c81137922296691747f3cff9a92105" category="list-text"><block ref="f9c81137922296691747f3cff9a92105" category="inline-link-rx"></block></block>
   <block id="c68dfa9143daa0b2c3c80d2545e2410c" category="inline-link">SANtricity System Managerオンラインヘルプのコマンドラインインターフェイス（CLI）のダウンロードのトピック</block>
-  <block id="0c229260a68aeca566d73a23ad233dcd" category="admonition">また、SMcliコマンドを使用することもできます。<block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix=" " category="inline-code"></block> Unified Host Utilityツールと同じ機能を実行します。SMcliはSANtricity OSに含まれており、SANtricityシステムマネージャからダウンロードできます。SANtricityシステムマネージャからSMcliをダウンロードする方法の詳細については、<block ref="a9fe8fbe4d692fa7e3dc0b66710307cd" category="inline-link-rx"></block>。</block>
   <block id="ffc3de562db3aaacf94180bc367bf157" category="admonition">SANtricity ソフトウェア 11.60 以降を使用している場合は、次の手順は実行する必要はありません。SANtricity Secure CLI （ SMcli ）は SANtricity OS に含まれており、 SANtricity System Manager からダウンロードできます。SANtricityシステムマネージャからSMcliをダウンロードする方法の詳細については、 <block ref="07ba191255ffe5607ddf4202e3c76da7" category="inline-link-macro-rx"></block></block>
   <block id="fc4f413bbdc13c9d07bb87f1f0e4b5bc" category="admonition">SANtricityソフトウェアバージョン11.80.1以降では、ホストコンテキストエージェントはサポートされなくなりました。</block>
   <block id="5f0e6cffb0f871fd63ee412b0867faa5" category="admonition">SANtricity 11.60以降を実行しているプラットフォームでは、デフォルトのサブネットマスクは255.255.0.0です。</block>
@@ -8252,8 +8222,6 @@
   <block id="e5a4a8069ad5713adce4d473829f3108" category="admonition">コントローラの黄色の警告LEDは、交換時に次の状況が発生すると消灯します。</block>
   <block id="a425ad1782379ad30aed42d2cca2a9de" category="list-text">Alt電源装置で障害が発生しました</block>
   <block id="197afe3e4b0fdccae7f0384e342bb289" category="list-text">smcliコマンドを使用できます。<block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix=" " category="inline-code"></block> をクリックして、ボリュームに適用可能なデバイス名を表示します。SMcliはSANtricity OSに含まれており、SANtricityシステムマネージャからダウンロードできます。SANtricityシステムマネージャからSMcliをダウンロードする方法の詳細については、<block ref="a9fe8fbe4d692fa7e3dc0b66710307cd" category="inline-link-rx"></block>。</block>
-  <block id="d699daec8de3b69e6a41a8c5e1e7f44e" category="inline-link">Linux Unified Host Utilities 7.1のインストール</block>
-  <block id="7c4ed11037f1ffa580c5462fde3a9a9c" category="list-text"><block ref="5a6c0185dc13c38c5945f8fa47c41898" category="inline-link-rx"></block> -- Linux Unified Host Utilities 7.1のインストール方法について説明します。</block>
   <block id="28af2c239fc893bd1a2013f2e8b4b941" category="section-title">バージョン11.80.1R1の新機能</block>
   <block id="5769aac2d83733db3bf7507b56dd86e9" category="paragraph">新しい自己署名およびCA署名管理証明書のキーサイズが拡張されました。</block>
   <block id="8545f755b4f7a99afe330df57699f365" category="paragraph">SANtricity System ManagerおよびUnified Managerアプリケーションの自己署名証明書の管理証明書キーサイズが、2、048ビットから3、072ビットに変更されました。この変更は、SANtricityアプリケーションから新しく生成された自己署名証明書とCA署名証明書に適用されます。キーの長さは固定であり、NVSRAMのデフォルトのキーサイズ定義の影響を受けません。</block>
@@ -8411,9 +8379,6 @@
   <block id="8ad5f5a67faf8ddadaa0107a57f04b61" category="paragraph"><block ref="8ad5f5a67faf8ddadaa0107a57f04b61" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bee25ddf22954764638be8db059a3505" category="inline-image-macro">SASケーブル</block>
   <block id="39d650b4b632da15b05f78d8c80db6c3" category="paragraph"><block ref="39d650b4b632da15b05f78d8c80db6c3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="004c0caf3af4f9614a7e07b8bafd8e07" category="inline-image-macro">SAS構成のE5700コントローラ</block>
-  <block id="9ffb511c6f5b44a46bde2c5f9739aa5b" category="paragraph"><block ref="9ffb511c6f5b44a46bde2c5f9739aa5b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="18cecd602006ce40ce09cf4e4c2d38b3" category="paragraph"><block ref="18cecd602006ce40ce09cf4e4c2d38b3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="40f3696ce1975405b3dd3b4c88fee920" category="paragraph"><block ref="40f3696ce1975405b3dd3b4c88fee920" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f043e2cf14bf90f5f6fdde2eedd27d54" category="inline-image-macro">電源シェルフの接続</block>
   <block id="11fd48921050b14f467f651de93de4a8" category="paragraph">*例：電源接続はシェルフの背面にあります。*<block ref="a532dab930fd15f0637a30e402d8f9a2" category="inline-image-macro-rx" type="image"></block></block>
@@ -8447,9 +8412,6 @@
   <block id="a6afe792341ed6e15acdc5ac572683c9" category="paragraph"><block ref="a6afe792341ed6e15acdc5ac572683c9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5ac609c12de89a4fb426124bce2b8fe9" category="inline-image-macro">E5700の管理ポート</block>
   <block id="7638544025c69718a924e0f8e14fffd6" category="paragraph"><block ref="7638544025c69718a924e0f8e14fffd6" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0c939f4611f00ba920181cdd25b91423" category="inline-image-macro">SASコウセイノE2860コントロオラ</block>
-  <block id="50c46e741de9ff81436b6f99809dde68" category="paragraph"><block ref="50c46e741de9ff81436b6f99809dde68" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b9e37640fcc1990a420e73cbc71cf5d9" category="paragraph"><block ref="b9e37640fcc1990a420e73cbc71cf5d9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fa0053c9f3ecff9854d2d18cb3d45034" category="inline-image-macro">シェルフ背面の電源接続</block>
   <block id="bf8c27ee38f4551cf3103f8ddc048822" category="paragraph">*例：電源接続はシェルフの背面にあります。*<block ref="27f4b7324949481a832e2798f546c18f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d3f162fe328844acb0313cd8d2c4c0fd" category="paragraph"><block ref="d3f162fe328844acb0313cd8d2c4c0fd" category="inline-image-macro-rx" type="image"></block></block>
@@ -8470,12 +8432,8 @@
   <block id="ed82e034d7d377cc12aa1d89cea33d43" category="inline-image-macro">E4060直接トポロジ、幅= 1000px</block>
   <block id="427b3e2ab20960e704a22e39fbcda634" category="inline-image-macro">E4060ファブリックトポロジ、幅= 1000px</block>
   <block id="ab2bd875f2f303555807a3b13a6b64bb" category="paragraph"><block ref="ab2bd875f2f303555807a3b13a6b64bb" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ff2e827a53ef25671ffc7469bb5208a2" category="list-title">例A：E4000コントローラシェルフとDE212C / DE224Cディスクシェルフを3台搭載した標準のSAS構成。</block>
-  <block id="ecf826f3b05c4b630ca5e118d6536932" category="list-title">例B：標準のSAS構成のDE212C / DE224Cディスクシェルフが1台搭載されたE4000コントローラシェルフ</block>
   <block id="bd6f2f179e92d79b65397b0d15328141" category="inline-image-macro">電源ケーブル</block>
   <block id="a18053fd03f0e0f1657ef8a7799c39b1" category="paragraph"><block ref="a18053fd03f0e0f1657ef8a7799c39b1" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0931fcfaf82a62b23c3cbb633e4d3754" category="list-title">例A：標準的なSAS構成のDE460Cディスクシェルフを2台搭載したE4060コントローラシェルフ</block>
-  <block id="cb6592701a1a2879a7d91e2aa3483978" category="list-title">例B：標準的なSAS構成のDE460Cディスクシェルフ1台を搭載したE4060コントローラシェルフ</block>
   <block id="a43d4c0d877b46a949d2194ce9a5dc43" category="list-text">各コントローラのLEDを確認します。</block>
   <block id="4b478fea6990a79d7f3b2aed9f0dfaac" category="summary">E4000ストレージシステムを設置してセットアップするには、次の手順に従います。</block>
   <block id="61d7360b301a1cb885e62542da3bb7d4" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>設置の準備</block>
@@ -9299,7 +9257,6 @@
   <block id="7156af939da33d4706b3dc430b74da68" category="doc">EシリーズでのFCスイッチの設定- Linux（FC）</block>
   <block id="ec2fdd1f2e6ee695231cc1b65ac9e203" category="doc">Eシリーズでのパーティションとファイルシステムの作成- Linux（FC）</block>
   <block id="1f5f0de28e7314d825efd9a881bfdc65" category="doc">Eシリーズ- Linux（FC）でのホストのWorld Wide Port Name（WWPN；ワールドワイドポート名）を特定する</block>
-  <block id="5399debd6e55a777747669bf25cb7d73" category="doc">EシリーズでのLinux Unified Host Utilitiesのインストールと設定（FC）</block>
   <block id="a8052a427bf8a81e1230fb7ac881a3a5" category="doc">SANtricity Storage Manager for SMcliのインストール（11.53以前）- Linux（FC）</block>
   <block id="12da4c23be3ec49c3a0ebb3551baa6f7" category="doc">Eシリーズ- Linux（FC）でのmultipath.confファイルの設定</block>
   <block id="6b4af5eebbfa3ec509df83baaeba767a" category="doc">Eシリーズ（FC）でのLinux構成のサポートの確認</block>
@@ -9315,7 +9272,6 @@
   <block id="2983522bb7971192a7b19239c78489c4" category="doc">Eシリーズ- Linuxでのネットワークの設定（iSCSI）</block>
   <block id="a55d76a868400bdc13ddafa3c0b123fd" category="doc">Eシリーズでのスイッチの設定- Linux（iSCSI）</block>
   <block id="56a7cfd4a09dd9cc915effc3b709e56b" category="doc">Eシリーズでのパーティションとファイルシステムの作成（iSCSI）</block>
-  <block id="626515899065c3dfff76938d6bbbb573" category="doc">EシリーズでのLinux Unified Host Utilitiesのインストールと設定（iSCSI）</block>
   <block id="8ae63fb65e18e5737838f3f0f3616363" category="doc">SANtricity Storage Manager for SMcliのインストール（11.53以前）- Linux（iSCSI）</block>
   <block id="2cf4743e22ee36076d5e788acb85d307" category="doc">Eシリーズ- Linux（iSCSI）でのmultipath.confファイルの設定</block>
   <block id="83273ba9acef588f65385d940a4ea831" category="doc">Eシリーズ- Linux（iSCSI）でのIPネットワーク接続の確認</block>
@@ -9330,7 +9286,6 @@
   <block id="51b23502fc01639de89ab204ca319f19" category="doc">EシリーズLinuxでのサブネットマネージャの設定（iSER over InfiniBand）</block>
   <block id="c294953cfef25396092e6433e2aba579" category="doc">EシリーズLinuxでのパーティションとファイルシステムの作成（iSER over InfiniBand）</block>
   <block id="31a15fd8e15a2f1fd50fd6998a8cf036" category="doc">EシリーズLinux（iSER over InfiniBand）でのホストポートのグローバル一意IDの特定</block>
-  <block id="53e9f7b6ed3130efe08a1831a1d64a86" category="doc">EシリーズでのLinux Unified Host Utilitiesのインストールと設定（iSER over InfiniBand）</block>
   <block id="066c8070ea2f5a6a1b0acad2fd1364ac" category="doc">SMcli用SANtricity Storage Managerのインストール（11.53以前）- Linux（iSER over InfiniBand）</block>
   <block id="bda8bb645a075548b4adde8ea4b33efe" category="doc">EシリーズLinux（iSER over InfiniBand）でのmultipath.confファイルの設定</block>
   <block id="efe973952cf408c3cafd38a2c85cbddd" category="doc">EシリーズでのLinux構成のサポート状況の確認（iSER over InfiniBand）</block>
@@ -9393,7 +9348,6 @@
   <block id="174bbe0956088982601d07bf4750fcf0" category="doc">Eシリーズでのマルチパスソフトウェアの設定（SAS）</block>
   <block id="221409e67aacfe941a04460977bee7ba" category="doc">Eシリーズでのパーティションとファイルシステムの作成（SAS）</block>
   <block id="e9ca753ba2dbe90aa92161ccb16e38bc" category="doc">Eシリーズ- Linux（SAS）でのSASホスト識別子の特定</block>
-  <block id="7807c717a2b072f3a3dbcbc7fbc83c93" category="doc">EシリーズでのLinux Unified Host Utilitiesのインストールと設定（SAS）</block>
   <block id="68001805f74454d41c5344994334105d" category="doc">SANtricity Storage Manager for SMcliのインストール（11.53以前）- Linux（SAS）</block>
   <block id="35d216f5b1ca143eb3beeaa5d30dc52d" category="doc">Eシリーズ- Linux（SAS）でのmultipath.confファイルの設定</block>
   <block id="13c68af1e6a4e01e97dcf0b8bf97636a" category="doc">Eシリーズ（SAS）でのLinux構成のサポートの確認</block>
@@ -9406,7 +9360,6 @@
   <block id="176cfa346487abc57acc41973cb76102" category="doc">Eシリーズ- Linuxでのサブネットマネージャの設定（SRP over InfiniBand）</block>
   <block id="4d1495672528ba1edb974e7a3ec68925" category="doc">Eシリーズ- Linuxでのパーティションとファイルシステムの作成（SRP over InfiniBand）</block>
   <block id="722418d400a6f71b750c9b59435c9e9c" category="doc">EシリーズLinux（SRP over InfiniBand）でのホストポートのグローバル一意IDの特定</block>
-  <block id="1d454844786440b6542b0a49da213146" category="doc">EシリーズでのLinux Unified Host Utilitiesのインストールと設定（SRP over InfiniBand）</block>
   <block id="fd9fdffac380d0e2ac60f7758fdaa33c" category="doc">SMcli用SANtricity Storage Managerのインストール（11.53以前）- Linux（SRP over InfiniBand）</block>
   <block id="8035356b3e36fae458c1388504938a10" category="doc">EシリーズLinux（SRP over InfiniBand）でのmultipath.confファイルの設定</block>
   <block id="42396f2886c0bfaf606e08b85587f5d5" category="doc">Eシリーズ（SRP over InfiniBand）でのLinux構成のサポートの確認</block>
@@ -9433,7 +9386,6 @@
   <block id="2da78d32565fd341c24051991af853a3" category="doc">Eシリーズ- Windowsでホスト上のストレージを検出</block>
   <block id="23f932933101a11fe184222add659e37" category="doc">Eシリーズ- WindowsでFC固有のタスクを実行</block>
   <block id="789eb7d135829ee567fe346777d49e67" category="doc">EシリーズでのWindowsの簡単な設定- Windows</block>
-  <block id="7bb420e284a64dd789cacc0c2a388526" category="doc">EシリーズでのLinux Unified Host Utilitiesのインストールと設定- Windows</block>
   <block id="b00b49ab9c451c373425a273154e607e" category="doc">SMcli用SANtricity Storage Managerのインストール（11.53以前）- Windows</block>
   <block id="15f21f59c18fb17f9281572969cc6092" category="doc">Eシリーズ- WindowsでのiSCSI固有のタスクの実行</block>
   <block id="b67f6d03f59f9609e0db3c46a02da64f" category="doc">前提条件（EシリーズとWindows）</block>
@@ -9704,4 +9656,16 @@
   <block id="c78544d43a065eb825edb9e16bf0e9ad" category="paragraph">IOM12CおよびDCM3のSANtricity OSサポート</block>
   <block id="94d90ce4793f949687897ec062d97b9c" category="paragraph">IOM12CおよびDCM3 SAS-3シェルフのサポートは、コントローラファームウェア11.90R3以降で利用可能になりました。IOM12CおよびDCM3シェルフは、IOM12BおよびDCM2シェルフの後継機種です。</block>
   <block id="3a2a69a35a4560167d4c0478029a3f70" category="sidebar">vCenter 用ストレージプラグインに関する FAQ</block>
+  <block id="289a353684efed006a33d9a21e3af645" category="paragraph">構成に応じてシステムをケーブル接続します。</block>
+  <block id="c156a7b267c4ea3bb09eb8d0a8694c1f" category="admonition">以下の例よりも多くのケーブルオプションが必要な場合は、 <block ref="b04bca945c340a8933813e378ce89f33" category="inline-link-macro-rx"></block> 。</block>
+  <block id="62faeb5b26adfd078e5b6da1844d0928" category="list-text">*例A: 標準SAS構成の3つのDE212C/DE224ディスクシェルフを備えたコントローラシェルフ*</block>
+  <block id="fc6e6113eb588c4adfd7c54ea9a4a484" category="list-text">*例B: 標準SAS構成のDE212C/DE224ディスクシェルフ1台を備えたコントローラシェルフ*</block>
+  <block id="e0c51a35ed8248d1431ad993a2b53bbe" category="list-text">*例A: 標準SAS構成の2つのDE460Cディスクシェルフを備えたコントローラシェルフ*</block>
+  <block id="d2700be2b791b06d1a0e0eaf56e916d3" category="list-text">*例B: 標準SAS構成のDE460Cディスクシェルフ1台を備えたコントローラシェルフ*</block>
+  <block id="1bdf45714bb5554912e7596197bc58a3" category="admonition">以下の例よりも多くのケーブルオプションが必要な場合は、 <block ref="9f10449945bf1a610348d9968bbe3b7e" category="inline-link-macro-rx"></block> 。</block>
+  <block id="3c3ac8675fb15b987b57d9203f7eabae" category="list-text">*例A: 標準SAS構成の3つのDE212C/DE224Cディスクシェルフを備えたE4000コントローラシェルフ*</block>
+  <block id="eb3ac26ded8469cc0becb4bcba43a263" category="list-text">*例B: 標準SAS構成のDE212C/DE224Cディスクシェルフ1台を備えたE4000コントローラシェルフ*</block>
+  <block id="749e3259655b14ad4cd1d92b27ae554b" category="list-text">*例A: 標準SAS構成の2つのDE460Cディスクシェルフを備えたE4060コントローラシェルフ*</block>
+  <block id="cab141641940a0cb3eca1b1695f92d4b" category="list-text">*例B: 標準SAS構成のE4060コントローラシェルフと1つのDE460Cディスクシェルフ*</block>
+  <block id="47e9a132733409a780b8b25a91969da6" category="list-text">CLI コマンドを使用してストレージアレイの設定をデュプレックスに変更します。CLI を使用するには、CLI パッケージをダウンロードした場合はコマンド プロンプトを開き、Storage Manager がインストールされている場合はエンタープライズ管理ウィンドウ (EMW) を開きます。</block>
 </blocks>

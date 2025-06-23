@@ -125,8 +125,6 @@ sidebar:
           url: "/config-linux/fc-verify-linux-config-support-task.html"
         - title: DHCP を使用して IP アドレスを設定する
           url: "/config-linux/fc-configure-ip-address-dhcp-task.html"
-        - title: Host Utilities をインストールして設定する
-          url: "/config-linux/fc-install-configure-host-utilities-task.html"
         - title: SANtricity Storage Manager をインストールします
           url: "/config-linux/fc-install-smcli-11-53-task.html"
         - title: SANtricity システムマネージャにアクセスします
@@ -151,8 +149,6 @@ sidebar:
           url: "/config-linux/sas-verify-linux-config-support-task.html"
         - title: DHCP を使用して IP アドレスを設定する
           url: "/config-linux/sas-configure-ip-address-dhcp-task.html"
-        - title: Host Utilities をインストールして設定する
-          url: "/config-linux/sas-install-configure-host-utilities-task.html"
         - title: SANtricity Storage Manager をインストールします
           url: "/config-linux/sas-install-smcli-11-53-task.html"
         - title: SANtricity システムマネージャにアクセスします
@@ -175,8 +171,6 @@ sidebar:
           url: "/config-linux/iscsi-verify-linux-config-support-task.html"
         - title: DHCP を使用して IP アドレスを設定する
           url: "/config-linux/iscsi-configure-ip-address-dhcp-task.html"
-        - title: Host Utilities をインストールして設定する
-          url: "/config-linux/iscsi-install-configure-host-utilities-task.html"
         - title: SANtricity Storage Manager をインストールします
           url: "/config-linux/iscsi-install-smcli-11-53-task.html"
         - title: SANtricity システムマネージャにアクセスします
@@ -211,8 +205,6 @@ sidebar:
           url: "/config-linux/iser-ib-determine-host-port-guids-task.html"
         - title: サブネットマネージャを設定します
           url: "/config-linux/iser-ib-configure-subnet-manager-task.html"
-        - title: Host Utilities をインストールして設定する
-          url: "/config-linux/iser-ib-install-configure-host-utilities-task.html"
         - title: SANtricity Storage Manager をインストールします
           url: "/config-linux/iser-ib-install-smcli-11-53-task.html"
         - title: SANtricity システムマネージャにアクセスします
@@ -241,8 +233,6 @@ sidebar:
           url: "/config-linux/srp-ib-determine-host-port-guids-task.html"
         - title: サブネットマネージャを設定します
           url: "/config-linux/srp-ib-configure-subnet-manager-task.html"
-        - title: Host Utilities をインストールして設定する
-          url: "/config-linux/srp-ib-install-configure-host-utilities-task.html"
         - title: SANtricity Storage Manager をインストールします
           url: "/config-linux/srp-ib-install-smcli-11-53-task.html"
         - title: SANtricity システムマネージャにアクセスします
@@ -415,8 +405,6 @@ sidebar:
         url: "/config-windows/configure-ip-address-dhcp-task.html"
       - title: マルチパスソフトウェアを設定する
         url: "/config-windows/configure-multipath-software-task.html"
-      - title: Unified Host Utilities をインストールして設定する
-        url: "/config-windows/install-configure-host-utilities-task.html"
       - title: SANtricity Storage Manager をインストールします
         url: "/config-windows/install-storage-manager-for-smcli-task.html"
       - title: SANtricity システムマネージャにアクセスします
