@@ -63,8 +63,7 @@ dracut --force --add multipath
 たとえば 'grub の場合は '/boot/grub/menu.lst' で 'grub2 の場合は '/boot/grub2/menu.cfg です
 
 . を使用します https://docs.netapp.com/us-en/e-series-santricity/sm-storage/create-host-manually.html["ホストを手動で作成する"] ホストが定義されているかどうかを確認するには、オンラインヘルプの手順 を参照してください。各ホストタイプの設定が、で収集したカーネル情報に基づいていることを確認します <<step4,手順4.>>。
-
-
++
 
 NOTE: 自動ロードバランシングは、カーネル3.9以前を実行しているホストにマップされているボリュームでは無効になります。
 
