@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF300, EF600, EF300C, EF600C installation process overview 
 summary: EF300 または EF600 をインストールしてセットアップするプロセスを確認します。 
 ---
-= ストレージシステムの障害に関する詳細- EF300、EF600、EF300C、EF600C
+= ストレージ システムのインストールについて学ぶ - EF300、EF600、EF300C、EF600C
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
