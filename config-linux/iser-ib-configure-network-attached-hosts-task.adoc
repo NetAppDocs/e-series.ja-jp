@@ -24,7 +24,7 @@ InfiniBand OFED ドライバスタックでは iSER と SRP の両方を同じ�
 .手順
 . ホストで iSCSI サービスを有効にして開始します。
 +
-* Red Hat Enterprise Linux 7、8、9（RHEL 7、RHEL 8、RHEL 9）*
+Red Hat Enterprise Linux 8、9（RHEL 8、RHEL 9）
 
 +
 [listing]

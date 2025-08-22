@@ -24,13 +24,13 @@ summary: ホストでフェイルオーバーを実行するように設定し�
 NOTE: を参照してください https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] マルチパスは GA バージョンの SLES または RHEL では正しく機能しない場合があるため、必要な更新がインストールされていることを確認する必要があります。
 
 .このタスクについて
-RHEL 7 および SLES 12 は、 NVMe over RoCE のマルチパスに Device Mapper Multipath （ DMMP ）を使用します。RHEL 8、RHEL 9、SLES 15では、組み込みのネイティブのNVMeフェイルオーバーを使用します。実行している OS に応じて、適切に実行するためにマルチパスを追加で設定する必要があります。
+SLES 12 では、NVMe over RoCE のマルチパスに Device Mapper Multipath (DMMP) を使用しています。RHEL 8、RHEL 9、およびSLES 15は、組み込みのネイティブNVMeフェイルオーバーを使用します。使用しているOSによっては、マルチパスを正しく動作させるための追加設定が必要です。
 
 
 
-== RHEL 7 または SLES 12 の Device Mapper Multipath （ DMMP ）を有効にします
+== SLES12のデバイスマッパーマルチパス(DMMP)の有効化
 
-RHEL および SLES では、デフォルトでは DM-MP は無効になっています。ホストで DM-MP コンポーネントを有効にするには、次の手順を実行します。
+デフォルトでは、SLESのDM-MPは無効になっています。以下の手順で、ホスト上でDM-MPコンポーネントを有効にします。
 
 .手順
 . 次の例に示すように '/etc/multipath.conf ファイルの devices セクションに NVMe E シリーズデバイスのエントリを追加します

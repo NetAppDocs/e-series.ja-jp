@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: partitions, file systems, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: マルチパスデバイスにパーティションを作成し、必要に応じてネームスペースにファイルシステムを作成して、パーティションをマウントします。 
 ---
-= Eシリーズでのファイルシステムの作成- Linux RHEL 7およびSLES 12（NVMe over FC）
+= Eシリーズでファイルシステムを作成する - SLES 12 (NVMe over FC)
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-RHEL 7 および SLES 12 の場合は、目的の DM デバイスにファイルシステムを作成し、ファイルシステムをマウントします。
+SLES12では、目的のdmデバイス上にファイルシステムを作成し、そのファイルシステムをマウントします。
 
 .手順
 . 「 multipath -ll 」コマンドを実行して '/dev/mapper/dm' デバイスのリストを取得します

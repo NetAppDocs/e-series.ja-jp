@@ -2,16 +2,16 @@
 permalink: config-linux/nvme-ib-create-filesystems-sles-12-task.html 
 sidebar: sidebar 
 keywords: file systems, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
-summary: RHEL 7 および SLES 12 の場合は、ネームスペースにファイルシステムを作成し、ファイルシステムをマウントします。 
+summary: SLES12では、ネームスペースにファイルシステムを作成し、そのファイルシステムをマウントします。 
 ---
-= Eシリーズでのファイルシステムの作成- Linux RHEL 7およびSLES 12（NVMe over InfiniBand）
+= Eシリーズでファイルシステムを作成する - Linux SLES 12 (NVMe over InfiniBand)
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-RHEL 7 および SLES 12 の場合は、ネームスペースにファイルシステムを作成し、ファイルシステムをマウントします。
+SLES12では、ネームスペースにファイルシステムを作成し、そのファイルシステムをマウントします。
 
 .手順
 . 「 multipath -ll 」コマンドを実行して '/dev/mapper/dm' デバイスのリストを取得します
