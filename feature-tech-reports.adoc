@@ -33,7 +33,7 @@ summary: E シリーズのテクニカルレポート
 |  |  |  
 
 
-| https://www.netapp.com/ko/media/12421-tr4652.pdf["* TR-4652 ：『 SANtricity Dynamic Disk Pools * 』"^] | https://www.netapp.com/pdf.html?item=/media/17144-tr4737pdf.pdf["* TR-4737 ：『 SANtricity Automatic Load Balancing * 』"^] | https://www.netapp.com/pdf.html?item=/media/17142-tr4736pdf.pdf["* TR-4736 ：『 SANtricity Web Services API * 』"^] 
+| https://www.netapp.com/media/12421-tr-4652-santricity-os-ddp.pdf["* TR-4652 ：『 SANtricity Dynamic Disk Pools * 』"^] | https://www.netapp.com/pdf.html?item=/media/17144-tr4737pdf.pdf["* TR-4737 ：『 SANtricity Automatic Load Balancing * 』"^] | https://www.netapp.com/pdf.html?item=/media/17142-tr4736pdf.pdf["* TR-4736 ：『 SANtricity Web Services API * 』"^] 
 
 
 | ストレージ管理者が、同様のディスクのセットをプールトポロジにグループ化し、プール内のすべてのドライブを I/O ワークフローに含める方法について説明します。 | ALB 機能の動作の概要、主な設定パラメータ、およびホストの相互運用性の強化について説明します。 | SANtricity Web サービスの概要について説明します。 E シリーズストレージシステムの設定と管理に使用する API です。 

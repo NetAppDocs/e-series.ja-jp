@@ -6157,7 +6157,6 @@
   <block id="1e63a15616a71c16975a6ce6873851d7" category="cell">SANtricity の同期ミラーリング機能と非同期ミラーリング機能について説明します。</block>
   <block id="0d31bf4155130c7e1b044f877c983556" category="cell">SANtricity System Manager を使用した GUI の操作方法など、 SANtricity の Snapshot 機能について説明します。</block>
   <block id="20b51996662da655011d140b6ce13e08" category="inline-link">* TR-4652 ：『 SANtricity Dynamic Disk Pools * 』</block>
-  <block id="94b9edbcfa8896e9837abb98f7178d0b" category="cell"><block ref="94b9edbcfa8896e9837abb98f7178d0b" category="inline-link-rx"></block></block>
   <block id="c84200fc0d3d1c17f835b93cac2a4073" category="inline-link">* TR-4737 ：『 SANtricity Automatic Load Balancing * 』</block>
   <block id="9e438ddc696936eea7043d42a5d772c2" category="cell"><block ref="9e438ddc696936eea7043d42a5d772c2" category="inline-link-rx"></block></block>
   <block id="b855ed13871c8956bc535c1dcafa14d2" category="inline-link">* TR-4736 ：『 SANtricity Web Services API * 』</block>
@@ -6178,9 +6177,7 @@
   <block id="1be89425e0cebd7d4e13e5744baebbbd" category="cell">ストレージ管理者とデータベース管理者が NetApp EF シリーズストレージに Microsoft SQL Server を導入する際に役立ちます。</block>
   <block id="ea2848b98724bc7c864ab419f1efd076" category="cell">ストレージ管理者とデータベース管理者が Oracle を NetApp EF シリーズストレージに導入する際に役立ちます。</block>
   <block id="569680cec832ec2d53d80483c8dbc439" category="inline-link">* TR-4320 ：『 Best Practices with Commvault Data Platform V11 * 』を参照してください</block>
-  <block id="484210f783b83f032755dfc404923829" category="cell"><block ref="484210f783b83f032755dfc404923829" category="inline-link-rx"></block></block>
   <block id="0cd4f7215cb7ec8c6f73c51d9dc39a48" category="inline-link">* TR-4471 ：『 Best Practices with Veeam Backup and Replication 』を参照してください</block>
-  <block id="08fcfb094209aa6fd6eccf8aa5b05de1" category="cell"><block ref="08fcfb094209aa6fd6eccf8aa5b05de1" category="inline-link-rx"></block></block>
   <block id="5941ff1b3a4ffc80a4b2f0ae157b8b6d" category="inline-link">* TR-4704 ：『 Deploying Veritas NetBackup with NetApp E-Series Storage * 』</block>
   <block id="d5da5f4acb6ce9cd96c756f74b96e9a0" category="cell"><block ref="d5da5f4acb6ce9cd96c756f74b96e9a0" category="inline-link-rx"></block></block>
   <block id="12d1a4b387bfcab1922f0a411bb84852" category="cell">Commvault Data Platform V11 環境で NetApp E シリーズストレージを使用する際のリファレンスアーキテクチャとベストプラクティスについて説明します。</block>
@@ -9605,7 +9602,6 @@
   <block id="309255274290ac8d1dd6b54d267ce8cf" category="doc">SANtricity WebサービスプロキシAPIとUnified Managerにログインします。</block>
   <block id="f43368fba89f2c1294d458d0d3b87979" category="doc">SANtricity Webサービスプロキシのインストール要件とアップグレード要件を確認します。</block>
   <block id="689b1eb54a456e34eae7715d09f7480a" category="doc">SANtricity Webサービスプロキシのアンインストール</block>
-  <block id="7c3ba7ad8402a38e099e9ca7b44c927c" category="doc">SANtricity Webサービスプロキシファイルのインストールまたはアップグレード</block>
   <block id="31800de1cb68e15c0426a578c7dd75fd" category="doc">SANtricity WebサービスプロキシAPIの基本情報</block>
   <block id="be80139591e8588662d79bbef45ee848" category="doc">SANtricity Webサービスプロキシの互換性と制限事項</block>
   <block id="ed389a9acb72de33be78325f147d7d8c" category="doc">SANtricity Web ServicesとUnified Managerの詳細</block>
@@ -9663,4 +9659,9 @@
   <block id="01d7072c63a7f17dd56f882aa05c191e" category="paragraph">*SLES 12.x またはそれ以上*。</block>
   <block id="eb9f15fa21e7ecb26458bd00f198d235" category="paragraph">*SLES 12 以上</block>
   <block id="fd5ba176689e7b1be93aaa098be59948" category="sidebar">ファイルシステムの作成（SLES 12）</block>
+  <block id="4090c38c724effbcef59a93b035aed46" category="cell"><block ref="4090c38c724effbcef59a93b035aed46" category="inline-link-rx"></block></block>
+  <block id="43cf2b25070c6d7d19cb9548ac18c968" category="cell"><block ref="43cf2b25070c6d7d19cb9548ac18c968" category="inline-link-rx"></block></block>
+  <block id="fc81ed45554cc52f6bb42f4d7c774e51" category="cell"><block ref="fc81ed45554cc52f6bb42f4d7c774e51" category="inline-link-rx"></block></block>
+  <block id="23574e6efb4951cab243d0bca21f6801" category="doc">SANtricity Web Services Proxy およびSANtricity Unified Manager ファイルをインストールまたはアップグレードします</block>
+  <block id="2ba81316cd80bb512d2d7c99312de69e" category="section-title">バージョン11.90R4の新機能</block>
 </blocks>
