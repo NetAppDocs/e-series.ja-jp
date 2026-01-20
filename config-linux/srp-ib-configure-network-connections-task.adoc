@@ -81,9 +81,6 @@ systemctl start rdma
 
 . SRP デーモンを有効にします。
 +
-*SLES 12 以上
-
-+
 ** SRP デーモンを有効にしてブート時に開始する場合：
 +
 [listing]
