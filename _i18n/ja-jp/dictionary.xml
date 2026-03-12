@@ -9664,4 +9664,7 @@
   <block id="90f919900318df07a49ea42c3e35a350" category="paragraph">*RHEL 9、RHEL 10、または SLES 16*</block>
   <block id="9034687d4359fa9bd74cc1439c435374" category="doc">Eシリーズでファイルシステムを作成する - Linux RHEL 8、RHEL 9、RHEL 10、SLES 15、SLES 16 (NVMe over RoCE)</block>
   <block id="39ec44e7fd4c2966d363390d0affe00e" category="paragraph">SLES 12 は、NVMe over RoCE のマルチパスにデバイス マッパー マルチパス (DMMP) を使用します。RHEL 8、RHEL 9、RHEL 10、SLES 15、SLES 16 は、組み込みのネイティブ NVMe フェイルオーバーを使用します。実行している OS に応じて、マルチパスを適切に実行するために追加の構成が必要になります。</block>
+  <block id="980295b6698b8b2aea7adc1d9dafed8c" category="section-title">Version 11.90R5の新機能</block>
+  <block id="94bf3a177cda972f0b25d90290f4610c" category="paragraph">このバージョンには欠陥の修正のみが含まれ、新しい機能は含まれていません。このリリースの変更点の詳細については、EシリーズSANtricity OS 11.90R5 READMEを参照してください。</block>
+  <block id="b2676fbb812b8574fa9249e68163593f" category="paragraph">このバージョンにはマイナーな変更のみが含まれており、新しい機能は含まれていません。このリリースの変更点の詳細については、Eシリーズ SANtricity OS 11.90R4 READMEを参照してください。</block>
 </blocks>
