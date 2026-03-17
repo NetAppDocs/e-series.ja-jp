@@ -10655,8 +10655,6 @@
   <block id="5de3bf25939bdfa37414108f0d590980" category="section-title">バージョン12.0の新機能</block>
   <block id="ff0fa97cb252835f443a15ae7e9b46d4" category="admonition">SANtricity OS 12.0リリースは、新しいEF80およびEF50オールフラッシュ ストレージ システムとのみ互換性があります。</block>
   <block id="bf183e9df2b499bf43a8c68e4fec9235" category="paragraph">新しいストレージ システム モデル – EF80およびEF50オールフラッシュ ストレージ システム</block>
-  <block id="5c6dee44700e6c5c47a1e1f079ae7fce" category="paragraph">今回のリリースでは、EF80およびEF50オールNVMeフラッシュ ストレージ システムが導入されました。EF80およびEF50は、24台のNVMe SSDドライブと、コントローラごとに1枚のホスト インターフェイス カード（HIC）をサポートします。サポートされているNVMe over Fabricsホスト インターフェイスには、NVMe over RoCE、EF80用のNVMe over IB、およびEF50用のNVMe over FCが含まれます。サポートされているSCSIインターフェイスには、Fibre Channelが含まれます。</block>
-  <block id="6f8772ffc1694efdc2041680c31dc990" category="paragraph">EF80およびEF30は、30TBまたは60TBの大容量NVMe SSDドライブにも対応しています。EF80およびEF30は、ダイナミックディスクプールでの使用のみに対応しており、従来のRAIDには対応していません。</block>
   <block id="786003cdc863f3aad3e6d8b6bfb3da10" category="paragraph">SANtricity System Manager の新しいユーザーインターフェイス</block>
   <block id="22b06c9a9c11b263cfc8b70ea106720b" category="paragraph">新しいEF80およびEF50コントローラーの場合、SANtricity System Managerのユーザーインターフェイスが、よりモダンな外観と操作性を実現するために再設計されました。新しいインターフェイスには、左側のパネルナビゲーションと、管理タスクを効率化するための使いやすさの向上が含まれています。</block>
   <block id="33c4e4a69bd4b16424ffdb3de34b0af4" category="paragraph">サーバー証明書のサブジェクト代替名（SAN）には、文字、数字、ハイフンのみが使用可能になりました</block>
@@ -10691,4 +10689,6 @@
   <block id="db77cc51d1e45daf8e890b492be12264" category="sidebar">I/Oモジュールを交換する</block>
   <block id="f026d0a834b5192638b18ee631266375" category="sidebar">I/Oモジュールをアップグレードする</block>
   <block id="fe377799fa9a443d32452d6d45334541" category="sidebar">I/Oモジュール ホスト プロトコル</block>
+  <block id="7270f12c0a303f4c7f8c806c946d0faf" category="paragraph">今回のリリースでは、EF80およびEF50というオールNVMeフラッシュストレージシステムを紹介します。EF80およびEF50は、コントローラごとに24台のNVMe SSDドライブとコントローラ間ミラーリングカードをサポートします。サポートされているNVMe over Fabricsホスト インターフェイスには、NVMe over RoCE、NVMe over IB、EF80用のNVMe over FC、およびEF50用のNVMe over FCが含まれます。両システムでサポートされているSCSIインターフェイスはFibre Channelです。EF50はコントローラあたり最大2枚のホスト インターフェイス カードをサポートし、EF80はコントローラあたり最大3枚のホスト インターフェイス カードをサポートします。</block>
+  <block id="685ec10705743526f323aaeb2e8abdb9" category="paragraph">EF80およびEF50は、30TBまたは60TBの大容量NVMe SSDドライブにも対応しています。EF80およびEF50は、アレイに30TBまたは60TBのドライブが搭載されている場合にのみ、ダイナミックディスクプールを利用できます。</block>
 </blocks>
