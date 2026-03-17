@@ -8465,7 +8465,6 @@
   <block id="3ab5df294fcede9a13e1df001c392281" category="paragraph"><block ref="3ab5df294fcede9a13e1df001c392281" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7a2b27b2d95b2db288029dec9f945c50" category="inline-link">11.90リリースノート</block>
   <block id="a780d55204be966b795f04cc4bf22137" category="list-text"><block ref="a780d55204be966b795f04cc4bf22137" category="inline-link-rx"></block></block>
-  <block id="5e40a8e83b3a3f822534bef7faa8799b" category="paragraph"><block ref="5e40a8e83b3a3f822534bef7faa8799b" category="inline-link-rx"></block></block>
   <block id="fe52bb817507c40336c19cb0a171e765" category="inline-image-macro">E2800のLEDディスプレイ</block>
   <block id="e4cd966e5475f60c49220402627c0091" category="list-text">ホストリンクLEDは、ホストインターフェイスに応じて、点灯、点滅、消灯のいずれかになります。<block ref="dfa6f90141a0a680db298f8900008782" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f6014478ed7f2623da8bc269a34d7464" category="image-alt">E2800インサートバッテリ</block>
@@ -10372,8 +10371,6 @@
   <block id="b669c7541b481751dcc71a055cce958b" category="inline-link-macro">ストレージシステムのセットアップを完了する</block>
   <block id="78842b8d721f67915adcf3eb011b7c36" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="5ef3aa7bd3b14cfb714e4d5b256fce22" category="inline-link-macro-rx"></block></block>
   <block id="38c38e882e02e5c78c715e5e344923bf" category="paragraph">ストレージシステムのセットアップを完了するには、コントローラの管理ポートにケーブルを接続して設定し、ストレージシステムを構成および管理してから、ホスト I/O モジュールのプロトコルが正しいことを確認してください。</block>
-  <block id="3b4608a173577ff11cb5a970a95a9116" category="inline-link">12.0 リリースノート</block>
-  <block id="3140eb9f268fa80dd4b189e0d7e0986b" category="list-text"><block ref="3140eb9f268fa80dd4b189e0d7e0986b" category="inline-link-rx"></block></block>
   <block id="a75befa2f42df622990e46f9c7d49e08" category="list-text">左側のパネルにあるメニューから Hardware[Controllers and components] を選択してください。</block>
   <block id="a2b019c9963ef773b0ead6446cef828d" category="image-alt">ファンキャニスタリリースタブ</block>
   <block id="b00fd47d5fb356f57fefb70bd8db1fab" category="list-text">グラフィックにドライブが表示されている場合は、*Show back of shelf*を選択してコントローラを表示します</block>
@@ -10652,8 +10649,6 @@
   <block id="57e6a2c38c0c83841001bc8084252a54" category="list-text">行の右端にある省略記号を選択し、ポップアップ メニューから*ストレージ アレイの名前変更*を選択します。</block>
   <block id="2bcb50ee17148fb9fd0603f1ac802486" category="list-text">証明書に関する詳細情報を表示するには、該当する行を選択し、行末尾の省略記号を選択してから、*View*または*Export*をクリックします。</block>
   <block id="b65e70a586056d9f45f1ba1eca4b2d5e" category="paragraph">次の表は、EF80、EF50、E4000、EF300、EF600、E2800/EF280、およびE5700/EF570コントローラの組み込み管理向けの最新のSANtricity OSリリースにおける新機能について説明しています。</block>
-  <block id="5de3bf25939bdfa37414108f0d590980" category="section-title">バージョン12.0の新機能</block>
-  <block id="ff0fa97cb252835f443a15ae7e9b46d4" category="admonition">SANtricity OS 12.0リリースは、新しいEF80およびEF50オールフラッシュ ストレージ システムとのみ互換性があります。</block>
   <block id="bf183e9df2b499bf43a8c68e4fec9235" category="paragraph">新しいストレージ システム モデル – EF80およびEF50オールフラッシュ ストレージ システム</block>
   <block id="786003cdc863f3aad3e6d8b6bfb3da10" category="paragraph">SANtricity System Manager の新しいユーザーインターフェイス</block>
   <block id="22b06c9a9c11b263cfc8b70ea106720b" category="paragraph">新しいEF80およびEF50コントローラーの場合、SANtricity System Managerのユーザーインターフェイスが、よりモダンな外観と操作性を実現するために再設計されました。新しいインターフェイスには、左側のパネルナビゲーションと、管理タスクを効率化するための使いやすさの向上が含まれています。</block>
@@ -10668,7 +10663,6 @@
   <block id="c7b277569ea9232e1708c189c4c38af7" category="paragraph">新しい<block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix=" " category="inline-code"></block>パラメータがSMcliで利用可能になりました。この新しいパラメータを使用すると、ストレージ アレイに関連付けられているすべてのSCSIネイティブ ブロック デバイスを検索できます。詳細については、<block ref="391452592dd6d4101b3a240969ca8672" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="a5302be9e5d09f8d45fab47dcbe1907c" category="inline-link-macro">iSCSI統計パッケージの表示</block>
   <block id="809701d680e9fe62bb27c816be37d1ce" category="paragraph">システムマネージャの「iSCSI統計パッケージの表示」ページに、新しい「イーサネットカーネル統計」オプションが追加されました。この新しいオプションを使用すると、iSCSIデバイスのプラットフォームカーネルドライバの統計情報を表示できます。詳細については、<block ref="e06656598852b432960957ceca80ecb8" category="inline-link-macro-rx"></block>を参照してください。</block>
-  <block id="38833d44319a29abce252a75db2a1f8b" category="sidebar">SANtricity System Manager 12.0</block>
   <block id="12552cabe7cc02a88100da5f5c4c0b2d" category="sidebar">SANtricity Unified Manager 8</block>
   <block id="c91faa8fa5379f94c18777a9515b9168" category="sidebar">NVMe over RoCE 固有のタスクを実行する</block>
   <block id="477a44c679560f083fcea73a8a50959d" category="sidebar">EF50およびEF80</block>
@@ -10691,4 +10685,10 @@
   <block id="fe377799fa9a443d32452d6d45334541" category="sidebar">I/Oモジュール ホスト プロトコル</block>
   <block id="7270f12c0a303f4c7f8c806c946d0faf" category="paragraph">今回のリリースでは、EF80およびEF50というオールNVMeフラッシュストレージシステムを紹介します。EF80およびEF50は、コントローラごとに24台のNVMe SSDドライブとコントローラ間ミラーリングカードをサポートします。サポートされているNVMe over Fabricsホスト インターフェイスには、NVMe over RoCE、NVMe over IB、EF80用のNVMe over FC、およびEF50用のNVMe over FCが含まれます。両システムでサポートされているSCSIインターフェイスはFibre Channelです。EF50はコントローラあたり最大2枚のホスト インターフェイス カードをサポートし、EF80はコントローラあたり最大3枚のホスト インターフェイス カードをサポートします。</block>
   <block id="685ec10705743526f323aaeb2e8abdb9" category="paragraph">EF80およびEF50は、30TBまたは60TBの大容量NVMe SSDドライブにも対応しています。EF80およびEF50は、アレイに30TBまたは60TBのドライブが搭載されている場合にのみ、ダイナミックディスクプールを利用できます。</block>
+  <block id="e866b10ba89d5ee2fe179d93f938430c" category="inline-link">12.00 リリースノート</block>
+  <block id="15df5baea5d41e42b8be265c67488ea8" category="list-text"><block ref="15df5baea5d41e42b8be265c67488ea8" category="inline-link-rx"></block></block>
+  <block id="c9f4c41100461402ef108c1e6ccc6adf" category="paragraph"><block ref="c9f4c41100461402ef108c1e6ccc6adf" category="inline-link-rx"></block></block>
+  <block id="d37b8d3a8d7d50a2d15245479531c53d" category="section-title">バージョン12.00の新機能</block>
+  <block id="631e6d7ea44751bbf0471574f75f550e" category="admonition">SANtricity OS 12.00リリースは、新しいEF80およびEF50オールフラッシュ ストレージ システムとのみ互換性があります。</block>
+  <block id="dcf1521fe2188852a3d1ae5493b83c24" category="sidebar">SANtricity System Manager 12.00</block>
 </blocks>
