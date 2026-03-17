@@ -15,26 +15,27 @@ summary: E シリーズのテクニカルレポート
 
 
 
-== プラットフォーム TR
+== EF50、EF80、および E4000 プラットフォーム TR
 
 [cols="9,9,9"]
 |===
 
 
-| https://www.netapp.com/pdf.html?item=/media/17026-tr4725pdf.pdf["* TR-4725 ：『 E2800 Arrays feature overview 』 *"^] | https://www.netapp.com/pdf.html?item=/media/17120-tr4724pdf.pdf["*+++TR-4724 ： E5700 アレイの概要 ++*"^] | https://www.netapp.com/pdf.html?item=/media/21363-tr-4877.pdf["*++++TR-487: EF300 アレイの概要 ++*"^] 
+| https://www.netapp.com/pdf.html?item=/media/116236-tr-5001-intro-to-netapp-e4000-arrays-with-santricity.pdf["* TR-5001 ： E4000 アレイ機能の概要 *"^] | https://www.netapp.com/pdf.html?item=/media/161852-tr-5017-introduction-to-netapp-ef80-array.pdf["*TR-5017：EF80 アレイの機能概要*"^] | https://www.netapp.com/pdf.html?item=/media/161736-tr-5018-introduction-to-netapp-ef50-array.pdf["*TR-5018：EF50 アレイの機能概要*"^] 
 
 
-| E2800 ハイブリッドアレイのハードウェアとソフトウェアの機能、および SANtricity OS の最新機能について説明します。 | 最新バージョンの SANtricity で導入された新しいハードウェアやソフトウェア機能など、 E5700 の製品情報について説明します。 | EF300 オールフラッシュアレイのハードウェアとソフトウェアの機能、および SANtricity OS の新機能について説明します。 
+| E4000 ハイブリッドアレイのハードウェアとソフトウェアの機能、および SANtricity OS の最新機能について説明します。 | EF80のハードウェアおよびソフトウェア機能と最新のSANtricity OSの機能について説明します。 | EF50オールフラッシュ アレイのハードウェアおよびソフトウェア機能と、最新のSANtricity OS機能について説明します。 
+|===
 
 
-|  |  |  
+== レガシープラットフォーム TR
+
+[cols="9,9,9,9"]
+|===
 
 
-|  |  |  
+| https://www.netapp.com/pdf.html?item=/media/17009-tr4800pdf.pdf["* TR-4800 ： EF600 アレイ機能の概要 *"^] | https://www.netapp.com/pdf.html?item=/media/21363-tr-4877.pdf["*++++TR-487: EF300 アレイの概要 ++*"^] | https://www.netapp.com/pdf.html?item=/media/17026-tr4725pdf.pdf["* TR-4725 ：『 E2800 Arrays feature overview 』 *"^] | https://www.netapp.com/pdf.html?item=/media/17120-tr4724pdf.pdf["*+++TR-4724 ： E5700 アレイの概要 ++*"^] 
 
 
-| https://www.netapp.com/pdf.html?item=/media/17009-tr4800pdf.pdf["* TR-4800 ： EF600 アレイ機能の概要 *"^] | https://www.netapp.com/pdf.html?item=/media/116236-tr-5001-intro-to-netapp-e4000-arrays-with-santricity.pdf["* TR-5001 ： E4000 アレイ機能の概要 *"^] |  
-
-
-| EF600 オールフラッシュアレイのハードウェアおよびソフトウェア機能と SANtricity OS の新機能について説明します。 | E4000 ハイブリッドアレイのハードウェアとソフトウェアの機能、および SANtricity OS の最新機能について説明します。 |  
+| EF600 オールフラッシュ アレイのハードウェアおよびソフトウェア機能と、新しい SANtricity OS の機能について説明します。 | EF300オールフラッシュ アレイのハードウェアおよびソフトウェア機能と新しいSANtricity OS機能について説明します。 | E2800ハイブリッドアレイのハードウェアおよびソフトウェア機能と最新のSANtricity OSの機能について説明します。 | E5700製品情報について説明します。最新バージョンのSANtricityで導入された新しいハードウェアおよびソフトウェア機能も含まれています。 
 |===

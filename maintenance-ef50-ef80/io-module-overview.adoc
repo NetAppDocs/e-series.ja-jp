@@ -1,0 +1,24 @@
+---
+permalink: maintenance-ef50-ef80/io-module-overview.html 
+sidebar: sidebar 
+keywords: ef50, ef80, replace io module, upgrade io module, io module overview 
+summary: EF50およびEF80ストレージ システムは、I/Oモジュールのアップグレードや交換を柔軟に行うことができ、ネットワーク接続性とパフォーマンスを向上させます。 
+---
+= I/Oモジュール保守の概要 - EF50およびEF80
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+EF50およびEF80ストレージ システムは、I/Oモジュールの交換やアップグレードを柔軟に行うことができ、ネットワーク接続性とパフォーマンスを向上させます。
+
+* link:io-module-replace.html["I/O モジュールを交換する"]
++
+ストレージ システムの I/O モジュールに障害が発生した場合は、同じタイプの I/O モジュールと交換することで、ストレージ システムを最適な動作状態に復元できます。
+
+* link:io-module-upgrade.html["I/O モジュールをアップグレードする"]
++
+ストレージ システムの I/O モジュールをアップグレードして、ホスト ポートの数を増やし、ネットワーク接続を強化し、システムのデータ トラフィック処理能力を拡張できます。
+
+

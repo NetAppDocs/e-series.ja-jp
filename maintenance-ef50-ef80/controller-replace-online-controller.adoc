@@ -1,0 +1,76 @@
+---
+permalink: maintenance-ef50-ef80/controller-replace-online-controller.html 
+sidebar: sidebar 
+keywords: ef50, ef80, how to online the controller 
+summary: EF50またはEF80ストレージシステムの交換用コントローラをインストールしたら、交換用コントローラのIPアドレスを確認し、コントローラをオンラインにして、ストレージシステムのステータスがOptimalであることを確認してください。 
+---
+= 交換用コントローラをオンラインにする - EF50 および EF80
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+EF50またはEF80ストレージシステムの交換用コントローラをインストールしたら、そのIPアドレスを確認し、コントローラをオンラインにして、ストレージシステムのステータスがOptimalであることを確認します。
+
+.手順
+. 次のステップは、障害が発生したコントローラがIPアドレスにDHCPを使用していたかどうかによって異なります：
++
+[cols="1,2"]
+|===
+| 状況 | 操作 
+
+
+ a| 
+障害が発生したコントローラは、IPアドレスにDHCPを使用しませんでした
+ a| 
+交換用コントローラは、取り外した障害のあるコントローラのIPアドレスを引き継ぎます。
+
+次の手順へ進みます。
+
+
+
+ a| 
+障害が発生したコントローラは、IPアドレスにDHCPを使用していた
+ a| 
+ネットワーク管理者に、障害が発生したコントローラのDNS/ネットワークアドレスとIPアドレスを、交換用コントローラのMACアドレスに関連付けるよう依頼してください。
+
+|===
+. SANtricity System Managerを使用してコントローラをオンラインにします。
++
+.. *Hardware* ＞ *Controllers and components* を選択してコントローラーを表示します。
+.. 交換したコントローラを選択して、コンテンツメニューを表示します。
+.. *オンラインで注文する*を選択します。
+
+
+. コントローラの起動時に、コントローラのLEDを確認し、他のコントローラとの通信が再確立されていることを確認してください：
++
+** 黄色の警告 LED が点灯した状態になります。
+** ホストリンク LED は、ホストインターフェイスに応じて、点灯、点滅、消灯のいずれかになります。
+
+
+. コントローラがオンラインに戻ったら、Recovery GuruでNVSRAMの不一致が報告されていないかどうかを確認します。
++
+NVSRAM の不一致が報告された場合は、次の SMcli コマンドを使用して NVSRAM をアップグレードしてください。 `-k`パラメータは、アレイが https セキュアでない場合に必要です。
+
++
+[listing]
+----
+SMcli <controller A IP> <controller B IP> -u admin -p <password> -k -c "download storageArray NVSRAM file=\"C:\Users\testuser\Downloads\NVSRAM .dlp file>\" forceDownload=TRUE;"
+----
++
+
+NOTE: SMcliコマンドを完了できない場合は、 https://www.netapp.com/company/contact-us/support/["ネットアップサポート"^]に連絡するか、 https://mysupport.netapp.com["ネットアップサポートサイト"^]にログインしてケースを作成してください。
+
+. ストレージシステムのステータスが最適であり、コントローラの注意 LED が消灯していることを確認します。
++
+ステータスが最適でない場合、または注意LEDのいずれかが点灯している場合は、すべてのケーブルが正しく接続されていること、およびコントローラが正しく取り付けられていることを確認してください。必要に応じて、コントローラを取り外して再度取り付けます。
+
++
+
+NOTE: 問題が解決しない場合は、 https://www.netapp.com/company/contact-us/support/["ネットアップサポート"^]にお問い合わせください。
+
+
+
+.次の手順
+新しいコントローラーをオンラインにした後、link:controller-replace-complete-replacement.html["コントローラの交換を完了します"]。

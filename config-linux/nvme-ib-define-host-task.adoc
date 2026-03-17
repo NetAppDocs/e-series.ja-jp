@@ -24,7 +24,7 @@ SANtricity System Manager を使用して、ストレージアレイにデータ
 
 
 .手順
-. メニューから「 Storage [Hosts] 」を選択します。
+. 左側のパネルから、menu:Storage[Hosts]を選択します。
 . メニュー： Create [Host] をクリックします。
 +
 Create Host （ホストの作成）ダイアログボックスが表示されます。

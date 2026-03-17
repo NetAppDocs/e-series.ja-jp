@@ -1,0 +1,44 @@
+---
+section: maintenance-ef50-ef80
+title: EF50およびEF80
+entries:
+- title: メンテナンスの概要
+  url: "/maintenance-ef50-ef80/maintain-overview.html"
+- title: コントローラ
+  pdf-filename: EF50およびEF80コントローラ
+  entries:
+  - title: コントローラの交換ワークフロー
+    url: "/maintenance-ef50-ef80/controller-replace-workflow.html"
+  - title: 要件を確認
+    url: "/maintenance-ef50-ef80/controller-replace-requirements.html"
+  - title: システムの準備
+    url: "/maintenance-ef50-ef80/controller-replace-prepare.html"
+  - title: オフライン コントローラ
+    url: "/maintenance-ef50-ef80/controller-replace-offline-controller.html"
+  - title: コントローラを交換してください
+    url: "/maintenance-ef50-ef80/controller-replace-move-hardware.html"
+  - title: オンライン コントローラ
+    url: "/maintenance-ef50-ef80/controller-replace-online-controller.html"
+  - title: コントローラ交換後の処理
+    url: "/maintenance-ef50-ef80/controller-replace-complete-replacement.html"
+- title: DIMM
+  url: "/maintenance-ef50-ef80/dimm-replace.html"
+- title: ドライブ
+  url: "/maintenance-ef50-ef80/drive-replace.html"
+- title: ファン
+  url: "/maintenance-ef50-ef80/fan-replace.html"
+- title: I/O モジュール
+  pdf-filename: EF50およびEF80 I/Oモジュール
+  entries:
+  - title: I/Oモジュールの概要
+    url: "/maintenance-ef50-ef80/io-module-overview.html"
+  - title: I/Oモジュールを交換する
+    url: "/maintenance-ef50-ef80/io-module-replace.html"
+  - title: I/Oモジュールをアップグレードする
+    url: "/maintenance-ef50-ef80/io-module-upgrade.html"
+- title: I/Oモジュール ホスト プロトコル
+  url: "/maintenance-ef50-ef80/io-module-change-protocol.html"
+- title: NVバッテリー
+  url: "/maintenance-ef50-ef80/nvdimm-battery-replace.html"
+- title: 電源装置
+  url: "/maintenance-ef50-ef80/power-supply-replace.html"

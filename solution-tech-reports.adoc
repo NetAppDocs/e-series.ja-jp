@@ -79,20 +79,8 @@ summary: E シリーズのテクニカルレポート
 |===
 
 
-| https://www.netapp.com/pdf.html?item=/media/31665-tr-4884.pdf["* TR-4884 ：『 Entry-level HPC systems with NetApp E-Series and IBM Spectrum Scale 』 *"^] | https://www.netapp.com/pdf.html?item=/media/22029-tr-4859.pdf["* TR-4859 ：『 Deploying IBM Spectrum Scale with NetApp E-Series Storage 』"^] | https://www.netapp.com/pdf.html?item=/media/19407-tr-4856-deploy.pdf["* TR-4856 ：『 BeeGFS High Availability with E-Series using Red Hat Enterprise Linux Server* 』"^] 
-
-
-| NetApp E シリーズストレージシステムと IBM Spectrum Scale を基盤としたエントリレベル HPC システムのリファレンスアーキテクチャについて説明している。 | IBM の Spectrum Scale ソフトウェアスタックに基づいて、フル並列ファイルシステムの解決策を導入するプロセスについて説明します。 | NetApp E シリーズシステムにサポートされる BeeGFS アーキテクチャにハイアベイラビリティを実装し、 BeeGFS ストレージ、メタデータ、管理サービスに RedHat Enterprise Linux を使用するために必要な構成について説明します。 
+| https://www.netapp.com/pdf.html?item=/media/31665-tr-4884.pdf["* TR-4884 ：『 Entry-level HPC systems with NetApp E-Series and IBM Spectrum Scale 』 *"^] | https://www.netapp.com/pdf.html?item=/media/22029-tr-4859.pdf["* TR-4859 ：『 Deploying IBM Spectrum Scale with NetApp E-Series Storage 』"^] |  
 
 
 |  |  |  
-
-
-|  |  |  
-
-
-| https://www.netapp.com/pdf.html?item=/media/19431-tr-4862.pdf["* TR-4862 ： SUSE Linux Enterprise Server * を使用した E シリーズでの BeeGFS 高可用性"^] |  |  
-
-
-| NetApp E シリーズシステムを基盤とし、 BeeGFS ストレージ、メタデータ、管理サービスに SUSE Linux Enterprise Server を使用する BeeGFS アーキテクチャに高可用性を実装するために必要な構成について説明します。 |  |  
 |===

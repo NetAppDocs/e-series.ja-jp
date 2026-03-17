@@ -38,6 +38,7 @@ sidebar:
       url: "/getting-started/getup-run-concept.html"
   - title: ハードウェアを設置
     entries:
+    - section: install-hw-ef50-ef80
     - title: EF300 および EF600
       entries:
       - title: 概要
@@ -385,6 +386,8 @@ sidebar:
         url: "/config-vmware/iscsi-perform-specific-task.html"
       - title: SAS 固有のタスクを実行
         url: "/config-vmware/sas-perform-specific-task.html"
+      - title: NVMe over RoCE 固有のタスクを実行する
+        url: "/config-vmware/nvme-roce-perform-specific-task.html"
       - title: ホストでストレージを検出します
         url: "/config-vmware/discover-storage-host-task.html"
       - title: ホストでストレージを設定する
@@ -455,6 +458,7 @@ sidebar:
         url: "/upgrade-santricity/upgrade-drive-firmware-task.html"
   - title: システムの保守
     entries:
+    - section: maintenance-ef50-ef80
     - title: EF300 および EF600
       pdf-filename: EF300 - EF600 メンテナンスシステム
       entries:

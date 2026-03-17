@@ -1,0 +1,5 @@
+= 
+:allow-uri-read: 
+
+
+障害のある部品は、キットに付属するRMA指示書に従ってNetAppに返却してください。詳細については、 https://mysupport.netapp.com/site/info/rma["部品の返品と交換"]ページを参照してください。

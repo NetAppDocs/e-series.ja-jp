@@ -1,0 +1,328 @@
+---
+permalink: config-vmware/nvme-roce-perform-specific-task.html 
+sidebar: sidebar 
+keywords: NVMe over RoCE protocol, switches, zone switches, zoning, host port identifiers, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E4000, EF50, EF80 E-Series, eseries 
+summary: Fibre Channel プロトコルを使用する場合は、スイッチを設定し、ホストポート識別子を特定します。 
+---
+= EシリーズでRoCE経由のNVMe固有のタスクを実行する - VMware
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NVMe over RoCEプロトコルの場合は、スイッチを設定し、ホスト ポート識別子を決定します。
+
+
+
+== ステップ1：設定を記録する
+
+このページの PDF を生成して印刷し、次のワークシートを使用してプロトコル固有のストレージ構成情報を記録できます。この情報は、プロビジョニングタスクを実行する際に必要になります。
+
+
+
+=== 推奨される構成
+
+推奨構成は、 2 つのイニシエータポートと 4 つのターゲットポートを 1 つ以上の VLAN で接続した構成です。
+
+image::../media/network_generic_worksheet.gif[NVMe over RoCE ポート識別子"]
+
+
+
+=== ホスト識別子
+
+|===
+| 番号 | ホストポート接続 | ソフトウェアイニシエータの NQN 
+
+
+ a| 
+1.
+ a| 
+ホスト（イニシエータ） 1.
+ a| 
+
+
+
+ a| 
+1.
+ a| 
+ホスト（イニシエータ） 2.
+ a| 
+
+|===
+
+
+=== ターゲット識別子
+
+|===
+| 番号 | アレイ ポート接続 | ターゲット NQN 
+
+
+ a| 
+2.
+ a| 
+アレイ コントローラ（ターゲット）ポート1
+ a| 
+
+
+
+ a| 
+2.
+ a| 
+アレイ コントローラ（ターゲット）ポート2
+ a| 
+
+
+
+ a| 
+2.
+ a| 
+アレイ コントローラ（ターゲット）ポート3
+ a| 
+
+
+
+ a| 
+2.
+ a| 
+アレイ コントローラ（ターゲット）ポート 4
+ a| 
+
+|===
+
+
+=== マッピングホスト
+
+|===
+
+
+ a| 
+マッピングホスト名
+ a| 
+
+
+
+ a| 
+ホスト OS タイプ
+ a| 
+
+|===
+
+
+=== 推奨される構成
+
+これはアレイによって異なる場合があります。EF300、EF600、およびEF50は、2つのイニシエータポートと、1つ以上のVLANを持つ最大4つのターゲットポートを備えています。EF80は、2つのイニシエータポートと、1つ以上のVLANを持つ最大6つのターゲットポートで構成されます。
+
+
+
+== 手順2：NVMe/RoCEスイッチを設定する
+
+NVMe over RoCE に関するベンダーの推奨事項に従ってスイッチを設定します。これらの推奨事項には、設定の指示とコードの更新が含まれる場合があります。
+
+.これについて
+このタスクでは、RoCE 上の NVMe 用にスイッチを設定するための一般的な手順について説明します。具体的な手順については、スイッチ ベンダーのマニュアルを参照してください。
+
+始める前に、以下のものを用意してください：
+
+* 高可用性を確保するための2つの独立したネットワーク。NVMe over RoCEトラフィックは、必ず別のネットワークセグメントに分離してください。
+
+
+.手順
+スイッチベンダーのマニュアルを参照してください。
+
+
+
+== ステップ3：ネットワークの設定 - NVMe/RoCE、VMware
+
+データストレージの要件に応じて、NVMe over RoCEネットワークをさまざまな方法で設定できます。環境に最適な構成を選択するためのヒントについては、ネットワーク管理者に相談してください。
+
+.このタスクについて
+このタスクでは、RoCE 上の NVMe 用にネットワークを構成するための一般的な手順について説明します。具体的な手順については、スイッチ ベンダーのマニュアルを参照してください。
+
+始める前に、以下のものを用意してください：
+
+* スイッチは、RDMA経由のNVMe向けロスレス イーサネット用に構成されています。
+
+
+.このタスクについて
+NVMe over RoCE ネットワークを計画する際には、VMware Configuration Maximums ガイドに記載されているように、サーバあたりでサポートされる RDMA NVMe イニシエータ ポートの最大数は 2 であることを覚えておいてください。パスの設定数が多すぎないように、この要件を考慮する必要があります。
+
+良好なマルチパス構成を確保するため、NVMe over RoCEネットワークには複数のネットワーク セグメントを使用してください。ホスト側のポートを少なくとも1つ、および各アレイ コントローラのポートを少なくとも1つ、1つのネットワーク セグメントに配置し、ホスト側とアレイ側のポートの同一のグループを別のネットワーク セグメントに配置します。可能な限り、複数のイーサネット スイッチを使用して冗長性を高めてください。
+
+.手順
+スイッチベンダーのマニュアルを参照してください。
+
+
+
+== ステップ4：アレイ側のネットワーク構成 - NVMe/RoCE、VMware
+
+SANtricity System Managerインターフェイスを使用して、アレイ側でNVMe over RoCEネットワークを設定します。
+
+.このタスクについて
+このタスクでは、SANtricity System Managerの*Controllers & components*ページからNVMe over RoCEポート構成にアクセスする方法について説明します。SANtricity System Manager内の*Configure NVMe over RoCE ports*ページから構成にアクセスすることもできます。
+
+始める前に、以下のものを用意してください：
+
+* いずれかのストレージアレイコントローラの IP アドレスまたはドメイン名。
+* System ManagerのGUIのパスワード、またはロールベースアクセス制御（RBAC）もしくはLDAPとディレクトリサービスが、ストレージアレイへの適切なセキュリティアクセス用に設定されています。link:https://docs.netapp.com/us-en/e-series-santricity/um-certificates/overview-access-management-um.html["アクセス管理"^]の詳細については、SANtricity System Managerのオンラインヘルプを参照してください。
+
+
+.手順
+. ブラウザから、次のURLを入力します。 https://<DomainNameOrIPAddress>[]
++
+「 IPAddress 」は、ストレージアレイコントローラの 1 つのアドレスです。
+
++
+設定されていないアレイで初めて SANtricity システムマネージャを開くと、管理者パスワードの設定プロンプトが表示されます。ロールベースアクセス管理では、 admin 、 support 、 security 、 monitor の 4 つのローカルロールが設定されます。最後の 3 つのロールには、推測されにくいランダムなパスワードが設定されています。admin ロールのパスワードを設定したら、 admin クレデンシャルを使用してすべてのパスワードを変更できます。4 つのローカルユーザロールの詳細については、 SANtricity System Manager オンラインヘルプを参照してください。
+
+. 管理者パスワードの設定フィールドとパスワードの確認フィールドに管理者ロールの System Manager パスワードを入力し、 * パスワードの設定 * をクリックします。
++
+プール、ボリュームグループ、ワークロード、または通知が設定されていない場合は、セットアップウィザードが起動します。
+
+. セットアップウィザードを閉じます。
++
+このウィザードは、あとで追加のセットアップタスクを実行する際に使用します。
+
+. *Hardware* > *Controllers and components* を選択します。
+. 設定する NVMe over RoCE ポートを持つコントローラをクリックします。
++
+コントローラのコンテキストメニューが表示されます。
+
+. NVMe over RoCE ポートの設定 * を選択します。
++
+[NVMe over RoCE ポートの設定]ダイアログ ボックスが開きます。
+
+. ドロップダウンリストで、設定するポートを選択し、 * Next * をクリックします。
+. 構成ポートの設定を選択し、 * 次へ * をクリックします。
++
+すべてのポート設定を表示するには、ダイアログボックスの右側にある * Show more port settings * リンクをクリックします。
+
++
+|===
+| ポートの設定 | 説明 
+
+
+ a| 
+イーサネットポート速度の設定
+ a| 
+希望の速度を選択してください。ドロップダウンリストに表示されるオプションは、ネットワークがサポートできる最大速度（例：200 Gb/s）によって異なります。
+
+
+
+ a| 
+IPv4 を有効にする / IPv6 を有効にする
+ a| 
+一方または両方のオプションを選択して、 IPv4 ネットワークと IPv6 ネットワークのサポートを有効にします。
+
+
+
+ a| 
+MTUサイズ（「その他のポート設定を表示」をクリックすると表示されます。）
+ a| 
+必要に応じて、 Maximum Transmission Unit （ MTU ；最大伝送ユニット）の新しいサイズをバイト単位で入力します。
+
+デフォルトのMTUサイズは4200バイト / フレームです。1500～9000の値を入力する必要があります。
+
+|===
++
+[*IPv4 を有効にする *] を選択した場合は、 [ 次へ *] をクリックすると、 IPv4 設定を選択するためのダイアログボックスが開きます。[*IPv6 を有効にする *] を選択した場合、 [ 次へ *] をクリックすると、 IPv6 設定を選択するためのダイアログボックスが開きます。両方のオプションを選択した場合は、 IPv4 設定のダイアログボックスが最初に開き、 * 次へ * をクリックすると、 IPv6 設定のダイアログボックスが開きます。
+
++
+IPv4 と IPv6 、またはその両方を自動または手動で設定します。すべてのポート設定を表示するには、ダイアログボックスの右側にある * Show more settings * リンクをクリックします。
+
++
+|===
+| ポートの設定 | 説明 
+
+
+ a| 
+自動的に設定を取得します
+ a| 
+設定を自動的に取得するには、このオプションを選択します。
+
+
+
+ a| 
+静的な設定を手動で指定します
+ a| 
+このオプションを選択した場合は、フィールドに静的アドレスを入力します。IPv4 の場合は、ネットワークのサブネットマスクとゲートウェイも指定します。IPv6 の場合は、ルーティング可能な IP アドレスとルータの IP アドレスも指定します。
+
+|===
+. [ 完了 ] をクリックします。
+. System Manager を終了します。
+
+
+
+
+== ステップ5：ホスト側ネットワークの設定—NVMe over RoCE、VMware
+
+ホスト側でNVMe over RoCEネットワークを設定すると、VMware NVMe over RDMAストレージ アダプタ イニシエータでアレイとのセッションを確立できるようになります。
+
+.このタスクについて
+この構成により、差別化サービスコードポイント（DSCP）に基づく優先フロー制御（PFC）を使用したロスレス ネットワークが可能になります。
+
+.手順
+. RDMAネットワークアダプタを特定し、vmnicとペアになっているアップリンクを記録します。
++
+詳細については、link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-storage/about-vmware-nvme-storage/configuring-nvme-over-rdma-roce-v2-on-esxi/view-rdma-network-adapters.html["RDMAネットワーク アダプタを表示する"^]を参照してください。
+
+. vSphere標準スイッチを使用して、RDMAアダプタのVMkernelポートバインディングを設定します。
++
+詳細については、link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-storage/about-vmware-nvme-storage/configuring-nvme-over-rdma-roce-v2-on-esxi/configure-vmkernel-binding-for-the-rdma-adapter.html["RDMAアダプタのVMkernelバインディングを設定する"^]を参照してください。
+
+. ソフトウェア NVMe over RDMA アダプタを追加します。
++
+詳細については、link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-storage/about-vmware-nvme-storage/configuring-nvme-over-rdma-roce-v2-on-esxi/add-software-nvme-over-rdma-or-nvme-over-tcp-adapters.html["ソフトウェアNVMe over RDMAまたはNVMe over TCPアダプタを追加する"^]を参照してください。
+
+. NVMe over RDMA用のNVMeコントローラを追加します。
++
+詳細については、link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-storage/about-vmware-nvme-storage/configuring-nvme-over-rdma-roce-v2-on-esxi/add-controller-for-nvme-over-fabrics.html["NVMe over Fabrics用のコントローラを追加する"^]を参照してください。
+
+. NVMe over RDMA用にロスレス イーサネットを設定します。
++
+ロスレス ネットワークは、Differentiated Services Code Point（DSCP）ベースのPriority Flow Control（PFC）を使用して設定します。
+
++
+このオプションを使用するには、次を参照してください：
+
++
+** link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-storage/about-vmware-nvme-storage/requirements-for-vmware-nvme-storage.html#GUID-B764140D-BCF3-4C99-8169-E5B058757518-en["RDMA経由のNVMe向けロスレス イーサネットの設定"^]。
+
+
+
+
+
+
+== ステップ6：IPネットワーク接続を確認する - NVMe over RoCE、VMware
+
+インターネットプロトコル（ IP ）ネットワーク接続を確認するには、 ping テストを使用してホストとアレイが通信できることを確認します。
+
+.手順
+. ホスト上で次のコマンドを実行します：
++
+[listing]
+----
+vmkping <NVMe over RoCE_target_IP_address\>
+----
++
+この例では、NVMe over RoCEのターゲットIPアドレスは192.6.21.231です。
+
++
+[listing]
+----
+vmkping -d 192.6.21.231
+PING 192.6.21.231 (192.6.21.231): 56 data bytes
+64 bytes from 192.6.21.231: icmp_seq=0 ttl=64 time=0.902 ms
+64 bytes from 192.6.21.231: icmp_seq=1 ttl=64 time=0.406 ms
+64 bytes from 192.6.21.231: icmp_seq=2 ttl=64 time=0.855 ms
+--- 192.6.21.231 ping statistics ---
+3 packets transmitted, 3 packets received, 0% packet loss
+round-trip min/avg/max = 0.406/0.721/0.902 ms
+----
+. 各ホストのイニシエータ アドレス（NVMe over RoCEに使用されるホスト イーサネット ポートのIPアドレス）から各コントローラのNVMe over RoCEポートへ `vmkping`コマンドを問題します。構成内の各ホスト サーバでこの操作を実行し、必要に応じてIPアドレスを変更してください。
++
+
+NOTE: コマンドが次のメッセージで失敗した場合 `sendto() failed (Message too long)`、ホスト サーバー、ストレージ コントローラ、およびスイッチ ポート上のイーサネット インターフェイスのMTUサイズを確認します。
+
+. ターゲット検出を完了するには、NVMe over RoCE構成手順に戻ります。
+

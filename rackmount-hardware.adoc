@@ -2,16 +2,18 @@
 sidebar: sidebar 
 permalink: rackmount-hardware.html 
 keywords: rackmount, rack-mount, install in rack, rails 
-summary: ハードウェアをラックに設置します。 
+summary: ラックマウント用ハードウェアは、ハードウェアをラックやキャビネットに取り付けるために使用されます。ラックマウント用ハードウェアの箱には、取り付け手順書が同梱されているはずです。ただし、取り付け手順を確認する必要がある場合は、下記の該当するリンクをご利用ください。 
 ---
-= ラックマウントハードウェア（Eシリーズ）
+= ラックマウント用ハードウェア - Eシリーズ
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-ラックマウントハードウェアの設置方法については、次のリンク先のマニュアルを参照してください。
+ラックマウント用ハードウェアは、ストレージシステムをラックやキャビネットに設置するために使用されます。ラックマウント用ハードウェアの箱には、取り付け手順書が同梱されているはずです。ただし、取り付け手順を確認する必要がある場合は、下記の該当するリンクをご利用ください。
+
+最新のストレージシステムでは、サポートされているラックマウントハードウェアを確認するには、NetApp Hardware Universeを参照してください https://hwu.netapp.com["NetApp Hardware Universe の略"^]。
 
 
 
@@ -40,4 +42,4 @@ summary: ハードウェアをラックに設置します。
 
 == 4ポストラック-SuperRail
 
-にアクセスします https://docs.netapp.com/us-en/ontap-systems/platform-supplemental/superrail-install.html["4 ポストラックへの SuperRail の設置（ DE224C / DE460C シェルフ）"^]。
+アクセス https://docs.netapp.com/us-en/ontap-systems/platform-supplemental/superrail-install.html["SuperRailを4本柱のラックに取り付けます"^]。

@@ -1,0 +1,54 @@
+---
+permalink: maintenance-ef50-ef80/controller-replace-offline-controller.html 
+sidebar: sidebar 
+keywords: ef50, ef80, offline the impaired controller 
+summary: コントローラを交換する際は、データ損失を防ぎ、システムの安定性を確保するために、EF50またはEF80ストレージシステム内の障害コントローラをオフラインにしてください。 
+---
+= 障害のあるコントローラをオフラインにする - EF50およびEF80
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+コントローラを交換する際は、データ損失を防ぎ、システムの安定性を確保するために、EF50またはEF80ストレージシステム内の障害コントローラをオフラインにしてください。
+
+.実行前
+* この手順のlink:controller-replace-requirements.html["要件"]を満たしている必要があります。
+* この手順を実行するには、link:controller-replace-prepare.html["準備"]を完了している必要があります。
+
+
+.このタスクについて
+コントローラをオフラインにした場合は、コントローラをオンラインに戻す前に少なくとも1分間待つ必要があります。この待機時間により、ストレージシステムはコントローラのステータスを更新し、キャッシュされたすべてのデータがドライブに書き込まれるようにします。
+
+.手順
+. 障害のあるコントローラがまだオフラインになっていない場合は、SANtricity System Managerを使用してオフラインにします：
++
+.. *Hardware* ＞ *Controllers and components* を選択してコントローラーを表示します。
+.. オフラインにするコントローラを選択して、コンテキストメニューを表示します。
+.. *オフラインにする*を選択し、操作を実行することを確認します。
++
+
+NOTE: オフラインにしようとしているコントローラを使用してSANtricity System Managerにアクセスしている場合、SANtricity System Manager利用不可のメッセージが表示されます。*別のネットワーク接続に接続*を選択すると、もう一方のコントローラを使用してSANtricity System Managerに自動的にアクセスできます。
+
+
+
+. SANtricity System Manager でコントローラのステータスがオフラインに更新されるまで待ちます。
++
+
+CAUTION: ステータスの更新が完了するまでは、他の処理を開始しないでください。
+
+. Recovery Guruを使用して、障害コンポーネントを取り外しても安全であることを確認してください：
++
+.. * Recheck * を選択します。
+.. 詳細エリアの*削除してもOK*フィールドに*はい*と表示されていることを確認してください。
++
+
+CAUTION: *OK to remove*フィールドに*Yes*と表示されない場合は、故障したコンポーネントの取り外しを続行しないでください。代わりに、Recovery Guruを使用して問題のトラブルシューティングを行ってください。
+
+
+
+
+
+.次の手順
+故障したコントローラーをオフラインにした後、link:controller-replace-move-hardware.html["障害コントローラを交換する"]。

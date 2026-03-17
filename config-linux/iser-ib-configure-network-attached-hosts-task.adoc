@@ -163,7 +163,7 @@ iscsiadm -m node --target <Target IQN> -I iface-ib1 -p <Target Port IP\> -l
 ----
 iscsiadm -m session
 ----
-.. アレイから iSCSI セッションのステータスを確認します。SANtricity システムマネージャで、 * ストレージアレイ * > * iSER * > * View / End Sessions * に移動します。
+.. アレイからiSCSIセッションのステータスを確認します。SANtricity System Managerで、*設定* > *システム* > *iSCSIセッションの表示/終了*に移動します。
 
 
 

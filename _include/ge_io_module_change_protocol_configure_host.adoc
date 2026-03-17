@@ -1,0 +1,13 @@
+= 
+:allow-uri-read: 
+
+
+詳しい手順については、お使いのストレージ システムに適したガイドを参照してください：
+
+* link:../config-linux/index.html["Linux の簡単な設定"]
+* link:../config-vmware/index.html["VMware の簡単な設定"]
+* link:../config-windows/index.html["Windows の簡単な設定"]
++
+具体的な設定は環境によって異なります。を確認します http://mysupport.netapp.com/matrix["NetApp Interoperability Matrix を参照してください"^] 具体的な手順および解決策のその他の推奨設定については、を参照してください。
+
+

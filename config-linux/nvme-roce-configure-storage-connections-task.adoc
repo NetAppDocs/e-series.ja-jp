@@ -28,7 +28,7 @@ NVMe over RoCE 構成には、 * Hardware * ページまたはメニューから
 NOTE: NVMe over RoCE の設定と機能は、ストレージアレイのコントローラに NVMe over RoCE ポートが搭載されている場合にのみ表示されます。
 
 .手順
-. System Manager インターフェイスから、 * Hardware * を選択します。
+. System Managerインターフェイスの左側のパネルから、*ハードウェア*を選択します。
 . NVMe over RoCE ポートを設定するコントローラをクリックします。
 +
 コントローラのコンテキストメニューが表示されます。

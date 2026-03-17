@@ -22,7 +22,7 @@ SANtricity System Manager の GUI を使用して、アレイ側の iSCSI ネッ
 
 
 .このタスクについて
-このタスクでは、 System Manager のハードウェアページから iSCSI ポートの設定にアクセスする方法について説明します。設定には、 System （設定） > Configure iSCSI Ports （ iSCSI ポートの設定）メニューからもアクセスできます。
+このタスクでは、System ManagerのハードウェアページからiSCSIポート構成にアクセスする方法について説明します。設定はメニューの「System」→「Settings」→「System」→「Configure iSCSI ports」からもアクセスできます。
 
 .手順
 . ブラウザで、「 + https://<DomainNameOrIPAddress>+` 」という URL を入力します
@@ -40,11 +40,7 @@ SANtricity System Manager の GUI を使用して、アレイ側の iSCSI ネッ
 +
 このウィザードは、あとで追加のセットアップタスクを実行する際に使用します。
 
-. 「 * ハードウェア * 」を選択します。
-. 図にドライブが表示されている場合は、 * シェルフの背面を表示 * をクリックします。
-+
-図の表示が切り替わり、ドライブではなくコントローラが表示されます。
-
+. 左側のパネルから、menu:Hardware[Controllers and components]を選択します。
 . iSCSI ポートを設定するコントローラをクリックします。
 +
 コントローラのコンテキストメニューが表示されます。

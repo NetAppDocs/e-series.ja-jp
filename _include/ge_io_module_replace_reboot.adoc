@@ -1,0 +1,28 @@
+= 
+:allow-uri-read: 
+
+
+I/Oモジュールを交換した後は、コントローラを再起動する必要があります。
+
+.手順
+. LOADERプロンプトからコントローラをリブートします。
++
+`bye`
+
++
+
+NOTE: 障害のあるコントローラをリブートすると、I/Oモジュールやその他のコンポーネントも再初期化されます。
+
+. 損傷したコントローラにストレージを戻して、正常な動作状態に戻します：
++
+`storage failover giveback -ofnode _impaired_node_name_`
+
+. 正常なコントローラのコンソールから自動ギブバックをリストアします：
++
+`storage failover modify -node local -auto-giveback true`
+
+. AutoSupportが有効になっている場合は、ケースの自動作成を復元します：
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
+
+

@@ -1,0 +1,75 @@
+---
+permalink: maintenance-ef50-ef80/maintain-overview.html 
+sidebar: sidebar 
+keywords: ef50, ef80 maintenance, maintenance, repairing ef50, ef80, replace ef50, ef80 components 
+summary: EF50またはEF80ストレージシステムのハードウェアを適切にメンテナンスすることで、長期的な信頼性と最適なパフォーマンスを確保できます。故障した部品の交換など、定期的なメンテナンス作業を実施してください。これにより、ダウンタイムやデータ損失を防ぐことができます。 
+---
+= メンテナンス手順の概要 - EF50 および EF80
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+EF50またはEF80ストレージシステムのハードウェアを適切にメンテナンスすることで、長期的な信頼性と最適なパフォーマンスを確保できます。故障した部品の交換など、定期的なメンテナンス作業を実施してください。これにより、ダウンタイムやデータ損失を防ぐことができます。
+
+メンテナンス手順では、EF50またはEF80ストレージ システムがSANtricity環境にすでに導入されていることを前提としています。
+
+
+
+== システムコンホオネント
+
+EF50またはEF80ストレージ システムでは、以下のコンポーネントに対してメンテナンス手順を実行できます。
+
+[cols="25,65"]
+|===
+
+
+ a| 
+link:controller-replace-workflow.html["コントローラ"]
+ a| 
+コントローラは、基板、ファームウェア、およびソフトウェアで構成されます。ドライブを制御し、SANtricity OSソフトウェアを実行します。
+
+
+
+ a| 
+link:dimm-replace.html["DIMM"]
+ a| 
+デュアルインラインメモリモジュール（DIMM）は、コンピュータメモリの一種です。コントローラマザーボードにシステムメモリを追加するためにインストールされます。
+
+
+
+ a| 
+link:drive-replace.html["ドライブ"]
+ a| 
+ドライブは、データに必要な物理ストレージを提供するデバイスです。
+
+
+
+ a| 
+link:fan-replace.html["ファン"]
+ a| 
+ファンがコントローラとドライブを冷却します。
+
+
+
+ a| 
+link:io-module-overview.html["I/O モジュール"]
+ a| 
+I/O モジュール（Input/Output モジュール）は、コントローラと、コントローラとのデータ交換を必要とする様々なデバイスやシステムとの間の仲介役として機能するハードウェア コンポーネントです。
+
+
+
+ a| 
+link:nvdimm-battery-replace.html["NVバッテリー"]
+ a| 
+不揮発性メモリ（NVMEM）バッテリーは、電源喪失後、転送中のデータがフラッシュメモリにデステージされている間、NVMEMコンポーネントに電力を供給する役割を果たします。
+
+
+
+ a| 
+link:power-supply-replace.html["電源装置"]
+ a| 
+電源装置は、コントローラに冗長電源を提供します。
+
+|===

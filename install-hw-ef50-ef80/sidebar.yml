@@ -1,0 +1,16 @@
+---
+section: install-hw-ef50-ef80
+title: EF50およびEF80
+entries:
+- title: インストール ワークフロー
+  url: "/install-hw-ef50-ef80/install-workflow.html"
+- title: インストールの準備
+  url: "/install-hw-ef50-ef80/install-prepare.html"
+- title: ハードウェアを設置
+  url: "/install-hw-ef50-ef80/install-hardware.html"
+- title: ケーブルハードウェア
+  url: "/install-hw-ef50-ef80/install-cable.html"
+- title: システムの電源をオンにする
+  url: "/install-hw-ef50-ef80/install-power-hardware.html"
+- title: システムセットアップを完了する
+  url: "/install-hw-ef50-ef80/install-complete-setup.html"

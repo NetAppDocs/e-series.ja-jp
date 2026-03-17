@@ -673,7 +673,6 @@
   <block id="1eb0ff6df726e241747c0e89f25244ea" category="paragraph">CA 署名証明書をインポートする場合は、検出ウィザードをキャンセルし、左パネルから * 証明書の管理 * をクリックします。詳細については、オンラインヘルプを参照してください。</block>
   <block id="e3edf5c3fccd5c6697f49aa29eea9d52" category="section-title">手順 2 ：検出時に信頼されていない証明書を解決する</block>
   <block id="07cc0b154f9ccc95c3979e73595b247d" category="paragraph">証明書の問題を解決してから検出プロセスを開始する必要があります。</block>
-  <block id="42953292e20d0fe6df436b0360c37be2" category="list-text">[ 自己署名証明書の解決 ] ダイアログボックスが開いた場合は、信頼されていない証明書について表示される情報を確認します。詳細については、表の右端にある省略記号をクリックし、ポップアップメニューから「 * 表示 * 」を選択することもできます。</block>
   <block id="d51bf97a9da045099b54d30bd57c5b28" category="list-text">検出されたストレージアレイへの接続を信頼する場合は、 * Next * （次へ）をクリックし、 * Yes * （はい）をクリックして確認し、ウィザードの次のダイアログに進みます。自己署名証明書は信頼済みとしてマークされ、ストレージアレイがプラグインに追加されます。</block>
   <block id="674337fef1a1eb3f66ed81c2c9ecacf9" category="list-text">ストレージアレイへの接続を信頼しない場合は、「 * キャンセル」を選択し、各ストレージアレイのセキュリティ証明書戦略を検証してから追加してください。</block>
   <block id="f090b90012bc562ab3ad569b3f605995" category="section-title">手順 3 ：パスワードを入力する</block>
@@ -987,7 +986,6 @@
   <block id="c2f14ef319f065fe227efe97d6ea24a9" category="admonition">各トレイの背面にある電源装置やその他のコンポーネントを取り外す必要はありません</block>
   <block id="c0fc5b77785e9ccc271b2b8dd4cb9834" category="list-text">各コンポーネントを別々の静電気防止用バッグに入れます。元の梱包箱がある場合は、コンポーネントを輸送するために使用します。</block>
   <block id="8e13c4e8636891fcc6e5a23419cbc317" category="summary">E シリーズ 3040 40U キャビネットにドライブトレイを取り付ける方法の概要</block>
-  <block id="57d5c442d5e080cc736db980fe00ba6d" category="paragraph">E シリーズ 3040 40U キャビネットには、次のコントローラドライブトレイと拡張ドライブトレイを取り付けることができます。</block>
   <block id="c1720d086d67c4941ff4f5d3bdc66f28" category="list-text">E2612 、 E2624 、および E2660 コントローラのドライブトレイ</block>
   <block id="6fb7eb6545fb6a1d5229ab891080cda4" category="list-text">E2712 、 E2724 、 E2760 コントローラドライブトレイ</block>
   <block id="ad11ae63512cece6b5faf0e830c04f54" category="list-text">E5412 、 E5424 、および E5460 コントローラのドライブトレイ</block>
@@ -1076,7 +1074,6 @@
   <block id="d37274e03d6538d0be57f24ae671fece" category="list-text">キャビネットのすべてのドライブトレイの電源をオンにします。</block>
   <block id="34a41d4e3b538464e1138ee17196dbda" category="paragraph">キャビネットの設置が完了しました。通常の運用を再開することができます。</block>
   <block id="44fc66161e7a43ac157626f024173dde" category="paragraph">iSCSI プロトコルを使用する場合は、スイッチを設定し、アレイ側とホスト側でネットワークを設定してから、 IP ネットワーク接続を確認します。</block>
-  <block id="9c8c6bc1dd1c6a33336d55ccb262a475" category="list-text">高可用性を実現するために、 2 つの独立したネットワークVLAN または 2 つの独立したネットワークを使用して、 iSCSI トラフィックを別々のネットワークセグメントに分離してください。</block>
   <block id="7a0cbf02537e0c5675240097a5e290c6" category="paragraph">iSCSI ネットワークに基本的な冗長性を効果的に設定するには、各ホストポートと各コントローラの 1 つのポートを別々のスイッチに接続し、ホストポートとコントローラポートの各セットを VLAN を使用して別々のネットワークセグメントに分離します。</block>
   <block id="193ade8f53ce0d3769717269d5021a04" category="paragraph">パフォーマンス上の理由から IP SAN 内でジャンボフレームを使用している場合は、アレイ、スイッチ、およびホストでジャンボフレームを使用するように設定してください。ホストおよびスイッチでジャンボフレームを有効にする方法については、使用するオペレーティングシステムとスイッチのドキュメントを参照してください。アレイでジャンボフレームを有効にするには、手順 3 の手順を実行します。</block>
   <block id="7a44acba5c86f8f1ca8ef18dcb107358" category="list-text">System Manager GUI 、ロールベースアクセス制御（ RBAC ）、または LDAP のパスワード、およびストレージアレイへの適切なセキュリティアクセスのために設定されたディレクトリサービス。アクセス管理の詳細については、 SANtricity システムマネージャオンラインヘルプを参照してください。</block>
@@ -1126,7 +1123,6 @@
   <block id="e9c45dd6cb00ba8477b33a69aa171b96" category="list-text">新しい LUN にファイルを作成して書き込みます。</block>
   <block id="b3f0f7d7e200ade801e191d50af42d06" category="list-text">ファイルを読み取り、データが書き込まれたことを確認します。</block>
   <block id="9f0a17fd8f2207d817cfe3c8c6a95585" category="list-text">マルチパスが機能していることを確認するために、ボリューム所有権を変更します。</block>
-  <block id="0e47ea92ec60347bfe5d3c6449f27c14" category="list-text">SANtricity システム・マネージャの GUI から、 * ストレージ * &gt; * ボリューム * に移動し、 * その他 * &gt; * 所有権の変更 * を選択します。</block>
   <block id="41213a903734e026a2aabeac116a7c55" category="list-text">[ ボリューム所有権の変更 ] ダイアログ・ボックスで '[* 優先所有者 *] プルダウンを使用して ' リスト内のいずれかのボリュームの他のコントローラを選択し ' 操作を確定します</block>
   <block id="b3b03c678d704e3c2546a61146e099e3" category="list-text">引き続き LUN のファイルにアクセスできることを確認します。</block>
   <block id="093eba936291bd32a865bdc3cedc6822" category="list-text">ターゲット ID を検索します。</block>
@@ -1240,7 +1236,6 @@
   <block id="56d5920f093315d1b4acca4634ea813e" category="paragraph">DE460C</block>
   <block id="6d15b7c798a29f86cded1b0859358dfd" category="section-title">ケーブル接続に関するその他の情報</block>
   <block id="862335aa1afeb33c245d15b63267f502" category="inline-link">IOM ドライブシェルフを既存の E27XX 、 E56XX 、または EF560 コントローラシェルフに追加</block>
-  <block id="4fffce6a4208f525b6fa4c44cc5bf6ce" category="paragraph">次の構成でケーブル接続する場合は、を参照してください<block ref="4426bbb413c69380e459efdddf2e423d" category="inline-link-rx"></block></block>
   <block id="de79e6b334ef3f5c38431ae360ff09f6" category="paragraph">E2712 、 E2724 、 E5612 、 E5624 、 EF560</block>
   <block id="f2a12ad5f52528054619d431dc7c3054" category="paragraph">E2760 、 E5660</block>
   <block id="5c8edef9c398c6792341850977901070" category="inline-link">同期および非同期ミラーリング機能の説明と導入ガイド</block>
@@ -3660,8 +3655,6 @@
   <block id="4b1723f1cc6cad1502f558faf333c23d" category="section-title">VSS</block>
   <block id="2f569257101cf136a49d983584bfc44f" category="section-title">HPC</block>
   <block id="9e90820ac4b8e4889e0e892b92aae973" category="section-title">機能 TR</block>
-  <block id="d4f48db40cc9ccb47737f1fc78496e37" category="summary">ハードウェアをラックに設置します。</block>
-  <block id="bd0b9fd60ba60fb26f0df0fcd090ce57" category="paragraph">ラックマウントハードウェアの設置方法については、次のリンク先のマニュアルを参照してください。</block>
   <block id="d6fb953a021a6ff678e8a0c03802aad8" category="section-title">調整可能なサポートレール</block>
   <block id="bfbdc837bd6c733a01be96f0d8c0fcbf" category="inline-link">アジャスタブル支持レールの設置</block>
   <block id="2bf00abba5acdf11b805e02e28e0cf01" category="paragraph">にアクセスします<block ref="798f784939cffd43e8de29df7d9e6431" category="inline-link-rx"></block> 別途出荷された（キャビネットに取り付けられていない）コントローラドライブトレイまたはドライブトレイの取り付け用。この手順は、次の 2U （ 9 cm または 3.5 インチ）トレイに適用できます。</block>
@@ -3951,7 +3944,6 @@
   <block id="648ed8661ad007c126d212b08e03c8c1" category="list-text">交換用ファンをスライドしてシェルフの奥まで押し込みます。</block>
   <block id="c4c2324e867c8ac1926d98eff2baef06" category="paragraph">新しいファンを取り付けたら、コントローラキャニスターをコントローラシェルフに再度取り付けます。</block>
   <block id="30bbbdf3936bea4031a4d92241354b80" category="section-title">手順 6 ：ファンの交換後の処理</block>
-  <block id="a935fd8920ef566dc3502cb2fd802a9e" category="list-text">System Manager でハードウェアページに移動します。</block>
   <block id="8addc48a633646024884c3c4cdcfc464" category="list-text">ファンを交換したコントローラを選択します。</block>
   <block id="d6475123c80be4addf74127c7fdabcec" category="paragraph">これでファンの交換は完了です。通常の運用を再開することができます。</block>
   <block id="3445e7362b27e4ba74cabda5b497847f" category="summary">EF300 または EF600 の HIC を交換する前に、要件と考慮事項を確認します。</block>
@@ -5161,7 +5153,6 @@
   <block id="0434f4063ec0e6018b67e2628a0486e9" category="paragraph">各セッションで、 iscsiadm コマンドを実行してセッションにログインします。</block>
   <block id="529357696d4e7bff988966dd1a9b7030" category="list-text">iSER / iSCSI セッションを検証します。</block>
   <block id="8d78f4535f282487a2ab3ddd133fb30b" category="list-text">ホストでの iSCSI セッションのステータスを確認します。</block>
-  <block id="c76785f55adb8111b0f0c955e99aaf58" category="list-text">アレイから iSCSI セッションのステータスを確認します。SANtricity システムマネージャで、 * ストレージアレイ * &gt; * iSER * &gt; * View / End Sessions * に移動します。</block>
   <block id="b91274a21d960f7520a6ac949c997991" category="paragraph">iSCSI サービスが実行されている場合、 OFED / RDMA サービスの開始時にデフォルトで iSER カーネルモジュールがロードされます。iSER 接続のセットアップを完了するには、 iSER モジュールをロードする必要があります。現在、これにはホストのリブートが必要です。</block>
   <block id="3710c6fd95e8087b7e4f2fd5c68bd9b1" category="summary">SMdevices ツールは nvme-CLI パッケージに含まれており、ホストで現在認識されているボリュームを表示できます。このツールは nvme list コマンドの代わりです。</block>
   <block id="3f8c2a243c2baf6f8bcf99653d3825cb" category="doc">ホストが認識できるボリュームを表示する</block>
@@ -5243,7 +5234,6 @@
   <block id="1bfd8936faf8d2d6e911732cc86fad64" category="doc">Fibre Channel のクイックセットアップ</block>
   <block id="13fd378eeb7a101fc09f1cbecaf60c62" category="summary">管理ステーションに SANtricity Storage Manager ソフトウェアをインストールすると、グラフィカルユーザインターフェイス \ （ GUI\ ）とコマンドラインインターフェイス \ （ CLI\ ）がデフォルトでインストールされます。以下の手順では、 SANtricity Storage Manager GUI を I/O ホストではなく管理ステーションにインストールすることを想定しています。</block>
   <block id="9e87cdc6a00e94ff824bf3066fcce29d" category="summary">コントローラに NVMe over InfiniBand ポートが搭載されている場合は、 SANtricity System Manager を使用して各ポートの IP アドレスを設定できます。</block>
-  <block id="9f8222c6083d597d584744e4fbf1e758" category="list-text">System Manager インターフェイスから、 * Hardware * を選択します。</block>
   <block id="e605f070f133de407ce03a9b4c8f9b96" category="list-text">NVMe over InfiniBand ポートを設定するコントローラをクリックします。</block>
   <block id="a03fb9ed3e23d41ff2ce19057c3e8d50" category="list-text">Configure NVMe over InfiniBand ports] を選択します。</block>
   <block id="8a105984196bb35866ef84f5338bcea8" category="admonition">Configure NVMe over InfiniBand ports オプションは、 System Manager がコントローラで NVMe over InfiniBand ポートを検出した場合にのみ表示されます。</block>
@@ -5415,7 +5405,6 @@
   <block id="8329426ded9436d4fbff44b5e4b4c72c" category="admonition">IQN は次のような形式です。</block>
   <block id="e6fa7633cc6e723b63becb0e5f1d6bb5" category="list-text">ホストで確立されている iSCSI セッションの一覧を表示します。</block>
   <block id="510c309ccc5b6c64d1c85d306a6a0f42" category="summary">アレイ側で iSCSI ネットワークを設定します。</block>
-  <block id="0e5c9a9b399a5ffb43c453285a8e27f7" category="paragraph">このタスクでは、 System Manager のハードウェアページから iSCSI ポートの設定にアクセスする方法について説明します。設定には、 System （設定） &gt; Configure iSCSI Ports （ iSCSI ポートの設定）メニューからもアクセスできます。</block>
   <block id="dcd56d80ecc0d78aefb3259c4aa4270b" category="summary">SLES 15 の場合は、ネイティブの NVMe デバイスにファイルシステムを作成し、ファイルシステムをマウントします。</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">著作権に関する声明、商標、特許などにアクセスできます。</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法的通知</block>
@@ -5437,12 +5426,9 @@
   <block id="fd4afa980d6bd4e60fc6c8caabf1757e" category="paragraph">* DE460C ： *</block>
   <block id="b6bb42e2f777828c4d73a82302e2ef0a" category="list-text">4u60 （ 4 ラックユニット、 60 ドライブ）</block>
   <block id="33d6fe66d2b404f7c25080e8098edd9c" category="list-text">3.5 インチドライブ、 2.5 インチドライブ（ NL-SAS 、 SAS 、 SSD ）</block>
-  <block id="3fcdd0c9c8fbc91f7bb9df81e95c618f" category="paragraph">* NE224 ： *</block>
-  <block id="73fe55efcdaa2ad95e010a4bac9165df" category="list-text">2.5 インチ NVMe SSD</block>
   <block id="ae57e705c83e0b20d768cee453b91d4c" category="summary">E シリーズストレージアレイには、複数の構成やモデルがあります。</block>
   <block id="d2bf6cf91aae10964c05d43904777ddb" category="doc">E シリーズハードウェアの概要</block>
   <block id="d234c0641fc33cad6a6c3c6ea71df215" category="paragraph">ストレージアレイは、シェルフ、コントローラ、ドライブ、ソフトウェア、およびファームウェアを収容します。アレイはラックまたはキャビネットに設置でき、 1 台または 2 台のコントローラを収容できます。 12 、 24 、または 60 本のドライブを収容できます。ストレージアレイは、複数のタイプのインターフェイスから SAN に接続できるほか、さまざまなホストオペレーティングシステムに接続できます。</block>
-  <block id="b3670f74b82245e2e94e5b08bb774ce5" category="paragraph">E シリーズアレイには次のモデルがあります。</block>
   <block id="8a34e53d101b7f706ed37ea0908d0235" category="list-text">E2800 シリーズ - エントリレベルハイブリッド</block>
   <block id="790cc654b42cdeb32b1a2b7165e43ea3" category="list-text">EF280 シリーズ - エントリレベルオールフラッシュ</block>
   <block id="9ace4a887760531c4699ebc554565544" category="list-text">EF300 シリーズ -- エントリレベルのオールフラッシュ、オール NVMe</block>
@@ -5535,7 +5521,6 @@
   <block id="e04137252fedc7e9af87dd09f9516981" category="doc">E シリーズシステムの詳細をご確認ください</block>
   <block id="a30c4e694d7edde326fee8d00122908f" category="paragraph">組織のデータストレージニーズに対応するハードウェアとソフトウェアを統合した E シリーズシステムについて説明します。</block>
   <block id="5c4cc7b84f5f2341e2a7255a66b90d60" category="summary">E シリーズシステムの運用を開始するには、ハードウェアコンポーネントを設置し、ホストシステムを設定し、ストレージを設定します。</block>
-  <block id="a852a041cd4afe33464b03fee2e3f120" category="paragraph">E シリーズハードウェアを設置する方法については、使用するストレージアレイとシェルフタイプに対応した設置とセットアップの手順書を参照してください。</block>
   <block id="9543914d3a895a3a83f2774c1ca09f7b" category="inline-link-macro">24 ドライブシェルフの EF600 または EF300 シリーズ</block>
   <block id="c15bb09da6c6817f5e7058dc3ca1fd7b" category="list-text"><block ref="c15bb09da6c6817f5e7058dc3ca1fd7b" category="inline-link-macro-rx"></block></block>
   <block id="b792aec7e5819c11f8219784d91447a6" category="inline-link">E2800 / EF280 または E5700 / EF570 シリーズ。 12 または 24 ドライブシェルフ構成です</block>
@@ -5601,7 +5586,6 @@
   <block id="4e44ffbd3dee7edcb8ad6dd4dc519054" category="paragraph">Web Services Proxy は RESTful API サーバで、数百台の新旧の E シリーズアレイを管理できます。Windows サーバまたは Linux サーバに別途インストールされます。</block>
   <block id="024f85290ce8dc060b04f7283ae9349d" category="paragraph">Web Services には、 REST API と直接やり取りできる API ドキュメントが含まれています。Web Services API のドキュメントにアクセスするには、ブラウザを開き、 Web Services Proxy がインストールされているサーバの URL を入力します。</block>
   <block id="be4ec548f7a100ef363d872487501afc" category="section-title">コマンドラインインターフェイス（ CLI ）</block>
-  <block id="7c2d6bb641ac39d33616586566e145db" category="paragraph">コマンドラインインターフェイス（ CLI ）は、ストレージアレイを設定および監視するためのソフトウェアアプリケーションです。CLI を使用すると、 DOS の C ：プロンプト、 Linux のオペレーティングシステムパス、 Solaris のオペレーティングシステムパスなど、オペレーティングシステムのプロンプトからコマンドを実行できます。</block>
   <block id="29d01982ce991bab3710bffee1868167" category="summary">SANtricity ® OS アップグレードの概要</block>
   <block id="9689e6113317ad1f1bf249f414d62e3e" category="paragraph">オペレーティングシステムおよびシステムハードウェアコンポーネントを最新バージョンの SANtricity ソフトウェアおよびファームウェアにアップグレードできます。</block>
   <block id="45c4e8073edc6e504a5d60a909148a91" category="paragraph">これらのアップグレード手順には、次の項目についての個別の手順が含まれます。</block>
@@ -5805,7 +5789,6 @@
   <block id="aa4306ca5582318a4c71780a034351e8" category="list-text">健全性チェックを実行するストレージシステムのチェックボックスを選択します。</block>
   <block id="059bcb3d06d5b7c0c9b7f4d6d250d626" category="list-text">[ スタート ] ボタンをクリックします。</block>
   <block id="70c0249de1da6c602476f4e4d22c5c3d" category="paragraph">健全性チェックの実行中、ダイアログボックスに進捗状況が表示されます。</block>
-  <block id="6288150d7ef4839b9a49ad845bc05aaf" category="list-text">健全性チェックが完了したら、各行の右側にある省略記号（ ... ）をクリックして、詳細情報を表示したり他のタスクを実行したりできます。</block>
   <block id="b7d5630f68b2ae105a1892c1784263e4" category="admonition">健全性チェックでいずれかのアレイに問題が見つかった場合は、そのアレイをスキップして他のアレイのアップグレードを続行するか、プロセス全体を停止して該当するアレイのトラブルシューティングを行うことができます。</block>
   <block id="3630613364718f1a83010055203819c6" category="section-title">手順 2 ：サポートサイトからソフトウェアファイルをダウンロードする</block>
   <block id="3f66d1daa91f535f68656dfae4716684" category="list-text">ストレージアレイにコントローラが 1 台しかない場合やマルチパスドライバが使用されていない場合は、アプリケーションエラーを回避するためにストレージアレイへの I/O アクティビティを停止します。ストレージアレイにコントローラが 2 台あり、マルチパスドライバがインストールされている場合は、 I/O アクティビティを停止する必要はありません。</block>
@@ -6146,7 +6129,6 @@
   <block id="668e2078ef1b1722c77cdb5c523a4463" category="sidebar">ネットアップナレッジベース</block>
   <block id="2bae42f280067110dfd52cc69a468364" category="sidebar">Active IQ （ログインが必要）</block>
   <block id="54708ac788109e3332a896f8d957e38f" category="sidebar">E シリーズ / SANtricity のダウンロード（ログインが必要）</block>
-  <block id="a6d47447094eb5b7920c8d1f16d0d25d" category="paragraph">にアクセスします<block ref="384159b715a893ce026df1e06010cefa" category="inline-link-rx"></block>。</block>
   <block id="c9655bd030e403ee317812921fe9c345" category="inline-link">* TR-4893 ： SANtricity リモート・ストレージ・ボリューム *</block>
   <block id="d8669c8a517e0a9ef2fc1b4209947887" category="cell"><block ref="d8669c8a517e0a9ef2fc1b4209947887" category="inline-link-rx"></block></block>
   <block id="1a1ac7a0c3f35e22cacb2c550a2df1d9" category="inline-link">* TR-4839 ：『 SANtricity Synchronous and Asynchronous Mirroring 』</block>
@@ -6196,22 +6178,10 @@
   <block id="b989c6f72bf677952e698328421db82b" category="cell"><block ref="b989c6f72bf677952e698328421db82b" category="inline-link-rx"></block></block>
   <block id="e1fad75d320cd96b4ad2ead776fbc81b" category="inline-link">* TR-4859 ：『 Deploying IBM Spectrum Scale with NetApp E-Series Storage 』</block>
   <block id="01284e373ad40bcbe95d69ca79432e5d" category="cell"><block ref="01284e373ad40bcbe95d69ca79432e5d" category="inline-link-rx"></block></block>
-  <block id="923277575dfc7bb479a4c1326fc68339" category="inline-link">* TR-4856 ：『 BeeGFS High Availability with E-Series using Red Hat Enterprise Linux Server* 』</block>
-  <block id="246730575426f6a6e68bf2f52c15bc44" category="cell"><block ref="246730575426f6a6e68bf2f52c15bc44" category="inline-link-rx"></block></block>
-  <block id="2b744bc0da850f7e10b8914e1573c0b3" category="cell">NetApp E シリーズストレージシステムと IBM Spectrum Scale を基盤としたエントリレベル HPC システムのリファレンスアーキテクチャについて説明している。</block>
-  <block id="d73f064cebb5bd197545fc7004a56153" category="cell">IBM の Spectrum Scale ソフトウェアスタックに基づいて、フル並列ファイルシステムの解決策を導入するプロセスについて説明します。</block>
-  <block id="0d183f627b10c74a5ad15f70918e5661" category="cell">NetApp E シリーズシステムにサポートされる BeeGFS アーキテクチャにハイアベイラビリティを実装し、 BeeGFS ストレージ、メタデータ、管理サービスに RedHat Enterprise Linux を使用するために必要な構成について説明します。</block>
-  <block id="1625bed3aae287fb145324112cba2acf" category="inline-link">* TR-4862 ： SUSE Linux Enterprise Server * を使用した E シリーズでの BeeGFS 高可用性</block>
-  <block id="503f8b25bc421dea7e73387381d435f4" category="cell"><block ref="503f8b25bc421dea7e73387381d435f4" category="inline-link-rx"></block></block>
-  <block id="075df837bf753b5aee2b8bcb4b81e05c" category="cell">NetApp E シリーズシステムを基盤とし、 BeeGFS ストレージ、メタデータ、管理サービスに SUSE Linux Enterprise Server を使用する BeeGFS アーキテクチャに高可用性を実装するために必要な構成について説明します。</block>
   <block id="a28b8b732f1d7a87c511f615fe886bc4" category="inline-link">* TR-4725 ：『 E2800 Arrays feature overview 』 *</block>
   <block id="16ee0112605f5c7f44d31ab4fb0f7c73" category="inline-link">*+++TR-4724 ： E5700 アレイの概要 ++*</block>
   <block id="346bfe6c5f1a40af18c578c446b216aa" category="inline-link">*++++TR-487: EF300 アレイの概要 ++*</block>
-  <block id="c3bad4531ac09819ae11c8f1eef46379" category="cell">E2800 ハイブリッドアレイのハードウェアとソフトウェアの機能、および SANtricity OS の最新機能について説明します。</block>
-  <block id="170c5373a5aea2b6d6daa41c328182fc" category="cell">最新バージョンの SANtricity で導入された新しいハードウェアやソフトウェア機能など、 E5700 の製品情報について説明します。</block>
-  <block id="6bf4f338106e6cad43fd2f2fecfcaafa" category="cell">EF300 オールフラッシュアレイのハードウェアとソフトウェアの機能、および SANtricity OS の新機能について説明します。</block>
   <block id="f3a3500a11e0c13b98d7092f5af6a6c7" category="inline-link">* TR-4800 ： EF600 アレイ機能の概要 *</block>
-  <block id="6b4552e99c78bda589322e0594a1d89b" category="cell">EF600 オールフラッシュアレイのハードウェアおよびソフトウェア機能と SANtricity OS の新機能について説明します。</block>
   <block id="d46165f424a559168595411d0e129de6" category="inline-link">* TR-4474 『 SANtricity Drive Security Feature Guide 』</block>
   <block id="7aeb5576c50c1baeaf78d974491ebf2e" category="cell"><block ref="7aeb5576c50c1baeaf78d974491ebf2e" category="inline-link-rx"></block></block>
   <block id="5671444c44b849b5c9fe3625aca83a32" category="inline-link">* TR-4712 ：『 SANtricity Management Security Features * 』</block>
@@ -7019,7 +6989,6 @@
   <block id="41903b7d098cd5fe2273e2627dcfd5a0" category="doc">ストレージアレイの名前を変更します</block>
   <block id="66950f592b3ef70bb4a866b674f1b7a5" category="paragraph">Storage Plugin for vCenterの［管理］ページに表示されるストレージアレイの名前を変更できます。</block>
   <block id="6ddafd51962fda13ede773e9d6350dd2" category="list-text">Manage *ページで、ストレージ・アレイ名の左にあるチェックボックスを選択します。</block>
-  <block id="374fea5b262769323b08b3962c808a45" category="list-text">行の右端にある省略記号を選択し、ポップアップ・メニューから*ストレージ・アレイ名の変更*を選択します。</block>
   <block id="96f8be2a5d55d9a167ed06cc1a5f9694" category="list-text">新しい名前を入力し、*保存*をクリックします。</block>
   <block id="6aa467b445a7d222ea7a821c8df54a08" category="doc">どの設定がインポートされますか？</block>
   <block id="5a336d7c8bb4d9fb626af7c0fffe68af" category="paragraph">設定のインポート機能は、1つのストレージアレイから複数のストレージアレイに構成をロードするバッチ処理です。</block>
@@ -7300,7 +7269,6 @@
   <block id="9448915bfa64b3a5e64429c61e5807e2" category="list-text">次のいずれかのタブを選択します。</block>
   <block id="54b4e8d1c4d03ca179159ea57e350324" category="list-text">*Management*--プラグインをホストしているシステムの証明書を表示します管理証明書には、自己署名の証明書と認証局（CA）によって承認された証明書があります。プラグインへのセキュアなアクセスを許可します。</block>
   <block id="edb5b7738ffb508f1bbb13257bdeffc0" category="list-text">*Trusted --プラグインがストレージアレイやLDAPサーバーなどの他のリモートサーバーにアクセスできる証明書を表示します認証局（CA）から発行された証明書と自己署名の証明書が含まれます。</block>
-  <block id="177b3451c3ab8af94b99ec603169f482" category="list-text">証明書をページから選択し、行の最後にある省略記号をクリックします。</block>
   <block id="5df555ad8a5d58c2d2be3f9893464acb" category="list-text">[* Export*]をクリックし、証明書ファイルを保存します。</block>
   <block id="818d28e7b7b11b8d0de393cdf2bad961" category="list-text">証明書ビューアアプリケーションでファイルを開きます。</block>
   <block id="657b70e8c66d59c5eb96a02553896eb0" category="summary">Data Assurance（DA）はT10 Protection Information（PI）標準を実装しています。I/Oパスでデータが転送される際に発生する可能性のあるエラーをチェックして修正することで、データの整合性が向上します。</block>
@@ -7427,7 +7395,6 @@
   <block id="6579984382b6d6db4a9c1dca3719cfde" category="summary">証明書を使用している組織、証明書を発行した機関、有効期間、フィンガープリント（一意の識別子）など、証明書の概要情報を表示する</block>
   <block id="6577f92f6d3e817e406cf5c8fc28fb74" category="doc">証明書を表示します</block>
   <block id="57180671ca977e7c71697763b3f08403" category="paragraph">証明書を使用している組織、証明書を発行した機関、有効期間、フィンガープリント（一意の識別子）など、証明書の概要情報を表示できます。</block>
-  <block id="9c6c2f35f874859a647563b0d99e7685" category="list-text">証明書の詳細を表示するには、その行を選択し、行の最後にある省略記号を選択して、*表示*または*エクスポート*をクリックします。</block>
   <block id="0932ef9adf6866c6e0d047c2fad05b80" category="summary">ドライブセキュリティ機能を実装している場合は、内部セキュリティキーまたは外部セキュリティキーを使用して、セキュリティ有効ドライブがストレージアレイから取り外されたときにデータをロックダウンすることができます。</block>
   <block id="0f7d5d5826d8924ee5f59541261a0c9f" category="doc">内部セキュリティキー管理と外部セキュリティキー管理の違いは何ですか？</block>
   <block id="42bd0a690935b9f782ea60ca3c32e096" category="paragraph">セキュリティキーは、ストレージアレイのセキュリティ有効ドライブとコントローラで共有される文字列です。内部キーは、コントローラの永続的メモリに保持されます。外部キーは、Key Management Interoperability Protocol（KMIP）を使用して別のキー管理サーバに保持されます。</block>
@@ -8172,9 +8139,7 @@
   <block id="cbf7b24ce0d93efff84abb6dca91dc9e" category="list-text">電源装置がありません</block>
   <block id="07ed085acfb4f203e63427ca4494f863" category="section-title">バージョン11.80.1の新機能</block>
   <block id="65e6e49c7d0840983a93edfc482a4650" category="paragraph"><block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix="" category="inline-code"></block> パラメータ</block>
-  <block id="f853f0f729e70cf8d4d12c4bb6b0dbfc" category="paragraph">新しい<block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix=" " category="inline-code"></block> SMcliでパラメータを使用できるようになりました。この新しいパラメータを使用すると、ストレージアレイに関連付けられているすべてのSCSIネイティブブロックデバイスを検索できます。詳細については、https://docs.netapp.com/us-en/e-series-cli/get-started/downloadable-smcli-parameters.html#identify-Devices[Downloadable SMcliコマンドラインパラメータ^]を参照してください。</block>
   <block id="907ce89001794064fd8d544a753cf6cf" category="paragraph">イーサネットカーネル統計</block>
-  <block id="d1c09bea07e8eb52df56a18fb41d1ba1" category="paragraph">System Managerの[iSCSI統計パッケージの表示]ページに、新しい[イーサネットカーネル統計]オプションが追加されました。この新しいオプションを使用すると、iSCSIデバイスのプラットフォームカーネルドライバの統計を表示できます。詳細については、「https://docs.netapp.com/us-en/e-series-santricity/sm-support/view-iscsi-statistics-packages-support.html[View iSCSI統計パッケージ^]」を参照してください。</block>
   <block id="8aa767f8b92cfb3b4eab1f415d112646" category="paragraph">REST APIエンドポイントを使用してIPアドレスをブロックする機能を追加</block>
   <block id="676be4f62b5637bef1c26018afa904d4" category="paragraph">[Settings]エンドポイントを使用して、特定のIPアドレスをブロックできるようになりました。 <block ref="4b697cabc8d99483a2ddfc38c4cb6766" prefix="(" category="inline-code"></block>）。[Settings]エンドポイントで設定すると、ホワイトリストで指定したIPアドレスだけがストレージデバイスと通信できます。この新機能では、IPv4およびIPv6アドレスリストがサポートされます。</block>
   <block id="c55dbb17c221990804802e322335dc65" category="paragraph">vCenter Storageプラグインは、Eシリーズ11.80.1リリースとの互換性を考慮して更新されています。</block>
@@ -8232,8 +8197,6 @@
   <block id="57b75c148600a92b21aa9e4a3a89228d" category="image-alt">VMwareエクスプレスガイドのワークフロー</block>
   <block id="e5de0ab074e4d0827cb5f8e4826ddf53" category="image-alt">iSCSIポート識別子</block>
   <block id="25e86314e2b9fd3c25d92450dad8de31" category="image-alt">Windowsエクスプレスガイドのワークフロー</block>
-  <block id="a5739ed07187fa97fb95b86ca98419fc" category="inline-link">コントローラアップグレードガイド-レガシーコントローラモデル</block>
-  <block id="819e472be532c198f4428448f644516b" category="list-text"><block ref="819e472be532c198f4428448f644516b" category="inline-link-rx"></block></block>
   <block id="056179e9e794d5023a226430ee4efb8d" category="section-title">SANtricityリリース11.8</block>
   <block id="d16a613e55f21678f189a2fe147619f8" category="list-text"><block ref="d16a613e55f21678f189a2fe147619f8" category="inline-link-rx"></block></block>
   <block id="e8b164999d03a57227fb0dc4e31b1f9a" category="list-text"><block ref="e8b164999d03a57227fb0dc4e31b1f9a" category="inline-link-rx"></block></block>
@@ -8243,7 +8206,6 @@
   <block id="ac04abe31dcd141500e5d9732b2ac56b" category="list-text">E4000 シリーズ - エントリレベルハイブリッド</block>
   <block id="d8b8562346c10d2efbbb129845379264" category="list-text">ラックサイズ</block>
   <block id="1c2bd945de8ed1b6e853b76b3def6a6d" category="image-alt">E2800 2U</block>
-  <block id="e67af3d8fc936cb75428bd1c7912d629" category="image-alt">E2800 4U</block>
   <block id="756640f0aea5f5bea1cbe250a9d08989" category="list-text">インターフェイス</block>
   <block id="58a80778e63fff20f6605b02ba4256ff" category="inline-image-macro">EF280 2U</block>
   <block id="db1f17f8825c1b566a696300d91ea1b0" category="paragraph"><block ref="db1f17f8825c1b566a696300d91ea1b0" category="inline-image-macro-rx" type="image"></block></block>
@@ -8259,7 +8221,6 @@
   <block id="7bc334dd290b9246bbe67354b072e5f1" category="image-alt">E4000 2U</block>
   <block id="9d23e4d1385158413ca160140804380a" category="image-alt">E4000 4U</block>
   <block id="1507bfcf58977c913870a8bc8fc69938" category="list-text">3.5 インチ NL-SAS （最大 300 本）</block>
-  <block id="501741d2386f7d66c14219977b27bf3b" category="list-text">1 GBまたは10GBASE-T iSCSI</block>
   <block id="2193ca2625399551b2952afc495bddf3" category="list-text">1Gb、10Gb、または25Gb iSCSI</block>
   <block id="02bfa8a1be678b9844bf1f40bdf0cadb" category="list-text">8Gb、16Gb、または32Gb FC</block>
   <block id="403867e7b21e199d8564f994b90f564b" category="list-text">E4000およびE2800コントローラのみ</block>
@@ -8269,8 +8230,6 @@
   <block id="4f7cecf7d35b5225b9680d06b9f29855" category="paragraph"><block ref="4f7cecf7d35b5225b9680d06b9f29855" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d23f865aa12d33da2281ece479479e43" category="list-text">E4000、E2800、およびE5700コントローラ</block>
   <block id="3d6745de7ba5410e8691359e75378f43" category="paragraph"><block ref="3d6745de7ba5410e8691359e75378f43" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0d2ff89321d178d4c06957811edf6dbf" category="inline-image-macro">NE224</block>
-  <block id="dee81617ac256de3c537c504e55673b4" category="paragraph"><block ref="dee81617ac256de3c537c504e55673b4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9446a98ad14416153cc4d45ab8b531bf" category="inline-image-macro">パフォーマンス</block>
   <block id="01e0b2ba5ead95d64e3071a148f7dc95" category="paragraph"><block ref="9736d9f6dc9242e38869944fa056dfab" category="inline-image-macro-rx" type="image"></block>*パフォーマンス*</block>
   <block id="730eaa798c5f8a877db1f1518847a4e4" category="paragraph"><block ref="7671c6425a04efd849fb29c1bc3d6f15" category="inline-image-macro-rx" type="image"></block>*ストレージ*</block>
@@ -8326,13 +8285,10 @@
   <block id="c8d0e728d6cfecbb35c8768caa389f1f" category="open-title">12ドライブシェルフ</block>
   <block id="e63d49fe11023df550eb4a2b6be77e84" category="paragraph">1台以上の12ドライブシェルフにコントローラシェルフをケーブル接続できます。</block>
   <block id="37684c22af451e0c6390d46e13acdfbf" category="image-alt">コントローラシェルフと12ドライブシェルフ</block>
-  <block id="632ca86f36c69ae91aee0bebdff85617" category="admonition">EF300、EF600、およびE4000には、アウトオブバンドイーサネット管理ポートが1つだけあります。</block>
   <block id="d2204ecb6283608047831fca303cc5c1" category="image-alt">2台のホストと2台のスイッチのケーブル接続</block>
   <block id="23d2013304f308363439909fd006bd4e" category="paragraph">E5724 、 EF570 、 E4012 、 E2812 、 E2824 、 EF280</block>
   <block id="6048408dac10f3e88fd732617c9d0ef5" category="paragraph">E4060、E2860、E5760</block>
   <block id="21b595c66275163668dce07beb8b7e59" category="list-text">ストレージシステムの各電源装置に電源ケーブルを接続します。</block>
-  <block id="17a780e85e64d833816350af0a8e60d6" category="list-text">両方の電源スイッチをオンにします。</block>
-  <block id="21194b925b5b062281c4893b747cceec" category="admonition">EF300およびEF600ストレージシステムには電源スイッチはありません。ケーブルを接続するとすぐに電源がオンになります。</block>
   <block id="b354d93fbc8040931b33caebdbfe0ea8" category="inline-image-macro">直接接続トポロジのケーブル接続</block>
   <block id="6a6b77d61f97c20fcc57f19dbcaf18b2" category="paragraph"><block ref="6a6b77d61f97c20fcc57f19dbcaf18b2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cb54bfbae17ecce7e95302793374bf9f" category="inline-image-macro">ファブリックトポロジのケーブル接続</block>
@@ -8619,8 +8575,6 @@
   <block id="57207b374d19a30dbe137b5ae467d607" category="image-alt">'機能有効識別子"</block>
   <block id="f18161f026b7fe18b8f99003cf1deb9a" category="paragraph">キャッシュされたデータをドライブに書き込む必要がある場合は、各コントローラの背面にある緑のキャッシュアクティブLEDが点灯します。このLEDが消灯するまで待つ必要があります。<block ref="28dd70958999565be68b57e06af4d4d1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8907a9bd1bbd427cd7ead31cdae13f94" category="image-alt">機能パックの変更</block>
-  <block id="d2d2e8fa568a2d809242096cca97e884" category="image-alt">[Host Ports]ダイアログボックス</block>
-  <block id="141f194cf295ed23b58f7b6b7deada6c" category="image-alt">[Host Ports]ダイアログ</block>
   <block id="66d3b4d1ab378575dbea53cfe35695f9" category="image-alt">E2800コントロオラノホストオヨヒHICホオト</block>
   <block id="8ef7d812cf9839cb105b6657c47cfa09" category="image-alt">E2800コントロオラノホオト</block>
   <block id="962bbd775bc59552889db0c450a4ef52" category="paragraph">ハードウェアのメンテナンス手順が必要になる場合があります。ここでは、E2800システムコンポーネントのメンテナンスに固有の手順について説明します。</block>
@@ -8640,7 +8594,6 @@
   <block id="654a61d9a5e1b3845170185b185b333e" category="list-text">*サポート›サポートセンター›診断*を選択します。</block>
   <block id="6db1d7bcd2197569ee01531f7998318d" category="admonition">*データ損失の可能性*-- I/O処理の実行中にこの手順を続行すると、データが失われる可能性があります。</block>
   <block id="9ac50bab7d872b7afc76e70a644219ed" category="paragraph">ブラウザのDownloadsフォルダにsupport-data.7zという名前でファイルが保存されます。</block>
-  <block id="d1b689b610c29b4b11d641265472d3f2" category="list-text">図にドライブが表示された場合は、*[コントローラとコンポーネント]*を選択してコントローラを表示します。</block>
   <block id="31af8cf3c364ef0721e22c79e63b47d0" category="paragraph">*コントローラAの場合*：<block ref="9e02aca819e4970527b62fd35f9cc9ec" prefix=" " category="inline-code"></block></block>
   <block id="c37d3d9443e25a97d64925af817282b0" category="paragraph">*コントローラBの場合*：<block ref="68414166ffb645078598902542c6a3c0" prefix=" " category="inline-code"></block></block>
   <block id="daf10491eeda068f969ac846c9108685" category="list-text">SANtricity System Managerでコントローラのステータスがオフラインに更新されるまで待ちます。</block>
@@ -8943,7 +8896,6 @@
   <block id="e5a05d58c55c9440148099868dbc6fd1" category="image-alt">コントローラへの前面プレートの取り付け</block>
   <block id="e04e79c61faf9262bb7c22ca0bdb75b4" category="image-alt">機能パックサブモデルID</block>
   <block id="3da943cddf027cccc8bff4dab3f603c8" category="paragraph">キャッシュされたデータをドライブに書き込む必要がある場合は、各コントローラの背面にある緑のキャッシュアクティブ LED * （ 1 ） * が点灯します。このLEDが消灯するまで待つ必要があります。<block ref="784f4db10eef9c5c5e85ea37262dff8b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6e13bec83d2f599d1a78be9b1da319d5" category="image-alt">[Host Settings]ダイアログ</block>
   <block id="46ad3f7b9a79b945126e75570cf3ab20" category="image-alt">E5700コントローラのホストポートとHICポート</block>
   <block id="9096c61779935802492b59d70ec38ff2" category="paragraph">ハードウェアのメンテナンス手順が必要になる場合があります。ここでは、E5700システムコンポーネントのメンテナンスに固有の手順について説明します。</block>
   <block id="c207b913e93567336ac500416e963ac8" category="paragraph">このセクションの手順は、E5700システムがEシリーズ環境にすでに導入されていることを前提としています。</block>
@@ -8955,13 +8907,10 @@
   <block id="3543edeec6c44ef942e94faa0424acff" category="paragraph"><block ref="3543edeec6c44ef942e94faa0424acff" category="inline-link-rx"></block></block>
   <block id="72928326de21f42a5ececa543a870d56" category="image-alt">ハンドルを押してコントローラを取り外します。</block>
   <block id="ccdf979892d06b3313dd81227d58f4e7" category="image-alt">取り外すときは、コントローラの重量を両手で支えながら作業します。</block>
-  <block id="d6f83577311942b64cb6a40c36e19ba8" category="image-alt">"タブを押してバッテリのラッチを外します。</block>
   <block id="cf51ab08845e5a4f0e23f726ab226878" category="image-alt">バッテリー配線を収容しているコネクターを取り外します。</block>
   <block id="881564a49c7f6fda30f82a5a4a67ecfc" category="image-alt">バッテリを持ち上げてコントローラから取り出します</block>
   <block id="bd0981c1c09a4cb27cd19367269a0960" category="image-alt">バッテリの挿入</block>
   <block id="37103a0435b55e5bcc50923bcd69700e" category="image-alt">コントローラをシェルフに取り付ける</block>
-  <block id="7796e325c9459708cd9ee117cdbeea2c" category="list-text">バッテリ配線を収容しているコネクタをそっとつかみます。バッテリーを引き上げてボードから取り外します。<block ref="3c05df7462b23b6c10e264df1a62b979" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4d273b85509761057e1f5ed98030b157" category="list-text">バッテリをコントローラから持ち上げて、静電気防止処置を施した平らな場所に置きます。<block ref="bd4cb93e7de73428d0302a4304ba8680" category="inline-image-macro-rx" type="image"></block></block>
   <block id="db1c3e8b775386049599abeb82b0cf3e" category="image-alt">HICカバーの取り外し</block>
   <block id="b402c79d7af89342b9df6e7a9076d2d7" category="image-alt">HICの取り付けネジを緩める</block>
   <block id="8d95b298422e28883fafdac45350d222" category="image-alt">コントローラカードからのHICの取り外し</block>
@@ -8982,7 +8931,6 @@
   <block id="d419ebdf988a4916b93d1fdd5b11236a" category="image-alt">24ドライブシェルフのドライブ番号</block>
   <block id="a65c0f5d490f825f04f690d32ef8d39a" category="image-alt">24ドライブシェルフでのドライブの交互配置</block>
   <block id="8f42fa94ab7e3c353702edcfc0d2eccd" category="image-alt">ドライブラッチ</block>
-  <block id="7b8f348a010f5a94503fcabe19088fbf" category="image-alt">"警告LED</block>
   <block id="339fbc928d6066116ebf66e38efedf8a" category="image-alt">ドライブハンドルの警告LED</block>
   <block id="40f837f06bbd36f49cef42babd88b053" category="image-alt">オレンジのリリースラッチ</block>
   <block id="ad1e03af8eb17b8b69c8e4baf69eb2b9" category="image-alt">カムハンドルを使用してドライブをシェルフから持ち上げます。</block>
@@ -9056,7 +9004,6 @@
   <block id="5c735cf53f3f1caaa88045e2bb54b863" category="paragraph">E2600からE5500またはE5600にアップグレードする場合、またはE2700からE5400にアップグレードする場合は、追加の手順が必要です。</block>
   <block id="097915df103ac23c8ebc6c0064d8a291" category="paragraph">E5400、E5500、およびE5600コントローラはSAS-3シェルフには配置できません。</block>
   <block id="e3a720d87053b94a338fe8e8df7fa7af" category="paragraph">E5500またはE5600からE2600にアップグレードする場合、またはE5400からE2700にアップグレードする場合は、追加の手順が必要です。</block>
-  <block id="0dda563975c4b705306e9f33cd4d1442" category="paragraph">5400、E5500、およびE5600コントローラはSAS-3シェルフには配置できません。</block>
   <block id="16fe7fa56f57b127b296631d099ad261" category="paragraph">E5400からE5500またはE5600にアップグレードする場合は、追加の手順が必要です。</block>
   <block id="1d236b2937585f4d1069d1e2cc4679a0" category="paragraph">EF540からEF550またはEF560にアップグレードする場合は、追加の手順が必要です。</block>
   <block id="e65e60eb717f940240aa8824a61cf723" category="paragraph">EF540、EF550、およびEF560コントローラはSAS-3シェルフには配置できません。</block>
@@ -9090,8 +9037,6 @@
   <block id="45dc1f6fb3b875c733e188121fcc647a" category="paragraph">秘密鍵と公開鍵のペアから外部で生成された証明書署名要求（CSR）ファイルを、System Managerからインポートできるようになりました。</block>
   <block id="c0f4196deec20490ebf6989158642c34" category="paragraph">Web Servicesでログインロックアウト機能を使用できるようになりました</block>
   <block id="a30347233ec617731633ca56f8f1b923" category="paragraph">REST APIでのみ設定可能で、組み込みWebサービスとプロキシWebサービスで新しいログインロックアウト設定を使用できるようになりました。</block>
-  <block id="27ed3c2f0cc271f3ffd55cef1621928d" category="sidebar">SANtricity System Manager 11.9</block>
-  <block id="ece14770330886bc2d41238acbfe48aa" category="sidebar">SANtricity Unified Manager 7</block>
   <block id="7e70e5b8ab3b4ffb0b5b632ee6ab89f2" category="sidebar">E4000</block>
   <block id="600edf74042bc3ae5ce2c2e58c76b005" category="sidebar">インストールの準備</block>
   <block id="04f92a4e594759f7a9084677140e7b63" category="sidebar">考慮事項と要件</block>
@@ -9128,9 +9073,6 @@
   <block id="4720d0b863e013bea6899b10e0989bda" category="list-text">EF600C シリーズ - ミッドレンジオールフラッシュ、オール NVMe</block>
   <block id="5ca6952c7c9ae5d4b8be61e6386f0222" category="open-title">EF300C モデル</block>
   <block id="14a2fa7582e1084e3800dde50d8cde03" category="open-title">EF600C モデル</block>
-  <block id="0db8edfb04068c99ae28246efebb6d4d" category="list-text">12gb SAS</block>
-  <block id="689052b8726f00a4623e9ada4d36af90" category="list-text">EF300、EF600：EF300CおよびEF600Cコントローラ</block>
-  <block id="16736d8feb91d19d335e7acdefc20ef7" category="paragraph">Unified Manager は、ドメイン全体の管理に使用する Web ベースのソフトウェアです。EシリーズおよびEFシリーズの新しいすべてのアレイ（E4000、E2800、EF280、EF300、E5700、EF570、EF600、EF300C、EF600Cなど）のステータスをまとめて確認できます。選択したストレージアレイに対してバッチ処理を実行することもできます。</block>
   <block id="0fabf178487912291e67bdafbadfe77d" category="paragraph">ここでは、 EF300 、 EF600 、 EF300C 、 EF600C の各コントローラシェルフを DE212C 、 DE224C 、または DE460 の各ドライブシェルフにケーブル接続する方法について説明環境します。</block>
   <block id="f1c197c528faee0553e4d6ce534048a7" category="paragraph">EF300、EF600、EF300C、EF600C</block>
   <block id="915fd81c3f189c50233446daf085a8f7" category="paragraph">EF300、EF600、EF300C、またはEF600Cストレージシステムは、2ポストラックまたはNetAppシステムキャビネットに設置できます。</block>
@@ -9164,10 +9106,8 @@
   <block id="892b365a22314b2852ca18025911d1be" category="list-text">必要に応じて、コマンドを実行し<block ref="3e0e995eb29f6805a04d4b3ac859bc4b" prefix=" " category="inline-code"></block>てDSMパッケージのインストールを確認します。</block>
   <block id="fb00ee175135cc78e49e873e41c6e6ad" category="admonition">コマンドを実行するには、MPIO機能がWindowsサーバにインストールされている必要があります<block ref="3e0e995eb29f6805a04d4b3ac859bc4b" prefix=" " category="inline-code"></block>。</block>
   <block id="5f3ab4e439fcf2e4683f430d57044b3a" category="inline-link">SANtricity System Manager 11.9xオンラインヘルプ</block>
-  <block id="e51c0393968b3aeac9a8857a4efc2e03" category="list-text"><block ref="e51c0393968b3aeac9a8857a4efc2e03" category="inline-link-rx"></block></block>
   <block id="25d302c40995ad55c0ad7701261d1310" category="list-text"><block ref="25d302c40995ad55c0ad7701261d1310" category="inline-link-rx"></block></block>
   <block id="718416bdd384ea0f59ab3278846e588d" category="list-text">EF300C シリーズ -- エントリレベルのオールフラッシュ、オール NVMe</block>
-  <block id="2d782dd4047faa435e8a21598b64a8f9" category="admonition">SANtricity OS 11.80GA以降では、E2800、EF280、E5700、EF570、EF600 / EF600C、およびEF300 / EF300Cのアレイでは、すべてのUSBポートが無効になります。</block>
   <block id="145e67dd5fe93c51c814f0945a64eadf" category="list-text">オプションのSAS拡張カードをサポートし、SAS拡張シェルフ接続を可能にします。</block>
   <block id="d0becf074be26c6d978c288daba24ca4" category="list-text">コントローラごとに1つのホストインターフェイスカードがサポートされます。</block>
   <block id="346a8501979327018cc0ee11a3d0f1cf" category="list-text">30TBまたは60TBの容量NVMe SSDドライブをサポートします。</block>
@@ -9205,7 +9145,6 @@
   <block id="c591c8c3a8e8fbcf4843d55451e5745e" category="list-text">（オプション）必要に応じて、次の手順を実行してドライブのキーを変更できます。</block>
   <block id="0b9601abb9585618affd66f5798a16b2" category="paragraph">*例：*<block ref="b77e774fa880afa2bd8c8ca91507d0ce" prefix=" " category="inline-code"></block></block>
   <block id="73c97dd158942ee4b15d19f135952d89" category="list-text">* SANtricity Unified Manager *：Unified Managerは、E4000、E2800、E5700、EF300、EF600モデルなど、複数のストレージシステムを管理するソフトウェアです。Unified Manager は SANtricity Web サービスプロキシの一部です。 RESTful API サーバをホストシステムに別途インストールして、数百台規模の新旧の NetApp E シリーズストレージシステムを管理します。詳細については、を参照してください <block ref="c92032fad30345308610610a1d1083db" category="inline-link-macro-rx"></block>。</block>
-  <block id="e5a4c2aea29b525342429c88518c7f73" category="paragraph">E4000、EF300 / EF300C、EF600 / EF600C、E2800 / EF280、およびE5700 / EF570コントローラの組み込み管理向けに、最新のSANtricity OSリリースの新機能を次の表に示します。</block>
   <block id="baee5b8c18b240b4edfcc1ae3fe154f0" category="section-title">バージョン11.90R1の新機能</block>
   <block id="0b2fb9383075b5994701c94b27e4b6ee" category="paragraph">このリリースでは、EF300CおよびEF600CオールフラッシュNVMeストレージシステムが導入されました。EF300CおよびEF600Cは、既存のEF300およびEF600ストレージシステムの大容量フラッシュバージョンです。EF300CおよびEF600Cでは、30TBまたは60TBの大容量NVMe SSDドライブがサポートされます。EF300C / EF600Cは、従来のRAIDをサポートしていない場合にのみ、Dynamic Disk Poolsと互換性があります。</block>
   <block id="8af7f744c39ae6285a380b6eb402fcb2" category="paragraph">E4000コントローラでの12Gb SASインターフェイスのサポート</block>
@@ -9365,17 +9304,13 @@
   <block id="7553994c0c2dd633dd8ba10c100a4ded" category="doc">Eシリーズのデモビデオにアクセス</block>
   <block id="28ad05f35e1428f4aa007cdebf7e347b" category="doc">3040 40Uキャビネット（Eシリーズ）に必要な工具と機器を揃えます。</block>
   <block id="91600f4eb3d156a995ce1b1ec47ab182" category="doc">3040 40U（Eシリーズ）のキャビネット設置後の処理</block>
-  <block id="0f71fa2cf61422d9dc3e1435d1a0af51" category="doc">3040 40Uキャビネットへのトレイの設置（Eシリーズ）</block>
   <block id="59990da74a4038496ed36361a26b8595" category="doc">3040 40Uキャビネットの最終設置場所への移動（Eシリーズ）</block>
   <block id="ec56f4e9e033e52e4f7f8c8185c4591d" category="doc">3040 40Uキャビネット（Eシリーズ）のキャビネット仕様</block>
   <block id="6b2ef569b713e6adc45d3acb0d954ff7" category="doc">3040 40Uキャビネット（Eシリーズ）の移動準備</block>
   <block id="3adc0491bdd09b8053984a5540955ccd" category="doc">ストレージシステムのケーブル接続要件（Eシリーズ）</block>
   <block id="1e493b1f08040d7c09ccc1ed1b693f77" category="doc">コントローラシェルフとドライブシェルフのケーブル接続（Eシリーズ）</block>
-  <block id="4b5c2a585ea9bdccd0456a3e961a113f" category="doc">管理ステーションのイーサネットケーブル接続（Eシリーズ）</block>
   <block id="0b550c27392097a1f95c24b17cf16d15" category="doc">ホストをコントローラまたはスイッチに接続するためのケーブル接続（Eシリーズ）</block>
   <block id="3509ad356c5e72afa0565d920fcc76bc" category="doc">ドライブシェルフのホットアド- IOM12またはIOM12Bモジュール（Eシリーズ）</block>
-  <block id="f899b9b9f53548c0dea1afd340c90841" category="doc">ストレージシステムのケーブル接続（Eシリーズ）</block>
-  <block id="9114fe8bca33fe5311b3e215b9bee65f" category="doc">ストレージシステムの電源ケーブル接続（Eシリーズ）</block>
   <block id="cca8309690d775486ab4d0ee7986f907" category="doc">ストレージシステムのセットアップと設定の完了- E5724、EF570、EF280、E2812、E2824、DE212C、DE224C</block>
   <block id="3fd16291574811effb1e0ca2b7a8a80f" category="doc">電源ケーブルの接続- E5724、EF570、EF280、E2812、E2824、DE212C、およびDE224C</block>
   <block id="65502541d5315d4477d4937aaa9cbd71" category="doc">ハードウェアの設置- E5724、EF570、EF280、E2812、E2824、DE212C、DE224C</block>
@@ -9462,7 +9397,6 @@
   <block id="0ae6740fd2e263304e2272eafbf3f5fc" category="doc">ホストインターフェイスカード（HIC）のアップグレード- 5700</block>
   <block id="574e60222b5873c99c68707bb46330da" category="doc">ホストプロトコルの変更- 5700</block>
   <block id="a04faa3422a272a2119ee55c0773f11d" category="doc">ホストプロトコルの変更を完了します- 5700</block>
-  <block id="3ca9f69205768ca2729cf2099f3c91fc" category="doc">ホストポートプロトコルの変更要件- 5700</block>
   <block id="3e59858b01d2a3adac687292b9354084" category="doc">ハードウェアのメンテナンス- 5700</block>
   <block id="88b3842ce4b08162538041eb2342c160" category="doc">バッテリの交換要件- EF300またはEF600</block>
   <block id="e75a7519d171bb7557b6497aaf0fa138" category="doc">バッテリの交換- EF300およびEF600</block>
@@ -9489,7 +9423,6 @@
   <block id="634a392452d01560a6a3fa26e30785fe" category="doc">SAS拡張カードの交換要件- EF300 / EF600</block>
   <block id="23c19e9851a45bd1a62c97b5c51e16ab" category="doc">Eシリーズストレージシステムを管理</block>
   <block id="2d77a77163078d96d0699098a7f29284" category="doc">プラットフォームのテクニカルレポートを参照（Eシリーズ）</block>
-  <block id="de6a30ef0bb3367d4d98ffad8c434729" category="doc">ラックマウントハードウェア（Eシリーズ）</block>
   <block id="82395b99bc2ea612343c2224c9ba96f7" category="doc">SANtricityリモートストレージボリューム用のリモートストレージのインポート</block>
   <block id="2f9dd903f610e6360946707f5fcc7fb5" category="doc">SANtricity Remote Storage Volumesの詳細</block>
   <block id="053f568a9f3e7345f8aa801057559613" category="doc">SANtricityリモートストレージボリュームのリモートストレージ接続設定を変更します。</block>
@@ -9667,4 +9600,1095 @@
   <block id="980295b6698b8b2aea7adc1d9dafed8c" category="section-title">Version 11.90R5の新機能</block>
   <block id="94bf3a177cda972f0b25d90290f4610c" category="paragraph">このバージョンには欠陥の修正のみが含まれ、新しい機能は含まれていません。このリリースの変更点の詳細については、EシリーズSANtricity OS 11.90R5 READMEを参照してください。</block>
   <block id="b2676fbb812b8574fa9249e68163593f" category="paragraph">このバージョンにはマイナーな変更のみが含まれており、新しい機能は含まれていません。このリリースの変更点の詳細については、Eシリーズ SANtricity OS 11.90R4 READMEを参照してください。</block>
+  <block id="fa55a39b22d11c5af001ea464e373e73" category="paragraph">両方のコントローラのI/OモジュールまたはI/Oモジュールブランクを交換します。</block>
+  <block id="9c35ace50d74937ef9dd17f08d155adc" category="paragraph">まず一方のコントローラーから始め、次に他方のコントローラーについても同様の手順を繰り返します。</block>
+  <block id="64bdd93ecd6cd33ad364970a62243a9c" category="list-text">いずれかのコントローラで、ターゲットスロットからI/OモジュールまたはI/Oブランキングモジュールを取り外します。</block>
+  <block id="d537bbb1a90b1eb333e8c8942be81f15" category="paragraph">次の図は、I/Oブランキングモジュールを取り外しているところを示しています。</block>
+  <block id="91e2872c9b5e53f0acf0e8a29206f6fe" category="image-alt">I/Oブランキングモジュールを取り外します</block>
+  <block id="eff9a2b0e485ca3fb80f96fc9995fb62" category="inline-image-macro">コールアウト番号1</block>
+  <block id="8123303767547374b75236612d61eaea" category="paragraph"><block ref="8123303767547374b75236612d61eaea" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="aa03312c0581846f6b1b74dfc125406a" category="paragraph">I/OモジュールまたはI/Oブランキングモジュールで、つまみネジを反時計回りに回して緩めます。</block>
+  <block id="746fda156f20e053f2c0e3b0e0ecab0e" category="inline-image-macro">コールアウト番号2</block>
+  <block id="5341a23a962393863fa78f7d211f8029" category="paragraph"><block ref="5341a23a962393863fa78f7d211f8029" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9f980fd836f75619a8c905db4727ab5c" category="paragraph">左側のタブとつまみネジを使用して、I/OモジュールまたはI/Oブランキングモジュールをコントローラから引き出します。</block>
+  <block id="e674b435d235be13e9b7dbef85887973" category="list-text">新しいI/Oモジュールを取り付けます：</block>
+  <block id="50d345bb76014f498b9ae6c6984cff5c" category="list-text">I/Oモジュールをコントローラスロット開口部の端に合わせます。</block>
+  <block id="a4021e89bcfb830d842cbafb733c367b" category="list-text">I/Oモジュールをスロットにゆっくりと奥まで押し込み、モジュールがコネクタに正しく装着されていることを確認してください。</block>
+  <block id="067fbc2455a24fcb7cc811e76fc3caf3" category="paragraph">左側のタブとサムスクリューを使ってI/Oモジュールを押し込むことができます。</block>
+  <block id="3e5e3cc1c1b4c784727eb30ffda76671" category="list-text">つまみネジを時計回りに回して締めます。</block>
+  <block id="b0cf669bd0a487d863af85efdd8ee648" category="list-text">I/Oモジュールをホストネットワークにケーブルで接続します。</block>
+  <block id="88b736e6d5561b4dc7cce39802381ee6" category="inline-link-macro">ハードウェアをケーブルで接続する</block>
+  <block id="6b692ea2048088c59ab42b3bcce87751" category="paragraph"><block ref="276dc34fad45927c475bf0fb53ff5be5" category="inline-link-macro-rx"></block>セクションは、システムのインストールとセットアップに関するコンテンツのホストネットワークケーブル配線に使用できます。</block>
+  <block id="a63801ba50b84ecd5c700166a0e8c4ae" category="list-text">これらの手順を繰り返して、もう一方のコントローラにI/Oモジュールを追加します。</block>
+  <block id="a51606326fdc4dd84336979274179876" category="inline-link">部品の返品と交換</block>
+  <block id="5f7d656732f3f6002e129feef4d6cf85" category="paragraph">障害のある部品は、キットに付属するRMA指示書に従ってNetAppに返却してください。詳細については、<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>ページを参照してください。</block>
+  <block id="8bd6c0defe29f56847a7ba2ca43fd209" category="list-text">メニューの「Hardware[Controllers and components]」を選択してください。</block>
+  <block id="d4baf862400654c024011c2d8c514cd3" category="list-text">SANtricity System Managerで、メニュー：Hardware[Controllers and components]をクリックします。</block>
+  <block id="b2dc0096c64cdaedcabd385ca2737e62" category="list-text">SANtricity System Managerで、メニューの「Hardware」→「Controllers and components」をクリックし、必要に応じてスクロールダウンして、新しく追加されたドライブシェルフを表示します。</block>
+  <block id="a813962ebe4fb11a5bc8e1ab3b8c1492" category="paragraph">次の図は、コントローラの再取り付け時のコントローラハンドル（コントローラの左側から）の操作を示しており、コントローラの再取り付け手順の参考として使用できます。</block>
+  <block id="3a0c08ed150e453675cf3f353dfe471e" category="image-alt">コントローラーをインストールするためのコントローラーハンドル操作</block>
+  <block id="2169e5b74d2794e67d2b6a5c16529024" category="paragraph">コントローラーの修理中に邪魔にならないようにコントローラーのハンドルを垂直（タブの横）に回転させた場合は、水平位置まで下に回転させてください。</block>
+  <block id="2e4775ea47760a070ebb6d0112d605ae" category="paragraph">ハンドルを押して、コントローラをシャーシに再度挿入します。</block>
+  <block id="5f695e51ae076dac62d244a3e86a2eae" category="image-alt">コールアウト番号3</block>
+  <block id="90bd32fd6a87b2827748364c93194903" category="paragraph">ハンドルを垂直位置に回転させ、ロックタブで固定します。</block>
+  <block id="4b4aa4bb336c5c33a46b6de47b20533b" category="list-text">コントローラーのカバーを閉じ、つまみネジを時計回りに回してしっかりと締めます。</block>
+  <block id="1f8b9efbc618b713185c861f2ea953ec" category="list-text">コントローラーをシャーシに挿入します：</block>
+  <block id="f1733862ab533b1be5c046f342116e52" category="list-text">コントローラーの背面をシャーシの開口部に合わせ、コントローラーがミッドプレーンに接触して完全に装着されるまで、ハンドルを静かに、しかししっかりと押します。</block>
+  <block id="28180201bfb2d7bf5615528194442289" category="admonition">コントローラーをシャーシに差し込む際は、無理な力を加えないでください。コネクタが破損する恐れがあります。</block>
+  <block id="a676323e6fcbbd59df78bae524b7b40c" category="list-text">コントローラーのハンドルを上に回転させ、タブで固定します。</block>
+  <block id="c190e47c300a3781bbf4edf442004427" category="list-text">電源コードを電源装置に再接続し、電源コード固定クリップを使用して電源コードを固定します。</block>
+  <block id="09792124be37eb490b4c100d51a769f1" category="paragraph">電源装置への電源が復旧すると、ステータス LED は緑色になります。</block>
+  <block id="a8ffa005f2f4d7ca0ce6fbc0cc743f6a" category="list-text">コントローラーにすべてのケーブルを再接続してください。</block>
+  <block id="432439ba5a9c5e97dd867034f0264d18" category="admonition">コントローラーをオンラインにする前に、ケーブルを再接続する必要があります。これは、ミラーリングケーブル接続にとって特に重要です。なぜなら、ミラーリングケーブル接続はシステム全体の冗長性を確保し、キャッシュミラーリングやI/O shippingに使用されるからです。</block>
+  <block id="f3e8f16b8c4599d4e7971f4a3b5b40ec" category="paragraph">キャッシュメモリ内のデータがすべてドライブに書き込まれていることを確認し、障害のあるコントローラからすべてのケーブルを抜き、障害のあるコントローラをシャーシから取り外します。</block>
+  <block id="ddebde23a73a1e5da12a180120d90828" category="list-text">障害のあるコントローラで、NV Caching Active（緑色）LEDが消灯していることを確認します。</block>
+  <block id="58965ac945ee10b0dc2cf0c64879cc65" category="paragraph">NV Caching Active（緑色）LEDが消灯している場合、キャッシュメモリ内のデータはすべてドライブに書き込まれており、障害が発生したコントローラを取り外しても安全です。</block>
+  <block id="69461a453d92467af5f1dc2949bbb0fd" category="admonition">NVキャッシングアクティブ（緑色）LEDが点灯している場合、キャッシュされたデータがドライブに書き込まれています。処理が完了し、NVキャッシングアクティブLEDが消灯するまでお待ちください。ただし、LEDが5分以上点灯し続ける場合は、この手順を続行する前に<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>お問い合わせください。</block>
+  <block id="277a5437b393a9dae2e1f36dc8c357c0" category="paragraph">NV Caching Active（緑色）LEDは、コントローラー上のNVアイコンの隣にあります。</block>
+  <block id="7d4f1018779bf26ae6ea9c3314b4748f" category="image-alt">NVステータスLEDの位置</block>
+  <block id="e8ed7b11484014d720b422ee782eba78" category="paragraph">コントローラー上のNVアイコンとNV Caching Active LED</block>
+  <block id="67ae27d673fda2143fd1f63adf86608f" category="list-text">障害のあるコントローラに接続されている各ケーブルにラベルを付けます。</block>
+  <block id="37eda14e099a8035cd25a253d4f8db81" category="list-text">障害のあるコントローラーの電源から電源コードを外します。</block>
+  <block id="db8fd2a28ebcf5092f7716116253ff49" category="admonition">電源装置（PSU）には電源スイッチがありません。</block>
+  <block id="b1a94eb82383e51048a46914dd3e98dc" category="list-text">障害のあるコントローラからすべてのケーブルを抜きます。</block>
+  <block id="f10ecb274bf637a86985f6cf212fc947" category="list-text">障害のあるコントローラを取り外します。</block>
+  <block id="e11e72421be735a28947fbf0a54a814a" category="paragraph">次の図は、コントローラを取り外すときのコントローラハンドル（コントローラの左側から）の操作を示しています：</block>
+  <block id="1b18694f8589edd135989442717be84b" category="image-alt">コントローラを削除するコントローラハンドル操作</block>
+  <block id="68bd36189b3dd53d0a3db6843e43eae2" category="paragraph">コントローラーの両端にある垂直方向のロックタブを外側に押して、ハンドルを水平位置に解放します。</block>
+  <block id="e38dbb05b47a9a2d1a0e6e4ce5ca2916" category="list-text">ハンドルを手前に引いて、コントローラをミッドプレーンから外します。</block>
+  <block id="992eed634c310c3384dab41dec7eef9e" category="paragraph">引っ張ると、ハンドルがコントローラーから伸び出し、抵抗を感じたら、そのまま引っ張り続けてください。</block>
+  <block id="4d194c1f374d114aeda5d40087c5bee3" category="list-text">コントローラの底部を支えながら、コントローラをシャーシから引き出し、平らで静電気のない作業面に置きます。</block>
+  <block id="6812d727082207717576976311f2f976" category="paragraph">必要に応じて、ハンドルを垂直方向（タブの横）に回転させて邪魔にならないように移動させてください。</block>
+  <block id="f6c4c0df663b5e47c04664435749c0cf" category="list-text">コントローラーのカバーを開けるには、つまみネジを反時計回りに回して緩め、カバーを開けます。</block>
+  <block id="ef13404364a970b4fd05be667ebe059d" category="doc">手順1：コントローラを取り外す</block>
+  <block id="4d8761cf588ee1a042ea53ea8de854e2" category="list-text">ストレージシステムの適切な冷却を維持するため、故障したコントローラーを取り外してから60分以内に交換用コントローラーを取り付けてください。</block>
+  <block id="040eb60b9c2067a203906826ad9b9de6" category="admonition">過熱を防ぐため、コントローラベイを60分以上空のままにしないでください。</block>
+  <block id="f314d733699a86d270cee4ccf938c861" category="list-text">障害のあるコントローラのケーブルを抜く前に、コントローラをオフラインにする必要があります。</block>
+  <block id="04f0343c36d2b01208704180f5a2822f" category="list-text">ストレージシステムの場所（青色）のLED（ストレージシステム前面および両方のコントローラ上）を点灯させることで、該当するストレージシステムを物理的に特定するのに役立ちます。SANtricity System Managerを使用し、*ハードウェア* ＞ *コントローラとコンポーネント* を選択し、*コントローラシェルフ* タブを選択して、コンテキストメニューから *ロケーターライトを点灯* を選択します。</block>
+  <block id="46dc7a6019d827f81ffce7b535eb038e" category="section-title">手順2：電源装置を移動します</block>
+  <block id="7bb165a1e14005ed2165449bfe570ee7" category="paragraph">電源装置（PSU）を交換用コントローラに移動します。</block>
+  <block id="8442028b3097bcfb1898e4700eb08397" category="list-text">障害のあるコントローラから PSU を取り外します。</block>
+  <block id="de7883b670e2aa03b8a1c8f09df0283d" category="paragraph">電源装置にアクセスできるように、左側のコントローラハンドルが直立位置にあることを確認してください。</block>
+  <block id="eb7daf9edab18c99ff21b5cd1a7d0573" category="image-alt">AC PSUを交換する</block>
+  <block id="b39c0aa2f7a74f6bb1d82767252e81f0" category="paragraph">電源ユニットのハンドルを上方向に回転させて水平位置にし、それからハンドルを握ってください。</block>
+  <block id="e53aa8a1ae4c16653020202824322401" category="paragraph">親指でオレンジ色のロックタブを押して、PSUをコントローラーから取り外します。</block>
+  <block id="69aa3d2e41b3de12291563841f390a9b" category="paragraph">もう一方の手で重さを支えながら、コントローラから PSU を引き抜きます。</block>
+  <block id="0675e42668a985b3678e0ac7bef7f3df" category="admonition">PSUは短いです。コントローラから取り外す際は、必ず両手で支えてください。そうしないと、突然コントローラから外れて怪我をする可能性があります。</block>
+  <block id="2178955fc711a10316dabc28ec32b496" category="list-text">電源ユニットを交換用コントローラに挿入します：</block>
+  <block id="8ea2ecf6afc3dd784c96ad3320c6697c" category="list-text">両手を使って、PSUの端をコントローラーの開口部に合わせて支え、位置を合わせます。</block>
+  <block id="9c45d770c4c72fca10bc51aff2728977" category="list-text">オレンジ色のロックタブがカチッと音がするまで、PSUをコントローラーにゆっくりと差し込んでください。</block>
+  <block id="b5ecda37046d685b93693e01ecb6e6fe" category="paragraph">PSUは、内部コネクタとロック機構に正しく接続されなければなりません。PSUが正しく装着されていないと感じる場合は、この手順を繰り返してください。</block>
+  <block id="f8f3297fae2134dc5ae24c76ca45bcee" category="admonition">内部コネクタの損傷を防ぐため、PSUをコントローラに差し込む際に過度の力を加えないでください。</block>
+  <block id="f0167637a350c4dd2e81ce6e691cd9db" category="list-text">ハンドルを下に回転させて、通常の操作の邪魔にならないようにします。</block>
+  <block id="489f4d822f036e8983d65332d7a37f54" category="section-title">手順3：ファンを移動する</block>
+  <block id="9409045caa9314bcb1f1483b708e0031" category="paragraph">ファンを交換用コントローラに移動します。</block>
+  <block id="6ebff45ffc34f047fbedc4110d404210" category="list-text">障害のあるコントローラからファンを 1 つ取り外します。</block>
+  <block id="4cad152e4a8c970b1849e94a2254d195" category="image-alt">ファンの交換</block>
+  <block id="0598d6786d27c4929b62139fe114b783" category="cell">ファンの両側を青いタッチポイントで持ちます。</block>
+  <block id="d9e9a2ba598d4bf9da2d14af94f3f75f" category="cell">ファンをまっすぐ上に引き上げて、ソケットから取り外します。</block>
+  <block id="2ca99cd6d9bea1fe091b4d30068a2d69" category="list-text">ファンをガイドに合わせて交換用コントローラーに挿入し、ファンコネクタがソケットに完全に収まるまで押し込みます。</block>
+  <block id="7db206f9e6fccdb15b825a463365ed9a" category="list-text">残りのファンについても、この手順を繰り返します。</block>
+  <block id="4f42b1d0608fb1685f8d72748eac26b7" category="section-title">手順4：NVバッテリを移動する</block>
+  <block id="febcb77a862bc52409a4f8f740402587" category="paragraph">NVバッテリを交換用コントローラに移動します。</block>
+  <block id="3748cc234da371c99e3323c964dad4ff" category="list-text">障害のあるコントローラからNVバッテリを取り外します。</block>
+  <block id="1089c3637780c1a22ad88c3e30e3eaa6" category="image-alt">NV バッテリを交換する</block>
+  <block id="ac6ff89bfab84b4e4a936fbdfb584da9" category="paragraph">NVバッテリーを持ち上げて、収納部から取り出します。</block>
+  <block id="2b6434ef9f5457450d4511d0fabd2506" category="paragraph">配線ハーネスを固定具から取り外します。</block>
+  <block id="5dedb299714fe96c61b1f1919b6e8cc2" category="list-text">コネクタのタブを押し込んで保持します。</block>
+  <block id="d3cc2e145aba0519f854557ed57acf4b" category="list-text">コネクタをソケットから上に引き抜いてください。</block>
+  <block id="6b2547cf52b63bc6d939b98416cdfde1" category="paragraph">引き上げながら、コネクタを端から端まで（長手方向に）軽く揺らして外してください。</block>
+  <block id="b43b37a5beb7724c79cd784767cd6f99" category="list-text">NV バッテリを交換用コントローラに取り付けます。</block>
+  <block id="fbbb65591b24687dbb68bedee8fff126" category="list-text">配線コネクタをソケットに差し込みます。</block>
+  <block id="e443be76e4c5ed8e9dae5cbfde2b1592" category="list-text">配線を電源装置の側面に沿って通し、固定具に収め、その後、NVバッテリー収納部前面の溝に通してください。</block>
+  <block id="0451eb98a36fb1804410bcc4ce9359cc" category="list-text">NVバッテリーをコンパートメントに入れます。</block>
+  <block id="3df44b0182c03fcb8c4156599eba109a" category="paragraph">NV バッテリーは、収納部にぴったりと収まるようにしてください。</block>
+  <block id="27f35b27313c8e5ab77d19b60ae6e137" category="section-title">手順5：システムDIMMを移動する</block>
+  <block id="e2ab92defc59c42db8d7751871a85f99" category="paragraph">DIMMを交換用コントローラに移動します。</block>
+  <block id="aa873a0b11a643ef5c6d4ea9bb76770f" category="paragraph">DIMMブランクがある場合は、それらを移動する必要はありません。交換用コントローラには、それらが取り付けられた状態で届くはずです。</block>
+  <block id="44e8fcc7253fb9a1de8d7428592b78d3" category="list-text">障害のあるコントローラからDIMMを1つ取り外します。</block>
+  <block id="9f6b3b55748dc3abdda6a24404bc0981" category="image-alt">DIMM の交換</block>
+  <block id="8cadb74e8e3dadb4f0559d6574dc54d2" category="paragraph">DIMMスロットの番号と位置。</block>
+  <block id="ebef233acb3f41651dd2ed255f0710f3" category="admonition">ストレージシステムのモデルによって、DIMMは2枚または4枚搭載されています。</block>
+  <block id="c8bca978ec187f4e3926d3fb1c0f21ed" category="list-text">ソケット内のDIMMの向きを確認し、交換用コントローラに正しい向きでDIMMを挿入できるようにします。</block>
+  <block id="895d127cb9bb8c714cfeedec25196eb8" category="list-text">DIMMスロットの両端にある2つのDIMMイジェクタタブをゆっくりと押し広げて、DIMMを取り外します。</block>
+  <block id="f422e2b9703dc78004ddade23f0bbe2f" category="admonition">DIMM回路基板のコンポーネントに力が加わらないように、DIMMの両端を慎重に持ちます。</block>
+  <block id="1ab8f30cd60bb4c699f4aa4f4a45d4ef" category="paragraph">DIMMをスロットから持ち上げて取り外します。</block>
+  <block id="2ff45566a080242bfba5b4556db91b26" category="paragraph">DIMMのツメは開いたままです。</block>
+  <block id="82d00c1935cb2a15e6506a8190030c0d" category="list-text">交換用コントローラにDIMMを取り付けます：</block>
+  <block id="60d8cb7af13a1de8e2ac89bf55defe6f" category="list-text">コネクタのDIMMイジェクタタブが開いた位置にあることを確認してください。</block>
+  <block id="4db38c111b599a8d5245fba08b4ae7ea" category="list-text">DIMMの角を持って、スロットにまっすぐ挿入してください。</block>
+  <block id="cd3a33c660a3471bcf63783151894354" category="paragraph">DIMMの下部のピンの間にあるノッチを、スロットの突起と揃える必要があります。</block>
+  <block id="b3fb7cc55fec6d7df9078e2ee7739718" category="paragraph">正しく挿入すれば、DIMMは簡単に挿入できますが、スロットにしっかりと収まります。そうでない場合は、DIMMを再度挿入してください。</block>
+  <block id="7e08ee4b466dc677d31c40c8b0488339" category="list-text">DIMMがスロットに均等に配置され、完全に挿入されていることを目視で確認してください。</block>
+  <block id="9575090426787707867ccbc79b2a7518" category="list-text">DIMMの上端を慎重に、しかししっかりと押し下げ、イジェクトタブがDIMMの両端にある切り欠きにカチッと音がして所定の位置に収まるまで押し込みます。</block>
+  <block id="f2b46f48ad91312dbb629ca0d1eab3fe" category="list-text">残りのDIMMについても、上記の手順を繰り返します。</block>
+  <block id="c37a4d7725ea260112e56edceaf5e4d1" category="section-title">ステップ6：I/Oモジュールを移動する</block>
+  <block id="b88a7ed45dedd1e4784a5c578bc8263e" category="paragraph">I/OモジュールおよびI/Oブランキングモジュールを交換用コントローラに移動します。</block>
+  <block id="47f9ea1b3b16949857f797ce304a6208" category="list-text">障害のあるコントローラからI/Oモジュールを1つ取り外します：</block>
+  <block id="e9a79f0407fd89b04b8d674513b95d8e" category="paragraph">I/Oモジュールが取り付けられていたスロットをメモしておいてください。</block>
+  <block id="87229a36d0751b8a6977451eb462ca89" category="paragraph">スロット4のI/Oモジュールを取り外す場合は、I/Oモジュールにアクセスできるように、右側のコントローラハンドルが直立位置にあることを確認してください。</block>
+  <block id="0af6fe064800da7d11e3417d85012213" category="image-alt">I/Oモジュールを取り外す</block>
+  <block id="ffa468f89f7193e4d62e16f0859dcad7" category="paragraph">I/Oモジュールのつまみネジを反時計回りに回して緩めます。</block>
+  <block id="5ea88ba805bdaacfdce62e862cfa864e" category="paragraph">左側のポートラベルタブと右側のつまみネジを使って、I/Oモジュールをコントローラから引き抜きます。</block>
+  <block id="e04fbb1e210321f8cf00679d99037eff" category="list-text">交換用コントローラにI/Oモジュールを取り付けます：</block>
+  <block id="66efd9c2b6ae55ef5c1ff3be01c1fe65" category="list-text">I/Oモジュールをスロットの端に合わせます。</block>
+  <block id="7188f4bfa76e7ca34fdec6ed68818a56" category="paragraph">左側のタブと右側のつまみネジを使って、I/O モジュールを押し込むことができます。</block>
+  <block id="5994799013219684cd2468d0bd103219" category="list-text">これらの手順を繰り返して、残りのI/OモジュールとI/Oブランキングモジュールを交換用コントローラに移動します。</block>
+  <block id="c15449579d92fa124a659aa412ed32be" category="section-title">手順7：コントローラを取り付ける</block>
+  <block id="718f8a032a06d7322aab870b07f3a5bc" category="paragraph">交換用コントローラーをシャーシに取り付け、電源コードとすべてのケーブルを再接続します。</block>
+  <block id="b43b4b5f5821961553dbe6d4e6122a10" category="list-text">次のステップは、障害が発生したコントローラがIPアドレスにDHCPを使用していたかどうかによって異なります：</block>
+  <block id="bfa9de45095a3a90ebc55708a5ee6dd2" category="cell">状況</block>
+  <block id="c1325f6903ebb5ebb2bb519a73ddb1b0" category="cell">操作</block>
+  <block id="db2d89e0aea58b0bb054d06711dd1603" category="paragraph">障害が発生したコントローラは、IPアドレスにDHCPを使用しませんでした</block>
+  <block id="6fbe3b2a04087d98d7111edd8b0800a6" category="paragraph">交換用コントローラは、取り外した障害のあるコントローラのIPアドレスを引き継ぎます。</block>
+  <block id="b1ba38ad947dd1578f31b0197f58b44d" category="paragraph">次の手順へ進みます。</block>
+  <block id="decfc22a794e17cd9475dd29aa12b845" category="paragraph">障害が発生したコントローラは、IPアドレスにDHCPを使用していた</block>
+  <block id="9f0090d15a85a71724021b2fe1054c22" category="paragraph">ネットワーク管理者に、障害が発生したコントローラのDNS/ネットワークアドレスとIPアドレスを、交換用コントローラのMACアドレスに関連付けるよう依頼してください。</block>
+  <block id="96edeb3ef5f3d00c690483674749e606" category="list-text">SANtricity System Managerを使用してコントローラをオンラインにします。</block>
+  <block id="51940da2e0e112c4e2164ed73dde4ca2" category="list-text">*Hardware* ＞ *Controllers and components* を選択してコントローラーを表示します。</block>
+  <block id="43e5e56b16d9e995d72c9ea69ea1a621" category="list-text">交換したコントローラを選択して、コンテンツメニューを表示します。</block>
+  <block id="32d3fe65190b2b90e6f9f86e1ae465aa" category="list-text">*オンラインで注文する*を選択します。</block>
+  <block id="539f827e10e96fdd5bb9e40e8a033b35" category="list-text">コントローラの起動時に、コントローラのLEDを確認し、他のコントローラとの通信が再確立されていることを確認してください：</block>
+  <block id="9099077ffed39ba2a685301f4b1444f5" category="paragraph">NVSRAM の不一致が報告された場合は、次の SMcli コマンドを使用して NVSRAM をアップグレードしてください。<block ref="ff2bddd61609f26dc3255408781890ad" prefix=" " category="inline-code"></block>パラメータは、アレイが https セキュアでない場合に必要です。</block>
+  <block id="ca34ccb280b5b0c1964d413938ebbdf1" category="admonition">SMcliコマンドを完了できない場合は、<block ref="116f7ad90a3c7441981f82d8f8fba4d5" category="inline-link-rx"></block>に連絡するか、<block ref="fcc52edac3ce57829c48ee35d97a295d" category="inline-link-rx"></block>にログインしてケースを作成してください。</block>
+  <block id="37c9a6ae0057d4ef2e7c8004d6bf9837" category="list-text">ストレージシステムのステータスが最適であり、コントローラの注意 LED が消灯していることを確認します。</block>
+  <block id="b1af2a1e075bf65c8a6d562cdf1d917c" category="paragraph">ステータスが最適でない場合、または注意LEDのいずれかが点灯している場合は、すべてのケーブルが正しく接続されていること、およびコントローラが正しく取り付けられていることを確認してください。必要に応じて、コントローラを取り外して再度取り付けます。</block>
+  <block id="546c2059b7d78aee666e65a2118a57b9" category="admonition">問題が解決しない場合は、<block ref="116f7ad90a3c7441981f82d8f8fba4d5" category="inline-link-rx"></block>にお問い合わせください。</block>
+  <block id="8fae6a367fd3c600bcac1c10f888063c" category="list-text">交換用コントローラーを開梱し、静電気のない平らな場所に置いてください。</block>
+  <block id="c933121354c0223a9ad728051e709537" category="paragraph">故障したコントローラを返送する際に使用するため、梱包材は保管しておいてください。</block>
+  <block id="06d5fce8c355d461d669d434c31cd62c" category="list-text">交換用コントローラの側面に記載されているMACアドレスをメモしておいてください。</block>
+  <block id="32fdd5186a012c3f888f7ed721176da8" category="paragraph">MAC アドレスは、コントローラの交換手順で後ほど使用します。</block>
+  <block id="07fda9eb36699866857d3a3fcf9d4fe3" category="list-text">交換用コントローラの部品番号が、SANtricity System Managerのコントローラの交換部品番号と同じであることを確認します。</block>
+  <block id="7b41eb08240d48ac49d0b954d04195aa" category="admonition">*データアクセスが失われる可能性があります*：2つの部品番号が同じでない場合は、この手順を実行しないでください。コントローラの不一致があると、交換用コントローラをオンラインにしたときにロックダウンされます。</block>
+  <block id="8d416427e60142869e870aca364073af" category="list-text">交換用コントローラの側面に記載されている部品番号を控えておいてください。</block>
+  <block id="0afb06886c849a5b8e6ee76d561845a2" category="list-text">Recovery Guruの詳細エリアに表示されている、障害が発生したコントローラの交換部品番号を確認します。</block>
+  <block id="c05de55475b8cbf67f50787bcf0bddba" category="paragraph">この番号を手動で調べる必要がある場合は、以下の手順に従ってください：</block>
+  <block id="000bff5d070a7406db72435fc7376b96" category="list-text">*Hardware* &gt; *Controllers and components* を選択します。</block>
+  <block id="3bca209bdd0840cefddce7cace13642a" category="list-text">障害が発生したコントローラー（コントローラーAまたはコントローラーB）のコントローラーグラフィックを選択して、コンテキストメニューを表示します。</block>
+  <block id="035ca9e6fc4bda88ace0c0216c62980b" category="list-text">2 つの部品番号を比較して、同じであることを確認してください。</block>
+  <block id="3cc46ef09d9c0e29c5f2806b83ebacde" category="list-text">次のステップは、部品番号が同じかどうかによって異なります：</block>
+  <block id="743e5938189079dd3357c8b6f7009004" category="paragraph">2つの部品番号は同じです</block>
+  <block id="d2aa5e318ed453a328d025435209fc91" category="paragraph">次のステップに進んでください。</block>
+  <block id="218db8bd137d4473a909b80dd224d93c" category="paragraph">2つの部品番号は異なります</block>
+  <block id="dc46f66aca33371e2046cc628d114249" category="paragraph">この手順を続行することはできません。</block>
+  <block id="c229d6affaf5d2de37a87c9381cd19ed" category="paragraph"><block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>サポートが必要な場合は、お問い合わせください。</block>
+  <block id="2f56d5fc53b80cd72cc9f205c589dd7b" category="list-text">SANtricity System Manager を使用して、ストレージシステムの構成データベースをバックアップします。</block>
+  <block id="9f5ae5484aae39bf79379c8e27f6637c" category="paragraph">コントローラーを削除した際に問題が発生した場合、保存したファイルを使用して設定を復元できます。システムは、コントローラー上のボリュームグループとディスクプールに関するすべてのデータを含む、RAID構成データベースの現在の状態を保存します。</block>
+  <block id="5a88e93518ef0439b565a12db4ca6079" category="list-text">*Collect* を選択します。</block>
+  <block id="fa35372932fd7b7f194002545677ee4e" category="list-text">コントローラーに障害が発生していることを確認します。これは次の2つの方法で確認できます：</block>
+  <block id="5c3e489f9f015dec0ad2d63f8ffe4ab0" category="list-text">SANtricity System Manager の Recovery Guru により、コントローラの交換が指示されました。</block>
+  <block id="f8e24f4f8665beda2711e14f280abf35" category="list-text">コントローラーのオレンジ色の注意LEDが点灯しており、コントローラーに障害が発生していることを示しています。</block>
+  <block id="e99bb35d6b70ccf62eff1b0246a54916" category="list-text">ストレージシステムの電源がオンになっていて、ホストI/O処理を実行している間に障害のあるコントローラを交換できるように、ストレージシステムの以下の条件が満たされていることを確認します：</block>
+  <block id="7ce5d38198daa42ccdc1ccc6416a719c" category="list-text">シャーシ内の2番目のコントローラのステータスは「Optimal」です。</block>
+  <block id="f132692f68dec483e8cae9d0aca02255" category="list-text">SANtricity System Manager の Recovery Guru の詳細エリアにある *OK to remove* フィールドに *Yes* と表示され、障害が発生したコントローラを取り外しても安全であることを示します。</block>
+  <block id="6e08763db3826f8c66338c02202737a2" category="list-text">交換するコントローラと同じ部品番号の交換用コントローラ。</block>
+  <block id="6a621c69de29da855d69904cb723d4d8" category="list-text">コントローラから取り外す各ケーブルを識別するためのラベル。</block>
+  <block id="b4cc1ba5bf2164a993417d75aaa53475" category="list-text">コントローラのSANtricity System Managerにアクセスできるブラウザを備えた管理ステーション。</block>
+  <block id="9974af702a24ead987e72b92fd2e418c" category="paragraph">ブラウザでコントローラのドメイン名またはIPアドレスを指定することで、SANtricity System Managerインターフェイスを開くことができます。</block>
+  <block id="f92cc7ce14a5c6dd4e15865f19ea86db" category="paragraph">必要に応じて、コマンドラインインターフェース（CLI）を使用して一部の手順を実行することもできます。CLIパッケージ（zipファイル）をダウンロードするには、SANtricity System Manager：*Settings* &gt; *System* &gt; *Add-ons* を選択し、*Command Line Interface* を選択します。その後、DOS C：プロンプトなどのオペレーティングシステムのプロンプトからCLIコマンドを発行できます。</block>
+  <block id="54f4a3ad5110292b1d20d9eeb3a833ba" category="list-text">故障しているDIMMを特定します。</block>
+  <block id="8a682c66646ec7954594a9800184dc7d" category="inline-link">NetApp Hardware Universe</block>
+  <block id="a14eb1c2c4cf319a982bdbf18a929cc2" category="admonition"><block ref="4e43c3b83d98d9534ba258422aad47e3" category="inline-link-rx"></block>またはコントローラのカバーに記載されているFRUマップを参照して、DIMMの正確な位置を確認してください。</block>
+  <block id="9f212a86f239a9072597652a665776ee" category="list-text">故障したDIMMを取り外します。</block>
+  <block id="0fda818023e41f602e6784f9ba21bfa6" category="admonition">ストレージシステムのモデルによって、DIMMは2枚または4枚搭載されています。</block>
+  <block id="f11db7eec0bc125e7dce7a2d804ea918" category="list-text">交換用のDIMMを挿入する際に同じ向きで挿入できるよう、ソケット内のDIMMの向きを覚えておいてください。</block>
+  <block id="193ded937941ceaa24c58df5af5499e5" category="list-text">DIMMスロットの両端にある2つのDIMMイジェクタタブをゆっくりと押し広げて、故障したDIMMを取り外します。</block>
+  <block id="2c6646edb004240e517d3920f69fd930" category="list-text">交換用DIMMを開梱し、ストレージシステムの近くの静電気のない平らな場所に置いてください。</block>
+  <block id="99ec8f391e3817f8a8becd2d19610ec6" category="paragraph">不良品のDIMMを返送する際に使用するため、梱包材は保管しておいてください。</block>
+  <block id="1ea787c242a7dcd215996d3c48964939" category="list-text">交換用DIMMを取り付けます：</block>
+  <block id="7f26eaf9050c56078183b827f935bcc6" category="paragraph">正しく挿入すれば、DIMMは簡単に挿入できますが、スロットにしっかりと収まります。DIMMが正しく挿入されていないと思われる場合は、再度挿入してください。DIMMをスロットに無理やり押し込まないでください。</block>
+  <block id="7eb658f34658041c7b9e4400fbfc7d31" category="list-text">SANtricity System Managerから、障害が発生したコントローラのStorage controllerプロファイルにアクセスします：</block>
+  <block id="5c036fefd12c456d1d53c265712fe42d" category="list-text">*サポート* &gt; *サポートセンター* に移動します。</block>
+  <block id="bed19ecb958090751f399e852a95d4d8" category="list-text">サポートリソースページから、*Storage Array Profile*を選択します。</block>
+  <block id="ffcca4c24b4d9a797fbd7d795ea331c4" category="list-text">DIMMに以下のいずれかの状態が表示された場合は、DIMMの位置をメモし、この手順に従ってDIMMを交換してください。</block>
+  <block id="2e5ab3c5b2a4ad7907ecf21576917151" category="paragraph">これらの条件のいずれにも該当しない場合は、DIMMを交換する必要はありません。この手順を終了します。</block>
+  <block id="c08aea140bdd0ab5a4ceaf2ea1547bbe" category="list-text">障害が発生したDIMM</block>
+  <block id="29aa6af66313fa71148748a2db9289cf" category="list-text">DIMMが*Data Cache Module*を最適ではないと報告しています</block>
+  <block id="def84981fcddd93884dffb8b5a63ae91" category="list-text">*Data Cache Module* の容量が一致しないDIMM</block>
+  <block id="0e9652411744905ea48c93e5743075a9" category="list-text">その他のストレージシステムの問題に対処します。</block>
+  <block id="1648b39a8efbc7b387d8975a12526deb" category="paragraph">SANtricity System Manager を使用して、Recovery Guru の詳細を確認し、他に問題がないか確認してください。</block>
+  <block id="5470a768e23dd3b38ec8c2ab00b4d086" category="list-text">お使いのストレージシステム構成に合ったサイズの交換用 DIMM 。</block>
+  <block id="5b87691ad5641c0085ec901b687091b7" category="list-text">ESDリストバンドを着用しているか、その他の静電気対策を講じている。</block>
+  <block id="b2cf9771408dd8309b956d998815dd3c" category="list-text">平らで静電気のない作業面。</block>
+  <block id="7ccf46f5dab89b439e9855887289c86c" category="list-text">障害のあるコントローラに接続されている各ケーブルを識別するためのラベル。</block>
+  <block id="9e41b9b1d28bb3e55520d4545a2d57d3" category="list-text">障害が発生したコントローラのSANtricity System Managerにアクセスできるブラウザを備えた管理ステーション。</block>
+  <block id="67bb6fcf50230280c150bad28d18532e" category="paragraph">System Manager インターフェイスを開くには、ブラウザで障害が発生したコントローラのドメイン名または IP アドレスにアクセスしてください。</block>
+  <block id="64c2ba4173620e52c20564c1bdc69caa" category="list-text">DIMMの取り扱いおよび取り付け時に静電気放電（ESD）を防止してください：</block>
+  <block id="49d0b232da44a7328387eae2814d8ff3" category="list-text">故障したDIMMを返送する際は、ESDバッグと梱包材を保管してください。また、DIMMを発送する際は、承認された梱包材を使用してください。</block>
+  <block id="5d8ae0b85219aee0aa181d690523e9a4" category="list-text">ストレージシステムシャーシの塗装されていない面に接地されたESDリストストラップを必ず着用してください。</block>
+  <block id="f2f2d4e0fe7ef7582a624fac176d5f26" category="list-text">ストレージシステムの構成データベースをバックアップするには、SANtricity System Manager：</block>
+  <block id="99aeea1fb1b2dcbab62413534d9ec17c" category="paragraph">コントローラを削除した際に問題が発生した場合、保存したファイルを使用して設定を復元できます。システムは、障害が発生したコントローラ上のボリュームグループとディスクプールに関するすべてのデータを含む、RAID構成データベースの現在の状態を保存します。</block>
+  <block id="e3f34539c0392de4b6cccb551ad8d491" category="list-text">コンソールのエラーメッセージを確認して、交換が必要なファンを特定してください。</block>
+  <block id="9180e4524d2db3bcd87343fda3503ac8" category="list-text">故障したファンを取り外します：</block>
+  <block id="c5326645ccf57e479af92bb7e5b12b3c" category="list-text">交換用ファンを開梱し、ストレージシステムの近くの平らで静電気のない場所に置いてください。</block>
+  <block id="a86e28354599b68b343a78aab39cd22a" category="paragraph">不良ファンを返却する際に使用するため、梱包材は保管しておいてください。</block>
+  <block id="eecfe81778edf5dc34051f280e2f122c" category="list-text">交換用ファンをガイドに合わせて挿入し、ファンコネクタがソケットに完全に収まるまで押し込みます。</block>
+  <block id="9a92b3166375aa7c462deb8b92309c32" category="list-text">Recovery Guruが、故障したファンを取り外すことは適切ではないと表示していないか確認してください。もしそうなら、<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>この手順を続行する前に連絡してください。</block>
+  <block id="2d25e8226c440048c9e502acef78ce75" category="list-text">*設定* &gt; *システム*を選択します。</block>
+  <block id="f40489bf823443ace8ab762d9a17849c" category="list-text">*追加設定*セクションで、*ホストI/Oプロトコルの変更*を選択して、そのページを開きます。</block>
+  <block id="4723d6db6758b8fff57b2fcccacd2562" category="list-text">*Host I/O Protocol*フィールドで、ドロップダウンメニューを選択し、使用するプロトコルを選択します。</block>
+  <block id="40e7a3d3edaa4c623f15403e6676b491" category="paragraph">プロトコル一覧は、現在インストールされているホスト I/O モジュールに基づいています。</block>
+  <block id="30cc9a1d254ab83b67c3f083c4ef6631" category="list-text">変更を確定するには、空欄に *CHANGE* と入力してください。</block>
+  <block id="c7f108d72b11a69d9f9b213b4fcf08f3" category="list-text">*変更*ボタンを選択します。</block>
+  <block id="dc42b5d491fc6401762c79419b8c1d71" category="list-text">コントローラーの再起動サイクルが完了するまでお待ちください。</block>
+  <block id="03404525cd31ebe332bcd916a32408fe" category="paragraph">これには約 5 分かかります。</block>
+  <block id="f0e003d8e910aac92eb678b35d88e454" category="list-text">コントローラーがオンラインに戻ったら、SANtricity System Managerを使用してステータスが最適であることを確認します。</block>
+  <block id="c86f60fc7fcc7f12bacc87413a01f8ea" category="list-text">ホスト定義を再作成します。</block>
+  <block id="d5a35385e3c41cf9fd9e2f0a4a94c813" category="inline-link">SANtricity System Managerでホストを手動で作成します</block>
+  <block id="db8c72a9c6539d1e7ec1c1fb26b87ed0" category="paragraph">手順については、<block ref="a53958d29b83920c5f55ec43c9dba875" category="inline-link-rx"></block>の手順を参照してください。</block>
+  <block id="1fc86e94ed7b025b1b598bb2f43d1407" category="paragraph">詳しい手順については、お使いのストレージ システムに適したガイドを参照してください：</block>
+  <block id="83e4a7b7f356dd5b4fc5814e9fd775dd" category="list-text">ストレージシステムのホストI/Oモジュールのプロトコルがわからない場合は、SANtricity System Managerを使用して確認してください。</block>
+  <block id="b285314b6b465f044f782ffdd9cc362d" category="list-text">*Host I/O Protocol*フィールドに表示されているデフォルトのプロトコルを確認してください。</block>
+  <block id="5773f5591c5be0dd5c50653e6d20aec4" category="admonition">ホストI/Oモジュールで使用可能なプロトコルの一覧を表示するには、*ホストI/Oプロトコル*フィールドのドロップダウンメニューを選択してください。プロトコル一覧は、現在インストールされているホスト I/O モジュールに基づいています。</block>
+  <block id="f62d068f7839c83973a946e971309862" category="list-text">次のステップは、デフォルトのプロトコルが目的のプロトコルであるかどうかによって異なります：</block>
+  <block id="b8ed3149efb59c6c876d3d0175d04ca1" category="paragraph">デフォルトのプロトコルは、必要なプロトコルです</block>
+  <block id="6254f83a536e9be53589a1db4776caa3" category="paragraph">対処は不要です。この手順を終了できます。</block>
+  <block id="d5dfda2c054ffb702ffa51688eadd327" category="paragraph">デフォルトのプロトコルが目的のプロトコルではない</block>
+  <block id="fe6e8d93cf140aed40cb0c118024a679" category="paragraph">この手順を続行してプロトコルを変更します。</block>
+  <block id="e4f1442149d9233a2ae070b8b54c13ce" category="list-text">この手順のダウンタイムメンテナンス期間をスケジュールします。</block>
+  <block id="6ba03a3402729fd11feb88e957747228" category="list-text">ストレージシステムと接続されているすべてのホスト間で、I/O操作が行われていないことを確認してください。例えば、以下の手順を実行できます：</block>
+  <block id="efae40321ce137d3d4feb3148650f7a0" category="list-text">ストレージシステム上のLUNに関連付けられているすべてのファイルシステムをアンマウントします。</block>
+  <block id="8c966853804ddd0c8a58685b53b824cc" category="admonition">ホストのI/O操作を停止するための具体的な手順は、ホストのオペレーティングシステムと構成によって異なるため、本手順の範囲外となります。環境内でホストI/O操作を停止する方法がわからない場合は、ホストをシャットダウンするか、<block ref="9a6f401ca1e7e89d8a0c29fb0cbe81b7" category="inline-link-rx"></block>担当者に問い合わせてください。</block>
+  <block id="fa28d38e7ea04d9e1f9f826bf1c468a2" category="list-text">各コントローラで、NV Caching Active（緑色）LEDが消灯していることを確認してください。</block>
+  <block id="1e73b048adbb2b88c1979ef16f8dbb06" category="paragraph">NV Caching Active（緑色）LEDが消灯している場合、キャッシュ メモリ内のデータはすべてドライブに書き込まれており、この手順を続行しても安全です。</block>
+  <block id="1e20d67488b878e63809f430aa2d8f11" category="admonition">NV Caching Active（緑色）LEDが点灯している場合、キャッシュされたデータがドライブに書き込まれています。処理が完了し、NV Caching Active（緑色）LEDが消灯するまでお待ちください。ただし、LEDが5分以上点灯し続ける場合は、この手順を続行する前に<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>お問い合わせください。</block>
+  <block id="fc3d733029a58a51c05d34499b8293d0" category="list-text">コントローラでの処理が完了したことを確認するには、SANtricity System Managerを使用します：</block>
+  <block id="62d71459ec4565a064b31e7101748457" category="list-text">*ストレージ* ＞ *進行中の操作* を選択して、概要画面を表示します。</block>
+  <block id="2f3292d0ca451b4603badba163d7d565" category="list-text">すべての操作が完了し、概要画面に*現在進行中の操作はありません*と表示されるまで待ってから、次のステップに進んでください。</block>
+  <block id="023e6709c3cc6f7e022c1f737b9ecf13" category="list-text">ストレージシステムから定義済みのホストをすべて削除します。</block>
+  <block id="0f065244a3565fda62f0c2976c388d92" category="inline-link">SANtricity System Managerでホストまたはホストクラスタを削除する</block>
+  <block id="f22e97d82d8d11d91cc641fd579fb1da" category="paragraph">手順については、<block ref="540636eec801f992003aaa89b0185bd2" category="inline-link-rx"></block>の手順を参照してください。</block>
+  <block id="488e6bea7b41710214f6a9d45e4750a0" category="paragraph">故障したI/Oモジュールを交換するには、コントローラ内で該当モジュールの位置を確認し、指定された手順に従ってください。</block>
+  <block id="630c54ca8fb6dd67fc002f28d89d1211" category="list-text">故障したI/Oモジュールからケーブルを抜いてください。</block>
+  <block id="539ae767713043504856676d47fbdf4b" category="paragraph">ケーブルには必ずラベルを貼って、どこから来たものか分かるようにしてください。</block>
+  <block id="21ccb9fc686efabdb54b3721713084dd" category="list-text">コントローラから故障したI/Oモジュールを取り外します：</block>
+  <block id="b5810c743736c228e22be74cd3df636d" category="paragraph">左側のポートラベルタブとつまみネジを使って、I/Oモジュールをコントローラから引き抜きます。</block>
+  <block id="e7a88b07d0fe11e52b015a7a07b1b7ee" category="list-text">交換用I/Oモジュールをターゲットスロットに取り付けます：</block>
+  <block id="9980a13f313ae24d02e08fa90a4a1b20" category="paragraph">左側のタブとつまみネジを使って、I/Oモジュールを押し込むことができます。</block>
+  <block id="be9dc0332662b913cef88d5dcde78acd" category="list-text">I/Oモジュールをケーブルで接続します。</block>
+  <block id="5dc4a3be8797d072e49c15b407d03894" category="list-text">交換用I/Oモジュール。</block>
+  <block id="375cfeccbd14312a2120114ef4e6ee91" category="paragraph">故障したI/Oモジュールを、必ず同じタイプのI/Oモジュールと交換してください。別の種類のI/Oモジュールをインストールすることはできません。</block>
+  <block id="da3e4fc40468815155d8e6379f668342" category="paragraph">ストレージシステム内の各コントローラには、同じ種類と数のI/Oモジュールが搭載されている必要があります。</block>
+  <block id="3b2f27b5942475fd5c2f0991a987c02b" category="admonition">*データアクセスが失われる可能性あり* -- 互換性のない、または一致しないI/Oモジュールが存在すると、電源投入時にコントローラがロックダウンされます。</block>
+  <block id="8c865d6d652233499322d22b56c020e9" category="list-text">故障したI/Oモジュールに接続されている各ケーブルを識別するためのラベル。</block>
+  <block id="d251d30f4b7b8bcd0e981a1e7fc5627b" category="paragraph">I/Oモジュールを交換した後は、コントローラを再起動する必要があります。</block>
+  <block id="91c7c4ae839664f690723e2789ab84a4" category="list-text">LOADERプロンプトからコントローラをリブートします。</block>
+  <block id="b8f2c5ae8a36c3665d2a4dca23133f73" category="paragraph"><block ref="bfa99df33b137bc8fb5f5407d7e58da8" prefix="" category="inline-code"></block></block>
+  <block id="9965554ffa71eff58da20fab93be4a17" category="admonition">障害のあるコントローラをリブートすると、I/Oモジュールやその他のコンポーネントも再初期化されます。</block>
+  <block id="6f3fa8086df2fa20b3e903512f693396" category="list-text">損傷したコントローラにストレージを戻して、正常な動作状態に戻します：</block>
+  <block id="1ca056bb10dec5191f061968413fb960" category="paragraph"><block ref="30edaf7c9fa43c78aeaf4b8fabb7af1a" prefix="" category="inline-code"></block></block>
+  <block id="257315f653a5868c10e8897449aa264f" category="list-text">正常なコントローラのコンソールから自動ギブバックをリストアします：</block>
+  <block id="3d2d5e9a2a8cef4225a4bd073c2aeefb" category="paragraph"><block ref="6f0c6616b99fea33a3020e0e0dcbe3c6" prefix="" category="inline-code"></block></block>
+  <block id="af4b4d5cc6a7f6d9937999949dd33233" category="list-text">AutoSupportが有効になっている場合は、ケースの自動作成を復元します：</block>
+  <block id="824a761c1584c25f025a384b7b387c56" category="paragraph"><block ref="9ac424c0d7b432975df36a19daf50c9c" prefix="" category="inline-code"></block></block>
+  <block id="4d869e390c3cce7fd1a4c2c9abadcab9" category="list-text">交換用I/Oモジュールを開梱し、ストレージシステムの近くの平らで静電気のない場所に置きます。</block>
+  <block id="d46259c4ce941d8117d94864672cd1df" category="paragraph">不良のI/Oモジュールを返送する際に使用するため、梱包材は保管しておいてください。</block>
+  <block id="3768c58828c69b283a6a175e6472b661" category="list-text">最新バージョンの SANtricity OS がインストールされていることを確認してください：</block>
+  <block id="182b0637f4482f86eff29bbc8aa7426c" category="list-text">*サポート*＞*アップグレードセンター*を選択します。</block>
+  <block id="d01c73e0727ec874d6c088a150f5596b" category="list-text">すべてのボリュームがそれぞれの所有コントローラに返されていることを確認します。</block>
+  <block id="fb8397a799be1df6a0cd370840a4a371" category="list-text">*Storage* &gt; *Volumes* を選択します。</block>
+  <block id="5aa0ebe3cbd2eef34e0886ee040329bf" category="list-text">*All Volumes* ページから、ボリュームがそれぞれの所有コントローラーに配布されていることを確認します。</block>
+  <block id="47fde62cd6bad69ac5ee1e4f98df4c8b" category="list-text">ボリュームの所有者を表示するには、*その他* &gt; *ボリュームの所有権の変更*を選択します。</block>
+  <block id="a8f077dbdc29aae8dd14716d5bdf7039" category="list-text">次のステップは、ボリュームが所有するコントローラに返されるかどうかによって異なります：</block>
+  <block id="b4776fba955461ce5ba14e4862bd0a10" category="paragraph">ボリュームはすべて、それぞれの所有コントローラによって所有されています</block>
+  <block id="a5f7e0b057fe15e24d4b49097238ea2f" category="paragraph">ボリュームはどれも、それぞれの所有者であるコントローラに返却されません</block>
+  <block id="3bab8d68cb105bbbdf0a5a988015b9ad" category="paragraph">*Storage* &gt; *Volumes* &gt; *More* を選択し、ドロップダウンメニューから *Redistribute volumes* を選択すると、ボリュームが所有するコントローラに戻ります。</block>
+  <block id="15b8fe2de31dc0883ed9aa9334d10703" category="paragraph">自動配信または手動配信後、ボリュームの一部のみが所有するコントローラに返されます</block>
+  <block id="f13ce0c51ce6e98e40ff73bf1a311ea3" category="paragraph">ホストの接続に関する問題については、Recovery Guruを確認してください。</block>
+  <block id="671fd7f14da133cf6a7eee37a6157194" category="paragraph">Recovery Guru が存在しない場合、または Recovery Guru の手順に従ってもボリュームが元のコントローラーに戻らない場合は、この手順を続行する前に<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>に連絡してください。</block>
+  <block id="9488f9524146b79e5c3fcf42ad2d5e4b" category="list-text">ストレージシステムに関するサポートデータを収集する</block>
+  <block id="87f43fac12a1c237d037f1944b505947" category="inline-xref-macro">EF50またはEF80のホストI/Oモジュールプロトコルを変更する</block>
+  <block id="1f2378c23351d405c6f5b292526efdef" category="list-text">ホストI/Oモジュールのプロトコルを確認および変更する必要がある場合は、次の手順に従ってください<block ref="74b37660f98856046a08729a22608322" category="inline-xref-macro-rx"></block>。</block>
+  <block id="aedcd343fcb68e4a04190bee4c31ca0d" category="list-text">コントローラのいずれかで、取り外すI/Oモジュールからケーブルを抜いてください。ただし、それがI/Oブランキングモジュールの場合は除きます。</block>
+  <block id="2d5c2fc8c3eaa1831af4698259afe710" category="paragraph">ケーブルにラベルを貼っておけば、どこから来たものか分かるようになります。ただし、アップグレードするI/Oモジュールの種類によっては、同じポートにケーブルを再接続しない場合や、同じケーブルを再利用できない場合があります。</block>
+  <block id="4fdc5ef7aa01f9a5f4ff2540ea23d305" category="list-text">ターゲットスロットからI/OモジュールまたはI/Oブランキングモジュールを取り外します。</block>
+  <block id="9ae4e0bfb22619d98e91319153df15ff" category="list-text">新しいI/Oモジュールを開梱し、ストレージシステムの近くの平らで静電気のない場所に設置してください。</block>
+  <block id="168e8f01911230d3f41f25cd68c68cfa" category="paragraph"><block ref="ed123abde8ecae3a647e0e4cc4ae2bec" category="inline-link-macro-rx"></block>セクションは、システムのインストールとセットアップに関するコンテンツのホストネットワークケーブル配線に使用できます。</block>
+  <block id="42b2248297ad40cbde87588dc34af539" category="list-text">もう一方のコントローラのI/Oモジュールをアップグレードするには、これらの手順を繰り返します。</block>
+  <block id="842d0a92d83c39ec5bb127d94a1340d1" category="list-text">SANtricity System Manager のホームページから、ストレージシステムが最適（Optimal）ステータスであることを確認します。</block>
+  <block id="1c54e6b7b2c6a4233d29306192e39900" category="admonition">ステータスが最適でない場合は、Recovery Guruを使用するか、<block ref="9a6f401ca1e7e89d8a0c29fb0cbe81b7" category="inline-link-rx"></block>に問い合わせて問題を解決してください。</block>
+  <block id="9917fb40a9e6c06975fb8f9243c79b71" category="list-text">ストレージシステムと接続されているすべてのホスト間で、I/O処理が実行されていないことを確認してください。</block>
+  <block id="9967165701d83bd864422952ef200240" category="paragraph">例えば、以下の手順を実行できます：</block>
+  <block id="cd89376f0923ec921f8ce2a5a6ef8178" category="list-text">ストレージシステムからホストにマッピングされたLUNに関連するすべてのプロセスを停止します。</block>
+  <block id="0cd64d526d84fa4bfc8d092fe191bd08" category="list-text">ストレージシステムからホストにマッピングされたLUNに、アプリケーションがデータを書き込んでいないことを確認してください。</block>
+  <block id="8cd14a522d01d11d4df48615a78c1777" category="list-text">ストレージ システム上のボリュームに関連付けられているすべてのファイル システムをアンマウントします。</block>
+  <block id="2cc0ecee1b51ebde25612c3f89f70dd5" category="list-text">コントローラーの操作が SANtricity System Manager で完了したことを確認します：</block>
+  <block id="cd726a2d971efaac94a9d391e2f68627" category="list-text">両方のコントローラーの電源を切る：</block>
+  <block id="57c52ae3ab57d269bfcdd09fa130aa11" category="list-text">両方のコントローラーから電源ケーブルにラベルを貼ってから、ケーブルを抜いてください。</block>
+  <block id="bc99972b341984a197e8d2d0ecf28533" category="list-text">両方のコントローラのすべての LED が消灯するまで待ちます。</block>
+  <block id="43875314ce7ca196e665d736455cb139" category="list-text">両方のコントローラーに電源ケーブルを接続します。</block>
+  <block id="734539fc9e02f5e053728e7c5bfb837c" category="paragraph">コントローラのブートが開始されます。</block>
+  <block id="0b3109a33c36f5898fbca8d3a13976f7" category="list-text">コントローラのLEDを確認して、コントローラ間の通信が再確立されていることを確認します。</block>
+  <block id="f573f92d576cf14be4f7901e04dfb2b9" category="list-text">注意 LED が点灯したままになります。</block>
+  <block id="3126a6f9eee32abaa08d58ed0a49a615" category="list-text">コントローラーがオンラインに戻ったら：</block>
+  <block id="14b348d983a5c81ef707d703552d609e" category="list-text">ステータスが最適であることを確認してください。</block>
+  <block id="e93044d6f12583e6f0c55377a1a2ff8c" category="list-text">各コントローラの Attention LED が消灯していることを確認します。</block>
+  <block id="79523326f577fbe6d90a4e42b4bc60f4" category="paragraph">ステータスが最適でない場合、または注意 LED のいずれかが点灯している場合は、すべてのケーブルが正しく接続されていることを確認してください。</block>
+  <block id="bcc7d313f9ff59780374bed744a70abb" category="admonition">問題が解決しない場合は、<block ref="116f7ad90a3c7441981f82d8f8fba4d5" category="inline-link-rx"></block>。必要に応じて、SANtricity System Managerを使用してストレージシステムのサポートデータを収集します。</block>
+  <block id="3f30607c8c189611a29aba345aefd909" category="list-text">この手順のダウンタイムメンテナンス期間をスケジュールします。この手順が正常に完了するまで、ストレージシステム上のデータにアクセスできません。両方のコントローラは電源投入時に同じI/Oモジュール構成である必要があるため、I/Oモジュールをアップグレードする際は電源をオフにする必要があります。</block>
+  <block id="e99ebf994137a95e61f5f7a52a0443b2" category="list-text">アップグレード先の新しい I/O モジュール。</block>
+  <block id="cd8bbbf91ae9a194a24cb371e61472ae" category="paragraph">アップグレードするI/Oモジュールがストレージシステムでサポートされていること、各コントローラに同じタイプと数のI/Oモジュールがあること、スロットの優先順位を理解していること（新しいI/Oモジュールは各コントローラの同じスロットに取り付ける必要があります）を確認してください。</block>
+  <block id="5d34f6bf4f46be7c85807174aa946833" category="paragraph">必要に応じて、ストレージシステムでサポートされているI/Oモジュールとスロットの優先順位を次の場所で確認できます<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>。</block>
+  <block id="0f8915f18b413ad77f4f3dd091d9a678" category="list-text">新しいI/Oモジュールをネットワークに接続するためのケーブル。</block>
+  <block id="43f24ff5a34ee925d09b341d8520282a" category="list-text">コントローラのSANtricity System Managerにアクセスできるブラウザを備えた管理ステーション。</block>
+  <block id="3cfa2a76ec6b7919560b9e39a238b394" category="paragraph">System Managerインターフェイスを開くには、ブラウザでターゲットコントローラのドメイン名またはIPアドレスにアクセスしてください。</block>
+  <block id="6b5dc064a489209f487a1fbe74678501" category="paragraph">SANtricity System Manager を使用して、最新バージョンの SANtricity OS がインストールされていることを確認し、すべてのボリュームが所有コントローラに戻されていることを検証し、サポートデータを収集して運用を再開できるようにします。</block>
+  <block id="77480833ef5cc037425fc564bfa7d80e" category="list-text">ストレージシステムに最新バージョンのSANtricity OSがインストールされていることを確認してください：</block>
+  <block id="5920ef825270be85c014f411676c870a" category="list-text">*サポート* &gt; *アップグレードセンター* を選択します</block>
+  <block id="238bd8d0896c74de1b56b4553f8598d5" category="list-text">すべてのボリュームがそれぞれの所有コントローラに返されていることを確認します。</block>
+  <block id="5bb1a60a48916e939ab17dfa0f0393a8" category="paragraph">Recovery Guruが存在し、ボリュームが優先パス上にない（所有コントローラに戻されていない）ことを示しています。</block>
+  <block id="52b5a46fb893f7af6e4fcb7e04f0069d" category="list-text">ボリュームをそれぞれのコントローラーに再分配するには、*Storage* &gt; *Volumes* &gt; *More* を選択し、ドロップダウンメニューから *Redistribute volumes* を選択します。</block>
+  <block id="3d32eccfdf89dacd7ab5727eebb79421" category="list-text">Recovery Guruが存在し、ボリュームが優先パス上にないことを示しているかどうかを確認することで、すべてのボリュームがそれぞれの所有コントローラに再分配されていることを確認します。</block>
+  <block id="319791616ac3e18fcd67e7ff7d9c482f" category="admonition">ボリュームがまだ所有しているコントローラに戻らない場合は、<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>に連絡してください。</block>
+  <block id="8dad8566f57d182c7561be9c94f26b6b" category="paragraph">Recovery Guruは存在しません（すべてのボリュームがそれぞれのコントローラーに戻されているようです）</block>
+  <block id="dff73266acfef23e2d87098944c35f9f" category="paragraph">すべてのボリュームがそれぞれの所有コントローラーに戻されていることを確認するには、*ストレージ* &gt; *ボリューム* &gt; *その他* を選択し、ドロップダウンメニューから *ボリュームの所有権の変更* を選択してボリュームの所有者を表示します。</block>
+  <block id="820d32b1a158d53c60563b13dff48c57" category="paragraph">コントローラをオフラインにした場合は、コントローラをオンラインに戻す前に少なくとも1分間待つ必要があります。この待機時間により、ストレージシステムはコントローラのステータスを更新し、キャッシュされたすべてのデータがドライブに書き込まれるようにします。</block>
+  <block id="3885b5f478c69340cf83d7820ac679ec" category="list-text">障害のあるコントローラがまだオフラインになっていない場合は、SANtricity System Managerを使用してオフラインにします：</block>
+  <block id="c527532258073653760911f554503168" category="list-text">オフラインにするコントローラを選択して、コンテキストメニューを表示します。</block>
+  <block id="ef1ecc8a6946e0af409699163db6c3fc" category="list-text">*オフラインにする*を選択し、操作を実行することを確認します。</block>
+  <block id="fd183302e50d83588c2943337c36bef2" category="admonition">オフラインにしようとしているコントローラを使用してSANtricity System Managerにアクセスしている場合、SANtricity System Manager利用不可のメッセージが表示されます。*別のネットワーク接続に接続*を選択すると、もう一方のコントローラを使用してSANtricity System Managerに自動的にアクセスできます。</block>
+  <block id="7cc57a1eebb94325453f75fbf0275af0" category="list-text">Recovery Guruを使用して、障害コンポーネントを取り外しても安全であることを確認してください：</block>
+  <block id="ad22f97266cdfbff68c2e3e29d4e6330" category="list-text">* Recheck * を選択します。</block>
+  <block id="5b34eec682dbd9bff0de7ee894cdd6fe" category="list-text">詳細エリアの*削除してもOK*フィールドに*はい*と表示されていることを確認してください。</block>
+  <block id="8b1060e414851c63305da424310bb1f9" category="admonition">*OK to remove*フィールドに*Yes*と表示されない場合は、故障したコンポーネントの取り外しを続行しないでください。代わりに、Recovery Guruを使用して問題のトラブルシューティングを行ってください。</block>
+  <block id="362c272b3249d43a519fff1a1e85f81d" category="paragraph">障害のあるコントローラをオンラインに戻します。</block>
+  <block id="d4dc0ce64fc66520b80e9aec35fddf63" category="list-text">SANtricity System Managerを使用してコントローラをオンラインにします：</block>
+  <block id="bf0aec9f26d4b8f7e108f8863cf2ad82" category="list-text">オンラインにするコントローラを選択して、コンテキストメニューを表示します。</block>
+  <block id="f39c900e77ab172808faa7d10efc77b9" category="list-text">* オンラインにする * を選択し、操作を実行することを確認します。</block>
+  <block id="854bdd5faf1d0f3d3ab2991f9bfd4251" category="list-text">コントローラーがオンラインに戻ったとき：</block>
+  <block id="7c95fa003f2eb15e450e38ee5342f76c" category="list-text">ステータスが「最適」であることを確認します。</block>
+  <block id="f77a09f0d502f55ba3caba0850739b1f" category="list-text">コントローラの Attention LED が消灯していることを確認します。</block>
+  <block id="8a1b9966764bb347ebbc48432bd01c78" category="admonition">問題が解決しない場合は、この手順を続行する前に<block ref="9a6f401ca1e7e89d8a0c29fb0cbe81b7" category="inline-link-rx"></block>に連絡してください。必要に応じて、SANtricity System Managerを使用してストレージシステムのサポートデータを収集します。</block>
+  <block id="eb6e0aa4b1edce20b022eab407528405" category="list-text">NVバッテリの場所を確認します。</block>
+  <block id="87e83e1392e33b9e82110521a139bad8" category="list-text">NVバッテリーを取り外します：</block>
+  <block id="ae5529cd3fcab529cb7e4c4cc4ae0d75" category="list-text">交換用NVバッテリを開梱し、ストレージ システムの近くの静電気のない平らな場所に置きます。</block>
+  <block id="5afcbf849e9cb9a997b8740381124828" category="paragraph">不良品のNVバッテリーを返送する際に使用するため、梱包材は保管しておいてください。</block>
+  <block id="d61cc7e5822a30588ead2cb9b0e8c0d8" category="list-text">交換用NVバッテリを取り付けます：</block>
+  <block id="216cd6b3556908b9bf9092308aacc2f2" category="list-text">NVバッテリーをコンパートメントに配置します。</block>
+  <block id="1bd0a6d1a38fb93b63ca830a2845a59a" category="list-text">SANtricity System ManagerのRecovery Guruで、_Battery Failed_ステータスまたは_Battery Replacement Required_ステータスのいずれかが報告されていることを確認します。いずれかのステータスが報告された場合は、該当するNVバッテリーを交換する必要があります。</block>
+  <block id="20cc90805324d82c16bb0844a289dd0d" category="list-text">交換用NVバッテリー。</block>
+  <block id="806431b286fd0d267ecda9775a8a35c7" category="list-text">ESDリストバンド、またはその他の静電気対策。</block>
+  <block id="6f48d98c2df2386d39c71bc10860a818" category="list-text">電源コードリテーナーを開いてPSUから電源コードを外し、PSUから電源コードのプラグを抜きます。</block>
+  <block id="48ccf1334141c8dca1e2d34eeeaab837" category="admonition">電源ユニットには電源スイッチがありません。</block>
+  <block id="26cc3f70141c5f4b4f5a7a7c52321240" category="list-text">PSUを取り外します：</block>
+  <block id="5b2b06b0e901e3f4d2327241b8bb8b28" category="list-text">交換用電源装置を開梱し、ストレージシステムの近くの平らな場所に置いてください。</block>
+  <block id="6aaf2adda7ea3fae24f9570eb951048f" category="list-text">交換用PSUを取り付けます：</block>
+  <block id="ef030b8aef672e3379af07d3ad1245a3" category="list-text">オレンジ色のロックタブがカチッと音がするまで、PSUをコントローラーにゆっくりと押し込んでください。</block>
+  <block id="0359babd3c6d56d11928ec9f4c47fb26" category="paragraph">電源ユニットは、内部コネクタに正しく接続され、所定の位置に固定されるのは一方向のみです。</block>
+  <block id="c5e3f2387032804b51b67e0c99e63c46" category="list-text">電源コードをPSUに再接続し、電源コードリテーナーで電源コードを固定します。</block>
+  <block id="eb3ac9b9efdc3a8db20ea72534f74755" category="paragraph">PSUへの電力供給が復旧すると、ステータスLEDが緑色に点灯します。</block>
+  <block id="8f1f6d4a09aef4cc3f2282b74c25da2a" category="list-text">PSUのステータスが「最適」であり、ストレージシステムの注意喚起LEDが消灯していることを確認してください。</block>
+  <block id="a6782213451e1a25fd1e4a4a2aed3fb3" category="paragraph">ステータスが最適でない場合、または注意LEDのいずれかが点灯している場合は、電源コードが正しく接続されていること、および電源ユニットが正しく取り付けられていることを確認してください。必要に応じて、電源ユニットを取り外して再度取り付けます。</block>
+  <block id="44f81d663e1096dd20ceea19ab4ec6c4" category="admonition">問題が解決しない場合は、この手順を続行する前に<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>にお問い合わせください。</block>
+  <block id="6c18738e3a25840fa6f07d0185adf172" category="list-text">SANtricity System Managerで、*サポート &gt; アップグレードセンター* をクリックして、最新バージョンのSANtricity OSがインストールされていることを確認してください。</block>
+  <block id="4cca325ed840b8ff6bedb9a2bcf0134f" category="paragraph">RMA番号が必要な場合、または交換手順に関する追加のサポートが必要な場合は、<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>888-463-8277（北米）、00-800-44-638277（ヨーロッパ）、または+800-800-80-800（アジア太平洋）のテクニカルサポートまでお問い合わせください。//2025-11-17 ontap-systems-internal/issues/1391</block>
+  <block id="202eb3bd191afdcc6574db0d2b210141" category="doc">手順1：ドライブの交換準備</block>
+  <block id="09b3729e8c54aa618720de02a4a7354b" category="paragraph">ドライブの交換に備えるには、ドライブに障害が発生していることを確認し、サポートされている交換用ドライブがあることを確認し、SANtricity System Managerにアクセスできることを確認し、静電気放電に対する予防措置を講じ、障害ドライブの物理的な場所を特定します。</block>
+  <block id="5411b278ada6771813d99abbd542e77d" category="list-text">お使いのストレージシステムの構成に適した交換用ドライブを用意してください。</block>
+  <block id="cc088aad5d4e5812519f87b3cc0360c1" category="paragraph">必要に応じて、SANtricity System Managerを使用して次の点を確認できます：</block>
+  <block id="c3bc0491c98d99a3bf13cbd6349a5120" category="list-text">* ハードウェア * ＞ * ドライブ * を選択します。</block>
+  <block id="9676a503fc303740896f0f95f0b258d7" category="list-text">グラフィック上の障害ドライブを選択してコンテキストメニューを表示し、*設定の表示*を選択します。</block>
+  <block id="fc153c091910a3ff722411ca3258117f" category="paragraph">たとえば、セキュア対応ドライブを交換する場合は、交換用ドライブもセキュア対応であることを確認してください。</block>
+  <block id="ae05495bfd62e95fdf996cb961321009" category="list-text">いずれかのコントローラのSANtricity System Managerにアクセスできるブラウザを備えた管理ステーションがあることを確認してください。</block>
+  <block id="e4208becdcb61cf8a0a6ac1925086064" category="paragraph">System Managerインターフェイスを開くには、ブラウザでコントローラのドメイン名またはIPアドレスのいずれかにアクセスしてください。</block>
+  <block id="7e70118c7aa8f3ae30729f3a4f60d7a4" category="list-text">ドライブの取り扱いおよび設置中は、静電気放電（ESD）を防止してください。</block>
+  <block id="9c191e3864338074535e71631a29e170" category="list-text">静電気放電（ESD）対策のリストバンドを必ず着用してください。</block>
+  <block id="8f296d2982b513dac8462f34100b1d01" category="paragraph">ストレージシステムシャーシの塗装されていない面に接地されたESDリストストラップを必ず着用してください。リストストラップを使用できない場合は、ドライブを取り扱う前に、ストレージシステムのシャーシの塗装されていない面に触れてください。</block>
+  <block id="de7e79e521bea5ab59265cece37e5aba" category="list-text">平らで静電気のない作業面を用意してください。</block>
+  <block id="8d1d2e4f6a4c22781079d577bde99018" category="list-text">障害ドライブを返却する場合や、ドライブを発送する際に承認された梱包材を使用する場合に備えて、ESDバッグと梱包材を保管してください。</block>
+  <block id="51cebed17b8d8bb9e3f3b47c6481ac7d" category="list-text">ドライブの取り扱いおよび設置中に物理的な損傷を与えないようにしてください：</block>
+  <block id="906409d7e6d7896d7f1e4d11901b4d36" category="admonition">ドライブは壊れやすい。ドライブの不適切な取り扱いは、ドライブ障害の主な原因です。</block>
+  <block id="022cbbd400562dd3ebc01ec14bc22327" category="list-text">ドライブをドライブベイに無理やり押し込まないでください。ドライブラッチを完全に固定するには、常に軽くしっかりと圧力をかけてください。</block>
+  <block id="e59368b4449cfc28e6da81f00820e988" category="list-text">必要に応じて、注意（オレンジ色）LEDを点滅させることで、ストレージシステム内の障害ドライブを物理的に特定できます。SANtricity System Managerを使用して、*Hardware* &gt; *Drives*を選択し、グラフィック上の障害ドライブを選択してコンテキストメニューを表示し、*Turn on locator light*を選択します。</block>
+  <block id="cf839ce4b241d336571595d2daf797e5" category="admonition">ドライブのLEDを確認するには、ストレージシステムの前面からベゼルを取り外す必要があります。</block>
+  <block id="91a53f1fc2ef9e460e758feab83a284e" category="section-title">手順2：ドライブを交換する</block>
+  <block id="d0354c343189eb2f166a9771e3de1827" category="paragraph">障害ドライブを新しいものと交換します。</block>
+  <block id="e31ab42775382bfbbce75a3c9166bca5" category="admonition">障害ドライブを取り外した後、できるだけ早く交換用ドライブを取り付ける必要があります。</block>
+  <block id="e1ad95c4430841bde7a938ee47472720" category="list-text">まだ取り外していない場合は、ストレージシステムの前面からベゼルを取り外します。</block>
+  <block id="ffe10e0db69ea2cd258521a2ba16bd80" category="list-text">障害ドライブを取り外します。</block>
+  <block id="802e81544e7cd56335454cb3f02f6c1a" category="image-alt">NVMeドライブを取り外す</block>
+  <block id="f8187b8825b1a2102bb75307f4e92872" category="paragraph">カムハンドルを開くには、ドライブ前面の黒いリリースボタンを押します。</block>
+  <block id="36c4bb9266e617d3ca8a33eb9502e855" category="paragraph">カムハンドルを下に回して、ドライブをミッドプレーンから切り離します。</block>
+  <block id="6c855930c5124022a374c12026485487" category="list-text">カムハンドルを使用して、ドライブをドライブベイから部分的にスライドさせます。</block>
+  <block id="8200bcc78cceee3c1fd142a06af4ffba" category="list-text">ドライブがスピン ダウンするまで60秒待ちます。</block>
+  <block id="39969086c4f902c207b1de50ea68f7f4" category="list-text">両手を使って、ドライブをドライブベイから完全に取り外します。</block>
+  <block id="7e44bba475da6d9d186426fb36056d7b" category="list-text">ドライブを磁場から離れた帯電防止クッション面に置きます。</block>
+  <block id="4936bdb0c666d8b1c5c0ab72006dfa8b" category="list-text">システムソフトウェアがドライブが取り外されたことを認識するまで60秒間待ちます。</block>
+  <block id="63fd2f9912544ab3fe45fe4c0c3387e4" category="list-text">交換用ドライブを開梱し、ストレージシステムの近くの平らで静電気のない場所に置いてください。</block>
+  <block id="b71aa18e656f10927bbf6f98aaf2f03f" category="paragraph">障害ドライブを返送する際に使用するため、梱包材は保管しておいてください。</block>
+  <block id="582046ffdac76c22bd6e1a671a0dd476" category="list-text">交換用ドライブを挿入します。</block>
+  <block id="ac5779e6538a2c75a0039ff0255644c0" category="list-text">両手を使って、交換用ドライブを空いているドライブベイに挿入し、ドライブが止まるまでしっかりと押し込みます。</block>
+  <block id="80f0f6a9b3efd9ccafa0901ee7c37fc1" category="list-text">カムハンドルを閉じて、ドライブがミッドプレーンに完全に収まり、カムハンドルがカチッと所定の位置に収まるようにします。</block>
+  <block id="70c5de04671814ba5dcd9d09b741a1cf" category="paragraph">カム ハンドルは、ドライブの前面に揃うようにゆっくりと閉じてください。</block>
+  <block id="71f51cf599c0c2d8d729e53c4a5f7cd6" category="paragraph">ドライブが正しく挿入されると、ドライブ上の緑色のLEDが点灯します。</block>
+  <block id="8cea4214af8769b1ed6d235deb7aa6f2" category="section-title">手順3：ドライブの交換を完了する</block>
+  <block id="194e5b06fc52bafef35cd966627ddb62" category="paragraph">交換用ドライブが正しく動作していることを確認し、ドライブの再構築が開始されたことを確認してください。</block>
+  <block id="df726dc38cf99f3a4f73c6e349498583" category="list-text">LEDの動作を確認して交換用ドライブが正しく動作していることを確認し、動作していない場合は適切な是正措置を講じてください。</block>
+  <block id="e2e0d2a0e5302ad9370a95bbec7f737d" category="admonition">ドライブを初めて挿入したときは、注意ランプが点灯する場合があります。ただし、交換用ドライブが正常に動作していれば、1分以内にLEDは消灯するはずです。</block>
+  <block id="e7e568fd2613cdd44f30db1e3ce7a917" category="cell">交換用ドライブのLEDの動作が次のように表示される場合：</block>
+  <block id="d66eca965884610649e11844abb43d2c" category="paragraph">電源LEDが点灯または点滅し、注意LEDが消灯している</block>
+  <block id="753e98337d05b543b5faa7f7ea174734" category="paragraph">交換したドライブは正常に動作しています。</block>
+  <block id="53aa3bd9a12a1a326ddf7840c6f0c28d" category="paragraph">電源LEDが消灯しています</block>
+  <block id="3702c4797937926ccc02190a8d22d3c2" category="paragraph">ドライブが正しく取り付けられていない可能性があります。</block>
+  <block id="7768fcf3cc78310794819bd1f2cb97d2" category="list-text">ドライブを取り外し、60秒待ってから再度取り付けます。</block>
+  <block id="bf806136946c849db6689fdbf2226859" category="paragraph">注意LEDが点灯しています</block>
+  <block id="c6829989ff678a0d9d9b385ca91f6e02" category="paragraph">新しいドライブに障害がある可能性があります。</block>
+  <block id="a7621c18044658dd14b025c24c9ab382" category="list-text">新しいドライブを別の新しいドライブと交換してください。</block>
+  <block id="7896a76b0f7891b195e95650fdd9a3f7" category="list-text">SANtricity System Managerのリカバリ・グルーでドライブの再構築が自動的に開始されなかったことが示されている場合は、NetAppサポートまたはリカバリ・グルーの指示に従って手動で再構築を開始し、次の手順を実行します：</block>
+  <block id="650b3722bf13bca52f24cd90d065762e" category="admonition">設定によっては、コントローラが新しいドライブにデータを自動的に再構築する場合があります。ストレージシステムがホットスペアドライブを使用している場合、コントローラはデータを交換用ドライブにコピーする前に、ホットスペア上で完全な再構築を実行する必要がある場合があります。この再構築プロセスにより、この手順を完了するために必要な時間が増加します。</block>
+  <block id="6ba835c9ea82704f22ff2a15ee4695ba" category="list-text">*ハードウェア*＞*ドライブ*を選択します。</block>
+  <block id="db44d1348f7ce991698e428d4ac21f44" category="list-text">グラフィック上で交換用ドライブを選択してコンテキストメニューを表示し、次に*再構築*を選択します。</block>
+  <block id="3412171ea011f81577b92476937a8ab4" category="list-text">ベゼルを再度取り付けます。</block>
+  <block id="95275f416abb0ceec250662ff9b425ed" category="section-title">ステップ4：故障した部品をNetAppに返却する</block>
+  <block id="3d29438eb952627ce8da2622cb656128" category="paragraph">このタスクでは、System ManagerのハードウェアページからiSCSIポート構成にアクセスする方法について説明します。設定はメニューの「System」→「Settings」→「System」→「Configure iSCSI ports」からもアクセスできます。</block>
+  <block id="cc8755fb46f774d060b45e3e5b0bd265" category="list-text">左側のパネルから、menu:Hardware[Controllers and components]を選択します。</block>
+  <block id="0573a0c49744adecc0a9c55b42f713c1" category="list-text">アレイからiSCSIセッションのステータスを確認します。SANtricity System Managerで、*設定* &gt; *システム* &gt; *iSCSIセッションの表示/終了*に移動します。</block>
+  <block id="769ffa546ec00708bab1334064113cc6" category="list-text">左側のパネルから、menu:Storage[Hosts]を選択します。</block>
+  <block id="2d3c6d3090e0743f13c7d2f6e6baa8a7" category="list-text">System Managerインターフェイスの左側のパネルから、*ハードウェア*を選択します。</block>
+  <block id="54f28e00e77b3b878f53a93bac8c3b82" category="list-text">SANtricity System Managerインターフェイスの左側のパネルから、menu：Storage[Hosts]を選択します。</block>
+  <block id="ae72018d6159d77eea99fbd937f32807" category="admonition">RHEL 10 ではネットワークスクリプトは利用できません。</block>
+  <block id="57b95658e40e066ac07b2b5155110cfe" category="doc">EシリーズでRoCE経由のNVMe固有のタスクを実行する - VMware</block>
+  <block id="53d3c9bb29457cb08e958f62619c1cdb" category="paragraph">NVMe over RoCEプロトコルの場合は、スイッチを設定し、ホスト ポート識別子を決定します。</block>
+  <block id="74c661da20b90780ad273fb5c128b862" category="section-title">ステップ1：設定を記録する</block>
+  <block id="2bfe70f1bbb7fed1420533e9fc335785" category="image-alt">NVMe over RoCE ポート識別子"</block>
+  <block id="6cf4b8e3219ee11133fc7995b252a951" category="cell">アレイ ポート接続</block>
+  <block id="73b9973581e3be0105767aec77f4ea47" category="paragraph">アレイ コントローラ（ターゲット）ポート1</block>
+  <block id="704ce3ae94445e082d2bb1e87f0f047d" category="paragraph">アレイ コントローラ（ターゲット）ポート2</block>
+  <block id="d6476b3528136cc99ca7f3fb989ac43d" category="paragraph">アレイ コントローラ（ターゲット）ポート3</block>
+  <block id="820dc13fc0520d23bf688f0bf1558639" category="paragraph">アレイ コントローラ（ターゲット）ポート 4</block>
+  <block id="0fa2bfc199fb42ad06edd03ea829fbb0" category="paragraph">これはアレイによって異なる場合があります。EF300、EF600、およびEF50は、2つのイニシエータポートと、1つ以上のVLANを持つ最大4つのターゲットポートを備えています。EF80は、2つのイニシエータポートと、1つ以上のVLANを持つ最大6つのターゲットポートで構成されます。</block>
+  <block id="e80331389c74f068dcf435a8c8a29bb4" category="section-title">手順2：NVMe/RoCEスイッチを設定する</block>
+  <block id="391683bbbbffe7e0a99ae51301f2071f" category="paragraph-title">これについて</block>
+  <block id="438a6e391139858173b2b6dac23fd47c" category="paragraph">このタスクでは、RoCE 上の NVMe 用にスイッチを設定するための一般的な手順について説明します。具体的な手順については、スイッチ ベンダーのマニュアルを参照してください。</block>
+  <block id="26df54b5f65f134865b888257f306e87" category="paragraph">始める前に、以下のものを用意してください：</block>
+  <block id="0392371e7158cf2c0db91d780411aa58" category="list-text">高可用性を確保するための2つの独立したネットワーク。NVMe over RoCEトラフィックは、必ず別のネットワークセグメントに分離してください。</block>
+  <block id="39b3011a351005c6917c0290e3df190d" category="section-title">ステップ3：ネットワークの設定 - NVMe/RoCE、VMware</block>
+  <block id="78b8e6cae2b1cdac934ac7e5e50b9d10" category="paragraph">データストレージの要件に応じて、NVMe over RoCEネットワークをさまざまな方法で設定できます。環境に最適な構成を選択するためのヒントについては、ネットワーク管理者に相談してください。</block>
+  <block id="e9e289b0246da257d8ab01dbf1cc2b7b" category="paragraph">このタスクでは、RoCE 上の NVMe 用にネットワークを構成するための一般的な手順について説明します。具体的な手順については、スイッチ ベンダーのマニュアルを参照してください。</block>
+  <block id="a2a9b18b5704619f25c646a7dd7e55a3" category="list-text">スイッチは、RDMA経由のNVMe向けロスレス イーサネット用に構成されています。</block>
+  <block id="545b4b08abb959614f088b43f97a909f" category="paragraph">NVMe over RoCE ネットワークを計画する際には、VMware Configuration Maximums ガイドに記載されているように、サーバあたりでサポートされる RDMA NVMe イニシエータ ポートの最大数は 2 であることを覚えておいてください。パスの設定数が多すぎないように、この要件を考慮する必要があります。</block>
+  <block id="4187e9e8059a578f846f0643c831b248" category="paragraph">良好なマルチパス構成を確保するため、NVMe over RoCEネットワークには複数のネットワーク セグメントを使用してください。ホスト側のポートを少なくとも1つ、および各アレイ コントローラのポートを少なくとも1つ、1つのネットワーク セグメントに配置し、ホスト側とアレイ側のポートの同一のグループを別のネットワーク セグメントに配置します。可能な限り、複数のイーサネット スイッチを使用して冗長性を高めてください。</block>
+  <block id="4083a5994667ca8da19b2478ec3e81dc" category="section-title">ステップ4：アレイ側のネットワーク構成 - NVMe/RoCE、VMware</block>
+  <block id="0e6324e9719ceaa07fadd2cd1be58040" category="paragraph">SANtricity System Managerインターフェイスを使用して、アレイ側でNVMe over RoCEネットワークを設定します。</block>
+  <block id="d6b31ed9b32c133fe85e6e39d08780c2" category="paragraph">このタスクでは、SANtricity System Managerの*Controllers &amp; components*ページからNVMe over RoCEポート構成にアクセスする方法について説明します。SANtricity System Manager内の*Configure NVMe over RoCE ports*ページから構成にアクセスすることもできます。</block>
+  <block id="aad3b22915cf50f0fd3e3b9879b72e79" category="list-text">System ManagerのGUIのパスワード、またはロールベースアクセス制御（RBAC）もしくはLDAPとディレクトリサービスが、ストレージアレイへの適切なセキュリティアクセス用に設定されています。<block ref="23a01fa7b134b588c32da4771cbec201" category="inline-link-macro-rx"></block>の詳細については、SANtricity System Managerのオンラインヘルプを参照してください。</block>
+  <block id="11309d8995227dbd773e6a41e7722a4e" category="list-text">ブラウザから、次のURLを入力します。<block ref="55e979022fc362aa6178b674515bb175" category="inline-link-rx"></block></block>
+  <block id="1acd76ed6c3f0124ed12e243db859a1f" category="list-text">設定する NVMe over RoCE ポートを持つコントローラをクリックします。</block>
+  <block id="f8e6e36c70e2e63ef7a939cbb02d5865" category="paragraph">[NVMe over RoCE ポートの設定]ダイアログ ボックスが開きます。</block>
+  <block id="a4877c7c9117da300ffe160002ddd2d8" category="paragraph">希望の速度を選択してください。ドロップダウンリストに表示されるオプションは、ネットワークがサポートできる最大速度（例：200 Gb/s）によって異なります。</block>
+  <block id="4457e278f9112e9b42c14c2c5c668dde" category="paragraph">MTUサイズ（「その他のポート設定を表示」をクリックすると表示されます。）</block>
+  <block id="e685a102ab6446248fa19b89877178fc" category="paragraph">デフォルトのMTUサイズは4200バイト / フレームです。1500～9000の値を入力する必要があります。</block>
+  <block id="4492cb7abfd1e28d0b26fbbee72d9daa" category="section-title">ステップ5：ホスト側ネットワークの設定—NVMe over RoCE、VMware</block>
+  <block id="261d3f7bb6e5f35850bc2acca261fac8" category="paragraph">ホスト側でNVMe over RoCEネットワークを設定すると、VMware NVMe over RDMAストレージ アダプタ イニシエータでアレイとのセッションを確立できるようになります。</block>
+  <block id="05d615f6664cae956f381bb230acde1c" category="paragraph">この構成により、差別化サービスコードポイント（DSCP）に基づく優先フロー制御（PFC）を使用したロスレス ネットワークが可能になります。</block>
+  <block id="0ed3c60adcc47ad1357612793b6aabdd" category="list-text">RDMAネットワークアダプタを特定し、vmnicとペアになっているアップリンクを記録します。</block>
+  <block id="afa34f00a26a4f8a79239d152a8c3291" category="inline-link-macro">RDMAネットワーク アダプタを表示する</block>
+  <block id="7b4b838a8e6a39d19b4b01a48e5b6798" category="paragraph">詳細については、<block ref="f5f383c62db37abde6b9e11de1beb7db" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="aa9581d3822e83fca14cd2790f4eac14" category="list-text">vSphere標準スイッチを使用して、RDMAアダプタのVMkernelポートバインディングを設定します。</block>
+  <block id="3ccb1d7a3929e1fd5bb70b38cb2fbfcf" category="inline-link-macro">RDMAアダプタのVMkernelバインディングを設定する</block>
+  <block id="c1e46bbe0fb718118995e77291eee3d4" category="paragraph">詳細については、<block ref="8a57bfaaef21098675395ccfdc891238" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="f885017e07530d4becbf0e4549cc05d6" category="list-text">ソフトウェア NVMe over RDMA アダプタを追加します。</block>
+  <block id="521a15c47fb41d8055141333f4c3f248" category="inline-link-macro">ソフトウェアNVMe over RDMAまたはNVMe over TCPアダプタを追加する</block>
+  <block id="e94f093cedfbfce205f798816cb4b2b2" category="paragraph">詳細については、<block ref="cd70a4ef9a53d1bbfc875c777ccad34e" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="0cfb1ebe8e6ed1dc8e33c91b3000e048" category="list-text">NVMe over RDMA用のNVMeコントローラを追加します。</block>
+  <block id="90337554316c3b19c2d91138d603b539" category="inline-link-macro">NVMe over Fabrics用のコントローラを追加する</block>
+  <block id="e0d7db48d23e8cff7ae191360acf31de" category="paragraph">詳細については、<block ref="83bdfe48c9580eb725d2c481995c25a1" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="3891cb89f09e8e3eabfd792314b804e2" category="list-text">NVMe over RDMA用にロスレス イーサネットを設定します。</block>
+  <block id="3a260f9a411ad8db6429729f48982d93" category="paragraph">ロスレス ネットワークは、Differentiated Services Code Point（DSCP）ベースのPriority Flow Control（PFC）を使用して設定します。</block>
+  <block id="afd44fd310a56c8f36703108f4aa4f7f" category="paragraph">このオプションを使用するには、次を参照してください：</block>
+  <block id="149b56d852021ec314bf4f68679500ed" category="inline-link-macro">RDMA経由のNVMe向けロスレス イーサネットの設定</block>
+  <block id="3b8d57b2e5639d016f1bc8fcade1f152" category="list-text"><block ref="ad41945339e2ff926d1d6a75739c5fe3" category="inline-link-macro-rx"></block>。</block>
+  <block id="b68729693cf4f61fa95f01f551453e65" category="section-title">ステップ6：IPネットワーク接続を確認する - NVMe over RoCE、VMware</block>
+  <block id="6c3e20ff9478d7e9f6ea7c0330c06865" category="list-text">ホスト上で次のコマンドを実行します：</block>
+  <block id="fe034a18b90c30c2ff0c730c6c031c30" category="paragraph">この例では、NVMe over RoCEのターゲットIPアドレスは192.6.21.231です。</block>
+  <block id="19ba2bfce822d4390f9fb1768a91674e" category="list-text">各ホストのイニシエータ アドレス（NVMe over RoCEに使用されるホスト イーサネット ポートのIPアドレス）から各コントローラのNVMe over RoCEポートへ<block ref="bb8dcb7aca9e5a9c6d0064e07e54900b" prefix=" " category="inline-code"></block>コマンドを問題します。構成内の各ホスト サーバでこの操作を実行し、必要に応じてIPアドレスを変更してください。</block>
+  <block id="77866e8722847d7d6d7998480987782f" category="admonition">コマンドが次のメッセージで失敗した場合<block ref="b0f01253dbd4eb514ef56969bca29b90" prefix=" " category="inline-code"></block>、ホスト サーバー、ストレージ コントローラ、およびスイッチ ポート上のイーサネット インターフェイスのMTUサイズを確認します。</block>
+  <block id="dd070ab356fd251ebb2cb06199f618e8" category="list-text">ターゲット検出を完了するには、NVMe over RoCE構成手順に戻ります。</block>
+  <block id="3a4b2c7a2c6f0691c5408e4cd5774299" category="list-text">高可用性を実現する2つの独立したネットワーク。VLANまたは2つの独立したネットワークを使用して、iSCSIトラフィックを他のタイプのトラフィックとは別のネットワークセグメントに分離してください。</block>
+  <block id="23eba8f7f99e057ddd042a0dafa62dc8" category="paragraph">このタスクでは、ハードウェアページからiSCSIポート設定にアクセスする方法について説明します。menu:Settings[System &gt; Configure iSCSI ports]からも設定にアクセスできます。</block>
+  <block id="12ba5ece841aa8fe999f4c5869dcdabb" category="list-text">SANtricity System Managerから、*ストレージ* &gt; *ボリューム*に移動し、*省略記号アイコン* &gt; *ボリュームの所有権の変更*を選択します。</block>
+  <block id="5881a3b85f7c9cc2dc191152347d4198" category="section-title">SANtricityリリース11.9</block>
+  <block id="a342898a7b83e0ecaed58e67fcabddbf" category="list-text"><block ref="a342898a7b83e0ecaed58e67fcabddbf" category="inline-link-rx"></block></block>
+  <block id="0918432ee713960ea8c4bd23f9de9aac" category="list-text"><block ref="0918432ee713960ea8c4bd23f9de9aac" category="inline-link-rx"></block></block>
+  <block id="dfeb5c91f2e52f81a061d14460bfca55" category="paragraph">Eシリーズハードウェアをインストールするには、ストレージアレイとシェルフタイプ（該当する場合）のインストールおよびセットアップ手順を参照してください：</block>
+  <block id="bd93d02316281b84bfd0358488fd9774" category="inline-link-macro">EF50またはEF80ストレージ システム</block>
+  <block id="8ffe6a7aa97446f89d209cd3ab9e681d" category="list-text"><block ref="8ffe6a7aa97446f89d209cd3ab9e681d" category="inline-link-macro-rx"></block></block>
+  <block id="5704b356a3cec514602bf36e401a7cf4" category="inline-link">SANtricity System Manager 12.0xオンラインヘルプ</block>
+  <block id="10dcafa55de6544c34fc0dee6a147c65" category="list-text"><block ref="10dcafa55de6544c34fc0dee6a147c65" category="inline-link-rx"></block></block>
+  <block id="61ca3430c5f1d668a477b9838962bbf9" category="list-text"><block ref="61ca3430c5f1d668a477b9838962bbf9" category="inline-link-rx"></block></block>
+  <block id="8e9dcd9843d7c8730678fd7c801068df" category="paragraph">利用可能なEシリーズアレイモデルの一部を以下に示します。Eシリーズアレイモデルとそのハードウェアの完全なリストについては、NetApp Hardware Universeを参照してください<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>。</block>
+  <block id="7f6b55be6501174a0381e1661006bb3b" category="list-text">EF50シリーズ -- エントリーレベルのオールフラッシュ、オールNVMe</block>
+  <block id="a62e9e9348e227714a61855a62e70e62" category="list-text">EF80シリーズ -- ミッドレンジオールフラッシュ、オールNVMe</block>
+  <block id="135d1c1e868b9c7b205a3d8afe8e4a14" category="admonition">SANtricity OS 11.80GA以降では、SANtricity OSの実行中はすべてのUSBポートが無効になります。</block>
+  <block id="d9ae6d7dcf9ed3ea02dc63067c88edf1" category="open-title">EF50モデル</block>
+  <block id="3651000984a70ca2a913e10dca8ae731" category="image-alt">EF50 2U</block>
+  <block id="3dadc77af7c67e422751b8a7966d6df4" category="list-text">以下の容量のNVMe SSDドライブをサポートします：</block>
+  <block id="e0ec5ed632381f5afbd737a7ca158cdb" category="list-text">3.8 TB</block>
+  <block id="c7d332a0c322abaf8181c5babf32fd81" category="list-text">7.6 TB</block>
+  <block id="1f04a7c587f50d269f44d43229c966ac" category="list-text">15.3 TB</block>
+  <block id="394759e33023d9aed8900256bbd0f36f" category="list-text">30 TB</block>
+  <block id="5ce71a16ba311332a73292a8edf16714" category="list-text">60 TB</block>
+  <block id="abf322da5cf6ce6d86f8e19831b3f9fd" category="list-text">コントローラ シェルフで最大24台のNVMe SSDドライブをサポートします。</block>
+  <block id="58cd2008aef7f82312626d5b5eebd50c" category="list-text">コントローラあたり1枚または2枚のホスト インターフェイス カードをサポート。</block>
+  <block id="0f13e2736fe0d1284715fd7874d606ae" category="list-text">デュアル コントローラ通信用のコントローラ間カードとケーブルのサポート。</block>
+  <block id="4011a2ba674e279dec23ff377c80347d" category="inline-link">コントローラ間ミラーリング接続のケーブル接続 - EF50およびEF80</block>
+  <block id="5158e66d0bec8144508506a3ed7a7a81" category="admonition">EF50システムを構成する際には、ミラーリングケーブルを正しく接続することが非常に重要です。詳細については、<block ref="3b7ab90f06bb9d32e376349f50ba2152" category="inline-link-rx"></block>を参照してください。</block>
+  <block id="9b3675f4a440586ef54c10566347950c" category="list-text">64Gb NVMe／ファイバーチャネル</block>
+  <block id="1e606555825231ac356605a792a3fc8d" category="list-text">64Gb ファイバーチャネル</block>
+  <block id="de2808d235a9bb8c7352ce4f7a990025" category="open-title">EF80モデル</block>
+  <block id="c8774ee9d8d630bb7bf259737b9c0a43" category="image-alt">EF80 2U</block>
+  <block id="752f692c428a4be902070ec994e760f0" category="list-text">コントローラあたり1枚、2枚、または3枚のホスト インターフェイス カードをサポート。</block>
+  <block id="6f802ab99543c2bdbae4096d8954cdbf" category="admonition">EF80システムを構成する際には、ミラーリングケーブルを正しく接続することが非常に重要です。詳細については、<block ref="3b7ab90f06bb9d32e376349f50ba2152" category="inline-link-rx"></block>を参照してください。</block>
+  <block id="cb4f52148019dcfece72b8c2fdb69580" category="list-text">1Gbまたは10Gb Base-T iSCSI</block>
+  <block id="465a2ea2b6d89c60ed23c2a9e0201429" category="image-alt">E2800 4U</block>
+  <block id="81d5eb12c368fe2301553d9c540a4dae" category="paragraph">Unified Managerは、ドメイン全体を管理するために使用するWebベースのソフトウェアです。中央ビューから、EF50、EF80、E4000、E2800、EF280、EF300、E5700、EF570、EF600、EF300C、EF600Cなど、すべての新しいEシリーズおよびEFシリーズアレイのステータスを確認できます。選択したストレージアレイに対してバッチ操作を実行することもできます。</block>
+  <block id="60a6b0fbbfa61d15c4020f7f7e098cb9" category="paragraph">コマンドラインインターフェース（CLI）は、ストレージアレイの設定と監視を行うための手段を提供するソフトウェア アプリケーションです。CLIを使用すると、<block ref="41f813272af86bac56724a37decae4bb" prefix=" " category="inline-code"></block>プロンプト、Linuxオペレーティングシステムのパス、Solarisオペレーティングシステムのパスなど、オペレーティングシステムのプロンプトからコマンドを実行できます。</block>
+  <block id="bed0c69ad6322b88d0d19a7d7f4b2a18" category="doc">3040 40Uキャビネットにトレイを取り付ける - Eシリーズ</block>
+  <block id="f6d6ca01d250853987d01c1f2f3320d3" category="paragraph">以下のコントローラ ドライブ トレイと拡張ドライブ トレイをEシリーズ3040 40Uキャビネットに設置できます。</block>
+  <block id="724bffb2b9196928417abfcef2c53ecd" category="paragraph">コントローラ ドライブ トレイまたは拡張ドライブ トレイが下記に記載されていない場合は、<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>を参照して、コントローラ ドライブ トレイまたは拡張ドライブ トレイがサポートされているかどうかを確認してください。</block>
+  <block id="a788f87717c430011cbd08f417a53334" category="doc">管理ステーション用のイーサネットケーブル配線 - Eシリーズ</block>
+  <block id="0446bb64b3616c90897eb07d0cab4bac" category="paragraph">ストレージシステムによっては、各コントローラに帯域外Ethernet管理ポートが1つしか搭載されていないものもあります。</block>
+  <block id="bbdf425fc3c642c8de49d63dc15badbc" category="paragraph">お使いのストレージ システムに固有のケーブル接続手順については、<block ref="420e50e517d79764f810d7bfbcee32b7" category="inline-link-macro-rx"></block>を参照して、お使いのストレージ システムのリンクをクリックしてください。</block>
+  <block id="a44f563f123b3f3a9a9ba60801e3cc35" category="admonition">以下の情報はすべてのストレージシステムに適用されるわけではありません。お使いのストレージシステム固有のホストケーブルについては、<block ref="420e50e517d79764f810d7bfbcee32b7" category="inline-link-macro-rx"></block>を参照し、お使いのストレージシステムに対応するリンクをクリックしてください。</block>
+  <block id="46005072ff8ba642f00de1f96f5d8851" category="doc">ストレージ システムの配線 - Eシリーズ</block>
+  <block id="f58b5ce520289d0295b8af12ea9b3b6c" category="admonition">コントローラ シェルフ（ストレージ システム）が下記にリストされていない場合は、<block ref="420e50e517d79764f810d7bfbcee32b7" category="inline-link-macro-rx"></block>を参照し、お使いのストレージ システムに対応するリンクをクリックして、ケーブル接続情報にアクセスしてください。</block>
+  <block id="38e73c38b9e2c6b284a24eeb6f0868fb" category="paragraph">以下の構成のいずれかでケーブル配線を行う場合は、<block ref="4426bbb413c69380e459efdddf2e423d" category="inline-link-rx"></block>を参照してください。</block>
+  <block id="ad69ba1272ea2f557940362e05d45875" category="doc">ストレージシステムの電源ケーブル配線 - Eシリーズ</block>
+  <block id="a2f7472ef27aa6805d53dc2c352d968a" category="list-text">両方の電源装置の電源を入れます。</block>
+  <block id="e5d6cef3c0e33a5155a04c0c6d89905c" category="admonition">ストレージ システムによっては、電源装置に電源スイッチが付いている場合と、電源スイッチがなく、電源ケーブルを接続して電源を入れる必要がある場合があります。</block>
+  <block id="32bfa1a65d1413942805620e277c6c06" category="summary">EF50またはEF80ストレージ システムのハードウェアをインストールしたら、コントローラ間のミラーリング接続とホスト ネットワーク接続をケーブルで接続します。（管理ポートの配線は、後ほど「ストレージ システム全体のセットアップ」のセクションで行います。）</block>
+  <block id="c4f6e132f298cda01ed84c032ae3487c" category="doc">ハードウェアをケーブルで接続する - EF50およびEF80</block>
+  <block id="309528c65dc2e27541a0b466d6affaba" category="list-text">この手順では、「I/O モジュール」という用語は、ホスト インターフェイス カード（HIC）を指すために使用されます。</block>
+  <block id="28c4b42113d6ebd3c5e6ca40929d04a6" category="list-text">ケーブル配線図には、コネクタをポートに挿入する際のケーブル コネクタの引き抜きタブの正しい向き（上向きまたは下向き）を示す矢印アイコンが付いています。</block>
+  <block id="fd2cb99acafb4f0144bfb5e0e4c31373" category="paragraph">コネクタを差し込むと、カチッと音がして所定の位置に収まるはずです。音がしない場合は、一度取り外して裏返し、もう一度試してください。</block>
+  <block id="416f5908ffc86e7abf276c4f75904ee7" category="inline-image-macro">ケーブル プル タブの方向</block>
+  <block id="c486d43df45ffe41cde84a1b0fa45aa0" category="paragraph"><block ref="c486d43df45ffe41cde84a1b0fa45aa0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="46469245a5087f6b4b434bb5f633b60f" category="section-title">手順1：コントローラ間ミラーリング接続をケーブル接続する</block>
+  <block id="36cd37cbec7f6507403c29b0149a41fe" category="paragraph">コントローラ同士をケーブルで接続して、コントローラ間のミラーリング機能を有効にします。コントローラ間のミラーリング接続は、システム全体の冗長性を確保し、キャッシュ ミラーリングやI/O転送に使用されます。EF50とEF80ストレージ システムのケーブル配線は同じです。</block>
+  <block id="38867b567fccc8548cc0e1cb94f126e8" category="admonition">ストレージシステムに搭載されているコントローラ間ミラーリングI/Oモジュールの速度（ストレージシステムがサポートする100GbEまたは200GbE）に関わらず、付属の200GbEケーブルを使用します。コントローラ間ミラーリングI/Oモジュールの速度が100GbEの場合、接続は低速（100GbE）で動作します。</block>
+  <block id="2adc34a52429938fb3c735dddbb6ad63" category="list-text">コントローラを相互に接続します：</block>
+  <block id="064b137ca9cfb01af5cef5f59d057fe2" category="list-text">コントローラAのポートe4aをコントローラBのポートe4aにケーブルで接続します。</block>
+  <block id="b2461cdc4faa4013beda2df06a62ad8a" category="list-text">ケーブルコントローラAポートe4bからコントローラBポートe4bへ。</block>
+  <block id="ef69dbdbfe8f74a42b4f9a0ac932d33c" category="paragraph">*200 GbE イーサネットケーブル*</block>
+  <block id="417c36221853c2f66482de31e782fef4" category="image-alt">ミラーリング接続に使用される100 GbEイーサネットケーブル</block>
+  <block id="a6e6ce518c6eb8d6c67720ecc4a737f4" category="inline-image-macro">ef50およびef80コントローラ間のミラーリング接続ケーブル配線</block>
+  <block id="5d644f09086f71fe519efe2fabeeca7e" category="paragraph"><block ref="5d644f09086f71fe519efe2fabeeca7e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fe93f032d75b75aa618d6fc176216d00" category="section-title">ステップ2：ホスト接続をケーブル接続する</block>
+  <block id="e0beadc999f5d9ec28e25241c431ecdf" category="paragraph">ストレージシステムのホスト接続は、ネットワークトポロジー（直接接続またはファブリック接続）に応じて配線してください。</block>
+  <block id="c173ac3230ce83526a8085ae3cd5d64e" category="list-text">ストレージシステムのモデルによっては、ストレージシステムに搭載されるホストI/Oモジュールは、イーサネットまたはファイバチャネル（FC）のいずれかになります。この手順で示すケーブル接続例は、ストレージシステムモデルでサポートされている両方のタイプのホストI/Oモジュールを示しています。</block>
+  <block id="a8be157e2b0226635a9c82e18c4cfa57" category="list-text">配線例では、ホスト1とホスト2に4ポート64Gb FC HBAは示されていませんが、これらがインストールされている場合は、2ポートHBAの場合と同様に、1つおきのポートを配線してください。</block>
+  <block id="bbe082a3eacdeda56097c89d8ad81785" category="open-title">直接接続トポロジー</block>
+  <block id="a10df42fda1dcd0500c334d90c5fb5fa" category="paragraph">以下の例は、直接接続トポロジーを使用してストレージシステムをホストにケーブル接続する方法を示しています。</block>
+  <block id="f25484c2cff0f0a8bf40ca5b2643a51b" category="example-title">EF50（2個の4ポート64Gb FC I/Oモジュール搭載）</block>
+  <block id="4789d81b72046a7085ba4c174549efd3" category="list-text">ケーブル配線の例では、ホストI/Oモジュールがスロット1と2に装着されています。これは、EF50ストレージシステムでサポートされるホストI/Oモジュールの最大数です。ただし、スロット1のホストI/Oモジュールのみが必要であり、スロット2のホストI/Oモジュールはオプションです。</block>
+  <block id="52b94d0d394a6131964981a1a413adc6" category="paragraph">ストレージシステムにホストI/Oモジュールが1つ搭載されている場合は、追加のホストI/Oモジュールへのケーブル接続は無視して、搭載済みのホストI/Oモジュールにのみケーブル接続できます。</block>
+  <block id="2b4e6cdd607b62b8e3110cb10e7ad6bb" category="list-text">直接接続型ストレージシステムには、冗長性を確保するための2つの独立したパスがあります：パスAとパスB。</block>
+  <block id="43578ef918fb73c2b038812c62a63b99" category="list-text">パスAの接続は、ホストおよびコントローラ上の青色のケーブルと青色のポートで示されています。各ホスト上のHBAポートをコントローラAのポートaおよびcに接続します。</block>
+  <block id="6960a98169bd0b24caf31b19f599b69c" category="list-text">パスBの接続は、ホストおよびコントローラ上の赤いケーブルと赤いポートで示されています。各ホストのHBAポートをコントローラBのポートaおよびcに接続します。</block>
+  <block id="d40af499527fcfbf4a1beb6c653d0028" category="list-text">ケーブル接続の例ではI/Oモジュールのポートaとcがホストに接続されていますが、ポートaとb、またはポートcとdを使用することもできます。</block>
+  <block id="67658d2d8d32f469aec261b50f7cf0aa" category="list-text">ホストをコントローラにケーブルで接続します：</block>
+  <block id="8c9ee539ce9a9f80f6828bd7aa0e6779" category="list-text">ケーブルホスト1のパスA（青色）HBAポートをコントローラAのaポート（1aおよび2a）に接続します。</block>
+  <block id="44f41d563c7a22ac44c62ed7dce468ba" category="list-text">ケーブルホスト1のパスB（赤色）HBAポートをコントローラBのaポート（1aおよび2a）に接続します。</block>
+  <block id="38d1ecfc38020fa455c9c7bfb5155532" category="list-text">ケーブルホスト2のパスA（青色）のHBAポートをコントローラAのcポート（1cと2c）に接続します。</block>
+  <block id="55ea0702f44241e327e5ec1cdecf5314" category="list-text">ケーブルホスト2のパスB（赤色）のHBAポートをコントローラBのcポート（1cと2c）に接続します。</block>
+  <block id="241c17a1be2cc4feae5c8c6007f8aed3" category="paragraph">*64 Gb/s FCケーブル*</block>
+  <block id="2e169c8e6f4cc1f6315545b46d7284a2" category="inline-image-macro">64 Gb fcケーブル</block>
+  <block id="0bf370304560205688213d22ba637c07" category="paragraph"><block ref="0bf370304560205688213d22ba637c07" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e85e9ec0ed7443a979b5f48d4a7c1803" category="inline-image-macro">2つの4ポート64Gb FC I/Oモジュールを使用したホストへのEF50ダイレクトアタッチトポロジー</block>
+  <block id="d87fb58ba458175d563a880f23be1d1e" category="paragraph"><block ref="d87fb58ba458175d563a880f23be1d1e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3f09e42612391922370ac3dec8b12648" category="example-title">3つの2ポート200 GbE I/Oモジュールを備えたEF80</block>
+  <block id="aff6bfab25b0bdbb5d032cf798fd063b" category="list-text">ケーブル配線の例では、ホストI/Oモジュールがスロット1、2、3に装着されています。これは、EF80ストレージシステムでサポートされるホストI/Oモジュールの最大数です。ただし、スロット1のホストI/Oモジュールのみが必要であり、スロット2とスロット3のホストI/Oモジュールはどちらもオプションです。</block>
+  <block id="a297d61486bf2885c72e08236f9e7725" category="paragraph">ストレージシステムに搭載されているホストI/Oモジュールの数が少ない場合は、追加のホストI/Oモジュールへのケーブル接続は無視して、既に搭載されているホストI/Oモジュールにのみケーブル接続すれば構いません。</block>
+  <block id="3413e68c3b88961945f60f6d99511847" category="list-text">パスAの接続は、ホストおよびコントローラ上の青色のケーブルと青色のポートで示されています。各ホストのHBAポートをコントローラAのポートaおよびbに接続します。</block>
+  <block id="d346593b0d3bd96299bd7de49f3f5c93" category="list-text">パスBの接続は、ホストおよびコントローラ上の赤いケーブルと赤いポートで示されています。各ホストのHBAポートをコントローラBのポートaおよびbに接続します。</block>
+  <block id="e56102a10171f176b1e5aa5f79d08da3" category="list-text">ケーブルホスト1のパスA（青色）HBAポートをコントローラAのaポート（e1a、e2a、e3a）に接続します。</block>
+  <block id="e50a0e85ecc292bb64bdc29422e37bbb" category="list-text">ケーブルホスト1のパスB（赤色）HBAポートをコントローラBのaポート（e1a、e2a、e3a）に接続します。</block>
+  <block id="10f37f14a3c746b2ecbf47471f35ada6" category="list-text">ケーブルホスト2のパスA（青色）のHBAポートをコントローラAのbポート（e1b、e2b、e3b）に接続します。</block>
+  <block id="2df3471ae8994614afacaf3a6af3577a" category="list-text">ケーブルホスト2のパスB（赤色）のHBAポートをコントローラBのbポート（e1b、e2b、e3b）に接続します。</block>
+  <block id="b585e3620749cc9b290a69b15f369055" category="paragraph">*200 GbE ケーブル*</block>
+  <block id="07954a9dbce90160eba5e0d906f74d9b" category="image-alt">200 GbE ケーブル</block>
+  <block id="43476b318572f70438d476474ed2f777" category="inline-image-macro">3つの2ポート200GbE IB I/Oモジュールを使用したホストへのEF80ダイレクトアタッチトポロジー</block>
+  <block id="0f216ce4c6b7b4fa9f09839659d15cb1" category="paragraph"><block ref="0f216ce4c6b7b4fa9f09839659d15cb1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7ccfa9dc972967682b048d31cb495746" category="example-title">3つの4ポート64Gb FC I/Oモジュールを搭載したEF80</block>
+  <block id="3164237db13edc41eba0640070a1eb4c" category="list-text">ケーブルホスト1のパスA（青色）HBAポートをコントローラAのaポート（1a、2a、3a）に接続します。</block>
+  <block id="c4050daef87bce6f77d1ca02dd9993d6" category="list-text">ケーブルホスト1のパスB（赤）HBAポートをコントローラBのaポート（1a、2a、3a）に接続します。</block>
+  <block id="f24bf0dc85c32afa94f0ec06e69c67d6" category="list-text">ケーブルホスト2のパスA（青色）のHBAポートをコントローラAのcポート（1c、2c、3c）に接続します。</block>
+  <block id="d3ce7893566ead23fa851e31842ddb2e" category="list-text">ケーブルホスト2のパスB（赤色）のHBAポートをコントローラBのcポート（1c、2c、3c）に接続します。</block>
+  <block id="4967befbfdc01bec056647ecf6535038" category="inline-image-macro">3つの4ポート64Gb FC I/Oモジュールを使用した、ホストへのEF80直接接続トポロジ</block>
+  <block id="9e578d6a52704120b62df8f18f213466" category="paragraph"><block ref="9e578d6a52704120b62df8f18f213466" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3672457c67c4050c67776efa642e4088" category="open-title">ファブリック接続型トポロジー</block>
+  <block id="c79493d7627db4beb028d464b1cb96e8" category="paragraph">以下の例は、ファブリック接続トポロジーを使用してストレージシステムをホストにケーブル接続する方法を示しています。</block>
+  <block id="724572661546b5c7e60f9a673deed941" category="list-text">ファブリック接続型ストレージシステムには、冗長性を確保するために、switch 1パスとswitch 2パスという2つの独立したスイッチパスがあります。</block>
+  <block id="02105864ecb13507a2005506ced4c1af" category="list-text">スイッチ1のパス接続は、ホストおよびコントローラ上の青色のケーブルと青色のポートで示されています。これは、スイッチ1を介して各ホストのHBAポートをコントローラAとコントローラBのaポートおよびcポートに接続します。</block>
+  <block id="520adf9f6ca58d04576019da1b65ff63" category="list-text">スイッチ2のパス接続は、ホストおよびコントローラ上の赤いケーブルと赤いポートで示されています。これは、スイッチ2を介して各ホストのHBAポートをコントローラAとコントローラBのbポートおよびdポートに接続します。</block>
+  <block id="7511a9d551c40fc98c848597ed1b0b70" category="list-text">ホストをスイッチに接続します。</block>
+  <block id="fccd2e024b66cd3cb678eb2817c3b3a3" category="paragraph">スイッチのどのポートでも使用できます。</block>
+  <block id="4cf8f9ac2b00b8f87929247b5f9031a1" category="list-text">ケーブルホスト1とホスト2のスイッチ1パス（青色）のHBAポートをスイッチ1に接続します。</block>
+  <block id="d1b504b40950697d0f8716e4a6f4a954" category="list-text">ケーブルホスト1およびホスト2スイッチ2パス（赤）HBAポートをスイッチ2に接続します。</block>
+  <block id="55df7f6cda750a519a4e2ef3dfadbf9e" category="list-text">スイッチをコントローラに接続します：</block>
+  <block id="f92519e312966fea02f4a2ec7d6ec462" category="list-text">ケーブルスイッチ1（青色）をコントローラAのaポートとcポート（1a、2a、1c、2c）に接続します。</block>
+  <block id="d3b637071f42b6a6f32accf660f24fb6" category="list-text">ケーブルスイッチ1（青色）をコントローラBのaポートとcポート（1a、2a、1c、2c）に接続します。</block>
+  <block id="79a9fdcaae97d141ab46175501357bc7" category="list-text">ケーブルスイッチ2（赤色）をコントローラAのbポートとdポート（1b、2b、1d、2d）に接続します。</block>
+  <block id="57f1f281e72cb36e6eee17efb2d21697" category="list-text">ケーブルスイッチ2（赤色）をコントローラBのbポートとdポート（1b、2b、1d、2d）に接続します。</block>
+  <block id="96816d89672e460ce991268ab12fc468" category="inline-image-macro">2つの4ポート64Gb FC I/Oモジュールを使用したEF50ファブリック接続トポロジー</block>
+  <block id="006d99462a8e32faf2a01db8aecd6d4f" category="paragraph"><block ref="006d99462a8e32faf2a01db8aecd6d4f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6a889796b87dd3c685247dbf20b2f306" category="list-text">ケーブル接続の例では、各ホストに3つのHBAが搭載されています。ホストに搭載されているHBAが3つ未満の場合は、追加のHBAへのケーブル接続は無視して、インストールされているHBAにのみケーブル接続してください。</block>
+  <block id="187793f18cc6cf4fe4668447e4351331" category="list-text">スイッチ1のパス接続は、ホストおよびコントローラ上の青色のケーブルと青色のポートで示されています。これは、スイッチ1を介して各ホストのHBAポートをコントローラAとコントローラBのaポートに接続します。</block>
+  <block id="a9ca47cacdf86d16dd35a52e1fc8864a" category="list-text">スイッチ2のパス接続は、ホストおよびコントローラ上の赤いケーブルと赤いポートで示されています。これは、スイッチ2を介して各ホストのHBAポートをコントローラAとコントローラBのbポートに接続します。</block>
+  <block id="b952c9ae768a48fd5ced278ead19212e" category="list-text">ホストをスイッチに接続します：</block>
+  <block id="bc1c70b5e74fb8c35c3d6efaad68f371" category="list-text">ケーブルスイッチ1（青色）をコントローラAのaポート（e1a、e2a、e3a）に接続します。</block>
+  <block id="97e8c64dbe1fb04d7e67df5c79f1574e" category="list-text">ケーブルスイッチ1（青色）をコントローラBのaポート（e1a、e2a、e3a）に接続します。</block>
+  <block id="f7feda4fedcc765bbe499c2eda4b911b" category="list-text">ケーブルスイッチ2（赤色）をコントローラAのbポート（e1b、e2b、e3b）に接続します。</block>
+  <block id="ff3036a0af7047d6ddf2731fa491d6a5" category="list-text">ケーブルスイッチ2（赤色）をコントローラBのbポート（e1b、e2b、e3b）に接続します。</block>
+  <block id="2ec3c959154403a779d82acd5553d3e7" category="inline-image-macro">3つの2ポート200GbE I/Oモジュールを使用したEF80ファブリック接続トポロジ</block>
+  <block id="966f618ef898f1733ee8137b43541967" category="paragraph"><block ref="966f618ef898f1733ee8137b43541967" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a72def1402ebd27644148bab6231ba44" category="list-text">ケーブルスイッチ1（青色）をコントローラAのaポートとcポート（1a、2a、3a、1c、2c、3c）に接続します。</block>
+  <block id="010c878d7bdefdb2c9cab54f15947420" category="list-text">ケーブルスイッチ1（青色）をコントローラBのaポートとcポート（1a、2a、3a、1c、2c、3c）に接続します。</block>
+  <block id="8d42cd4b3a5baf9a3f412489f3e12e38" category="list-text">ケーブルスイッチ2（赤色）をコントローラAのbポートとdポート（1b、2b、3b、1d、2d、3d）に接続します。</block>
+  <block id="4d454a0269f5bd61e2d91ca79541ed28" category="list-text">ケーブルスイッチ2（赤色）をコントローラBのbポートとdポート（1b、2b、3b、1d、2d、3d）に接続します。</block>
+  <block id="59d64d676f36898288023f143fc14360" category="inline-image-macro">3つの4ポート64Gb FC I/Oモジュールを使用したEF80ファブリック接続トポロジ</block>
+  <block id="19693a6fcf27fa037b1b85c63e78d478" category="paragraph"><block ref="19693a6fcf27fa037b1b85c63e78d478" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="03ed2de1c6ced47cf2038751f6c4e1b4" category="inline-link-macro">ストレージシステムの電源をオンにします</block>
+  <block id="c2d3ec5e666fe12eb961640fa7f0328b" category="paragraph">ストレージシステムのコントローラー間ミラーリングとホスト接続をケーブルで接続した後、<block ref="d0c3b85257c0c216b48d88ca57aa0056" category="inline-link-macro-rx"></block>。</block>
+  <block id="2559b1d3ade089296a5c82ea8def20df" category="summary">EF50またはEF80ストレージシステムの電源を入れた後、アウトオブバンドストレージシステム管理用に各コントローラの管理ポートをケーブルで接続して構成し、ストレージシステムを構成してから、ホストI/Oモジュールのプロトコルが正しいことを確認することで、システムセットアップが完了します。</block>
+  <block id="c52380e4285fce53ae461e4bdf6b4527" category="doc">EF50およびEF80のストレージシステムセットアップの完了</block>
+  <block id="e12b25581394ec4377fd1f1f2eeac392" category="section-title">ステップ1：管理ポートのケーブル接続と設定</block>
+  <block id="6629e191e98b635ab2a2b11b4301d852" category="paragraph">各コントローラの管理ポートにケーブルを接続し、DHCPサーバーまたは静的IPアドレスを使用してポートを設定します。</block>
+  <block id="d0ae3b654b62807d5a54a174f1d72959" category="paragraph">ケーブルを接続し、DHCPサーバーを使用して管理ポートを設定します。</block>
+  <block id="61ba1ff27e2898b15f32e77189032c65" category="list-text">各コントローラーの側面に記載されているMACアドレスをメモしておいてください。MACアドレスは、各コントローラに割り当てられているIPアドレスを識別するために使用されます。</block>
+  <block id="8156b8ddd08d46672e5dfe4790169c7f" category="list-text">イーサネットケーブルを使用して、各コントローラの管理ポートをネットワークに接続します。</block>
+  <block id="9c29eb35e98929529d99ca71cd855f4e" category="paragraph">*1000BASE-T RJ-45ケーブル*</block>
+  <block id="79bcab102232e2b4e9e48cc24df07246" category="inline-image-macro">ef50およびef80コントローラ管理ポートのネットワークへのケーブル接続</block>
+  <block id="19ad83b4acd19aab6f8e95ca8c993414" category="paragraph"><block ref="19ad83b4acd19aab6f8e95ca8c993414" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="003c4caf1dce3180acf1d5247dfbe70b" category="paragraph">ケーブルを接続し、IPアドレスとサブネットマスクを入力して管理ポートを手動で設定します。</block>
+  <block id="859468079c73df988ea1ed8046040c27" category="inline-image-macro">ef50およびef80コントローラ管理ポートのケーブル配線</block>
+  <block id="f8b3abe7e0303456c19fd8817298a9c9" category="paragraph"><block ref="f8b3abe7e0303456c19fd8817298a9c9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e5aa89c0d79fe2ea73905571507f7d3b" category="list-text">ブラウザを開き、デフォルトの IP アドレス（169.254.128.101）を使用してコントローラへの接続を確立してください。</block>
+  <block id="c7db1f4684c03e2484bfba0370a95f69" category="paragraph">コントローラーは自己署名証明書を返信します。ブラウザは、接続が安全ではないことを通知します。</block>
+  <block id="f8adbb67d95e9c46d61cbee9c21b8211" category="list-text">ノートパソコンからイーサネットケーブルを外し（コントローラ A には接続したまま）、ネットワークに接続します。</block>
+  <block id="35ce24c3ab23606ee99470433057fd2c" category="admonition">コントローラAとの接続が切断された場合は、イーサネットケーブルをコントローラBに接続することで、コントローラB（169.254.128.102）を介してコントローラAとの接続を再確立できます。</block>
+  <block id="10126fb334ba32a6032b072ce7acbd2e" category="list-text">以前設定したパスワードを使用してログインしてください。*Configure Network Settings*ウィザードが表示されます。</block>
+  <block id="13e4180d1580553590b559ee11c7cc32" category="paragraph">両方のコントローラ管理ポートがネットワークに接続されました：</block>
+  <block id="d67ba08b051a178d949c99bcba712b9a" category="section-title">ステップ2：ストレージシステムを設定する</block>
+  <block id="7349b49b9949f97abcb087f10b1c4514" category="paragraph">SANtricity System Manager を使用して、ストレージシステムの設定と管理を行います。</block>
+  <block id="f7a6d7064913466b77286942b957f2c3" category="list-text">管理ポートをネットワークに接続し、設定を完了している必要があります。</block>
+  <block id="986ea0888c4483b8908a23f50db781ba" category="list-text">パスワードと設定済みのIPアドレスを確認し、記録してください。</block>
+  <block id="f3409181b03b4a3024c85e7c68e5eb3c" category="list-text">設定された IP アドレスを使用して SANtricity System Manager にアクセスします。</block>
+  <block id="af538554a39155c9eb46aaa2eba3ecc5" category="list-text">SANtricity System Managerを使用して、ストレージシステムを管理します。</block>
+  <block id="bcc65479fcb2279dc15af0b23b353e3c" category="paragraph">SANtricity System Manager に付属のオンラインヘルプを参照してください。</block>
+  <block id="96df99685c5bf4b192fba6beba5284f2" category="section-title">ステップ3：ホストI/Oモジュールのプロトコルが正しいことを確認する</block>
+  <block id="8a088aa08c66f08cd396428bcc535e08" category="paragraph">ストレージシステムには、ホストI/Oモジュールにデフォルトのプロトコルが付属しています。デフォルトのプロトコルが希望するプロトコルでない場合は、変更できます。</block>
+  <block id="060d34665cae7c5bb801b31482b3bf4d" category="list-text">SANtricity System Managerを使用して、ストレージシステムのホストI/Oモジュールで使用されているデフォルトプロトコルを確認します。</block>
+  <block id="f4f194a527e25705dac27f3aad9c18bd" category="list-text">*追加設定*セクションで、*ホストI/Oプロトコルの変更*をクリックして、そのページを開きます。</block>
+  <block id="259772d328f38bc90d62d168edac1c6a" category="list-text">ストレージシステムのホストI/Oモジュールで使用されているデフォルトのホストI/Oプロトコルは、*ホストI/Oプロトコル*フィールドに表示されます。</block>
+  <block id="6391f60e0cb1e2d6260002d6fba8b38b" category="paragraph">対処は不要です。</block>
+  <block id="2db7cf25e25f43e12ef7a47f9be4a3f0" category="inline-link-macro">ホストプロトコルを変更する</block>
+  <block id="3bdea44956eca6a6fe526f7453672cb2" category="paragraph"><block ref="3b1e62b8f041cdbf32722b61a558d569" category="inline-link-macro-rx"></block>の手順を使用して変更する必要があります。</block>
+  <block id="95212c9edc6cfd774f23d964ae66f173" category="admonition">ホストポートのプロトコルを変更するには、プロトコル変更の準備、ホストのI/O操作の停止、プロトコルの変更、そして新しいプロトコルを使用するようにホストを設定するという手順が必要です。</block>
+  <block id="bf6c3346ff3606822a029bdc5f1fd038" category="summary">EF50またはEF80ストレージシステムの設置準備が整ったら、ラックマウント用ハードウェアをキャビネットまたは通信ラックに取り付け、その後ストレージシステムを設置して固定します。</block>
+  <block id="45b4e7c20322f386ee8d6f6de5e46bd7" category="doc">ハードウェアの設置 - EF50およびEF80</block>
+  <block id="8bd4acc38771e6801a9c3e79e0914f1f" category="paragraph">ストレージシステムがキャビネットに入っている場合は、この手順をスキップして<block ref="5cf36f95205599c906eaa6f0709db155" category="inline-link-macro-rx"></block>に進んでください。</block>
+  <block id="405064d385d6ce1555b45605e3b421aa" category="list-text">ラックマウント用ハードウェアに同梱されている取り付け説明書を必ずご確認ください。そうでない場合は、<block ref="eec13eeca211854cac70cc479967d6f5" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="b433386c98551c70005a6f1b800aa07c" category="inline-link-macro">持ち上げ時の注意事項を理解する</block>
+  <block id="65ad8f381a574a2c77a99dbf0844f4df" category="list-text">ストレージシステムの重量に関連する持ち上げ時の注意事項に注意してください。<block ref="eabddf68edb22dbc0c370477b7899ead" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="263564b059d7a28fcd9c2e20b0931d38" category="list-text">ストレージシステム内の空気の流れは、ドライブが設置されている前面から入り、ポートが配置されている背面から排出されることを理解してください。</block>
+  <block id="ff446d73ac8e54e5df56f5d61576af50" category="list-text">ラックマウント金具に付属の説明書に従って、ストレージシステム用のラックマウント金具を取り付けます。</block>
+  <block id="94f0afec3ec82f33c91d2a3d7d81f4e9" category="admonition">ラック取り付け金具は、キャビネットまたはラック内の最も低い位置に設置してください。そうすることで、設置時にストレージシステムが倒れるのを防ぐことができます。</block>
+  <block id="1c8c6696ac03ef01690be450b3767032" category="list-text">ストレージシステムをキャビネットまたは通信ラックに設置し、固定します。</block>
+  <block id="26e155b7fb3d206a4c26c4bef9241d99" category="list-text">ストレージシステムをレール上に配置し、ストレージシステムを下部から支えながら所定の位置にスライドさせます。</block>
+  <block id="0a508c750e66a219b3bc9449125a4672" category="list-text">付属の取り付けネジを使用して、ストレージシステムをキャビネットまたは通信ラックに固定します。</block>
+  <block id="36eaeecf3fe5d82e498290c50c773db1" category="list-text">ベゼルをストレージシステムの前面に取り付けます。</block>
+  <block id="6770bca56cae3c3ef94c3fe33912cafc" category="list-text">ベゼルをストレージシステムの前面に配置し、両端の穴がストレージシステムの留め具と位置が合うようにします。</block>
+  <block id="6bc9706054ddce477397a74fecd293ed" category="inline-link-macro">ハードウェアのケーブル接続</block>
+  <block id="0761c2876a223e6e2037a4e9e910b582" category="paragraph">ストレージシステムのハードウェアをインストールした後、<block ref="bca22c8e81cd07d8c060c28f352f5c5b" category="inline-link-macro-rx"></block>。</block>
+  <block id="5b456164c38ae8e563b1428c3f0d26f8" category="summary">EF50またはEF80ストレージシステムのコントローラのミラーリング接続とホストネットワーク接続をケーブルで接続したら、コントローラの電源を投入します。</block>
+  <block id="fd8cf1a58916f99d088946d5a7230216" category="doc">ハードウェアの電源を入れる - EF50およびEF80</block>
+  <block id="3a6ce1aff8484b4f121120d50d351c0c" category="paragraph">EF50またはEF80ストレージシステムのコントローラ間ミラーリング接続とホスト接続をケーブルで接続したら、コントローラの電源をオンにします。</block>
+  <block id="5ebae18682dda3e61a78b4f23c59fde0" category="list-text">各コントローラーの電源に電源ケーブルを接続し、それぞれを異なる回路の電源に接続します。</block>
+  <block id="bdc998a5bd1943bedb35cbcb343657f7" category="admonition">サードパーティ製の電源分配ユニット（PDU）を使用している場合は、コントローラの真後ろにある電源コンセントは使用しないでください。コントローラへのアクセスが妨げられる可能性があります。</block>
+  <block id="fa2c4de61b033b70225eabcd36034670" category="image-alt">ストレージシステムの電源接続図</block>
+  <block id="892ecfa88ac2fc58f239974dc4b528a1" category="list-text">システムが起動を開始します。初回起動には最大8分かかる場合があります。</block>
+  <block id="1f9fc1df1047f59669fdaf4a748c5da0" category="list-text">システムシャーシのLEDが点滅し、ファンが回転し始めます。これは、コントローラの電源が入ったことを示しています。</block>
+  <block id="efbb71632700af11cddc55ae7fa6b780" category="paragraph">起動時にファンが非常に大きな音を立てるのは正常です。</block>
+  <block id="e1c61cdd8939dd8764be2bd3a1144c7c" category="list-text">システムシャーシ前面のデジタルディスプレイ（ベゼルの背面）が点灯しません。</block>
+  <block id="d420064a5f4919f9be16d853c6d1997c" category="list-text">各電源装置の固定装置を使用して電源コードを固定します。</block>
+  <block id="68db173907f08cd16d03de80c901a549" category="inline-link-macro">ストレージシステムの完全なセットアップ</block>
+  <block id="d1b51920b70cb47316a2aed33df1996c" category="paragraph">ストレージシステムの電源を入れた後、<block ref="a1e08373f9f80025642e885c4d75384a" category="inline-link-macro-rx"></block>。</block>
+  <block id="939b07324bfa4e3da6dfef87a4f84101" category="summary">EF50またはEF80ストレージシステムを設置する準備として、設置場所の準備、ストレージシステムの吊り上げに関する注意事項の理解、箱の開梱と梱包明細書との照合、およびサポート特典を受けるためのストレージシステムの登録を行ってください。</block>
+  <block id="d5072f1b35968b264502fd8cb42bbc49" category="doc">インストールの準備 - EF50およびEF80</block>
+  <block id="92c8397408f55d9526d554c55cde3d22" category="section-title">ステップ1：サイトの準備</block>
+  <block id="6953f9497ab506347f9ba3b6eab20b03" category="paragraph">設置場所と使用予定のキャビネットまたはラックが、ご使用のストレージシステムの仕様を満たしていることを確認してください。</block>
+  <block id="784289434de2772034240714a84f80a9" category="list-text"><block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>を使用して、お客様の設置場所がストレージシステムの環境要件および電気要件を満たしていることを確認してください。</block>
+  <block id="2d0759237f73e187af2bdd02dc95f81b" category="list-text">ストレージシステムとスイッチ類を収納するのに十分なキャビネットまたはラックのスペースがあることを確認してください。</block>
+  <block id="7cea7d78ac598d08b8e997dc16a974d1" category="paragraph">必要に応じて、ストレージシステムの正確な寸法については<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>を参照してください。</block>
+  <block id="586f9ad5db82f223a8b9cca9ed48f572" category="list-text">ストレージシステム用2U</block>
+  <block id="d870295bbe120d15107d49597065fc2e" category="list-text">ほとんどのスイッチで1U</block>
+  <block id="2df7e61cfe4bf7857f54171cec3da494" category="list-text">必要なネットワークスイッチを設置します。</block>
+  <block id="1cf5db804729f0321f20623e8571c4a9" category="list-text">管理ソフトウェアでサポートされているブラウザを使用していることを確認してください。</block>
+  <block id="60fed4620406884a24e2bd1911dc7b09" category="list-text">設置に必要な以下の機器と工具を入手してください：</block>
+  <block id="8dd75d4e14815a2e3e3154ea67cd841e" category="list-text">静電気放電（ESD）ストラップ</block>
+  <block id="49a15a25561dfc30f3be6f9fe84fa8a8" category="list-text">プラスドライバー（#2）</block>
+  <block id="f848ac0e087570e2f0548d0780917956" category="section-title">ステップ2：持ち上げ時の注意事項を理解する</block>
+  <block id="67c51a66df4793c8b8e756080478ecb1" category="paragraph">箱を開ける前、そして後でストレージシステムを設置する際には、ストレージシステムの重量を把握しておく必要があります。そうすることで、持ち上げたり移動したりする際に必要な予防措置を講じることができます。</block>
+  <block id="3397843644709c0d3ffeb76056124305" category="paragraph">EF50またはEF80ストレージシステムは、最大61.5 lbs（27.9 kg）の重量があります。ストレージシステムを持ち上げるには、2人で作業するか、油圧リフトを使用してください。</block>
+  <block id="12c8eb3808a13f0adea4f2c3d86acb4c" category="image-alt">AFF A20、A30、A50、C30、C60の重量注意アイコン</block>
+  <block id="3389a768c543e525ee586ceed1a8a457" category="section-title">ステップ3：箱を開ける</block>
+  <block id="987f2c925ee0c9444d34b96f189dced8" category="paragraph">設置場所と使用予定のキャビネットまたはラックがストレージシステムの仕様を満たしていることを確認し、持ち上げ時の注意事項を理解したら、すべての箱を開梱し、内容物を梱包明細書に記載されている品目と比較してください。</block>
+  <block id="82174a976e9a37564a41e6138a110eb6" category="list-text">すべての箱を慎重に開けて、中身を整理して並べます。</block>
+  <block id="90eb119b01d3cadbc16dfa9f572e4edb" category="list-text">開封した内容物を梱包明細書と照らし合わせてください。</block>
+  <block id="926a0610eae5ca468bfd2273681ca46d" category="paragraph">配送箱の側面にあるQRコードをスキャンすると、梱包明細書を入手できます。</block>
+  <block id="344ce3f549ef16582b4401f70361f692" category="admonition">相違点があれば、今後の対応のために記録しておいてください。</block>
+  <block id="1726196375cd4d9085528facd587a31e" category="paragraph">以下の項目は、箱の中に入っている可能性のある内容物の一部です。</block>
+  <block id="e7bd175117d4b2dd641c299d6691449f" category="paragraph">必要に応じて、<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block>を参照して、その他のサポートされているケーブルとその用途を確認してください。</block>
+  <block id="958c530ea1ae0e18b942f8784148734c" category="cell">*ハードウェア*</block>
+  <block id="09ff86ce1246a36d79f5d417bc9fb6be" category="cell">*ケーブル*</block>
+  <block id="82271aedc09b867b3aa3552e5c48a92b" category="list-text">ドライブを備えたストレージシステム</block>
+  <block id="e13e811059b612b97e5987f5a3cf4bef" category="list-text">ラックマウント用ハードウェアと手順書</block>
+  <block id="efb4c0c41cf8767bf0f9361a8c61a50a" category="list-text">ベゼル</block>
+  <block id="810e6cad6b62fd7fa24c2ee6fabaae07" category="list-text">コントローラ間ミラーリング用Ethernetケーブル</block>
+  <block id="06d2646a8077631818b55a12dc3c58ac" category="list-text">管理用イーサネットケーブル（RJ-45ケーブル）</block>
+  <block id="b2cdf9589096f203f816541f43a15f6c" category="list-text">ネットワークケーブル</block>
+  <block id="afe4eb7c1ac7701fbfd8a1f07611fb30" category="section-title">ステップ4：ストレージシステムを登録する</block>
+  <block id="ad017b49c0df10ceee360076dfe26820" category="paragraph">設置場所がストレージシステムの仕様を満たしていることを確認し、注文した部品がすべて揃っていることを確認したら、ストレージシステムを登録してください。</block>
+  <block id="f8cfcb3b6ce65079e1f57dd3a4507101" category="paragraph">登録手続きには、各コントローラーのシリアル番号（SN）が必要です。シリアル番号は以下の場所に記載されています：</block>
+  <block id="1594210318baaedcde7a9ee6cf877e2f" category="list-text">各コントローラで</block>
+  <block id="3fc885acbf9f3f66cb5fefc99c0d76c6" category="list-text">梱包明細書に記載</block>
+  <block id="cf163ceac39b37fd1108b3cf9ff2b719" category="list-text">確認メールに記載</block>
+  <block id="e1554fb7300ba3f33856607b4276dd89" category="image-alt">シリアル番号ラベルの例</block>
+  <block id="212304f8cbbd7ebaff4e2249b78ee581" category="inline-link-macro">ハードウェアを設置する</block>
+  <block id="abda3eb065a719f1d88a781d2e38ad9e" category="paragraph">ストレージシステムを設置する準備ができたら、<block ref="239db888dbc76fb83268465e5e6536a6" category="inline-link-macro-rx"></block>。</block>
+  <block id="be8d4ce4918ddae84d02431379d6d80c" category="summary">EF50またはEF80ストレージシステムを設置およびセットアップするには、設置場所の準備、ハードウェアコンポーネントの設置と配線、ストレージシステムの電源投入、およびストレージシステムのセットアップと構成の完了が必要です。</block>
+  <block id="686032153c045cdea3816ea49738e842" category="doc">インストールとセットアップ - EF50 および EF80</block>
+  <block id="e33ae0add8106498514961d910b3b38e" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="bce179ad419bd48e9c41b073fd99e202" category="inline-link-macro-rx"></block></block>
+  <block id="edb3e9aff5e398b7b7eb19e2ba1c1378" category="paragraph">設置準備として、設置場所を整え、ストレージシステムの吊り上げに関する注意事項を理解し、箱を開梱して内容物を梱包明細書と照合し、サポート特典を受けるためにストレージシステムを登録してください。</block>
+  <block id="923a86c9f908f09f61d33d7831905371" category="inline-link-macro">ハードウェアを設置する</block>
+  <block id="11b875727465892cf5bd1e3b8b38f3da" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="d8f87fb4140fea77f47017bd9ec5dcdd" category="inline-link-macro-rx"></block></block>
+  <block id="7569bbc639d17ce831941090847f5f57" category="paragraph">ハードウェアを設置するには、ラックマウント用ハードウェアをキャビネットまたはラックに取り付け、次にストレージシステムを設置して固定します。</block>
+  <block id="b8b738c80e941f2ecc3967c6dbe5c0aa" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="5cf36f95205599c906eaa6f0709db155" category="inline-link-macro-rx"></block></block>
+  <block id="81d9ca4276f9010335b6aeeaa1d0680c" category="paragraph">ハードウェアをケーブル接続するには、まずコントローラ同士をケーブルで接続してコントローラ間ミラーリングを有効にします。これにより、システム全体の冗長性が確保され、キャッシュミラーリングやI/O転送に使用されます。次に、コントローラをホストネットワークにケーブルで接続します。</block>
+  <block id="3f43328b333c4df4c9ec539236523e92" category="inline-link-macro">ストレージシステムの電源をオンにします</block>
+  <block id="8d5f5b9f9f2dee34f15574ce8f524e4f" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="8a056a6439f08c4b1b6c616463cfac54" category="inline-link-macro-rx"></block></block>
+  <block id="5e570e70d5b47c9363d964970dc2a50c" category="paragraph">ストレージシステムの電源を入れるには、各コントローラ電源に電源ケーブルを接続し、それらを異なる回路の電源に接続します</block>
+  <block id="b669c7541b481751dcc71a055cce958b" category="inline-link-macro">ストレージシステムのセットアップを完了する</block>
+  <block id="78842b8d721f67915adcf3eb011b7c36" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="5ef3aa7bd3b14cfb714e4d5b256fce22" category="inline-link-macro-rx"></block></block>
+  <block id="38c38e882e02e5c78c715e5e344923bf" category="paragraph">ストレージシステムのセットアップを完了するには、コントローラの管理ポートにケーブルを接続して設定し、ストレージシステムを構成および管理してから、ホスト I/O モジュールのプロトコルが正しいことを確認してください。</block>
+  <block id="3b4608a173577ff11cb5a970a95a9116" category="inline-link">12.0 リリースノート</block>
+  <block id="3140eb9f268fa80dd4b189e0d7e0986b" category="list-text"><block ref="3140eb9f268fa80dd4b189e0d7e0986b" category="inline-link-rx"></block></block>
+  <block id="a75befa2f42df622990e46f9c7d49e08" category="list-text">左側のパネルにあるメニューから Hardware[Controllers and components] を選択してください。</block>
+  <block id="a2b019c9963ef773b0ead6446cef828d" category="image-alt">ファンキャニスタリリースタブ</block>
+  <block id="b00fd47d5fb356f57fefb70bd8db1fab" category="list-text">グラフィックにドライブが表示されている場合は、*Show back of shelf*を選択してコントローラを表示します</block>
+  <block id="1f36460e84582b36be552c6a17c0123a" category="list-text">サポートリソースページで、*Storage Array Profile* リンクを探して選択します。</block>
+  <block id="2e4d5d49cfefb01ef272ad2ab4919706" category="paragraph">ホスト設定の編集ダイアログボックスが表示されます。</block>
+  <block id="91822d857a567731cff3a62cdcc4b262" category="list-text">グラフィックにドライブが表示されている場合は、*Controller &amp; Components*を選択してコントローラーを表示してください</block>
+  <block id="73296082d8b1d967de86e3ca1401778c" category="list-text">*Storage › Volumes*を選択します。*All Volumes*ページで、ボリュームが優先所有者に分散されていることを確認します。*More › Change ownership*を選択してボリューム所有者を表示します</block>
+  <block id="e5917c8b7ae11d456fbbf964f73d5ea5" category="list-text">ボリュームがすべて優先所有者によって所有されている場合は、手順4に進んでください。</block>
+  <block id="f5513a279f3a0cf086ef71ad97fc2b02" category="list-text">目的のコントローラをクリックし、*iSCSIポートの設定*を選択します。</block>
+  <block id="702435126a074d634b351cf2ccccfcde" category="doc">ホストポートプロトコルを変更するための要件 - E5700</block>
+  <block id="c4039f7107e8ace0d297e2c9ce9db8c0" category="summary">EF50またはEF80ストレージシステムのコントローラー交換を完了するには、ストレージシステムのファームウェアが最新であることを確認し、ボリュームが所有者に返却されていることを確認し、システムサポートデータを収集し、故障した部品をNetAppに返送してください。</block>
+  <block id="1df492fb38de2abdeb3d08f3c3e7f6ed" category="doc">コントローラの交換を完了する - EF50およびEF80</block>
+  <block id="8353977824c9791b266dc918db656fa9" category="paragraph">EF50またはEF80ストレージシステムのコントローラー交換を完了するには、最新バージョンのSANtricity OSがインストールされていることを確認し、ボリュームが所有コントローラーに戻されていることを確認し、システムサポートデータを収集し、障害が発生した部品をNetAppに返却します。</block>
+  <block id="c544db45a7babe9836c72d84fccf4ad0" category="section-title">ステップ 1：最新バージョンの SANtricity OS であることを確認し、ボリューム所有権を確認し、サポートデータを収集する</block>
+  <block id="8d25d311e353251341d471f4c2d37620" category="section-title">ステップ2：故障した部品をNetAppに返却します</block>
+  <block id="b7ed4d788cf16b7e63972cb4e46b077f" category="summary">EF50またはEF80ストレージシステムの障害コントローラを交換するには、コントローラを取り外し、コンポーネントを交換用コントローラに移動してから、交換用コントローラを取り付けます。</block>
+  <block id="4f76e3ac8bbd37b71def1f5a39dc253f" category="doc">コントローラの交換- EF50およびEF80</block>
+  <block id="6670723c2864ca1765e9359b7d487d58" category="paragraph">EF50またはEF80ストレージシステムの障害コントローラを交換するには、キャッシュメモリ内のデータがドライブに書き込まれていることを確認し、障害コントローラからすべてのケーブルを抜き、障害コントローラを取り外し、コンポーネントを交換用コントローラに移動して、交換用コントローラを取り付けます。</block>
+  <block id="04930cabf99972a633341ff06ac0deb2" category="inline-link-macro">交換用コントローラをオンラインにします</block>
+  <block id="3afdcd3e40400319f3d0f83140582eb8" category="paragraph">故障したコントローラーを交換した後、<block ref="b6ab23cdcb0c3e7e038497056f4f0fe6" category="inline-link-macro-rx"></block>。</block>
+  <block id="cb4238e638fc47d7b570d750fcab014f" category="summary">コントローラを交換する際は、データ損失を防ぎ、システムの安定性を確保するために、EF50またはEF80ストレージシステム内の障害コントローラをオフラインにしてください。</block>
+  <block id="0ed60882ea4f8296eaf657de750f0b1f" category="doc">障害のあるコントローラをオフラインにする - EF50およびEF80</block>
+  <block id="9060587edeb01a63e3d3edc959678d1e" category="list-title">実行前</block>
+  <block id="b4851e92b19af0c5c82447fc0937709d" category="inline-link-macro">要件</block>
+  <block id="f1e36309340fc4f17fb40811d47953c7" category="list-text">この手順の<block ref="f3fc649d7930c1668979ef9e48f6bb30" category="inline-link-macro-rx"></block>を満たしている必要があります。</block>
+  <block id="501c214438899badfe0ea96a964a43e0" category="inline-link-macro">準備</block>
+  <block id="140705b8013f323d672593a11f9c7bc9" category="list-text">この手順を実行するには、<block ref="e3160eb47607c22388ca3029962b0ccc" category="inline-link-macro-rx"></block>を完了している必要があります。</block>
+  <block id="bce072f16c5d36a9b06ffd9b060b1032" category="inline-link-macro">障害コントローラを交換する</block>
+  <block id="002fd09fb9764aac2eb6c3186d15cbfd" category="paragraph">故障したコントローラーをオフラインにした後、<block ref="ee0880cd8b48b6c56cd4da2441971f2e" category="inline-link-macro-rx"></block>。</block>
+  <block id="beb7fb9c14796641ab9982a59ef200a1" category="summary">EF50またはEF80ストレージシステムの交換用コントローラをインストールしたら、交換用コントローラのIPアドレスを確認し、コントローラをオンラインにして、ストレージシステムのステータスがOptimalであることを確認してください。</block>
+  <block id="596db6c24eb9e12a170f6a7b400b16e8" category="doc">交換用コントローラをオンラインにする - EF50 および EF80</block>
+  <block id="f6eeb21c85181baceb1efe4944921a82" category="paragraph">EF50またはEF80ストレージシステムの交換用コントローラをインストールしたら、そのIPアドレスを確認し、コントローラをオンラインにして、ストレージシステムのステータスがOptimalであることを確認します。</block>
+  <block id="a61002aab76d792f612bedb7d53fdd4f" category="inline-link-macro">コントローラの交換を完了します</block>
+  <block id="ab0cc7192570c60edb959133170bce4a" category="paragraph">新しいコントローラーをオンラインにした後、<block ref="867cf5cb10011fd216b1c24383b0303a" category="inline-link-macro-rx"></block>。</block>
+  <block id="920518de31657059b4af98be4e467165" category="summary">EF50またはEF80ストレージシステムの障害コントローラを交換する準備として、交換用コントローラを開梱し、部品番号が正しいことを確認し、構成データベースをバックアップします。</block>
+  <block id="363003c031f52760e90e0fb1284fdefd" category="doc">コントローラの交換の準備 - EF50 および EF80</block>
+  <block id="23182ac7189b12133b9a6f5a17fdb931" category="paragraph">EF50またはEF80ストレージシステムの障害コントローラを交換する準備として、交換用コントローラを開梱し、MACアドレスをメモし、部品番号が正しいことを確認し、ストレージシステムの構成データベースをバックアップします。</block>
+  <block id="14db85beb6439163bd9a3227e2e04e91" category="inline-link-macro">障害のあるコントローラをオフラインにします</block>
+  <block id="c71f02ba1917135ea53e6af0e26795fd" category="paragraph">コントローラー交換の準備後、<block ref="911e69b58a894f7ac5b57ca9f4b1508e" category="inline-link-macro-rx"></block>。</block>
+  <block id="fb081072ce2cc9988433d80f3b47bbb0" category="summary">EF50またはEF80ストレージシステムのコントローラを交換する前に、交換を成功させるための要件を満たしていることを確認してください。これには、障害コントローラがあることの確認、ストレージシステムの状態の確認、手順に必要なツールの入手、SANtricity System Managerにアクセスするための管理ステーションとブラウザの準備が含まれます。</block>
+  <block id="63d771a32f33c4067d74aa663218f475" category="doc">コントローラの交換要件 - EF50およびEF80</block>
+  <block id="c7ae60c36e5dd3e8b2951d1153d89ab3" category="paragraph">EF50またはEF80ストレージシステムのコントローラを交換する前に、交換を成功させるための要件を満たしていることを確認してください。これには、障害が発生したコントローラがあることの確認、ストレージシステムの状態の確認、手順に必要なアイテムの入手、SANtricity System Managerにアクセスするための管理ステーションとブラウザの準備が含まれます。</block>
+  <block id="548802e3445e480c774adf86b3c9d40d" category="inline-link-macro">コントローラの交換準備</block>
+  <block id="2f1a84cd73a9d1b253690cee5a996165" category="paragraph">コントローラー交換の要件を満たした後、<block ref="eeedf715164715cd0f13218b7869f59b" category="inline-link-macro-rx"></block>。</block>
+  <block id="2a9a93ea6f0bd977cebbea5c7c3931ef" category="summary">EF50またはEF80ストレージシステムで障害が発生したコントローラを交換するには、ストレージシステムの要件を満たし、システムを準備し、障害が発生したコントローラをオフラインにし、コントローラを交換し、新しいコントローラをオンラインにして、交換プロセスを完了します。</block>
+  <block id="cbdd046cb437c2ec3b44256dfde2ff5b" category="doc">コントローラの交換ワークフロー - EF50およびEF80</block>
+  <block id="cc7b6ad2b5c5cf984ed2b31eb7cdec78" category="inline-link-macro">コントローラの交換要件を確認</block>
+  <block id="63d82565e7082940cd04e84427b25ae7" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="fda781847f9aa68393ef9eb97f6097de" category="inline-link-macro-rx"></block></block>
+  <block id="406f1172b9d2b0ceb171aea9558a5a68" category="paragraph">ストレージシステムのコントローラに障害が発生していることを確認し、ストレージシステムの状態を確認し、手順に必要なツールを入手し、SANtricity System Managerにアクセスするための管理ステーションとブラウザを用意します。</block>
+  <block id="5bd0e0ff93ea373fce6b434f7436e2b8" category="inline-link-macro">コントローラの交換の準備</block>
+  <block id="391ae3365d58e10f91759a9aed8f49ee" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="170cecc50318f7282077b231093216e9" category="inline-link-macro-rx"></block></block>
+  <block id="9f28a5a587a125c78a342f11c6c7d227" category="paragraph">交換用コントローラを開梱し、 MAC アドレスをメモし、部品番号が正しいことを確認し、ストレージシステムの構成データベースをバックアップします。</block>
+  <block id="8d3f4062332015f6157b0ecad22a9d48" category="inline-link-macro">障害のあるコントローラをオフラインにします</block>
+  <block id="1ccf90cd5ac66fe6dd1f867874ed8b64" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="1193faafc7e0c8a7a7983a858e7e42c7" category="inline-link-macro-rx"></block></block>
+  <block id="e28eab3bed314967d77bc7840a0d700f" category="paragraph">障害のあるコントローラを交換する際は、データ損失を防ぎ、システムの安定性を確保するために、障害のあるコントローラをオフラインにしてください。</block>
+  <block id="ae12cdf9e27ddc4e5b3ed69b1b80df01" category="inline-link-macro">障害のあるコントローラを交換します</block>
+  <block id="c9e0c8f787b4607f27a6dfd442f2195a" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="45ea655895c2ecbabc8c7c647a3a6896" category="inline-link-macro-rx"></block></block>
+  <block id="d71f29ff8580c48c94518a4a3d3a4702" category="paragraph">キャッシュメモリ内のデータがドライブに書き込まれていることを確認し、障害コントローラからすべてのケーブルを抜き、コントローラを取り外し、コンポーネントを交換用コントローラに移動し、交換用コントローラを取り付け、すべてのケーブルを再接続します。</block>
+  <block id="aec26d175b38820660573a49cf1f9f18" category="inline-link-macro">交換用コントローラをオンラインにします</block>
+  <block id="4ea338eb0a5f7427049ef44a30f11300" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="35702f6a9f1e3e47496742aca90b9ed6" category="inline-link-macro-rx"></block></block>
+  <block id="ec93f19c8004dc2ae1888fbff37617b8" category="paragraph">交換用コントローラのIPアドレスを確認し、コントローラをオンラインにして、ストレージシステムのステータスがOptimalであることを確認してください。</block>
+  <block id="f4750e6ebd93a7a7ed78133f680ffe16" category="inline-link-macro">コントローラの交換を完了します</block>
+  <block id="9b45b4bd50c50f33264d635b111c66e7" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block><block ref="fb1d229074231f8b8a434041a80b00f6" category="inline-link-macro-rx"></block></block>
+  <block id="570aef57cad2607bde75709d4a86e944" category="paragraph">最新バージョンの SANtricity OS がインストールされていることを確認し、ボリュームが所有コントローラに戻されていることを確認し、システムサポートデータを収集して、障害が発生した部品をNetAppに返却してください。</block>
+  <block id="383ef5177a54d7409b9e3c66bbdd00ca" category="summary">EF50またはEF80ストレージシステムでDIMMに障害が発生した場合、最適な状態ではないと報告された場合、または容量が一致していない場合は、DIMMを交換してください。</block>
+  <block id="4ba23e997e0cdc38baff6119bdd2115e" category="doc">DIMMの交換 - EF50およびEF80</block>
+  <block id="127fa4a95ea776482897ccf0f46f143e" category="list-text">DIMM を交換するには、交換が必要かどうかを判断し、準備を行い、故障したコントローラをオフラインにし、コントローラを取り外し、DIMM を交換し、コントローラを再取り付けし、オンラインにし、交換を完了し、故障した部品をNetAppに返却します。</block>
+  <block id="4abfd4171ab973970a9c4d4bb9f0dcc4" category="paragraph">DIMMに障害が発生した場合、最適な状態ではないと報告された場合、または容量が一致しない場合は、DIMMを交換してください。</block>
+  <block id="c4576758d1a1108466321398e70b5733" category="paragraph">DIMMを交換する準備として、対処する必要のある他のストレージシステムの問題がないことを確認し、ボリュームが正しい状態であることを確認し、必要なツールと機器を揃え、静電気放電を防ぐための予防措置を講じ、ストレージシステムの構成データベースをバックアップしてください。</block>
+  <block id="eb86ff3cf478c1fcc648fa0ff4dfd4cb" category="section-title">手順3：コントローラをオフラインにする</block>
+  <block id="83ed3aef216a1c44b0fcf6e080809513" category="paragraph">残りの手順を安全に実行できるように、障害のあるコントローラをオフラインにします。</block>
+  <block id="0418da6a466979d1781efe4f90178456" category="section-title">手順4：コントローラを取り外す</block>
+  <block id="1ec9f66f0279da06042fe67fa7091043" category="section-title">手順5：DIMMを交換する</block>
+  <block id="7942179afa9cc7db8c6e78df8351e369" category="paragraph">障害が発生したコントローラ内の障害DIMMを特定し、交換します。</block>
+  <block id="498d0f96d2f0bf809b02158e756b9b7e" category="section-title">手順6：コントローラを再度取り付ける</block>
+  <block id="9d2e538f87568cc8ea2f61ac14aeca34" category="paragraph">コントローラーをシャーシに再取り付けし、電源コードとすべてのケーブルを再接続します。</block>
+  <block id="14e65a354dbea722cf5bf7e256aabd16" category="section-title">手順7：コントローラをオンラインにする</block>
+  <block id="e63100abf181cb74cc24fbd0bf3b20b8" category="section-title">手順8：DIMMの交換を完了する</block>
+  <block id="2324c9ff8290e7aacd93f5339cfc2986" category="section-title">手順9：障害が発生した部品をNetAppに返却する</block>
+  <block id="38b6c237ab61ba051247de5055885fbe" category="summary">EF50またはEF80ストレージシステムのドライブに障害が発生した場合、またはアップグレードが必要な場合は、ドライブを交換してください。</block>
+  <block id="b128b09f0503f3acadbab3ce838606d3" category="doc">ドライブの交換 - EF50およびEF80</block>
+  <block id="d73077f8b1eb74e5877c54065699aa12" category="paragraph">EF50またはEF80ストレージシステムがI/Oを受信している間に障害ドライブを交換して、継続的なデータアクセスとシステムパフォーマンスを確保します。</block>
+  <block id="7167e6fb601eb461220ee6f5d0e38e0a" category="list-text">ドライブを交換するには、準備、ドライブの交換、交換の完了、そして故障した部品のNetAppへの返却を行います。</block>
+  <block id="308f69e1eee5c954dd187a6972a6cb9e" category="list-text">SANtricity System ManagerのRecovery Guruは、ストレージシステムのドライブを監視し、差し迫ったドライブ障害または実際のドライブ障害を通知することができます。ドライブに障害が発生すると、注意（オレンジ色）LEDが点灯します。</block>
+  <block id="627ea20fba0ea612727b7cb7f0ea0aae" category="summary">EF50またはEF80ストレージシステムのファンが故障したり、効率的に動作しなくなった場合は、ファンモジュールを交換してください。ファンの故障は、システムの冷却性能や全体的なパフォーマンスに影響を与える可能性があります。</block>
+  <block id="dd25df4834294fa25b6149163a4481d5" category="doc">ファンモジュールの交換- EF50およびEF80</block>
+  <block id="1745642b329ee9ae6c4d423166d61ff9" category="list-text">ファンを交換するには、準備を行い、故障したコントローラーをオフラインにし、コントローラーを取り外し、ファンを交換し、コントローラーを再取り付けし、オンラインにし、交換を完了し、故障した部品をNetAppに返却します。</block>
+  <block id="9b6957f30022c30a17cb5d4361b12eae" category="list-text">各コントローラには5個のファンが搭載されています。ファンに障害が発生した場合は、コントローラに適切な冷却機能を確保するために、できるだけ早く交換する必要があります。</block>
+  <block id="96336de8c1578c91e716fcd8afc5a855" category="section-title">手順1：ファンの交換準備</block>
+  <block id="37856465ba7a20bffd2493fa67e0178b" category="paragraph">ファンを交換する準備として、交換しても問題ないことを確認し、必要な工具と機器を揃え、ストレージシステムの構成データベースをバックアップします。</block>
+  <block id="ae28e006d886fe6332498f4bda14e9bc" category="section-title">手順2：コントローラをオフラインにする</block>
+  <block id="a9c0cea0fa970dd78f5c9b732ed7af82" category="section-title">手順3：コントローラを取り外す</block>
+  <block id="4842d95adb9f7f65ba953748bf6ac5e2" category="section-title">ステップ4：ファンを交換する</block>
+  <block id="c565b1a4941f31e00246773e5d05fb49" category="paragraph">障害が発生したコントローラ内の障害ファンを特定し、交換します。</block>
+  <block id="930eb6bbec480c5ceef6aa27e8f5aeda" category="section-title">手順5：コントローラを再度取り付ける</block>
+  <block id="6f50fb2bdac922e7170a0ddac9c7c205" category="section-title">手順6：コントローラをオンラインにする</block>
+  <block id="d4410b5505d1c8c1a6788f6153eff488" category="section-title">手順7：ファンの交換を完了する</block>
+  <block id="e81625c6f6813a6e5480c2987f5bd781" category="section-title">ステップ8：障害が発生した部品をNetAppに返却する</block>
+  <block id="289df06b8febb4ba9dab3e2d96e1d3df" category="summary">既存のI/Oモジュールで別のプロトコルが必要な場合、I/Oモジュールのアップグレードの一環として、または新しいストレージシステムのインストールやコントローラのアップグレードの一環として新しいコントローラのデフォルトプロトコルが希望するプロトコルではない場合、EF50またはEF80ストレージシステムのホストI/Oモジュールでプロトコルを変更できます。</block>
+  <block id="dd4a92791444f756affba1a26a443eee" category="doc">ホストI/Oモジュールのプロトコルを変更する - EF50およびEF80</block>
+  <block id="4f0cc4f2a03a1631ef31204775a0d1e8" category="paragraph">ハードウェア手順（I/Oモジュールのアップグレード、新規システムのインストール、コントローラのアップグレードなど）の一環としてホストプロトコルを変更する場合は、該当するハードウェア手順を完了している必要があります。</block>
+  <block id="13e885e99d8fdc4ea504754a9295e124" category="admonition">デフォルトのプロトコルと使用可能なプロトコルのリスト（この手順で表示）は、現在インストールされているホストI/Oモジュールに基づいているため、新しいハードウェアがすでにインストールされている必要があります。</block>
+  <block id="accd5899181dedbb31fd58f7f6e12d94" category="cell">ホストプロトコルを変更する場合：</block>
+  <block id="2c3909128c6ceedef97f5a05a1bd2bc2" category="paragraph">既存のホストI/Oモジュールで動作します（新しいハードウェアをインストールする必要はありません）</block>
+  <block id="6a58d5f6ed9134ff245eb1172f368af9" category="paragraph">この手順を続けてください。</block>
+  <block id="045ce4df55a28d4fac9a9dbae23e1f97" category="paragraph">I/O モジュールのアップグレードの一環として</block>
+  <block id="f58a456bbd4f564af406f58dafcbe908" category="paragraph">この手順を続行する前に、ホスト I/O モジュールをアップグレードしてください。</block>
+  <block id="ee562414bdcbb36fc239765997d6ccc9" category="inline-link-macro">EF50またはEF80のI/Oモジュールをアップグレードする</block>
+  <block id="91b04b48455b88cb067b358ee56b37c7" category="paragraph"><block ref="5f90355ca8ba90bc4c6c34291e857534" category="inline-link-macro-rx"></block>手順を使用します。</block>
+  <block id="0975e62816b46fb66331e466cd678aee" category="paragraph">新しいストレージ システムの設置の一環として</block>
+  <block id="ab507d8ac4de89c807db351bd7b994de" category="paragraph">この手順に進む前に、システムのインストールとセットアップを完了してください。</block>
+  <block id="2c7b646ea0004b99baf4e86a5c006ca4" category="inline-link-macro">EF50またはEF80のインストールとセットアップ</block>
+  <block id="80f5d3fd8e0543d6156ca0af4a65ab6d" category="paragraph"><block ref="5bc7e0b3ef0c2e4b7ad3897c10d8bbc7" category="inline-link-macro-rx"></block>手順を使用します。</block>
+  <block id="a2eb841f561d6293a3006e8281b799d9" category="paragraph">コントローラのアップグレードの一環として</block>
+  <block id="eb901a70ea1458a28ab0d07be1278180" category="paragraph">この手順を続行する前に、コントローラのアップグレードを完了してください。</block>
+  <block id="21bd9aea1b8d512de2b6a4057c816acc" category="paragraph"><block ref="9cd12a65522d368cb718912c4777f627" category="inline-link-macro-rx"></block>手順から始めます。</block>
+  <block id="82cad080f04aa6a2f5b09355f1c92238" category="list-text">ホスト I/O モジュールのプロトコルを変更するには、準備を行い、ホスト I/O 操作を停止し、プロトコルを変更してから、ホストが新しいプロトコルを使用するように構成します。</block>
+  <block id="8f8c2babd694314cdd77d5ad0b67c342" category="list-text">ストレージ システム内のすべてのホスト I/O モジュールでプロトコルが変更されます。</block>
+  <block id="4c9b71bb189ece048356461b1775be6f" category="list-text">ホスト I/O モジュールのプロトコルを変更すると、一時的にすべてのボリュームへのホスト アクセスが中断され、再起動中はストレージ システムが使用できなくなります。再起動には数分かかります。</block>
+  <block id="33296abf5a1642af31a4d756f85cb169" category="section-title">ステップ1：プロトコル変更の準備</block>
+  <block id="6970ce3288781a5f5f4bb687b7a43bbc" category="paragraph">ホスト I/O モジュールのプロトコルを変更する準備として、現在使用されているプロトコルを確認し、プロトコルを変更する必要があるかどうかを判断し、必要な場合はダウンタイム メンテナンス期間をスケジュールしてください。</block>
+  <block id="41d72c8d647ea7b0a9aad9c594d3c098" category="section-title">ステップ2：ホストI/O処理を停止する</block>
+  <block id="d87d058614a637dca18e8276b72b4d60" category="paragraph">プロトコルを変更する前に、ホストからのすべてのI/O操作を停止し、ストレージシステムから定義済みのすべてのホストを削除する必要があります。</block>
+  <block id="8323bec76d3c20c5ff905fad50e89c4f" category="admonition">プロトコル変更が正常に完了するまで、ストレージ システム上のデータにアクセスすることはできません。</block>
+  <block id="0c5fc7de27442b2cafd032bc7294a088" category="section-title">ステップ3：プロトコルを変更する</block>
+  <block id="f281568467abf1639273a9b57450f6c3" category="paragraph">SANtricity System Managerを使用して、ホストI/Oモジュールのプロトコルを変更し、コントローラが再起動サイクルを完了するまで待機し、ステータスが最適であることを確認してから、ホスト定義を再作成します。</block>
+  <block id="9b2d6660ebdf1089f3521ca4c1853164" category="section-title">ステップ4：新しいプロトコルを使用するようにホストを設定する</block>
+  <block id="71f734bf869da0d12308b9e2aa7ccbf6" category="paragraph">ホストプロトコルを変更した後は、ホストが新しいプロトコルを使用するように設定する必要があります。</block>
+  <block id="a4d73645f4e06cae14a4fd28121eea4b" category="summary">EF50およびEF80ストレージ システムは、I/Oモジュールのアップグレードや交換を柔軟に行うことができ、ネットワーク接続性とパフォーマンスを向上させます。</block>
+  <block id="9d4faf90fbf60d477b0252d81536f322" category="doc">I/Oモジュール保守の概要 - EF50およびEF80</block>
+  <block id="9210272fa91df110b4b0c5eee37e7f61" category="paragraph">EF50およびEF80ストレージ システムは、I/Oモジュールの交換やアップグレードを柔軟に行うことができ、ネットワーク接続性とパフォーマンスを向上させます。</block>
+  <block id="00015974de1f6f69c16403a005f48582" category="inline-link-macro">I/O モジュールを交換する</block>
+  <block id="b49ba47015c67eae9f182326198621a4" category="list-text"><block ref="b49ba47015c67eae9f182326198621a4" category="inline-link-macro-rx"></block></block>
+  <block id="c53f3fdfaf55dd8048784ee561500f34" category="paragraph">ストレージ システムの I/O モジュールに障害が発生した場合は、同じタイプの I/O モジュールと交換することで、ストレージ システムを最適な動作状態に復元できます。</block>
+  <block id="4e2509f697c3b8d1e846cd633039ad0b" category="inline-link-macro">I/O モジュールをアップグレードする</block>
+  <block id="84e5d72d80fde0676199c46e2d62e76e" category="list-text"><block ref="84e5d72d80fde0676199c46e2d62e76e" category="inline-link-macro-rx"></block></block>
+  <block id="26792491722e67c8f579995d575d9703" category="paragraph">ストレージ システムの I/O モジュールをアップグレードして、ホスト ポートの数を増やし、ネットワーク接続を強化し、システムのデータ トラフィック処理能力を拡張できます。</block>
+  <block id="fa2188ad1fdb23ca79cea5e526d0ee2e" category="summary">EF50またはEF80ストレージ システムで故障したI/Oモジュールを、同じタイプのI/Oモジュールと交換することで、ストレージ システムを最適な動作状態に復元できます。</block>
+  <block id="6aafc28ff0b06c5d0635130532d5a922" category="doc">I/Oモジュールの交換 - EF50およびEF80</block>
+  <block id="4831d2fac0f25621f059a75ed94f686b" category="list-text">I/O モジュールを交換するには、準備を行い、障害のあるコントローラをオフラインにし、障害が発生した I/O モジュールを交換し、コントローラをオンラインに戻し、障害が発生した部品を NetApp に返却します。</block>
+  <block id="eda0698c7dcadcd604c916d474645b48" category="list-text">この手順では、ホスト インターフェイス カード（HIC）の代わりに_I/O モジュール_という用語を使用します。</block>
+  <block id="80c20b828151ee676b7b9618527dbfbb" category="list-text">I/O モジュールの障害 LED （ 4 つのスロットすべて）が機能していません。常に消灯しているため、障害状態の確認には使用できません。</block>
+  <block id="4f3037ddb5c9b6c7a68504b5c92b8c80" category="paragraph">障害LEDはコントローラ上にあります：スロット1および2の障害LEDは、スロット2の右側にあります。スロット3および4の障害LEDは、スロット4の左側にあります。</block>
+  <block id="8fa282433ed64f048c8bda03d8c3a8f4" category="list-text">障害が発生したコントローラをシャーシから取り外す必要はありません。コントローラを取り付けたままI/Oモジュールにアクセスできるためです。</block>
+  <block id="b54d41dcdc297a1d3c688a796c1c2988" category="list-text">I/O モジュールのケーブルを抜く前に、障害のあるコントローラをオフラインにする必要があります。</block>
+  <block id="ef40daf4e99aa85c10b93245bfa2428b" category="section-title">ステップ1：I/Oモジュールの交換準備</block>
+  <block id="4a17540b2871c5addffeb5305fe834ca" category="paragraph">必要な工具と機器を揃え、ストレージ システムの構成データベースをバックアップして、I/O モジュールの交換に備えましょう。</block>
+  <block id="20408433c451f2765ea5960cbacdd5e1" category="section-title">ステップ3：I/Oモジュールを交換する</block>
+  <block id="f3d50818205db1d23cdaed8b0e86c827" category="paragraph">故障したI/Oモジュールからケーブルを抜き、交換用のI/Oモジュールに交換してから、交換用I/Oモジュールにケーブルを接続します。</block>
+  <block id="befdd23853982bc09987fc78ea428e05" category="section-title">手順4：コントローラをオンラインにする</block>
+  <block id="440fc355bde6ccb740bf9a234b02fb78" category="section-title">ステップ5：I/Oモジュールの交換を完了する</block>
+  <block id="d099df7ce339c15abb7692668d035fea" category="section-title">ステップ6：故障した部品をNetAppに返却する</block>
+  <block id="f2292d18df84a927d0a755993bb3e79a" category="summary">EF50またはEF80ストレージ システムのI/Oモジュールをアップグレードすることで、ホスト ポートの数を増やし、ネットワーク接続性を向上させ、システムのデータ トラフィック処理能力を拡張できます。</block>
+  <block id="e3d06cd515ac1a713a4b65d4d9fedf14" category="doc">I/O モジュールのアップグレード - EF50 および EF80</block>
+  <block id="7d75a38e03bd858df8db3610fb3acd51" category="list-text">既存のI/Oモジュールを交換するか、未使用のI/OスロットにI/Oモジュールを追加することで、I/Oモジュールをアップグレードできます。</block>
+  <block id="bfeba3c88f2dd8e9ae01db5901cb206f" category="paragraph">未使用のI/Oスロットには、熱問題の発生を防ぎ、EMC規格に準拠するために、ブランキングモジュールを取り付ける必要があります。</block>
+  <block id="6585307bb8265d1b09829c194403a0c5" category="list-text">I/O モジュールをアップグレードするには、準備を行い、両方のコントローラの電源をオフにし、両方のコントローラで I/O モジュールをアップグレードし、両方のコントローラの電源をオンにし、アップグレードが成功したことを確認し、必要に応じてホスト I/O モジュールのプロトコルを確認して変更します。</block>
+  <block id="313b01d3c012a9b875daa679af1fd1e7" category="paragraph">コントローラをシャーシから取り外す必要はありません。I/O モジュールはコントローラを取り付けたままアクセスできるためです。</block>
+  <block id="6a9a54592c082a4d23eb9e7d33336774" category="list-text">I/O モジュール ケーブルを抜く前に、両方のコントローラの電源を切ってください。</block>
+  <block id="942a0d6d365ab89aa795546b027df675" category="section-title">ステップ1：I/Oモジュールのアップグレードの準備</block>
+  <block id="fae136faafe232f4c4c3c8658cf61083" category="paragraph">I/O モジュールのアップグレードに備えるため、ダウンタイム メンテナンス期間をスケジュールし、必要なツールと機器を準備し、ストレージ システムの構成データベースをバックアップしてください。</block>
+  <block id="b8a7b4e576fb6085fc7818fc9cb8c107" category="section-title">手順2：両方のコントローラの電源をオフにします</block>
+  <block id="a0cebc91cd2b7996fba58618827eb72a" category="paragraph">ストレージ システム内の両方のコントローラの電源をオフにして、両方のコントローラの I/O モジュールを安全にアップグレードできるようにします。</block>
+  <block id="5c015311100b4946d20548386d241f50" category="section-title">ステップ3：I/Oモジュールをアップグレードする</block>
+  <block id="be1eb8f42694658bd7278f9f7905158c" category="paragraph">アップグレードするI/Oモジュールからケーブルを抜き（I/Oブランキングモジュールを使用している場合を除く）、I/OモジュールまたはI/Oブランキングモジュールを新しいI/Oモジュールに交換し、新しいI/Oモジュールをケーブルで接続します。</block>
+  <block id="0c3d18807d72e6a0351a3c2e490bcc31" category="section-title">手順 4：両方のコントローラの電源をオンにする</block>
+  <block id="ad6f3292eff5c6b917f69ae8c2ddbac6" category="paragraph">両方のコントローラの電源をオンにします。</block>
+  <block id="3a959d60be14e56f6c7451b1cfba02bb" category="section-title">ステップ5：I/Oモジュールのアップグレードを完了する</block>
+  <block id="31b3537334efd47611c131002c33e74d" category="paragraph">SANtricity System Managerを使用して、最新バージョンのSANtricity OSがインストールされていることを確認し、すべてのボリュームがそれぞれの所有コントローラに戻されていることを確認し、操作を再開できるようにサポートデータを収集し、必要に応じてホスト I/Oモジュールのプロトコルを確認して変更します。</block>
+  <block id="f92ca7c242e5a71bd3eb549d5c5bcb20" category="summary">EF50またはEF80ストレージシステムのハードウェアを適切にメンテナンスすることで、長期的な信頼性と最適なパフォーマンスを確保できます。故障した部品の交換など、定期的なメンテナンス作業を実施してください。これにより、ダウンタイムやデータ損失を防ぐことができます。</block>
+  <block id="862bd6d24dd0f13ccfd37178cbd8bf90" category="doc">メンテナンス手順の概要 - EF50 および EF80</block>
+  <block id="fb0c3f0aa959723c48eb4727c35a9046" category="paragraph">メンテナンス手順では、EF50またはEF80ストレージ システムがSANtricity環境にすでに導入されていることを前提としています。</block>
+  <block id="82ffa69e587186e368733ebdc76144cb" category="paragraph">EF50またはEF80ストレージ システムでは、以下のコンポーネントに対してメンテナンス手順を実行できます。</block>
+  <block id="9bbf373797bf7cf7ba62c80023682e25" category="inline-link-macro">コントローラ</block>
+  <block id="dceb619599d0aa6d9d89d0abf54e0b37" category="paragraph"><block ref="dceb619599d0aa6d9d89d0abf54e0b37" category="inline-link-macro-rx"></block></block>
+  <block id="683e240b7b471a69fe0c3c498ffcd133" category="paragraph">コントローラは、基板、ファームウェア、およびソフトウェアで構成されます。ドライブを制御し、SANtricity OSソフトウェアを実行します。</block>
+  <block id="cf3978c4f41003aa5f5fa0b3f484dfbe" category="inline-link-macro">DIMM</block>
+  <block id="57a64598a9ce65521278654300cbc21d" category="paragraph"><block ref="57a64598a9ce65521278654300cbc21d" category="inline-link-macro-rx"></block></block>
+  <block id="577d2d3976799dbcd1fc23ee08a572cc" category="paragraph">デュアルインラインメモリモジュール（DIMM）は、コンピュータメモリの一種です。コントローラマザーボードにシステムメモリを追加するためにインストールされます。</block>
+  <block id="f2c6151d6c0d99f3666129b97e2100f5" category="inline-link-macro">ドライブ</block>
+  <block id="5d7bf1cac3020aecc9e419835da60990" category="paragraph"><block ref="5d7bf1cac3020aecc9e419835da60990" category="inline-link-macro-rx"></block></block>
+  <block id="8c2694371a75dd052d8b2e0cd66496fc" category="paragraph">ドライブは、データに必要な物理ストレージを提供するデバイスです。</block>
+  <block id="add0180387a0985c32471180b375b8d9" category="inline-link-macro">ファン</block>
+  <block id="48fa76b6ceef78de919d0c14de5c1e8e" category="paragraph"><block ref="48fa76b6ceef78de919d0c14de5c1e8e" category="inline-link-macro-rx"></block></block>
+  <block id="90173eb1ed454afdf58b9269bb20c2b9" category="paragraph">ファンがコントローラとドライブを冷却します。</block>
+  <block id="6dc123cb91289ee9a0c4db08f205d8dc" category="inline-link-macro">I/O モジュール</block>
+  <block id="1cec3a4ecd2d4b7c8580770e953af5c3" category="paragraph"><block ref="1cec3a4ecd2d4b7c8580770e953af5c3" category="inline-link-macro-rx"></block></block>
+  <block id="807b26d7111f209057a30d265b88f6ae" category="paragraph">I/O モジュール（Input/Output モジュール）は、コントローラと、コントローラとのデータ交換を必要とする様々なデバイスやシステムとの間の仲介役として機能するハードウェア コンポーネントです。</block>
+  <block id="d138e90428f37a60387c8577b6e009b8" category="inline-link-macro">NVバッテリー</block>
+  <block id="42e36784b087ac0d890c7f6dabed6982" category="paragraph"><block ref="42e36784b087ac0d890c7f6dabed6982" category="inline-link-macro-rx"></block></block>
+  <block id="7399f29b34d3f088dfc5e1147d31fb9f" category="paragraph">不揮発性メモリ（NVMEM）バッテリーは、電源喪失後、転送中のデータがフラッシュメモリにデステージされている間、NVMEMコンポーネントに電力を供給する役割を果たします。</block>
+  <block id="95ab97eb0fe2b20f23eb848c59d681ac" category="paragraph"><block ref="95ab97eb0fe2b20f23eb848c59d681ac" category="inline-link-macro-rx"></block></block>
+  <block id="517e65cbfa02ca306eec69200485822d" category="paragraph">電源装置は、コントローラに冗長電源を提供します。</block>
+  <block id="3d7672bcb38d18989e39f972e1f11656" category="summary">EF50またはEF80ストレージ システムのNVバッテリは、充電が低下したり故障したりした場合は交換してください。NVバッテリは、停電時に重要なシステム データを保護する役割を担っています。</block>
+  <block id="d8c568441978a950cb6bffddff68ef00" category="doc">NVバッテリの交換 - EF50およびEF80</block>
+  <block id="e88aa91b6c2cdd74449e01fb276220d4" category="list-text">NVバッテリーを交換するには、準備を行い、故障したコントローラをオフラインにし、コントローラを取り外し、バッテリーを交換し、コントローラを再取り付けし、オンラインにし、交換を完了し、故障した部品をNetAppに返却します。</block>
+  <block id="80e937eeb581acc45452bbd5771394ad" category="section-title">ステップ1：NVバッテリの交換準備をする</block>
+  <block id="456b055ed2f4157d2dfa8258fdc82373" category="paragraph">NV バッテリの交換準備として、NV バッテリの交換が必要であることを確認し、対処すべき他のストレージ システムの問題がないことを確認し、ボリュームが正しい状態であることを確認し、必要なツールと機器を準備し、ストレージ システムの構成データベースをバックアップしてください。</block>
+  <block id="35d08c0779d9e8f3a641ec1a7f861a7d" category="section-title">ステップ4：NVバッテリーを交換する</block>
+  <block id="b872d46d1b1391643aea9ed8377ec3e1" category="paragraph">障害が発生したコントローラ内の故障したNVバッテリを特定して交換します。</block>
+  <block id="8bd15bb00c8a8a4e533704a40a89b456" category="section-title">ステップ7：NVバッテリの交換を完了する</block>
+  <block id="349183e8ca3928a2b870cc77a10e1248" category="summary">EF50またはEF80ストレージ システムの電源装置ユニット（PSU）に障害が発生した場合や故障した場合は交換し、システムが安定した動作に必要な電力を継続的に受け取れるようにします。</block>
+  <block id="dceeff04d941cbb6cd1ccef359f31bcc" category="doc">電源装置の交換 - EF50およびEF80</block>
+  <block id="37cc75713523b3a835397946c3cd7732" category="list-text">Recovery Guruで詳細を確認し、電源に問題があることを確認してください。</block>
+  <block id="654ef16eef9220dfb025e429508a6e88" category="list-text">電源ユニットの注意（オレンジ色）LEDが点灯していることを確認します。これは、電源ユニットまたは内蔵ファンに障害があることを示しています。</block>
+  <block id="2a05f53d4bb59b1be52dceab0bed35c9" category="paragraph">Recovery Guruで*再確認*を選択して、他に問題がないか確認してください。</block>
+  <block id="74e6d9631e10aa772749f20a5a8dc455" category="list-text">交換用電源装置</block>
+  <block id="02bd64844fca45ee306a2ba6447ae65a" category="list-text">電源装置に障害が発生した場合は、ストレージ システムに冗長電源を確保するために、できるだけ早く交換する必要があります。</block>
+  <block id="65937acdb7ff33c26f402341b49fbd3d" category="list-text">電源を交換するには、故障した PSU から電源コードを抜き、交換してから電源コードを再接続します。</block>
+  <block id="ac00a3fbb58d5d1ef60315598a07c427" category="image-alt">タブを押してバッテリーのロックを解除します</block>
+  <block id="3c05df7462b23b6c10e264df1a62b979" category="paragraph"><block ref="3c05df7462b23b6c10e264df1a62b979" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bd4cb93e7de73428d0302a4304ba8680" category="paragraph"><block ref="bd4cb93e7de73428d0302a4304ba8680" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1901d33751b197b105a90f9b18a4dea2" category="list-text">SANtricity System Managerで、メニューから「Storage」→「Operations in Progress」を選択します。次のステップに進む前に、すべての操作が完了するまでお待ちください。</block>
+  <block id="98d0f7dd59308ff3880b540cac190b75" category="list-text">* Support Resources * タイルを選択します。</block>
+  <block id="f387869f7a557e1cc8219cc95cc27aab" category="list-text">SANtricity System Manager のホームページから、メニュー：Storage[Operations in Progress]を選択します。</block>
+  <block id="677e17d0f6af629e3c51089d951e8804" category="list-text">SANtricity System Managerのホームページから、メニュー：Storage[Operations in Progress]を選択します。次の手順に進む前に、すべての処理が完了するまで待ちます。</block>
+  <block id="de358e2366c759734e9ef11bca18e0f0" category="section-title">EF50、EF80、および E4000 プラットフォーム TR</block>
+  <block id="8fadf6f06c1c7141b3d1d50a3f04de9b" category="inline-link">*TR-5017：EF80 アレイの機能概要*</block>
+  <block id="a50dc4bc58fc9aeb344f5c50afe5bd3d" category="cell"><block ref="a50dc4bc58fc9aeb344f5c50afe5bd3d" category="inline-link-rx"></block></block>
+  <block id="471c08271cbd79cec487c18217043cf8" category="inline-link">*TR-5018：EF50 アレイの機能概要*</block>
+  <block id="76a2bf2a2e94949266b4f433d9e7dec4" category="cell"><block ref="76a2bf2a2e94949266b4f433d9e7dec4" category="inline-link-rx"></block></block>
+  <block id="df9d0224acf659f41bfbe698c857e7d9" category="cell">EF80のハードウェアおよびソフトウェア機能と最新のSANtricity OSの機能について説明します。</block>
+  <block id="09de21b70314692a1e1ddf19936baa87" category="cell">EF50オールフラッシュ アレイのハードウェアおよびソフトウェア機能と、最新のSANtricity OS機能について説明します。</block>
+  <block id="24235092ddcc9f87c101c022c66fc071" category="section-title">レガシープラットフォーム TR</block>
+  <block id="23802a859f6ae1b445ff1966bda32d98" category="cell">EF600 オールフラッシュ アレイのハードウェアおよびソフトウェア機能と、新しい SANtricity OS の機能について説明します。</block>
+  <block id="8256681282922e6be84f144c3e473c30" category="cell">EF300オールフラッシュ アレイのハードウェアおよびソフトウェア機能と新しいSANtricity OS機能について説明します。</block>
+  <block id="db5e8529b3d3c60d7eb8b977e1849f12" category="cell">E2800ハイブリッドアレイのハードウェアおよびソフトウェア機能と最新のSANtricity OSの機能について説明します。</block>
+  <block id="742fc41c7d55420b012c2f61a7b1fb34" category="cell">E5700製品情報について説明します。最新バージョンのSANtricityで導入された新しいハードウェアおよびソフトウェア機能も含まれています。</block>
+  <block id="081f7c88129f20a8400b03d02acb95ef" category="summary">ラックマウント用ハードウェアは、ハードウェアをラックやキャビネットに取り付けるために使用されます。ラックマウント用ハードウェアの箱には、取り付け手順書が同梱されているはずです。ただし、取り付け手順を確認する必要がある場合は、下記の該当するリンクをご利用ください。</block>
+  <block id="34eec1fae6323a8e4f97ad347dfd919c" category="doc">ラックマウント用ハードウェア - Eシリーズ</block>
+  <block id="d2bcf423a50f5653cd8acd2d0df3c786" category="paragraph">ラックマウント用ハードウェアは、ストレージシステムをラックやキャビネットに設置するために使用されます。ラックマウント用ハードウェアの箱には、取り付け手順書が同梱されているはずです。ただし、取り付け手順を確認する必要がある場合は、下記の該当するリンクをご利用ください。</block>
+  <block id="07dcaef6380ad89d6b40baeb5fe12386" category="paragraph">最新のストレージシステムでは、サポートされているラックマウントハードウェアを確認するには、NetApp Hardware Universeを参照してください<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>。</block>
+  <block id="ef76083b2a817d43d97a99b5c1ab84de" category="inline-link">SuperRailを4本柱のラックに取り付けます</block>
+  <block id="def756057f2e0bcb61c48d1b9b91e88a" category="paragraph">アクセス<block ref="7c995aee9e99f0106e0939755e02170a" category="inline-link-rx"></block>。</block>
+  <block id="f18295dddf592b09ebe3ecb8198400f5" category="open-title">EF280およびEF50コントローラ モデル</block>
+  <block id="da53e25fac17ed4b3598ecf27a51f580" category="inline-link-macro">EF50およびEF80 - ステップ7：コントローラの取り付け</block>
+  <block id="4434988acf524d96633e90e0f6f754ca" category="paragraph">新しいEF80およびEF50コントローラのインストールに関する情報については、<block ref="345c0319eb4d606a371b99e69dba5aef" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="2372045f1c00945f73e802f5f900ce1f" category="open-title">他のEシリーズコントローラ モデル</block>
+  <block id="fc4c28bdfff97e04c0abc7b5eacb89e7" category="list-text">* EF50およびEF80のミラー ケーブル配線*</block>
+  <block id="21cc022125303ee507deea7548b5dcdb" category="paragraph">EF80およびEF50システムは高速200GbE/100GbEの外部接続により、2つのコントローラ間のコントローラ間通信が可能になります。各コントローラには、スロット4に専用のインターフェース カードが搭載されています。このカードは2つのポートを備えており、システムには0.5mの200GbEケーブルが2本付属しています。</block>
+  <block id="b0bede6c9377df6d183f97279899a84f" category="paragraph">これらのケーブルを使用して、コントローラーのポートを以下のように接続してください：</block>
+  <block id="9c1ee96eedeec477f6b838b7b363c31b" category="list-text">コントローラAのポートe4aからコントローラBのポートe4a</block>
+  <block id="cab9ad8281ff22baa132aab94b6f32fb" category="list-text">コントローラAのポートe4bからコントローラBのポートe4b</block>
+  <block id="c7d53650f3917ef2b9428155109bc900" category="admonition">ケーブルの接続は、説明どおりに正確に行うことが非常に重要です。詳細については、<block ref="3b7ab90f06bb9d32e376349f50ba2152" category="inline-link-rx"></block>を参照してください。</block>
+  <block id="e9b2fff16e7657bafb7580bf84badce7" category="paragraph">コントローラ間の通信には、他のホスト ポート（スロット1、スロット2、またはスロット3）を使用しないでください。これらはサポートされていません。EF50およびEF80アレイを正しく動作させるには、コントローラ間の適切なケーブル接続が不可欠です。</block>
+  <block id="4ba0a69e8f5142ca314982a9994e29f5" category="open-title">EF50およびEF80コントローラのアップグレード互換性</block>
+  <block id="7a4b6bdd0b51c5a96d9cfe09dc272966" category="cell">EF300からEF50またはEF80</block>
+  <block id="6063afe46ba92ef601b9b32789169cd8" category="list-text">EF50とEF80は、デュプレックス構成のみをサポートしています。</block>
+  <block id="ec93e6ce8af3fc96dca794d8be12360a" category="list-text">EF50およびEF80は64Gb Fibre Channelホスト インターフェイス カードをサポートします</block>
+  <block id="33251a923b1a509958c658fb36f199b3" category="list-text">EF80 はデュアル 200Gbe NVMe over RoCE および NVMe over Infiniband ホスト インターフェイス カードをサポートします</block>
+  <block id="206beb0a8bbb60504cfc6cbab46d5f34" category="list-text">EF50およびEF80は、コントローラあたり最大24台のNVMeドライブをサポートします</block>
+  <block id="42751e79e966a0fe96552c1a07a45596" category="list-text">EF50およびEF80は、TLCおよびQLC NVMeドライブ構成をサポートしています</block>
+  <block id="1ad6b4858d4c3e09a3e2797cdb500f04" category="list-text">EF50およびEF80はベースボード ホスト ポートをサポートしていません</block>
+  <block id="87c7e7a2d481ccd7b4ed54aeb79f20cb" category="list-text">EF50およびEF80は、同期ミラーリングまたは非同期ミラーリングをサポートしていません。</block>
+  <block id="4762b632235aed94daad2a5bc1771e4b" category="list-text">EF50およびEF80はRemote Storage Volumesをサポートしていません</block>
+  <block id="a2e0d74fd53fb0d21de03183f2c78bc4" category="list-text">EF50およびEF80は、シンプロビジョニングボリュームをサポートしていません。</block>
+  <block id="9cfea1bb9e1014a42c39daecf62a47de" category="list-text">EF50は最大2枚のhost interface cardをサポートし、EF80は最大3枚のhost interface cardをサポートします。</block>
+  <block id="0a99fe14d85ff8506bf291475fa128a5" category="admonition">EF300からEF50またはEF80にアップグレードする場合、SANtricity System Managerのユーザーインターフェイスを使用してホストプロトコルを設定できます。詳細については、<block ref="2b1779a97b74f646b7f4e0d2ea7d75e0" category="inline-link-rx"></block>を参照してください。</block>
+  <block id="1f0911d54059484e987c7e36bc15c3e1" category="list-text">EF50およびEF80はSAS拡張をサポートしていません。</block>
+  <block id="d672a46d709a93dd1700cc71f2727f33" category="cell">EF600からEF80へ</block>
+  <block id="582a6652312e7d481febfe59bd6caf40" category="list-text">EF80はデュプレックス構成のみをサポートします</block>
+  <block id="ca1c5ed7eda3a31773fea15341e1215d" category="list-text">EF80は64Gb Fibre Channelホスト インターフェイス カードをサポートします</block>
+  <block id="58b56ee156843e197b7925eaf83c5686" category="list-text">EF80はコントローラあたり最大24台のNVMeドライブをサポートします</block>
+  <block id="1c59414033cf253bbfe93b9a24e48c2c" category="list-text">EF80はベースボード ホスト ポートをサポートしていません</block>
+  <block id="5e25cbd1fcc5ab86c5b4d4be2cc2c9d6" category="list-text">EF80は同期ミラーリングまたは非同期ミラーリングをサポートしていません</block>
+  <block id="fdec69be1d337d0a56258c3664fa8a98" category="list-text">EF80はリモート ストレージ ボリュームをサポートしていません</block>
+  <block id="f2edbcbed514cfdd6754a2f40f13db4b" category="list-text">EF80はシンプロビジョニングボリュームをサポートしていません</block>
+  <block id="00ca182480baeeccf3bcb6bb5c1f98c3" category="list-text">EF80は最大3枚のホスト インターフェイス カードをサポートします。</block>
+  <block id="0265b5dbf554054dde3a98afc886c622" category="admonition">EF600からEF80にアップグレードする場合、SANtricity System Managerのユーザーインターフェイスを使用してホストプロトコルを設定できます。詳細については、<block ref="b4bee00978fbe62a1f735b787be3116c" category="inline-link-rx"></block>を参照してください。</block>
+  <block id="353b820726dde980fadda7f3d579a641" category="list-text">EF80はSAS拡張をサポートしていません。</block>
+  <block id="dafff188f3a06d1fdaa68a607c17f832" category="inline-link-macro">EF50およびEF80 - ステップ1：コントローラを取り外す</block>
+  <block id="a5e57f188bcd8ee5650622c76daaf7ef" category="paragraph">EF280およびEF50ストレージ システムからコントローラを取り外す方法については、<block ref="29089e25df4bea78aa196aee147175c2" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="d789ee5d8d5244777090beeda7a82875" category="list-text">ヘルスチェックが完了したら、各行の右側にある省略記号（…）をクリックして、詳細情報を表示したり、その他のタスクを実行したりできます。</block>
+  <block id="ac5947d69f7ee9f8d3f2e9ee0483a85b" category="list-text">「自己署名証明書の解決」ダイアログボックスが開いた場合は、信頼されていない証明書について表示されている情報を確認してください。さらに詳しい情報が必要な場合は、表の一番右端にある省略記号をクリックし、ポップアップメニューから*View*を選択してください。</block>
+  <block id="f95817b2bc0b41d0e6a92b658b3204e4" category="list-text">ページから証明書を選択し、行末にある省略記号をクリックします。</block>
+  <block id="57e6a2c38c0c83841001bc8084252a54" category="list-text">行の右端にある省略記号を選択し、ポップアップ メニューから*ストレージ アレイの名前変更*を選択します。</block>
+  <block id="2bcb50ee17148fb9fd0603f1ac802486" category="list-text">証明書に関する詳細情報を表示するには、該当する行を選択し、行末尾の省略記号を選択してから、*View*または*Export*をクリックします。</block>
+  <block id="b65e70a586056d9f45f1ba1eca4b2d5e" category="paragraph">次の表は、EF80、EF50、E4000、EF300、EF600、E2800/EF280、およびE5700/EF570コントローラの組み込み管理向けの最新のSANtricity OSリリースにおける新機能について説明しています。</block>
+  <block id="5de3bf25939bdfa37414108f0d590980" category="section-title">バージョン12.0の新機能</block>
+  <block id="ff0fa97cb252835f443a15ae7e9b46d4" category="admonition">SANtricity OS 12.0リリースは、新しいEF80およびEF50オールフラッシュ ストレージ システムとのみ互換性があります。</block>
+  <block id="bf183e9df2b499bf43a8c68e4fec9235" category="paragraph">新しいストレージ システム モデル – EF80およびEF50オールフラッシュ ストレージ システム</block>
+  <block id="5c6dee44700e6c5c47a1e1f079ae7fce" category="paragraph">今回のリリースでは、EF80およびEF50オールNVMeフラッシュ ストレージ システムが導入されました。EF80およびEF50は、24台のNVMe SSDドライブと、コントローラごとに1枚のホスト インターフェイス カード（HIC）をサポートします。サポートされているNVMe over Fabricsホスト インターフェイスには、NVMe over RoCE、EF80用のNVMe over IB、およびEF50用のNVMe over FCが含まれます。サポートされているSCSIインターフェイスには、Fibre Channelが含まれます。</block>
+  <block id="6f8772ffc1694efdc2041680c31dc990" category="paragraph">EF80およびEF30は、30TBまたは60TBの大容量NVMe SSDドライブにも対応しています。EF80およびEF30は、ダイナミックディスクプールでの使用のみに対応しており、従来のRAIDには対応していません。</block>
+  <block id="786003cdc863f3aad3e6d8b6bfb3da10" category="paragraph">SANtricity System Manager の新しいユーザーインターフェイス</block>
+  <block id="22b06c9a9c11b263cfc8b70ea106720b" category="paragraph">新しいEF80およびEF50コントローラーの場合、SANtricity System Managerのユーザーインターフェイスが、よりモダンな外観と操作性を実現するために再設計されました。新しいインターフェイスには、左側のパネルナビゲーションと、管理タスクを効率化するための使いやすさの向上が含まれています。</block>
+  <block id="33c4e4a69bd4b16424ffdb3de34b0af4" category="paragraph">サーバー証明書のサブジェクト代替名（SAN）には、文字、数字、ハイフンのみが使用可能になりました</block>
+  <block id="817a0c8fef1c872c585c0d94e85a802a" category="paragraph">SANtricity System ManagerまたはUnified Managerでサーバ証明書を作成または編集する際、Subject Alternative Names（SANs）フィールドには英字、数字、ハイフンのみが許可されるようになりました。この変更により、セキュリティが強化され、SSL/TLS証明書の業界標準との互換性が確保されます。</block>
+  <block id="98fb326bd031cfdd062648c1e4359ef9" category="paragraph">SSDおよびNVMeベースのシステムでは、ダイナミックディスクプールのセグメントサイズがデフォルトで32Kになりました</block>
+  <block id="1970e3f7efbd3974c3dc8ec9d2745647" category="paragraph">SSDおよびNVMeベースのシステムにおけるDynamic Disk Poolの場合、デフォルトのセグメントサイズが32Kに変更されました。以前は、これらのシステムにおけるdynamic disk poolのデフォルトのセグメントサイズは128Kに固定されていました。この変更により、小規模なI/O操作と大規模なI/O操作が混在するワークロードのパフォーマンスが最適化されます。</block>
+  <block id="acc2a3dd457f3b89ae3e07ece78ae970" category="paragraph">スクリプトエディタがSANtricity System Managerで利用可能になりました</block>
+  <block id="286df7907589603c59edb63682f9667f" category="inline-link-macro">スクリプト エディタを使用する</block>
+  <block id="171f0d90684ea668d5afe1022c27fb99" category="paragraph">新しいスクリプトエディタがSANtricity System Manager内で利用可能になりました。スクリプトエディタを使用すると、スクリプトファイルの作成や編集、スクリプトファイルのストレージ管理ステーションのローカルディスクへの保存、またはディスクからのスクリプトファイルの読み込みを行うことができます。スクリプトエディタは、ストレージシステムの管理に必要な構文チェック機能とコマンド実行機能を提供します。詳細については、<block ref="c2af2b5868d8fcf6c64d5f4e052c1d4f" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="2b21cb9530a6c7704a66108d45c196a1" category="inline-link-macro">ダウンロード可能なSMcliコマンドライン パラメータ</block>
+  <block id="c7b277569ea9232e1708c189c4c38af7" category="paragraph">新しい<block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix=" " category="inline-code"></block>パラメータがSMcliで利用可能になりました。この新しいパラメータを使用すると、ストレージ アレイに関連付けられているすべてのSCSIネイティブ ブロック デバイスを検索できます。詳細については、<block ref="391452592dd6d4101b3a240969ca8672" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="a5302be9e5d09f8d45fab47dcbe1907c" category="inline-link-macro">iSCSI統計パッケージの表示</block>
+  <block id="809701d680e9fe62bb27c816be37d1ce" category="paragraph">システムマネージャの「iSCSI統計パッケージの表示」ページに、新しい「イーサネットカーネル統計」オプションが追加されました。この新しいオプションを使用すると、iSCSIデバイスのプラットフォームカーネルドライバの統計情報を表示できます。詳細については、<block ref="e06656598852b432960957ceca80ecb8" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="38833d44319a29abce252a75db2a1f8b" category="sidebar">SANtricity System Manager 12.0</block>
+  <block id="12552cabe7cc02a88100da5f5c4c0b2d" category="sidebar">SANtricity Unified Manager 8</block>
+  <block id="c91faa8fa5379f94c18777a9515b9168" category="sidebar">NVMe over RoCE 固有のタスクを実行する</block>
+  <block id="477a44c679560f083fcea73a8a50959d" category="sidebar">EF50およびEF80</block>
+  <block id="706c1d4933d296d42d61b064f4e637ae" category="sidebar">インストール ワークフロー</block>
+  <block id="2b4c30fb054686456c65fcf2f769f659" category="sidebar">インストールの準備</block>
+  <block id="ea6245a5aad1d347d3bfd8727ccbe15c" category="sidebar">ケーブルハードウェア</block>
+  <block id="7b2ca066e862da1c95471b425468af14" category="sidebar">システムの電源をオンにする</block>
+  <block id="fad3eebd1aa676638de5e9e932b52f40" category="sidebar">システムセットアップを完了する</block>
+  <block id="7dd431cc03f43f663695fa547eddc199" category="sidebar">メンテナンスの概要</block>
+  <block id="2c7a7771e539f2607f0d26dda217a9ea" category="sidebar">EF50およびEF80コントローラ</block>
+  <block id="4f46fe04ed7debd30ef1d3c151e24935" category="sidebar">コントローラの交換ワークフロー</block>
+  <block id="e7fc429a9fe4efe32f4c14434a1cf635" category="sidebar">システムの準備</block>
+  <block id="e675b7845041d1a89668c289f7f49020" category="sidebar">オフライン コントローラ</block>
+  <block id="9c21b9a95e80e599c60b7012bb970a3f" category="sidebar">オンライン コントローラ</block>
+  <block id="40b375b6007e5a697e97e419f1fb91c5" category="sidebar">コントローラ交換後の処理</block>
+  <block id="940fc0b5e0fa8e55af3a0a0a14398e22" category="sidebar">EF50およびEF80 I/Oモジュール</block>
+  <block id="1ca4e63b42d944e09b1132b7f6f56b66" category="sidebar">I/Oモジュールの概要</block>
+  <block id="db77cc51d1e45daf8e890b492be12264" category="sidebar">I/Oモジュールを交換する</block>
+  <block id="f026d0a834b5192638b18ee631266375" category="sidebar">I/Oモジュールをアップグレードする</block>
+  <block id="fe377799fa9a443d32452d6d45334541" category="sidebar">I/Oモジュール ホスト プロトコル</block>
 </blocks>
