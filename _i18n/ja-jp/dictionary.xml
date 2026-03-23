@@ -5939,7 +5939,6 @@
   <block id="50d72a9168ff12be707b9a6df88aff51" category="paragraph">E2860 、 E5760 、または DE460 の各ストレージシステムを 2 ポストラックまたはネットアップシステムキャビネットにインストールする方法について説明します。</block>
   <block id="1759ad5628dc48bcbb4047581abc3ad3" category="paragraph">ラックマウントハードウェアに手順書が付属している場合は、説明書を参照してレールの取り付け方法を確認してください。その他のラックマウント手順については、を参照してください <block ref="d52e431030e2f3e076bf966941775b1c" category="inline-link-macro-rx"></block>。</block>
   <block id="2222f7f1fb65f3c37db013addee24d45" category="admonition">角穴キャビネットの場合は、最初に付属のケージナットを取り付けて、シェルフの前面と背面をネジで固定する必要があります。</block>
-  <block id="46e9881ea158268bc1b45e5e23f0d6d8" category="admonition">空のシェルフの重量は、約 60kg （ 132 ポンド）です。空のシェルフを安全に移動するには、電動リフトまたはリフトハンドルを使用した 4 人で運搬する必要があります。</block>
   <block id="7f91b3bbd1281f9b80cef4d909c6db05" category="list-text">シェルフを手で持ち上げる場合は、 4 つのリフトハンドルを取り付けます。各ハンドルをカチッと所定の位置に収まるまで押し上げます。</block>
   <block id="f8a163eecaf819af57298c9a255ffb1c" category="list-text">シェルフを底から支えながら、キャビネットにスライドさせます。リフトハンドルを使用する場合は、シェルフがキャビネットにスライドする間、一度に 1 セットずつ取り外します。ハンドルを取り外すには、リリースラッチを後方に引き、押し下げてシェルフから引き出します。</block>
   <block id="8f57d3a728dbee93c91f52df708a0f03" category="list-text">ドライブを取り付けます。</block>
@@ -8390,7 +8389,6 @@
   <block id="761cf09b3611d19694e4252d15e1966c" category="paragraph"><block ref="761cf09b3611d19694e4252d15e1966c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6c3dcb573d56a5a30ff50b77529d877d" category="paragraph"><block ref="6c3dcb573d56a5a30ff50b77529d877d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a001b169c43b4d43c428e192c798f2d8" category="summary">2ポストラックまたはNetAppシステムキャビネットにE4060またはDE460Cストレージシステムを設置する方法について説明します。</block>
-  <block id="0fad8e68b65c361bdee769f9dbd44528" category="admonition">空のシェルフの重量は、114.91 kg（253.33ポンド）です。空のシェルフを安全に移動するには、電動リフトまたはリフトハンドルを使用した 4 人で運搬する必要があります。</block>
   <block id="003208e55218399fa55767bab82a621b" category="paragraph"><block ref="003208e55218399fa55767bab82a621b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b256a5fe8f6f56f5347aa122890f5806" category="inline-image-macro">セキュアシェルフ</block>
   <block id="9f0aa011ca589af7af02bb2e87f91985" category="paragraph"><block ref="9f0aa011ca589af7af02bb2e87f91985" category="inline-image-macro-rx" type="image"></block></block>
@@ -10691,4 +10689,5 @@
   <block id="d37b8d3a8d7d50a2d15245479531c53d" category="section-title">バージョン12.00の新機能</block>
   <block id="631e6d7ea44751bbf0471574f75f550e" category="admonition">SANtricity OS 12.00リリースは、新しいEF80およびEF50オールフラッシュ ストレージ システムとのみ互換性があります。</block>
   <block id="dcf1521fe2188852a3d1ae5493b83c24" category="sidebar">SANtricity System Manager 12.00</block>
+  <block id="24fe914c4c521099e3e5332138db4935" category="admonition">空の棚の重さは約134 lb（61 kg）です。空の棚を安全に移動するには、機械式リフトを使用するか、リフトハンドルを使って4人で作業する必要があります。</block>
 </blocks>
