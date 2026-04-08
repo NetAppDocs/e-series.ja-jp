@@ -10640,7 +10640,6 @@
   <block id="0265b5dbf554054dde3a98afc886c622" category="admonition">EF600からEF80にアップグレードする場合、SANtricity System Managerのユーザーインターフェイスを使用してホストプロトコルを設定できます。詳細については、<block ref="b4bee00978fbe62a1f735b787be3116c" category="inline-link-rx"></block>を参照してください。</block>
   <block id="353b820726dde980fadda7f3d579a641" category="list-text">EF80はSAS拡張をサポートしていません。</block>
   <block id="dafff188f3a06d1fdaa68a607c17f832" category="inline-link-macro">EF50およびEF80 - ステップ1：コントローラを取り外す</block>
-  <block id="a5e57f188bcd8ee5650622c76daaf7ef" category="paragraph">EF280およびEF50ストレージ システムからコントローラを取り外す方法については、<block ref="29089e25df4bea78aa196aee147175c2" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="d789ee5d8d5244777090beeda7a82875" category="list-text">ヘルスチェックが完了したら、各行の右側にある省略記号（…）をクリックして、詳細情報を表示したり、その他のタスクを実行したりできます。</block>
   <block id="ac5947d69f7ee9f8d3f2e9ee0483a85b" category="list-text">「自己署名証明書の解決」ダイアログボックスが開いた場合は、信頼されていない証明書について表示されている情報を確認してください。さらに詳しい情報が必要な場合は、表の一番右端にある省略記号をクリックし、ポップアップメニューから*View*を選択してください。</block>
   <block id="f95817b2bc0b41d0e6a92b658b3204e4" category="list-text">ページから証明書を選択し、行末にある省略記号をクリックします。</block>
@@ -10690,4 +10689,6 @@
   <block id="631e6d7ea44751bbf0471574f75f550e" category="admonition">SANtricity OS 12.00リリースは、新しいEF80およびEF50オールフラッシュ ストレージ システムとのみ互換性があります。</block>
   <block id="dcf1521fe2188852a3d1ae5493b83c24" category="sidebar">SANtricity System Manager 12.00</block>
   <block id="24fe914c4c521099e3e5332138db4935" category="admonition">空の棚の重さは約134 lb（61 kg）です。空の棚を安全に移動するには、機械式リフトを使用するか、リフトハンドルを使って4人で作業する必要があります。</block>
+  <block id="9e70d8ecbcfbe7711ec544e1649bcd7e" category="open-title">EF80およびEF50コントローラ モデル</block>
+  <block id="982b4a8532b7c0f3dfe46d6bac4642d5" category="paragraph">EF80およびEF50ストレージ システムからコントローラを取り外す方法については、<block ref="29089e25df4bea78aa196aee147175c2" category="inline-link-macro-rx"></block>を参照してください。</block>
 </blocks>
