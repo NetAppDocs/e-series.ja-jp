@@ -10685,10 +10685,12 @@
   <block id="e866b10ba89d5ee2fe179d93f938430c" category="inline-link">12.00 リリースノート</block>
   <block id="15df5baea5d41e42b8be265c67488ea8" category="list-text"><block ref="15df5baea5d41e42b8be265c67488ea8" category="inline-link-rx"></block></block>
   <block id="c9f4c41100461402ef108c1e6ccc6adf" category="paragraph"><block ref="c9f4c41100461402ef108c1e6ccc6adf" category="inline-link-rx"></block></block>
-  <block id="d37b8d3a8d7d50a2d15245479531c53d" category="section-title">バージョン12.00の新機能</block>
-  <block id="631e6d7ea44751bbf0471574f75f550e" category="admonition">SANtricity OS 12.00リリースは、新しいEF80およびEF50オールフラッシュ ストレージ システムとのみ互換性があります。</block>
   <block id="dcf1521fe2188852a3d1ae5493b83c24" category="sidebar">SANtricity System Manager 12.00</block>
   <block id="24fe914c4c521099e3e5332138db4935" category="admonition">空の棚の重さは約134 lb（61 kg）です。空の棚を安全に移動するには、機械式リフトを使用するか、リフトハンドルを使って4人で作業する必要があります。</block>
   <block id="9e70d8ecbcfbe7711ec544e1649bcd7e" category="open-title">EF80およびEF50コントローラ モデル</block>
   <block id="982b4a8532b7c0f3dfe46d6bac4642d5" category="paragraph">EF80およびEF50ストレージ システムからコントローラを取り外す方法については、<block ref="29089e25df4bea78aa196aee147175c2" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="0766a0860283ed4bfb84c83d84f27eb7" category="section-title">Version 12.0R1の新機能</block>
+  <block id="5daddfd6f05e5067c7a89f1710325e32" category="paragraph">このバージョンには軽微な変更のみが含まれており、新機能は追加されていません。このリリースの変更点の詳細については、Eシリーズ SANtricity OS 12.0R1 READMEを参照してください。</block>
+  <block id="5de3bf25939bdfa37414108f0d590980" category="section-title">バージョン12.0の新機能</block>
+  <block id="ff0fa97cb252835f443a15ae7e9b46d4" category="admonition">SANtricity OS 12.0リリースは、新しいEF80およびEF50オールフラッシュ ストレージ システムとのみ互換性があります。</block>
 </blocks>
