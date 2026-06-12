@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: NVMe volume physical, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: Linux のバージョンに基づいて、デバイスターゲットに転送される I/O を設定できます。 
 ---
-= EシリーズLinuxの物理NVMeデバイスターゲット用のNVMeボリュームへのアクセス（NVMe over RoCE）
+= ホストからEシリーズターゲットのNVMeボリュームへのアクセス - Linux（NVMe over RoCE）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -13,75 +13,96 @@ summary: Linux のバージョンに基づいて、デバイスターゲット�
 [role="lead"]
 使用している OS （および拡張マルチパス方式）に基づいて、デバイスターゲットに転送される I/O を設定できます。
 
-RHEL 8、RHEL 9、SLES 15の場合、I/OはLinuxホストによって物理NVMeデバイスターゲットに転送されます。ホストにはこのターゲットが単一の物理デバイスとして表示され、その物理パスはネイティブの NVMe マルチパス解決策で管理されます。
+RHEL 9、RHEL 10、SLES 15、およびSLES 16では、ネイティブNVMeマルチパスソリューションが、ホストによって表示される単一のNVMeデバイスの基盤となる物理パスを管理します。そのため、SCSIベースのデバイスマッパーマルチパス（DMMP）のようなマルチパスデバイスではなく、ホストのNVMeデバイスに直接I/Oを転送します。NVMeデバイスの設置場所の詳細は以下のとおりです。
 
 
 
-== 物理 NVMe デバイスは I/O ターゲットです
+== NVMeデバイスはI/Oターゲットです
 
-のリンクへのI/Oを実行することを推奨します `/dev/disk/by-id/nvme-eui.[uuid#]` 物理NVMeデバイスのパスに直接接続するのではなく `/dev/nvme[subsys#]n[id#]`。これら2つの場所間のリンクは、次のコマンドを使用して確認できます。
+. Eシリーズアレイからこのホストにマッピングされているボリュームを検索するには、次のコマンドを入力します。
++
+以下のコマンドを実行すると、ホスト上の低レベルNVMeデバイスの位置、そのデバイスがマッピングされているアレイの名前、ボリューム名、NSID、一意のボリュームID、現在の所有コントローラ、およびボリュームのサイズが表示されます。
 
++
+[listing]
+----
+# nvme netapp smdevices
+/dev/nvme0n1, Array Name creG63-FN, Volume Name 1, NSID 1, Volume ID 00001b7f606ec75100a0980000ed289e, Controller B, 1.10TB
+/dev/nvme0n2, Array Name creG63-FN, Volume Name 2, NSID 2, Volume ID 0000128a6a0d045500a0980000ed27f4, Controller A, 536.87GB
+/dev/nvme0n3, Array Name creG63-FN, Volume Name 3, NSID 3, Volume ID 00001b81606ec75b00a0980000ed289e, Controller B, 536.87GB
+/dev/nvme0n4, Array Name creG63-FN, Volume Name 4, NSID 4, Volume ID 0000128c6a0d045700a0980000ed27f4, Controller A, 214.75GB
+----
+.  `/dev/disk/by-id/nvme-eui.[Volume ID#]`のリンクに対してI/Oを実行します。
++
+ `/dev/disk/by-id/nvme-eui.[Volume ID#]`内のリンクは決定論的であり、変更されません。低レベルのNVMeデバイスの場所 `(/dev/nvme[subsys#]n[id#])`の使用は避けてください。変更される可能性があります。これら2つの場所間のリンクは、次のコマンドを使用して確認できます：
+
++
 [listing]
 ----
 # ls /dev/disk/by-id/ -l
-lrwxrwxrwx 1 root root 13 Oct 18 15:14 nvme-eui.0000320f5cad32cf00a0980000af4112 -> ../../nvme0n1
-----
-I/Oはに実行されます `/dev/disk/by-id/nvme-eui.[uuid#]` 直接渡されます `/dev/nvme[subsys#]n[id#]` このコンテナでは、ネイティブのNVMeマルチパス解決策 を使用して、その下にすべてのパスが仮想化されてい
 
-パスを表示するには、次のコマンドを実行します。
+lrwxrwxrwx 1 root root 13 May 19 15:07 nvme-eui.0000128a6a0d045500a0980000ed27f4 -> ../../nvme0n2
+lrwxrwxrwx 1 root root 13 May 19 15:07 nvme-eui.0000128c6a0d045700a0980000ed27f4 -> ../../nvme0n4
+lrwxrwxrwx 1 root root 13 May 19 15:07 nvme-eui.00001b7f606ec75100a0980000ed289e -> ../../nvme0n1
+lrwxrwxrwx 1 root root 13 May 19 15:07 nvme-eui.00001b81606ec75b00a0980000ed289e -> ../../nvme0n3
+----
+. NVMe デバイスへのパスを表示するには、 `nvme list-subsys`コマンドを使用します。
++
+ `/dev/disk/by-id/nvme-eui.[uuid#]`への I/O 実行は、ネイティブ NVMe マルチパスソリューションを使用してその下のすべてのパスが仮想化されている
+`/dev/nvme[subsys#]n[id#]``を直接通過します。
 
-[listing]
-----
-# nvme list-subsys
-----
-出力例：
-
-[listing]
-----
-nvme-subsys0 - NQN=nqn.1992-08.com.netapp:5700.600a098000a522500000000589aa8a6
-\
-+- nvme0 rdma traddr=192.4.21.131 trsvcid=4420 live
-+- nvme1 rdma traddr=192.4.22.141 trsvcid=4420 live
-----
-「 nvme list-subsys 」コマンドにネームスペースデバイスを指定すると、そのネームスペースへのパスに関する追加情報が提供されます。
-
++
 [listing]
 ----
 # nvme list-subsys /dev/nvme0n1
-nvme-subsys0 - NQN=nqn.1992-08.com.netapp:5700.600a098000af44620000000058d5dd96
+nvme-subsys0 - NQN=nqn.1992-08.com.netapp:EF80.600a098000ed28cb0000000062b24855
+               hostnqn=nqn.2014-08.org.nvmexpress:uuid:5257c202-9d94-ea11-b761-00000000003c
 \
- +- nvme0 rdma traddr=192.168.130.101 trsvcid=4420 live non-optimized
- +- nvme1 rdma traddr=192.168.131.101 trsvcid=4420 live non-optimized
- +- nvme2 rdma traddr=192.168.130.102 trsvcid=4420 live optimized
- +- nvme3 rdma traddr=192.168.131.102 trsvcid=4420 live optimized
+ +- nvme0 tcp traddr=10.10.10.101,trsvcid=4420,src_addr=10.10.10.100 live non-optimized
+ +- nvme1 tcp traddr=10.10.10.11,trsvcid=4420,src_addr=10.10.10.100 live non-optimized
+ +- nvme2 tcp traddr=10.10.20.201,trsvcid=4420,src_addr=10.10.20.200 live optimized
+ +- nvme3 tcp traddr=10.10.20.21,trsvcid=4420,src_addr=10.10.20.200 live optimized
+ +- nvme4 tcp traddr=10.10.20.39,trsvcid=4420,src_addr=10.10.20.200 live non-optimized
+ +- nvme5 tcp traddr=10.10.20.31,trsvcid=4420,src_addr=10.10.20.200 live non-optimized
+ +- nvme6 tcp traddr=10.10.10.49,trsvcid=4420,src_addr=10.10.10.100 live optimized
+ +- nvme7 tcp traddr=10.10.10.41,trsvcid=4420,src_addr=10.10.10.100 live optimized
 ----
-また、 multipath コマンドを使用して、ネイティブフェイルオーバーのパス情報も表示できます。
-
+. *オプション* - 従来のDevice Mapper Multipath（DMMP）コマンドを使用してネイティブフェイルオーバーのパス情報を表示するには、 `multipath -ll`コマンドを使用します。
++
 [listing]
 ----
 #multipath -ll
 ----
++
 
-NOTE: パス情報を表示するには、 /etc/multipath.conf で次のように設定する必要があります。
+NOTE: 従来の DMMP コマンドでパス情報を表示するには、 `/etc/multipath.conf`ファイルで以下を設定する必要があります：
 
++
 [listing]
 ----
-
 defaults {
-        enable_foreign nvme
+    enable_foreign nvme
 }
 ----
++
+*出力例*
 
-NOTE: これは RHEL 10 では動作しなくなります。RHEL 9 以前および SLES 16 以前で動作します。
-
-出力例：
-
++
 [listing]
 ----
-eui.0000a0335c05d57a00a0980000a5229d [nvme]:nvme0n9 NVMe,Netapp E-Series,08520001
+eui.0000a0335c05d57a00a0980000a5229d [nvme]:nvme0n9 NVMe,Netapp E-
+Series,08520001
 size=4194304 features='n/a' hwhandler='ANA' wp=rw
 |-+- policy='n/a' prio=50 status=optimized
 | `- 0:0:1 nvme0c0n1 0:0 n/a optimized    live
 `-+- policy='n/a' prio-10 status=non-optimized
 `- 0:1:1 nvme0c1n1 0:0 n/a non-optimized    live
 ----
++
+
+NOTE: このコマンドは、RHEL 9以前およびSLES 16以前でのみ動作します。
+
+
+
+.次の手順
+NVMeデバイスへのI/O実行により、link:nvme-roce-create-filesystems-sles-15-task.html["ファイルシステムを作成する"]。

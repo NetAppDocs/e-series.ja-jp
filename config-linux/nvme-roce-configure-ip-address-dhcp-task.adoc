@@ -51,3 +51,6 @@ DHCP によって割り当てられた IP アドレスをストレージアレ�
 MAC アドレスは、ネットワーク管理者が各コントローラの IP アドレスを特定するために必要です。ブラウザからストレージシステムに接続するには、 IP アドレスが必要です。
 
 
+
+.次の手順
+DHCPを使用してIPアドレスを設定した後、link:nvme-roce-access-sam-setup-wizard-task.html["SANtricity System Managerを使用してストレージを設定"]。

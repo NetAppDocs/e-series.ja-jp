@@ -89,3 +89,6 @@ Safari
 詳細については、 SANtricity System Manager のオンラインヘルプを参照してください。
 
 
+
+.次の手順
+SANtricity System Managerでストレージを設定した後、link:nvme-roce-configure-switch-task.html["スイッチを設定する"]。

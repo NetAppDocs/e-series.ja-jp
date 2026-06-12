@@ -45,10 +45,9 @@ Create Host （ホストの作成）ダイアログボックスが表示され�
  a| 
 ホストオペレーティングシステムのタイプ
  a| 
-ドロップダウンリストから次のいずれかのオプションを選択します。
+ドロップダウンリストから次のオプションを選択します。
 
 ** * Linux * SANtricity 11.60 以降
-** * Linux DM-MP （カーネル 3.10 以降） * SANtricity 11.60 より前のバージョンで使用します
 
 
 
@@ -89,3 +88,6 @@ Create Host （ホストの作成）ダイアログボックスが表示され�
 ホストの作成が完了すると、 SANtricity System Manager によって、ホストに対して設定された各ホストポートのデフォルト名が作成されます。
 
 デフォルトのエイリアスは「 <Hostname_Port number>`` 」です。たとえば、「ホスト IPT 」用に作成される最初のポートのデフォルトのエイリアスは、 ipt_1 です。
+
+.次の手順
+ホストを作成したら、link:nvme-roce-assign-volume-task.html["SANtricity System Managerを使用してボリュームを割り当てる"]。

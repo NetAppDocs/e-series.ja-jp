@@ -14,6 +14,12 @@ summary: SANtricity System Manager で各ホストを定義する前に、ホス
 SANtricity System Manager で各ホストを定義する前に、ホストからターゲットコントローラポートを検出し、 NVMe 接続を確立する必要があります。
 
 .手順
+. 以下のコマンドを使用して、想定されるMTUレートでホストから各アレイHICポートにpingできることを確認してください：
++
+[listing]
+----
+ping -M do -s <size> <IP of array HIC port>
+----
 . 次のコマンドを使用して、すべてのパスの NVMe-oF ターゲット上の使用可能なサブシステムを検出します。
 +
 [listing]
@@ -59,11 +65,11 @@ rdma_qptype: connected
 rdma_cms:    rdma-cm
 rdma_pkey: 0x0000
 ----
-. 他の接続についても手順 1 を繰り返します。
+. 他の接続についても手順2を繰り返します。
 . 次のコマンドを使用して最初のパスで検出されたサブシステムに接続します。「 nvme connect -t rdma -n Discovered_sub_nqn -a target_ip_address -Q queue_depth_setting -l controller_loss_timeout_period
 +
 
-NOTE: 上記のコマンドは、リブート後も維持されません。リブートのたびに 'nvme connect コマンドを実行して 'NVMe 接続を再確立する必要があります
+NOTE: 上記のコマンドは再起動後も有効になりません。 `nvme connect`コマンドは、NVMe接続を再確立するために再起動後に毎回実行する必要があります。
 
 +
 
@@ -75,7 +81,7 @@ NOTE: このコマンドでポート番号を指定すると、接続は失敗�
 
 +
 
-NOTE: 推奨されるキュー深度は 1024 です。次の例に示すように ' コマンド・ライン・オプションの -Q 1024 を使用して ' デフォルトの設定である 128 を 1024 でオーバーライドします
+NOTE: 推奨されるキュー深度設定は1024です。次の例に示すように、`-Q 1024`コマンドラインオプションを使用して、デフォルト設定の128を1024に上書きします。
 
 +
 
@@ -84,8 +90,27 @@ NOTE: コントローラ損失のタイムアウト時間として推奨され�
 +
 [listing]
 ----
-# nvme connect -t rdma -a 192.168.1.77 -n nqn.1992-08.com.netapp:5700.600a098000a527a7000000005ab3af94 -Q 1024 -l 3600
-# nvme connect -t rdma -a 192.168.2.77 -n nqn.1992-08.com.netapp:5700.600a098000a527a7000000005ab3af94 -Q 1024 -l 3600
+# nvme connect -t rdma -a 192.168.1.77 -n nqn.1992-
+08.com.netapp:EF80.600a098000a527a7000000005ab3af94 -Q 1024 -l 3600
 ----
-. 手順 3 を繰り返して、 2 番目のパスで検出されたサブシステムを接続します。
+. ステップ4を繰り返して、検出されたサブシステムを2番目のパスに接続します。
+. **オプション** - ホストが起動時にターゲットを自動的に検出して接続するように設定します。
++
+.. ステップ2とステップ3の検出パラメータを `/etc/nvme/discovery.conf`に次の手順と形式を使用して追加します：
++
+[listing]
+----
+# echo "--transport=rdma --traddr= target_ip_address --trsvcid=4420" | sudo tee -a /etc/nvme/discovery.conf
+----
+..  `/etc/nvme/discovery.conf`ファイルを設定した後、次のコマンドを使用してnvmf-autoconnectサービスを有効にします：
++
+[listing]
+----
+sudo systemctl enable nvmf-autoconnect.service
+----
 
+
+
+
+.次の手順
+接続を確立したら、link:nvme-roce-define-host-task.html["ホストを定義する"]。

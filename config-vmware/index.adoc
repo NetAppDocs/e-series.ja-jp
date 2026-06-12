@@ -25,6 +25,7 @@ VMware の簡単な方法でストレージアレイをインストールして 
 ** link:fc-perform-specific-task.html["ファイバチャネル"]
 ** link:iscsi-perform-specific-task.html["iSCSI"]
 ** link:sas-perform-specific-task.html["（ SAS ）。"]
+** link:nvme-perform-specific-task.html["NVMe"]
 
 
 . ストレージアレイに論理ボリュームを作成します。
