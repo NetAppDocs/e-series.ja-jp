@@ -16,12 +16,14 @@ summary: SANtricity OS の新機能
 
 
 
+[[new-features-in-version-12-0r1]]
 == Version 12.0R1の新機能
 
 このバージョンには軽微な変更のみが含まれており、新機能は追加されていません。このリリースの変更点の詳細については、Eシリーズ SANtricity OS 12.0R1 READMEを参照してください。
 
 
 
+[[new-features-in-version-12-0]]
 == バージョン12.0の新機能
 
 
@@ -70,18 +72,21 @@ SSDおよびNVMeベースのシステムにおけるDynamic Disk Poolの場合�
 |===
 
 
+[[new-features-in-version-11-90r5]]
 == Version 11.90R5の新機能
 
 このバージョンには欠陥の修正のみが含まれ、新しい機能は含まれていません。このリリースの変更点の詳細については、EシリーズSANtricity OS 11.90R5 READMEを参照してください。
 
 
 
+[[new-features-in-version-11-90r4]]
 == バージョン11.90R4の新機能
 
 このバージョンにはマイナーな変更のみが含まれており、新しい機能は含まれていません。このリリースの変更点の詳細については、Eシリーズ SANtricity OS 11.90R4 READMEを参照してください。
 
 
 
+[[new-features-in-version-11-90r3]]
 == バージョン11.90R3の新機能
 
 [cols="35h,~"]
@@ -97,12 +102,14 @@ IOM12CおよびDCM3 SAS-3シェルフのサポートは、コントローラフ�
 |===
 
 
+[[new-features-in-version-11-90r2]]
 == バージョン11.90R2の新機能
 
 このバージョンにはマイナーな変更のみが含まれており、新機能はありません。このリリースの変更点の詳細については、を参照してください https://library.netapp.com/ecm/ecm_download_file/ECMLP3334464["Eシリーズ11.90リリースノート"^]。
 
 
 
+[[new-features-in-version-11-90r1]]
 == バージョン11.90R1の新機能
 
 [cols="35h,~"]
@@ -125,6 +132,7 @@ E4000コントローラで12Gb SASホストインターフェイスカードが�
 |===
 
 
+[[new-features-in-version-11-90]]
 == バージョン11.90の新機能
 
 [cols="35h,~"]
@@ -168,24 +176,28 @@ REST APIでのみ設定可能で、組み込みWebサービスとプロキシWeb
 |===
 
 
+[[new-features-in-version-11-80-1r4]]
 == バージョン11.80.1R4の新機能
 
 このバージョンにはマイナーな変更のみが含まれており、新機能や制限事項はありません。このリリースの変更点の詳細については、READMEファイルを参照してください。
 
 
 
+[[new-features-in-version-11-80-1r3]]
 == バージョン11.80.1R3の新機能
 
 このバージョンにはマイナーな変更のみが含まれており、新機能や制限事項はありません。このリリースの変更点の詳細については、READMEファイルを参照してください。
 
 
 
+[[new-features-in-version-11-80-1r2]]
 == バージョン11.80.1R2の新機能
 
 このバージョンにはマイナーな変更のみが含まれており、新機能や制限事項はありません。このリリースの変更点の詳細については、READMEファイルを参照してください。
 
 
 
+[[new-features-in-version-11-80-1r1]]
 == バージョン11.80.1R1の新機能
 
 [cols="35h,~"]
@@ -201,6 +213,7 @@ SANtricity System ManagerおよびUnified Managerアプリケーションの自�
 |===
 
 
+[[new-features-in-version-11-80-1]]
 == バージョン11.80.1の新機能
 
 [cols="35h,~"]
@@ -244,6 +257,7 @@ Web Services Proxyは、Eシリーズ11.80.1リリースとの互換性を確保
 |===
 
 
+[[new-features-in-version-11-80]]
 == バージョン11.80の新機能
 
 [cols="35h,~"]

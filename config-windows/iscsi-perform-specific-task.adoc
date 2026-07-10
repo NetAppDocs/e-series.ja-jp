@@ -16,6 +16,7 @@ iSCSI プロトコルを使用する場合は、スイッチを設定し、ア�
 
 
 
+[[step-1-configure-the-switches-iscsi-windows]]
 == 手順1：スイッチを設定します。iSCSI、Windows
 
 iSCSI に関するベンダーの推奨事項に従ってスイッチを設定します。これらの推奨事項には、設定の指示とコードの更新が含まれる場合があります。
@@ -37,6 +38,7 @@ NOTE: コントローラのスイッチポートでは、ポートチャネル /
 
 
 
+[[step-2-configure-networking-iscsi-windows]]
 == 手順2：ネットワークを設定する-- iSCSI Windows
 
 iSCSI ネットワークは、データストレージの要件に応じて、さまざまな方法でセットアップできます。環境に最適な構成を選択するには、ネットワーク管理者に相談してください。
@@ -62,6 +64,7 @@ NOTE: 多くのネットワークスイッチは 9 、 000 バイトを超える
 
 
 
+[[step-3-configure-array-side-networking-iscsi-windows]]
 == 手順3：アレイ側のネットワークを構成する-- iSCSI、Windows
 
 SANtricity System Manager の GUI を使用して、アレイ側の iSCSI ネットワークを設定します。
@@ -194,6 +197,7 @@ NOTE: このオプションは、 iSCSI 環境でのみ使用できます。NVMe
 
 
 
+[[step-4-configure-host-side-networking-iscsi]]
 == 手順4：ホスト側のネットワークを設定する- iSCSI
 
 Microsoft iSCSI イニシエータがアレイとのセッションを確立できるように、ホスト側で iSCSI ネットワークを設定する必要があります。
@@ -230,6 +234,7 @@ Microsoft iSCSI イニシエータがアレイとのセッションを確立で�
 
 
 
+[[step-5-verify-ip-network-connections-iscsi-windows]]
 == 手順5：IPネットワーク接続の確認-- iSCSI、Windows
 
 インターネットプロトコル（ IP ）ネットワーク接続を確認するには、 ping テストを使用してホストとアレイが通信できることを確認します。
@@ -276,12 +281,14 @@ NOTE: コマンドが失敗した場合（たとえば、「 Packet needs to be 
 
 
 
+[[step-6-record-your-configuration]]
 == 手順 6 ：設定を記録します
 
 このページの PDF を生成して印刷し、次のワークシートを使用して iSCSI ストレージの構成情報を記録できます。この情報は、プロビジョニングタスクを実行する際に必要になります。
 
 
 
+[[recommended-configuration]]
 === 推奨される構成
 
 推奨構成は、 2 つのイニシエータポートと 4 つのターゲットポートを 1 つ以上の VLAN で接続した構成です。
@@ -290,6 +297,7 @@ image::../media/50001_01_conf-win.gif[iSCSIポート識別子]
 
 
 
+[[target-iqn]]
 === ターゲット IQN
 
 |===
@@ -305,6 +313,7 @@ image::../media/50001_01_conf-win.gif[iSCSIポート識別子]
 |===
 
 
+[[mapping-host-name]]
 === マッピングホスト名
 
 |===

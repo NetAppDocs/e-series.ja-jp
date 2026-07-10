@@ -19,6 +19,7 @@ Storage Plugin for vCenterをインストールし、プラグインの登録を
 
 
 
+[[review-installation-prerequisites]]
 == インストールの前提条件を確認する
 
 の要件をシステムが満たしていることを確認します link:san-spvc-ic-reqs.html["インストールとアップグレードの要件を確認"]。
@@ -28,6 +29,7 @@ NOTE: アップグレードプロセスでは、*。vcenter.properties*ファイ
 
 
 
+[[install-the-plugin-software]]
 == プラグインソフトウェアをインストールします
 
 プラグインソフトウェアをインストールするには：
@@ -60,6 +62,7 @@ NOTE: 必要に応じて、インストール後に証明書の検証と Web サ
 
 
 
+[[register-the-plugin-with-a-vcenter-server-appliance]]
 == プラグインを vCenter Server Appliance に登録します
 
 プラグインソフトウェアをインストールしたら、 vCSA にプラグインを登録します。
@@ -79,6 +82,7 @@ NOTE: プラグインを登録できる vCSA は 1 つだけです。別のvCSA�
 
 
 
+[[verify-the-plugin-registration]]
 == プラグインの登録を確認します
 
 プラグインをインストールして登録スクリプトを実行したら、プラグインが vCenter Server Appliance に正常に登録されていることを確認します。

@@ -18,6 +18,7 @@ summary: E5700 ホストプロトコルの変更を完了します。
 
 
 
+[[complete-fc-to-iscsi-conversion]]
 == FC から iSCSI への変換を完了します
 
 ホストポートを以前の FC から iSCSI に変換した場合は、 iSCSI をサポートするために既存の設定の変更が必要になることがあります。次の手順は、 iSCSI HIC が搭載されていない場合にのみ該当します。
@@ -71,6 +72,7 @@ NOTE: ホストまたはホストクラスタを追加する手順を確認す�
 
 
 
+[[complete-iscsi-to-fc-conversion]]
 == iSCSI から FC への変換を完了
 
 ホストポートを以前の iSCSI から FC に変換した場合は、 FC をサポートするために既存の設定の変更が必要になることがあります。次の手順は、 FC HIC が搭載されていない場合にのみ該当します。
@@ -114,6 +116,7 @@ NOTE: ホストまたはホストクラスタを追加する手順を確認す�
 
 
 
+[[complete-conversion-for-ib-iser-tofrom-ib-srp-nvme-over-ib-nvme-over-roce-or-nvme-over-fc]]
 == IB-iSER と IB-SRP 、 NVMe over IB 、 NVMe over RoCE 、 NVMe over FC の間の変更後の処理が完了しました
 
 機能パックキーを適用して、 InfiniBand iSER HIC ポートで使用されるプロトコルを SRP 、 NVMe over InfiniBand 、 NVMe over RoCE 、 NVMe over Fibre Channel のいずれかに変換したら、適切なプロトコルを使用するようにホストを設定する必要があります。

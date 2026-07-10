@@ -15,6 +15,7 @@ Web サービスプロキシをインストールして設定する前に、 Web
 
 
 
+[[web-services]]
 == Web サービス
 
 Web Services は、ネットアップの E シリーズおよび EF シリーズのストレージシステムを設定、管理、監視するためのアプリケーションプログラミングインターフェイス（ API ）です。API 要求を発行することで、 E シリーズストレージシステムの設定、プロビジョニング、パフォーマンス監視などのワークフローを実行できます。
@@ -74,6 +75,7 @@ image::../media/web_services_proxy_overview.gif[Web Services Proxyの概要]
 |===
 
 
+[[unified-manager]]
 == Unified Manager の略
 
 プロキシインストールパッケージには、 E2800 、 E5700 、 EF300 、 EF600 などの E シリーズおよび EF シリーズの新しいストレージシステムの設定が可能な、 Web ベースのインターフェイスである Unified Manager が含まれています。

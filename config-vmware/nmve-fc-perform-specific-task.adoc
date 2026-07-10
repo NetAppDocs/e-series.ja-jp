@@ -15,6 +15,7 @@ NVMe over Fibre Channel プロトコルを使用する場合は、スイッチ�
 
 
 
+[[step-1-configure-the-nvmefc-switches]]
 == 手順 1 ： NVMe/FC スイッチを設定します
 
 NVMe over Fibre Channel （ FC ）スイッチを設定（ゾーニング）すると、ホストをストレージアレイに接続できるようになり、パスの数が制限されます。スイッチのゾーニングはスイッチの管理インターフェイスで設定します。
@@ -41,6 +42,7 @@ NOTE: ベンダーの HBA ユーティリティを使用して、 HBA に関す�
 
 
 
+[[step-2-determine-the-host-ports-wwpns-nvmefc-vmware]]
 == 手順2：ホストポートのWWPNを確認する- NVMe/FC VMware
 
 FC ゾーニングを設定するためには、各イニシエータポートの World Wide Port Name （ WWPN ）を特定する必要があります。
@@ -66,6 +68,7 @@ Emulex Corporation Emulex LPe16000 16Gb PCIe Fibre Channel Adapter
 
 
 
+[[step-3-enable-hba-drivers]]
 == 手順 3 ： HBA ドライバを有効にします
 
 Broadcom / Emulex および Marvell / Qlogic HBA ドライバで NVMe のサポートが有効になっている必要があります。
@@ -92,6 +95,7 @@ esxcfg-module -s "ql2xnvmesupport=1" qlnativefc
 
 
 
+[[step-4-record-your-configuration]]
 == 手順 4 ：構成を記録する
 
 このページの PDF を生成して印刷し、次のワークシートを使用して NVMe over Fibre Channel ストレージの構成情報を記録できます。この情報は、プロビジョニングタスクを実行する際に必要になります。
@@ -102,6 +106,7 @@ image::../media/port_identifiers_host_and_target_conf-vmw.gif[NVMe over Fibre Ch
 
 
 
+[[host-identifiers]]
 === ホスト識別子
 
 |===
@@ -134,6 +139,7 @@ _ 該当なし _
 |===
 
 
+[[target-identifiers]]
 === ターゲット識別子
 
 |===
@@ -191,6 +197,7 @@ _ 該当なし _
 |===
 
 
+[[mapping-host]]
 === マッピングホスト
 
 |===

@@ -15,6 +15,7 @@ SANtricity Cloud Connector は、グラフィカルなアンインストーラ�
 
 
 
+[[uninstall-using-graphical-mode]]
 == グラフィカルモードを使用してアンインストールします
 
 Linux オペレーティングシステムでグラフィカルモードを使用して SANtricity Cloud Connector をアンインストールできます。
@@ -46,6 +47,7 @@ SANtricity Cloud Connector のアンインストールプロセスが開始さ�
 
 
 
+[[uninstall-using-console-mode]]
 == コンソールモードを使用してをアンインストールします
 
 Linux オペレーティングシステムでコンソールモードを使用して SANtricity Cloud Connector をアンインストールできます。

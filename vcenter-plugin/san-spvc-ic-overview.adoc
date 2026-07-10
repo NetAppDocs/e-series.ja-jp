@@ -18,6 +18,7 @@ SANtricity Storage Plugin for vCenter では、 VMware vSphere Client セッシ�
 
 
 
+[[available-tasks]]
 == 使用可能なタスク
 
 このプラグインを使用して、次のタスクを実行できます。
@@ -41,12 +42,14 @@ image:../media/vcenter_communication2.png["vCenterの通信環境"]
 
 
 
+[[interface-overview]]
 == インターフェイスの概要
 
 プラグインにログインすると、メインページが* Manage-All *に開きます。このページでは、ネットワークで検出されたすべてのストレージアレイを表示および管理できます。
 
 
 
+[[navigation-sidebar]]
 === ナビゲーションサイドバー
 
 ナビゲーションサイドバーには、次の情報が表示されます。
@@ -64,6 +67,7 @@ NOTE: ストレージアレイのステータスが最適でない場合は、�
 
 
 
+[[supported-browsers]]
 === サポートされているブラウザ
 
 vCenter向けストレージプラグインには、いくつかの種類のブラウザからアクセスできます。サポートされるブラウザとバージョンを次に示します。
@@ -75,12 +79,14 @@ vCenter向けストレージプラグインには、いくつかの種類のブ�
 
 
 
+[[user-roles-and-permissions]]
 === ユーザロールと権限
 
 vCenter向けストレージプラグインのタスクにアクセスするには、読み取り/書き込み権限が必要です。デフォルトでは、定義されているすべてのVMware vCenterユーザIDに、プラグインでタスクを実行する権限がありません。
 
 
 
+[[configuration-overview]]
 == 設定の概要
 
 設定には、次の手順が含まれます。
@@ -94,6 +100,7 @@ vCenter向けストレージプラグインのタスクにアクセスするに�
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 vSphere Client でのデータストアの管理の詳細については、を参照してください https://docs.vmware.com/en/VMware-vSphere/index.html["VMware vSphere のドキュメント"^]。

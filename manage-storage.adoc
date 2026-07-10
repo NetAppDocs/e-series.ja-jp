@@ -15,18 +15,21 @@ summary: ストレージを管理します
 
 
 
+[[online-help-for-system-manager]]
 == System Managerのオンラインヘルプ
 
 にアクセスし https://docs.netapp.com/us-en/e-series-santricity/system-manager/index.html["SANtricity System Managerオンラインヘルプ"^]ます。ここでは、ストレージアレイの計画、設定、管理、およびトラブルシューティングの方法に関する情報を参照できます。
 
 
 
+[[online-help-for-unified-manager]]
 == Unified Managerオンラインヘルプ
 
 にアクセスします https://docs.netapp.com/us-en/e-series-santricity/unified-manager/index.html["SANtricity Unified Managerオンラインヘルプ"^]。ここでは、複数のネットワークストレージアレイに対してストレージ管理コマンドを実行する方法を確認できます。
 
 
 
+[[command-reference]]
 == コマンドリファレンス
 
 にアクセスします https://docs.netapp.com/us-en/e-series-cli/index.html["コマンドリファレンス"^]コマンドラインインターフェイス（ CLI ）のコマンドを使用してストレージアレイを設定および監視する方法について説明します。

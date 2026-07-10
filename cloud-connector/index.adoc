@@ -20,6 +20,7 @@ NOTE: SANtricity Cloud Connectorツールは廃止され、ダウンロードで
 
 
 
+[[considerations]]
 == 考慮事項
 
 これらの手順を使用する場合は、次の点に注意してください。
@@ -30,6 +31,7 @@ NOTE: SANtricity Cloud Connectorツールは廃止され、ダウンロードで
 
 
 
+[[types-of-backups]]
 == バックアップのタイプ
 
 SANtricity Cloud Connector には、イメージベースとファイルベースの 2 種類のバックアップがあります。

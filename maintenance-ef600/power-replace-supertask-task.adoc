@@ -30,6 +30,7 @@ EF300、EF600、EF300C、またはEF600Cコントローラの電源装置で障�
 
 
 
+[[step-1-remove-failed-power-supply]]
 == 手順 1 ：障害が発生した電源装置を取り外す
 
 新しい電源装置に交換できるように、障害が発生した電源装置を取り外します。
@@ -62,6 +63,7 @@ image::../media/psup_3.png[電源装置を引き出します。]
 
 
 
+[[step-2-install-new-power-supply-and-complete-the-replacement]]
 == 手順 2 ：新しい電源装置を取り付け、交換を完了します
 
 障害が発生した電源装置を取り外したら、新しい電源装置を取り付けます。

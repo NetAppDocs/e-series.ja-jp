@@ -15,6 +15,7 @@ Web Services Proxy をインストールする前に、インストール要件�
 
 
 
+[[installation-requirements]]
 == インストールの要件
 
 Web Services Proxy は Windows または Linux のホストシステムにインストールして設定できます。
@@ -82,6 +83,7 @@ Web Services Proxy は、ライセンスキーを必要としない無償のス�
 |===
 
 
+[[upgrade-considerations]]
 == アップグレード時の考慮事項
 
 以前のバージョンからアップグレードする場合は、保持される項目と削除される項目があることに注意してください。

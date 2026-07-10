@@ -15,6 +15,7 @@ summary: 検出されたストレージシステム上のすべてのディス�
 
 
 
+[[overview-of-statistics]]
 == 統計の概要
 
 統計情報として、データ収集速度とストレージシステムのパフォーマンスに関する情報が提供されます。
@@ -31,12 +32,14 @@ Web Services Proxy では、次のタイプの統計にアクセスできます�
 
 
 
+[[statistics-functionality]]
 == 統計機能
 
 Web Services Proxy は、サポートされているハードウェアモデルおよびソフトウェアバージョンからコントローラとインターフェイスの統計の生データと分析データを取得できる API エンドポイントを提供します。
 
 
 
+[[raw-statistics-apis]]
 === 統計の生データの API
 
 * '+/storage-systems/{system-id }/controller-statistics+`
@@ -47,6 +50,7 @@ Web Services Proxy は、サポートされているハードウェアモデル�
 
 
 
+[[analyzed-statistics-apis]]
 === 統計の分析データの API
 
 * 「 +/storage-systems/{id}/Analyzed-controller-statistics/+` 」
@@ -69,6 +73,7 @@ NOTE: システムの起動時はさまざまな指標の計算に使用する�
 
 
 
+[[configure-polling-intervals]]
 == ポーリング間隔を設定します
 
 ポーリング間隔を設定するには、 wsconfig.xml ファイルを変更して、ポーリング間隔を秒単位で指定します。

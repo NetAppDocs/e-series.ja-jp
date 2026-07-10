@@ -16,6 +16,7 @@ Web Services Proxy の設定は、環境独自の運用やパフォーマンス�
 
 
 
+[[stop-or-restart-the-webserver]]
 == Web サーバを停止または再起動します
 
 Web サーバサービスはインストール時に開始され、バックグラウンドで実行されます。一部の設定タスクでは、 Web サーバサービスの停止や再起動が必要になる場合があります。
@@ -37,6 +38,7 @@ web_services_proxy Web サーバをインストールして起動しましたsys
 
 
 
+[[resolve-port-conflicts]]
 == ポートの競合を解決します
 
 定義されたアドレスまたはポートで別のアプリケーションを使用しているときに Web Services Proxy を実行している場合は、 wsconfig.xml ファイルでポートの競合を解決できます。
@@ -107,6 +109,7 @@ HTTP 要求をリスンする TCP ポート。デフォルトは 8080 です。
 
 
 
+[[configure-load-balancing-andor-high-availability]]
 == ロードバランシングやハイアベイラビリティの設定
 
 ハイアベイラビリティ（ HA ）構成で Web Services Proxy を使用するには、ロードバランシングを設定します。通常、 HA 構成では、 1 つのノードですべての要求を受信して他のノードはスタンバイにするか、すべてのノード間で要求の負荷を分散します。
@@ -134,6 +137,7 @@ Web Services Proxy はハイアベイラビリティ（ HA ）環境で利用す
 
 
 
+[[disable-symbol-https]]
 == SYMbol HTTPS を無効にする
 
 SYMbol コマンド（デフォルト設定）を無効にして、リモート手順呼び出し（ RPC ）でコマンドを送信することができます。この設定は、 wsconfig.xml ファイルで変更できます。
@@ -162,6 +166,7 @@ NOTE: RPC 経由の SYMbol が使用された場合、 Web Services Proxy は SY
 
 
 
+[[configure-cross-origin-resource-sharing]]
 == Cross-Origin Resource Sharing の設定
 
 Cross-Origin Resource Sharing （ CORS ）を設定できます。 CORS は、追加の HTTP ヘッダーを使用して、あるオリジン（ドメイン）で実行されている Web アプリケーションに別のオリジンにあるサーバのリソースへのアクセスを許可するメカニズムです。

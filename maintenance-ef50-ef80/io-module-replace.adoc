@@ -27,6 +27,7 @@ EF50またはEF80ストレージ システムで故障したI/Oモジュール�
 
 
 
+[[step-1-prepare-to-replace-an-io-module]]
 == ステップ1：I/Oモジュールの交換準備
 
 必要な工具と機器を揃え、ストレージ システムの構成データベースをバックアップして、I/O モジュールの交換に備えましょう。
@@ -71,6 +72,7 @@ System Manager インターフェイスを開くには、ブラウザで障害�
 
 
 
+[[step-2-place-the-controller-offline]]
 == 手順2：コントローラをオフラインにする
 
 残りの手順を安全に実行できるように、障害のあるコントローラをオフラインにします。
@@ -109,6 +111,7 @@ CAUTION: *OK to remove*フィールドに*Yes*と表示されない場合は、�
 
 
 
+[[step-3-replace-the-io-module]]
 == ステップ3：I/Oモジュールを交換する
 
 故障したI/Oモジュールからケーブルを抜き、交換用のI/Oモジュールに交換してから、交換用I/Oモジュールにケーブルを接続します。
@@ -160,6 +163,7 @@ image::../media/icon_round_2.png[コールアウト番号2]
 
 
 
+[[step-4-place-the-controller-online]]
 == 手順4：コントローラをオンラインにする
 
 障害のあるコントローラをオンラインに戻します。
@@ -201,6 +205,7 @@ NOTE: 問題が解決しない場合は、この手順を続行する前に http
 
 
 
+[[step-5-complete-the-io-module-replacement]]
 == ステップ5：I/Oモジュールの交換を完了する
 
 SANtricity System Manager を使用して、最新バージョンの SANtricity OS がインストールされていることを確認し、すべてのボリュームが所有コントローラに戻されていることを検証し、サポートデータを収集して運用を再開できるようにします。
@@ -251,6 +256,7 @@ Recovery Guruは存在しません（すべてのボリュームがそれぞれ�
 
 
 
+[[step-6-return-the-failed-part-to-netapp]]
 == ステップ6：故障した部品をNetAppに返却する
 
 障害のある部品は、キットに付属するRMA指示書に従ってNetAppに返却してください。詳細については、 https://mysupport.netapp.com/site/info/rma["部品の返品と交換"]ページを参照してください。

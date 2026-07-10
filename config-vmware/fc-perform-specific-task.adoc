@@ -18,6 +18,7 @@ NOTE: EF300 および EF600 では、 VMware との互換性を確保するた�
 
 
 
+[[step-1-configure-the-fc-switches-vmware]]
 == 手順1：FCスイッチを設定する- VMware
 
 Fibre Channel （ FC ）スイッチを設定（ゾーニング）すると、ホストをストレージアレイに接続し、パスの数を制限できます。スイッチのゾーニングはスイッチの管理インターフェイスで設定します。
@@ -44,6 +45,7 @@ NOTE: ベンダーの HBA ユーティリティを使用して、 HBA に関す�
 
 
 
+[[step-2-determine-the-host-port-wwpns-fc]]
 == 手順2：ホストポートのWWPNを特定する- FC
 
 FC ゾーニングを設定するためには、各イニシエータポートの World Wide Port Name （ WWPN ）を特定する必要があります。
@@ -69,6 +71,7 @@ Emulex Corporation Emulex LPe16000 16Gb PCIe Fibre Channel Adapter
 
 
 
+[[step-3-record-your-configuration]]
 == 手順 3 ：設定を記録します
 
 このページの PDF を生成して印刷し、次のワークシートを使用して FC ストレージの構成情報を記録できます。この情報は、プロビジョニングタスクを実行する際に必要になります。
@@ -79,6 +82,7 @@ image::../media/port_identifiers_host_and_target_conf-vmw.gif[Fibre Channelポ�
 
 
 
+[[host-identifiers]]
 === ホスト識別子
 
 |===
@@ -111,6 +115,7 @@ _ 該当なし _
 |===
 
 
+[[target-identifiers]]
 === ターゲット識別子
 
 |===
@@ -168,6 +173,7 @@ _ 該当なし _
 |===
 
 
+[[mapping-host]]
 === マッピングホスト
 
 |===

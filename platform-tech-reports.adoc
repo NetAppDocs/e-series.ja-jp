@@ -15,6 +15,7 @@ summary: E シリーズのテクニカルレポート
 
 
 
+[[ef50-ef80-and-e4000-platform-trs]]
 == EF50、EF80、および E4000 プラットフォーム TR
 
 [cols="9,9,9"]
@@ -28,13 +29,14 @@ summary: E シリーズのテクニカルレポート
 |===
 
 
+[[legacy-platform-trs]]
 == レガシープラットフォーム TR
 
 [cols="9,9,9,9"]
 |===
 
 
-| https://www.netapp.com/pdf.html?item=/media/17009-tr4800pdf.pdf["* TR-4800 ： EF600 アレイ機能の概要 *"^] | https://www.netapp.com/pdf.html?item=/media/21363-tr-4877.pdf["*++++TR-487: EF300 アレイの概要 ++*"^] | https://www.netapp.com/pdf.html?item=/media/17026-tr4725pdf.pdf["* TR-4725 ：『 E2800 Arrays feature overview 』 *"^] | https://www.netapp.com/pdf.html?item=/media/17120-tr4724pdf.pdf["*+++TR-4724 ： E5700 アレイの概要 ++*"^] 
+| https://www.netapp.com/pdf.html?item=/media/17009-tr4800.pdf["* TR-4800 ： EF600 アレイ機能の概要 *"^] | https://www.netapp.com/pdf.html?item=/media/21363-tr-4877.pdf["*++++TR-487: EF300 アレイの概要 ++*"^] | https://www.netapp.com/pdf.html?item=/media/17026-tr4725.pdf["* TR-4725 ：『 E2800 Arrays feature overview 』 *"^] | https://www.netapp.com/pdf.html?item=/media/17120-tr4724.pdf["*+++TR-4724 ： E5700 アレイの概要 ++*"^] 
 
 
 | EF600 オールフラッシュ アレイのハードウェアおよびソフトウェア機能と、新しい SANtricity OS の機能について説明します。 | EF300オールフラッシュ アレイのハードウェアおよびソフトウェア機能と新しいSANtricity OS機能について説明します。 | E2800ハイブリッドアレイのハードウェアおよびソフトウェア機能と最新のSANtricity OSの機能について説明します。 | E5700製品情報について説明します。最新バージョンのSANtricityで導入された新しいハードウェアおよびソフトウェア機能も含まれています。 

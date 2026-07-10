@@ -15,6 +15,7 @@ AutoSupport （ ASUP ）を設定すると、データを収集し、収集し�
 
 
 
+[[overview-of-autosupport-asup]]
 == AutoSupport （ ASUP ）の概要
 
 AutoSupport （ ASUP ）は、手動およびスケジュールベースの基準に基づいてネットアップにメッセージを自動的に送信します。
@@ -94,12 +95,14 @@ WebServices - profile.json
 |===
 
 
+[[configure-autosupport]]
 == AutoSupport を設定します
 
 AutoSupport はインストール時にデフォルトで有効になりますが、この設定を変更したり、配信タイプを変更したりすることができます。
 
 
 
+[[enable-or-disable-autosupport]]
 === AutoSupport を有効または無効にします
 
 AutoSupport 機能は Web サービスプロキシの初回インストール時に有効または無効になりますが、 ASUPConfig ファイルで設定を変更することができます。
@@ -123,6 +126,7 @@ NOTE: タイムスタンプエントリは必要ありません。
 
 
 
+[[configure-autosupport-delivery-method]]
 === AutoSupport の配信方法を設定する
 
 HTTPSまたはSMTPの配信方法を使用するようにAutoSupport機能を設定できます。デフォルトの配信方法はHTTPSです。

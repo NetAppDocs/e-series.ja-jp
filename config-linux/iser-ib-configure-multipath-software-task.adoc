@@ -38,6 +38,7 @@ Linux 環境では、 Device Mapper Multipath （ DM-MP ）ツールを使用し
 ----
 . uname -r コマンドを実行して ' カーネル・バージョンを保存します
 +
+[[step4]]
 [listing]
 ----
 # uname -r

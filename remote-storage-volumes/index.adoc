@@ -15,6 +15,7 @@ SANtricity ® リモートストレージボリューム機能を使用して、
 
 
 
+[[configuration-overview]]
 == 設定の概要
 
 リモートストレージボリューム機能は、選択したサブモデル ID の SANtricity System Manager で使用できます。この機能を使用するには、リモートストレージシステムと E シリーズストレージシステムが相互に通信できるように設定する必要があります。
@@ -31,6 +32,7 @@ NOTE: SANtricityリモートストレージボリュームは、現在E4000シ�
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * オンラインヘルプ。 System Manager ユーザインターフェイスまたはで参照できます https://docs.netapp.com/us-en/e-series-santricity/index.html["SANtricity ソフトウェアドキュメントサイト"^]。

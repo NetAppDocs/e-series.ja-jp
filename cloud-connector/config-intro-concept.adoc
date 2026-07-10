@@ -15,6 +15,7 @@ summary: インストールが完了したら、設定ウィザードを使用�
 
 
 
+[[log-in-to-the-santricity-cloud-connector-for-the-first-time]]
 == SANtricity Cloud Connector に初めてログインします
 
 SANtricity Cloud Connector に初めてログインするときは、アプリケーションにアクセスするためのデフォルトのパスワードを入力する必要があります。
@@ -37,6 +38,7 @@ SANtricity クラウドコネクタ構成ウィザードが表示されます。
 
 
 
+[[using-the-configuration-wizard]]
 == 設定ウィザードを使用する
 
 SANtricity Cloud Connector への初回ログインが成功すると、設定ウィザードが表示されます。
@@ -45,6 +47,7 @@ SANtricity Cloud Connector への初回ログインが成功すると、設定�
 
 
 
+[[step-1-set-administrator-password]]
 === 手順 1 ：管理者パスワードを設定します
 
 管理者パスワードの設定ページを使用して、 SANtricity Cloud Connector への以降のログインに使用するパスワードをカスタマイズできます。
@@ -66,6 +69,7 @@ NOTE: ユーザ定義の管理者パスワードは、設定ウィザードを�
 
 
 
+[[step-2-set-pass-phrase]]
 === 手順 2 ：パスフレーズを設定する
 
 [ 暗号化パスフレーズの入力 ] ページでは、 8 ～ 32 文字の英数字パスフレーズを指定できます。
@@ -83,6 +87,7 @@ NOTE: ユーザ定義の管理者パスワードは、設定ウィザードを�
 
 
 
+[[step-3-select-target-type]]
 === 手順 3 ：ターゲットタイプを選択します
 
 AltaVault Cloud Connector では、バックアップ / リストア機能のターゲットタイプとして、 Amazon S3 、 StorageGRID 、 SANtricity を選択できます。ターゲットタイプの選択ページで、 SANtricity クラウドコネクタアプリケーションに必要なストレージターゲットタイプを指定できます。
@@ -211,6 +216,7 @@ NOTE: S3 準拠のアカウントの中には、セキュアな HTTP 接続が�
 
 
 
+[[step-4-connect-to-web-services-proxy]]
 === 手順 4 ： Web Services Proxy に接続する
 
 SANtricity Cloud Connector と一緒に使用する Web サービスプロキシのログイン情報と接続情報は、 Web サービスプロキシの URL とクレデンシャルの入力ページで入力します。
@@ -232,6 +238,7 @@ SANtricity クラウドコネクタの Web サービスプロキシのクレデ�
 
 
 
+[[step-5-select-storage-arrays]]
 === 手順 5 ：ストレージアレイを選択します
 
 設定ウィザードで入力した SANtricity Web サービスプロキシのクレデンシャルに基づいて、使用可能なストレージアレイのリストがストレージアレイの選択ページに表示されます。このページから、 SANtricity Cloud Connector でのバックアップジョブとリストアジョブに使用するストレージアレイを選択できます。
@@ -256,6 +263,7 @@ NOTE: ストレージアレイの選択ページで選択したストレージ�
 
 
 
+[[step-6-select-hosts]]
 === 手順 6 ：ホストを選択する
 
 設定ウィザードで選択した Web サービスプロキシでホストされるストレージアレイに基づいて、バックアップとリストアの候補ボリュームを SANtricity Cloud Connector アプリケーションにマッピングするホストを選択できます。ホストの選択ページを使用します。
@@ -274,6 +282,7 @@ SANtricity Web サービスプロキシ経由でホストを使用できるこ�
 
 
 
+[[step-7-review-the-initial-configuration]]
 === 手順 7 ：初期設定を確認する
 
 SANtricity Cloud Connector 設定ウィザードの最後のページには、入力内容の概要が確認用に表示されます。

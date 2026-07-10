@@ -33,6 +33,7 @@ DIMM を交換するには、コントローラのキャッシュサイズを確
 
 
 
+[[step-1-determine-if-you-need-to-replace-a-dimm]]
 == 手順 1 ： DIMM の交換が必要かどうかを確認します
 
 DIMM を交換する前に、コントローラのキャッシュサイズを確認してください。
@@ -50,6 +51,7 @@ DIMM を交換する前に、コントローラのキャッシュサイズを確
 
 
 
+[[step-2-place-controller-offline]]
 == 手順 2 ：コントローラをオフラインにする
 
 DIMM を安全に取り外して交換できるように、コントローラをオフラインにします。
@@ -96,6 +98,7 @@ NOTE: ステータスの更新が完了するまでは、他の処理を開始�
 
 
 
+[[step-3-remove-controller-canister]]
 == 手順 3 ：コントローラキャニスターを取り外す
 
 新しい DIMM に交換できるように、障害が発生したコントローラキャニスターを取り外します。
@@ -126,6 +129,7 @@ image::../media/remove_controller_6.png[取り外すときは、コントロー�
 
 
 
+[[step-4-remove-dimms]]
 == 手順 4 ： DIMM を取り外す
 
 メモリサイズが異なる場合は、コントローラの DIMM を交換します。
@@ -160,6 +164,7 @@ DIMM の数と配置は、システムのモデルによって異なります。
 
 
 
+[[step-5-install-new-dimms]]
 == 手順 5 ：新しい DIMM を取り付ける
 
 新しい DIMM を取り付けて古い DIMM と交換します。
@@ -189,6 +194,7 @@ image::../media/dimm_5.png[DIMMをスロットに挿入し、タブで固定し�
 
 
 
+[[step-6-reinstall-controller-canister]]
 == 手順 6 ：コントローラキャニスターを再度取り付ける
 
 新しい DIMM を取り付けたら、コントローラキャニスターをコントローラシェルフに再度取り付けます。
@@ -208,6 +214,7 @@ image::../media/remove_controller_7.png[コントローラのスロットへのD
 
 
 
+[[step-7-complete-dimms-replacement]]
 == 手順 7 ： DIMM の交換後の処理
 
 コントローラをオンラインにし、サポートデータを収集し、運用を再開します。

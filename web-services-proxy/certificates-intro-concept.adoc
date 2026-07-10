@@ -15,6 +15,7 @@ Web Services Proxy のセキュリティ上の理由から、 SSL ポートを�
 
 
 
+[[enable-ssl]]
 == SSL を有効にします
 
 Web Services Proxy はセキュリティ対策として Secure Sockets Layer （ SSL ）を使用しており、インストール時に SSL が有効化されます。SSL ポートの指定は、 wsconfig.xml ファイルで変更できます。
@@ -43,6 +44,7 @@ SSL が設定された状態でサーバを起動すると、サーバはキー�
 
 
 
+[[bypass-certificate-validation]]
 == 証明書の検証を省略します
 
 セキュアな接続をサポートするために、 Web Services Proxy はストレージシステムの証明書を独自の信頼された証明書と照合して検証します。必要に応じて、ストレージシステムへの接続時にこの検証を省略するように指定できます。
@@ -69,6 +71,7 @@ SSL が設定された状態でサーバを起動すると、サーバはキー�
 
 
 
+[[generate-and-import-a-host-management-certificate]]
 == ホスト管理証明書を生成してインポートします
 
 証明書で Web サイトの所有者を識別することにより、クライアントとサーバの間のセキュアな接続が確立Web Services Proxy がインストールされているホストシステムの認証局（ CA ）証明書を生成してインポートするには、 API エンドポイントを使用します。
@@ -132,6 +135,7 @@ incognito モードまたは in-private モードのブラウズセッション�
 
 
 
+[[login-lockout-feature]]
 == ログインロックアウト機能
 
 REST APIでのみ設定可能で、組み込みWebサービスとプロキシWebサービスのログイン試行回数を制限できます。設定に基づいて、Webサービスのログイン試行回数を超えると、ロックアウト機能が有効になります。

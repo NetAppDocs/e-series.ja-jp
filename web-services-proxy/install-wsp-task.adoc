@@ -15,6 +15,7 @@ summary: インストールを行うには、ファイルをダウンロード�
 
 
 
+[[download-web-services-proxy-files]]
 == Web Services Proxy ファイルをダウンロード
 
 ネットアップサポートサイトのソフトウェアダウンロードページから、インストールファイルと readme ファイルをダウンロードできます。
@@ -30,6 +31,7 @@ summary: インストールを行うには、ファイルをダウンロード�
 
 
 
+[[install-on-windows-or-linux-server]]
 == Windows サーバまたは Linux サーバにをインストールします
 
 Web Services Proxy と Unified Manager は、 3 つのモード（グラフィカル、コンソール、サイレント）のいずれかを使用するか、 RPM ファイル（ Linux のみ）を使用してインストールできます。
@@ -41,6 +43,7 @@ Web Services Proxy と Unified Manager は、 3 つのモード（グラフィ�
 
 
 
+[[graphical-mode-install]]
 === グラフィカルモードでのインストール
 
 グラフィカルモードでのインストールは、 Windows と Linux のどちらでも実行できます。グラフィカルモードでは、 Windows 形式のインターフェイスにプロンプトが表示されます。
@@ -79,6 +82,7 @@ Install Complete （インストールの完了）ダイアログボックスが
 
 
 
+[[console-mode-install]]
 === コンソールモードでのインストール
 
 コンソールモードでのインストールは、 Windows と Linux のどちらでも実行できます。コンソールモードでは、ターミナルウィンドウにプロンプトが表示されます。
@@ -108,6 +112,7 @@ NOTE: アップグレードの実行中、構成パラメータの入力は求�
 
 
 
+[[silent-mode-install]]
 === サイレントモードでのインストール
 
 サイレントモードでのインストールは、 Windows と Linux のどちらでも実行できます。サイレントモードでは、メッセージやスクリプトはターミナルウィンドウに表示されません。
@@ -125,6 +130,7 @@ NOTE: アップグレードの実行中、構成パラメータの入力は求�
 
 
 
+[[rpm-command-install-linux-only]]
 === RPM コマンドでのインストール（ Linux のみ）
 
 RPM パッケージ管理システムと互換性がある Linux システムでは、オプションの RPM ファイルを使用して Web Services Proxy をインストールできます。

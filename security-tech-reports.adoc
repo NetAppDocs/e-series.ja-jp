@@ -15,13 +15,14 @@ summary: E シリーズのテクニカルレポート
 
 
 
+[[security-trs]]
 == セキュリティ TR
 
 [cols="9,9,9"]
 |===
 
 
-| https://www.netapp.com/pdf.html?item=/media/17162-tr4474pdf.pdf["* TR-4474 『 SANtricity Drive Security Feature Guide 』"] | https://www.netapp.com/pdf.html?item=/media/17079-tr4712pdf.pdf["* TR-4712 ：『 SANtricity Management Security Features * 』"] | https://www.netapp.com/pdf.html?item=/media/17218-tr4813pdf.pdf["* TR-4813 ：『 Managing Certificates for E-Series Systems 』 *"] 
+| https://www.netapp.com/pdf.html?item=/media/17162-tr4474.pdf["* TR-4474 『 SANtricity Drive Security Feature Guide 』"] | https://www.netapp.com/pdf.html?item=/media/17079-tr4712.pdf["* TR-4712 ：『 SANtricity Management Security Features * 』"] | https://www.netapp.com/pdf.html?item=/media/17218-tr4813.pdf["* TR-4813 ：『 Managing Certificates for E-Series Systems 』 *"] 
 
 
 | FIPS 140-2 認定ドライブのサポート、内部と外部の両方のキー管理のサポートなど、 E シリーズシステムの完全なディスク暗号化機能について説明します。 | NetApp E シリーズ E2800 、 E5700 、 EF280 、 EF570 、 EF300 、 SANtricity のセキュリティ機能について説明します。 および EF600 ストレージシステム： | 最新の E シリーズコントローラおよびアプリケーションでセキュリティ証明書を管理する方法について説明します。 

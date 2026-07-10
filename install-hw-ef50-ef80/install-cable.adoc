@@ -26,6 +26,7 @@ image:../media/drw_cable_pull_tab_direction_ieops-1699.svg["ケーブル プル 
 
 
 
+[[step-1-cable-the-inter-controller-mirroring-connections]]
 == 手順1：コントローラ間ミラーリング接続をケーブル接続する
 
 コントローラ同士をケーブルで接続して、コントローラ間のミラーリング機能を有効にします。コントローラ間のミラーリング接続は、システム全体の冗長性を確保し、キャッシュ ミラーリングやI/O転送に使用されます。EF50とEF80ストレージ システムのケーブル配線は同じです。
@@ -53,6 +54,7 @@ image:../media/drw_ef50-ef80_mirroring_2p_100gbe_ieops-2659.svg["ef50およびef
 
 
 
+[[step-2-cable-the-host-connections]]
 == ステップ2：ホスト接続をケーブル接続する
 
 ストレージシステムのホスト接続は、ネットワークトポロジー（直接接続またはファブリック接続）に応じて配線してください。

@@ -15,6 +15,7 @@ EF50またはEF80ストレージシステムのコントローラー交換を完
 
 
 
+[[step-1-ensure-latest-version-of-santricity-os-verify-volume-ownership-and-collect-support-data]]
 == ステップ 1：最新バージョンの SANtricity OS であることを確認し、ボリューム所有権を確認し、サポートデータを収集する
 
 SANtricity System Manager を使用して、最新バージョンの SANtricity OS がインストールされていることを確認し、すべてのボリュームが所有コントローラに戻されていることを検証し、サポートデータを収集して運用を再開できるようにします。
@@ -65,6 +66,7 @@ Recovery Guruは存在しません（すべてのボリュームがそれぞれ�
 
 
 
+[[step-2-return-the-failed-part-to-netapp]]
 == ステップ2：故障した部品をNetAppに返却します
 
 障害のある部品は、キットに付属するRMA指示書に従ってNetAppに返却してください。詳細については、 https://mysupport.netapp.com/site/info/rma["部品の返品と交換"]ページを参照してください。

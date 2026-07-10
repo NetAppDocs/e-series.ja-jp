@@ -18,6 +18,7 @@ E2800 バッテリを交換する前に、要件と考慮事項を確認して�
 
 
 
+[[recovery-guru-alerts]]
 == Recovery Guru のアラート
 
 SANtricity System Manager の Recovery Guru から次のいずれかのステータスが報告された場合は、該当するバッテリを交換する必要があります。
@@ -30,6 +31,7 @@ SANtricity System Manager の Recovery Guru で詳細を確認し、問題にバ
 
 
 
+[[procedure-overview]]
 == 手順の概要
 
 データを保護するために、障害が発生したバッテリはできるだけ早く交換する必要があります。
@@ -46,6 +48,7 @@ E2800 コントローラのバッテリを交換するために必要な手順�
 
 
 
+[[duplex-or-simplex-configuration]]
 == デュプレックス構成とシンプレックス構成です
 
 バッテリを交換する手順は、コントローラの数が 1 台か 2 台かによって次のように異なります。
@@ -80,6 +83,7 @@ E2800 コントローラのバッテリを交換するために必要な手順�
 |===
 
 
+[[requirements-for-replacing-a-battery]]
 == バッテリの交換に際しての要件
 
 障害が発生したバッテリを交換する場合は、次の準備をしておく必要があります。

@@ -15,6 +15,7 @@ SAS プロトコルを使用する場合は、ホストポートのアドレス�
 
 
 
+[[step-1-determine-sas-host-identifiers-windows]]
 == 手順1：SASホスト識別子の特定-- Windows
 
 HBA ユーティリティを使用して SAS アドレスを確認し、 HBA BIOS を使用して適切な設定を行います。
@@ -36,6 +37,7 @@ HBA ユーティリティのガイドラインを確認します。
 
 
 
+[[step-2-record-your-configuration]]
 == 手順 2 ：設定を記録する
 
 このページの PDF を生成して印刷し、次のワークシートを使用してプロトコル固有のストレージ構成情報を記録できます。この情報は、プロビジョニングタスクを実行する際に必要になります。
@@ -44,6 +46,7 @@ image::../media/sas_topology_diagram_conf-win.gif[図： SAS トポロジ]
 
 
 
+[[host-identifiers]]
 === ホスト識別子
 
 |===
@@ -92,12 +95,14 @@ _ 該当なし _
 |===
 
 
+[[target-identifiers]]
 === ターゲット識別子
 
 推奨構成は 2 つのターゲットポートで構成されます。
 
 
 
+[[mapping-host-name]]
 === マッピングホスト名
 
 |===

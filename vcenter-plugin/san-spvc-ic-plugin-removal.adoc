@@ -20,6 +20,7 @@ vCenter Server Appliance からプラグインを削除し、アプリケーシ�
 
 
 
+[[unregister-the-plugin-from-a-vcenter-server-appliance]]
 == vCenter Server Appliance からプラグインの登録を解除します
 
 vCenter Server Appliance からプラグインの登録を解除するには、次のいずれかの方法を選択します。
@@ -30,6 +31,7 @@ vCenter Server Appliance からプラグインの登録を解除するには、�
 
 
 
+[[method-1-execute-the-registration-script]]
 === 方法1:登録スクリプトを実行します
 
 . コマンドラインでプロンプトを開き、次のディレクトリに移動します。
@@ -57,6 +59,7 @@ vcenter-register.bat
 
 
 
+[[method-2-use-the-vcenter-server-mob-pages]]
 === 方法2：vCenter Serverのモブページを使用する
 
 . Web ブラウザを開き、次の URL を入力します。
@@ -78,6 +81,7 @@ NOTE: この手順は、 vCenter Server Appliance からプラグインの登録
 
 
 
+[[remove-the-plugin-webserver-from-the-application-host]]
 == アプリケーションホストからプラグイン Web サーバを削除します
 
 プラグインソフトウェアをアプリケーションホストから削除するには、次の手順を実行します。

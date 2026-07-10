@@ -20,6 +20,7 @@ NOTE: SANtricity Cloud Connector アプリケーションで表示されるバ�
 
 
 
+[[create-a-new-image-based-restore]]
 == イメージベースのリストアの新規作成
 
 SANtricity Cloud Connector アプリケーションのリストアページの作成機能を使用して、イメージベースのリストアを新規作成できます。
@@ -54,6 +55,7 @@ SANtricity Cloud Connector で使用可能なイメージベースのバック�
 
 
 
+[[create-a-new-file-based-restore]]
 == ファイルベースのリストアの新規作成
 
 SANtricity Cloud Connector アプリケーションのリストアページの作成機能を使用すると、ファイルベースのリストアを新規作成できます。
@@ -92,6 +94,7 @@ SANtricity Cloud Connector で使用可能なファイルベースのバック�
 
 
 
+[[delete-a-restore]]
 == リストアを削除する
 
 削除機能を使用すると、選択したリストア・アイテムをリストア・ページの結果リスト・セクションから削除できます。

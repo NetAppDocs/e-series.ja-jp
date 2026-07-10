@@ -15,6 +15,7 @@ summary: SANtricity Cloud Connector アプリケーションに関連するシ�
 
 
 
+[[host-hardware-requirements]]
 == ホストハードウェアの要件
 
 ハードウェアは、次の最小要件を満たしている必要があります。
@@ -27,6 +28,7 @@ SANtricity Cloud Connector を使用するには、 SANtricity Web サービス�
 
 
 
+[[supported-browsers]]
 == サポートされているブラウザ
 
 SANtricity Cloud Connector アプリケーションでサポートされるブラウザと最小バージョンは次のとおりです。
@@ -43,6 +45,7 @@ NOTE: Microsoft Internet Explorer 11 の互換表示設定を使用している�
 
 
 
+[[compatible-storage-arrays-and-controller-firmware]]
 == 互換性があるストレージアレイとコントローラファームウェア
 
 SANtricity Cloud Connector アプリケーションを使用する前に、ストレージアレイとファームウェアの互換性を確認する必要があります。
@@ -51,6 +54,7 @@ SANtricity Cloud Connector と互換性があるすべてのストレージア�
 
 
 
+[[compatible-operating-systems]]
 == 互換性のあるオペレーティングシステム
 
 SANtricity Cloud Connector 4.0 アプリケーションと互換性があり、次のオペレーティングシステムでサポートされています。
@@ -78,6 +82,7 @@ SUSE Linux Enterprise Server （ SLES ）
 |===
 
 
+[[supported-file-systems]]
 == サポートされているファイルシステム
 
 SANtricity Cloud Connector アプリケーションを使用してバックアップとリストアを実行するには、サポートされているファイルシステムを使用する必要があります。

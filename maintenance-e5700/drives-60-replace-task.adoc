@@ -32,6 +32,7 @@ summary: E5700 60 ドライブシェルフのドライブを交換します。
 
 
 
+[[step-1-prepare-to-replace-drive-60-drive]]
 == 手順 1 ：ドライブを交換する準備（ 60 ドライブ）
 
 60 ドライブシェルフのドライブを交換する準備として、 SANtricity System Manager の Recovery Guru を確認し、前提となる手順を完了します。その後、障害が発生したコンポーネントを特定できます。
@@ -89,6 +90,7 @@ image::../media/28_dwg_e2860_de460c_attention_led_drive_maint-e5700.gif[ドラ�
 
 
 
+[[step-2-remove-failed-drive-60-drive]]
 == 手順 2 ：障害が発生したドライブを取り外す（ 60 ドライブ）
 
 新しいドライブに交換するために、障害が発生したドライブを取り外します。
@@ -126,6 +128,7 @@ NOTE: アクティブなドライブを誤って取り外した場合は、少�
 
 
 
+[[step-3-install-new-drive-60-drive]]
 == 手順 3 ：新しいドライブを取り付ける（ 60 ドライブ）
 
 障害が発生したドライブの代わりに、新しいドライブを取り付けます。
@@ -155,6 +158,7 @@ image::../media/28_dwg_e2860_de460c_drive_cru_maint-e5700.gif[ドライブキャ
 
 
 
+[[step-4-complete-drive-replacement-60-drive]]
 == 手順 4 ：ドライブの交換後の処理（ 60 ドライブ）
 
 新しいドライブが正しく動作していることを確認します。

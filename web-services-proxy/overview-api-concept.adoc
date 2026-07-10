@@ -15,6 +15,7 @@ Web Services API では、 HTTP 通信に要求と応答のサイクルが含ま
 
 
 
+[[url-elements-in-requests]]
 == 要求の URL 要素
 
 使用するプログラミング言語やツールに関係なく、 Web Services API の各呼び出しは、 URL 、 HTTP 動詞、および Accept ヘッダーを含む同様の構造を持ちます。
@@ -72,6 +73,7 @@ API パスは次の 3 つの部分で構成されます。
 |===
 
 
+[[supported-http-verbs]]
 == サポートされる HTTP 動詞
 
 サポートされる HTTP 動詞には、 GET 、 POST 、および DELETE があります。
@@ -86,12 +88,14 @@ NOTE: 現在のところ、 Web Services API では PUT および PATCH はサ�
 
 
 
+[[accept-headers]]
 == Accept ヘッダー
 
 要求の本文を返す場合、 Web Services は（特に指定がないかぎり） JSON 形式でデータを返します。一部のクライアントはデフォルトで "text/html" または同様のものを要求します。この場合、 API は要求された形式でデータを提供できないことを示す HTTP コード 406 で応答します。ベストプラクティスとして 'Accept ヘッダーを "application/json`" と定義して ' レスポンス・タイプとして JSON を想定しているすべての場合に使用することをお勧めします応答の本文が返されないその他のケース（ DELETE など）では、 Accept ヘッダーを指定しても意図しない結果が原因されることはありません。
 
 
 
+[[responses]]
 == 応答
 
 API に要求を送信すると、次の 2 つの重要な情報が応答として返されます。

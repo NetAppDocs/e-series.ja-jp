@@ -15,6 +15,7 @@ Fibre Channel プロトコルを使用する場合は、スイッチを設定し
 
 
 
+[[step-1-configure-the-fc-switches-windows]]
 == 手順1：FCスイッチを設定する- Windows
 
 Fibre Channel （ FC ）スイッチを設定（ゾーニング）すると、ホストをストレージアレイに接続し、パスの数を制限できます。スイッチのゾーニングはスイッチの管理インターフェイスで設定します。
@@ -38,6 +39,7 @@ Fibre Channel （ FC ）スイッチを設定（ゾーニング）すると、�
 
 
 
+[[step-2-determine-host-wwpns-and-make-recommended-settings-fc-windows]]
 == 手順2：ホストのWWPNを確認し、推奨設定を適用する- FC、Windows
 
 FC HBA ユーティリティをインストールして、各ホストポートの World Wide Port Name （ WWPN ）を確認できるようにします。また、 HBA ユーティリティを使用して、の Notes 列に推奨される設定を変更することもできます http://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] を参照してください。
@@ -64,6 +66,7 @@ HBA ユーティリティについては、次のガイドラインを確認し�
 
 
 
+[[step-3-record-your-configuration]]
 == 手順 3 ：設定を記録します
 
 このページの PDF を生成して印刷し、次のワークシートを使用して FC ストレージの構成情報を記録できます。この情報は、プロビジョニングタスクを実行する際に必要になります。
@@ -74,6 +77,7 @@ image::../media/port_identifiers_host_and_target_conf-win.gif[Fibre Channelポ�
 
 
 
+[[host-identifiers]]
 === ホスト識別子
 
 |===
@@ -106,6 +110,7 @@ _ 該当なし _
 |===
 
 
+[[target-identifiers]]
 === ターゲット識別子
 
 |===
@@ -163,6 +168,7 @@ _ 該当なし _
 |===
 
 
+[[mapping-host-name]]
 === マッピングホスト名
 
 |===

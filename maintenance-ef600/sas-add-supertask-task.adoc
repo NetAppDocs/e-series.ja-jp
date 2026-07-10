@@ -38,6 +38,7 @@ CAUTION: この手順 は両方のコントローラキャニスターで行う�
 
 
 
+[[step-1-place-controller-shelf-offline]]
 == 手順 1 ：コントローラシェルフをオフラインにする
 
 SAS 拡張カードを安全に追加できるように、コントローラシェルフをオフラインにします。
@@ -94,6 +95,7 @@ CAUTION: * データ損失の可能性 * - I/O 処理の実行中にこの手順
 
 
 
+[[step-2-remove-controller-canister]]
 == 手順 2 ：コントローラキャニスターを取り外す
 
 新しい SAS 拡張カードを追加できるように、コントローラキャニスターを取り外します。
@@ -124,6 +126,7 @@ image::../media/remove_controller_6.png[取り外すときは、コントロー�
 
 
 
+[[step-3-add-the-new-sas-expansion-card]]
 == 手順 3 ：新しい SAS 拡張カードを追加します
 
 SAS 拡張カードを取り付けて、ドライブトレイを拡張できるようにします。
@@ -149,6 +152,7 @@ SAS 拡張カードの底面やコントローラカードの表面のコンポ�
 
 
 
+[[step-4-reinstall-the-controller-canister]]
 == 手順 4 ：コントローラキャニスターを再度取り付けます
 
 新しい SAS 拡張カードを取り付けたら、コントローラキャニスターをコントローラシェルフに再度取り付けます。
@@ -167,6 +171,7 @@ image::../media/remove_controller_7.png[シェルフへのコントローラの�
 
 
 
+[[step-5-complete-sas-expansion-card-addition]]
 == 手順 5 ： SAS 拡張カードの追加後の処理
 
 コントローラをオンラインにし、サポートデータを収集し、運用を再開します。

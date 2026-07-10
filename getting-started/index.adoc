@@ -31,7 +31,7 @@ NOTE: その他のインターフェイスやオペレーティングシステ�
 
 
  a| 
-このサイトは、ソフトウェアバージョン 11.50 より古いリリースとファームウェアバージョン 8.50 より古いリリースに関する情報を提供していません。以前のリリースについては、を参照してください https://www.netapp.com/us/documentation/eseries-santricity.aspx["E シリーズおよび SANtricity のドキュメントリソース"^] ページ
+このサイトには、ソフトウェアバージョン11.50またはファームウェアバージョン8.50より前のリリースに関する情報は含まれていません。以前のリリースについては、 https://docs.netapp.com/us-en/e-series-santricity/early-versions.html#software-documentation-for-earlier-releases["EシリーズおよびSANtricityの以前のリリースに関するドキュメント"^]ページをご参照ください。
 
 サイト準備要件の詳細については、を参照してください https://hwu.netapp.com/["NetApp Hardware Universe の略"^]。
 

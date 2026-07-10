@@ -15,12 +15,14 @@ NVMe over RoCEプロトコルの場合は、スイッチを設定し、ホスト
 
 
 
+[[step-1-record-your-configuration]]
 == ステップ1：設定を記録する
 
 このページの PDF を生成して印刷し、次のワークシートを使用してプロトコル固有のストレージ構成情報を記録できます。この情報は、プロビジョニングタスクを実行する際に必要になります。
 
 
 
+[[recommended-configuration]]
 === 推奨される構成
 
 推奨構成は、 2 つのイニシエータポートと 4 つのターゲットポートを 1 つ以上の VLAN で接続した構成です。
@@ -29,6 +31,7 @@ image::../media/network_generic_worksheet.gif[NVMe over RoCE ポート識別子"
 
 
 
+[[host-identifiers]]
 === ホスト識別子
 
 |===
@@ -52,6 +55,7 @@ image::../media/network_generic_worksheet.gif[NVMe over RoCE ポート識別子"
 |===
 
 
+[[target-identifiers]]
 === ターゲット識別子
 
 |===
@@ -91,6 +95,7 @@ image::../media/network_generic_worksheet.gif[NVMe over RoCE ポート識別子"
 |===
 
 
+[[mapping-host]]
 === マッピングホスト
 
 |===
@@ -109,12 +114,14 @@ image::../media/network_generic_worksheet.gif[NVMe over RoCE ポート識別子"
 |===
 
 
+[[recommended-configuration]]
 === 推奨される構成
 
 これはアレイによって異なる場合があります。EF300、EF600、およびEF50は、2つのイニシエータポートと、1つ以上のVLANを持つ最大4つのターゲットポートを備えています。EF80は、2つのイニシエータポートと、1つ以上のVLANを持つ最大6つのターゲットポートで構成されます。
 
 
 
+[[step-2-configure-the-nvmeroce-switches]]
 == 手順2：NVMe/RoCEスイッチを設定する
 
 NVMe over RoCE に関するベンダーの推奨事項に従ってスイッチを設定します。これらの推奨事項には、設定の指示とコードの更新が含まれる場合があります。
@@ -132,6 +139,7 @@ NVMe over RoCE に関するベンダーの推奨事項に従ってスイッチ�
 
 
 
+[[step-3-configure-networking-nvmeroce-vmware]]
 == ステップ3：ネットワークの設定 - NVMe/RoCE、VMware
 
 データストレージの要件に応じて、NVMe over RoCEネットワークをさまざまな方法で設定できます。環境に最適な構成を選択するためのヒントについては、ネットワーク管理者に相談してください。
@@ -154,6 +162,7 @@ NVMe over RoCE ネットワークを計画する際には、VMware Configuration
 
 
 
+[[step-4-configure-array-side-networking-nvmeroce-vmware]]
 == ステップ4：アレイ側のネットワーク構成 - NVMe/RoCE、VMware
 
 SANtricity System Managerインターフェイスを使用して、アレイ側でNVMe over RoCEネットワークを設定します。
@@ -254,6 +263,7 @@ IPv4 と IPv6 、またはその両方を自動または手動で設定します
 
 
 
+[[step-5-configure-host-side-networkingnvme-over-roce-vmware]]
 == ステップ5：ホスト側ネットワークの設定—NVMe over RoCE、VMware
 
 ホスト側でNVMe over RoCEネットワークを設定すると、VMware NVMe over RDMAストレージ アダプタ イニシエータでアレイとのセッションを確立できるようになります。
@@ -293,6 +303,7 @@ IPv4 と IPv6 、またはその両方を自動または手動で設定します
 
 
 
+[[step-6-verify-ip-network-connections-nvme-over-roce-vmware]]
 == ステップ6：IPネットワーク接続を確認する - NVMe over RoCE、VMware
 
 インターネットプロトコル（ IP ）ネットワーク接続を確認するには、 ping テストを使用してホストとアレイが通信できることを確認します。

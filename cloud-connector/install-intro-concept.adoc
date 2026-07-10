@@ -28,6 +28,7 @@ NOTE: SANtricity Cloud Connectorツールは廃止され、ダウンロードで
 
 
 
+[[install-device-mapper-multipath-dm-mp]]
 == Device Mapper Multipath （ DM-MP ）のインストール
 
 SANtricity Cloud Connector を実行するホストは Linux Device Mapper Multipath （ DM-MP ）も実行する必要があり、マルチパスツールパッケージがインストールされている必要があります。
@@ -36,12 +37,14 @@ SANtricity Cloud Connector の検出プロセスでは、バックアップま�
 
 
 
+[[install-cloud-connector]]
 == Cloud Connector をインストール
 
 SANtricity Cloud Connector は、 Linux オペレーティングシステムにグラフィカルモードまたはコンソールモードでインストールできます。
 
 
 
+[[graphical-mode]]
 === グラフィカルモード
 
 Linux オペレーティングシステムでグラフィカルモードを使用して SANtricity Cloud Connector をインストールできます。
@@ -112,6 +115,7 @@ SANtricity Cloud Connector のインストールが開始され、 Webserver Dae
 
 
 
+[[console-mode]]
 === コンソールモード
 
 Linux オペレーティングシステムでコンソールモードを使用して SANtricity Cloud Connector をインストールできます。
@@ -191,6 +195,7 @@ NOTE: 以前のバージョンを維持したまま SANtricity Cloud Connector �
 
 
 
+[[add-server-certificate-and-ca-certificate-into-a-keystore]]
 == キーストアにサーバ証明書と CA 証明書を追加します
 
 ブラウザから SANtricity Cloud Connector ホストへのセキュアな https 接続を使用するには、 SANtricity Cloud Connector ホストからの自己署名証明書を受け入れるか、ブラウザと SANtricity Cloud Connector アプリケーションの両方で認識される証明書と信頼チェーンを追加します。
@@ -235,6 +240,7 @@ keytool -import -trustcacerts -alias cloudconnect -file certnew.cer -keystore ke
 
 
 
+[[add-storagegrid-certificate-into-a-keystore]]
 == キーストアに StorageGRID 証明書を追加します
 
 SANtricity を StorageGRID Cloud Connector アプリケーションのターゲットタイプとして設定する場合は、まず SANtricity Cloud Connector キーストアに StorageGRID 証明書を追加する必要があります。

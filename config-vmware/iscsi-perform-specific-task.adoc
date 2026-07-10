@@ -16,6 +16,7 @@ iSCSI プロトコルを使用する場合は、スイッチを設定し、ア�
 
 
 
+[[step-1-configure-the-switches-iscsi-vmware]]
 == 手順1：スイッチを設定します（iSCSI、VMware）
 
 iSCSI に関するベンダーの推奨事項に従ってスイッチを設定します。これらの推奨事項には、設定の指示とコードの更新が含まれる場合があります。
@@ -37,6 +38,7 @@ NOTE: コントローラのスイッチポートでは、ポートチャネル /
 
 
 
+[[step-2-configure-networking-iscsi-vmware]]
 == 手順2：ネットワークを設定する-- iSCSI VMware
 
 iSCSI ネットワークは、データストレージの要件に応じて、さまざまな方法でセットアップできます。環境に最適な構成を選択するには、ネットワーク管理者に相談してください。
@@ -72,6 +74,7 @@ NOTE: 多くのネットワークスイッチは 9 、 000 バイトを超える
 
 
 
+[[step-3-configure-array-side-networking-iscsi-vmware]]
 == 手順3：アレイ側のネットワークを設定する- iSCSI、VMware
 
 SANtricity System Manager の GUI を使用して、アレイ側の iSCSI ネットワークを設定します。
@@ -87,7 +90,7 @@ SANtricity System Manager の GUI を使用して、アレイ側の iSCSI ネッ
 このタスクでは、ハードウェアページから iSCSI ポート設定にアクセスする方法について説明します。設定には、 System （設定） > Configure iSCSI Ports （ iSCSI ポートの設定）メニューからもアクセスできます。
 
 
-NOTE: VMware構成でアレイ側のネットワークを設定する方法の詳細については、次のテクニカルレポートを参照してください。 https://www.netapp.com/pdf.html?item=/media/17017-tr4789pdf.pdf["『 VMware Configuration Guide for E Series SANtricity iSCSI Integration with ESXi 6.x and 7.x 』"^]
+NOTE: VMware構成におけるアレイ側ネットワークの設定方法に関する詳細については、以下のテクニカルレポートを参照してください： https://www.netapp.com/pdf.html?item=/media/17017-tr4789.pdf["『 VMware Configuration Guide for E Series SANtricity iSCSI Integration with ESXi 6.x and 7.x 』"^]。
 
 .手順
 . ブラウザで、「 + https://<DomainNameOrIPAddress>+` 」という URL を入力します
@@ -197,6 +200,7 @@ Internet Control Message Protocol （ ICMP ）を有効にする場合は、こ�
 
 
 
+[[step-4-configure-host-side-networking-iscsi]]
 == 手順4：ホスト側のネットワークを設定する- iSCSI
 
 ホスト側で iSCSI ネットワークを設定すると、 VMware iSCSI イニシエータがアレイとのセッションを確立できるようになります。
@@ -222,6 +226,7 @@ VMware の iSCSI ネットワークを設定する追加情報については、
 
 
 
+[[step-5-verify-ip-network-connections-iscsi-vmware]]
 == 手順5：IPネットワーク接続の確認-- iSCSI、VMware
 
 インターネットプロトコル（ IP ）ネットワーク接続を確認するには、 ping テストを使用してホストとアレイが通信できることを確認します。
@@ -270,12 +275,14 @@ NOTE: コマンドが失敗し、「 endto （） failed （ Message too long �
 
 
 
+[[step-6-record-your-configuration]]
 == 手順 6 ：設定を記録します
 
 このページの PDF を生成して印刷し、次のワークシートを使用してプロトコル固有のストレージ構成情報を記録できます。この情報は、プロビジョニングタスクを実行する際に必要になります。
 
 
 
+[[recommended-configuration]]
 === 推奨される構成
 
 推奨構成は、 2 つのイニシエータポートと 4 つのターゲットポートを 1 つ以上の VLAN で接続した構成です。
@@ -284,6 +291,7 @@ image::../media/50001_01_conf-vmw.gif[iSCSIポート識別子]
 
 
 
+[[target-iqn]]
 === ターゲット IQN
 
 |===
@@ -299,6 +307,7 @@ image::../media/50001_01_conf-vmw.gif[iSCSIポート識別子]
 |===
 
 
+[[mapping-host-name]]
 === マッピングホスト名
 
 |===

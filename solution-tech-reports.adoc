@@ -15,52 +15,56 @@ summary: E シリーズのテクニカルレポート
 
 
 
+[[splunk]]
 == Splunk
 
 [cols="9,9,9"]
 |===
 
 
-| https://www.netapp.com/pdf.html?item=/media/16851-tr-4623pdf.pdf["* TR-4623 ：『 E5700 with Splunk Enterprise * 』"^] | https://www.netapp.com/media/57104-tr-4903.pdf["* TR-4903 ：『 EF300 with Splunk Enterprise * 』を参照してください"^] | https://www.netapp.com/pdf.html?item=/media/72003-tr-4930.pdf["* TR-4930：Splunk Enterpriseを使用したEF600 *"^] 
+| https://www.netapp.com/pdf.html?item=/media/16851-tr-4623.pdf["* TR-4623 ：『 E5700 with Splunk Enterprise * 』"^] | https://www.netapp.com/media/57104-tr-4903.pdf["* TR-4903 ：『 EF300 with Splunk Enterprise * 』を参照してください"^] | https://www.netapp.com/pdf.html?item=/media/72003-tr-4930.pdf["* TR-4930：Splunk Enterpriseを使用したEF600 *"^] 
 
 
 | E5700 システムと Splunk の設計を統合したアーキテクチャについて説明します。また、 Splunk のマシンログイベントシミュレーションツールから取得したパフォーマンステスト結果もまとめています。 | EF300 オールフラッシュアレイと Splunk 設計の統合アーキテクチャについて説明します。また、 Splunk のマシンログイベントシミュレーションツールから取得したパフォーマンステスト結果もまとめています。 | EF600オールフラッシュアレイとSplunk設計の統合アーキテクチャについて説明します。また、 Splunk のマシンログイベントシミュレーションツールから取得したパフォーマンステスト結果もまとめています。 
 |===
 
 
+[[enterprise-databases]]
 == エンタープライズデータベース
 
 [cols="9,9,9"]
 |===
 
 
-| https://www.netapp.com/pdf.html?item=/media/17086-tr4764pdf.pdf["* TR-4764 ：『 Best Practice Guide for Microsoft SQL Server with NetApp EF Series * 』"^] | https://www.netapp.com/pdf.html?item=/media/17248-tr4794pdf.pdf["* TR-4794 ：『 Oracle Databases on NetApp EF Series * 』"^] |  
+| https://www.netapp.com/pdf.html?item=/media/17086-tr4764.pdf["* TR-4764 ：『 Best Practice Guide for Microsoft SQL Server with NetApp EF Series * 』"^] | https://www.netapp.com/pdf.html?item=/media/17248-tr4794.pdf["* TR-4794 ：『 Oracle Databases on NetApp EF Series * 』"^] |  
 
 
 | ストレージ管理者とデータベース管理者が NetApp EF シリーズストレージに Microsoft SQL Server を導入する際に役立ちます。 | ストレージ管理者とデータベース管理者が Oracle を NetApp EF シリーズストレージに導入する際に役立ちます。 |  
 |===
 
 
+[[backup-recovery]]
 == バックアップとリカバリ
 
 [cols="9,9,9"]
 |===
 
 
-| https://www.netapp.com/media/79676-tr-4950.pdf["* TR-4320 ：『 Best Practices with Commvault Data Platform V11 * 』を参照してください"^] | https://www.netapp.com/media/79436-tr-4948.pdf["* TR-4471 ：『 Best Practices with Veeam Backup and Replication 』を参照してください"^] | https://www.netapp.com/pdf.html?item=/media/16433-tr-4704pdf.pdf["* TR-4704 ：『 Deploying Veritas NetBackup with NetApp E-Series Storage * 』"^] 
+| https://www.netapp.com/media/79676-tr-4950.pdf["* TR-4320 ：『 Best Practices with Commvault Data Platform V11 * 』を参照してください"^] | https://www.netapp.com/media/79436-tr-4948.pdf["* TR-4471 ：『 Best Practices with Veeam Backup and Replication 』を参照してください"^] | https://www.netapp.com/pdf.html?item=/media/16433-tr-4704.pdf["* TR-4704 ：『 Deploying Veritas NetBackup with NetApp E-Series Storage * 』"^] 
 
 
 | Commvault Data Platform V11 環境で NetApp E シリーズストレージを使用する際のリファレンスアーキテクチャとベストプラクティスについて説明します。 | Veeam Backup & Replication 9.5 環境で NetApp E シリーズストレージを使用する際のリファレンスアーキテクチャとベストプラクティスについて説明します。 | NetApp E シリーズストレージへの Veritas NetBackup の導入について説明します。 
 |===
 
 
+[[vss]]
 == VSS
 
 [cols="9,9,9"]
 |===
 
 
-| https://www.netapp.com/pdf.html?item=/media/17200-tr4825pdf.pdf["* TR-4725 ：『 NetApp E-Series for Video Surveillance Best Practice Guide 』 * を参照してください"^] | https://www.netapp.com/pdf.html?item=/media/6143-tr4818pdf.pdf["* TR-4818 ：『 Virtualizing Video Management Systems with NetApp E-Series Storage * 』"^] | https://www.netapp.com/pdf.html?item=/media/19400-tr-4848.pdf["* TR-4848 ：『 Bosch Video Recording 解決策 with NetApp E-Series E2800 Disk Storage Array 』"^] 
+| https://www.netapp.com/pdf.html?item=/media/17200-tr4825.pdf["* TR-4725 ：『 NetApp E-Series for Video Surveillance Best Practice Guide 』 * を参照してください"^] | https://www.netapp.com/pdf.html?item=/media/6143-tr4818.pdf["* TR-4818 ：『 Virtualizing Video Management Systems with NetApp E-Series Storage * 』"^] | https://www.netapp.com/pdf.html?item=/media/19400-tr-4848.pdf["* TR-4848 ：『 Bosch Video Recording 解決策 with NetApp E-Series E2800 Disk Storage Array 』"^] 
 
 
 | E シリーズアレイをビデオ監視環境に導入するためのベストプラクティスについて説明します。 | NetApp E シリーズストレージでビデオ管理システムを設計および導入する方法について説明します。 | ビデオ監視解決策アーキテクチャについて説明し、コンポーネントとストレージのベストプラクティスの詳細を示します。 
@@ -73,6 +77,7 @@ summary: E シリーズのテクニカルレポート
 |===
 
 
+[[hpc]]
 == HPC
 
 [cols="9,9,9"]

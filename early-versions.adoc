@@ -15,6 +15,7 @@ E シリーズハードウェアおよび SANtricity ソフトウェアの以前
 
 
 
+[[hardware-documentation-for-earlier-releases]]
 == 以前のリリースのハードウェアマニュアル
 
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2484026["E2712 、 E2724 、 E5612 、 E5624 コントローラドライブトレイ、 DE1600 、 DE5600 拡張ドライブトレイを搭載"^]
@@ -29,10 +30,12 @@ E シリーズハードウェアおよび SANtricity ソフトウェアの以前
 
 
 
+[[software-documentation-for-earlier-releases]]
 == 以前のリリースのソフトウェアドキュメント
 
 
 
+[[santricity-release-11-9]]
 === SANtricityリリース11.9
 
 * https://docs.netapp.com/us-en/e-series-santricity-119/index.html["System Managerのヘルプ"^]
@@ -41,6 +44,7 @@ E シリーズハードウェアおよび SANtricity ソフトウェアの以前
 
 
 
+[[santricity-release-11-8]]
 === SANtricityリリース11.8
 
 * https://docs.netapp.com/us-en/e-series-santricity-118/index.html["System Managerのヘルプ"^]
@@ -49,6 +53,7 @@ E シリーズハードウェアおよび SANtricity ソフトウェアの以前
 
 
 
+[[santricity-release-11-7]]
 === SANtricityリリース11.7
 
 * https://docs.netapp.com/us-en/e-series-santricity-117/index.html["System Managerのヘルプ"^]
@@ -57,6 +62,7 @@ E シリーズハードウェアおよび SANtricity ソフトウェアの以前
 
 
 
+[[santricity-release-11-6]]
 === SANtricity リリース 11.6
 
 * https://docs.netapp.com/us-en/e-series-santricity-116/index.html["System Managerのヘルプ"^]
@@ -65,6 +71,7 @@ E シリーズハードウェアおよび SANtricity ソフトウェアの以前
 
 
 
+[[santricity-release-11-5]]
 === SANtricity リリース 11.5
 
 * https://docs.netapp.com/us-en/e-series-santricity-115/index.html["System Managerのヘルプ"^]
@@ -72,6 +79,7 @@ E シリーズハードウェアおよび SANtricity ソフトウェアの以前
 
 
 
+[[santricity-release-11-4]]
 === SANtricity リリース 11.4
 
 * https://mysupport.netapp.com/ecm/ecm_get_file/ECMLP2862590["AMW（E2700、E5600 / EF560）ヘルプ"^]

@@ -20,6 +20,7 @@ NOTE: SANtricity Cloud Connector アプリケーションで表示されるバ�
 
 
 
+[[create-a-new-image-based-backup]]
 == イメージベースのバックアップの新規作成
 
 イメージベースのバックアップを新規作成するには、 SANtricity Cloud Connector アプリケーションの Backups ページの Create 機能を使用します。
@@ -73,6 +74,7 @@ NOTE: 選択したイメージベースのバックアップのフルバック�
 
 
 
+[[create-a-new-folderfile-based-backup]]
 == フォルダ / ファイルベースのバックアップの新規作成
 
 フォルダ / ファイルベースのバックアップを新規に作成するには、 SANtricity Cloud Connector アプリケーションの Backups ページの Create 機能を使用します。
@@ -136,6 +138,7 @@ NOTE: 選択したファイルベースのバックアップのフルバック�
 
 
 
+[[run-full-and-incremental-backups]]
 == フル・バックアップと増分バックアップを実行します
 
 バックアップページの実行機能を使用して、フルバックアップと増分バックアップを実行できます。増分バックアップは、ファイルベースのバックアップでのみ使用できます。
@@ -170,6 +173,7 @@ NOTE: SANtricity Cloud Connector アプリケーションで最後に実行さ�
 
 
 
+[[delete-a-backup-job]]
 == バックアップジョブを削除
 
 削除機能を使用すると、選択したバックアップの指定したターゲット・ロケーションにあるバックアップ・データとバックアップ・セットが削除されます。

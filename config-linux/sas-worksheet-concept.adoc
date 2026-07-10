@@ -17,6 +17,7 @@ image::../media/sas_topology_diagram_conf-lin.gif[図： SAS トポロジ]
 
 
 
+[[host-identifiers]]
 == ホスト識別子
 
 |===
@@ -65,12 +66,14 @@ _ 該当なし _
 |===
 
 
+[[target-identifiers]]
 == ターゲット識別子
 
 推奨構成は 2 つのターゲットポートで構成されます。
 
 
 
+[[mapping-host]]
 == マッピングホスト
 
 |===

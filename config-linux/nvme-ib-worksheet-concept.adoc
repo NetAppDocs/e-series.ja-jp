@@ -15,6 +15,7 @@ summary: このワークシートを使用して、 NVMe over InfiniBand スト�
 
 
 
+[[host-identifiers]]
 == ホスト識別子
 
 
@@ -63,6 +64,7 @@ NOTE: ソフトウェアイニシエータの NQN はタスクの実行中に特
 |===
 
 
+[[recommended-configuration]]
 == 推奨される構成
 
 直接接続トポロジでは、 1 つ以上のホストをサブシステムに直接接続します。SANtricity OS 11.50 リリースでは、次の図のように、各ホストからサブシステムコントローラへの単一の接続がサポートされます。この構成では、各ホストの一方の HCA （ホストチャネルアダプタ）ポートを、接続先の E シリーズコントローラポートと同じサブネット（ただしもう一方の HCA ポートとは別のサブネット）に配置する必要があります。
@@ -71,6 +73,7 @@ image::../media/nvmeof_direct_connect.gif[NVMe over InfiniBandの直接接続の
 
 
 
+[[target-nqn]]
 == ターゲット NQN
 
 ストレージアレイのターゲット NQN を記録します。この情報は、で使用します xref:nvme-ib-configure-storage-connections-task.adoc[ストレージアレイの NVMe over InfiniBand 接続を設定します]。
@@ -90,6 +93,7 @@ SANtricity ： * ストレージアレイ * > * NVMe over InfiniBand * > * Manag
 |===
 
 
+[[network-configuration]]
 == ネットワーク構成：
 
 InfiniBand ファブリック上のホストとストレージに使用するネットワーク設定を記録します。この手順では、 2 つのサブネットを使用して完全な冗長性を実現することを前提としています
@@ -98,6 +102,7 @@ InfiniBand ファブリック上のホストとストレージに使用するネ
 
 
 
+[[subnet-a]]
 === サブネット A
 
 使用するサブネットを定義します。
@@ -157,6 +162,7 @@ _ 該当なし _
 |===
 
 
+[[subnet-b]]
 === サブネット B
 
 使用するサブネットを定義します。
@@ -216,6 +222,7 @@ _ 該当なし _
 |===
 
 
+[[mapping-host-name]]
 == マッピングホスト名
 
 

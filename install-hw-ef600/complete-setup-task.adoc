@@ -15,12 +15,14 @@ summary: コントローラをネットワークにケーブル接続して、�
 
 
 
+[[step-1-cable-the-data-hosts]]
 == 手順 1 ：データホストをケーブル接続します
 
 ネットワークトポロジに応じてストレージシステムをケーブル接続します。
 
 
 
+[[option-1-direct-attach-topology]]
 === オプション 1 ：直接接続トポロジ
 
 次の例は、直接接続トポロジを使用したデータホストへのケーブル接続を示しています。
@@ -37,6 +39,7 @@ image:../media/direct_topo.png["直接接続トポロジのケーブル接続"]
 |===
 
 
+[[option-2-fabric-topology]]
 === オプション 2 ：ファブリックトポロジ
 
 次の例は、ファブリックトポロジを使用したデータホストへのケーブル接続を示しています。
@@ -54,12 +57,14 @@ image:../media/fabric_topo.png["ファブリックトポロジのケーブル接
 |===
 
 
+[[step-2-connect-and-configure-the-management-connection]]
 == 手順 2 ：管理接続を接続して設定します
 
 コントローラの管理ポートは、 DHCP サーバまたは静的 IP アドレスを使用して設定できます。
 
 
 
+[[option-1-dhcp-server]]
 === オプション 1 ： DHCP サーバ
 
 DHCP サーバを使用して管理ポートを設定する方法について説明します。
@@ -99,6 +104,7 @@ image:../media/ethernet_callout.png["EF600の管理ポート"]
 
 
 
+[[option-2-static-ip-address]]
 === オプション 2 ：静的 IP アドレス
 
 IP アドレスとサブネットマスクを入力して、管理ポートを手動で設定する方法について説明します。
@@ -174,6 +180,7 @@ NOTE: コントローラ B との接続が失われた場合は、前の手順�
 
 
 
+[[step-3-configure-storage-system]]
 == 手順 3 ：ストレージシステムを設定する
 
 EF300 または EF600 ハードウェアを設置したら、 SANtricity ソフトウェアを使用してストレージシステムを設定および管理します。

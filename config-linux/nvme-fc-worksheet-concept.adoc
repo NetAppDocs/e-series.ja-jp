@@ -15,6 +15,7 @@ summary: このワークシートを使用して、 NVMe over Fibre Channel ス�
 
 
 
+[[direct-connect-topology]]
 == 直接接続トポロジ
 
 直接接続トポロジでは、 1 つ以上のホストをコントローラに直接接続します。
@@ -33,6 +34,7 @@ image::../media/nvme_fc_direct_topology.png[直接接続トポロジの例]
 
 
 
+[[switch-connect-topology]]
 == スイッチ接続トポロジ
 
 ファブリックトポロジでは、 1 つ以上のスイッチを使用します。を参照してください https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] を参照してください。
@@ -41,6 +43,7 @@ image::../media/nvme_fc_fabric_topology.png[スイッチ接続トポロジの例
 
 
 
+[[host-identifiers]]
 == ホスト識別子
 
 各ホストのイニシエータ NQN を特定して記録します。
@@ -62,6 +65,7 @@ image::../media/nvme_fc_fabric_topology.png[スイッチ接続トポロジの例
 |===
 
 
+[[target-nqn]]
 == ターゲット NQN
 
 ストレージアレイのターゲット NQN を記録します。
@@ -77,6 +81,7 @@ image::../media/nvme_fc_fabric_topology.png[スイッチ接続トポロジの例
 |===
 
 
+[[target-nqns]]
 == ターゲット NQN
 
 アレイポートで使用する NQN を記録します。
@@ -110,6 +115,7 @@ image::../media/nvme_fc_fabric_topology.png[スイッチ接続トポロジの例
 |===
 
 
+[[mapping-host-name]]
 == マッピングホスト名
 
 

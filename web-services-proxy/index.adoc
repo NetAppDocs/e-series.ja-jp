@@ -15,6 +15,7 @@ SANtricity Web Services Proxy は RESTful API サーバで、ホストシステ�
 
 
 
+[[installation-overview]]
 == インストールの概要
 
 Web Services Proxy をインストールして設定するには、次の手順を実行します。
@@ -27,6 +28,7 @@ Web Services Proxy をインストールして設定するには、次の手順�
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * Unified Manager -- プロキシインストールには、新しい E シリーズおよび EF シリーズストレージシステムへの設定アクセスを提供する Web ベースのインターフェイス、 SANtricity Unified Manager が含まれます。詳細については、 Unified Manager のオンラインヘルプを参照してください。このヘルプはユーザインターフェイスまたはから入手できます https://docs.netapp.com/us-en/e-series-santricity/index.html["SANtricity ソフトウェアドキュメントサイト"^]。

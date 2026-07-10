@@ -17,6 +17,7 @@ summary: ラックマウント用ハードウェアは、ハードウェアを�
 
 
 
+[[adjustable-support-rails]]
 == 調整可能なサポートレール
 
 にアクセスします https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1652045["アジャスタブル支持レールの設置"^] 別途出荷された（キャビネットに取り付けられていない）コントローラドライブトレイまたはドライブトレイの取り付け用。この手順は、次の 2U （ 9 cm または 3.5 インチ）トレイに適用できます。
@@ -28,18 +29,21 @@ summary: ラックマウント用ハードウェアは、ハードウェアを�
 
 
 
+[[two-post-rack-2u]]
 == 2ポストラック：2U
 
 にアクセスします https://mysupport.netapp.com/ecm/ecm_download_file/ECMM1280302["2 ポストラックへの 2U 装置の設置"^]。
 
 
 
+[[four-post-rack-or-cabinet-2u]]
 == 4ポストラックまたはキャビネット-- 2U
 
 にアクセスします https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2484194["4 ポストラックまたはキャビネットに 2U 12 ドライブエンクロージャを設置する"^]。
 
 
 
+[[four-post-rack-superrail]]
 == 4ポストラック-SuperRail
 
 アクセス https://docs.netapp.com/us-en/ontap-systems/platform-supplemental/superrail-install.html["SuperRailを4本柱のラックに取り付けます"^]。

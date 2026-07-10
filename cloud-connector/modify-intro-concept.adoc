@@ -16,6 +16,7 @@ Settings オプションでは、 S3 アカウント、管理対象のストレ�
 
 
 
+[[modify-s3-account-settings]]
 == S3 アカウントの設定を変更します
 
 SANtricity Cloud Connector アプリケーションの既存の S3 設定は、 S3 Account Settings ウィンドウで変更できます。
@@ -46,6 +47,7 @@ S3 Account Settings ページが表示されます。
 
 
 
+[[manage-storage-arrays]]
 == ストレージアレイを管理します
 
 ストレージアレイの管理ページで、 SANtricity Cloud Connector ホストに登録された Web サービスプロキシからストレージアレイを追加または削除できます。
@@ -88,6 +90,7 @@ Settings - Storage Arrays （設定 - ストレージアレイ）画面が表示
 
 
 
+[[modify-web-services-proxy-settings]]
 == Web Services Proxy の設定を変更
 
 SANtricity Cloud Connector アプリケーションの既存の Web サービスプロキシ設定は、 Web Services Proxy Settings ウィンドウで変更できます。
@@ -113,6 +116,7 @@ Web Services Proxy の設定画面が表示されます。
 
 
 
+[[change-santricity-cloud-connector-password]]
 == SANtricity Cloud Connector のパスワードを変更します
 
 SANtricity Cloud Connector アプリケーションのパスワードは、パスワードの変更画面で変更できます。

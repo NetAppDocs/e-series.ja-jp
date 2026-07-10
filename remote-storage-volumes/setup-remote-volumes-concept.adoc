@@ -15,6 +15,7 @@ summary: 初期セットアップは、サポートされる iSCSI プロトコ�
 
 
 
+[[configure-remote-storage-device-and-e-series-array]]
 == リモートストレージデバイスと E シリーズアレイを設定
 
 SANtricity システムマネージャに進んでリモートストレージボリューム機能を設定する前に、次の手順を実行します。
@@ -38,6 +39,7 @@ NOTE: 推奨：インポートプロセスを開始する前にリモートソ�
 
 
 
+[[cable-the-storage-arrays]]
 == ストレージアレイをケーブル接続します
 
 セットアッププロセスでは、ストレージアレイと I/O ホストを iSCSI 互換インターフェイスにケーブル接続する必要があります。
@@ -48,6 +50,7 @@ image:../media/remote_target_volumes_iscsi_use_case_1.png["iSCSIストレージ�
 
 
 
+[[configure-the-iscsi-ports]]
 == iSCSI ポートを設定
 
 ターゲット（ローカルの E シリーズストレージアレイ）とソース（リモートストレージアレイ）の間の通信を確保するために、 iSCSI ポートを設定する必要があります。

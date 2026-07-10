@@ -15,6 +15,7 @@ Web Services には、 REST API と直接やり取りできる API ドキュメ�
 
 
 
+[[log-in-to-web-services-api]]
 == Web Services API にログインします
 
 Web Services Proxy をインストールしたら、ブラウザから対話型の API ドキュメントにアクセスできます。
@@ -99,6 +100,7 @@ API ドキュメントは、上位レベルのカテゴリ（ Administration や
 
 
 
+[[log-in-to-unified-manager]]
 == Unified Manager にログインします
 
 Web Services Proxy をインストールしたら、 Unified Manager にアクセスして Web ベースのインターフェイスで複数のストレージシステムを管理できます。

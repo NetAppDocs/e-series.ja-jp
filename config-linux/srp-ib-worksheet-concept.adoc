@@ -17,6 +17,7 @@ image::../media/port_identifiers_ib_srp.gif[SRB over IBポート識別子]
 
 
 
+[[host-identifiers]]
 == ホスト識別子
 
 
@@ -70,12 +71,14 @@ _ 該当なし _
 |===
 
 
+[[recommended-configuration]]
 == 推奨される構成
 
 推奨構成は、 2 つのイニシエータポートと 4 つのターゲットポートで構成されます。
 
 
 
+[[mapping-host-name]]
 == マッピングホスト名
 
 

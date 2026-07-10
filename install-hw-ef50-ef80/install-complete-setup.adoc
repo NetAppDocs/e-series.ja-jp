@@ -15,6 +15,7 @@ EF50またはEF80ストレージシステムの電源を入れた後、アウト
 
 
 
+[[step-1-cable-and-configure-the-management-ports]]
 == ステップ1：管理ポートのケーブル接続と設定
 
 各コントローラの管理ポートにケーブルを接続し、DHCPサーバーまたは静的IPアドレスを使用してポートを設定します。
@@ -106,6 +107,7 @@ NOTE: コントローラ B との接続が失われた場合は、前の手順�
 ====
 
 
+[[step-2-configure-your-storage-system]]
 == ステップ2：ストレージシステムを設定する
 
 SANtricity System Manager を使用して、ストレージシステムの設定と管理を行います。
@@ -125,6 +127,7 @@ SANtricity System Manager に付属のオンラインヘルプを参照してく
 
 
 
+[[step-3-verify-the-host-io-module-protocol-is-correct]]
 == ステップ3：ホストI/Oモジュールのプロトコルが正しいことを確認する
 
 ストレージシステムには、ホストI/Oモジュールにデフォルトのプロトコルが付属しています。デフォルトのプロトコルが希望するプロトコルでない場合は、変更できます。

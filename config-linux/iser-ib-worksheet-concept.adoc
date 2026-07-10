@@ -15,6 +15,7 @@ summary: このワークシートを使用して、 iSER over InfiniBand スト�
 
 
 
+[[host-identifiers]]
 == ホスト識別子
 
 
@@ -63,6 +64,7 @@ NOTE: ソフトウェアイニシエータの IQN は、タスクの実行中に
 |===
 
 
+[[recommended-configuration]]
 == 推奨される構成
 
 推奨構成は、 2 つのホスト（イニシエータ）ポートと 4 つのターゲットポートで構成されます。
@@ -71,6 +73,7 @@ image::../media/port_identifiers_ib_iser.gif[iSER over IBネットワーク構�
 
 
 
+[[target-iqn]]
 == ターゲット IQN
 
 ストレージアレイのターゲット IQN を記録します。この情報は、で使用します xref:iser-ib-configure-network-attached-hosts-task.adoc[ストレージ接続ホストのネットワークを設定します]。
@@ -90,6 +93,7 @@ SANtricity ： * ストレージアレイ * > * iSER * > * 設定の管理 * を
 |===
 
 
+[[network-configuration]]
 == ネットワーク構成：
 
 InfiniBand ファブリック上のホストとストレージに使用するネットワーク設定を記録します。この手順では、 2 つのサブネットを使用して完全な冗長性を実現することを前提としています
@@ -98,6 +102,7 @@ InfiniBand ファブリック上のホストとストレージに使用するネ
 
 
 
+[[subnet-a]]
 === サブネット A
 
 使用するサブネットを定義します。
@@ -157,6 +162,7 @@ _ 該当なし _
 |===
 
 
+[[subnet-b]]
 === サブネット B
 
 使用するサブネットを定義します。
@@ -216,6 +222,7 @@ _ 該当なし _
 |===
 
 
+[[mapping-host-name]]
 == マッピングホスト名
 
 

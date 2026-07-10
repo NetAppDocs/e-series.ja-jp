@@ -38,6 +38,7 @@ CAUTION: * データアクセスが失われる可能性 * - 別の E シリー�
 
 
 
+[[step-1-place-controller-shelf-offline]]
 == 手順 1 ：コントローラシェルフをオフラインにする
 
 HIC を安全にアップグレードできるように、コントローラシェルフをオフラインにします。
@@ -98,6 +99,8 @@ CAUTION: * データ損失の可能性 * - I/O 処理の実行中にこの手順
 
 
 
+[[step-2-remove-controller-canister]]
+[[step2_remove_controller_canister]]
 == 手順 2 ：コントローラキャニスターを取り外す
 
 コントローラキャニスターをシステムから取り外し、コントローラキャニスターカバーを取り外します。
@@ -119,6 +122,8 @@ image::../media/drw_E4000_open_controller_module_cover_IEOPS-870.png[コント�
 
 
 
+[[step-3-upgrade-the-hic]]
+[[step3_upgrade_hic]]
 == 手順 3 ： HIC をアップグレードする
 
 HICを取り外して交換します。
@@ -146,6 +151,8 @@ image::../media/drw_E4000_replace_HIC_source_IEOPS-864.png[コントローラモ
 
 
 
+[[step-4-reinstall-controller-canister]]
+[[step4_reinstall_controller]]
 == 手順 4 ：コントローラキャニスターを再度取り付ける
 
 コントローラキャニスターをシャーシに再度取り付けます。
@@ -166,6 +173,7 @@ NOTE: 光ファイバケーブルを使用する場合は、メディアコン�
 
 
 
+[[step-5-complete-the-hic-upgrade]]
 == 手順 5 ： HIC のアップグレードを完了します
 
 両方のコントローラをオンラインにし、サポートデータを収集して、処理を再開します。

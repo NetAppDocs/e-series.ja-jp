@@ -18,6 +18,7 @@ E5700 バッテリを交換する前に、要件と考慮事項を確認して�
 
 
 
+[[recovery-guru-alerts]]
 == Recovery Guru のアラート
 
 SANtricity System Manager の Recovery Guru から次のいずれかのステータスが報告された場合は、該当するバッテリを交換する必要があります。
@@ -30,6 +31,7 @@ SANtricity System Manager の Recovery Guru で詳細を確認し、問題にバ
 
 
 
+[[procedure-overview]]
 == 手順の概要
 
 データを保護するために、障害が発生したバッテリはできるだけ早く交換する必要があります。
@@ -45,6 +47,7 @@ E5700 コントローラ（ E5724 、 EF570 、または E5760 ）のバッテ�
 
 
 
+[[requirements]]
 == 要件
 
 障害が発生したバッテリを交換する場合は、次の準備をしておく必要があります。

@@ -15,6 +15,7 @@ summary: コントローラをネットワークに接続する方法と、ス�
 
 
 
+[[step-1-cable-the-data-hosts]]
 == 手順 1 ：データホストをケーブル接続します
 
 ネットワークトポロジに応じてシステムをケーブル接続します。
@@ -51,6 +52,7 @@ image:../media/drw_e4012_fabric_topology_ieops-2157.svg["E4012ファブリック
 ====
 
 
+[[step-2-connect-and-configure-the-management-connection]]
 == 手順 2 ：管理接続を接続して設定します
 
 コントローラの管理ポートは、 DHCP サーバまたは静的 IP アドレスを使用して設定できます。
@@ -123,6 +125,7 @@ NOTE: コントローラ B との接続が失われた場合は、前の手順�
 ====
 
 
+[[step-3-configure-and-manage-your-storage-system]]
 == 手順 3 ：ストレージシステムを設定および管理する
 
 ハードウェアの設置が完了したら、 SANtricity ソフトウェアを使用して、ストレージシステムを設定および管理します。

@@ -15,6 +15,7 @@ summary: コントローラをアップグレードする前に、古いコン�
 
 
 
+[[step-1-remove-controller]]
 == 手順 1 ：コントローラを取り外す
 
 [role="tabbed-block"]
@@ -79,6 +80,7 @@ image:../media/28_dwg_e2824_remove_controller_canister_upg-hw.gif["コントロ�
 ====
 
 
+[[step-2-remove-battery]]
 == 手順 2 ：バッテリを取り外す
 
 バッテリを取り外します。これは、古いコントローラキャニスターのバッテリを新しいコントローラキャニスターで使用する場合にのみ行います。

@@ -15,6 +15,7 @@ E2800 アレイでホストプロトコルを変更する前に、要件を確�
 
 
 
+[[host-ports-you-can-change]]
 == 変更可能なホストポート
 
 
@@ -99,6 +100,7 @@ RJ-45 （ base-T ）ポート × 2
 
 
 
+[[requirements-for-changing-the-host-protocol]]
 == ホストプロトコルを変更する場合の要件
 
 * この手順のダウンタイムメンテナンス時間をスケジュールする必要があります。
@@ -111,6 +113,7 @@ RJ-45 （ base-T ）ポート × 2
 
 
 
+[[considerations-for-changing-the-host-protocol]]
 == ホストプロトコルの変更に関する考慮事項
 
 ホストプロトコルを変更する際の考慮事項は、ベースボードホストポートおよび HIC ポートの変更前と変更後のプロトコルによって異なります。
@@ -122,6 +125,7 @@ NOTE: 次の考慮事項は、すでに使用中のストレージアレイを�
 
 
 
+[[converting-from-fc-to-iscsi]]
 === FC から iSCSI への変換
 
 * FC ベースボードポートに接続された SAN ブートホストがある場合は、を参照してください https://mysupport.netapp.com/NOW/products/interoperability["NetApp Interoperability Matrix を参照してください"^] 構成が iSCSI でサポートされていることを確認するツール。サポートされない場合は、ホストプロトコルを iSCSI に変換できません。
@@ -151,6 +155,7 @@ CAUTION: iSCSI への変換前に同期ミラーリング関係を非アクテ�
 
 
 
+[[converting-from-iscsi-to-fc]]
 === iSCSI から FC への変換
 
 * 非同期ミラーリングを使用する場合は、ローカルストレージアレイとリモートストレージアレイの両方で同じプロトコルを使用する必要があります。非同期ミラーリングをベースボードポート経由で現在使用している場合は、プロトコルを変更する前に、非同期ミラーリングを非アクティブ化する必要があります。
@@ -159,6 +164,7 @@ CAUTION: iSCSI への変換前に同期ミラーリング関係を非アクテ�
 
 
 
+[[converting-from-fc-to-fciscsi]]
 === FC から FC / iSCSI への変換
 
 ミラーリングに関する考慮事項：
@@ -244,6 +250,7 @@ DA ボリュームが FC のみのホストを含むホストクラスタにあ�
 
 
 
+[[converting-from-iscsi-to-fciscsi]]
 === iSCSI から FC / iSCSI への変換
 
 * ミラーリングに使用されているポートを変換する場合は、 iSCSI のまま変換しないポートにミラーリング関係を移動する必要があります。
@@ -258,6 +265,7 @@ DA ボリュームが FC のみのホストを含むホストクラスタにあ�
 
 
 
+[[converting-from-fciscsi-to-fc]]
 === FC / iSCSI から FC への変換
 
 * すべてのホストポートを FC に変換する場合は、 FC 経由の非同期ミラーリングに最も大きい番号の FC ポートを使用する必要があることに注意してください。
@@ -322,6 +330,7 @@ FC
 
 
 
+[[converting-from-fciscsi-to-iscsi]]
 === FC / iSCSI から iSCSI への変換
 
 * 同期ミラーリングは iSCSI ではサポートされません。
@@ -337,6 +346,7 @@ CAUTION: * データ損失の可能性 * - ポートを iSCSI に変換する前
 
 
 
+[[same-host-protocol-and-mirroring-operations]]
 === ホストプロトコルが同じ場合のミラーリング処理
 
 ミラーリングに使用されるホストポートのプロトコルが機能パックの適用後に同じであれば、ミラーリング処理には影響はありません。それでも、機能パックを適用する前に、すべてのミラー整合性グループが同期されていることを確認してください。

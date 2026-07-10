@@ -18,6 +18,7 @@ summary: E2800 アレイでホストポートプロトコルの変換を実行�
 
 
 
+[[complete-fc-to-iscsi-conversion]]
 == FC から iSCSI への変換を完了します
 
 すべてのホストポートを FC から iSCSI に変換した場合は、 iSCSI ネットワークを設定する必要があります。
@@ -62,6 +63,7 @@ NOTE: ホストまたはホストクラスタを追加する手順を確認す�
 
 
 
+[[complete-iscsi-to-fc-conversion]]
 == iSCSI から FC への変換を完了
 
 すべてのホストポートを iSCSI から FC に変換した場合は、 FC ネットワークを設定する必要があります。
@@ -97,6 +99,7 @@ NOTE: ホストまたはホストクラスタを追加する手順を確認す�
 
 
 
+[[complete-fc-to-fciscsi-conversion]]
 == FC から FC / iSCSI への変換を実行する
 
 FC ホストポートのみを使用していた環境で、そのうちの一部のポートを iSCSI に変換した場合は、 iSCSI をサポートするために既存の設定の変更が必要になることがあります。
@@ -105,6 +108,7 @@ FC ホストポートのみを使用していた環境で、そのうちの一�
 
 
 
+[[option-1-move-fc-hosts-and-add-new-iscsi-hosts]]
 === オプション 1 ： FC ホストを移動して新しい iSCSI ホストを追加する
 
 . FC ホストを新しい iSCSI ポートから FC のまま残すポートに移動します。
@@ -115,6 +119,7 @@ FC ホストポートのみを使用していた環境で、そのうちの一�
 
 
 
+[[option-2-convert-fc-hosts-to-iscsi]]
 === オプション 2 ： FC ホストを iSCSI に変換する
 
 . 変換したポートに接続されている FC ホストをシャットダウンします。
@@ -134,6 +139,7 @@ FC ホストポートのみを使用していた環境で、そのうちの一�
 
 
 
+[[complete-iscsi-to-fciscsi-conversion]]
 == iSCSI から FC / iSCSI への変換を完了します
 
 iSCSI ホストポートのみを使用していた環境で、そのうちの一部のポートを FC に変換した場合は、 FC をサポートするために既存の設定の変更が必要になることがあります。
@@ -142,6 +148,7 @@ iSCSI ホストポートのみを使用していた環境で、そのうちの�
 
 
 
+[[option-1-move-iscsi-hosts-and-add-new-fc-hosts]]
 === オプション 1 ： iSCSI ホストを移動して新しい FC ホストを追加する
 
 . iSCSI ホストを新しい FC ポートから iSCSI のまま残すポートに移動します。
@@ -152,6 +159,7 @@ iSCSI ホストポートのみを使用していた環境で、そのうちの�
 
 
 
+[[option-2-convert-iscsi-hosts-to-fc]]
 === オプション 2 ： iSCSI ホストを FC に変換する
 
 . 変換したポートに接続されている iSCSI ホストをシャットダウンします。
@@ -171,6 +179,7 @@ iSCSI ホストポートのみを使用していた環境で、そのうちの�
 
 
 
+[[complete-fciscsi-to-fc-conversion]]
 == FC / iSCSI から FC への変換を実行
 
 FC ホストポートと iSCSI ホストポートを組み合わせて使用していた環境で、すべてのポートを FC に変換した場合は、新しい FC ポートを使用するために既存の設定の変更が必要になることがあります。
@@ -179,6 +188,7 @@ FC ホストポートと iSCSI ホストポートを組み合わせて使用し�
 
 
 
+[[option-1-remove-iscsi-hosts-and-add-fc-hosts]]
 === オプション 1 ： iSCSI ホストを削除して FC ホストを追加する
 
 . デュアルプロトコル SFP を使用していない場合は、 iSCSI SFP をすべて取り外して FC SFP またはデュアルプロトコル SFP に交換します。
@@ -189,6 +199,7 @@ FC ホストポートと iSCSI ホストポートを組み合わせて使用し�
 
 
 
+[[option-2-convert-iscsi-hosts-to-fc]]
 === オプション 2 ： iSCSI ホストを FC に変換する
 
 . 変換したポートに接続されている iSCSI ホストをシャットダウンします。
@@ -208,6 +219,7 @@ FC ホストポートと iSCSI ホストポートを組み合わせて使用し�
 
 
 
+[[complete-fciscsi-to-iscsi-conversion]]
 == FC / iSCSI から iSCSI への変換を完了します
 
 FC ホストポートと iSCSI ホストポートを組み合わせて使用していた環境で、すべてのポートを iSCSI に変換した場合は、新しい iSCSI ポートを使用するために既存の設定の変更が必要になることがあります。
@@ -216,6 +228,7 @@ FC ホストポートと iSCSI ホストポートを組み合わせて使用し�
 
 
 
+[[option-1-remove-fc-hosts-and-add-iscsi-hosts]]
 === オプション 1 ： FC ホストを削除して iSCSI ホストを追加する
 
 . デュアルプロトコル SFP を使用していない場合は、すべての FC SFP を取り外して iSCSI SFP またはデュアルプロトコル SFP に交換します。
@@ -225,6 +238,7 @@ FC ホストポートと iSCSI ホストポートを組み合わせて使用し�
 
 
 
+[[option-2-convert-fc-hosts-to-iscsi]]
 === オプション 2 ： FC ホストを iSCSI に変換する
 
 . 変換したポートに接続されている FC ホストをシャットダウンします。

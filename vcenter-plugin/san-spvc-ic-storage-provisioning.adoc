@@ -19,6 +19,7 @@ summary: vCenter 向けプラグインを使用して、ボリュームの作成
 
 
 
+[[step-1-create-volumes]]
 == 手順1：ボリュームを作成する
 
 ボリュームは、ストレージアレイ上のストレージスペースを管理および編成するデータコンテナです。ストレージアレイで使用可能なストレージ容量からボリュームを作成すると、システムのリソースを整理するのに役立ちます。「ボリューム」という概念は、コンピュータ上のフォルダやディレクトリを使用してファイルにすばやくアクセスできるようにする方法に似ています。
@@ -180,6 +181,7 @@ DA 対応ボリュームを作成する場合は、使用するホスト接続�
 
 
 
+[[step-2-create-host-access-and-assign-volumes]]
 == 手順2：ホストアクセスを作成してボリュームを割り当てます
 
 ホストは手動で作成できます。
@@ -189,6 +191,7 @@ DA 対応ボリュームを作成する場合は、使用するホスト接続�
 
 
 
+[[manually-creating-the-host]]
 === ホストを手動で作成する
 
 .作業を開始する前に
@@ -293,12 +296,14 @@ Configure Hosts ページが開きます。
 
 
 
+[[step-3-create-a-datastore-in-vsphere-client]]
 == 手順3：vSphere Clientでデータストアを作成する
 
 vSphere Clientでデータストアを作成するには、 https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-5AC611E0-7CEB-4604-A03C-F600B1BA2D23.html["vSphere Client で VMFS データストアを作成します"^] VMwareドキュメントセンターのトピック。
 
 
 
+[[increase-capacity-of-existing-datastore-by-increasing-volume-capacity]]
 === ボリューム容量を増やして既存のデータストアの容量を増やします
 
 プールまたはボリュームグループ内の使用可能な空き容量を使用して、ボリュームのレポート容量（ホストに報告される容量）を拡張できます。
@@ -337,6 +342,7 @@ NOTE: ボリュームの容量の拡張は、特定のオペレーティング�
 
 
 
+[[increase-capacity-of-existing-datastore-by-adding-volumes]]
 === ボリュームを追加して既存のデータストアの容量を拡張してください
 
 . ボリュームを追加してデータストアの容量を増やすことができます。の手順に従います <<手順1：ボリュームを作成する>>。

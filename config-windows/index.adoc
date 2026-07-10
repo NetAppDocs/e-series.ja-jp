@@ -15,6 +15,7 @@ Windows の簡単な方法でストレージアレイをインストールして
 
 
 
+[[procedure-overview]]
 == 手順の概要
 
 クイック方式で実行する手順は次のとおりです。も参照してください link:understand-windows-concept.html["Windows ワークフロー"]。
@@ -32,6 +33,7 @@ Windows の簡単な方法でストレージアレイをインストールして
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * オンラインヘルプ -- SANtricity System Manager を使用して構成とストレージ管理タスクを実行する方法について説明します製品内で使用できます。

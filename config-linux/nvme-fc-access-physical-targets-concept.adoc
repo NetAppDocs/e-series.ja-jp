@@ -17,6 +17,7 @@ RHEL 8、RHEL 9、SLES 15の場合、I/OはLinuxホストによって物理NVMe�
 
 
 
+[[physical-nvme-devices-are-io-targets]]
 == 物理 NVMe デバイスは I/O ターゲットです
 
 のリンクへのI/Oを実行することを推奨します `/dev/disk/by-id/nvme-eui.[uuid#]` 物理NVMeデバイスのパスに直接接続するのではなく `/dev/nvme[subsys#]n[id#]`。これら2つの場所間のリンクは、次のコマンドを使用して確認できます。

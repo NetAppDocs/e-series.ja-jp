@@ -15,6 +15,7 @@ E シリーズシステムに関するデモビデオが用意されています
 
 
 
+[[e-series-fast-simple-reliable-storage]]
 == E シリーズ：高速、シンプル、信頼性に優れたストレージ
 
 このビデオでは、 NetApp E シリーズシステムを使用する主なメリットについて、汎用サーバをストレージに使用した場合と比較して紹介します。
@@ -23,6 +24,7 @@ https://www.youtube.com/embed/FjFkU2z_hIo?rel=0["ネットアップのビデオ�
 
 
 
+[[system-manager-easy-setup-and-configuration]]
 == System Manager ：簡単なセットアップと設定
 
 このテクニカルデモでは、 Web ベースの SANtricity System Manager インターフェイスを使用して、 NetApp E2800 のセットアップと設定を簡単に行う方法を紹介します。

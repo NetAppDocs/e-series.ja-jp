@@ -19,6 +19,7 @@ image::../media/port_identifiers_host_and_target_conf-lin.gif[FC のネットワ
 
 
 
+[[host-identifiers]]
 == ホスト識別子
 
 |===
@@ -51,6 +52,7 @@ _ 該当なし _
 |===
 
 
+[[target-identifiers]]
 == ターゲット識別子
 
 |===
@@ -108,6 +110,7 @@ _ 該当なし _
 |===
 
 
+[[mapping-host]]
 == マッピングホスト
 
 |===
