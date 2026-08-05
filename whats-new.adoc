@@ -72,6 +72,29 @@ SSDおよびNVMeベースのシステムにおけるDynamic Disk Poolの場合�
 |===
 
 
+[[new-features-in-version-11-90r6]]
+== Version 11.90R6の新機能
+
+[cols="35h,~"]
+|===
+| 新機能 | 説明 
+
+
+ a| 
+IOM/DCMファームウェアバージョンのサポートを更新しました
+ a| 
+以下のIOM/DCMモデルで、新しいIOM/DCMファームウェアバージョンがサポートされるようになりました：
+
+* IOM12A - v0412
+* IOM12B - v0212
+* IOM12C - v0112
+* IOM12G - v0212
+* DCM3 - v01.12.09.02
+
+
+|===
+
+
 [[new-features-in-version-11-90r5]]
 == Version 11.90R5の新機能
 
