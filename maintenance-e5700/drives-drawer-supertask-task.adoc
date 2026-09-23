@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E5700 drive drawer, DE460C drive shelf, replace E5700 drive drawer, failed E5700 drive drawer 
 summary: E5700 のドライブドロワーを交換します。 
 ---
-= ドライブドロワーの交換- E5700（60ドライブ）
+= E5700のドライブドロワーを交換する
 :allow-uri-read: 
 :experimental: 
 :icons: font

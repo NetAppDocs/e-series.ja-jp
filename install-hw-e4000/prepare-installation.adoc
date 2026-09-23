@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= 設置の準備- E4012およびE4060
+= E4012またはE4060ストレージ システムの設置準備
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -14,7 +14,16 @@ summary:
 E4000シリーズストレージシステムの仕様を満たすように設置場所を準備する必要があります。
 
 .手順
-. アカウントを作成し、でハードウェアを登録します http://mysupport.netapp.com/["ネットアップサポート"^]。
+. システムを登録します：
++
+
+NOTE: システムの登録は今すぐでも後からでも可能です。その後、システム起動時に、システムの登録を求められます。
+
++
+.. まだアカウントをお持ちでない場合は、 http://mysupport.netapp.com/["ネットアップサポート"^]でアカウントを作成してください。
+.. NetApp ナレッジベース記事 https://kb.netapp.com/nss/System_Registration/How_to_register_a_new_system_on_the_NetApp_Support_Site["新しいシステムを登録する方法"^]の手順に従ってシステムを登録してください。
+
+
 . 次のアイテムが同梱されていることを確認します。
 +
 [role="tabbed-block"]

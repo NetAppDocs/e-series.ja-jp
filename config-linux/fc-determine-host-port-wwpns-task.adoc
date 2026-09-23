@@ -2,9 +2,9 @@
 permalink: config-linux/fc-determine-host-port-wwpns-task.html 
 sidebar: sidebar 
 keywords: host wwpn, HBA utility, express linux configuration, software configuration, linux host, 
-summary: FC HBA ユーティリティをインストールして、各ホストポートの World Wide Port Name （ WWPN ；ワールドワイドポート名）を確認します。また、 HBA ユーティリティを使用して、サポートされる構成の NetApp Interoperability Matrix Tool の Notes 列に推奨される設定を変更することもできます。 
+summary: 各ホストポートのワールドワイドポート名（WWPN）を表示できるように、FC HBAユーティリティをインストールします。さらに、HBAユーティリティを使用して、サポートされている構成のNetApp相互運用性マトリックスツールの「Notes」列で推奨されている設定を変更できます。 
 ---
-= Eシリーズ- Linux（FC）でのホストのWorld Wide Port Name（WWPN；ワールドワイドポート名）を特定する
+= EシリーズのLinux FC ホストのホストワールドワイドポート名を確認する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

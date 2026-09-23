@@ -1,7 +1,7 @@
 ---
 permalink: getting-started/learn-shelf-concept.html 
 sidebar: sidebar 
-keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, E-series hardware, E-Series shelf, DE212C, DE224C, DE460C, NE224, 
+keywords: E-Series, eseries, EF50, EF80, E4000, E2800, E5700, EF300, EF600, E-series hardware, E-Series shelf, DE212C, DE224C, DE460C, 
 summary: E シリーズシステムは、さまざまなシェルフサイズで提供されます。 
 ---
 = Eシリーズシェルフタイプの詳細
@@ -22,7 +22,7 @@ E シリーズシステムは、さまざまなシェルフサイズで提供さ
 
 * 2u12 （ 2 ラックユニット、 12 ドライブ）
 * 3.5 インチ HDD または 2.5 インチ SSD （アダプタ搭載）
-* E4000およびE2800コントローラのみ
+* EF50、EF80、E4000、E2800コントローラ
 
  a| 
 image:../media/e2812_front.gif["DE212C"]
@@ -34,7 +34,7 @@ image:../media/e2812_front.gif["DE212C"]
 
 * 2u24 （ 2 ラックユニット、 24 ドライブ）
 * 2.5 インチ HDD または 2.5 インチ SSD
-* E2800 、 EF280 、 E5700 、 EF570 コントローラ
+* EF50、EF80、E2800、EF280、E5700、およびEF570コントローラ
 
  a| 
 image:../media/e2824_front.gif["DE224C"]
@@ -46,7 +46,7 @@ image:../media/e2824_front.gif["DE224C"]
 
 * 4u60 （ 4 ラックユニット、 60 ドライブ）
 * 3.5 インチドライブ、 2.5 インチドライブ（ NL-SAS 、 SAS 、 SSD ）
-* E4000、E2800、およびE5700コントローラ
+* EF50、EF80、E4000、E2800、およびE5700コントローラー
 
  a| 
 image:../media/de460c.gif["DE460C"]

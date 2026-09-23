@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef80, replace a dimm 
 summary: EF50またはEF80ストレージシステムでDIMMに障害が発生した場合、最適な状態ではないと報告された場合、または容量が一致していない場合は、DIMMを交換してください。 
 ---
-= DIMMの交換 - EF50およびEF80
+= EF50およびEF80ストレージ システムのDIMMを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

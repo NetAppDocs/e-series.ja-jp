@@ -1,10 +1,10 @@
 ---
 permalink: config-vmware/overview-concept.html 
 sidebar: sidebar 
-keywords: express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
+keywords: express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, EF50, EF80, E4000, E-Series, eseries 
 summary: クイック方式を使用して E シリーズアレイと VMware ホストを設定する際の要件を確認します。 
 ---
-= 前提条件（EシリーズとVMware）
+= EシリーズのVMware Express構成の前提条件
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -64,12 +64,13 @@ IP アドレス
  a| 
 * 共有ボリュームは使用しません。
 * ボリュームグループではなくプールを作成する。
+* VMwareとの互換性を確保するため、4096バイトのドライブを使用する場合は、ボリュームを512バイトエミュレーション（512e）を使用するように設定する必要があります。ボリュームを512バイトエミュレーション（512e）を使用するように設定する方法の詳細については、SANtricity System Managerのオンラインヘルプを参照してください。
 
 
 
 
  a| 
-プロトコル： FC
+プロトコル：Fibre Channel（FCP）
  a| 
 * ホスト側の FC 接続をすべて確立し、スイッチのゾーニングをアクティブ化済みである。
 * ネットアップがサポートする FC HBA およびスイッチを使用している。
@@ -102,6 +103,26 @@ IP アドレス
  a| 
 * ネットアップがサポートする SAS HBA を使用している。
 * に掲載されているバージョンの SAS HBA ドライバおよびファームウェアを使用している http://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]。
+
+
+
+
+ a| 
+プロトコル：NVMe over RoCE（RDMA over Converged Ethernet）
+ a| 
+* RDMAトラフィックに対応したイーサネットスイッチを使用しています。
+* イーサネット スイッチを、Differentiated Services Code Point （DSCP） ベースの Priority Flow Control （PFC） を使用して、ロスレス イーサネット ネットワーク用に構成しました。
+* RDMA ドライバーとファームウェアのバージョンは、 http://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]に記載されているものを使用しています。
+
+
+
+
+ a| 
+プロトコル：NVMe over TCP
+ a| 
+* TCPトラフィックに対応したイーサネットスイッチを使用しています。
+* イーサネットスイッチは、ベンダーの推奨するTCP設定に従って構成されています。
+* お使いのネットワーク ドライバとファームウェアのバージョンは、 http://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]に記載されているものを使用しています。
 
 
 |===

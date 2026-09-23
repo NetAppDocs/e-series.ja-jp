@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: replace battery, battery fail, EF300C, EF600C, EF300, EF600 
 summary: EF300 または EF600 アレイのバッテリを交換します。 
 ---
-= バッテリの交換- EF300およびEF600
+= EF300またはEF600アレイのバッテリーを交換する
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -60,8 +60,7 @@ EF300、EF600、EF300C、またはEF600Cストレージシステムのバッテ�
 
 . コントローラがオフラインでない場合は、 SANtricity System Manager を使用してオフラインにします。
 +
-.. 「 * ハードウェア * 」を選択します。
-.. 図にドライブが表示されている場合は、 * Show back of shelf * を選択してコントローラを表示します。
+.. メニューの「Hardware[Controllers and components]」を選択してください。
 .. オフラインに切り替えるコントローラを選択します。
 .. コンテキストメニューから * オフラインに切り替え * を選択し、操作を確定します。
 +
@@ -194,8 +193,7 @@ image::../media/remove_controller_7.png[コントローラをシェルフに取�
 .手順
 . コントローラをオンラインにします。
 +
-.. System Manager で、ハードウェアページに移動します。
-.. 「 * コントローラの背面を表示 * 」を選択します。
+.. SANtricity System Manager で、メニュー：Hardware［Controllers and components］を選択します。
 .. バッテリを交換したコントローラを選択します。
 .. ドロップダウンリストから「オンラインにする」 * を選択します。
 

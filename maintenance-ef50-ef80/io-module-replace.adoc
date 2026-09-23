@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef80 replace io module, replace hic, replace host interface card 
 summary: EF50またはEF80ストレージ システムで故障したI/Oモジュールを、同じタイプのI/Oモジュールと交換することで、ストレージ システムを最適な動作状態に復元できます。 
 ---
-= I/Oモジュールの交換 - EF50およびEF80
+= EF50またはEF80ストレージシステムのI/Oモジュールを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: host protocol change, EF300, EF600, EF600C, EF300C 
 summary: EF300 または EF600 アレイのホストポートプロトコルを変更する。 
 ---
-= ホストプロトコルの変更- EF300およびEF600
+= EF300またはEF600ストレージシステムのホストプロトコルを変更する
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -35,7 +35,7 @@ image::../media/sam1130_ss_e2800_storage_array_profile_sn_smid_copy_maint-ef600.
 . 機能パックサブモデル ID * を確認します。
 +
 .. SANtricity システムマネージャで、 * サポート * を選択します。
-.. * Support Resources * タイルを選択します。
+.. 「サポートリソース」タブを選択します。
 .. [ サポートリソース ] タブで、 [* ストレージアレイプロファイル * ] リンクを探して選択します。
 .. テキストボックスに * feature pack サブモデル ID* と入力し、 * 検索 * をクリックします。
 .. 変更前の構成の機能パックサブモデル ID を確認します。
@@ -669,8 +669,7 @@ image::../media/sam1130_ss_system_change_feature_pack_maint-ef600.gif[機能パ�
 
 . ホストポートのプロトコルが想定したプロトコルになっていることを確認します。
 +
-.. SANtricity システムマネージャで、 * ハードウェア * を選択します。
-.. Show back of shelf* （シェルフの背面を表示）をクリックします。
+.. SANtricity System Manager で、メニュー：Hardware［Controllers and components］を選択します。
 .. コントローラ A またはコントローラ B の図を選択します
 .. コンテキストメニューから * 表示設定 * （ * View settings * ）を選択します。
 .. [ * ホスト・インターフェイス * ] タブを選択します。

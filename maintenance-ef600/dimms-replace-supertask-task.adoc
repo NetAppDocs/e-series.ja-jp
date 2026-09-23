@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF300, EF600, EF300C, EF600C, replace DIMM 
 summary: EF300 または EF600 アレイ内の DIMM を交換します。 
 ---
-= DIMMの交換- EF300またはEF600
+= EF300またはEF600アレイ内のDIMMを交換する
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -79,7 +79,6 @@ DIMM を安全に取り外して交換できるように、コントローラを
 . コントローラがオフラインでない場合は、 SANtricity System Manager を使用してオフラインにします。
 +
 .. メニューの「Hardware[Controllers and components]」を選択してください。
-.. 図にドライブが表示されている場合は、 * Show back of shelf * を選択してコントローラを表示します。
 .. オフラインに切り替えるコントローラを選択します。
 .. コンテキストメニューから * オフラインに切り替え * を選択し、操作を確定します。
 +
@@ -222,8 +221,7 @@ image::../media/remove_controller_7.png[コントローラのスロットへのD
 .手順
 . コントローラをオンラインにします。
 +
-.. System Manager で、ハードウェアページに移動します。
-.. 「 * コントローラの背面を表示 * 」を選択します。
+.. SANtricity System Manager で、メニュー：Hardware［Controllers and components］を選択します。
 .. DIMM を交換したコントローラを選択します。
 .. ドロップダウンリストから「オンラインにする」 * を選択します。
 

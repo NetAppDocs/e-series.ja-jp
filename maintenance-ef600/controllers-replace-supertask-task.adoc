@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: replace controller, replace canister, EF300, EF600, EF300C, EF600C 
 summary: EF300 または EF600 コントローラシェルフの単一のコントローラを交換する。 
 ---
-= コントローラの交換- EF300とEF600
+= EF300またはEF600アレイのコントローラを交換する
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -69,7 +69,7 @@ NOTE: コントローラの黄色の警告LEDは、交換時に次の状況が�
 コントローラに障害が発生しているため交換が必要な場合は、 Recovery Guru の詳細領域に交換パーツ番号が表示されます。この番号を手動で確認する必要がある場合は、次の手順を実行します。
 
 +
-.. 「 * ハードウェア * 」を選択します。
+.. メニューの「Hardware[Controllers and components]」を選択してください。
 .. コントローラアイコンが付いたコントローラシェルフを探します image:../media/sam1130_ss_hardware_controller_icon_maint-ef600.gif[""]。
 .. コントローラアイコンをクリックします。
 .. コントローラを選択し、 * 次へ * をクリックします。
@@ -100,8 +100,7 @@ CAUTION: * データアクセスが失われる可能性 * -- 2 つのパーツ�
 
 . コントローラがオフラインでない場合は、 SANtricity System Manager を使用してオフラインにします。
 +
-.. 「 * ハードウェア * 」を選択します。
-.. 図にドライブが表示されている場合は、 * Show back of shelf * を選択してコントローラを表示します。
+.. メニューの「Hardware[Controllers and components]」を選択してください。
 .. オフラインに切り替えるコントローラを選択します。
 .. コンテキストメニューから * オフラインに切り替え * を選択し、操作を確定します。
 

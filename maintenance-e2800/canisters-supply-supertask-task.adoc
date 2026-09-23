@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800 replace 12-drive power supply, E2800 replace 24-drive power supply, replacing E2800 power supply, E2800, E-Series, eseries 
 summary: E2800 12 ドライブまたは 24 ドライブのコントローラシェルフまたはドライブシェルフを交換します。このシェルフには、ファン一体型の電源装置が 2 台搭載されています。 
 ---
-= 電源装置を交換します- E2800（12ドライブまたは24ドライブ）
+= E2800 12ドライブまたは24ドライブシェルフの電源ユニットを交換する
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -62,7 +62,7 @@ E2800 アレイの電源装置は、次のタイプのシェルフを含む 12 �
 
 +
 .. 「 * ハードウェア * 」を選択します。
-.. [シェルフ]*ドロップダウンリストの右側にある電源とファンのimage:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif["'ファンアイコン\""]アイコンを確認しimage:../media/sam1130_ss_hardware_power_icon_maint-e2800.gif["電源アイコン"]て、障害が発生した電源装置が搭載されているシェルフを特定します。
+.. 「Shelf」ドロップダウンリストの右側にある電源image:../media/sam1130_ss_hardware_power_icon_maint-e2800.gif["電源アイコン"]とファンimage:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif["ファンアイコン"]のアイコンを確認して、電源装置に障害が発生しているシェルフを特定します。
 +
 コンポーネントで障害が発生した場合、これらのアイコンの一方または両方が赤色で表示されます。
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF300 maintenance, EF600 maintenance, repairing EF300, repairing EF600, EF600C, EF300C replace EF300 components, replace EF600 components 
 summary: EF300 および EF600 ハードウェアをメンテナンスします 
 ---
-= ハードウェアのメンテナンス- EF300およびEF600
+= EF300およびEF600システムのハードウェア保守
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -51,6 +51,13 @@ https://docs.netapp.com/us-en/e-series/maintenance-ef600/dimms-overview-supertas
 https://docs.netapp.com/us-en/e-series/maintenance-ef600/drives-overview-supertask-concept.html["ドライブ"]
  a| 
 ドライブは、データの物理ストレージメディアとして使用されるデバイスです。
+
+
+
+ a| 
+link:drive-drawer-de460c-replace.html["ドライブドロワー"]
+ a| 
+ドライブ引き出しは、最大12台のドライブを収納できるDE460Cドライブシェルフを構成する5つのコンポーネントのうちの1つです。
 
 
 

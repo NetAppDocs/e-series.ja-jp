@@ -39,6 +39,7 @@ sidebar:
   - title: ハードウェアを設置
     entries:
     - section: install-hw-ef50-ef80
+    - section: install-hw-e4000
     - title: EF300 および EF600
       entries:
       - title: 概要
@@ -53,33 +54,34 @@ sidebar:
         url: "/install-hw-ef600/power-controller-shelves-task.html"
       - title: ストレージシステムのセットアップを完了
         url: "/install-hw-ef600/complete-setup-task.html"
-    - title: E2800 および E5700
+    - title: 提供終了システム
       entries:
-      - title: 概要
-        url: "/install-hw-e2800-e5700/index.html"
-      - title: インストールプロセス
-        url: "/install-hw-e2800-e5700/install-setup-overview-concept.html"
-      - title: 60 ドライブを設置してセットアップ
+      - title: E2800 および E5700
         entries:
-        - title: インストールを準備
-          url: "/install-hw-e2800-e5700/e2860-e5760-prepare-task.html"
-        - title: ハードウェアを設置
-          url: "/install-hw-e2800-e5700/e2860-e5760-install-hardware-task.html"
-        - title: シェルフをケーブル接続
-          url: "/install-hw-e2800-e5700/e2860-e5760-connect-cables-task.html"
-        - title: ストレージシステムのセットアップを完了
-          url: "/install-hw-e2800-e5700/e2860-e5760-complete-setup-task.html"
-      - title: 12 本と 24 本のドライブを設置してセットアップします
-        entries:
-        - title: インストールを準備
-          url: "/install-hw-e2800-e5700/e2824-e5724-prepare-task.html"
-        - title: ハードウェアを設置
-          url: "/install-hw-e2800-e5700/e2824-e5724-install-hardware-task.html"
-        - title: ケーブルを接続します
-          url: "/install-hw-e2800-e5700/e2824-e5724-connect-cables-task.html"
-        - title: ストレージシステムのセットアップを完了
-          url: "/install-hw-e2800-e5700/e2824-e5724-complete-setup-task.html"
-    - section: install-hw-e4000
+        - title: 概要
+          url: "/install-hw-e2800-e5700/index.html"
+        - title: インストールプロセス
+          url: "/install-hw-e2800-e5700/install-setup-overview-concept.html"
+        - title: 60 ドライブを設置してセットアップ
+          entries:
+          - title: インストールを準備
+            url: "/install-hw-e2800-e5700/e2860-e5760-prepare-task.html"
+          - title: ハードウェアを設置
+            url: "/install-hw-e2800-e5700/e2860-e5760-install-hardware-task.html"
+          - title: シェルフをケーブル接続
+            url: "/install-hw-e2800-e5700/e2860-e5760-connect-cables-task.html"
+          - title: ストレージシステムのセットアップを完了
+            url: "/install-hw-e2800-e5700/e2860-e5760-complete-setup-task.html"
+        - title: 12 本と 24 本のドライブを設置してセットアップします
+          entries:
+          - title: インストールを準備
+            url: "/install-hw-e2800-e5700/e2824-e5724-prepare-task.html"
+          - title: ハードウェアを設置
+            url: "/install-hw-e2800-e5700/e2824-e5724-install-hardware-task.html"
+          - title: ケーブルを接続します
+            url: "/install-hw-e2800-e5700/e2824-e5724-connect-cables-task.html"
+          - title: ストレージシステムのセットアップを完了
+            url: "/install-hw-e2800-e5700/e2824-e5724-complete-setup-task.html"
     - title: 3040 40U キャビネット
       entries:
       - title: 概要
@@ -296,8 +298,6 @@ sidebar:
           url: "/config-linux/nvme-roce-verify-linux-config-support-task.html"
         - title: DHCP を使用して IP アドレスを設定する
           url: "/config-linux/nvme-roce-configure-ip-address-dhcp-task.html"
-        - title: SANtricity Storage Manager をインストールします
-          url: "/config-linux/nvme-roce-install-smcli-11-53-task.html"
         - title: SANtricity システムマネージャにアクセスします
           url: "/config-linux/nvme-roce-access-sam-setup-wizard-task.html"
         - title: スイッチを設定します
@@ -322,6 +322,36 @@ sidebar:
           url: "/config-linux/nvme-roce-create-filesystems-sles-15-task.html"
         - title: NVMe over RoCE ワークシート - Linux
           url: "/config-linux/nvme-roce-worksheet-for-concept.html"
+      - title: NVMe over TCP セットアップ
+        entries:
+        - title: Linux 構成を確認
+          url: "/config-linux/nvme-tcp-verify-linux-config-support-task.html"
+        - title: DHCP を使用して IP アドレスを設定する
+          url: "/config-linux/nvme-tcp-configure-ip-address-dhcp-task.html"
+        - title: SANtricity システムマネージャにアクセスします
+          url: "/config-linux/nvme-tcp-access-sam-setup-wizard-task.html"
+        - title: スイッチを設定します
+          url: "/config-linux/nvme-tcp-configure-switch-task.html"
+        - title: ホスト上でTCP経由のNVMeを設定する
+          url: "/config-linux/nvme-tcp-setup-host-side-task.html"
+        - title: NVMe ポートを設定します
+          url: "/config-linux/nvme-tcp-configure-storage-connections-task.html"
+        - title: ホストからストレージに接続します
+          url: "/config-linux/nvme-tcp-discover-connect-storage-host-task.html"
+        - title: ホストを定義する
+          url: "/config-linux/nvme-tcp-define-host-task.html"
+        - title: ボリュームを割り当てます
+          url: "/config-linux/nvme-tcp-assign-volume-task.html"
+        - title: ホストが認識できるボリュームを表示します
+          url: "/config-linux/nvme-tcp-display-volumes-visible-host-task.html"
+        - title: ホストでフェイルオーバーを設定します
+          url: "/config-linux/nvme-tcp-setup-failover-host-task.html"
+        - title: 物理デバイスターゲットの NVMe ボリュームにアクセスします
+          url: "/config-linux/nvme-tcp-access-physical-targets-concept.html"
+        - title: ファイルシステムを作成する
+          url: "/config-linux/nvme-tcp-create-filesystems-sles-15-task.html"
+        - title: Linux 用 NVMe over TCP ワークシート
+          url: "/config-linux/nvme-tcp-worksheet-for-concept.html"
       - title: NVMe over Fibre Channel のセットアップ
         entries:
         - title: Linux 構成を確認
@@ -374,14 +404,16 @@ sidebar:
         url: "/config-vmware/access-sam-setup-wizard-task.html"
       - title: FC 固有のタスクを実行
         url: "/config-vmware/fc-perform-specific-task.html"
-      - title: FC 固有のタスクを使用して NMVe を実行します
-        url: "/config-vmware/nmve-fc-perform-specific-task.html"
+      - title: NVMe over RoCE 固有のタスクを実行する
+        url: "/config-vmware/nvme-roce-perform-specific-task.html"
+      - title: FC経由のNVMe固有のタスクを実行する
+        url: "/config-vmware/nvme-fc-perform-specific-task.html"
+      - title: TCP経由のNVMe固有のタスクを実行する
+        url: "/config-vmware/nvme-tcp-perform-specific-task.html"
       - title: iSCSI 固有のタスクを実行
         url: "/config-vmware/iscsi-perform-specific-task.html"
       - title: SAS 固有のタスクを実行
         url: "/config-vmware/sas-perform-specific-task.html"
-      - title: NVMe over RoCE 固有のタスクを実行する
-        url: "/config-vmware/nvme-roce-perform-specific-task.html"
       - title: ホストでストレージを検出します
         url: "/config-vmware/discover-storage-host-task.html"
       - title: ホストでストレージを設定する
@@ -453,6 +485,7 @@ sidebar:
   - title: システムの保守
     entries:
     - section: maintenance-ef50-ef80
+    - section: maintenance-e4000
     - title: EF300 および EF600
       pdf-filename: EF300 - EF600 メンテナンスシステム
       entries:
@@ -490,6 +523,8 @@ sidebar:
           url: "/maintenance-ef600/drives-replace-EF600-supertask-task.html"
         - title: ドライブシェルフをホットアドします
           url: "/maintenance-ef600/drives-hotadd-drive-shelf-task.html"
+      - title: ドライブドロワー
+        url: "/maintenance-ef600/drive-drawer-de460c-replace.html"
       - title: ファン
         pdf-filename: EF300 - EF600 はファンを維持します
         entries:
@@ -528,147 +563,148 @@ sidebar:
           url: "/maintenance-ef600/sas-overview-supertask-concept.html"
         - title: SAS 拡張カードを追加します
           url: "/maintenance-ef600/sas-add-supertask-task.html"
-    - title: E2800
-      pdf-filename: E2800 Maintain System の略
+    - title: 提供終了システム
       entries:
-      - title: 概要
-        url: "/maintenance-e2800/index.html"
-      - title: 電池
-        pdf-filename: E2800 ではバッテリがメンテナンスされます
+      - title: E2800
+        pdf-filename: E2800 Maintain System の略
         entries:
-        - title: 概要と要件
-          url: "/maintenance-e2800/batteries-overview-requirements-concept.html"
-        - title: バッテリを交換する準備をします
-          url: "/maintenance-e2800/batteries-prepare-replace-task.html"
-        - title: コントローラキャニスターを取り外します
-          url: "/maintenance-e2800/batteries-remove-controller-canister-task.html"
-        - title: 故障したバッテリを取り外します
-          url: "/maintenance-e2800/batteries-remove-failed-task.html"
-        - title: 新しいバッテリを取り付けます
-          url: "/maintenance-e2800/batteries-install-new-task.html"
-        - title: コントローラキャニスターを再度取り付けます
-          url: "/maintenance-e2800/batteries-reinstall-controller-canister-task.html"
-        - title: バッテリ交換後の処理
-          url: "/maintenance-e2800/batteries-complete-replacement-task.html"
-      - title: コントローラ
-        pdf-filename: E2800 はコントローラをメンテナンスします
+        - title: 概要
+          url: "/maintenance-e2800/index.html"
+        - title: 電池
+          pdf-filename: E2800 ではバッテリがメンテナンスされます
+          entries:
+          - title: 概要と要件
+            url: "/maintenance-e2800/batteries-overview-requirements-concept.html"
+          - title: バッテリを交換する準備をします
+            url: "/maintenance-e2800/batteries-prepare-replace-task.html"
+          - title: コントローラキャニスターを取り外します
+            url: "/maintenance-e2800/batteries-remove-controller-canister-task.html"
+          - title: 故障したバッテリを取り外します
+            url: "/maintenance-e2800/batteries-remove-failed-task.html"
+          - title: 新しいバッテリを取り付けます
+            url: "/maintenance-e2800/batteries-install-new-task.html"
+          - title: コントローラキャニスターを再度取り付けます
+            url: "/maintenance-e2800/batteries-reinstall-controller-canister-task.html"
+          - title: バッテリ交換後の処理
+            url: "/maintenance-e2800/batteries-complete-replacement-task.html"
+        - title: コントローラ
+          pdf-filename: E2800 はコントローラをメンテナンスします
+          entries:
+          - title: 概要と要件
+            url: "/maintenance-e2800/controllers-overview-supertask-concept.html"
+          - title: 2 台目のコントローラキャニスターを追加します
+            url: "/maintenance-e2800/controllers-second-add-task.html"
+          - title: デュプレックス構成でのコントローラの交換
+            url: "/maintenance-e2800/controllers-duplex-supertask-task.html"
+          - title: シンプレックス構成でコントローラを交換します
+            url: "/maintenance-e2800/controllers-simplex-supertask-task.html"
+        - title: キャニスター
+          pdf-filename: E2800 メンテナンスキャニスター
+          entries:
+          - title: 概要と要件
+            url: "/maintenance-e2800/canisters-overview-supertask-concept.html"
+          - title: 電源装置の交換（ 12 ドライブまたは 24 ドライブ）
+            url: "/maintenance-e2800/canisters-supply-supertask-task.html"
+          - title: 電源キャニスターの交換（ 60 ドライブ）
+            url: "/maintenance-e2800/canisters-60-replace-power-task.html"
+          - title: ファンキャニスターの交換（ 60 ドライブ）
+            url: "/maintenance-e2800/canisters-fan-supertask-task.html"
+        - title: ドライブ
+          pdf-filename: E2800 はドライブのメンテナンスを行います
+          entries:
+          - title: 概要と要件
+            url: "/maintenance-e2800/drives-overview-supertask-concept.html"
+          - title: ドライブの交換（ 12 ドライブまたは 24 ドライブ）
+            url: "/maintenance-e2800/drives-12-24-supertask-task.html"
+          - title: ドライブの交換（ 60 ドライブ）
+            url: "/maintenance-e2800/drives-60-replace-task.html"
+          - title: ドライブドロワーの交換（ 60 ドライブ）
+            url: "/maintenance-e2800/drives-60-supertask-task.html"
+          - title: ドライブシェルフをホットアドします
+            url: "/maintenance-e2800/drives-hotadd-drive-shelf-task.html"
+        - title: ホストインターフェイスカード
+          pdf-filename: E2800 では HIC が維持されます
+          entries:
+          - title: 概要と要件
+            url: "/maintenance-e2800/hics-overview-supertask-concept.html"
+          - title: ホストインターフェイスカードを追加します
+            url: "/maintenance-e2800/hics-add-supertask-task.html"
+          - title: ホストインターフェイスカードをアップグレードします
+            url: "/maintenance-e2800/hics-upgrade-supertask-task.html"
+          - title: ホストインターフェイスカードを交換します
+            url: "/maintenance-e2800/hics-replace-supertask-task.html"
+        - title: ホストポートプロトコルを変更します
+          pdf-filename: E2800 ホストプロトコルの変換
+          entries:
+          - title: 概要と要件
+            url: "/maintenance-e2800/hpp-overview-supertask-concept.html"
+          - title: ホストプロトコルを変更します
+            url: "/maintenance-e2800/hpp-change-host-protocol-task.html"
+          - title: ホストプロトコル変更後の処理
+            url: "/maintenance-e2800/hpp-complete-protocol-conversion-task.html"
+      - title: E5700 の
+        pdf-filename: E5700 Maintain System の略
         entries:
-        - title: 概要と要件
-          url: "/maintenance-e2800/controllers-overview-supertask-concept.html"
-        - title: 2 台目のコントローラキャニスターを追加します
-          url: "/maintenance-e2800/controllers-second-add-task.html"
-        - title: デュプレックス構成でのコントローラの交換
-          url: "/maintenance-e2800/controllers-duplex-supertask-task.html"
-        - title: シンプレックス構成でコントローラを交換します
-          url: "/maintenance-e2800/controllers-simplex-supertask-task.html"
-      - title: キャニスター
-        pdf-filename: E2800 メンテナンスキャニスター
-        entries:
-        - title: 概要と要件
-          url: "/maintenance-e2800/canisters-overview-supertask-concept.html"
-        - title: 電源装置の交換（ 12 ドライブまたは 24 ドライブ）
-          url: "/maintenance-e2800/canisters-supply-supertask-task.html"
-        - title: 電源キャニスターの交換（ 60 ドライブ）
-          url: "/maintenance-e2800/canisters-60-replace-power-task.html"
-        - title: ファンキャニスターの交換（ 60 ドライブ）
-          url: "/maintenance-e2800/canisters-fan-supertask-task.html"
-      - title: ドライブ
-        pdf-filename: E2800 はドライブのメンテナンスを行います
-        entries:
-        - title: 概要と要件
-          url: "/maintenance-e2800/drives-overview-supertask-concept.html"
-        - title: ドライブの交換（ 12 ドライブまたは 24 ドライブ）
-          url: "/maintenance-e2800/drives-12-24-supertask-task.html"
-        - title: ドライブの交換（ 60 ドライブ）
-          url: "/maintenance-e2800/drives-60-replace-task.html"
-        - title: ドライブドロワーの交換（ 60 ドライブ）
-          url: "/maintenance-e2800/drives-60-supertask-task.html"
-        - title: ドライブシェルフをホットアドします
-          url: "/maintenance-e2800/drives-hotadd-drive-shelf-task.html"
-      - title: ホストインターフェイスカード
-        pdf-filename: E2800 では HIC が維持されます
-        entries:
-        - title: 概要と要件
-          url: "/maintenance-e2800/hics-overview-supertask-concept.html"
-        - title: ホストインターフェイスカードを追加します
-          url: "/maintenance-e2800/hics-add-supertask-task.html"
-        - title: ホストインターフェイスカードをアップグレードします
-          url: "/maintenance-e2800/hics-upgrade-supertask-task.html"
-        - title: ホストインターフェイスカードを交換します
-          url: "/maintenance-e2800/hics-replace-supertask-task.html"
-      - title: ホストポートプロトコルを変更します
-        pdf-filename: E2800 ホストプロトコルの変換
-        entries:
-        - title: 概要と要件
-          url: "/maintenance-e2800/hpp-overview-supertask-concept.html"
-        - title: ホストプロトコルを変更します
-          url: "/maintenance-e2800/hpp-change-host-protocol-task.html"
-        - title: ホストプロトコル変更後の処理
-          url: "/maintenance-e2800/hpp-complete-protocol-conversion-task.html"
-    - section: maintenance-e4000
-    - title: E5700 の
-      pdf-filename: E5700 Maintain System の略
-      entries:
-      - title: 概要
-        url: "/maintenance-e5700/index.html"
-      - title: 電池
-        pdf-filename: E5700 ではバッテリが維持されます
-        entries:
-        - title: 概要と要件
-          url: "/maintenance-e5700/batteries-intro-concept.html"
-        - title: バッテリーを交換します
-          url: "/maintenance-e5700/batteries-replace-supertask-task.html"
-      - title: コントローラ
-        pdf-filename: E5700 はコントローラのメンテナンスを行います
-        entries:
-        - title: 概要と要件
-          url: "/maintenance-e5700/controllers-overview-concept.html"
-        - title: デュプレックス構成でのコントローラの交換
-          url: "/maintenance-e5700/controllers-duplex-supertask-task.html"
-      - title: キャニスター
-        pdf-filename: E5700 ではキャニスターがメンテナンスされます
-        entries:
-        - title: 概要と要件
-          url: "/maintenance-e5700/canisters-overview-supertask-concept.html"
-        - title: 電源装置の交換（ 24 ドライブ）
-          url: "/maintenance-e5700/canisters-supply-replace-task.html"
-        - title: 電源キャニスターの交換（ 60 ドライブ）
-          url: "/maintenance-e5700/canisters-power-supertask-task.html"
-        - title: ファンキャニスターの交換（ 60 ドライブ）
-          url: "/maintenance-e5700/canisters-fan-replace-task.html"
-      - title: ドライブ
-        pdf-filename: E5700 でドライブがメンテナンスされます
-        entries:
-        - title: 概要と要件
-          url: "/maintenance-e5700/drives-overview-supertask-concept.html"
-        - title: ドライブの交換（ 24 ドライブ）
-          url: "/maintenance-e5700/drives-24-supertask-task.html"
-        - title: ドライブの交換（ 60 ドライブ）
-          url: "/maintenance-e5700/drives-60-replace-task.html"
-        - title: ドライブドロワーの交換（ 60 ドライブ）
-          url: "/maintenance-e5700/drives-drawer-supertask-task.html"
-        - title: ドライブシェルフをホットアドします
-          url: "/maintenance-e5700/drives-hotadd-drive-shelf-task.html"
-      - title: ホストインターフェイスカード
-        pdf-filename: E5700 では HIC が維持されます
-        entries:
-        - title: 概要と要件
-          url: "/maintenance-e5700/hics-overview-supertask-concept.html"
-        - title: ホストインターフェイスカードを追加します
-          url: "/maintenance-e5700/hics-add-supertask-task.html"
-        - title: ホストインターフェイスカードをアップグレードします
-          url: "/maintenance-e5700/hics-upgrade-supertask-task.html"
-        - title: ホストインターフェイスカードを交換します
-          url: "/maintenance-e5700/hics-replace-supertask-task.html"
-      - title: ホストポートプロトコル
-        pdf-filename: E5700 Change Host Protocol の略
-        entries:
-        - title: 概要と要件
-          url: "/maintenance-e5700/hpp-overview-supertask-concept.html"
-        - title: ホストプロトコルを変更します
-          url: "/maintenance-e5700/hpp-change-host-protocol-task.html"
-        - title: ホストプロトコル変更後の処理
-          url: "/maintenance-e5700/hpp-complete-protocol-conversion-task.html"
+        - title: 概要
+          url: "/maintenance-e5700/index.html"
+        - title: 電池
+          pdf-filename: E5700 ではバッテリが維持されます
+          entries:
+          - title: 概要と要件
+            url: "/maintenance-e5700/batteries-intro-concept.html"
+          - title: バッテリーを交換します
+            url: "/maintenance-e5700/batteries-replace-supertask-task.html"
+        - title: コントローラ
+          pdf-filename: E5700 はコントローラのメンテナンスを行います
+          entries:
+          - title: 概要と要件
+            url: "/maintenance-e5700/controllers-overview-concept.html"
+          - title: デュプレックス構成でのコントローラの交換
+            url: "/maintenance-e5700/controllers-duplex-supertask-task.html"
+        - title: キャニスター
+          pdf-filename: E5700 ではキャニスターがメンテナンスされます
+          entries:
+          - title: 概要と要件
+            url: "/maintenance-e5700/canisters-overview-supertask-concept.html"
+          - title: 電源装置の交換（ 24 ドライブ）
+            url: "/maintenance-e5700/canisters-supply-replace-task.html"
+          - title: 電源キャニスターの交換（ 60 ドライブ）
+            url: "/maintenance-e5700/canisters-power-supertask-task.html"
+          - title: ファンキャニスターの交換（ 60 ドライブ）
+            url: "/maintenance-e5700/canisters-fan-replace-task.html"
+        - title: ドライブ
+          pdf-filename: E5700 でドライブがメンテナンスされます
+          entries:
+          - title: 概要と要件
+            url: "/maintenance-e5700/drives-overview-supertask-concept.html"
+          - title: ドライブの交換（ 24 ドライブ）
+            url: "/maintenance-e5700/drives-24-supertask-task.html"
+          - title: ドライブの交換（ 60 ドライブ）
+            url: "/maintenance-e5700/drives-60-replace-task.html"
+          - title: ドライブドロワーの交換（ 60 ドライブ）
+            url: "/maintenance-e5700/drives-drawer-supertask-task.html"
+          - title: ドライブシェルフをホットアドします
+            url: "/maintenance-e5700/drives-hotadd-drive-shelf-task.html"
+        - title: ホストインターフェイスカード
+          pdf-filename: E5700 では HIC が維持されます
+          entries:
+          - title: 概要と要件
+            url: "/maintenance-e5700/hics-overview-supertask-concept.html"
+          - title: ホストインターフェイスカードを追加します
+            url: "/maintenance-e5700/hics-add-supertask-task.html"
+          - title: ホストインターフェイスカードをアップグレードします
+            url: "/maintenance-e5700/hics-upgrade-supertask-task.html"
+          - title: ホストインターフェイスカードを交換します
+            url: "/maintenance-e5700/hics-replace-supertask-task.html"
+        - title: ホストポートプロトコル
+          pdf-filename: E5700 Change Host Protocol の略
+          entries:
+          - title: 概要と要件
+            url: "/maintenance-e5700/hpp-overview-supertask-concept.html"
+          - title: ホストプロトコルを変更します
+            url: "/maintenance-e5700/hpp-change-host-protocol-task.html"
+          - title: ホストプロトコル変更後の処理
+            url: "/maintenance-e5700/hpp-complete-protocol-conversion-task.html"
   - title: ストレージを管理します
     url: "/manage-storage.html"
   - title: SANtricity ソリューションを使用する

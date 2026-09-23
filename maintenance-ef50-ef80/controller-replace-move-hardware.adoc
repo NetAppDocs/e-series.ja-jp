@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef80, move the controller module hardware 
 summary: EF50またはEF80ストレージシステムの障害コントローラを交換するには、コントローラを取り外し、コンポーネントを交換用コントローラに移動してから、交換用コントローラを取り付けます。 
 ---
-= コントローラの交換- EF50およびEF80
+= EF50およびEF80ストレージ システムのコントローラを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

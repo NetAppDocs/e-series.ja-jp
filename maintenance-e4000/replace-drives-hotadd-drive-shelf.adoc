@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E4000 replace drive, replacing E4000 drive, E4000 replace drive, replacing E4000 drive, E4000, E-Series, eseries 
 summary: E4000 のドライブを 12 ドライブまたは 24 ドライブシェルフと交換します。 
 ---
-= ドライブシェルフのホットアド- IOM12またはIOM12Bモジュール- E4000
+= IOM12またはIOM12Bモジュールを搭載したE4000ドライブシェルフをホットアドする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -65,7 +65,7 @@ NOTE: 過去 2~3 週間以内に発生した未解決の重大イベントがあ
 
 . ハードウェアにIOMを接続している場合は、次の手順を実行します。それ以外の場合は、<<step2_install_drive_shelf,手順2：ドライブシェルフを設置して電源を投入します。>>
 +
-.. 「 * ハードウェア * 」を選択します。
+.. メニューの「Hardware[Controllers and components]」を選択してください。
 .. IOM （ ESM ） * アイコンを選択します。
 +
 image::../media/sam1130_ss_hardware_iom_icon.gif[IOMアイコン]
@@ -122,7 +122,7 @@ NOTE: 物理的な設置と電源のケーブル接続については、使用�
 +
 image::../media/hot_e4000_cabling_1.png[ドライブシェルフをケーブル接続]
 
-. SANtricity システムマネージャで、 * ハードウェア * をクリックします。
+. SANtricity System Manager で、メニュー：Hardware［Controllers and components］を選択します。
 +
 
 NOTE: 手順のこの時点では、コントローラシェルフへのアクティブパスは 1 つだけです。
@@ -168,7 +168,7 @@ NOTE: 「最適」ステータスは、新しいドライブシェルフに関�
 .手順
 . SANtricity システムマネージャで、 * ホーム * をクリックします。
 . ページ上部中央に「問題からリカバリする」というラベルのリンクが表示された場合は、そのリンクをクリックして Recovery Guru に示される問題を解決します。
-. SANtricity システムマネージャで、 * ハードウェア * をクリックし、必要に応じて下にスクロールして、新しく追加したドライブシェルフを表示します。
+. SANtricity System Manager で、メニュー：Hardware［Controllers and components］を選択し、必要に応じてスクロールダウンして、新しく追加されたドライブシェルフを表示します。
 . 別のストレージシステムに取り付けられていたドライブを、新たに設置したドライブシェルフに 1 本ずつ追加します。各ドライブが認識されるまで待ってから、次のドライブを挿入します。
 +
 ストレージ・システムがドライブを認識すると ' ハードウェア * ページのドライブ・スロットが青色の四角形で表示されます

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800, E5700, installation 
 summary: E2800 または E5700 を 2 ポストラックまたはネットアップシステムキャビネットに設置します。 
 ---
-= ハードウェアの設置- E2860、E5760、およびDE460
+= E2860、E5760、およびDE460のハードウェアをインストールする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

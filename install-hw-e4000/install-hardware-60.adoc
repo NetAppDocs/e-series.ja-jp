@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 2ポストラックまたはNetAppシステムキャビネットにE4060またはDE460Cストレージシステムを設置する方法について説明します。 
 ---
-= ハードウェアの設置- E4060
+= E4060 ストレージ システムのハードウェアをインストールする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

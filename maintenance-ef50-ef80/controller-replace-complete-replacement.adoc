@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef80, how to complete the controller replacement process 
 summary: EF50またはEF80ストレージシステムのコントローラー交換を完了するには、ストレージシステムのファームウェアが最新であることを確認し、ボリュームが所有者に返却されていることを確認し、システムサポートデータを収集し、故障した部品をNetAppに返送してください。 
 ---
-= コントローラの交換を完了する - EF50およびEF80
+= EF50およびEF80ストレージ システムのコントローラ交換を完了する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

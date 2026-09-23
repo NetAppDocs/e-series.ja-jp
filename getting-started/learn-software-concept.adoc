@@ -1,10 +1,10 @@
 ---
 permalink: getting-started/learn-software-concept.html 
 sidebar: sidebar 
-keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, SANtricity, E-Series software, E-Series user interface 
+keywords: E-Series, eseries, E4000, EF80, EF50, EF300, EF600, SANtricity, E-Series software, E-Series user interface 
 summary: E シリーズシステムには、ストレージプロビジョニングとその他のタスクを行うための SANtricity ソフトウェアが搭載されています。 
 ---
-= SANtricityソフトウェアの詳細
+= EシリーズのSANtricityソフトウェアについて
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -96,7 +96,7 @@ image:../media/sam1130_icon_support.gif["サポート"]*サポート*
 [[santricity-unified-manager]]
 == SANtricity Unified Manager の略
 
-Unified Managerは、ドメイン全体を管理するために使用するWebベースのソフトウェアです。中央ビューから、EF50、EF80、E4000、E2800、EF280、EF300、E5700、EF570、EF600、EF300C、EF600Cなど、すべての新しいEシリーズおよびEFシリーズアレイのステータスを確認できます。選択したストレージアレイに対してバッチ操作を実行することもできます。
+Unified Manager は、ドメイン全体を管理するために使用するWebベースのソフトウェアです。中央ビューから、EF50、EF80、E4000、EF300、EF600、EF300C、EF600C などの最新のすべての Eシリーズおよび EFシリーズアレイのステータスを確認できます。選択したストレージアレイに対してバッチ操作を実行することもできます。
 
 Unified Manager は、 Web Services Proxy とともに管理サーバにインストールされます。Unified Manager にアクセスするには、ブラウザを開き、 Web Services Proxy がインストールされているサーバの URL を入力します。
 

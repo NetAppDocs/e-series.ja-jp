@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E5700 fan, repair E5700 fan, replace E5700 fan, failed E5700 fan 
 summary: E5700 ファンを交換します。 
 ---
-= ファンキャニスターの交換- E5700（60ドライブ）
+= E5700 60ドライブシェルフのファンキャニスターを交換する
 :allow-uri-read: 
 :experimental: 
 :icons: font

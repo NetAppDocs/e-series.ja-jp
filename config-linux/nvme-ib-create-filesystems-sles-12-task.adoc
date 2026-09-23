@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: file systems, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: SLES12では、ネームスペースにファイルシステムを作成し、そのファイルシステムをマウントします。 
 ---
-= Eシリーズでファイルシステムを作成する - Linux SLES 12 (NVMe over InfiniBand)
+= NVMe over InfiniBand を使用してEシリーズ Linux SLES 12 ホストにファイルシステムを作成する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

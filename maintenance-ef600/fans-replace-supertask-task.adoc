@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF600, EF300, EF600C, EF300C, replace fan, fan fail 
 summary: EF300 または EF600 のファンを交換します。 
 ---
-= ファンを交換- EF300またはEF600
+= EF300またはEF600ストレージシステムのファンを交換する
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -56,7 +56,7 @@ EF300 および EF600 コントローラシェルフまたはドライブシェ�
 
 . コントローラがオフラインでない場合は、 SANtricity System Manager を使用してオフラインにします。
 +
-.. 「 * ハードウェア * 」を選択します。
+.. メニューから【ハードウェア】【ドライブ】を選択してください。
 .. 図にドライブが表示されている場合は、 * Show back of shelf * を選択してコントローラを表示します。
 .. オフラインに切り替えるコントローラを選択します。
 .. コンテキストメニューから * オフラインに切り替え * を選択し、操作を確定します。
@@ -169,8 +169,7 @@ image::../media/remove_controller_7.png[シェルフへのコントローラの�
 
 . コントローラをオンラインにします。
 +
-.. System Managerで、*[ハードウェア]*ページに移動します。
-.. 「 * コントローラの背面を表示 * 」を選択します。
+.. SANtricity System Manager で、メニュー：Hardware［Controllers and components］を選択します。
 .. ファンを交換したコントローラを選択します。
 .. ドロップダウンリストから「オンラインにする」 * を選択します。
 

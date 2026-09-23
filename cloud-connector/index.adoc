@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Cloud Connector 
 summary: SANtricity Cloud Connector の略 
 ---
-= SANtricity ® Cloud Connector の概要
+= SANtricity Cloud Connectorについて
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

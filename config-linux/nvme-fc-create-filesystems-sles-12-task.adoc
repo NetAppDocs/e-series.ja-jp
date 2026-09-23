@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: partitions, file systems, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: マルチパスデバイスにパーティションを作成し、必要に応じてネームスペースにファイルシステムを作成して、パーティションをマウントします。 
 ---
-= Eシリーズでファイルシステムを作成する - SLES 12 (NVMe over FC)
+= SLES 12 NVMe over FC ホスト用のEシリーズ ボリュームにファイルシステムを作成する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

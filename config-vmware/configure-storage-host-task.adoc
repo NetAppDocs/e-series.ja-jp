@@ -1,21 +1,28 @@
 ---
 permalink: config-vmware/configure-storage-host-task.html 
 sidebar: sidebar 
-keywords: configure storage ESXi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
-summary: ESXi ホストに割り当てられたストレージは、 Virtual Machine File System\ （ VMFS\ ）データストアまたは raw デバイスマッピング \ （ RDM \ ）として使用できます。RDM は、 NVMe over Fibre Channel プロトコルではサポートされません。 
+keywords: configure storage ESXi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, EF50, EF80, E4000, E-Series, eseries 
+summary: ESXiホストに割り当てられたストレージは、仮想マシンファイルシステム（VMFS）データストアまたはRAWデバイスマッピング（RDM）のいずれかとして使用できます。RDMは、NVMe over Fabricプロトコル（NVMe over FC、NVMe over RoCE、NVMe over TCP）ではサポートされていません。 
 ---
-= Eシリーズでのホストでのストレージの設定- VMware
+= VMware向けEシリーズのホスト上のストレージを設定する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ESXi ホストに割り当てられたストレージは、 Virtual Machine File System （ VMFS ）データストアまたは Raw デバイスマッピング（ RDM ）として使用できます。RDM は、 NVMe over Fibre Channel プロトコルではサポートされません。
+ESXiホストに割り当てられたストレージは、仮想マシンファイルシステム（VMFS）データストアまたはRAWデバイスマッピング（RDM）のいずれかとして使用できます。RDMは、NVMe over Fabricプロトコル（NVMe over FC、NVMe over RoCE、NVMe over TCP）ではサポートされていません。
 
-ESXi 6.x および 7.x のすべてのバージョンで、 VMFS バージョン 5 および 6 がサポートされます。
+ESXiの現行バージョンはすべて、VMFSバージョン5および6をサポートしています。
+
+
+NOTE: VMware上でVMFSエクステントを使用することは推奨されません。容量を増やすために既存のVMFSデータストアにエクステントとして別のボリュームを追加するのではなく、既存のバッキングボリュームでDVE操作（(https://kb.netapp.com/on-prem/E-Series/Management-Apps-KBs/How_to_expand_Volumes["ボリュームを拡張する方法 - NetApp ナレッジベース"^]）を実行し、VMFSデータストアを拡張することをお勧めします。
+
+
+NOTE: Linux仮想マシンでは、物理RDMの代わりに仮想RDMまたは仮想ディスクを使用することをお勧めします。
 
 .手順
 . ESXi ホストにマッピングされたボリュームが正しく検出されていることを確認してください。
-. vSphere ClientまたはvSphere Web ClientでVMFSデータストアを作成したり、ボリュームをRDMとして使用したりする手順については、を参照して https://docs.vmware.com/index.html["VMware のドキュメント Web サイト"^]ください。
+. VMFSデータストアの作成手順については、 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/working-with-datastores-in-vsphere-storage-environment/vsphere-vmfs-datastore-concepts-and-operations/create-a-vsphere-vmfs-datastore.html["vSphere VMFS データストアの作成"^]を参照してください。
+. RDMの作成方法については、 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/raw-device-mapping-in-vsphere.html["vSphere の Raw Device Mapping"^]を参照してください。
 

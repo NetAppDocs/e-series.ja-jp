@@ -2,9 +2,9 @@
 permalink: config-windows/configure-ip-address-dhcp-task.html 
 sidebar: sidebar 
 keywords: IP address, DHCP, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
-summary: Dynamic Host Configuration Protocol\ （ DHCP ；動的ホスト構成プロトコル）を使用して、 Windows の簡単な方法で IP アドレスを提供します。 
+summary: Windows Express方式では、動的ホスト構成プロトコル（DHCP）を使用してIPアドレスを割り当てます。 
 ---
-= EシリーズでのDHCPを使用したIPアドレスの設定- Windows
+= EシリーズのWindowsホストでDHCPを使用してIPアドレスを設定する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

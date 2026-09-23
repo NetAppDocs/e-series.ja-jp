@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef80, prerequisite, replace the controller module 
 summary: EF50またはEF80ストレージシステムのコントローラを交換する前に、交換を成功させるための要件を満たしていることを確認してください。これには、障害コントローラがあることの確認、ストレージシステムの状態の確認、手順に必要なツールの入手、SANtricity System Managerにアクセスするための管理ステーションとブラウザの準備が含まれます。 
 ---
-= コントローラの交換要件 - EF50およびEF80
+= EF50およびEF80ストレージ システムのコントローラ交換要件
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: file systems, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: RHEL 9、RHEL 10、SLES 15、およびSLES 16では、ネイティブnvmeデバイス上にファイルシステムを作成し、そのファイルシステムをマウントします。 
 ---
-= Eシリーズでファイルシステムを作成する - Linux（NVMe over RoCE）
+= EシリーズのNVMe over RoCE向けにLinuxホスト上にファイルシステムを作成する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -1,10 +1,10 @@
 ---
 permalink: config-vmware/verify-storage-access-host-task.html 
 sidebar: sidebar 
-keywords: verify storage ESXi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
+keywords: verify storage ESXi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, EF50, EF80, E4000, E-Series, eseries 
 summary: ボリュームを使用する前に、ホストがボリュームに対してデータの読み取りと書き込みを実行できることを確認します。 
 ---
-= Eシリーズのホストでのストレージアクセスの確認- VMware
+= EシリーズおよびVMwareのホストでストレージ アクセスを確認する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

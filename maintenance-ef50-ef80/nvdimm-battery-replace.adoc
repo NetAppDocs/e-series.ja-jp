@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef80, replace the NV battery, NV battery 
 summary: EF50またはEF80ストレージ システムのNVバッテリは、充電が低下したり故障したりした場合は交換してください。NVバッテリは、停電時に重要なシステム データを保護する役割を担っています。 
 ---
-= NVバッテリの交換 - EF50およびEF80
+= EF50またはEF80ストレージシステムのNVバッテリーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

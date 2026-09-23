@@ -29,6 +29,7 @@ Linux のクイック方式で実行する手順は次のとおりです。
 ** SRP over InfiniBand の場合
 ** NVMe over InfiniBand
 ** NVMe over RoCE
+** NVMe over TCP
 ** NVMe over Fibre Channel の 2 つのプロトコルがサポート
 
 

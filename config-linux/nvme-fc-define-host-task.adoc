@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: define host Linux, configure host linux, express linux configuration, linux host, 
 summary: SANtricity System Manager を使用して、ストレージアレイにデータを送信するホストを定義します。ホストの定義は、ストレージアレイが接続されているホストを認識して、ボリュームへの I/O アクセスを許可するために必要な手順の 1 つです。 
 ---
-= SANtricity System Managerを使用したホストの作成- Linux（NVMe over FC）
+= EシリーズのLinux NVMe over FCホスト向けにSANtricity System Managerを使用してホストを作成する
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -29,6 +29,7 @@ SANtricity System Manager を使用して、ストレージアレイにデータ
 +
 Create Host （ホストの作成）ダイアログボックスが表示されます。
 
+. 「+ホスト ポートの追加」をクリックして「ホスト ポート」フィールドにアクセスし、ホストのホスト ポート識別子を追加します。ホストに関連付けるホスト ポート識別子を1つ以上追加できます。
 . ホストの設定を必要に応じて選択します。
 +
 |===

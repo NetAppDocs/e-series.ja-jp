@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-upgrade-overview.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 同じタイプの複数のストレージアレイのSANtricity ソフトウェアとNVSRAMのアップグレードを管理できます。 
 ---
-= vCenter向けStorage Pluginを使用したSANtricityソフトウェアのアップグレード管理の詳細
+= Storage Plugin for vCenterを使用したSANtricityソフトウェアのアップグレードについて説明します
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

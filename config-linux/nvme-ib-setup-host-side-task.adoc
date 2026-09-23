@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: configure Linux host, express linux configuration, linux host, 
 summary: InfiniBand 環境で NVMe イニシエータを設定するには、 InfiniBand パッケージ、 nvme-CLI パッケージ、および RDMA パッケージをインストールして設定し、イニシエータの IP アドレスを設定し、ホストで NVMe-oF レイヤを設定します。 
 ---
-= Eシリーズ- LinuxのホストでのNVMeイニシエータover InfiniBandのセットアップ
+= EシリーズLinuxホスト上でInfiniBand経由のNVMeイニシエータをセットアップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

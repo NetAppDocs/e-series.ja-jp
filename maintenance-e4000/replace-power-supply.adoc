@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E4000 replace canister, replacing E4000 canister, E4000 replace power supply, replacing E4000 power supply, E4000 replace fan, replacing E4000 fan, E4000, E-Series, eseries 
 summary: E4000キャニスターのタイプと要件を確認します。 
 ---
-= 電源ユニット(PSU)を交換してください- E4000
+= E4000 ストレージ システムの電源装置を交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -52,13 +52,12 @@ NOTE: 電圧タイプの異なるPSUを混在させないでください。い�
 この情報は、 Recovery Guru の詳細領域に表示されるか、シェルフについて表示される情報を確認できます。
 
 +
-.. 「 * ハードウェア * 」を選択します。
+.. メニューの「Hardware[Controllers and components]」を選択してください。
 .. [シェルフ]*ドロップダウンリストの右側にある電源とファンのimage:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif["ファンアイコン"]アイコンを確認しimage:../media/sam1130_ss_hardware_power_icon_maint-e2800.gif["電源アイコン"]て、障害が発生した電源装置が搭載されているシェルフを特定します。
 +
 コンポーネントで障害が発生した場合、これらのアイコンの一方または両方が赤色で表示されます。
 
-.. 赤のアイコンが表示されたシェルフが見つかったら、*[コントローラとコンポーネント]*を選択します。
-.. いずれかの電源装置を選択します。
+.. 赤いアイコンが付いているシェルフを見つけたら、どちらかの電源装置を選択してください。
 .. 電源装置 * タブと * ファン * タブで、電源 / ファンキャニスター、電源装置、およびファンのステータスを確認して、交換する必要がある電源装置を特定します。
 +
 ステータスが * Failed * のコンポーネントは交換する必要があります。

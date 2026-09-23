@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF300, EF600, EF300C, EF600C, installation, create account, register hardware 
 summary: EF300 または EF600 を設置するには、アカウントを作成してハードウェアを登録します。 
 ---
-= 設置の準備- EF300、EF600、EF300C、EF600C
+= EF300またはEF600ストレージシステムの設置準備
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -21,7 +21,16 @@ SAS 拡張用に EF300 をケーブル接続する場合は、次の情報を確
 
 
 .手順
-. アカウントを作成し、でハードウェアを登録します http://mysupport.netapp.com/["ネットアップサポート"^]。
+. システムを登録します：
++
+
+NOTE: システムの登録は今すぐでも後からでも可能です。その後、システム起動時に、システムの登録を求められます。
+
++
+.. まだアカウントをお持ちでない場合は、 http://mysupport.netapp.com/["ネットアップサポート"^]でアカウントを作成してください。
+.. NetApp ナレッジベース記事 https://kb.netapp.com/nss/System_Registration/How_to_register_a_new_system_on_the_NetApp_Support_Site["新しいシステムを登録する方法"^]の手順に従ってシステムを登録してください。
+
+
 . 次のものが同梱されていることを確認してください。
 +
 |===
@@ -41,7 +50,7 @@ image:../media/superrails_inst-hw-ef600.png["ラックマウントハードウ�
 
 |===
 +
-次の表に、同梱されているケーブルの種類を示します。表に記載されていないケーブルがある場合は、を参照してください https://hwu.netapp.com/["Hardware Universe"] ケーブルの場所を確認し、用途を特定します。
+以下の表は、お客様にお届けする可能性のあるケーブルの種類を示しています。表に記載されていないケーブルを受け取った場合は、link:https://hwu.netapp.com["NetApp Hardware Universe の略"^]を参照してケーブルの位置を確認し、その用途を特定してください。
 
 +
 |===

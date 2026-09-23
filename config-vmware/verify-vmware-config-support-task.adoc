@@ -1,7 +1,7 @@
 ---
 permalink: config-vmware/verify-vmware-config-support-task.html 
 sidebar: sidebar 
-keywords: express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
+keywords: express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, EF50, EF80, E4000, E-Series, eseries 
 summary: VMware 構成がサポートされていることを確認します。 
 ---
 = EシリーズでのVMware構成のサポートを確認する
@@ -30,10 +30,11 @@ summary: VMware 構成がサポートされていることを確認します。
 
  a| 
 ** 適切な機能とサポートを確保するために、ドライバのインストールが必要になる場合があります。HBA ドライバは、 ESXi シェルを使用するか、 ESXi ホストへのリモート SSH 接続を使用してインストールできます。どちらかの方法でホストにアクセスするには、 ESXi シェルと SSH アクセスを有効にする必要があります。ESXi シェルの詳細については、 ESXi での ESXi シェルの使用に関する VMware のナレッジベースを参照してください。インストールコマンドについては、 HBA ドライバ付属の手順書を参照してください。
-** ブートコードとファームウェアを更新する方法は、 HBA ベンダーごとに異なります。たとえば、 vCenter プラグインを使用する方法や、 ESXi ホストに CIM プロバイダをインストールする方法などがあります。vCenter のプラグインを使用して、ベンダー固有の HBA に関する情報を取得できます。HBA のブートコードまたはファームウェアの更新に必要な手順書とソフトウェアの入手については、ベンダーの Web サイトでサポートセクションを参照してください。正しいブートコードまたはファームウェアの入手については、 _ VMware Compatibility Guide _ または HBA ベンダーの Web サイトを参照してください。
+** 各HBAベンダーは、ブートコードとファームウェアを更新するための独自の方法を持っています。これらの方法の中には、vCenterプラグインの使用、またはESXiホストへのCIMプロバイダのインストールが含まれる場合があります。vCenterプラグインを使用すると、ベンダー固有のHBAに関する情報を取得できます。HBAブートコードまたはファームウェアの更新に必要な手順とソフトウェアを入手するには、ベンダーのウェブサイトのサポートセクションを参照してください。 https://compatibilityguide.broadcom.com/search?program=io&persona=live&column=brandName&order=asc["_VMware Compatibility Guide_"]またはHBAベンダーのウェブサイトを参照して、正しいブートコードまたはファームウェアを入手してください。
+** 選択した構成に関連付けられたアラートと情報を確認し、特定のOS、ゲストOS、HBA、またはその他の関連設定や情報など、構成に適用する必要がある可能性のある項目を確認してください。
 
  a| 
-FC
+FCP
  a| 
 ホストバスアダプタ（ HBA ）のドライバ、ファームウェア、ブートコード
 
@@ -50,6 +51,27 @@ iSCSI
 （ SAS ）。
  a| 
 ホストバスアダプタ（ HBA ）のドライバ、ファームウェア、ブートコード
+
+
+
+ a| 
+NVMe over FC
+ a| 
+ホストバスアダプタ（ HBA ）のドライバ、ファームウェア、ブートコード
+
+
+
+ a| 
+NVMe over RoCE
+ a| 
+リモートダイレクトメモリアクセス（RDMA）ドライバ、ファームウェア、およびブートコード
+
+
+
+ a| 
+NVMe over TCP
+ a| 
+ネットワークインターフェイスカード（ NIC ）のドライバ、ファームウェア、ブートコード
 
 |===
 

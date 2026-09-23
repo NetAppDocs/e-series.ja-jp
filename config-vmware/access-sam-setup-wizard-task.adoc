@@ -1,10 +1,10 @@
 ---
 permalink: config-vmware/access-sam-setup-wizard-task.html 
 sidebar: sidebar 
-keywords: access System Manager vmware, express vmware configuration,software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
+keywords: access System Manager vmware, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, EF50, EF80, E4000, E-Series, eseries 
 summary: SANtricity System Manager のセットアップウィザードを使用して、ストレージアレイを設定します。 
 ---
-= SANtricity System Manager - VMwareを使用したストレージの設定
+= VMware 向け SANtricity System Manager を使用した Eシリーズ ストレージの設定
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -77,7 +77,7 @@ iSCSI を使用している場合は、 iSCSI の設定中にセットアップ�
 
 . 管理者パスワードの設定フィールドとパスワードの確認フィールドに管理者ロールの System Manager パスワードを入力し、 * パスワードの設定 * をクリックします。
 +
-プール、ボリュームグループ、ワークロード、または通知が設定されていない場合は、セットアップウィザードが起動します。
+プール、ボリューム グループ、ワークロード、または通知が設定されていない場合、セットアップ ウィザードが起動します。
 
 . セットアップウィザードを使用して、次のタスクを実行します。
 +
@@ -91,6 +91,6 @@ iSCSI を使用している場合は、 iSCSI の設定中にセットアップ�
 . ボリュームをまだ作成していない場合は、メニューからストレージ [ ボリューム ] 、 [ 作成 ] 、 [ ボリューム ] の順に選択してボリュームを作成します。
 +
 
-NOTE: EF300 および EF600 では、 VMware との互換性を確保するために、ブロックサイズを 512 バイトに設定する必要があります。ボリュームを 512 バイトに設定する方法の詳細については、 SANtricity System Manager オンラインヘルプを参照してください。
+NOTE: VMwareとの互換性を確保するため、4096バイトのドライブを使用する場合は、ボリュームを512バイトエミュレーション（512e）を使用するように設定する必要があります。ボリュームを512バイトエミュレーション（512e）を使用するように設定する方法の詳細については、SANtricity System Managerのオンラインヘルプを参照してください。
 
 

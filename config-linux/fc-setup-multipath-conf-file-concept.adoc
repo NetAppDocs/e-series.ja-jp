@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: multipath.conf file, express linux configuration, software configuration, linux host, 
 summary: multipath.conf ファイルは、マルチパスデーモン multipathd の構成ファイルです。 
 ---
-= Eシリーズ- Linux（FC）でのmultipath.confファイルの設定
+= EシリーズLinux FCホスト用のmultipath.confファイル
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

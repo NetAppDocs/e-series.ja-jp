@@ -1,17 +1,17 @@
 ---
 permalink: config-vmware/index.html 
 sidebar: sidebar 
-keywords: express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
+keywords: express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, EF50, EF80, E4000, E-Series, eseries 
 summary: E シリーズシステムを使用する VMware ホストの簡単な設定を使用します。 
 ---
-= EシリーズでのVMwareの簡単な設定
+= EシリーズにおけるVMwareホスト構成のクイックスタート
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-VMware の簡単な方法でストレージアレイをインストールして SANtricity System Manager にアクセスする方法は、 E シリーズストレージシステムにスタンドアロンの VMware ホストをセットアップする場合に適しています。最低限の選択で可能なかぎり迅速にストレージシステムの運用を開始できるように設計されています。
+ストレージアレイのインストールと SANtricity System Manager へのアクセスに関する VMware Express 方式は、Eシリーズ ストレージ システムを使用するスタンドアロンの VMware ホストをセットアップするのに適しています。これは、最小限の判断ポイントでストレージ システムをできるだけ迅速に稼働させることを目的として設計されています。
 
 
 
@@ -22,11 +22,12 @@ VMware の簡単な方法でストレージアレイをインストールして 
 
 . 次のいずれかの通信環境を設定します。
 +
-** link:nmve-fc-perform-specific-task.html["NVMe over Fibre Channel の 2 つのプロトコルがサポート"]
-** link:fc-perform-specific-task.html["ファイバチャネル"]
+** link:nvme-fc-perform-specific-task.html["NVMe over Fibre Channel の 2 つのプロトコルがサポート"]
+** link:fc-perform-specific-task.html["Fibre Channel（FCP）"]
 ** link:iscsi-perform-specific-task.html["iSCSI"]
 ** link:sas-perform-specific-task.html["（ SAS ）。"]
 ** link:nvme-roce-perform-specific-task.html["NVMe over RoCE"]
+** link:nvme-tcp-perform-specific-task.html["NVMe over TCP"]
 
 
 . ストレージアレイに論理ボリュームを作成します。
@@ -42,7 +43,7 @@ VMware の簡単な方法でストレージアレイをインストールして 
 * https://kb.netapp.com/["ネットアップナレッジベース"^] （記事のデータベース） - トラブルシューティング情報、 FAQ 、ネットアップのさまざまな製品とテクノロジの説明を掲載しています。
 * http://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] -- ネットアップが指定した基準と要件を満たすネットアップの製品とコンポーネントの構成を検索できます
 * https://www.netapp.com/pdf.html?item=/media/17017-tr4789.pdf["『 VMware Configuration Guide for E-Series SANtricity iSCSI Integration with ESXi 6.X 』"^] -- VMwareとのiSCSI統合に関する技術的な詳細情報を提供します。
-* https://configmax.broadcom.com/home["VMware 構成の最大数"^]-- ESX / ESXiでサポートされる最大値の範囲内に収まるように、仮想ストレージと物理ストレージを構成する方法について説明します。
-* https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-9AEE5F4D-0CB8-4355-BF89-BB61C5F30C70.html["VMware NVMe ストレージの要件と制限事項"^]。
-* https://docs.vmware.com/en/VMware-vSphere/index.html["VMware vSphere のドキュメント"^] -- ESXi vCenter Server のドキュメントを提供します
+* https://configmax.broadcom.com/guest["VMware 構成の最大数"^] -- ESX/ESXiがサポートする許容最大値の範囲内に収まるように、仮想ストレージと物理ストレージを構成する方法について説明します。
+* https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/about-vmware-nvme-storage/requirements-for-vmware-nvme-storage.html["VMware NVMeストレージの要件"^] -- NVMe over Fabrics固有の構成要件。
+* https://techdocs.broadcom.com/["Broadcom技術ドキュメント"^] -- VMware クラウドインフラストラクチャソフトウェアおよびvSphere技術文書。
 

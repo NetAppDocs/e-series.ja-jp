@@ -1,10 +1,10 @@
 ---
 permalink: config-vmware/configure-ip-address-using-dhcp-task.html 
 sidebar: sidebar 
-keywords: IP address, DHCP, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
-summary: Dynamic Host Configuration Protocol\ （ DHCP ；動的ホスト構成プロトコル）を使用して、 VMware の簡単な方法で IP アドレスを提供します。 
+keywords: IP address, DHCP, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, EF50, EF80, E4000, E-Series, eseries 
+summary: VMware Express方式では、動的ホスト構成プロトコル（DHCP）を使用してIPアドレスを割り当てます。 
 ---
-= Eシリーズ- VMwareでのDHCPを使用したIPアドレスの設定
+= VMware向けEシリーズでDHCPを使用してIPアドレスを設定する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

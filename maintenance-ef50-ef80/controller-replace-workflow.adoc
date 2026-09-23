@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef80, replace the controller workflow 
 summary: EF50またはEF80ストレージシステムで障害が発生したコントローラを交換するには、ストレージシステムの要件を満たし、システムを準備し、障害が発生したコントローラをオフラインにし、コントローラを交換し、新しいコントローラをオンラインにして、交換プロセスを完了します。 
 ---
-= コントローラの交換ワークフロー - EF50およびEF80
+= EF50およびEF80ストレージ システムのコントローラー交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

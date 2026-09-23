@@ -22,12 +22,12 @@ E シリーズストレージアレイには、複数の構成やモデルがあ
 * E4000 シリーズ - エントリレベルハイブリッド
 * EF600 シリーズ - ミッドレンジオールフラッシュ、オール NVMe
 * EF300 シリーズ -- エントリレベルのオールフラッシュ、オール NVMe
-* EF300C シリーズ -- エントリレベルのオールフラッシュ、オール NVMe
-* EF600C シリーズ - ミッドレンジオールフラッシュ、オール NVMe
-* E2800 シリーズ - エントリレベルハイブリッド
-* EF280 シリーズ - エントリレベルオールフラッシュ
-* E5700 シリーズ - ミッドレンジハイブリッド
-* EF570 シリーズ - ミッドレンジオールフラッシュ
+* EF300Cシリーズ -- エントリーレベルのオールフラッシュ、高密度NVMe
+* EF600Cシリーズ -- ミッドレンジ オールフラッシュ、高密度NVMe
+* E2800シリーズ（販売終了） -- エントリーレベルのハイブリッド
+* EF280シリーズ（販売終了） -- エントリーレベルのオールフラッシュ
+* E5700シリーズ（販売終了）-- ミッドレンジ ハイブリッド
+* EF570シリーズ（販売終了）-- ミッドレンジ オール フラッシュ
 
 
 
@@ -57,6 +57,10 @@ image::../media/ef50_2u_front.png[EF50 2U]
 ** 15.3 TB
 ** 30 TB
 ** 60 TB
++
+
+NOTE: 30TBおよび60TBドライブの場合、EF50はダイナミック ディスク プールの使用のみをサポートし、従来のRAIDはサポートしていません。
+
 
 
 * コントローラ シェルフで最大24台のNVMe SSDドライブをサポートします。
@@ -65,6 +69,13 @@ image::../media/ef50_2u_front.png[EF50 2U]
 +
 
 NOTE: EF50システムを構成する際には、ミラーリングケーブルを正しく接続することが非常に重要です。詳細については、 https://docs.netapp.com/us-en/e-series/install-hw-ef50-ef80/install-cable.html#step-1-cable-the-inter-controller-mirroring-connections["コントローラ間ミラーリング接続のケーブル接続 - EF50およびEF80"]を参照してください。
+
+* オプションのSAS拡張カードをサポートし、SAS拡張シェルフ接続を可能にします。
+* システム起動時に未割り当てのドライブが十分にある場合、単一のディスクプールが自動的に作成されます。
+* SANtricity OS 12.10以降、EF50は3.8TB、7.6TB、15.3TBのドライブと30TBおよび60TBのドライブの混在をサポートしています。混在シェルフ内のこれらのドライブは、自動的にRAID非対応の単一ディスクプールに配置されます。
++
+
+NOTE: 自動的に作成されたディスク プールは、SANtricity System ManagerまたはSANtricity CLIを使用して削除できます。詳細については、 https://docs.netapp.com/us-en/e-series-cli/commands-a-z/delete-diskpool.html["ディスクプールを削除する - SANtricity CLI ガイド"^]および https://docs.netapp.com/us-en/e-series-santricity/sm-storage/delete-pool-or-volume-group.html["プールまたはボリュームグループを削除する - SANtricity System Manager ガイド"^]を参照してください。
 
 
 
@@ -76,6 +87,7 @@ NOTE: EF50システムを構成する際には、ミラーリングケーブル�
 
 * 64Gb NVMe／ファイバーチャネル
 * 64Gb ファイバーチャネル
+* 25Gb iSCSI です
 
 
 --
@@ -104,6 +116,10 @@ image::../media/ef80_2u_front.png[EF80 2U]
 ** 15.3 TB
 ** 30 TB
 ** 60 TB
++
+
+NOTE: 30TBおよび60TBドライブの場合、EF80はダイナミック ディスク プールの使用のみをサポートし、従来のRAIDはサポートしていません。
+
 
 
 * コントローラ シェルフで最大24台のNVMe SSDドライブをサポートします。
@@ -113,6 +129,12 @@ image::../media/ef80_2u_front.png[EF80 2U]
 
 NOTE: EF80システムを構成する際には、ミラーリングケーブルを正しく接続することが非常に重要です。詳細については、 https://docs.netapp.com/us-en/e-series/install-hw-ef50-ef80/install-cable.html#step-1-cable-the-inter-controller-mirroring-connections["コントローラ間ミラーリング接続のケーブル接続 - EF50およびEF80"]を参照してください。
 
+* オプションのSAS拡張カードをサポートし、SAS拡張シェルフ接続を可能にします。
++
+SAS 拡張カードがインストールされている場合、ホスト接続用のホスト インターフェイス カードの最大数は、コントローラごとに2枚に制限されます。
+
+* システム起動時に未割り当てのドライブが十分にある場合、単一のディスクプールが自動的に作成されます。
+* SANtricity OS 12.10以降、EF80は3.8TB、7.6TB、15.3TBのドライブと30TBおよび60TBのドライブの混在をサポートしています。混在シェルフ内のこれらのドライブは、自動的にRAID非対応の単一ディスクプールに配置されます。+ 注：自動的に作成されたディスクプールは、SANtricity System ManagerまたはSANtricity CLIを使用して削除できます。詳細については、 https://docs.netapp.com/us-en/e-series-cli/commands-a-z/delete-diskpool.html["ディスクプールを削除する - SANtricity CLI ガイド"^]および https://docs.netapp.com/us-en/e-series-santricity/sm-storage/delete-pool-or-volume-group.html["プールまたはボリュームグループを削除する - SANtricity System Manager ガイド"^]を参照してください。
 
 
 --
@@ -121,6 +143,7 @@ NOTE: EF80システムを構成する際には、ミラーリングケーブル�
 --
 次のインターフェイスで使用できます。
 
+* 200Gb NVMe / TCP
 * 200Gb NVMe/RoCE
 * 64Gb NVMe／ファイバーチャネル
 * 200Gb NVMe/IB
@@ -162,6 +185,7 @@ image::../media/e4000_4u_front.png[E4000 4U]
 --
 次のインターフェイスで使用できます。
 
+* 25Gb iSCSI です
 * 12Gb SAS となります
 * 1Gbまたは10Gb Base-T iSCSI
 * 1Gb、10Gb、または25Gb iSCSI
@@ -250,7 +274,11 @@ image:../media/ef570_front.gif["EF600 2U"]
 ** 拡張シェルフ構成はサポートされません。
 
 
-* システムブート時に未割り当てのドライブが十分にない場合は、単一のディスクプールが自動的に作成されます。
+* システム起動時に未割り当てのドライブが十分にある場合、単一のディスクプールが自動的に作成されます。
++
+
+NOTE: 自動的に作成されたディスク プールは、SANtricity System ManagerまたはSANtricity CLIを使用して削除できます。詳細については、 https://docs.netapp.com/us-en/e-series-cli/commands-a-z/delete-diskpool.html["ディスクプールを削除する - SANtricity CLI ガイド"^]および https://docs.netapp.com/us-en/e-series-santricity/sm-storage/delete-pool-or-volume-group.html["プールまたはボリュームグループを削除する - SANtricity System Manager ガイド"^]を参照してください。
+
 
 
 --
@@ -342,6 +370,10 @@ image:../media/ef570_front.gif["EF300 2U"]
 
 * コントローラごとに1つのホストインターフェイスカードがサポートされます。
 * システムブート時に未割り当てのドライブが十分にない場合は、単一のディスクプールが自動的に作成されます。
++
+
+NOTE: 自動的に作成されたディスク プールは、SANtricity System ManagerまたはSANtricity CLIを使用して削除できます。詳細については、 https://docs.netapp.com/us-en/e-series-cli/commands-a-z/delete-diskpool.html["ディスクプールを削除する - SANtricity CLI ガイド"^]および https://docs.netapp.com/us-en/e-series-santricity/sm-storage/delete-pool-or-volume-group.html["プールまたはボリュームグループを削除する - SANtricity System Manager ガイド"^]を参照してください。
+
 
 
 --
@@ -363,7 +395,7 @@ image:../media/ef570_front.gif["EF300 2U"]
 
 
 --
-.E2800 モデル
+.E2800モデル（EOA）
 --
 ラックサイズ::
 +
@@ -405,7 +437,7 @@ image::../media/e2860_front.gif[E2800 4U]
 
 
 --
-.EF280 モデル
+.EF280モデル（EOA）
 --
 ラックサイズ::
 +
@@ -435,7 +467,7 @@ image:../media/ef570_front.gif["EF280 2U"]
 
 
 --
-.E5700 モデル
+.E5700モデル（EOA）
 --
 ラックサイズ::
 +
@@ -481,7 +513,7 @@ image::../media/e2860_front.gif[E5700 4U]
 
 
 --
-.EF570 モデル
+.EF570モデル（EOA）
 --
 ラックサイズ::
 +

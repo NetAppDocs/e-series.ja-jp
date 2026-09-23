@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef80, replace the drives 
 summary: EF50またはEF80ストレージシステムのドライブに障害が発生した場合、またはアップグレードが必要な場合は、ドライブを交換してください。 
 ---
-= ドライブの交換 - EF50およびEF80
+= EF50およびEF80ストレージ システムのドライブを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -2,9 +2,9 @@
 permalink: config-linux/fc-assign-volume-nvme-task.html 
 sidebar: sidebar 
 keywords: express linux configuration, assign volume, assign namespace, 
-summary: ボリュームを I/O 処理に使用できるように、ホストまたはホストクラスタにボリューム（ネームスペース）を割り当てる必要があります。これにより、ストレージアレイの 1 つ以上のネームスペースへのアクセスがホストまたはホストクラスタに許可されます。 
+summary: ホストまたはホストクラスタにボリューム（ネームスペース）を割り当てて、そのボリュームを I/O 処理に使用できるようにする必要があります。これにより、ストレージアレイの 1 つ以上のネームスペースへのアクセスがホストまたはホストクラスタに許可されます。 
 ---
-= SANtricity System Managerを使用したボリュームの割り当て- Linux（FC over NVMe）
+= Linux FC over NVMe 向けに SANtricity System Manager を使用して Eシリーズ ボリュームを割り当てる
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E5700 battery, repair E5700 battery, replace E5700 battery, failed E5700 battery 
 summary: E5700 ストレージシステムの障害が発生したバッテリを交換します。 
 ---
-= バッテリの交換- E5700
+= E5700バッテリーを交換する
 :allow-uri-read: 
 :experimental: 
 :icons: font

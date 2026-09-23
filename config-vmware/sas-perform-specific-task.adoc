@@ -1,10 +1,10 @@
 ---
 permalink: config-vmware/sas-perform-specific-task.html 
 sidebar: sidebar 
-keywords: sas, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
+keywords: sas, express vmware configuration, software configuration, vmware host, E2800, E5700, E4000, E-Series, eseries 
 summary: SAS プロトコルの場合は、ホストポートアドレスを特定し、推奨設定を適用します。 
 ---
-= Eシリーズ- VMwareでのSAS固有のタスクの実行
+= EシリーズでVMwareのSASホスト インターフェイスと設定を構成する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -15,32 +15,12 @@ SAS プロトコルの場合は、ホストポートアドレスを特定し、�
 
 
 
-[[step-1-determine-sas-host-identifiers-vmware]]
-== 手順1：SASホスト識別子を特定する-- vmware
+[[step-1-record-your-configuration]]
+== ステップ1：設定を記録する
 
-HBA ユーティリティを使用して SAS アドレスを確認し、 HBA BIOS を使用して適切な設定を行います。
+このページをPDFファイルとして生成して印刷し、その後、次のワークシートを使用して、プロトコル固有のストレージ構成情報を記録することができます。プロビジョニング作業を行う際に、この情報が必要になります。
 
-.このタスクについて
-HBA ユーティリティのガイドラインを確認します。
-
-* ほとんどの HBA ベンダーは HBA ユーティリティを提供しています。
-
-
-.手順
-. HBA ユーティリティを HBA ベンダーの Web サイトからダウンロードします。
-. ユーティリティをインストールします。
-. HBA BIOS を使用して構成に適した設定を選択します。
-+
-適切な設定については、の「メモ」列を参照してください http://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] を参照してください。
-
-
-
-
-
-[[step-2-record-your-configuration]]
-== 手順 2 ：設定を記録する
-
-このページの PDF を生成して印刷し、次のワークシートを使用してプロトコル固有のストレージ構成情報を記録できます。この情報は、プロビジョニングタスクを実行する際に必要になります。
+図は、冗長接続（4ポート SAS HBA を想定）を備えた Eシリーズ ストレージ アレイにホストが直接接続されていることを示しています。最初の冗長接続は赤い線で示され、2番目の冗長接続は青い線で示されています。ポート数はホスト ポートの数によって決まります。ホスト ポートは2つしか利用できない場合があります。この場合、少なくとも最初の冗長接続を設けることを推奨します。
 
 image::../media/sas_topology_diagram_conf-vmw.gif[図： SAS トポロジ]
 
@@ -73,7 +53,7 @@ _ 該当なし _
  a| 
 3.
  a| 
-ホスト（イニシエータ）ポート 1 からコントローラ B のポート 1
+ホスト（イニシエータ）ポート 2 からコントローラ B のポート 1
  a| 
 
 
@@ -81,7 +61,7 @@ _ 該当なし _
  a| 
 4.
  a| 
-ホスト（イニシエータ）ポート 2 からコントローラ A のポート 1
+ホスト（イニシエータ）のポート3がコントローラAのポート1に接続されています
  a| 
 
 
@@ -89,33 +69,54 @@ _ 該当なし _
  a| 
 5.
  a| 
-ホスト（イニシエータ）ポート 2 からコントローラ B のポート 1
+ホスト（イニシエータ）ポート4がコントローラB、ポート1に接続されています。
  a| 
 
 |===
 
 
-[[target-identifiers]]
-=== ターゲット識別子
+[[host-mapping-information]]
+=== ホストマッピング情報
 
-推奨構成は 2 つのターゲットポートで構成されます。
+[cols="35h,~"]
+|===
+| マッピングホスト名 |  
 
 
-
-[[mapping-host-name]]
-=== マッピングホスト名
-
+| ホスト OS タイプ |  
 |===
 
 
- a| 
-マッピングホスト名
- a| 
+[[step-2-determine-sas-host-identifiers]]
+== ステップ2：SASホスト識別子を特定する
+
+esxcliまたはHBAユーティリティを使用してSASアドレスを検索します。
+
+.このタスクについて
+HBA ユーティリティのガイドラインを確認します。
+
+* ほとんどの HBA ベンダーは HBA ユーティリティを提供しています。
 
 
+.手順
+. SSHまたはESXiシェルを使用してESXiホストに接続します。ESXiシェルを有効にするには、 https://knowledge.broadcom.com/external/article/311213/using-esxi-shell-in-esxi.html["ESXiでESXiシェルを使用する"^]を参照してください。
+. 次のコマンドを実行します。
++
+[listing]
+----
+esxcli storage core adapter list
+----
+. イニシエータ SAS アドレス識別子（sas.<SAS_Address> の形式の UID）を記録します。出力は次の例のようになります。
++
+[listing]
+----
+HBA Name  Driver       Link State  UID                   Capabilities         Description
+--------  ----------   ----------  --------------------  -------------------  -----------
+vmhba1    lsi_msgpt35  link-n/a    sas.5b083fe0ca0e7000                       (0000:03:00.0) Avago (LSI Logic) SAS3008 12Gbps SAS HBA external
+----
 
- a| 
-ホスト OS タイプ
- a| 
 
-|===
+上記の例では、UIDにはベースとなるSASアドレスのみが表示されます。他のポートについては、最初の14文字は一定で、最後の2文字だけが異なるポートを表すために変化します。通常、ポートごとに最後の桁が1ずつ増加します。ベースSASアドレスがあれば、EシリーズアレイがホストマッピングB中にその他のポートSASアドレスを自動的に検出して一覧表示するため、通常はホスト アダプタの識別に十分です。ベンダー提供のHBAユーティリティを使用すると、各ポートのSASアドレスを取得できる場合があります。
+
+
+NOTE: 別のコマンドオプションは `esxcli storage san sas list`です。これにより、詳細情報とベースとなるSASアドレスがコロンで区切られた16進数形式で表示されます。

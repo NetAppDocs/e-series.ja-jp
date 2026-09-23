@@ -1,0 +1,107 @@
+---
+permalink: config-linux/nvme-tcp-discover-connect-storage-host-task.html 
+sidebar: sidebar 
+keywords: discover storage, host, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: SANtricity System Manager で各ホストを定義する前に、ホストからターゲットコントローラポートを検出し、 NVMe 接続を確立する必要があります。 
+---
+= LinuxホストからEシリーズ ストレージを検出して接続する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SANtricity System Manager で各ホストを定義する前に、ホストからターゲットコントローラポートを検出し、 NVMe 接続を確立する必要があります。
+
+.手順
+. 次のコマンドを使用して、ホストから各アレイ HIC ポートへの ping が成功することを確認します。
++
+[listing]
+----
+ping <IP of array HIC port>
+----
+. 次のコマンドを使用して、すべてのパスの NVMe-oF ターゲット上の使用可能なサブシステムを検出します。
++
+[listing]
+----
+nvme discover -t tcp -a target_ip_address
+----
++
+このコマンドで 'target_ip_address はターゲット・ポートの IP アドレスです
+
++
+
+NOTE: 「 nvme discover 」コマンドでは、ホスト・アクセスに関係なく、サブシステム内のすべてのコントローラ・ポートが検出されます。
+
++
+[listing]
+----
+# nvme discover -t tcp -a 192.168.134.101
+Discovery Log Number of Records 12, Generation counter 0
+=====Discovery Log Entry 0======
+trtype:  tcp
+adrfam:  ipv6
+subtype: nvme subsystem
+treq:    not specified
+portid:  0
+trsvcid: 4420
+subnqn:  nqn.1992-08.com.netapp:EF80.6d039ea0005d29280000000069ddb538
+traddr:  fe80:0:0:0:200:ff:fe00:1
+eflags:  none
+sectype: none
+=====Discovery Log Entry 1======
+trtype:  tcp
+adrfam:  ipv6
+subtype: nvme subsystem
+treq:    not specified
+portid:  0
+trsvcid: 4420
+subnqn:  nqn.1992-08.com.netapp:EF80.6d039ea0005d29280000000069ddb538
+traddr:  fd23:0:0:0:192:168:131:101
+eflags:  none
+sectype: none
+----
+. 他の接続についても手順2を繰り返します。
+. 検出されたサブシステムに最初のパスで接続するには、次のコマンドを使用します： `nvme connect -t tcp -n discovered_sub_nqn -a target_ip_address -Q queue_depth_setting -l controller_loss_timeout_period`
++
+
+NOTE: 上記のコマンドは再起動後も有効になりません。 `nvme connect`コマンドは、NVMe接続を再確立するために再起動後に毎回実行する必要があります。
+
++
+
+NOTE: 検出されたポートのうち、ホストからアクセスできないポートへの接続は確立されません。
+
++
+
+NOTE: このコマンドでポート番号を指定すると、接続は失敗します。接続用に設定されているポートはデフォルトポートだけです。
+
++
+
+NOTE: デフォルトでは、キューの深さは `128`に設定されています。NVMe over TCP ではキューの深さが `128`である必要があるため、このデフォルト値は変更しないでください。
+
++
+[listing]
+----
+# nvme connect -t tcp -a 192.168.134.101 -n nqn.1992-08.com.netapp:EF80.6d039ea0005d29280000000069ddb538 -Q 128 -l 3600
+----
+. 他の接続についても手順4を繰り返します。
+. **オプション** - ホストが起動時にターゲットを自動的に検出して接続するように設定します。
++
+.. ステップ2とステップ3の検出パラメータを `/etc/nvme/discovery.conf`に次の手順と形式を使用して追加します：
++
+[listing]
+----
+# echo "--transport=tcp --traddr=target_ip_address --trsvcid=4420" | sudo tee -a /etc/nvme/discovery.conf
+----
+..  `/etc/nvme/discovery.conf`ファイルを設定した後、次のコマンドを使用してnvmf-autoconnectサービスを有効にします：
++
+[listing]
+----
+sudo systemctl enable nvmf-autoconnect.service
+----
+
+
+
+
+.次の手順
+接続を確立したら、link:nvme-tcp-define-host-task.html["ホストを定義する"]。

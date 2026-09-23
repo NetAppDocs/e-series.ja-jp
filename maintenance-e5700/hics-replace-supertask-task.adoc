@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E5700 host interface card, E5700 HIC, replace E5700 HIC, failed E5700 HIC 
 summary: E5700 の HIC を交換します。 
 ---
-= ホストインターフェイスカード（HIC）の交換- 5700
+= E5700のホスト インターフェイス カードを交換する
 :allow-uri-read: 
 :experimental: 
 :icons: font

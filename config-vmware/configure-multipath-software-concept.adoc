@@ -1,22 +1,55 @@
 ---
 permalink: config-vmware/configure-multipath-software-concept.html 
 sidebar: sidebar 
-keywords: multipath software for vmware, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
-summary: 物理パスの 1 つが中断された場合にストレージアレイへの冗長パスを提供するように m ソフトウェアを設定します。 
+keywords: multipath software for vmware, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E4000, EF50, EF80, E-Series, eseries 
+summary: 物理パスの 1 つが中断された場合に備えて、ストレージアレイへのパスを冗長化するようにマルチパスソフトウェアを設定します。 
 ---
-= Eシリーズ- VMwareでのマルチパスソフトウェアの設定
+= EシリーズにおけるVMwareホストのマルチパスの仕組み
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ストレージアレイへのパスを冗長化するには、マルチパスソフトウェアを設定します。
+ストレージアレイへの冗長パスを提供するには、マルチパスソフトウェアを設定します。
 
-マルチパスソフトウェアは、物理パスの 1 つが中断された場合に備えて、ストレージアレイへのパスを冗長化します。マルチパスソフトウェアは、ストレージへのアクティブな物理パスを 1 つの仮想デバイスとしてオペレーティングシステムに提示します。また、フェイルオーバープロセスも管理して仮想デバイスを更新します。VMware の場合、 NVMe/FC はハイパフォーマンスプラグイン（ HPP ）を使用します。
+マルチパスソフトウェアは、物理パスの 1 つが中断された場合に備えて、ストレージアレイへのパスを冗長化します。マルチパスソフトウェアは、ストレージへのアクティブな物理パスを 1 つの仮想デバイスとしてオペレーティングシステムに提示します。また、フェイルオーバープロセスも管理して仮想デバイスを更新します。
 
-VMware では、 FC 、 iSCSI 、および SAS の各プロトコルにのみ対応し、特定のベンダーのストレージアレイのフェイルオーバー実装を処理するため、ストレージアレイタイププラグイン（ SATP ）と呼ばれるプラグインを提供しています。
 
-使用する SATP は * VMW_SATP_ALUA * です。
 
-詳細については、を参照してください https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-DB5BC795-E4D9-4350-9C5D-12BB3C0E6D99.html["VMware SATPs"^]。
+[[multipathing-policies]]
+== マルチパスポリシー
+
+マルチパスポリシーの詳細は以下のとおりです。FCP、iSCSI、およびSASプロトコルの場合、デフォルトはネイティブマルチパス プラグイン（NMP）です。NVMe over Fabrics（NVMe over FC、NVMe over RoCE、NVMe over TCP）の場合、デフォルトはHigh Performance Plug-In（HPP）です。
+
+
+
+[[native-multipathing-plug-ins-nmp]]
+=== ネイティブ マルチパス プラグイン（NMP）
+
+FCP、iSCSI、およびSASプロトコルにのみ適用されます。 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/understanding-multipathing-and-failover-in-the-esxi-environment/vmware-multipathing-module.html["VMwareはネイティブ マルチパスプラグイン（NMP）を提供しています。"^]これは、Storage Array Type Plug-ins（SATP）として知られており、特定のベンダーのストレージアレイのフェイルオーバー実装を処理するために使用されます。
+
+使用すべき SATP は *VMW_SATP_ALUA* です （これは NetApp Eシリーズのデフォルトとして選択されています）。詳細については、 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/understanding-multipathing-and-failover-in-the-esxi-environment/vmware-satps.html["VMware SATPs"^]を参照してください。
+
+
+
+==== パス選択プラグインとポリシー（PSP）
+
+これらのプラグインは、VMware NMPのサブモジュールです。NMPは、デバイスの種類に基づいて、各論理デバイスにデフォルトのPSPを割り当てます。デフォルトのPSP設定を上書きできます。詳細については、 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/understanding-multipathing-and-failover-in-the-esxi-environment/viewing-and-managing-storage-paths-on-esxi-hosts/change-the-path-selection-policy.html["パス選択ポリシーを変更する"^]を参照してください。NMPは、NetAppデバイスにVMW_PSP_RR（ラウンドロビン）のデフォルトパス選択ポリシーを割り当てます。これは推奨されるPSPです。
+
+詳細については、 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/understanding-multipathing-and-failover-in-the-esxi-environment/vmware-psps.html["VMware パス選択プラグインとポリシー"^]を参照してください。
+
+
+
+[[high-performance-plug-in-hpp]]
+=== 高性能プラグイン（HPP）
+
+HPPは、NVMeなどの高速デバイスのNMPに取って代わります。HPPは、NVMe-oFターゲットを要求するデフォルトのプラグインです。ESXは、エミュレーションなしのエンドツーエンドNVMeおよびSCSIからNVMeへのエミュレーションをサポートします。HPPは、アクティブ / アクティブおよび暗黙的なALUAターゲットのみをサポートします。
+
+
+
+==== 経路選択方式（PSS）
+
+マルチパスをサポートするために、HPPはI/O要求の物理パスを選択する際にパス選択方式（PSS）を使用します。HPPによって要求されるデバイスのデフォルトのスキームは、LB-RR（ロードバランシング - ラウンドロビン）です。これは推奨されるPSSです。
+
+HPPまたはPSSの詳細については、 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/understanding-multipathing-and-failover-in-the-esxi-environment/vmware-hpp.html["VMware High Performance プラグインとパス選択スキーム"^]を参照してください。

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: cabling, cables, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C 
 summary: ホストをコントローラに直接接続するか、スイッチを使用します。 
 ---
-= ストレージ システムの配線 - Eシリーズ
+= Eシリーズ ストレージ システムのケーブル配線について
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -75,4 +75,4 @@ E2760 、 E5660
 DE460C
 
 |===
-ミラーリング機能をサポートするためのケーブル配線については、 https://www.netapp.com/pdf.html?item=/media/17133-tr4656.pdf["同期および非同期ミラーリング機能の説明と導入ガイド"^]を参照してください。
+ミラーリング機能をサポートするためのケーブル配線については、 https://www.netapp.com/pdf.html?item=/media/19405-tr-4839.pdf["同期および非同期ミラーリング機能の説明と導入ガイド"^]を参照してください。

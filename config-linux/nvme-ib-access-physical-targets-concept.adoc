@@ -2,9 +2,9 @@
 permalink: config-linux/nvme-ib-access-physical-targets-concept.html 
 sidebar: sidebar 
 keywords: NVMe volume physical, SLES 15, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
-summary: 使用している SLES のバージョンに基づいて、デバイスターゲットに転送される I/O を設定できます（ SUSE Linux バージョン \ ）。 
+summary: SLES（SUSE Linux）のバージョンに応じて、デバイスターゲットへのI/Oを設定できます。 
 ---
-= Eシリーズ- Linux（NVMe over InfiniBand）の物理NVMeデバイスターゲット用のNVMeボリュームにアクセスする
+= EシリーズがLinux上でInfiniBandを使用して物理NVMeターゲットにI/Oをルーティングする方法
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

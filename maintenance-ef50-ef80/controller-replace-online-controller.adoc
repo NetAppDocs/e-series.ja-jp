@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef80, how to online the controller 
 summary: EF50またはEF80ストレージシステムの交換用コントローラをインストールしたら、交換用コントローラのIPアドレスを確認し、コントローラをオンラインにして、ストレージシステムのステータスがOptimalであることを確認してください。 
 ---
-= 交換用コントローラをオンラインにする - EF50 および EF80
+= EF50およびEF80ストレージシステムの交換用コントローラーをオンラインにする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

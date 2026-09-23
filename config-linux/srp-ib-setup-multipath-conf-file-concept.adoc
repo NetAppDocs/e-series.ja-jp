@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: multipath.conf, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: multipath.conf ファイルは、マルチパスデーモン multipathd の構成ファイルです。 
 ---
-= EシリーズLinux（SRP over InfiniBand）でのmultipath.confファイルの設定
+= EシリーズにおけるLinux SRP over InfiniBandホスト向けの multipath.conf ファイルの仕組み
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

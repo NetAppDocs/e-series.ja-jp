@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef80, swap, out, fan, module, interrupt, service, sequence, task, hot-swap, hot-swap a fan module 
 summary: EF50またはEF80ストレージシステムのファンが故障したり、効率的に動作しなくなった場合は、ファンモジュールを交換してください。ファンの故障は、システムの冷却性能や全体的なパフォーマンスに影響を与える可能性があります。 
 ---
-= ファンモジュールの交換- EF50およびEF80
+= EF50またはEF80ストレージ システムのファンモジュールを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

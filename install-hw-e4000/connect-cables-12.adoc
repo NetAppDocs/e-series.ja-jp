@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E4000, connect power cables 
 summary: 電源ケーブルを接続し、ドライブシェルフの電源をオンにします。 
 ---
-= 電源ケーブルの接続- E4012
+= E4012ストレージ システムの電源ケーブルを接続する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

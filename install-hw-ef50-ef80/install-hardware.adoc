@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: EF50またはEF80ストレージシステムの設置準備が整ったら、ラックマウント用ハードウェアをキャビネットまたは通信ラックに取り付け、その後ストレージシステムを設置して固定します。 
 ---
-= ハードウェアの設置 - EF50およびEF80
+= EF50およびEF80ストレージシステム用のハードウェアのインストール
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef80, offline the impaired controller 
 summary: コントローラを交換する際は、データ損失を防ぎ、システムの安定性を確保するために、EF50またはEF80ストレージシステム内の障害コントローラをオフラインにしてください。 
 ---
-= 障害のあるコントローラをオフラインにする - EF50およびEF80
+= EF50およびEF80ストレージ システム上の障害のあるコントローラをオフラインにする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

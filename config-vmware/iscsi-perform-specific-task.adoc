@@ -1,10 +1,10 @@
 ---
 permalink: config-vmware/iscsi-perform-specific-task.html 
 sidebar: sidebar 
-keywords: iscsi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
+keywords: iscsi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, EF50, EF80, E4000, E-Series, eseries 
 summary: iSCSI プロトコルを使用する場合は、スイッチを設定し、アレイ側とホスト側でネットワークを設定します。その後、 IP ネットワーク接続を確認します。 
 ---
-= Eシリーズ- VMwareでiSCSI固有のタスクを実行
+= EシリーズのVMware向けiSCSIスイッチとネットワークの設定
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -15,9 +15,41 @@ summary: iSCSI プロトコルを使用する場合は、スイッチを設定�
 iSCSI プロトコルを使用する場合は、スイッチを設定し、アレイ側とホスト側でネットワークを設定します。その後、 IP ネットワーク接続を確認します。
 
 
+NOTE: VMwareとの互換性を確保するため、4096バイトのドライブを使用する場合は、ボリュームを512バイトエミュレーション（512e）を使用するように設定する必要があります。ボリュームを512バイトエミュレーション（512e）を使用するように設定する方法の詳細については、SANtricity System Managerのオンラインヘルプを参照してください。
 
-[[step-1-configure-the-switches-iscsi-vmware]]
-== 手順1：スイッチを設定します（iSCSI、VMware）
+
+
+[[step-1-record-your-configuration]]
+== ステップ1：設定を記録する
+
+このページをPDFファイルとして生成して印刷し、その後、次のワークシートを使用して、プロトコル固有のストレージ構成情報を記録することができます。プロビジョニング作業を行う際に、この情報が必要になります。
+
+図は、VLANおよび/または固有のサブネットによって分離されたEシリーズ ストレージ アレイに接続されているホストを示しています。一方のVLAN/サブネットは青線で示され、もう一方のVLAN/サブネットは赤線で示されています。各VLAN/サブネットには、少なくとも1つのイニシエータポートと、ターゲットポートの半数が含まれます。ホストポートおよび/またはコントローラポートの数は、ネットワークインターフェースの数とコントローラのモデルによって異なります。コントローラーあたり最大6個のポートが利用できる場合があります。
+
+image::../media/50001_01_conf-vmw.gif[iSCSIポート識別子]
+
+
+
+[[host-mapping-information]]
+=== ホストマッピング情報
+
+[cols="35h,~"]
+|===
+| マッピングホスト名 |  
+
+
+| ホスト OS タイプ |  
+
+
+| ホスト IQN |  
+
+
+| ターゲット IQN |  
+|===
+
+
+[[step-2-configure-the-switches]]
+== ステップ2：スイッチの設定
 
 iSCSI に関するベンダーの推奨事項に従ってスイッチを設定します。これらの推奨事項には、設定の指示とコードの更新が含まれる場合があります。
 
@@ -25,9 +57,9 @@ iSCSI に関するベンダーの推奨事項に従ってスイッチを設定�
 次のものがあることを確認します。
 
 * 高可用性を実現するために、 2 つの独立したネットワークiSCSI トラフィックを別々のネットワークセグメントに分離してください。
-* 送受信ハードウェアフロー制御 * エンドツーエンド * を有効にしました。
+* 送受信ハードウェアフロー制御（*エンドツーエンド*）を有効にしました。
 * 優先度フロー制御が無効になりました。
-* 必要に応じて、ジャンボフレームを有効にします。
+* 必要に応じて、ジャンボフレームを有効にしてください（推奨）。
 
 
 
@@ -38,31 +70,29 @@ NOTE: コントローラのスイッチポートでは、ポートチャネル /
 
 
 
-[[step-2-configure-networking-iscsi-vmware]]
-== 手順2：ネットワークを設定する-- iSCSI VMware
+[[step-3-configure-networking]]
+== ステップ3：ネットワークの設定
 
 iSCSI ネットワークは、データストレージの要件に応じて、さまざまな方法でセットアップできます。環境に最適な構成を選択するには、ネットワーク管理者に相談してください。
 
 .作業を開始する前に
 次のものがあることを確認します。
 
-* 送受信ハードウェアフロー制御 * エンドツーエンド * を有効にしました。
+* 送受信ハードウェアフロー制御（*エンドツーエンド*）を有効にしました。
 * 優先度フロー制御が無効になりました。
-* 必要に応じて、ジャンボフレームを有効にします。
+* 必要に応じて、ジャンボフレームを有効にしてください（推奨）。
 +
-パフォーマンス上の理由から IP SAN 内でジャンボフレームを使用している場合は、アレイ、スイッチ、およびホストでジャンボフレームを使用するように設定してください。ホストおよびスイッチでジャンボフレームを有効にする方法については、使用するオペレーティングシステムとスイッチのドキュメントを参照してください。アレイでジャンボフレームを有効にするには、手順 3 の手順を実行します。
+パフォーマンス上の理由から IP SAN 内でジャンボフレームを使用している場合は、アレイ、スイッチ、およびホストをジャンボフレームを使用するように構成してください。ホストおよびスイッチでジャンボフレームを有効にする方法については、オペレーティングシステムおよびスイッチのマニュアルを参照してください。アレイでジャンボフレームを有効にするには、手順 4 の手順を完了してください。
 
 
 
 .このタスクについて
-iSCSIネットワークを計画する際には、サポートされるiSCSIストレージパスの最大数は8であることに注意してください https://configmax.broadcom.com/home["VMware 構成の最大数"^]。この要件を考慮して、設定するパス数を多くしないようにしてください。
+iSCSI ネットワークを計画する際には、 https://configmax.broadcom.com/guest["VMware Configuration Maximums Guide"^]に、LUN への最大サポート iSCSI パス数は 32 であり、サーバーごとにソフトウェア iSCSI スタックに関連付けたりポートバインドしたりできる NIC の最大数は 8 であると規定されています。パスの設定数が多くなりすぎないように、この要件を考慮する必要があります。
 
 iSCSI ポートバインドを使用していない場合、 VMware iSCSI ソフトウェアイニシエータによって iSCSI ターゲットごとに 1 つのセッションがデフォルトで作成されます。
 
 
-NOTE: VMware iSCSI ポートバインドは、バインドされているすべての VMkernel ポートを、設定されたネットワークセグメント上でアクセス可能なすべてのターゲットポートに強制的にログインさせる機能です。これは、 iSCSI ターゲットに単一のネットワークアドレスを提供するアレイで使用するためのものです。iSCSI ポートバインドは使用しないことを推奨します。詳細については、を参照してください。ESX/ESXiでソフトウェアiSCSIポートバインドを使用する場合の考慮事項については、を参照してください https://support.broadcom.com/["VMware のナレッジベース"]。ESXi ホストを別のベンダーのストレージに接続している場合は、ポートバインドとの競合を避けるために、別の iSCSI VMkernel ポートを使用することを推奨します。
-
-ベストプラクティスとして、 E シリーズストレージアレイではポートバインドを使用しないでください。詳細については、を参照してください https://www.netapp.com/media/17017-tr4789.pdf["TR-4789：『VMware Configuration Guide for E-Series SANtricity iSCSI Integration with ESXi 6.x and 7.x』"^] 。
+NOTE: VMware iSCSIポートバインディングは、バインドされたすべてのVMkernelポートを、構成されたネットワークセグメント上でアクセス可能なすべてのターゲットポートに強制的にログインさせる機能です。これは、iSCSIターゲットに単一のネットワークアドレスを提供するアレイで使用することを想定しています。NetAppでは、iSCSIポートバインディングを使用しないことを推奨します。詳細については、 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/configuring-iscsi-and-iser-adapters-and-storage-with-esxi/setting-up-network-for-iscsi-and-iser-with-esxi/best-practices-for-configuring-networking-with-software-iscsi.html["ESX/ESXiでソフトウェアiSCSIポートバインディングを使用するためのベストプラクティス"^]を参照してください。ESXiホストが別のベンダーのストレージに接続されている場合、NetAppでは、ポートバインディングとの競合を避けるため、iSCSI vmkernelポートを別々に使用することをお勧めします。
 
 適切なマルチパス構成を実現するために、 iSCSI ネットワークに複数のネットワークセグメントを使用します。ホスト側のポートと各アレイコントローラのポートを少なくとも 1 つずつ 1 つのネットワークセグメントに配置し、同じグループのホスト側とアレイ側のポートをもう 1 つのネットワークセグメントに配置します。可能であれば、複数のイーサネットスイッチを使用してさらに冗長性を確保します。
 
@@ -74,8 +104,8 @@ NOTE: 多くのネットワークスイッチは 9 、 000 バイトを超える
 
 
 
-[[step-3-configure-array-side-networking-iscsi-vmware]]
-== 手順3：アレイ側のネットワークを設定する- iSCSI、VMware
+[[step-4-configure-array-side-networking]]
+== ステップ4：アレイ側のネットワークを設定する
 
 SANtricity System Manager の GUI を使用して、アレイ側の iSCSI ネットワークを設定します。
 
@@ -102,7 +132,7 @@ NOTE: VMware構成におけるアレイ側ネットワークの設定方法に�
 
 . 管理者パスワードの設定フィールドとパスワードの確認フィールドに管理者ロールの System Manager パスワードを入力し、 * パスワードの設定 * をクリックします。
 +
-プール、ボリュームグループ、ワークロード、または通知が設定されていない場合は、セットアップウィザードが起動します。
+プール、ボリューム グループ、ワークロード、または通知が設定されていない場合、セットアップ ウィザードが起動します。
 
 . セットアップウィザードを閉じます。
 +
@@ -134,10 +164,10 @@ Configure iSCSI Ports （ iSCSI ポートの設定）ダイアログボックス
  a| 
 イーサネットポート速度の設定
  a| 
-目的の速度を選択します。ドロップダウンリストに表示されるオプションは、ネットワークがサポートできる最大速度（ 10Gbps など）によって異なります。
+希望の速度を選択してください。ドロップダウンリストに表示されるオプションは、ネットワークがサポートできる最大速度（例：25 Gbps）によって異なります。
 
 
-NOTE: コントローラで使用可能なオプションの 25Gb iSCSI ホストインターフェイスカードは速度を自動ネゴシエートしません。各ポートの速度を 10Gb または 25Gb に設定する必要があります。すべてのポートを同じ速度に設定する必要があります。
+NOTE: コントローラーで使用可能なiSCSIホスト インターフェイス カードは、速度を自動交渉（オートネゴシエーション）しません。各ポートの速度を1 Gb、10 Gb、または25 Gbのいずれかに設定する必要があります。すべてのポートを同じ速度に設定する必要があります。
 
 
 
@@ -162,7 +192,7 @@ MTU サイズ（ * Show more port settings* をクリックすると使用可能
  a| 
 必要に応じて、 Maximum Transmission Unit （ MTU ；最大伝送ユニット）の新しいサイズをバイト単位で入力します。
 
-デフォルトの Maximum Transmission Unit （ MTU ；最大転送単位）サイズは 1500 バイト / フレームです。1500~9000 の値を入力する必要があります。
+デフォルトの最大伝送単位（MTU）サイズは、フレームあたり1500バイトです。1500から9000までの値を入力してください。ジャンボフレームを有効にするには、この値を9000バイトに設定してください。
 
 
 
@@ -200,34 +230,57 @@ Internet Control Message Protocol （ ICMP ）を有効にする場合は、こ�
 
 
 
-[[step-4-configure-host-side-networking-iscsi]]
-== 手順4：ホスト側のネットワークを設定する- iSCSI
+[[step-5-configure-host-side-networking]]
+== ステップ 5：ホスト側のネットワークを設定する
 
 ホスト側で iSCSI ネットワークを設定すると、 VMware iSCSI イニシエータがアレイとのセッションを確立できるようになります。
 
 .このタスクについて
-ホスト側で iSCSI ネットワークを設定するこのクイック方式では、 ESXi ホストから 4 つの冗長パスを経由してストレージに iSCSI トラフィックを伝送できるようにします。
+このタスクは、ホスト側でiSCSIネットワークを構成し、ストレージアレイとのiSCSIセッションを確立します。
 
 このタスクが完了すると、ホストには、両方の VMkernel ポートと両方の VMNIC で構成される単一の vSwitch が設定されます。
 
-VMware の iSCSI ネットワークを設定する追加情報については、を参照してください https://docs.vmware.com/en/VMware-vSphere/index.html["VMware vSphere のドキュメント"^] 使用する vSphere のバージョンに対応しています。
+VMware の iSCSI ネットワーク構成に関する詳細については、 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/configuring-iscsi-and-iser-adapters-and-storage-with-esxi.html["ESXi を使用した iSCSI アダプタとストレージの構成"^]を参照してください。
+
+
+NOTE: このプロセス中に、追加されたソフトウェアiSCSIアダプタからiSCSI修飾名（IQN）を記録してください。これは後でホスト マッピングを設定する際に必要になります。
+
+.作業を開始する前に
+次のものがあることを確認します。
+
+* iSCSIストレージトラフィックを伝送するために設定されたスイッチ。
+* ハードウェアの送受信フロー制御*エンドツーエンド*がスイッチで有効になっています。
+* 優先度フロー制御がスイッチで無効になっています。
+* アレイ側のiSCSI設定が完了しました。
+* iSCSIトラフィック用に、少なくとも2つのホストNICポートが必要です。
+
 
 .手順
-. iSCSI ストレージトラフィックの伝送に使用するスイッチを設定します。
-. 送受信ハードウェアフロー制御 * エンドツーエンド * を有効にします。
-. 優先度フロー制御を無効にします。
-. アレイ側の iSCSI 設定を完了します。
-. iSCSI トラフィックに 2 つの NIC ポートを使用します。
-. vSphere Client または vSphere Web Client を使用して、ホスト側の設定を行います。
+. vSphere Client または vSphere Web Client を使用して、ホスト側の設定を実行してください。参照 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/configuring-iscsi-and-iser-adapters-and-storage-with-esxi.html["ESXi を使用した iSCSI アダプタとストレージの構成"^]。
 +
 インターフェイスの機能はそれぞれ異なり、ワークフローも完全に同じにはなりません。
 
+. iSCSI用のネットワークを設定します。参照 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/configuring-iscsi-and-iser-adapters-and-storage-with-esxi/setting-up-network-for-iscsi-and-iser-with-esxi.html["ESXでiSCSI用のネットワークを設定する"^]。
++
+.. ポートバインディングは使用しないことをお勧めします。VMware iSCSIポートバインディングは、バインドされたすべてのVMkernelポートを、構成されたネットワークセグメント上でアクセス可能なすべてのターゲットポートに強制的にログインさせる機能です。これは、iSCSIターゲットに単一のネットワークアドレスを提供するアレイで使用することを想定しています。NetAppでは、iSCSIポートバインディングを使用しないことを推奨します。詳細については、 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/configuring-iscsi-and-iser-adapters-and-storage-with-esxi/setting-up-network-for-iscsi-and-iser-with-esxi/best-practices-for-configuring-networking-with-software-iscsi.html["ESX/ESXiでソフトウェアiSCSIポートバインディングを使用するためのベストプラクティス"^]を参照してください。ESXiホストが別のベンダーのストレージに接続されている場合、NetAppでは、ポートバインディングとの競合を避けるため、iSCSI vmkernelポートを別々に使用することをお勧めします。
+.. NetApp は、アクティブ/スタンバイ アダプタを使用して冗長性を確保するために、vSphere 標準スイッチで複数のアダプタ マッピングを使用することを推奨します。参照 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/configuring-iscsi-and-iser-adapters-and-storage-with-esxi/setting-up-network-for-iscsi-and-iser-with-esxi/multiple-network-adapters-in-iscsi-or-iser-configuration.html["iSCSI構成における複数のネットワーク アダプタ"^]。
+.. 必要に応じて、iSCSIでジャンボフレームを有効にしてください。参照 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/configuring-iscsi-and-iser-adapters-and-storage-with-esxi/using-jumbo-frames-with-iscsi-and-iser.html["ESX 上で iSCSI とジャンボフレームを使用する"^]。
+
+
+. ソフトウェアiSCSIアダプタを追加します。参照 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/configuring-iscsi-and-iser-adapters-and-storage-with-esxi/configure-the-software-iscsi-adapter-with-esxi/add-or-remove-the-software-iscsi-adapter.html["ソフトウェアiSCSIアダプタの追加または削除"^]。
++
+.. ホストのIQNを記録し、iSCSIエイリアスを追加します（オプション）。参照 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/configuring-iscsi-and-iser-adapters-and-storage-with-esxi/modify-general-properties-for-iscsi-and-iser-adapters-on-esxi-hosts.html["ESXホスト上のiSCSIの一般プロパティを変更する"^]。
+.. CHAPシークレットを使用する場合は、CHAPパラメータを設定してください。参照 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/configuring-iscsi-and-iser-adapters-and-storage-with-esxi/configuring-chap-parameters-for-iscsi-or-iser-storage-adapters-with-esxi.html["ESXホスト上のiSCSIアダプタのCHAPパラメータの設定"^]。
 
 
 
 
-[[step-5-verify-ip-network-connections-iscsi-vmware]]
-== 手順5：IPネットワーク接続の確認-- iSCSI、VMware
+正常に追加されると、vSphere Client のストレージ アダプタ ビューから接続を確認できます。うまくいかない場合は、手順 6 に進み、ポートへの通信を確認して接続設定を修正してください。
+
+
+
+[[step-6-verify-ip-network-connections]]
+== ステップ6：IPネットワーク接続を確認する
 
 インターネットプロトコル（ IP ）ネットワーク接続を確認するには、 ping テストを使用してホストとアレイが通信できることを確認します。
 
@@ -260,7 +313,7 @@ Reply from 192.0.2.8: bytes=8972 time=2ms TTL=64
 Reply from 192.0.2.8: bytes=8972 time=2ms TTL=64
 Ping statistics for 192.0.2.8:
   Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
-Approximate round trip times in milli-seconds:
+Approximate round trip times in milliseconds:
   Minimum = 2ms, Maximum = 2ms, Average = 2ms
 ----
 
@@ -270,61 +323,5 @@ Approximate round trip times in milli-seconds:
 
 NOTE: コマンドが失敗し、「 endto （） failed （ Message too long ）」というメッセージが表示された場合は、ホストサーバ、ストレージコントローラ、およびスイッチポートのイーサネットインターフェイスの MTU サイズ（ジャンボフレームのサポート）を確認します。
 
-. iSCSI Configuration 手順に戻り、ターゲットの検出を終了します。
+. ステップ5の検出が失敗した場合は、iSCSIホスト側のネットワーク構成手順に戻り、セッション検出を完了してください。
 
-
-
-
-[[step-6-record-your-configuration]]
-== 手順 6 ：設定を記録します
-
-このページの PDF を生成して印刷し、次のワークシートを使用してプロトコル固有のストレージ構成情報を記録できます。この情報は、プロビジョニングタスクを実行する際に必要になります。
-
-
-
-[[recommended-configuration]]
-=== 推奨される構成
-
-推奨構成は、 2 つのイニシエータポートと 4 つのターゲットポートを 1 つ以上の VLAN で接続した構成です。
-
-image::../media/50001_01_conf-vmw.gif[iSCSIポート識別子]
-
-
-
-[[target-iqn]]
-=== ターゲット IQN
-
-|===
-| 番号 | ターゲットポート接続 | IQN 
-
-
- a| 
-2.
- a| 
-ターゲットポート
- a| 
-
-|===
-
-
-[[mapping-host-name]]
-=== マッピングホスト名
-
-|===
-| 番号 | ホスト情報 | 名前とタイプ 
-
-
- a| 
-1.
- a| 
-マッピングホスト名
- a| 
-
-
-
- a| 
- a| 
-ホスト OS タイプ
- a| 
-
-|===

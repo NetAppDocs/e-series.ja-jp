@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef80, prepare the impaired controller 
 summary: EF50またはEF80ストレージシステムの障害コントローラを交換する準備として、交換用コントローラを開梱し、部品番号が正しいことを確認し、構成データベースをバックアップします。 
 ---
-= コントローラの交換の準備 - EF50 および EF80
+= EF50およびEF80ストレージシステムのコントローラ交換の準備
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

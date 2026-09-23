@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: host port GUIDs, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: ホストポートの GUID を特定します。 
 ---
-= Eシリーズでのホストポートのグローバル一意IDの特定- Linux（NVMe over InfiniBand）
+= NVMe over InfiniBand を使用する E シリーズ Linux ホストのホストポート GUID を確認する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

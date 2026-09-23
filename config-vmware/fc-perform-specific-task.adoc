@@ -1,84 +1,31 @@
 ---
 permalink: config-vmware/fc-perform-specific-task.html 
 sidebar: sidebar 
-keywords: Fibre Channel protocol, switches, zone switches, zoning, host port identifiers, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
-summary: Fibre Channel プロトコルを使用する場合は、スイッチを設定し、ホストポート識別子を特定します。 
+keywords: Fibre Channel protocol, switches, zone switches, zoning, host port identifiers, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E4000, EF50, EF80, E-Series, eseries 
+summary: Fibre Channel Protocol（FCP）の場合、スイッチを設定し、ホスト ポート識別子を決定します。 
 ---
-= Eシリーズ- VMwareでFC固有のタスクを実行
+= EシリーズのVMware向けFCスイッチとホスト識別子を設定する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-Fibre Channel プロトコルを使用する場合は、スイッチを設定し、ホストポート識別子を特定します。
+Fibre Channel Protocol（FCP）の場合、スイッチを設定し、ホスト ポート識別子を決定します。
 
 
-NOTE: EF300 および EF600 では、 VMware との互換性を確保するために、ブロックサイズを 512 バイトに設定する必要があります。ボリュームを 512 バイトに設定する方法の詳細については、 SANtricity System Manager オンラインヘルプを参照してください。
-
-
-
-[[step-1-configure-the-fc-switches-vmware]]
-== 手順1：FCスイッチを設定する- VMware
-
-Fibre Channel （ FC ）スイッチを設定（ゾーニング）すると、ホストをストレージアレイに接続し、パスの数を制限できます。スイッチのゾーニングはスイッチの管理インターフェイスで設定します。
-
-.作業を開始する前に
-次のものがあることを確認します。
-
-* スイッチの管理者クレデンシャル。
-* 各ホストイニシエータポートの WWPN と、スイッチに接続されている各コントローラターゲットポートの WWPN 。（ HBA ユーティリティを使用して検出してください）。
+NOTE: VMwareとの互換性を確保するため、4096バイトのドライブを使用する場合は、ボリュームを512バイトエミュレーション（512e）を使用するように設定する必要があります。ボリュームを512バイトエミュレーション（512e）を使用するように設定する方法の詳細については、SANtricity System Managerのオンラインヘルプを参照してください。
 
 
 
-NOTE: ベンダーの HBA ユーティリティを使用して、 HBA に関する具体的な情報をアップグレードおよび取得することができます。HBA ユーティリティの入手方法については、ベンダーの Web サイトでサポートのセクションを参照してください。
+[[step-1-record-your-configuration]]
+== ステップ1：設定を記録する
 
-.このタスクについて
-各イニシエータポートを別々のゾーンに配置し、各イニシエータに対応するターゲットポートをすべて配置する必要があります。スイッチのゾーニングの詳細については、スイッチベンダーのマニュアルを参照してください。
+このページをPDFファイルとして生成して印刷し、その後、次のワークシートを使用してFCストレージ構成情報を記録できます。プロビジョニング作業を行う際に、この情報が必要になります。
 
-.手順
-. FC スイッチの管理プログラムにログインし、ゾーニング設定のオプションを選択します。
-. 新しいゾーンを作成し、 1 つ目のホストイニシエータポート、およびそのイニシエータと同じ FC スイッチに接続するすべてのターゲットポートを配置します。
-. スイッチの FC ホストイニシエータごとにゾーンを作成します。
-. ゾーンを保存し、新しいゾーニング設定をアクティブ化します。
+図は、2つのゾーンでEシリーズ ストレージ アレイに接続されたホストを示しています。一方のゾーンは赤い線で示され、もう一方のゾーンは青い線で示されています。各ゾーンには、少なくとも1つのイニシエータポートと、全ターゲットポートの半分が含まれています。ホストポートおよび／またはコントローラポートの数は、ホストバスアダプタの数とコントローラのモデルによって異なります。コントローラーあたり最大12個のポートが利用できる場合があります。必要に応じて追加のPDFを印刷してください。
 
-
-
-
-[[step-2-determine-the-host-port-wwpns-fc]]
-== 手順2：ホストポートのWWPNを特定する- FC
-
-FC ゾーニングを設定するためには、各イニシエータポートの World Wide Port Name （ WWPN ）を特定する必要があります。
-
-.手順
-. SSH または ESXi シェルを使用して ESXi ホストに接続します。
-. 次のコマンドを実行します。
-+
-[listing]
-----
-esxcfg-scsidevs –a
-----
-. イニシエータ識別子を記録します。次のような出力が表示されます。
-+
-[listing]
-----
-vmhba3 lpfc link-up  fc.20000090fa05e848:10000090fa05e848 (0000:03:00.0)
-Emulex Corporation Emulex LPe16000 16Gb PCIe Fibre Channel Adapter
-vmhba4 lpfc link-up  fc.20000090fa05e849:10000090fa05e849 (0000:03:00.1)
-Emulex Corporation Emulex LPe16000 16Gb PCIe Fibre Channel Adapter
-----
-
-
-
-
-[[step-3-record-your-configuration]]
-== 手順 3 ：設定を記録します
-
-このページの PDF を生成して印刷し、次のワークシートを使用して FC ストレージの構成情報を記録できます。この情報は、プロビジョニングタスクを実行する際に必要になります。
-
-次の図では、 2 つのゾーンでホストが E シリーズストレージアレイに接続されています。一方のゾーンは青い線で示され、もう一方のゾーンは赤い線で示されます。各ゾーンには、 1 つのイニシエータポートとすべてのターゲットポートが含まれます。
-
-image::../media/port_identifiers_host_and_target_conf-vmw.gif[Fibre Channelポート識別子]
+image::../media/port_identifiers_host_and_target_conf-vmw.gif[ファイバーチャネルポート識別子]
 
 
 
@@ -149,9 +96,25 @@ _ 該当なし _
 
 
  a| 
+5.
+ a| 
+コントローラA、ポート2からFCスイッチ1へ
+ a| 
+
+
+
+ a| 
 9.
  a| 
-コントローラ A のポート 2 から FC スイッチ 2
+コントローラA、ポート3からFCスイッチ2へ
+ a| 
+
+
+
+ a| 
+9.
+ a| 
+コントローラA、ポート4からFCスイッチ2へ
  a| 
 
 
@@ -165,28 +128,99 @@ _ 該当なし _
 
 
  a| 
+4.
+ a| 
+コントローラB、ポート2からFCスイッチ1へ
+ a| 
+
+
+
+ a| 
 8.
  a| 
-コントローラ B のポート 2 から FC スイッチ 2
+コントローラB、ポート3からFCスイッチ2へ
+ a| 
+
+
+
+ a| 
+8.
+ a| 
+コントローラB、ポート4からFCスイッチ2へ
  a| 
 
 |===
 
 
-[[mapping-host]]
-=== マッピングホスト
+[[host-mapping-information]]
+=== ホストマッピング情報
 
+[cols="35h,~"]
+|===
+| マッピングホスト名 |  
+
+
+| ホスト OS タイプ |  
 |===
 
 
- a| 
-マッピングホスト名
- a| 
+[[step-2-determine-the-host-port-wwpns]]
+== ステップ2：ホスト ポートのWWPNを特定する
+
+FC ゾーニングを設定するためには、各イニシエータポートの World Wide Port Name （ WWPN ）を特定する必要があります。
+
+.手順
+. SSHまたはESXiシェルを使用してESXiホストに接続します。ESXiシェルを有効にするには、 https://knowledge.broadcom.com/external/article/311213/using-esxi-shell-in-esxi.html["ESXiでESXiシェルを使用する"^]を参照してください。
+. 次のコマンドを実行します。
++
+[listing]
+----
+esxcli storage core adapter list
+----
+. イニシエータのWWPN識別子（UID、形式はfc.WWNN:WWPN）を記録します。出力は次の例のようになります。
++
+[listing]
+----
+HBA Name  Driver    Link State  UID                                   Capabilities         Description
+--------  --------  ----------  ------------------------------------  -------------------  -----------
+vmhba4    lpfc      link-up     fc.200070b7e4395530:100070b7e4395530  Second Level Lun ID  (0000:5e:00.0) Emulex Corporation Emulex LPe35000/LPe36000 Fibre Channel Adapter
+vmhba5    lpfc      link-up     fc.200070b7e4395531:100070b7e4395531  Second Level Lun ID  (0000:5e:00.1) Emulex Corporation Emulex LPe35000/LPe36000 Fibre Channel Adapter
+vmhba64   lpfc      link-up     fc.200070b7e4395530:100070b7e4395530                       (0000:5e:00.0) Emulex Corporation Emulex LPe35000/LPe36000 Fibre Channel Adapter
+vmhba65   lpfc      link-up     fc.200070b7e4395531:100070b7e4395531                       (0000:5e:00.1) Emulex Corporation Emulex LPe35000/LPe36000 Fibre Channel Adapter
+
+----
+
+
+上記の例では、vmhba4とvmhba64、およびvmhba5とvmhba65のUIDは同一です。これは、FCPとNVMe over FCの両方をサポートするFCアダプタでは想定される動作です。それぞれの固有のWWPNを記録してください。
+
+
+NOTE: 別のコマンドオプションは `esxcli storage san fc list`です。これにより、詳細情報と、コロンで区切られた16進数形式のWWPNが表示されます。
 
 
 
- a| 
-ホスト OS タイプ
- a| 
+[[step-3-configure-the-fc-switches]]
+== ステップ3：FCスイッチの設定
 
-|===
+Fibre Channel （ FC ）スイッチを設定（ゾーニング）すると、ホストをストレージアレイに接続し、パスの数を制限できます。スイッチのゾーニングはスイッチの管理インターフェイスで設定します。
+
+.作業を開始する前に
+次のものがあることを確認します。
+
+* スイッチの管理者クレデンシャル。
+* スイッチに接続されている各ホスト イニシエータ ポートおよび各コントローラ ターゲット ポートのWWPN。
+
+
+
+NOTE: ベンダーの HBA ユーティリティを使用して、 HBA に関する具体的な情報をアップグレードおよび取得することができます。HBA ユーティリティの入手方法については、ベンダーの Web サイトでサポートのセクションを参照してください。
+
+.このタスクについて
+各イニシエータポートを別々のゾーンに配置し、各イニシエータに対応するターゲットポートをすべて配置する必要があります。スイッチのゾーニングの詳細については、スイッチベンダーのマニュアルを参照してください。
+
+.手順
+. FC スイッチの管理プログラムにログインし、ゾーニング設定のオプションを選択します。
+. 新しいゾーンを作成し、 1 つ目のホストイニシエータポート、およびそのイニシエータと同じ FC スイッチに接続するすべてのターゲットポートを配置します。
+. スイッチの FC ホストイニシエータごとにゾーンを作成します。
+. ゾーンを保存し、新しいゾーニング設定をアクティブ化します。
+
+
+ゾーン設定の詳細な手順については、スイッチベンダーのドキュメントを参照してください。
