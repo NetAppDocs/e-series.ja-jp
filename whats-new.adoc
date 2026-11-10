@@ -16,6 +16,13 @@ summary: SANtricity OS の新機能
 
 
 
+[[new-features-in-version-12-10r1]]
+== Version 12.10R1の新機能
+
+このバージョンには軽微な変更のみが含まれており、新機能は追加されていません。このリリースの変更点の詳細については、Eシリーズ SANtricity OS 12.10R1 READMEを参照してください。
+
+
+
 [[new-features-in-version-12-10]]
 == バージョン12.10の新機能
 
